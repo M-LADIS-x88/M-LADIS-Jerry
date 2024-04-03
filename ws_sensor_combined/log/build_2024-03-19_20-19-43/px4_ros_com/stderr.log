@@ -1,0 +1,50 @@
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/computer_viz/PointCloudProcessor.cpp:[m[K In member function ‘[01m[Kvoid PointCloudProcessor::pointCloudCallback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/computer_viz/PointCloudProcessor.cpp:42:32:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen::DenseBase<Eigen::Matrix<float, -1, -1> >::iterator __for_begin [m[K’ has incomplete type
+   42 |         for (const auto& row : [01;31m[Kxyz_matrix[m[K) {
+      |                                [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/computer_viz/PointCloudProcessor.cpp:42:32:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen::DenseBase<Eigen::Matrix<float, -1, -1> >::iterator __for_end [m[K’ has incomplete type
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:164[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/common/transforms.h:42[m[K,
+                 from [01m[K/opt/ros/humble/include/pcl_ros/transforms.hpp:40[m[K,
+                 from [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/computer_viz/PointCloudProcessor.cpp:7[m[K:
+/usr/include/eigen3/Eigen/src/Core/StlIterators.h: In instantiation of ‘[01m[KEigen::DenseBase<Derived>::iterator Eigen::DenseBase<Derived>::begin() [with Derived = Eigen::Matrix<float, -1, -1>; Eigen::DenseBase<Derived>::iterator = void][m[K’:
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/computer_viz/PointCloudProcessor.cpp:42:32:[m[K   required from here
+[01m[K/usr/include/eigen3/Eigen/src/Core/StlIterators.h:410:3:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: YOU_TRIED_CALLING_A_VECTOR_METHOD_ON_A_MATRIX
+  410 |   [01;31m[KEIGEN_STATIC_ASSERT_VECTOR_ONLY[m[K(Derived);
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/StlIterators.h:410:3:[m[K [01;36m[Knote: [m[K‘[01m[KEigen::Matrix<float, -1, -1>::IsVectorAtCompileTime[m[K’ evaluates to false
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:363[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/common/transforms.h:42[m[K,
+                 from [01m[K/opt/ros/humble/include/pcl_ros/transforms.hpp:40[m[K,
+                 from [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/computer_viz/PointCloudProcessor.cpp:7[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/StlIterators.h:411:10:[m[K [01;31m[Kerror: [m[Kexpression list treated as compound expression in functional cast [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  411 |   return [01;31m[Kiterator(derived(), 0)[m[K;
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:164[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/common/transforms.h:42[m[K,
+                 from [01m[K/opt/ros/humble/include/pcl_ros/transforms.hpp:40[m[K,
+                 from [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/computer_viz/PointCloudProcessor.cpp:7[m[K:
+/usr/include/eigen3/Eigen/src/Core/StlIterators.h: In instantiation of ‘[01m[KEigen::DenseBase<Derived>::iterator Eigen::DenseBase<Derived>::end() [with Derived = Eigen::Matrix<float, -1, -1>; Eigen::DenseBase<Derived>::iterator = void][m[K’:
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/computer_viz/PointCloudProcessor.cpp:42:32:[m[K   required from here
+[01m[K/usr/include/eigen3/Eigen/src/Core/StlIterators.h:439:3:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: YOU_TRIED_CALLING_A_VECTOR_METHOD_ON_A_MATRIX
+  439 |   [01;31m[KEIGEN_STATIC_ASSERT_VECTOR_ONLY[m[K(Derived);
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/StlIterators.h:439:3:[m[K [01;36m[Knote: [m[K‘[01m[KEigen::Matrix<float, -1, -1>::IsVectorAtCompileTime[m[K’ evaluates to false
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:363[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/common/transforms.h:42[m[K,
+                 from [01m[K/opt/ros/humble/include/pcl_ros/transforms.hpp:40[m[K,
+                 from [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/computer_viz/PointCloudProcessor.cpp:7[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/StlIterators.h:440:10:[m[K [01;31m[Kerror: [m[Kexpression list treated as compound expression in functional cast [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  440 |   return [01;31m[Kiterator(derived(), size())[m[K;
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/PointCloudProcessor.dir/build.make:76: CMakeFiles/PointCloudProcessor.dir/src/computer_viz/PointCloudProcessor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/PointCloudProcessor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

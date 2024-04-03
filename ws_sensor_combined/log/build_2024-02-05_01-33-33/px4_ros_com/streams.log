@@ -1,0 +1,165 @@
+[0.045s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com -- -j8 -l8
+[0.083s] [35m[1mConsolidate compiler generated dependencies of target offboard_control[0m
+[0.091s] [ 20%] Built target frame_transforms
+[0.091s] [ 40%] Built target sensor_combined_listener
+[0.095s] [ 60%] Built target debug_vect_advertiser
+[0.095s] [ 80%] Built target vehicle_gps_position_listener
+[0.098s] [ 90%] [32mBuilding CXX object CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o[0m
+[2.245s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:139:6:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KOffboardControl::[m[K’ on member ‘[01m[Karm[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.245s]   139 | void [01;31m[KOffboardControl[m[K::arm()
+[2.245s]       |      [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.246s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:149:6:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KOffboardControl::[m[K’ on member ‘[01m[Kdisarm[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.246s]   149 | void [01;31m[KOffboardControl[m[K::disarm()
+[2.246s]       |      [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.246s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:160:6:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KOffboardControl::[m[K’ on member ‘[01m[Kpublish_offboard_control_mode[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.246s]   160 | void [01;31m[KOffboardControl[m[K::publish_offboard_control_mode()
+[2.246s]       |      [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.246s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:177:6:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KOffboardControl::[m[K’ on member ‘[01m[Kpublish_trajectory_setpoint[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.246s]   177 | void [01;31m[KOffboardControl[m[K::publish_trajectory_setpoint()
+[2.246s]       |      [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.246s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:192:6:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KOffboardControl::[m[K’ on member ‘[01m[Kpublish_vehicle_command[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.246s]   192 | void [01;31m[KOffboardControl[m[K::publish_vehicle_command(uint16_t command, float param1, float param2)
+[2.246s]       |      [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.246s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:231:6:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KOffboardControl::[m[K’ on member ‘[01m[Kpublish_trajectory_setpoint_forward[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.246s]   231 | void [01;31m[KOffboardControl[m[K::publish_trajectory_setpoint_forward(float x, float y, float z, float yaw)
+[2.246s]       |      [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.246s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:251:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[2.246s]   251 | }
+[2.246s]       |  [01;31m[K^[m[K
+[2.246s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:57:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[2.246s]    57 | [01;36m[K{[m[K
+[2.246s]       | [01;36m[K^[m[K
+[2.258s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:[m[K In constructor ‘[01m[KOffboardControl::OffboardControl()[m[K’:
+[2.258s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:62:17:[m[K [01;31m[Kerror: [m[K‘[01m[Koffboard_control_mode_publisher_[m[K’ was not declared in this scope
+[2.258s]    62 |                 [01;31m[Koffboard_control_mode_publisher_[m[K = this->create_publisher<OffboardControlMode>("/fmu/in/offboard_control_mode", 10);
+[2.258s]       |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.273s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:63:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrajectory_setpoint_publisher_[m[K’ was not declared in this scope
+[2.273s]    63 |                 [01;31m[Ktrajectory_setpoint_publisher_[m[K = this->create_publisher<TrajectorySetpoint>("/fmu/in/trajectory_setpoint", 10);
+[2.273s]       |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.285s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:64:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kvehicle_command_publisher_[m[K’ was not declared in this scope
+[2.285s]    64 |                 [01;31m[Kvehicle_command_publisher_[m[K = this->create_publisher<VehicleCommand>("/fmu/in/vehicle_command", 10);
+[2.285s]       |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.297s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:67:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kflight_trajectory_waypoint_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpublish_trajectory_setpoint[m[K’?
+[2.297s]    67 |                 [01;31m[Kflight_trajectory_waypoint_[m[K = this->create_subscription<TrajectorySetpoint>(
+[2.297s]       |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.298s]       |                 [32m[Kpublish_trajectory_setpoint[m[K
+[2.312s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:[m[K In lambda function:
+[2.312s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:76:17:[m[K [01;31m[Kerror: [m[K‘[01m[Koffboard_setpoint_counter_[m[K’ was not declared in this scope
+[2.312s]    76 |                 [01;31m[Koffboard_setpoint_counter_[m[K = 0;
+[2.312s]       |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.312s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:[m[K In lambda function:
+[2.312s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:80:29:[m[K [01;31m[Kerror: [m[K‘[01m[Koffboard_setpoint_counter_[m[K’ is not captured
+[2.312s]    80 |                         if ([01;31m[Koffboard_setpoint_counter_[m[K == 10) {
+[2.312s]       |                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.312s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:78:44:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+[2.312s]    78 |                 auto timer_callback = [this[01;36m[K][m[K() -> void {
+[2.312s]       |                                            [01;36m[K^[m[K
+[2.313s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:76:17:[m[K [01;36m[Knote: [m[K‘[01m[K<typeprefixerror>offboard_setpoint_counter_[m[K’ declared here
+[2.313s]    76 |                 [01;36m[Koffboard_setpoint_counter_[m[K = 0;
+[2.313s]       |                 [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.313s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:92:68:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KOffboardControl::WaypointMsgCallback()[m[K’
+[2.313s]    92 |                         WaypointInfo waypoint = [01;31m[KWaypointMsgCallback()[m[K;
+[2.313s]       |                                                 [01;31m[K~~~~~~~~~~~~~~~~~~~^~[m[K
+[2.313s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:217:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KOffboardControl::WaypointInfo OffboardControl::WaypointMsgCallback(px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >::SharedPtr)[m[K’
+[2.313s]   217 | WaypointInfo [01;36m[KWaypointMsgCallback[m[K(const px4_msgs::msg::TrajectorySetpoint::SharedPtr msg)
+[2.313s]       |              [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[2.313s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:217:14:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[2.313s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:101:29:[m[K [01;31m[Kerror: [m[K‘[01m[Koffboard_setpoint_counter_[m[K’ is not captured
+[2.313s]   101 |                         if ([01;31m[Koffboard_setpoint_counter_[m[K < 11) {
+[2.313s]       |                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.313s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:78:44:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+[2.313s]    78 |                 auto timer_callback = [this[01;36m[K][m[K() -> void {
+[2.313s]       |                                            [01;36m[K^[m[K
+[2.313s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:76:17:[m[K [01;36m[Knote: [m[K‘[01m[K<typeprefixerror>offboard_setpoint_counter_[m[K’ declared here
+[2.313s]    76 |                 [01;36m[Koffboard_setpoint_counter_[m[K = 0;
+[2.313s]       |                 [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.313s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:102:33:[m[K [01;31m[Kerror: [m[K‘[01m[Koffboard_setpoint_counter_[m[K’ is not captured
+[2.313s]   102 |                                 [01;31m[Koffboard_setpoint_counter_[m[K++;
+[2.313s]       |                                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.313s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:78:44:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+[2.313s]    78 |                 auto timer_callback = [this[01;36m[K][m[K() -> void {
+[2.314s]       |                                            [01;36m[K^[m[K
+[2.314s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:76:17:[m[K [01;36m[Knote: [m[K‘[01m[K<typeprefixerror>offboard_setpoint_counter_[m[K’ declared here
+[2.314s]    76 |                 [01;36m[Koffboard_setpoint_counter_[m[K = 0;
+[2.314s]       |                 [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.317s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:[m[K In lambda function:
+[2.317s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:105:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktimer_t[m[K’?
+[2.317s]   105 |                 [01;31m[Ktimer_[m[K = this->create_wall_timer(100ms, timer_callback);
+[2.317s]       |                 [01;31m[K^~~~~~[m[K
+[2.317s]       |                 [32m[Ktimer_t[m[K
+[2.322s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:71:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.322s]    71 |         float [01;35m[Kx[m[K = waypoint.x;
+[2.322s]       |               [01;35m[K^[m[K
+[2.322s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:72:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ky[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.322s]    72 |         float [01;35m[Ky[m[K = waypoint.y;
+[2.322s]       |               [01;35m[K^[m[K
+[2.322s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:73:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kz[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.322s]    73 |         float [01;35m[Kz[m[K = waypoint.z;
+[2.322s]       |               [01;35m[K^[m[K
+[2.322s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:74:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kyaw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.322s]    74 |         float [01;35m[Kyaw[m[K = waypoint.yaw;
+[2.322s]       |               [01;35m[K^~~[m[K
+[2.322s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:[m[K In constructor ‘[01m[KOffboardControl::OffboardControl()[m[K’:
+[2.323s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:108:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kvoid[m[K’
+[2.323s]   108 |         [01;31m[Kvoid[m[K arm();
+[2.323s]       |         [01;31m[K^~~~[m[K
+[2.323s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:67:92:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[2.323s]    67 |                 flight_trajectory_waypoint_ = this->create_subscription<TrajectorySetpoint>[01;36m[K([m[K
+[2.323s]       |                                                                                            [01;36m[K^[m[K
+[2.323s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:111:1:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kprivate[m[K’
+[2.323s]   111 | [01;31m[Kprivate[m[K:
+[2.323s]       | [01;31m[K^~~~~~~[m[K
+[2.356s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:132:41:[m[K [01;35m[Kwarning: [m[Kempty parentheses were disambiguated as a function declaration [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvexing-parse-Wvexing-parse]8;;[m[K]
+[2.356s]   132 |         WaypointInfo WaypointMsgCallback[01;35m[K()[m[K;
+[2.356s]       |                                         [01;35m[K^~[m[K
+[2.356s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:132:41:[m[K [01;36m[Knote: [m[Kremove parentheses to default-initialize a variable
+[2.356s]   132 |         WaypointInfo WaypointMsgCallback[01;36m[K()[m[K;
+[2.356s]       |                                         [01;36m[K^~[m[K
+[2.356s]       |                                         [31m[K--[m[K
+[2.356s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:132:41:[m[K [01;36m[Knote: [m[Kor replace parentheses with braces to aggregate-initialize a variable
+[2.356s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:120:31:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktimestamp_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.356s]   120 |         std::atomic<uint64_t> [01;35m[Ktimestamp_[m[K;   //!< common synced timestamped
+[2.357s]       |                               [01;35m[K^~~~~~~~~~[m[K
+[2.357s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:122:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Koffboard_setpoint_counter_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.357s]   122 |         uint64_t [01;35m[Koffboard_setpoint_counter_[m[K;   //!< counter for the number of setpoints sent
+[2.357s]       |                  [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.357s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::arm()[m[K’:
+[2.357s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:141:32:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KOffboardControl::publish_vehicle_command(const uint16_t&, double)[m[K’
+[2.357s]   141 |         [01;31m[Kpublish_vehicle_command(VehicleCommand::VEHICLE_CMD_COMPONENT_ARM_DISARM, 1.0)[m[K;
+[2.357s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.357s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:192:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid OffboardControl::publish_vehicle_command(uint16_t, float, float)[m[K’
+[2.357s]   192 | void [01;36m[KOffboardControl[m[K::publish_vehicle_command(uint16_t command, float param1, float param2)
+[2.357s]       |      [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.357s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:192:6:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 2 provided
+[2.357s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::disarm()[m[K’:
+[2.357s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:151:32:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KOffboardControl::publish_vehicle_command(const uint16_t&, double)[m[K’
+[2.357s]   151 |         [01;31m[Kpublish_vehicle_command(VehicleCommand::VEHICLE_CMD_COMPONENT_ARM_DISARM, 0.0)[m[K;
+[2.357s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.357s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:192:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid OffboardControl::publish_vehicle_command(uint16_t, float, float)[m[K’
+[2.357s]   192 | void [01;36m[KOffboardControl[m[K::publish_vehicle_command(uint16_t command, float param1, float param2)
+[2.357s]       |      [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.357s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:192:6:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 2 provided
+[2.369s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::publish_offboard_control_mode()[m[K’:
+[2.369s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:169:9:[m[K [01;31m[Kerror: [m[K‘[01m[Koffboard_control_mode_publisher_[m[K’ was not declared in this scope
+[2.369s]   169 |         [01;31m[Koffboard_control_mode_publisher_[m[K->publish(msg);
+[2.369s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.380s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::publish_trajectory_setpoint()[m[K’:
+[2.380s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:183:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrajectory_setpoint_publisher_[m[K’ was not declared in this scope
+[2.380s]   183 |         [01;31m[Ktrajectory_setpoint_publisher_[m[K->publish(msg);
+[2.380s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.390s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::publish_vehicle_command(uint16_t, float, float)[m[K’:
+[2.390s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:204:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvehicle_command_publisher_[m[K’ was not declared in this scope
+[2.390s]   204 |         [01;31m[Kvehicle_command_publisher_[m[K->publish(msg);
+[2.390s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.402s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::publish_trajectory_setpoint_forward(float, float, float, float)[m[K’:
+[2.402s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:237:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrajectory_setpoint_publisher_[m[K’ was not declared in this scope
+[2.402s]   237 |         [01;31m[Ktrajectory_setpoint_publisher_[m[K->publish(msg);
+[2.402s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.406s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:[m[K At global scope:
+[2.406s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:251:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+[2.406s]   251 | }
+[2.406s]       |  [01;31m[K^[m[K
+[3.120s] gmake[2]: *** [CMakeFiles/offboard_control.dir/build.make:76: CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o] Error 1
+[3.121s] gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/offboard_control.dir/all] Error 2
+[3.121s] gmake: *** [Makefile:146: all] Error 2
+[3.123s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com' returned '2': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com -- -j8 -l8

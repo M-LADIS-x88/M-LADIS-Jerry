@@ -1,0 +1,15 @@
+In file included from [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/lib/frame_transforms.cpp:41[m[K:
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/include/px4_ros_com/frame_transforms.h:54:10:[m[K [01;31m[Kfatal error: [m[Ksensor_msgs/msg/imu.hpp: No such file or directory
+   54 | #include [01;31m[K<sensor_msgs/msg/imu.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/computer_viz/lidar_clustering.cpp:9:10:[m[K [01;31m[Kfatal error: [m[Ksensor_msgs/point_cloud2.h: No such file or directory
+    9 | #include [01;31m[K<sensor_msgs/point_cloud2.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/frame_transforms.dir/build.make:76: CMakeFiles/frame_transforms.dir/src/lib/frame_transforms.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:149: CMakeFiles/frame_transforms.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/lidar_clustering.dir/build.make:76: CMakeFiles/lidar_clustering.dir/src/computer_viz/lidar_clustering.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:305: CMakeFiles/lidar_clustering.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

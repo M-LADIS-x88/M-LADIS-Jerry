@@ -1,0 +1,122 @@
+[0.164s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com -DCMAKE_INSTALL_PREFIX=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com
+[0.316s] -- The C compiler identification is GNU 11.4.0
+[0.470s] -- The CXX compiler identification is GNU 11.4.0
+[0.500s] -- Detecting C compiler ABI info
+[0.690s] -- Detecting C compiler ABI info - done
+[0.719s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.726s] -- Detecting C compile features
+[0.729s] -- Detecting C compile features - done
+[0.761s] -- Detecting CXX compiler ABI info
+[0.989s] -- Detecting CXX compiler ABI info - done
+[1.013s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.013s] -- Detecting CXX compile features
+[1.015s] -- Detecting CXX compile features - done
+[1.039s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.466s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.765s] -- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[1.879s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.910s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.942s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.014s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.110s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.196s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[2.291s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.303s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.698s] -- Found px4_msgs: 2.0.1 (/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/cmake)
+[2.824s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[3.051s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.068s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.414s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.579s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.724s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.768s] -- Looking for pthread.h
+[4.006s] -- Looking for pthread.h - found
+[4.007s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.256s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.263s] -- Found Threads: TRUE  
+[4.796s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[5.116s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.511s] -- Added test 'copyright' to check source files copyright and LICENSE
+[5.520s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.523s] -- Configured cppcheck include dirs: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/include;$<BUILD_INTERFACE:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/include/px4_ros_com>
+[5.525s] -- Configured cppcheck exclude dirs and/or files: 
+[5.533s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[5.535s] -- Configured cpplint exclude dirs and/or files: 
+[5.539s] -- Added test 'flake8' to check Python code syntax and style conventions
+[5.545s] -- Added test 'lint_cmake' to check CMake code style
+[5.549s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[5.559s] -- Added test 'uncrustify' to check C / C++ code style
+[5.561s] -- Configured uncrustify additional arguments: 
+[5.566s] -- Added test 'xmllint' to check XML markup files
+[5.595s] -- Configuring done
+[5.701s] -- Generating done
+[5.709s] -- Build files have been written to: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com
+[5.734s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com' returned '0': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com -DCMAKE_INSTALL_PREFIX=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com
+[5.737s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com -- -j8 -l8
+[5.938s] [  8%] [32mBuilding CXX object CMakeFiles/debug_vect_advertiser.dir/src/examples/advertisers/debug_vect_advertiser.cpp.o[0m
+[5.960s] [ 16%] [32mBuilding CXX object CMakeFiles/vehicle_gps_position_listener.dir/src/examples/listeners/vehicle_gps_position_listener.cpp.o[0m
+[5.992s] [ 25%] [32mBuilding CXX object CMakeFiles/sensor_combined_listener.dir/src/examples/listeners/sensor_combined_listener.cpp.o[0m
+[6.016s] [ 33%] [32mBuilding CXX object CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o[0m
+[6.018s] [ 41%] [32mBuilding CXX object CMakeFiles/test_flight_control.dir/src/examples/offboard/test_flight_control.cpp.o[0m
+[6.020s] [ 50%] [32mBuilding CXX object CMakeFiles/frame_transforms.dir/src/lib/frame_transforms.cpp.o[0m
+[21.579s] [ 58%] [32m[1mLinking CXX executable debug_vect_advertiser[0m
+[22.100s] [ 66%] [32m[1mLinking CXX executable test_flight_control[0m
+[22.345s] [ 66%] Built target debug_vect_advertiser
+[22.908s] [ 66%] Built target test_flight_control
+[27.784s] [ 75%] [32m[1mLinking CXX shared library libframe_transforms.so[0m
+[28.425s] [ 75%] Built target frame_transforms
+[30.782s] [ 83%] [32m[1mLinking CXX executable sensor_combined_listener[0m
+[31.090s] [ 91%] [32m[1mLinking CXX executable vehicle_gps_position_listener[0m
+[31.507s] [ 91%] Built target sensor_combined_listener
+[31.549s] [100%] [32m[1mLinking CXX executable offboard_control[0m
+[31.970s] [100%] Built target vehicle_gps_position_listener
+[32.235s] [100%] Built target offboard_control
+[32.251s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com' returned '0': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com -- -j8 -l8
+[32.303s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com
+[32.314s] -- Install configuration: ""
+[32.314s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/sensor_combined_listener
+[32.318s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/sensor_combined_listener" to ""
+[32.318s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/vehicle_gps_position_listener
+[32.323s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/vehicle_gps_position_listener" to ""
+[32.323s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/debug_vect_advertiser
+[32.325s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/debug_vect_advertiser" to ""
+[32.325s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/offboard_control
+[32.331s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/offboard_control" to ""
+[32.331s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/test_flight_control
+[32.333s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/test_flight_control" to ""
+[32.333s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/library_path.sh
+[32.333s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/library_path.dsv
+[32.334s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/include/px4_ros_com
+[32.334s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/include/px4_ros_com/frame_transforms.h
+[32.334s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/lib/libframe_transforms.so
+[32.341s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/lib/libframe_transforms.so" to ""
+[32.341s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//launch
+[32.341s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//launch/offboard_control_launch.yaml
+[32.344s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//launch/sensor_combined_listener.launch.py
+[32.344s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//test
+[32.344s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//test/pipeline_io_test.py
+[32.345s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//test/test_output.py
+[32.345s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//test/__init__.py
+[32.345s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//test/test_input.py
+[32.346s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/ament_index/resource_index/package_run_dependencies/px4_ros_com
+[32.346s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/ament_index/resource_index/parent_prefix_path/px4_ros_com
+[32.347s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/ament_prefix_path.sh
+[32.347s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/ament_prefix_path.dsv
+[32.347s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/path.sh
+[32.348s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/path.dsv
+[32.348s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/local_setup.bash
+[32.348s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/local_setup.sh
+[32.348s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/local_setup.zsh
+[32.348s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/local_setup.dsv
+[32.349s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.dsv
+[32.349s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/ament_index/resource_index/packages/px4_ros_com
+[32.349s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/export_frame_transformsExport.cmake
+[32.350s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/export_frame_transformsExport-noconfig.cmake
+[32.350s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_dependencies-extras.cmake
+[32.350s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_targets-extras.cmake
+[32.351s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_include_directories-extras.cmake
+[32.351s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_libraries-extras.cmake
+[32.351s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/px4_ros_comConfig.cmake
+[32.351s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/px4_ros_comConfig-version.cmake
+[32.352s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.xml
+[32.355s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com' returned '0': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com

@@ -1,0 +1,308 @@
+[0.000000] (-) TimerEvent: {}
+[0.000561] (computer_viz) JobQueued: {'identifier': 'computer_viz', 'dependencies': OrderedDict()}
+[0.000600] (px4_msgs) JobQueued: {'identifier': 'px4_msgs', 'dependencies': OrderedDict()}
+[0.000617] (px4_ros_com) JobQueued: {'identifier': 'px4_ros_com', 'dependencies': OrderedDict([('px4_msgs', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs')])}
+[0.000892] (px4_msgs) JobStarted: {'identifier': 'px4_msgs'}
+[0.058199] (computer_viz) JobStarted: {'identifier': 'computer_viz'}
+[0.100005] (-) TimerEvent: {}
+[0.139401] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'cmake'}
+[0.142926] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'build'}
+[0.143597] (px4_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs', '--', '-j8', '-l8'], 'cwd': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robmoemac'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/robmoemac'), ('OLDPWD', '/home/robmoemac/M-LADIS-sim/PX4 Aux'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1881'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robmoemac'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'robmoemac'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/M-LADIS-sim/dev_ws/src/ground_jerry/description'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/robmoemac/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/robmoemac-XPS-13-7390-2-in-1:@/tmp/.ICE-unix/1664,unix/robmoemac-XPS-13-7390-2-in-1:/tmp/.ICE-unix/1664'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ed68efd7_0d5a_451d_8327_e18684dfc238'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ESIAK2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.200198] (-) TimerEvent: {}
+[0.268497] (computer_viz) StderrLine: {'line': b'Traceback (most recent call last):\n  File "/usr/lib/python3/dist-packages/colcon_core/executor/__init__.py", line 91, in __call__\n    rc = await self.task(*args, **kwargs)\n  File "/usr/lib/python3/dist-packages/colcon_core/task/__init__.py", line 93, in __call__\n    return await task_method(*args, **kwargs)\n  File "/usr/lib/python3/dist-packages/colcon_ros/task/ament_python/build.py", line 51, in build\n    setup_py_data = get_setup_data(self.context.pkg, env)\n  File "/usr/lib/python3/dist-packages/colcon_core/task/python/__init__.py", line 20, in get_setup_data\n    return dict(pkg.metadata[key](env))\n  File "/usr/lib/python3/dist-packages/colcon_ros/package_augmentation/ros_ament_python.py", line 57, in getter\n    return get_setup_information(\n  File "/usr/lib/python3/dist-packages/colcon_python_setup_py/package_identification/python_setup_py.py", line 241, in get_setup_information\n    _setup_information_cache[hashable_env] = _get_setup_information(\n  File "/usr/lib/python3/dist-packages/colcon_python_setup_py/package_identification/python_setup_py.py", line 288, in _get_setup_information\n    result = subprocess.run(\n  File "/usr/lib/python3.10/subprocess.py", line 526, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command \'[\'/usr/bin/python3\', \'-c\', \'import sys;from contextlib import suppress;exec("with suppress(ImportError):    from setuptools.extern.packaging.specifiers    import SpecifierSet");exec("with suppress(ImportError):    from packaging.specifiers import SpecifierSet");from distutils.core import run_setup;dist = run_setup(    \\\'setup.py\\\', script_args=(\\\'--dry-run\\\',), stop_after=\\\'config\\\');skip_keys = (\\\'cmdclass\\\', \\\'distclass\\\', \\\'ext_modules\\\', \\\'metadata\\\');data = {    key: value for key, value in dist.__dict__.items()     if (        not key.startswith(\\\'_\\\') and         not callable(value) and         key not in skip_keys and         key not in dist.display_option_names    )};data[\\\'metadata\\\'] = {    k: v for k, v in dist.metadata.__dict__.items()     if k not in (\\\'license_files\\\', \\\'provides_extras\\\')};sys.stdout.buffer.write(repr(data).encode(\\\'utf-8\\\'))\']\' returned non-zero exit status 1.\n'}
+[0.268989] (computer_viz) JobEnded: {'identifier': 'computer_viz', 'rc': 1}
+[0.300378] (-) TimerEvent: {}
+[0.400834] (-) TimerEvent: {}
+[0.501171] (-) TimerEvent: {}
+[0.601724] (-) TimerEvent: {}
+[0.702052] (-) TimerEvent: {}
+[0.802423] (-) TimerEvent: {}
+[0.871315] (px4_msgs) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_copy_px4_msgs\n'}
+[0.891242] (px4_msgs) StdoutLine: {'line': b'[  0%] Built target px4_msgs__cpp\n'}
+[0.902520] (-) TimerEvent: {}
+[0.983112] (px4_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target px4_msgs__rosidl_generator_c\x1b[0m\n'}
+[0.995065] (px4_msgs) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[0.995360] (px4_msgs) StderrLine: {'line': b'  File "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs/ament_cmake_python/px4_msgs/setup.py", line 1, in <module>\n'}
+[0.995485] (px4_msgs) StderrLine: {'line': b'    from setuptools import find_packages\n'}
+[0.995583] (px4_msgs) StderrLine: {'line': b"ImportError: cannot import name 'find_packages' from 'setuptools' (/home/robmoemac/.local/lib/python3.10/site-packages/setuptools/__init__.py)\n"}
+[1.002632] (-) TimerEvent: {}
+[1.011902] (px4_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ament_cmake_python_build_px4_msgs_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_px4_msgs_egg] Error 1\n'}
+[1.012227] (px4_msgs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:447: CMakeFiles/ament_cmake_python_build_px4_msgs_egg.dir/all] Error 2\n'}
+[1.012361] (px4_msgs) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[1.102791] (-) TimerEvent: {}
+[1.122027] (px4_msgs) StdoutLine: {'line': b'[ 12%] Built target px4_msgs__rosidl_generator_c\n'}
+[1.202886] (-) TimerEvent: {}
+[1.303405] (-) TimerEvent: {}
+[1.352726] (px4_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.403618] (-) TimerEvent: {}
+[1.504178] (-) TimerEvent: {}
+[1.549668] (px4_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.604355] (-) TimerEvent: {}
+[1.624719] (px4_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.704456] (-) TimerEvent: {}
+[1.804821] (-) TimerEvent: {}
+[1.905148] (-) TimerEvent: {}
+[2.005451] (-) TimerEvent: {}
+[2.105859] (-) TimerEvent: {}
+[2.206189] (-) TimerEvent: {}
+[2.306511] (-) TimerEvent: {}
+[2.406888] (-) TimerEvent: {}
+[2.507222] (-) TimerEvent: {}
+[2.607532] (-) TimerEvent: {}
+[2.707867] (-) TimerEvent: {}
+[2.808199] (-) TimerEvent: {}
+[2.908514] (-) TimerEvent: {}
+[3.008845] (-) TimerEvent: {}
+[3.109151] (-) TimerEvent: {}
+[3.209533] (-) TimerEvent: {}
+[3.309838] (-) TimerEvent: {}
+[3.410175] (-) TimerEvent: {}
+[3.510509] (-) TimerEvent: {}
+[3.610854] (-) TimerEvent: {}
+[3.711362] (-) TimerEvent: {}
+[3.813142] (-) TimerEvent: {}
+[3.913532] (-) TimerEvent: {}
+[4.013822] (-) TimerEvent: {}
+[4.114171] (-) TimerEvent: {}
+[4.214479] (-) TimerEvent: {}
+[4.314793] (-) TimerEvent: {}
+[4.415162] (-) TimerEvent: {}
+[4.515490] (-) TimerEvent: {}
+[4.615842] (-) TimerEvent: {}
+[4.716195] (-) TimerEvent: {}
+[4.816621] (-) TimerEvent: {}
+[4.916990] (-) TimerEvent: {}
+[5.017435] (-) TimerEvent: {}
+[5.119026] (-) TimerEvent: {}
+[5.219410] (-) TimerEvent: {}
+[5.319769] (-) TimerEvent: {}
+[5.420156] (-) TimerEvent: {}
+[5.520592] (-) TimerEvent: {}
+[5.621088] (-) TimerEvent: {}
+[5.721564] (-) TimerEvent: {}
+[5.821985] (-) TimerEvent: {}
+[5.922296] (-) TimerEvent: {}
+[6.022627] (-) TimerEvent: {}
+[6.122963] (-) TimerEvent: {}
+[6.223295] (-) TimerEvent: {}
+[6.323606] (-) TimerEvent: {}
+[6.423953] (-) TimerEvent: {}
+[6.524275] (-) TimerEvent: {}
+[6.624593] (-) TimerEvent: {}
+[6.724954] (-) TimerEvent: {}
+[6.825231] (-) TimerEvent: {}
+[6.925548] (-) TimerEvent: {}
+[7.025856] (-) TimerEvent: {}
+[7.126171] (-) TimerEvent: {}
+[7.226497] (-) TimerEvent: {}
+[7.326836] (-) TimerEvent: {}
+[7.427184] (-) TimerEvent: {}
+[7.527605] (-) TimerEvent: {}
+[7.627944] (-) TimerEvent: {}
+[7.728425] (-) TimerEvent: {}
+[7.828793] (-) TimerEvent: {}
+[7.929243] (-) TimerEvent: {}
+[8.029670] (-) TimerEvent: {}
+[8.130007] (-) TimerEvent: {}
+[8.230509] (-) TimerEvent: {}
+[8.330944] (-) TimerEvent: {}
+[8.431363] (-) TimerEvent: {}
+[8.531727] (-) TimerEvent: {}
+[8.632138] (-) TimerEvent: {}
+[8.732513] (-) TimerEvent: {}
+[8.832905] (-) TimerEvent: {}
+[8.933672] (-) TimerEvent: {}
+[9.034219] (-) TimerEvent: {}
+[9.138783] (-) TimerEvent: {}
+[9.239129] (-) TimerEvent: {}
+[9.339469] (-) TimerEvent: {}
+[9.439837] (-) TimerEvent: {}
+[9.540167] (-) TimerEvent: {}
+[9.640546] (-) TimerEvent: {}
+[9.741075] (-) TimerEvent: {}
+[9.841540] (-) TimerEvent: {}
+[9.942084] (-) TimerEvent: {}
+[10.042503] (-) TimerEvent: {}
+[10.142971] (-) TimerEvent: {}
+[10.243318] (-) TimerEvent: {}
+[10.343685] (-) TimerEvent: {}
+[10.444100] (-) TimerEvent: {}
+[10.544502] (-) TimerEvent: {}
+[10.645814] (-) TimerEvent: {}
+[10.746309] (-) TimerEvent: {}
+[10.846810] (-) TimerEvent: {}
+[10.947174] (-) TimerEvent: {}
+[11.047897] (-) TimerEvent: {}
+[11.148234] (-) TimerEvent: {}
+[11.248584] (-) TimerEvent: {}
+[11.349040] (-) TimerEvent: {}
+[11.449527] (-) TimerEvent: {}
+[11.549923] (-) TimerEvent: {}
+[11.650306] (-) TimerEvent: {}
+[11.750737] (-) TimerEvent: {}
+[11.851023] (-) TimerEvent: {}
+[11.951731] (-) TimerEvent: {}
+[12.052059] (-) TimerEvent: {}
+[12.152461] (-) TimerEvent: {}
+[12.252917] (-) TimerEvent: {}
+[12.353295] (-) TimerEvent: {}
+[12.453769] (-) TimerEvent: {}
+[12.554228] (-) TimerEvent: {}
+[12.654516] (-) TimerEvent: {}
+[12.754860] (-) TimerEvent: {}
+[12.855208] (-) TimerEvent: {}
+[12.955514] (-) TimerEvent: {}
+[13.055868] (-) TimerEvent: {}
+[13.156204] (-) TimerEvent: {}
+[13.256611] (-) TimerEvent: {}
+[13.357011] (-) TimerEvent: {}
+[13.457372] (-) TimerEvent: {}
+[13.557710] (-) TimerEvent: {}
+[13.658188] (-) TimerEvent: {}
+[13.758506] (-) TimerEvent: {}
+[13.858848] (-) TimerEvent: {}
+[13.959171] (-) TimerEvent: {}
+[14.059483] (-) TimerEvent: {}
+[14.159846] (-) TimerEvent: {}
+[14.260134] (-) TimerEvent: {}
+[14.360457] (-) TimerEvent: {}
+[14.460765] (-) TimerEvent: {}
+[14.561085] (-) TimerEvent: {}
+[14.661428] (-) TimerEvent: {}
+[14.761755] (-) TimerEvent: {}
+[14.862076] (-) TimerEvent: {}
+[14.962392] (-) TimerEvent: {}
+[15.062746] (-) TimerEvent: {}
+[15.163078] (-) TimerEvent: {}
+[15.263442] (-) TimerEvent: {}
+[15.363809] (-) TimerEvent: {}
+[15.464391] (-) TimerEvent: {}
+[15.564820] (-) TimerEvent: {}
+[15.665236] (-) TimerEvent: {}
+[15.765693] (-) TimerEvent: {}
+[15.866059] (-) TimerEvent: {}
+[15.966460] (-) TimerEvent: {}
+[16.066785] (-) TimerEvent: {}
+[16.167109] (-) TimerEvent: {}
+[16.267500] (-) TimerEvent: {}
+[16.367840] (-) TimerEvent: {}
+[16.468239] (-) TimerEvent: {}
+[16.568644] (-) TimerEvent: {}
+[16.669123] (-) TimerEvent: {}
+[16.769511] (-) TimerEvent: {}
+[16.869912] (-) TimerEvent: {}
+[16.970308] (-) TimerEvent: {}
+[17.070733] (-) TimerEvent: {}
+[17.171126] (-) TimerEvent: {}
+[17.271511] (-) TimerEvent: {}
+[17.371898] (-) TimerEvent: {}
+[17.472293] (-) TimerEvent: {}
+[17.572694] (-) TimerEvent: {}
+[17.673078] (-) TimerEvent: {}
+[17.773472] (-) TimerEvent: {}
+[17.873885] (-) TimerEvent: {}
+[17.974293] (-) TimerEvent: {}
+[18.074750] (-) TimerEvent: {}
+[18.175130] (-) TimerEvent: {}
+[18.275492] (-) TimerEvent: {}
+[18.375866] (-) TimerEvent: {}
+[18.476406] (-) TimerEvent: {}
+[18.576788] (-) TimerEvent: {}
+[18.677166] (-) TimerEvent: {}
+[18.777544] (-) TimerEvent: {}
+[18.877923] (-) TimerEvent: {}
+[18.978294] (-) TimerEvent: {}
+[19.078656] (-) TimerEvent: {}
+[19.179081] (-) TimerEvent: {}
+[19.197750] (px4_msgs) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[19.198077] (px4_msgs) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[19.198228] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp", line 28, in <module>\n'}
+[19.198369] (px4_msgs) StderrLine: {'line': b"gmake[2]: *** Deleting file 'rosidl_typesupport_cpp/px4_msgs/msg/action_request__type_support.cpp'\n"}
+[19.198505] (px4_msgs) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[19.198729] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/lib/rosidl_typesupport_fastrtps_cpp/rosidl_typesupport_fastrtps_cpp", line 23, in <module>\n'}
+[19.198921] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp", line 31, in <module>\n'}
+[19.199066] (px4_msgs) StderrLine: {'line': b"gmake[2]: *** Deleting file 'rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/action_request__type_support.cpp'\n"}
+[19.199201] (px4_msgs) StderrLine: {'line': b'    sys.exit(main())\n'}
+[19.199339] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp", line 24, in main\n'}
+[19.199524] (px4_msgs) StderrLine: {'line': b"gmake[2]: *** Deleting file 'rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/action_request__rosidl_typesupport_introspection_cpp.hpp'\n"}
+[19.199686] (px4_msgs) StderrLine: {'line': b'    sys.exit(main())\n'}
+[19.199863] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/lib/rosidl_typesupport_fastrtps_cpp/rosidl_typesupport_fastrtps_cpp", line 19, in main\n'}
+[19.200012] (px4_msgs) StderrLine: {'line': b'    generate_cpp(args.generator_arguments_file, args.typesupports)\n'}
+[19.200197] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_cpp/__init__.py", line 28, in generate_cpp\n'}
+[19.200339] (px4_msgs) StderrLine: {'line': b'    sys.exit(main())\n'}
+[19.200476] (px4_msgs) StderrLine: {'line': b'    generate_cpp(args.generator_arguments_file)\n'}
+[19.200617] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_fastrtps_cpp/__init__.py", line 24, in generate_cpp\n'}
+[19.200769] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp", line 27, in main\n'}
+[19.200921] (px4_msgs) StderrLine: {'line': b'    return generate_files(\n'}
+[19.201165] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 87, in generate_files\n'}
+[19.201306] (px4_msgs) StderrLine: {'line': b'    generate_cpp(args.generator_arguments_file)\n'}
+[19.201447] (px4_msgs) StderrLine: {'line': b'    return generate_files(generator_arguments_file, mapping)\n'}
+[19.201590] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 87, in generate_files\n'}
+[19.201774] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_introspection_cpp/__init__.py", line 31, in generate_cpp\n'}
+[19.201917] (px4_msgs) StderrLine: {'line': b'    expand_template(\n'}
+[19.202056] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 149, in expand_template\n'}
+[19.202229] (px4_msgs) StderrLine: {'line': b'    return generate_files(generator_arguments_file, mapping)\n'}
+[19.202369] (px4_msgs) StderrLine: {'line': b'    expand_template(\n'}
+[19.202508] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 74, in generate_files\n'}
+[19.202734] (px4_msgs) StderrLine: {'line': b'KeyboardInterrupt\n'}
+[19.202895] (px4_msgs) StderrLine: {'line': b'    interpreter.string(template_content, template_path, locals=data)\n'}
+[19.203045] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/em.py", line 2391, in string\n'}
+[19.203237] (px4_msgs) StderrLine: {'line': b'    idl_file = parse_idl_file(locator)\n'}
+[19.203381] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 64, in parse_idl_file\n'}
+[19.203521] (px4_msgs) StderrLine: {'line': b'    content = parse_idl_string(string, png_file=png_file)\n'}
+[19.203702] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 72, in parse_idl_string\n'}
+[19.203848] (px4_msgs) StderrLine: {'line': b'    tree = get_ast_from_idl_string(idl_string)\n'}
+[19.203989] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string\n'}
+[19.204172] (px4_msgs) StderrLine: {'line': b'    return _parser.parse(idl_string)\n'}
+[19.204325] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/lark.py", line 619, in parse\n'}
+[19.204476] (px4_msgs) StderrLine: {'line': b'    return self.parser.parse(text, start=start, on_error=on_error)\n'}
+[19.204623] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 99, in parse\n'}
+[19.204779] (px4_msgs) StderrLine: {'line': b'    self.safe(scanner, True, locals)\n'}
+[19.204926] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/em.py", line 2401, in safe\n'}
+[19.205072] (px4_msgs) StderrLine: {'line': b'    return self.parser.parse(stream, chosen_start, **kw)\n'}
+[19.205234] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 266, in parse\n'}
+[19.205389] (px4_msgs) StderrLine: {'line': b'    to_scan = self._parse(lexer, columns, to_scan, start_symbol)\n'}
+[19.205537] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 144, in _parse\n'}
+[19.205689] (px4_msgs) StderrLine: {'line': b'    self.parse(scanner, locals)\n'}
+[19.205838] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/em.py", line 2417, in parse\n'}
+[19.205985] (px4_msgs) StderrLine: {'line': b'    self.predict_and_complete(i, to_scan, columns, transitives)\n'}
+[19.206135] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 140, in predict_and_complete\n'}
+[19.206328] (px4_msgs) StderrLine: {'line': b'    new_item = Item(rule, 0, i)\n'}
+[19.206490] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley_common.py", line 22, in __init__\n'}
+[19.206650] (px4_msgs) StderrLine: {'line': b'    self.previous = rule.expansion[ptr - 1] if ptr > 0 and len(rule.expansion) else None\n'}
+[19.206842] (px4_msgs) StderrLine: {'line': b'KeyboardInterrupt\n'}
+[19.206999] (px4_msgs) StderrLine: {'line': b'    token = scanner.one()\n'}
+[19.207156] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/em.py", line 1984, in one\n'}
+[19.207326] (px4_msgs) StderrLine: {'line': b'    token.scan(self)\n'}
+[19.207514] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/em.py", line 1468, in scan\n'}
+[19.207692] (px4_msgs) StderrLine: {'line': b'    self.subscan(scanner, self.type)\n'}
+[19.207873] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/em.py", line 1483, in subscan\n'}
+[19.209122] (px4_msgs) StderrLine: {'line': b'    token = scanner.one()\n'}
+[19.209511] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/em.py", line 1984, in one\n'}
+[19.209660] (px4_msgs) StderrLine: {'line': b'    token.scan(self)\n'}
+[19.209806] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/em.py", line 1421, in scan\n'}
+[19.209959] (px4_msgs) StderrLine: {'line': b"    i = scanner.complex('{', '}', 0)\n"}
+[19.210127] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/em.py", line 1893, in complex\n'}
+[19.210302] (px4_msgs) StderrLine: {'line': b'    newQuote = self.check(i, quote)\n'}
+[19.210478] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/em.py", line 1774, in check\n'}
+[19.210694] (px4_msgs) StderrLine: {'line': b'    if self[i + 1] == self[i + 2] == quote:\n'}
+[19.210925] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/em.py", line 1682, in __getitem__\n'}
+[19.211138] (px4_msgs) StderrLine: {'line': b'    def __getitem__(self, index):\n'}
+[19.211412] (px4_msgs) StderrLine: {'line': b'KeyboardInterrupt\n'}
+[19.241733] (px4_msgs) StderrLine: {'line': b'Exception ignored in: <function Interpreter.__del__ at 0x7f9e84fc2050>\n'}
+[19.242014] (px4_msgs) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[19.242159] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/em.py", line 2094, in __del__\n'}
+[19.242301] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/em.py", line 2157, in shutdown\n'}
+[19.242444] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/em.py", line 2647, in finalize\n'}
+[19.242591] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/em.py", line 2200, in push\n'}
+[19.242854] (px4_msgs) StderrLine: {'line': b"AttributeError: '_io.TextIOWrapper' object has no attribute 'push'\n"}
+[19.245685] (px4_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make:283: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/action_request__type_support.cpp] Interrupt\n'}
+[19.246056] (px4_msgs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:291: CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/all] Interrupt\n'}
+[19.256312] (px4_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make:283: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/action_request__rosidl_typesupport_introspection_cpp.hpp] Interrupt\n'}
+[19.256602] (px4_msgs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/all] Interrupt\n'}
+[19.258013] (px4_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make:281: rosidl_typesupport_cpp/px4_msgs/msg/action_request__type_support.cpp] Interrupt\n'}
+[19.258212] (px4_msgs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/all] Interrupt\n'}
+[19.258490] (px4_msgs) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Interrupt\n'}
+[19.261339] (px4_msgs) JobEnded: {'identifier': 'px4_msgs', 'rc': 'SIGINT'}
+[19.272077] (px4_ros_com) JobSkipped: {'identifier': 'px4_ros_com'}
+[19.272239] (-) EventReactorShutdown: {}

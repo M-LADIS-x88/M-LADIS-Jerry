@@ -1,0 +1,11 @@
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/computer_viz/PointCloudProcessor.cpp:[m[K In member function ‘[01m[Kvoid PointCloudProcessor::pointCloudCallback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/computer_viz/PointCloudProcessor.cpp:44:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kmatrix_[m[K’ was not declared in this scope
+   44 |         for (const auto& row : [01;31m[Kmatrix_[m[K) {
+      |                                [01;31m[K^~~~~~~[m[K
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/computer_viz/PointCloudProcessor.cpp:[m[K At global scope:
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/computer_viz/PointCloudProcessor.cpp:60:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+   60 | [01;31m[K}[m[K;
+      | [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/PointCloudProcessor.dir/build.make:76: CMakeFiles/PointCloudProcessor.dir/src/computer_viz/PointCloudProcessor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/PointCloudProcessor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

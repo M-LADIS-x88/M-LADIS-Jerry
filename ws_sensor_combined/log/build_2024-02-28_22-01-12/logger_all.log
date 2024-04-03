@@ -1,0 +1,224 @@
+[1.179s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.180s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7ff1ac82e440>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ff1accdf550>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ff1accdf550>>)
+[1.240s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.240s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.240s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.241s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.241s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.241s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.241s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined'
+[1.241s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.241s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.241s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.241s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.241s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.241s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.241s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.241s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.241s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.255s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.255s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.255s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.255s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.255s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.255s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.255s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.255s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.255s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.255s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.256s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.256s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.256s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.256s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.256s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.256s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.256s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.256s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.256s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.256s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.256s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.256s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.256s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.256s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.256s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.256s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.256s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.256s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['ignore', 'ignore_ament_install']
+[1.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ignore'
+[1.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ignore_ament_install'
+[1.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['colcon_pkg']
+[1.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'colcon_pkg'
+[1.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['colcon_meta']
+[1.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'colcon_meta'
+[1.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['ros']
+[1.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ros'
+[1.259s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4_msgs' with type 'ros.ament_cmake' and name 'px4_msgs'
+[1.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['ignore', 'ignore_ament_install']
+[1.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ignore'
+[1.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ignore_ament_install'
+[1.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['colcon_pkg']
+[1.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'colcon_pkg'
+[1.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['colcon_meta']
+[1.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'colcon_meta'
+[1.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['ros']
+[1.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ros'
+[1.261s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4_ros_com' with type 'ros.ament_cmake' and name 'px4_ros_com'
+[1.261s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.261s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.261s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.261s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.261s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.365s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.404s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 303 installed packages in /opt/ros/humble
+[1.405s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.489s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_args' from command line to 'None'
+[1.489s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target' from command line to 'None'
+[1.489s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.489s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[1.489s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[1.489s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[1.489s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[1.489s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[1.489s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.489s] DEBUG:colcon.colcon_core.verb:Building package 'px4_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs', 'merge_install': False, 'path': '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_msgs', 'symlink_install': False, 'test_result_base': None}
+[1.506s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_args' from command line to 'None'
+[1.506s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_target' from command line to 'None'
+[1.506s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.506s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_clean_cache' from command line to 'False'
+[1.506s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_clean_first' from command line to 'False'
+[1.506s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_force_configure' from command line to 'False'
+[1.506s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'ament_cmake_args' from command line to 'None'
+[1.506s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'catkin_cmake_args' from command line to 'None'
+[1.506s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.506s] DEBUG:colcon.colcon_core.verb:Building package 'px4_ros_com' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com', 'merge_install': False, 'path': '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com', 'symlink_install': False, 'test_result_base': None}
+[1.522s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.541s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.541s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_msgs' with build type 'ament_cmake'
+[1.542s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_msgs'
+[1.569s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.569s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.570s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.614s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_msgs -DCMAKE_INSTALL_PREFIX=/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs
+[5.110s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_msgs -DCMAKE_INSTALL_PREFIX=/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs
+[5.113s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs -- -j16 -l16
+[177.973s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs -- -j16 -l16
+[181.948s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs
+[183.238s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_msgs)
+[183.239s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs
+[183.255s] Level 1:colcon.colcon_core.environment:checking '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs' for CMake module files
+[183.255s] Level 1:colcon.colcon_core.environment:checking '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs' for CMake config files
+[183.259s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[183.273s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[183.274s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[183.275s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[183.276s] Level 1:colcon.colcon_core.environment:checking '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib'
+[183.276s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[183.293s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[183.293s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[183.293s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[183.294s] Level 1:colcon.colcon_core.environment:checking '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/bin'
+[183.294s] Level 1:colcon.colcon_core.environment:checking '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[183.294s] Level 1:colcon.colcon_core.environment:checking '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib/python3.10/site-packages'
+[183.294s] Level 1:colcon.colcon_core.environment:checking '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/bin'
+[183.310s] INFO:colcon.colcon_core.shell:Creating package script '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.ps1'
+[183.311s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.dsv'
+[183.312s] INFO:colcon.colcon_core.shell:Creating package script '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.sh'
+[183.312s] INFO:colcon.colcon_core.shell:Creating package script '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.bash'
+[183.313s] INFO:colcon.colcon_core.shell:Creating package script '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.zsh'
+[183.313s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[187.275s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_msgs)
+[187.291s] Level 1:colcon.colcon_core.environment:checking '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs' for CMake module files
+[187.292s] Level 1:colcon.colcon_core.environment:checking '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs' for CMake config files
+[187.296s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[187.313s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[187.314s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[187.314s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[187.314s] Level 1:colcon.colcon_core.environment:checking '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib'
+[187.315s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[187.332s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[187.333s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[187.333s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[187.333s] Level 1:colcon.colcon_core.environment:checking '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/bin'
+[187.333s] Level 1:colcon.colcon_core.environment:checking '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[187.334s] Level 1:colcon.colcon_core.environment:checking '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib/python3.10/site-packages'
+[187.334s] Level 1:colcon.colcon_core.environment:checking '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/bin'
+[187.349s] INFO:colcon.colcon_core.shell:Creating package script '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.ps1'
+[187.349s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.dsv'
+[187.350s] INFO:colcon.colcon_core.shell:Creating package script '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.sh'
+[187.350s] INFO:colcon.colcon_core.shell:Creating package script '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.bash'
+[187.351s] INFO:colcon.colcon_core.shell:Creating package script '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.zsh'
+[187.351s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[187.351s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com' with build type 'ament_cmake'
+[187.351s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com'
+[187.369s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[187.369s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[187.413s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com': AMENT_PREFIX_PATH=/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com -DCMAKE_INSTALL_PREFIX=/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com
+[189.192s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com' returned '0': AMENT_PREFIX_PATH=/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com -DCMAKE_INSTALL_PREFIX=/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com
+[189.194s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com': AMENT_PREFIX_PATH=/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com -- -j16 -l16
+[201.327s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com' returned '0': AMENT_PREFIX_PATH=/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com -- -j16 -l16
+[201.373s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com': AMENT_PREFIX_PATH=/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com
+[201.417s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_ros_com)
+[201.418s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com' returned '0': AMENT_PREFIX_PATH=/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com
+[201.435s] Level 1:colcon.colcon_core.environment:checking '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com' for CMake module files
+[201.435s] Level 1:colcon.colcon_core.environment:checking '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com' for CMake config files
+[201.436s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'cmake_prefix_path')
+[201.454s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.ps1'
+[201.454s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.dsv'
+[201.455s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.sh'
+[201.455s] Level 1:colcon.colcon_core.environment:checking '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/lib'
+[201.455s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'ld_library_path_lib')
+[201.474s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.ps1'
+[201.475s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.dsv'
+[201.475s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.sh'
+[201.475s] Level 1:colcon.colcon_core.environment:checking '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/bin'
+[201.476s] Level 1:colcon.colcon_core.environment:checking '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/lib/pkgconfig/px4_ros_com.pc'
+[201.476s] Level 1:colcon.colcon_core.environment:checking '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/lib/python3.10/site-packages'
+[201.476s] Level 1:colcon.colcon_core.environment:checking '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/bin'
+[201.493s] INFO:colcon.colcon_core.shell:Creating package script '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.ps1'
+[201.493s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.dsv'
+[201.494s] INFO:colcon.colcon_core.shell:Creating package script '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.sh'
+[201.494s] INFO:colcon.colcon_core.shell:Creating package script '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.bash'
+[201.494s] INFO:colcon.colcon_core.shell:Creating package script '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.zsh'
+[201.494s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/colcon-core/packages/px4_ros_com)
+[201.558s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_ros_com)
+[201.578s] Level 1:colcon.colcon_core.environment:checking '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com' for CMake module files
+[201.578s] Level 1:colcon.colcon_core.environment:checking '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com' for CMake config files
+[201.579s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'cmake_prefix_path')
+[201.604s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.ps1'
+[201.605s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.dsv'
+[201.605s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.sh'
+[201.605s] Level 1:colcon.colcon_core.environment:checking '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/lib'
+[201.606s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'ld_library_path_lib')
+[201.622s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.ps1'
+[201.622s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.dsv'
+[201.623s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.sh'
+[201.623s] Level 1:colcon.colcon_core.environment:checking '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/bin'
+[201.623s] Level 1:colcon.colcon_core.environment:checking '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/lib/pkgconfig/px4_ros_com.pc'
+[201.624s] Level 1:colcon.colcon_core.environment:checking '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/lib/python3.10/site-packages'
+[201.624s] Level 1:colcon.colcon_core.environment:checking '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/bin'
+[201.640s] INFO:colcon.colcon_core.shell:Creating package script '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.ps1'
+[201.640s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.dsv'
+[201.641s] INFO:colcon.colcon_core.shell:Creating package script '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.sh'
+[201.641s] INFO:colcon.colcon_core.shell:Creating package script '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.bash'
+[201.641s] INFO:colcon.colcon_core.shell:Creating package script '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.zsh'
+[201.642s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/colcon-core/packages/px4_ros_com)
+[201.642s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[201.643s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[201.643s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[201.643s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[201.663s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[201.663s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[201.663s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[201.677s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[201.693s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/local_setup.ps1'
+[201.694s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/_local_setup_util_ps1.py'
+[201.695s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/setup.ps1'
+[201.712s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/local_setup.sh'
+[201.713s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/_local_setup_util_sh.py'
+[201.713s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/setup.sh'
+[201.732s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/local_setup.bash'
+[201.732s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/setup.bash'
+[201.750s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/local_setup.zsh'
+[201.751s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/setup.zsh'

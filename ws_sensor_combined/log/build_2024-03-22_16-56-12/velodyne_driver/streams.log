@@ -1,0 +1,114 @@
+[0.044s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_driver': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/velodyne/velodyne_driver -DCMAKE_INSTALL_PREFIX=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver
+[0.309s] -- The C compiler identification is GNU 11.4.0
+[0.557s] -- The CXX compiler identification is GNU 11.4.0
+[0.583s] -- Detecting C compiler ABI info
+[0.882s] -- Detecting C compiler ABI info - done
+[0.985s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.986s] -- Detecting C compile features
+[0.988s] -- Detecting C compile features - done
+[1.014s] -- Detecting CXX compiler ABI info
+[1.448s] -- Detecting CXX compiler ABI info - done
+[1.509s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.510s] -- Detecting CXX compile features
+[1.517s] -- Detecting CXX compile features - done
+[1.524s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[3.204s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.547s] -- Found diagnostic_msgs: 4.2.3 (/opt/ros/humble/share/diagnostic_msgs/cmake)
+[3.747s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.750s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.804s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.877s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.962s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.513s] -- Found diagnostic_updater: 3.1.2 (/opt/ros/humble/share/diagnostic_updater/cmake)
+[4.733s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[4.738s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[5.060s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[5.158s] -- Found FastRTPS: /opt/ros/humble/include  
+[5.318s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.351s] -- Looking for pthread.h
+[5.641s] -- Looking for pthread.h - found
+[5.644s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.951s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[5.952s] -- Found Threads: TRUE  
+[6.682s] -- Found rclcpp_components: 16.0.8 (/opt/ros/humble/share/rclcpp_components/cmake)
+[6.949s] -- Found tf2_ros: 0.25.6 (/opt/ros/humble/share/tf2_ros/cmake)
+[8.484s] -- Found velodyne_msgs: 2.4.0 (/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/cmake)
+[8.709s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[9.090s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[9.148s] -- Added test 'copyright' to check source files copyright and LICENSE
+[9.162s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[9.167s] -- Configured cppcheck include dirs: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/velodyne/velodyne_driver/include
+[9.171s] -- Configured cppcheck exclude dirs and/or files: 
+[9.182s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[9.183s] -- Configured cpplint exclude dirs and/or files: 
+[9.183s] -- Added test 'flake8' to check Python code syntax and style conventions
+[9.186s] -- Added test 'lint_cmake' to check CMake code style
+[9.191s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[9.202s] -- Added test 'uncrustify' to check C / C++ code style
+[9.211s] -- Configured uncrustify additional arguments: 
+[9.211s] -- Added test 'xmllint' to check XML markup files
+[9.213s] -- Configuring done
+[9.306s] -- Generating done
+[9.316s] -- Build files have been written to: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_driver
+[9.350s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_driver' returned '0': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/velodyne/velodyne_driver -DCMAKE_INSTALL_PREFIX=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver
+[9.352s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_driver': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_driver -- -j8 -l8
+[9.539s] [  8%] [32mBuilding CXX object src/lib/CMakeFiles/velodyne_input.dir/input.cpp.o[0m
+[9.545s] [ 16%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[9.549s] [ 25%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[15.728s] [ 33%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[16.310s] [ 33%] Built target gtest_main
+[30.192s] [ 41%] [32m[1mLinking CXX static library libgtest.a[0m
+[30.846s] [ 41%] Built target gtest
+[36.788s] [ 50%] [32m[1mLinking CXX shared library libvelodyne_input.so[0m
+[37.816s] [ 50%] Built target velodyne_input
+[38.062s] [ 58%] [32mBuilding CXX object CMakeFiles/velodyne_driver.dir/src/driver/driver.cpp.o[0m
+[69.352s] [ 66%] [32m[1mLinking CXX shared library libvelodyne_driver.so[0m
+[70.499s] [ 66%] Built target velodyne_driver
+[70.601s] [ 75%] [32mBuilding CXX object CMakeFiles/time_test.dir/tests/timeconversiontest.cpp.o[0m
+[84.866s] [ 83%] [32m[1mLinking CXX executable time_test[0m
+[85.675s] [ 83%] Built target time_test
+[85.754s] [ 91%] [32mBuilding CXX object CMakeFiles/velodyne_driver_node.dir/src/driver/velodyne_node.cpp.o[0m
+[100.396s] [100%] [32m[1mLinking CXX executable velodyne_driver_node[0m
+[101.035s] [100%] Built target velodyne_driver_node
+[101.085s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_driver' returned '0': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_driver -- -j8 -l8
+[101.202s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_driver': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_driver
+[101.230s] -- Install configuration: ""
+[101.231s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/lib/libvelodyne_driver.so
+[101.242s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/lib/libvelodyne_driver.so" to ""
+[101.252s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/lib/velodyne_driver/velodyne_driver_node
+[101.254s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/lib/velodyne_driver/velodyne_driver_node" to ""
+[101.255s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/include/velodyne_driver
+[101.255s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/include/velodyne_driver/time_conversion.hpp
+[101.256s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/include/velodyne_driver/input.hpp
+[101.256s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/include/velodyne_driver/driver.hpp
+[101.256s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/config
+[101.262s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/config/VLP32C-velodyne_driver_node-params.yaml
+[101.267s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/config/VLS128-velodyne_driver_node-params.yaml
+[101.268s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/config/VLP16-velodyne_driver_node-params.yaml
+[101.268s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/launch
+[101.269s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/launch/velodyne_driver_node-VLS128-launch.py
+[101.269s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/launch/velodyne_driver_node-VLP16-launch.py
+[101.270s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/launch/velodyne_driver_node-VLS128-composed-launch.py
+[101.271s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/launch/velodyne_driver_node-VLP32C-launch.py
+[101.271s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/launch/velodyne_driver_node-VLP16-composed-launch.py
+[101.272s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/launch/velodyne_driver_node-VLP32C-composed-launch.py
+[101.273s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/lib/velodyne_driver/vdump
+[101.274s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/ament_index/resource_index/package_run_dependencies/velodyne_driver
+[101.274s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/ament_index/resource_index/parent_prefix_path/velodyne_driver
+[101.274s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/environment/ament_prefix_path.sh
+[101.275s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/environment/ament_prefix_path.dsv
+[101.276s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/environment/path.sh
+[101.276s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/environment/path.dsv
+[101.277s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/local_setup.bash
+[101.277s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/local_setup.sh
+[101.278s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/local_setup.zsh
+[101.279s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/local_setup.dsv
+[101.279s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/package.dsv
+[101.281s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/ament_index/resource_index/packages/velodyne_driver
+[101.281s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/ament_index/resource_index/rclcpp_components/velodyne_driver
+[101.281s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/cmake/velodyne_driverConfig.cmake
+[101.282s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/cmake/velodyne_driverConfig-version.cmake
+[101.283s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/package.xml
+[101.283s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/lib/libvelodyne_input.so
+[101.284s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/lib/libvelodyne_input.so" to ""
+[101.301s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_driver' returned '0': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_driver

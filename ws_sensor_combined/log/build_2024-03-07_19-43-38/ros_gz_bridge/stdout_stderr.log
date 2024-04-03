@@ -1,0 +1,17 @@
+[  2%] Built target gtest_main
+[  4%] Built target gtest
+[  6%] Built target bridge_node
+[ 10%] Built target test_rcl_interfaces
+[ 13%] Built target test_utils
+[ 55%] Built target ros_gz_bridge
+[ 57%] Built target test_ros_client
+[ 60%] Built target test_gz_server
+[ 67%] Built target test_gz_publisher
+[ 67%] Built target test_gz_subscriber
+[ 70%] Built target test_ros_publisher
+[ 72%] Built target bridge_types
+[ 75%] Built target parameter_bridge
+[ 77%] Built target ros_gz_bridge_bridge_config
+[ 80%] Built target test_ros_gz_interfaces
+[ 82%] Built target static_bridge
+[100%] Built target test_ros_subscriber

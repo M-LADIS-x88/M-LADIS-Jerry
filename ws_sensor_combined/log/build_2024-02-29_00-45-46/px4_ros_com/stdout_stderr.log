@@ -1,0 +1,14 @@
+[ 21%] Built target offboard_control
+[ 28%] Built target debug_vect_advertiser
+[ 42%] Built target vehicle_gps_position_listener
+[ 57%] Built target frame_transforms
+[ 64%] [32mBuilding CXX object CMakeFiles/lidar_handoff.dir/src/examples/listeners/lidar_handoff.cpp.o[0m
+[ 92%] Built target test_flight_control
+[ 92%] Built target sensor_combined_listener
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/listeners/lidar_handoff.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Ksensor_msgs/msg/laser_scan.hpp: No such file or directory
+    2 | #include [01;31m[K"sensor_msgs/msg/laser_scan.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/lidar_handoff.dir/build.make:76: CMakeFiles/lidar_handoff.dir/src/examples/listeners/lidar_handoff.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:305: CMakeFiles/lidar_handoff.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

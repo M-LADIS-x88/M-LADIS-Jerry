@@ -1,0 +1,51 @@
+[0.050s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com -- -j8 -l8
+[0.085s] [35m[1mConsolidate compiler generated dependencies of target offboard_control[0m
+[0.093s] [ 40%] Built target frame_transforms
+[0.093s] [ 40%] Built target vehicle_gps_position_listener
+[0.100s] [ 50%] [32mBuilding CXX object CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o[0m
+[0.100s] [ 70%] Built target debug_vect_advertiser
+[0.101s] [ 90%] Built target sensor_combined_listener
+[1.936s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:[m[K In lambda function:
+[1.936s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:80:107:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.936s]    80 |                 "/fmu/in/autonomy_waypoint",10, [this]([01;35m[Kconst px4_msgs::msg::TrajectorySetpoint::UniquePtr msg[m[K) {
+[1.936s]       |                                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[1.940s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:39[m[K,
+[1.940s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[1.940s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[1.940s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.940s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.940s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.940s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.941s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.941s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.941s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.941s]                  from [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:46[m[K:
+[1.941s] /opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp: In instantiation of ‘[01m[Kstruct rclcpp::function_traits::function_traits<std::_Bind<OffboardControl::OffboardControl()::<lambda(px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >::SharedPtr)>(std::_Placeholder<1>)> >[m[K’:
+[1.941s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:165:8:[m[K   required from ‘[01m[Kstruct rclcpp::function_traits::same_arguments<std::_Bind<OffboardControl::OffboardControl()::<lambda(px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >::SharedPtr)>(std::_Placeholder<1>)>, std::function<void()> >[m[K’
+[1.941s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/timer.hpp:167:80:[m[K   required by substitution of ‘[01m[Ktemplate<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::create_wall_timer(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr) [with DurationRepT = long int; DurationT = std::ratio<1, 1000>; CallbackT = std::_Bind<OffboardControl::OffboardControl()::<lambda(px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >::SharedPtr)>(std::_Placeholder<1>)>][m[K’
+[1.941s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:114:35:[m[K   required from here
+[1.941s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:51:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdecltype[m[K’ cannot resolve address of overloaded function
+[1.941s]    51 |   using [01;31m[Karguments[m[K = typename tuple_tail<
+[1.941s]       |         [01;31m[K^~~~~~~~~[m[K
+[1.941s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:57:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdecltype[m[K’ cannot resolve address of overloaded function
+[1.941s]    57 |   using [01;31m[Kargument_type[m[K = typename std::tuple_element<N, arguments>::type;
+[1.941s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[1.941s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:59:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdecltype[m[K’ cannot resolve address of overloaded function
+[1.941s]    59 |   using [01;31m[Kreturn_type[m[K = typename function_traits<decltype( &FunctionT::operator())>::return_type;
+[1.941s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[1.941s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:[m[K In constructor ‘[01m[KOffboardControl::OffboardControl()[m[K’:
+[1.941s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:114:49:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KOffboardControl::create_wall_timer(std::chrono::milliseconds, std::_Bind_helper<false, OffboardControl::OffboardControl()::<lambda(px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >::SharedPtr)>&, const std::_Placeholder<1>&>::type)[m[K’
+[1.941s]   114 |                 timer_ = [01;31m[Kthis->create_wall_timer(100ms, std::bind(timer_callback, std::placeholders::_1))[m[K;
+[1.941s]       |                          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.941s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.941s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[1.942s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.942s]                  from [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:46[m[K:
+[1.942s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:238:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::create_wall_timer(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr)[m[K’
+[1.942s]   238 |   [01;36m[Kcreate_wall_timer[m[K(
+[1.942s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[1.942s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:238:3:[m[K [01;36m[Knote: [m[K  substitution of deduced template arguments resulted in errors seen above
+[4.020s] gmake[2]: *** [CMakeFiles/offboard_control.dir/build.make:76: CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o] Error 1
+[4.020s] gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/offboard_control.dir/all] Error 2
+[4.021s] gmake: *** [Makefile:146: all] Error 2
+[4.023s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com' returned '2': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com -- -j8 -l8

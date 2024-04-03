@@ -1,0 +1,9 @@
+gmake[2]: *** [CMakeFiles/ros_gz_bridge.dir/build.make:567: CMakeFiles/ros_gz_bridge.dir/generated/factories/rosgraph_msgs.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/ros_gz_bridge.dir/build.make:511: CMakeFiles/ros_gz_bridge.dir/generated/factories/geometry_msgs.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/ros_gz_bridge.dir/build.make:553: CMakeFiles/ros_gz_bridge.dir/generated/factories/ros_gz_interfaces.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/ros_gz_bridge.dir/build.make:581: CMakeFiles/ros_gz_bridge.dir/generated/factories/sensor_msgs.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/ros_gz_bridge.dir/build.make:595: CMakeFiles/ros_gz_bridge.dir/generated/factories/std_msgs.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/ros_gz_bridge.dir/build.make:539: CMakeFiles/ros_gz_bridge.dir/generated/factories/rcl_interfaces.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/ros_gz_bridge.dir/build.make:525: CMakeFiles/ros_gz_bridge.dir/generated/factories/nav_msgs.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:183: CMakeFiles/ros_gz_bridge.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

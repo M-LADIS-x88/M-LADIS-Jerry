@@ -1,0 +1,13 @@
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:[m[K In member function ‘[01m[Kvoid PointCloudProcessor::pointCloudCallback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:41:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kpc_cloud[m[K’ was not declared in this scope; did you mean ‘[01m[Kpcl_cloud[m[K’?
+   41 |       if([01;31m[Kpc_cloud[m[K->points[i].z > 2 || pc_cloud->points[i].z < -2){
+      |          [01;31m[K^~~~~~~~[m[K
+      |          [32m[Kpcl_cloud[m[K
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:[m[K At global scope:
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:64:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+   64 | [01;31m[K}[m[K;
+      | [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/PointCloudProcessor.dir/build.make:76: CMakeFiles/PointCloudProcessor.dir/src/PointCloudProcessor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/PointCloudProcessor.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

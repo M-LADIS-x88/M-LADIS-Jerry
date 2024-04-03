@@ -1,0 +1,40 @@
+[ 16%] Built target sensor_combined_listener
+[ 33%] Built target offboard_control
+[35m[1mConsolidate compiler generated dependencies of target PointCloudProcessor[0m
+[ 50%] Built target test_flight_control
+[ 66%] Built target vehicle_gps_position_listener
+[ 83%] Built target debug_vect_advertiser
+[ 91%] [32mBuilding CXX object CMakeFiles/PointCloudProcessor.dir/src/PointCloudProcessor.cpp.o[0m
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:56:2:[m[K [01;31m[Kerror: [m[Kunterminated argument list invoking macro "RCLCPP_INFO"
+   56 | }
+      |  [01;31m[K^[m[K
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:39:18:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+   39 |       RCLCPP_INFO[01;31m[K([m[Kthis->get_logger(), xyz_matrix(i,0);
+      |                  [01;31m[K^[m[K
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:15:49:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   15 | class PointCloudProcessor : public rclcpp::Node [01;36m[K{[m[K
+      |                                                 [01;36m[K^[m[K
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:[m[K In member function ‘[01m[Kvoid PointCloudProcessor::pointCloudCallback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:39:7:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLCPP_INFO[m[K’ was not declared in this scope
+   39 |       [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), xyz_matrix(i,0);
+      |       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:39:18:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+   39 |       RCLCPP_INFO[01;31m[K([m[Kthis->get_logger(), xyz_matrix(i,0);
+      |                  [01;31m[K^[m[K
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:35:52:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   35 |     for (size_t i = 0; i < pcl_cloud->size(); ++i) [01;36m[K{[m[K
+      |                                                    [01;36m[K^[m[K
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:39:18:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+   39 |       RCLCPP_INFO[01;31m[K([m[Kthis->get_logger(), xyz_matrix(i,0);
+      |                  [01;31m[K^[m[K
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:27:79:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   27 | ointCloudCallback(const sensor_msgs::msg::PointCloud2::SharedPtr msg) [01;36m[K{[m[K
+      |                                                                       [01;36m[K^[m[K
+
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:[m[K At global scope:
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:39:18:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+   39 |       RCLCPP_INFO[01;31m[K([m[Kthis->get_logger(), xyz_matrix(i,0);
+      |                  [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/PointCloudProcessor.dir/build.make:76: CMakeFiles/PointCloudProcessor.dir/src/PointCloudProcessor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/PointCloudProcessor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,678 @@
+[0.056s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_ign_interfaces': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_ign_interfaces -DCMAKE_INSTALL_PREFIX=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces
+[0.114s] -- The C compiler identification is GNU 11.4.0
+[0.175s] -- The CXX compiler identification is GNU 11.4.0
+[0.183s] -- Detecting C compiler ABI info
+[0.260s] -- Detecting C compiler ABI info - done
+[0.275s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.275s] -- Detecting C compile features
+[0.276s] -- Detecting C compile features - done
+[0.281s] -- Detecting CXX compiler ABI info
+[0.380s] -- Detecting CXX compiler ABI info - done
+[0.394s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.394s] -- Detecting CXX compile features
+[0.395s] -- Detecting CXX compile features - done
+[0.398s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.588s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.689s] -- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.722s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.727s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.735s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.749s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.768s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.787s] -- Found std_msgs: 4.2.3 (/opt/ros/humble/share/std_msgs/cmake)
+[0.822s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.870s] -- Found ros_gz_interfaces: 0.244.13 (/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake)
+[0.984s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.483s] -- Found ament_cmake_cppcheck: 0.12.10 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)
+[1.485s] -- Found ament_cmake_cpplint: 0.12.10 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)
+[1.487s] -- Found ament_cmake_uncrustify: 0.12.10 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)
+[1.489s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.065s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.305s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.336s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.337s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.369s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[2.369s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.369s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.369s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.394s] -- Found PythonExtra: .so  
+[2.505s] -- Found ament_cmake_flake8: 0.12.10 (/opt/ros/humble/share/ament_cmake_flake8/cmake)
+[2.507s] -- Found ament_cmake_pep257: 0.12.10 (/opt/ros/humble/share/ament_cmake_pep257/cmake)
+[2.515s] -- Configuring done
+[2.583s] -- Generating done
+[2.588s] -- Build files have been written to: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_ign_interfaces
+[2.598s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_ign_interfaces' returned '0': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_ign_interfaces -DCMAKE_INSTALL_PREFIX=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces
+[2.600s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_ign_interfaces': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_ign_interfaces -- -j8 -l8
+[2.657s] [  0%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.663s] [  0%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.682s] [  0%] Built target ament_cmake_python_copy_ros_ign_interfaces
+[3.072s] running egg_info
+[3.073s] creating ros_ign_interfaces.egg-info
+[3.073s] writing ros_ign_interfaces.egg-info/PKG-INFO
+[3.073s] writing dependency_links to ros_ign_interfaces.egg-info/dependency_links.txt
+[3.074s] writing top-level names to ros_ign_interfaces.egg-info/top_level.txt
+[3.074s] writing manifest file 'ros_ign_interfaces.egg-info/SOURCES.txt'
+[3.078s] reading manifest file 'ros_ign_interfaces.egg-info/SOURCES.txt'
+[3.079s] writing manifest file 'ros_ign_interfaces.egg-info/SOURCES.txt'
+[3.123s] [  0%] Built target ament_cmake_python_build_ros_ign_interfaces_egg
+[7.794s] [  0%] Built target ros_ign_interfaces__cpp
+[7.906s] [  1%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[7.910s] [  2%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[7.940s] [  2%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[11.283s] [  3%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_ign_interfaces/msg/detail/contacts__functions.c.o[0m
+[11.297s] [  4%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_ign_interfaces/msg/detail/contact__functions.c.o[0m
+[11.327s] [  4%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_ign_interfaces/msg/detail/entity__functions.c.o[0m
+[11.369s] [  5%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_ign_interfaces/msg/detail/entity_factory__functions.c.o[0m
+[11.419s] [  6%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_ign_interfaces/msg/detail/gui_camera__functions.c.o[0m
+[11.515s] [  6%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_ign_interfaces/msg/detail/joint_wrench__functions.c.o[0m
+[11.547s] [  8%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_ign_interfaces/msg/detail/string_vec__functions.c.o[0m
+[11.550s] [  8%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_ign_interfaces/msg/detail/light__functions.c.o[0m
+[11.692s] [  8%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_ign_interfaces/msg/detail/track_visual__functions.c.o[0m
+[11.798s] [  9%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_ign_interfaces/msg/detail/video_record__functions.c.o[0m
+[11.828s] [ 10%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_ign_interfaces/msg/detail/world_control__functions.c.o[0m
+[11.854s] [ 10%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_ign_interfaces/msg/detail/world_reset__functions.c.o[0m
+[11.884s] [ 11%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_ign_interfaces/srv/detail/control_world__functions.c.o[0m
+[12.029s] [ 12%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_ign_interfaces/srv/detail/delete_entity__functions.c.o[0m
+[12.106s] [ 12%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_ign_interfaces/srv/detail/set_entity_pose__functions.c.o[0m
+[12.202s] [ 13%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_ign_interfaces/srv/detail/spawn_entity__functions.c.o[0m
+[12.500s] [ 14%] [32m[1mLinking C shared library libros_ign_interfaces__rosidl_generator_c.so[0m
+[12.933s] [ 14%] Built target ros_ign_interfaces__rosidl_generator_c
+[13.000s] [ 15%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[13.015s] [ 16%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[13.060s] [ 17%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[16.088s] [ 18%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_ign_interfaces/msg/contact__type_support.cpp.o[0m
+[16.171s] [ 18%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_ign_interfaces/msg/contacts__type_support.cpp.o[0m
+[16.183s] [ 19%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_ign_interfaces/msg/entity__type_support.cpp.o[0m
+[17.095s] [ 20%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_ign_interfaces/msg/entity_factory__type_support.cpp.o[0m
+[17.250s] [ 20%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_ign_interfaces/msg/gui_camera__type_support.cpp.o[0m
+[17.316s] [ 21%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_ign_interfaces/msg/detail/contact__type_support.cpp.o[0m
+[17.566s] [ 22%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_ign_interfaces/msg/joint_wrench__type_support.cpp.o[0m
+[18.044s] [ 23%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_ign_interfaces/msg/detail/dds_fastrtps/contact__type_support.cpp.o[0m
+[18.507s] [ 24%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_ign_interfaces/msg/light__type_support.cpp.o[0m
+[18.702s] [ 24%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_ign_interfaces/msg/string_vec__type_support.cpp.o[0m
+[18.820s] [ 25%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_ign_interfaces/msg/track_visual__type_support.cpp.o[0m
+[19.245s] [ 26%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_ign_interfaces/msg/video_record__type_support.cpp.o[0m
+[19.752s] [ 27%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_ign_interfaces/msg/detail/contacts__type_support.cpp.o[0m
+[19.983s] [ 27%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_ign_interfaces/msg/detail/dds_fastrtps/contacts__type_support.cpp.o[0m
+[20.004s] [ 28%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_ign_interfaces/msg/detail/dds_fastrtps/entity__type_support.cpp.o[0m
+[20.388s] [ 28%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_ign_interfaces/msg/detail/entity__type_support.cpp.o[0m
+[20.961s] [ 29%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_ign_interfaces/msg/detail/dds_fastrtps/entity_factory__type_support.cpp.o[0m
+[21.083s] [ 29%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_ign_interfaces/msg/world_control__type_support.cpp.o[0m
+[21.556s] [ 30%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_ign_interfaces/msg/detail/entity_factory__type_support.cpp.o[0m
+[21.776s] [ 31%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_ign_interfaces/msg/world_reset__type_support.cpp.o[0m
+[21.994s] [ 31%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_ign_interfaces/msg/contact__type_support.cpp.o[0m
+[22.056s] [ 32%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_ign_interfaces/msg/contacts__type_support.cpp.o[0m
+[22.119s] [ 33%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_ign_interfaces/msg/entity__type_support.cpp.o[0m
+[22.344s] [ 33%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_ign_interfaces/msg/entity_factory__type_support.cpp.o[0m
+[22.548s] [ 34%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_ign_interfaces/msg/gui_camera__type_support.cpp.o[0m
+[22.580s] [ 34%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_ign_interfaces/msg/detail/dds_fastrtps/gui_camera__type_support.cpp.o[0m
+[22.581s] [ 35%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_ign_interfaces/msg/joint_wrench__type_support.cpp.o[0m
+[22.771s] [ 35%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_ign_interfaces/msg/light__type_support.cpp.o[0m
+[22.794s] [ 36%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_ign_interfaces/msg/string_vec__type_support.cpp.o[0m
+[22.898s] [ 37%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_ign_interfaces/msg/detail/gui_camera__type_support.cpp.o[0m
+[22.925s] [ 38%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_ign_interfaces/srv/control_world__type_support.cpp.o[0m
+[23.023s] [ 39%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_ign_interfaces/msg/track_visual__type_support.cpp.o[0m
+[23.087s] [ 39%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_ign_interfaces/msg/detail/joint_wrench__type_support.cpp.o[0m
+[23.280s] [ 39%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_ign_interfaces/msg/video_record__type_support.cpp.o[0m
+[23.383s] [ 40%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_ign_interfaces/msg/world_control__type_support.cpp.o[0m
+[23.515s] [ 41%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_ign_interfaces/msg/world_reset__type_support.cpp.o[0m
+[23.647s] [ 42%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_ign_interfaces/msg/detail/contact__type_support.c.o[0m
+[23.694s] [ 42%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_ign_interfaces/srv/delete_entity__type_support.cpp.o[0m
+[23.732s] [ 42%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_ign_interfaces/srv/control_world__type_support.cpp.o[0m
+[23.733s] [ 42%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_ign_interfaces/msg/detail/contacts__type_support.c.o[0m
+[23.799s] [ 43%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_ign_interfaces/srv/set_entity_pose__type_support.cpp.o[0m
+[23.867s] [ 44%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_ign_interfaces/srv/delete_entity__type_support.cpp.o[0m
+[23.921s] [ 44%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_ign_interfaces/msg/detail/contact__type_support_c.cpp.o[0m
+[23.990s] [ 45%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_ign_interfaces/msg/detail/entity__type_support.c.o[0m
+[24.084s] [ 46%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_ign_interfaces/srv/set_entity_pose__type_support.cpp.o[0m
+[24.263s] [ 47%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_ign_interfaces/msg/detail/entity_factory__type_support.c.o[0m
+[24.344s] [ 47%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_ign_interfaces/srv/spawn_entity__type_support.cpp.o[0m
+[24.382s] [ 48%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_ign_interfaces/msg/detail/dds_fastrtps/joint_wrench__type_support.cpp.o[0m
+[24.418s] [ 49%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_ign_interfaces/srv/spawn_entity__type_support.cpp.o[0m
+[24.429s] [ 49%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_ign_interfaces/msg/detail/gui_camera__type_support.c.o[0m
+[24.515s] [ 50%] [32m[1mLinking CXX shared library libros_ign_interfaces__rosidl_typesupport_c.so[0m
+[24.662s] [ 51%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_ign_interfaces/msg/detail/joint_wrench__type_support.c.o[0m
+[24.700s] [ 51%] Built target ros_ign_interfaces__rosidl_typesupport_c
+[24.836s] [ 52%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_ign_interfaces/msg/detail/light__type_support.c.o[0m
+[25.111s] [ 52%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_ign_interfaces/msg/detail/string_vec__type_support.c.o[0m
+[25.329s] [ 53%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_ign_interfaces/msg/detail/track_visual__type_support.c.o[0m
+[25.367s] [ 54%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_ign_interfaces/msg/detail/light__type_support.cpp.o[0m
+[25.547s] [ 55%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_ign_interfaces/msg/detail/video_record__type_support.c.o[0m
+[25.691s] [ 55%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_ign_interfaces/msg/detail/world_control__type_support.c.o[0m
+[25.759s] [ 55%] [32m[1mLinking CXX shared library libros_ign_interfaces__rosidl_typesupport_cpp.so[0m
+[25.783s] [ 56%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_ign_interfaces/msg/detail/contacts__type_support_c.cpp.o[0m
+[25.812s] [ 57%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_ign_interfaces/msg/detail/dds_fastrtps/track_visual__type_support.cpp.o[0m
+[25.932s] [ 58%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_ign_interfaces/msg/detail/world_reset__type_support.c.o[0m
+[26.114s] [ 58%] Built target ros_ign_interfaces__rosidl_typesupport_cpp
+[26.133s] [ 59%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_ign_interfaces/srv/detail/control_world__type_support.c.o[0m
+[26.269s] [ 59%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_ign_interfaces/srv/detail/delete_entity__type_support.c.o[0m
+[26.536s] [ 60%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_ign_interfaces/srv/detail/set_entity_pose__type_support.c.o[0m
+[26.747s] [ 61%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_ign_interfaces/msg/detail/string_vec__type_support.cpp.o[0m
+[26.760s] [ 62%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_ign_interfaces/srv/detail/spawn_entity__type_support.c.o[0m
+[26.939s] [ 62%] [32m[1mLinking C shared library libros_ign_interfaces__rosidl_typesupport_introspection_c.so[0m
+[27.137s] [ 62%] Built target ros_ign_interfaces__rosidl_typesupport_introspection_c
+[27.266s] [ 63%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_ign_interfaces/msg/detail/entity__type_support_c.cpp.o[0m
+[27.374s] [ 64%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_ign_interfaces/msg/detail/dds_fastrtps/video_record__type_support.cpp.o[0m
+[28.207s] [ 65%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_ign_interfaces/msg/detail/video_record__type_support.cpp.o[0m
+[28.394s] [ 65%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_ign_interfaces/msg/detail/dds_fastrtps/world_control__type_support.cpp.o[0m
+[28.495s] [ 65%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_ign_interfaces/msg/detail/entity_factory__type_support_c.cpp.o[0m
+[29.273s] [ 65%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_ign_interfaces/msg/detail/world_reset__type_support.cpp.o[0m
+[29.420s] [ 65%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_ign_interfaces/msg/detail/dds_fastrtps/string_vec__type_support.cpp.o[0m
+[29.436s] [ 66%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_ign_interfaces/msg/detail/gui_camera__type_support_c.cpp.o[0m
+[30.514s] [ 67%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_ign_interfaces/msg/detail/dds_fastrtps/world_reset__type_support.cpp.o[0m
+[30.603s] [ 68%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_ign_interfaces/msg/detail/joint_wrench__type_support_c.cpp.o[0m
+[30.667s] [ 69%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_ign_interfaces/srv/detail/delete_entity__type_support.cpp.o[0m
+[31.263s] [ 69%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_ign_interfaces/msg/detail/light__type_support_c.cpp.o[0m
+[31.524s] [ 70%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_ign_interfaces/srv/detail/control_world__type_support.cpp.o[0m
+[31.544s] [ 71%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_ign_interfaces/srv/detail/dds_fastrtps/control_world__type_support.cpp.o[0m
+[31.927s] [ 72%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_ign_interfaces/msg/detail/string_vec__type_support_c.cpp.o[0m
+[32.240s] [ 72%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_ign_interfaces/srv/detail/set_entity_pose__type_support.cpp.o[0m
+[32.306s] [ 72%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_ign_interfaces/srv/detail/dds_fastrtps/delete_entity__type_support.cpp.o[0m
+[32.545s] [ 73%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_ign_interfaces/msg/detail/track_visual__type_support_c.cpp.o[0m
+[32.956s] [ 74%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_ign_interfaces/srv/detail/spawn_entity__type_support.cpp.o[0m
+[33.061s] [ 75%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_ign_interfaces/srv/detail/dds_fastrtps/set_entity_pose__type_support.cpp.o[0m
+[33.185s] [ 76%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_ign_interfaces/msg/detail/world_control__type_support_c.cpp.o[0m
+[33.673s] [ 77%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_ign_interfaces/msg/detail/world_control__type_support.cpp.o[0m
+[33.793s] [ 78%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_ign_interfaces/msg/detail/world_reset__type_support_c.cpp.o[0m
+[33.811s] [ 79%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_ign_interfaces/srv/detail/dds_fastrtps/spawn_entity__type_support.cpp.o[0m
+[34.367s] [ 79%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_ign_interfaces/msg/detail/track_visual__type_support.cpp.o[0m
+[34.408s] [ 80%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_ign_interfaces/srv/detail/set_entity_pose__type_support_c.cpp.o[0m
+[34.565s] [ 81%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_ign_interfaces/msg/detail/dds_fastrtps/light__type_support.cpp.o[0m
+[35.051s] [ 81%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_ign_interfaces/srv/detail/spawn_entity__type_support_c.cpp.o[0m
+[35.159s] [ 82%] [32m[1mLinking CXX shared library libros_ign_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[35.325s] [ 82%] Built target ros_ign_interfaces__rosidl_typesupport_introspection_cpp
+[35.360s] [ 82%] [32m[1mLinking CXX shared library libros_ign_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[35.598s] [ 82%] Built target ros_ign_interfaces__rosidl_typesupport_fastrtps_cpp
+[35.721s] [ 83%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_ign_interfaces/srv/detail/delete_entity__type_support_c.cpp.o[0m
+[36.327s] [ 83%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_ign_interfaces/srv/detail/control_world__type_support_c.cpp.o[0m
+[36.951s] [ 83%] [32mBuilding CXX object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_ign_interfaces/msg/detail/video_record__type_support_c.cpp.o[0m
+[37.555s] [ 84%] [32m[1mLinking CXX shared library libros_ign_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[37.749s] [ 84%] Built target ros_ign_interfaces__rosidl_typesupport_fastrtps_c
+[37.781s] [ 84%] Built target ros_ign_interfaces
+[37.816s] [ 85%] [34m[1mGenerating Python code for ROS interfaces[0m
+[42.970s] [ 85%] Built target ros_ign_interfaces__py
+[42.992s] [ 85%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_ign_interfaces/msg/_contact_s.c.o[0m
+[43.125s] [ 86%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_ign_interfaces/msg/_string_vec_s.c.o[0m
+[43.244s] [ 87%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_ign_interfaces/msg/_track_visual_s.c.o[0m
+[43.369s] [ 87%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_ign_interfaces/msg/_video_record_s.c.o[0m
+[43.563s] [ 88%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_ign_interfaces/msg/_world_control_s.c.o[0m
+[43.752s] [ 89%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_ign_interfaces/msg/_world_reset_s.c.o[0m
+[43.942s] [ 89%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_ign_interfaces/srv/_control_world_s.c.o[0m
+[44.126s] [ 90%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_ign_interfaces/srv/_delete_entity_s.c.o[0m
+[44.253s] [ 91%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_ign_interfaces/srv/_set_entity_pose_s.c.o[0m
+[44.376s] [ 91%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_ign_interfaces/srv/_spawn_entity_s.c.o[0m
+[44.521s] [ 91%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_ign_interfaces/msg/_light_s.c.o[0m
+[44.644s] [ 92%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_ign_interfaces/msg/_joint_wrench_s.c.o[0m
+[44.760s] [ 93%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_ign_interfaces/msg/_gui_camera_s.c.o[0m
+[44.881s] [ 93%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_ign_interfaces/msg/_entity_factory_s.c.o[0m
+[45.031s] [ 94%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_ign_interfaces/msg/_entity_s.c.o[0m
+[45.202s] [ 95%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_ign_interfaces/msg/_contacts_s.c.o[0m
+[45.401s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/ros_ign_interfaces/libros_ign_interfaces__rosidl_generator_py.so[0m
+[45.538s] [ 96%] Built target ros_ign_interfaces__rosidl_generator_py
+[45.569s] [ 97%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ros_ign_interfaces/_ros_ign_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[45.869s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/ros_ign_interfaces/ros_ign_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[45.942s] [ 97%] Built target ros_ign_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[45.964s] [ 98%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ros_ign_interfaces/_ros_ign_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[46.155s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/ros_ign_interfaces/ros_ign_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[46.205s] [ 98%] Built target ros_ign_interfaces__rosidl_typesupport_c__pyext
+[46.236s] [ 99%] [32mBuilding C object CMakeFiles/ros_ign_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ros_ign_interfaces/_ros_ign_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[46.462s] [100%] [32m[1mLinking C shared library rosidl_generator_py/ros_ign_interfaces/ros_ign_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[46.540s] [100%] Built target ros_ign_interfaces__rosidl_typesupport_introspection_c__pyext
+[46.556s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_ign_interfaces' returned '0': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_ign_interfaces -- -j8 -l8
+[46.962s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_ign_interfaces': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_ign_interfaces
+[46.974s] -- Install configuration: ""
+[46.974s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ament_index/resource_index/rosidl_interfaces/ros_ign_interfaces
+[46.974s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces
+[46.974s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv
+[46.975s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/control_world.h
+[46.975s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail
+[46.975s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/spawn_entity__struct.h
+[46.975s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/delete_entity__functions.h
+[46.975s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/set_entity_pose__type_support.h
+[46.976s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/set_entity_pose__functions.c
+[46.976s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/delete_entity__type_support.h
+[46.976s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/spawn_entity__functions.h
+[46.976s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/control_world__struct.h
+[46.976s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/spawn_entity__functions.c
+[46.976s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/delete_entity__functions.c
+[46.977s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/delete_entity__struct.h
+[46.977s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/set_entity_pose__functions.h
+[46.977s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/spawn_entity__type_support.h
+[46.977s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/set_entity_pose__struct.h
+[46.977s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/control_world__type_support.h
+[46.977s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/control_world__functions.c
+[46.978s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/control_world__functions.h
+[46.978s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/set_entity_pose.h
+[46.978s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/delete_entity.h
+[46.978s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/spawn_entity.h
+[46.978s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg
+[46.978s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail
+[46.979s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/light__type_support.h
+[46.979s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/world_reset__functions.h
+[46.979s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/light__struct.h
+[46.979s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/joint_wrench__type_support.h
+[46.979s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/video_record__struct.h
+[46.979s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/contact__functions.h
+[46.980s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/track_visual__type_support.h
+[46.980s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/entity_factory__functions.c
+[46.980s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/video_record__functions.h
+[46.980s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/joint_wrench__struct.h
+[46.980s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/world_control__functions.c
+[46.981s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/contact__type_support.h
+[46.981s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/contact__struct.h
+[46.981s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/world_control__struct.h
+[46.981s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/track_visual__functions.c
+[46.981s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/video_record__functions.c
+[46.981s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/string_vec__struct.h
+[46.982s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/entity_factory__type_support.h
+[46.982s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/entity_factory__functions.h
+[46.982s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/world_reset__functions.c
+[46.982s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/contacts__type_support.h
+[46.982s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/string_vec__type_support.h
+[46.982s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/joint_wrench__functions.c
+[46.982s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/world_reset__type_support.h
+[46.983s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/contact__functions.c
+[46.983s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/entity_factory__struct.h
+[46.983s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/gui_camera__type_support.h
+[46.983s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/gui_camera__struct.h
+[46.984s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/track_visual__struct.h
+[46.984s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/contacts__functions.c
+[46.984s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/gui_camera__functions.c
+[46.984s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/contacts__functions.h
+[46.984s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/joint_wrench__functions.h
+[46.984s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/world_control__type_support.h
+[46.985s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/entity__functions.h
+[46.985s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/contacts__struct.h
+[46.985s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/string_vec__functions.h
+[46.985s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/world_reset__struct.h
+[46.985s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/track_visual__functions.h
+[46.985s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/string_vec__functions.c
+[46.986s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/entity__struct.h
+[46.986s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/video_record__type_support.h
+[46.986s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/light__functions.c
+[46.986s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/entity__type_support.h
+[46.986s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/gui_camera__functions.h
+[46.986s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/light__functions.h
+[46.986s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/entity__functions.c
+[46.986s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/world_control__functions.h
+[46.987s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/light.h
+[46.987s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/world_control.h
+[46.987s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/rosidl_generator_c__visibility_control.h
+[46.987s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/contacts.h
+[46.987s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/joint_wrench.h
+[46.987s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/contact.h
+[46.987s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/gui_camera.h
+[46.987s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/track_visual.h
+[46.988s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/entity_factory.h
+[46.988s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/world_reset.h
+[46.988s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/string_vec.h
+[46.988s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/video_record.h
+[46.988s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/entity.h
+[46.988s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/environment/library_path.sh
+[46.988s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/environment/library_path.dsv
+[46.988s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/lib/libros_ign_interfaces__rosidl_generator_c.so
+[46.989s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/lib/libros_ign_interfaces__rosidl_generator_c.so" to ""
+[46.989s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces
+[46.989s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv
+[46.989s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail
+[46.989s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/set_entity_pose__rosidl_typesupport_fastrtps_c.h
+[46.989s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/control_world__rosidl_typesupport_fastrtps_c.h
+[46.989s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/delete_entity__rosidl_typesupport_fastrtps_c.h
+[46.989s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/spawn_entity__rosidl_typesupport_fastrtps_c.h
+[46.990s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg
+[46.990s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail
+[46.990s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/video_record__rosidl_typesupport_fastrtps_c.h
+[46.990s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/contacts__rosidl_typesupport_fastrtps_c.h
+[46.990s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/contact__rosidl_typesupport_fastrtps_c.h
+[46.990s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/world_reset__rosidl_typesupport_fastrtps_c.h
+[46.990s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/track_visual__rosidl_typesupport_fastrtps_c.h
+[46.991s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/string_vec__rosidl_typesupport_fastrtps_c.h
+[46.991s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/joint_wrench__rosidl_typesupport_fastrtps_c.h
+[46.991s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/world_control__rosidl_typesupport_fastrtps_c.h
+[46.991s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/light__rosidl_typesupport_fastrtps_c.h
+[46.991s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/entity_factory__rosidl_typesupport_fastrtps_c.h
+[46.991s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/entity__rosidl_typesupport_fastrtps_c.h
+[46.992s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/gui_camera__rosidl_typesupport_fastrtps_c.h
+[46.992s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[46.992s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/lib/libros_ign_interfaces__rosidl_typesupport_fastrtps_c.so
+[46.992s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/lib/libros_ign_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[46.992s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces
+[46.992s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv
+[46.992s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/set_entity_pose.hpp
+[46.992s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail
+[46.993s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/control_world__traits.hpp
+[46.993s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/spawn_entity__struct.hpp
+[46.993s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/control_world__struct.hpp
+[46.993s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/spawn_entity__traits.hpp
+[46.993s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/delete_entity__builder.hpp
+[46.993s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/spawn_entity__builder.hpp
+[46.993s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/delete_entity__struct.hpp
+[46.993s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/set_entity_pose__builder.hpp
+[46.994s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/set_entity_pose__traits.hpp
+[46.994s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/control_world__builder.hpp
+[46.994s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/set_entity_pose__struct.hpp
+[46.994s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/delete_entity__traits.hpp
+[46.994s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/control_world.hpp
+[46.994s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/spawn_entity.hpp
+[46.994s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/delete_entity.hpp
+[46.995s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg
+[46.995s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/string_vec.hpp
+[46.995s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail
+[46.995s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/contact__builder.hpp
+[46.995s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/video_record__builder.hpp
+[46.995s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/joint_wrench__traits.hpp
+[46.995s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/contacts__builder.hpp
+[46.996s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/gui_camera__traits.hpp
+[46.996s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/track_visual__struct.hpp
+[46.996s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/contacts__traits.hpp
+[46.996s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/joint_wrench__builder.hpp
+[46.996s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/world_reset__builder.hpp
+[46.996s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/entity_factory__builder.hpp
+[46.996s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/track_visual__builder.hpp
+[46.996s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/entity_factory__struct.hpp
+[46.997s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/contact__traits.hpp
+[46.997s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/entity__builder.hpp
+[46.997s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/world_reset__struct.hpp
+[46.997s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/string_vec__struct.hpp
+[46.997s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/string_vec__traits.hpp
+[46.997s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/entity__struct.hpp
+[46.997s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/joint_wrench__struct.hpp
+[46.998s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/video_record__traits.hpp
+[46.998s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/light__traits.hpp
+[46.998s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/world_control__builder.hpp
+[46.998s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/world_control__struct.hpp
+[46.998s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/string_vec__builder.hpp
+[46.998s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/entity__traits.hpp
+[46.998s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/contacts__struct.hpp
+[46.998s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/gui_camera__builder.hpp
+[46.998s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/light__builder.hpp
+[46.999s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/track_visual__traits.hpp
+[46.999s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/video_record__struct.hpp
+[46.999s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/entity_factory__traits.hpp
+[46.999s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/world_reset__traits.hpp
+[46.999s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/contact__struct.hpp
+[46.999s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/gui_camera__struct.hpp
+[46.999s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/world_control__traits.hpp
+[46.999s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/light__struct.hpp
+[47.000s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/entity_factory.hpp
+[47.000s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/gui_camera.hpp
+[47.000s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/contacts.hpp
+[47.000s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/world_reset.hpp
+[47.000s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/contact.hpp
+[47.000s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/joint_wrench.hpp
+[47.000s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/entity.hpp
+[47.001s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/light.hpp
+[47.001s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/world_control.hpp
+[47.001s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/track_visual.hpp
+[47.001s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/video_record.hpp
+[47.001s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces
+[47.001s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv
+[47.001s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail
+[47.001s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/spawn_entity__rosidl_typesupport_fastrtps_cpp.hpp
+[47.002s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/dds_fastrtps
+[47.002s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/set_entity_pose__rosidl_typesupport_fastrtps_cpp.hpp
+[47.002s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/control_world__rosidl_typesupport_fastrtps_cpp.hpp
+[47.002s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/delete_entity__rosidl_typesupport_fastrtps_cpp.hpp
+[47.002s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg
+[47.002s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail
+[47.002s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/track_visual__rosidl_typesupport_fastrtps_cpp.hpp
+[47.002s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/entity_factory__rosidl_typesupport_fastrtps_cpp.hpp
+[47.002s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/world_control__rosidl_typesupport_fastrtps_cpp.hpp
+[47.003s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/light__rosidl_typesupport_fastrtps_cpp.hpp
+[47.003s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/video_record__rosidl_typesupport_fastrtps_cpp.hpp
+[47.003s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/gui_camera__rosidl_typesupport_fastrtps_cpp.hpp
+[47.003s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/dds_fastrtps
+[47.003s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/contacts__rosidl_typesupport_fastrtps_cpp.hpp
+[47.003s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/entity__rosidl_typesupport_fastrtps_cpp.hpp
+[47.003s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/string_vec__rosidl_typesupport_fastrtps_cpp.hpp
+[47.004s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/joint_wrench__rosidl_typesupport_fastrtps_cpp.hpp
+[47.004s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/contact__rosidl_typesupport_fastrtps_cpp.hpp
+[47.004s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/world_reset__rosidl_typesupport_fastrtps_cpp.hpp
+[47.004s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[47.004s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/lib/libros_ign_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[47.004s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/lib/libros_ign_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[47.004s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces
+[47.004s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv
+[47.005s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail
+[47.005s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/set_entity_pose__rosidl_typesupport_introspection_c.h
+[47.005s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/control_world__rosidl_typesupport_introspection_c.h
+[47.005s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/control_world__type_support.c
+[47.005s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/delete_entity__rosidl_typesupport_introspection_c.h
+[47.005s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/set_entity_pose__type_support.c
+[47.005s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/spawn_entity__rosidl_typesupport_introspection_c.h
+[47.005s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/spawn_entity__type_support.c
+[47.006s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/delete_entity__type_support.c
+[47.006s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg
+[47.006s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail
+[47.006s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/entity_factory__type_support.c
+[47.006s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/video_record__type_support.c
+[47.006s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/contacts__rosidl_typesupport_introspection_c.h
+[47.006s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/world_control__rosidl_typesupport_introspection_c.h
+[47.006s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/track_visual__type_support.c
+[47.007s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/entity_factory__rosidl_typesupport_introspection_c.h
+[47.007s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/world_reset__type_support.c
+[47.007s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/world_control__type_support.c
+[47.007s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/video_record__rosidl_typesupport_introspection_c.h
+[47.007s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/contact__type_support.c
+[47.007s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/string_vec__type_support.c
+[47.007s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/entity__type_support.c
+[47.007s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/world_reset__rosidl_typesupport_introspection_c.h
+[47.007s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/track_visual__rosidl_typesupport_introspection_c.h
+[47.008s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/contact__rosidl_typesupport_introspection_c.h
+[47.008s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/entity__rosidl_typesupport_introspection_c.h
+[47.008s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/contacts__type_support.c
+[47.008s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/joint_wrench__rosidl_typesupport_introspection_c.h
+[47.008s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/gui_camera__rosidl_typesupport_introspection_c.h
+[47.008s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/joint_wrench__type_support.c
+[47.009s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/light__type_support.c
+[47.009s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/gui_camera__type_support.c
+[47.009s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/light__rosidl_typesupport_introspection_c.h
+[47.009s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/string_vec__rosidl_typesupport_introspection_c.h
+[47.009s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[47.009s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/lib/libros_ign_interfaces__rosidl_typesupport_introspection_c.so
+[47.009s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/lib/libros_ign_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[47.010s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/lib/libros_ign_interfaces__rosidl_typesupport_c.so
+[47.010s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/lib/libros_ign_interfaces__rosidl_typesupport_c.so" to ""
+[47.010s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces
+[47.010s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv
+[47.010s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail
+[47.010s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/delete_entity__rosidl_typesupport_introspection_cpp.hpp
+[47.010s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/spawn_entity__type_support.cpp
+[47.011s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/spawn_entity__rosidl_typesupport_introspection_cpp.hpp
+[47.011s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/control_world__rosidl_typesupport_introspection_cpp.hpp
+[47.011s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/set_entity_pose__type_support.cpp
+[47.011s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/set_entity_pose__rosidl_typesupport_introspection_cpp.hpp
+[47.011s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/control_world__type_support.cpp
+[47.011s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/srv/detail/delete_entity__type_support.cpp
+[47.011s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg
+[47.012s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail
+[47.012s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/string_vec__type_support.cpp
+[47.012s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/joint_wrench__rosidl_typesupport_introspection_cpp.hpp
+[47.012s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/contacts__rosidl_typesupport_introspection_cpp.hpp
+[47.012s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/world_control__type_support.cpp
+[47.012s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/track_visual__rosidl_typesupport_introspection_cpp.hpp
+[47.012s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/entity__type_support.cpp
+[47.012s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/light__rosidl_typesupport_introspection_cpp.hpp
+[47.013s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/entity__rosidl_typesupport_introspection_cpp.hpp
+[47.013s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/joint_wrench__type_support.cpp
+[47.013s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/contacts__type_support.cpp
+[47.013s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/string_vec__rosidl_typesupport_introspection_cpp.hpp
+[47.013s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/video_record__rosidl_typesupport_introspection_cpp.hpp
+[47.013s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/contact__type_support.cpp
+[47.013s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/entity_factory__type_support.cpp
+[47.013s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/gui_camera__rosidl_typesupport_introspection_cpp.hpp
+[47.014s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/contact__rosidl_typesupport_introspection_cpp.hpp
+[47.014s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/light__type_support.cpp
+[47.014s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/world_control__rosidl_typesupport_introspection_cpp.hpp
+[47.014s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/entity_factory__rosidl_typesupport_introspection_cpp.hpp
+[47.014s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/world_reset__rosidl_typesupport_introspection_cpp.hpp
+[47.014s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/gui_camera__type_support.cpp
+[47.014s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/track_visual__type_support.cpp
+[47.014s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/video_record__type_support.cpp
+[47.015s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/include/ros_ign_interfaces/ros_ign_interfaces/msg/detail/world_reset__type_support.cpp
+[47.015s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/lib/libros_ign_interfaces__rosidl_typesupport_introspection_cpp.so
+[47.015s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/lib/libros_ign_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[47.015s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/lib/libros_ign_interfaces__rosidl_typesupport_cpp.so
+[47.015s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/lib/libros_ign_interfaces__rosidl_typesupport_cpp.so" to ""
+[47.015s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/environment/pythonpath.sh
+[47.016s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/environment/pythonpath.dsv
+[47.016s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces-0.244.13-py3.10.egg-info
+[47.016s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces-0.244.13-py3.10.egg-info/dependency_links.txt
+[47.016s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces-0.244.13-py3.10.egg-info/PKG-INFO
+[47.016s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces-0.244.13-py3.10.egg-info/top_level.txt
+[47.016s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces-0.244.13-py3.10.egg-info/SOURCES.txt
+[47.016s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces
+[47.017s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/srv
+[47.017s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/srv/_control_world.py
+[47.017s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/srv/_delete_entity_s.c
+[47.017s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/srv/_spawn_entity.py
+[47.017s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/srv/__init__.py
+[47.017s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/srv/_set_entity_pose.py
+[47.017s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/srv/_spawn_entity_s.c
+[47.018s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/srv/_control_world_s.c
+[47.018s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/srv/_delete_entity.py
+[47.018s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/srv/_set_entity_pose_s.c
+[47.018s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/_ros_ign_interfaces_s.ep.rosidl_typesupport_c.c
+[47.018s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/ros_ign_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[47.018s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/ros_ign_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[47.019s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/__init__.py
+[47.019s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/libros_ign_interfaces__rosidl_generator_py.so
+[47.019s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/ros_ign_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[47.020s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/_ros_ign_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[47.021s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/_ros_ign_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[47.021s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg
+[47.022s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_joint_wrench.py
+[47.022s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_entity_factory.py
+[47.022s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_track_visual_s.c
+[47.022s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_contact_s.c
+[47.023s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_contacts.py
+[47.023s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_video_record_s.c
+[47.024s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_world_reset_s.c
+[47.024s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_entity_factory_s.c
+[47.024s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_entity_s.c
+[47.024s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_contacts_s.c
+[47.025s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/__init__.py
+[47.025s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_track_visual.py
+[47.026s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_entity.py
+[47.026s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_gui_camera.py
+[47.026s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_world_reset.py
+[47.026s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_world_control.py
+[47.026s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_world_control_s.c
+[47.026s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_joint_wrench_s.c
+[47.026s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_contact.py
+[47.026s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_gui_camera_s.c
+[47.027s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_light_s.c
+[47.027s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_string_vec.py
+[47.027s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_video_record.py
+[47.027s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_light.py
+[47.027s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_string_vec_s.c
+[47.125s] Listing '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces'...
+[47.125s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/__init__.py'...
+[47.125s] Listing '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg'...
+[47.125s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/__init__.py'...
+[47.125s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_contact.py'...
+[47.125s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_contacts.py'...
+[47.126s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_entity.py'...
+[47.126s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_entity_factory.py'...
+[47.126s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_gui_camera.py'...
+[47.126s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_joint_wrench.py'...
+[47.126s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_light.py'...
+[47.126s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_string_vec.py'...
+[47.126s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_track_visual.py'...
+[47.127s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_video_record.py'...
+[47.127s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_world_control.py'...
+[47.127s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/msg/_world_reset.py'...
+[47.127s] Listing '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/srv'...
+[47.127s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/srv/__init__.py'...
+[47.127s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/srv/_control_world.py'...
+[47.127s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/srv/_delete_entity.py'...
+[47.127s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/srv/_set_entity_pose.py'...
+[47.128s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/srv/_spawn_entity.py'...
+[47.133s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/ros_ign_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[47.133s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/ros_ign_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[47.134s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/ros_ign_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[47.134s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/ros_ign_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[47.135s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/ros_ign_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[47.135s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/local/lib/python3.10/dist-packages/ros_ign_interfaces/ros_ign_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[47.136s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/lib/libros_ign_interfaces__rosidl_generator_py.so
+[47.136s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/lib/libros_ign_interfaces__rosidl_generator_py.so" to ""
+[47.137s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/msg/Contact.idl
+[47.137s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/msg/Contacts.idl
+[47.137s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/msg/Entity.idl
+[47.137s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/msg/EntityFactory.idl
+[47.138s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/msg/GuiCamera.idl
+[47.138s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/msg/JointWrench.idl
+[47.138s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/msg/Light.idl
+[47.139s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/msg/StringVec.idl
+[47.139s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/msg/TrackVisual.idl
+[47.139s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/msg/VideoRecord.idl
+[47.139s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/msg/WorldControl.idl
+[47.139s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/msg/WorldReset.idl
+[47.140s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/srv/ControlWorld.idl
+[47.141s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/srv/DeleteEntity.idl
+[47.141s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/srv/SetEntityPose.idl
+[47.141s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/srv/SpawnEntity.idl
+[47.142s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/msg/Contact.msg
+[47.142s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/msg/Contacts.msg
+[47.142s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/msg/Entity.msg
+[47.142s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/msg/EntityFactory.msg
+[47.142s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/msg/GuiCamera.msg
+[47.143s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/msg/JointWrench.msg
+[47.143s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/msg/Light.msg
+[47.143s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/msg/StringVec.msg
+[47.143s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/msg/TrackVisual.msg
+[47.144s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/msg/VideoRecord.msg
+[47.144s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/msg/WorldControl.msg
+[47.144s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/msg/WorldReset.msg
+[47.144s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/srv/ControlWorld.srv
+[47.145s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/srv/ControlWorld_Request.msg
+[47.145s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/srv/ControlWorld_Response.msg
+[47.145s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/srv/DeleteEntity.srv
+[47.145s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/srv/DeleteEntity_Request.msg
+[47.146s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/srv/DeleteEntity_Response.msg
+[47.146s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/srv/SetEntityPose.srv
+[47.146s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/srv/SetEntityPose_Request.msg
+[47.146s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/srv/SetEntityPose_Response.msg
+[47.147s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/srv/SpawnEntity.srv
+[47.147s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/srv/SpawnEntity_Request.msg
+[47.147s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/srv/SpawnEntity_Response.msg
+[47.148s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ament_index/resource_index/package_run_dependencies/ros_ign_interfaces
+[47.148s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ament_index/resource_index/parent_prefix_path/ros_ign_interfaces
+[47.149s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/environment/ament_prefix_path.sh
+[47.149s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/environment/ament_prefix_path.dsv
+[47.149s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/environment/path.sh
+[47.149s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/environment/path.dsv
+[47.150s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/local_setup.bash
+[47.150s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/local_setup.sh
+[47.150s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/local_setup.zsh
+[47.151s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/local_setup.dsv
+[47.151s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/package.dsv
+[47.151s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ament_index/resource_index/packages/ros_ign_interfaces
+[47.152s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/cmake/export_ros_ign_interfaces__rosidl_generator_cExport.cmake
+[47.152s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/cmake/export_ros_ign_interfaces__rosidl_generator_cExport-noconfig.cmake
+[47.152s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/cmake/export_ros_ign_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[47.152s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/cmake/export_ros_ign_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[47.153s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/cmake/export_ros_ign_interfaces__rosidl_generator_cppExport.cmake
+[47.153s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/cmake/export_ros_ign_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[47.153s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/cmake/export_ros_ign_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[47.154s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/cmake/ros_ign_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[47.154s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/cmake/ros_ign_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[47.154s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/cmake/ros_ign_interfaces__rosidl_typesupport_cExport.cmake
+[47.154s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/cmake/ros_ign_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[47.155s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/cmake/ros_ign_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[47.155s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/cmake/ros_ign_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[47.155s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/cmake/ros_ign_interfaces__rosidl_typesupport_cppExport.cmake
+[47.155s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/cmake/ros_ign_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[47.156s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/cmake/export_ros_ign_interfaces__rosidl_generator_pyExport.cmake
+[47.156s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/cmake/export_ros_ign_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[47.156s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/cmake/rosidl_cmake-extras.cmake
+[47.157s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[47.157s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[47.157s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[47.157s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[47.158s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[47.158s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[47.158s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/cmake/ros_ign_interfacesConfig.cmake
+[47.158s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/cmake/ros_ign_interfacesConfig-version.cmake
+[47.159s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces/share/ros_ign_interfaces/package.xml
+[47.188s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_ign_interfaces' returned '0': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_ign_interfaces

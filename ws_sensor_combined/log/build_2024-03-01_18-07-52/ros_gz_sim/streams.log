@@ -1,0 +1,307 @@
+[0.092s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_sim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_gz_sim -DCMAKE_INSTALL_PREFIX=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim
+[0.140s] -- The C compiler identification is GNU 11.4.0
+[0.195s] -- The CXX compiler identification is GNU 11.4.0
+[0.201s] -- Detecting C compiler ABI info
+[0.259s] -- Detecting C compiler ABI info - done
+[0.265s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.265s] -- Detecting C compile features
+[0.265s] -- Detecting C compile features - done
+[0.268s] -- Detecting CXX compiler ABI info
+[0.338s] -- Detecting CXX compiler ABI info - done
+[0.346s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.346s] -- Detecting CXX compile features
+[0.347s] -- Detecting CXX compile features - done
+[0.348s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.486s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.557s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[0.589s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.593s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.599s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.609s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.623s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.676s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.678s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.761s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.787s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.829s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.837s] -- Looking for pthread.h
+[0.911s] -- Looking for pthread.h - found
+[0.912s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.975s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.976s] -- Found Threads: TRUE  
+[1.117s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.121s] -- Searching for dependencies of ignition-math6
+[1.123s] -- Looking for ignition-transport11 -- found version 11.4.1
+[1.123s] -- Searching for dependencies of ignition-transport11
+[1.142s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[1.152s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[1.156s] -- Checking for module 'libzmq >= 4'
+[1.168s] --   Found libzmq , version 4.3.4
+[1.206s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[1.213s] -- Checking for module 'uuid'
+[1.226s] --   Found uuid, version 2.37.2
+[1.259s] -- Found UUID: TRUE  
+[1.261s] -- Looking for ignition-utils1 -- found version 1.5.1
+[1.262s] -- Searching for dependencies of ignition-utils1
+[1.262s] -- Searching for <ignition-utils1> component [cli]
+[1.265s] -- Looking for ignition-utils1-cli -- found version 1.5.1
+[1.265s] -- Searching for dependencies of ignition-utils1-cli
+[1.268s] -- Looking for ignition-msgs8 -- found version 8.7.0
+[1.268s] -- Searching for dependencies of ignition-msgs8
+[1.285s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[1.285s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.290s] -- Checking for module 'tinyxml2'
+[1.301s] --   Found tinyxml2, version 9.0.0
+[1.332s] -- Looking for ignition-msgs8 -- found version 8.7.0
+[1.341s] -- Looking for ignition-gazebo6 -- found version 6.16.0
+[1.341s] -- Searching for dependencies of ignition-gazebo6
+[1.343s] -- Looking for sdformat12 -- found version 12.7.2
+[1.343s] -- Searching for dependencies of sdformat12
+[1.349s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.350s] -- Looking for ignition-utils1 -- found version 1.5.1
+[1.352s] -- Looking for ignition-plugin1 -- found version 1.4.0
+[1.352s] -- Searching for dependencies of ignition-plugin1
+[1.352s] -- Searching for <ignition-plugin1> component [loader]
+[1.354s] -- Looking for ignition-plugin1-loader -- found version 1.4.0
+[1.354s] -- Searching for dependencies of ignition-plugin1-loader
+[1.355s] -- Searching for <ignition-plugin1> component [register]
+[1.356s] -- Looking for ignition-plugin1-register -- found version 1.4.0
+[1.356s] -- Searching for dependencies of ignition-plugin1-register
+[1.357s] -- Looking for ignition-transport11 -- found version 11.4.1
+[1.357s] -- Searching for dependencies of ignition-transport11
+[1.373s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[1.382s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[1.387s] -- Checking for module 'libzmq >= 4'
+[1.399s] --   Found libzmq , version 4.3.4
+[1.437s] -- Looking for ignition-utils1 -- found version 1.5.1
+[1.437s] -- Looking for ignition-msgs8 -- found version 8.7.0
+[1.437s] -- Searching for <ignition-transport11> component [log]
+[1.439s] -- Looking for ignition-transport11-log -- found version 11.4.1
+[1.439s] -- Searching for dependencies of ignition-transport11-log
+[1.439s] -- Searching for <ignition-transport11> component [parameters]
+[1.441s] -- Looking for ignition-transport11-parameters -- found version 11.4.1
+[1.441s] -- Searching for dependencies of ignition-transport11-parameters
+[1.442s] -- Looking for ignition-msgs8 -- found version 8.7.0
+[1.449s] -- Looking for ignition-common4 -- found version 4.7.0
+[1.449s] -- Searching for dependencies of ignition-common4
+[1.449s] -- Looking for dlfcn.h - found
+[1.450s] -- Looking for libdl - found
+[1.452s] -- Found DL: TRUE  
+[1.462s] -- Searching for <ignition-common4> component [profiler]
+[1.464s] -- Looking for ignition-common4-profiler -- found version 4.7.0
+[1.464s] -- Searching for dependencies of ignition-common4-profiler
+[1.465s] -- Searching for <ignition-common4> component [events]
+[1.467s] -- Looking for ignition-common4-events -- found version 4.7.0
+[1.468s] -- Searching for dependencies of ignition-common4-events
+[1.468s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.469s] -- Searching for <ignition-common4> component [av]
+[1.471s] -- Looking for ignition-common4-av -- found version 4.7.0
+[1.472s] -- Searching for dependencies of ignition-common4-av
+[1.478s] -- Checking for module 'libswscale'
+[1.491s] --   Found libswscale, version 5.9.100
+[1.525s] -- Found SWSCALE: TRUE  
+[1.530s] -- Checking for module 'libavdevice >= 56.4.100'
+[1.541s] --   Found libavdevice , version 58.13.100
+[1.570s] -- Found AVDEVICE: TRUE (Required is at least version "56.4.100") 
+[1.575s] -- Checking for module 'libavformat'
+[1.587s] --   Found libavformat, version 58.76.100
+[1.618s] -- Found AVFORMAT: TRUE  
+[1.623s] -- Checking for module 'libavcodec'
+[1.634s] --   Found libavcodec, version 58.134.100
+[1.665s] -- Found AVCODEC: TRUE  
+[1.671s] -- Checking for module 'libavutil'
+[1.685s] --   Found libavutil, version 56.70.100
+[1.716s] -- Found AVUTIL: TRUE  
+[1.718s] -- Looking for ignition-fuel_tools7 -- found version 7.3.0
+[1.718s] -- Searching for dependencies of ignition-fuel_tools7
+[1.786s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[1.792s] -- Checking for module 'jsoncpp'
+[1.806s] --   Found jsoncpp, version 1.9.5
+[1.839s] -- Found JSONCPP: TRUE  
+[1.846s] -- Checking for module 'libzip'
+[1.860s] --   Found libzip, version 1.7.3
+[1.889s] -- Found ZIP: TRUE  
+[1.890s] -- Looking for ignition-common4 -- found version 4.7.0
+[1.890s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.891s] -- Looking for ignition-msgs8 -- found version 8.7.0
+[1.899s] -- Looking for ignition-gui6 -- found version 6.8.0
+[1.899s] -- Searching for dependencies of ignition-gui6
+[1.916s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[1.923s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.923s] -- Looking for ignition-common4 -- found version 4.7.0
+[1.923s] -- Looking for ignition-plugin1 -- found version 1.4.0
+[1.924s] -- Looking for ignition-transport11 -- found version 11.4.1
+[1.926s] -- Looking for ignition-rendering6 -- found version 6.6.3
+[1.926s] -- Searching for dependencies of ignition-rendering6
+[1.926s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.927s] -- Searching for dependencies of ignition-math6
+[1.927s] -- Searching for <ignition-math6> component [eigen3]
+[1.928s] -- Looking for ignition-math6-eigen3 -- found version 6.15.1
+[1.929s] -- Searching for dependencies of ignition-math6-eigen3
+[1.935s] -- Looking for ignition-common4 -- found version 4.7.0
+[1.935s] -- Searching for dependencies of ignition-common4
+[1.936s] -- Looking for dlfcn.h - found
+[1.936s] -- Looking for libdl - found
+[1.944s] -- Searching for <ignition-common4> component [graphics]
+[1.945s] -- Looking for ignition-common4-graphics -- found version 4.7.0
+[1.946s] -- Searching for dependencies of ignition-common4-graphics
+[1.946s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.946s] -- Looking for ignition-utils1 -- found version 1.5.1
+[1.947s] -- Searching for <ignition-common4> component [events]
+[1.948s] -- Looking for ignition-plugin1 -- found version 1.4.0
+[1.948s] -- Searching for dependencies of ignition-plugin1
+[1.948s] -- Searching for <ignition-plugin1> component [all]
+[1.950s] -- Looking for all libraries of ignition-plugin1 -- found version 1.4.0
+[1.950s] -- Looking for ignition-plugin1 -- found version 1.4.0
+[1.953s] -- Looking for ignition-msgs8 -- found version 8.7.0
+[1.978s] -- Looking for ignition-physics5 -- found version 5.3.2
+[1.978s] -- Searching for dependencies of ignition-physics5
+[1.978s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.979s] -- Looking for ignition-plugin1 -- found version 1.4.0
+[1.979s] -- Looking for ignition-utils1 -- found version 1.5.1
+[1.980s] -- Searching for <ignition-physics5> component [heightmap]
+[1.982s] -- Looking for ignition-physics5-heightmap -- found version 5.3.2
+[1.983s] -- Searching for dependencies of ignition-physics5-heightmap
+[1.984s] -- Looking for ignition-common4 -- found version 4.7.0
+[1.984s] -- Searching for <ignition-physics5> component [mesh]
+[1.987s] -- Looking for ignition-physics5-mesh -- found version 5.3.2
+[1.987s] -- Searching for dependencies of ignition-physics5-mesh
+[1.987s] -- Looking for ignition-common4 -- found version 4.7.0
+[1.988s] -- Searching for <ignition-physics5> component [sdf]
+[1.989s] -- Looking for ignition-physics5-sdf -- found version 5.3.2
+[1.990s] -- Searching for dependencies of ignition-physics5-sdf
+[1.990s] -- Looking for sdformat12 -- found version 12.7.2
+[1.992s] -- Looking for ignition-sensors6 -- found version 6.8.0
+[1.993s] -- Searching for dependencies of ignition-sensors6
+[2.015s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[2.016s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.016s] -- Looking for ignition-common4 -- found version 4.7.0
+[2.026s] -- Looking for ignition-transport11 -- found version 11.4.1
+[2.026s] -- Looking for ignition-rendering6 -- found version 6.6.3
+[2.026s] -- Looking for ignition-msgs8 -- found version 8.7.0
+[2.026s] -- Looking for sdformat12 -- found version 12.7.2
+[2.026s] -- Searching for <ignition-sensors6> component [air_pressure]
+[2.026s] -- Looking for ignition-sensors6-air_pressure -- found version 6.8.0
+[2.026s] -- Searching for dependencies of ignition-sensors6-air_pressure
+[2.026s] -- Searching for <ignition-sensors6> component [altimeter]
+[2.027s] -- Looking for ignition-sensors6-altimeter -- found version 6.8.0
+[2.027s] -- Searching for dependencies of ignition-sensors6-altimeter
+[2.027s] -- Searching for <ignition-sensors6> component [imu]
+[2.030s] -- Looking for ignition-sensors6-imu -- found version 6.8.0
+[2.030s] -- Searching for dependencies of ignition-sensors6-imu
+[2.031s] -- Searching for <ignition-sensors6> component [force_torque]
+[2.034s] -- Looking for ignition-sensors6-force_torque -- found version 6.8.0
+[2.034s] -- Searching for dependencies of ignition-sensors6-force_torque
+[2.035s] -- Searching for <ignition-sensors6> component [logical_camera]
+[2.037s] -- Looking for ignition-sensors6-logical_camera -- found version 6.8.0
+[2.038s] -- Searching for dependencies of ignition-sensors6-logical_camera
+[2.038s] -- Searching for <ignition-sensors6> component [magnetometer]
+[2.049s] -- Looking for ignition-sensors6-magnetometer -- found version 6.8.0
+[2.049s] -- Searching for dependencies of ignition-sensors6-magnetometer
+[2.049s] -- Searching for <ignition-sensors6> component [navsat]
+[2.049s] -- Looking for ignition-sensors6-navsat -- found version 6.8.0
+[2.049s] -- Searching for dependencies of ignition-sensors6-navsat
+[2.049s] -- Searching for <ignition-sensors6> component [rendering]
+[2.050s] -- Looking for ignition-sensors6-rendering -- found version 6.8.0
+[2.050s] -- Searching for dependencies of ignition-sensors6-rendering
+[2.052s] -- Searching for <ignition-sensors6> component [lidar]
+[2.053s] -- Looking for ignition-sensors6-lidar -- found version 6.8.0
+[2.053s] -- Searching for dependencies of ignition-sensors6-lidar
+[2.054s] -- Looking for ignition-sensors6 -- found version 6.8.0
+[2.055s] -- Searching for <ignition-sensors6> component [gpu_lidar]
+[2.058s] -- Looking for ignition-sensors6-gpu_lidar -- found version 6.8.0
+[2.059s] -- Searching for dependencies of ignition-sensors6-gpu_lidar
+[2.059s] -- Looking for ignition-sensors6 -- found version 6.8.0
+[2.060s] -- Searching for <ignition-sensors6> component [camera]
+[2.063s] -- Looking for ignition-sensors6-camera -- found version 6.8.0
+[2.064s] -- Searching for dependencies of ignition-sensors6-camera
+[2.065s] -- Looking for ignition-sensors6 -- found version 6.8.0
+[2.066s] -- Searching for <ignition-sensors6> component [boundingbox_camera]
+[2.069s] -- Looking for ignition-sensors6-boundingbox_camera -- found version 6.8.0
+[2.070s] -- Searching for dependencies of ignition-sensors6-boundingbox_camera
+[2.071s] -- Searching for <ignition-sensors6> component [segmentation_camera]
+[2.073s] -- Looking for ignition-sensors6-segmentation_camera -- found version 6.8.0
+[2.074s] -- Searching for dependencies of ignition-sensors6-segmentation_camera
+[2.074s] -- Searching for <ignition-sensors6> component [depth_camera]
+[2.077s] -- Looking for ignition-sensors6-depth_camera -- found version 6.8.0
+[2.078s] -- Searching for dependencies of ignition-sensors6-depth_camera
+[2.078s] -- Looking for ignition-sensors6 -- found version 6.8.0
+[2.079s] -- Searching for <ignition-sensors6> component [rgbd_camera]
+[2.081s] -- Looking for ignition-sensors6-rgbd_camera -- found version 6.8.0
+[2.082s] -- Searching for dependencies of ignition-sensors6-rgbd_camera
+[2.086s] -- Looking for ignition-sensors6 -- found version 6.8.0
+[2.086s] -- Searching for <ignition-sensors6> component [thermal_camera]
+[2.086s] -- Looking for ignition-sensors6-thermal_camera -- found version 6.8.0
+[2.087s] -- Searching for dependencies of ignition-sensors6-thermal_camera
+[2.088s] -- Looking for ignition-sensors6 -- found version 6.8.0
+[2.090s] -- Looking for ignition-rendering6 -- found version 6.6.3
+[2.090s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.093s] -- Looking for ignition-utils1 -- found version 1.5.1
+[2.120s] -- Compiling against Gazebo Fortress
+[2.123s] -- Looking for gflags - found
+[2.123s] 
+[2.129s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.255s] -- Found ament_cmake_gtest: 1.3.8 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[2.258s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.268s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.270s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.270s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_gz_sim/include>
+[2.270s] -- Configured cppcheck exclude dirs and/or files: 
+[2.271s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.271s] -- Configured cpplint exclude dirs and/or files: 
+[2.272s] -- Added test 'lint_cmake' to check CMake code style
+[2.274s] -- Added test 'uncrustify' to check C / C++ code style
+[2.274s] -- Configured uncrustify additional arguments: 
+[2.274s] -- Added test 'xmllint' to check XML markup files
+[2.276s] -- Configuring done
+[2.303s] -- Generating done
+[2.311s] -- Build files have been written to: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_sim
+[2.345s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_sim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_gz_sim -DCMAKE_INSTALL_PREFIX=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim
+[2.346s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_sim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_sim -- -j8 -l8
+[2.403s] [ 30%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[2.403s] [ 30%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[2.403s] [ 30%] [32mBuilding CXX object CMakeFiles/create.dir/src/create.cpp.o[0m
+[2.403s] [ 40%] [32mBuilding CXX object CMakeFiles/ros_gz_sim.dir/src/Stopwatch.cpp.o[0m
+[3.300s] [ 50%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[3.357s] [ 50%] Built target gtest_main
+[3.421s] [ 60%] [32m[1mLinking CXX shared library libros_gz_sim.so[0m
+[3.534s] [ 60%] Built target ros_gz_sim
+[6.917s] [ 70%] [32m[1mLinking CXX static library libgtest.a[0m
+[7.035s] [ 70%] Built target gtest
+[7.093s] [ 80%] [32mBuilding CXX object CMakeFiles/test_stopwatch.dir/test/test_stopwatch.cpp.o[0m
+[18.850s] [ 90%] [32m[1mLinking CXX executable test_stopwatch[0m
+[19.334s] [ 90%] Built target test_stopwatch
+[28.049s] [100%] [32m[1mLinking CXX executable create[0m
+[28.639s] [100%] Built target create
+[28.651s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_sim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_sim -- -j8 -l8
+[28.692s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_sim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_sim
+[28.699s] -- Install configuration: ""
+[28.699s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/include/ros_gz_sim
+[28.700s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/include/ros_gz_sim/Stopwatch.hpp
+[28.700s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/launch/gz_sim.launch.py
+[28.700s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/lib/ros_gz_sim/create
+[28.704s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/lib/ros_gz_sim/create" to ""
+[28.704s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/lib/libros_gz_sim.so
+[28.704s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/lib/libros_gz_sim.so" to ""
+[28.704s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/lib/ros_gz_sim/test_stopwatch
+[28.706s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/lib/ros_gz_sim/test_stopwatch" to ""
+[28.706s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ament_index/resource_index/package_run_dependencies/ros_gz_sim
+[28.706s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ament_index/resource_index/parent_prefix_path/ros_gz_sim
+[28.707s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/environment/ament_prefix_path.sh
+[28.707s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/environment/ament_prefix_path.dsv
+[28.707s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/environment/path.sh
+[28.707s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/environment/path.dsv
+[28.707s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/local_setup.bash
+[28.707s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/local_setup.sh
+[28.708s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/local_setup.zsh
+[28.708s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/local_setup.dsv
+[28.708s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/package.dsv
+[28.708s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ament_index/resource_index/packages/ros_gz_sim
+[28.708s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/cmake/ros_gz_simExport.cmake
+[28.708s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/cmake/ros_gz_simExport-noconfig.cmake
+[28.708s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/cmake/ament_cmake_export_targets-extras.cmake
+[28.709s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/cmake/ament_cmake_export_dependencies-extras.cmake
+[28.709s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/cmake/ros_gz_simConfig.cmake
+[28.709s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/cmake/ros_gz_simConfig-version.cmake
+[28.709s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/package.xml
+[28.711s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_sim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_sim

@@ -1,0 +1,500 @@
+[0.811s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.811s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f792e441750>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f792e443d30>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f792e443d30>>)
+[0.848s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.848s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.848s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.848s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.848s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.848s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.848s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined'
+[0.848s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.848s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.848s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/obj_det) by extensions ['ignore', 'ignore_ament_install']
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/obj_det) by extension 'ignore'
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/obj_det) by extension 'ignore_ament_install'
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/obj_det) by extensions ['colcon_pkg']
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/obj_det) by extension 'colcon_pkg'
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/obj_det) by extensions ['colcon_meta']
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/obj_det) by extension 'colcon_meta'
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/obj_det) by extensions ['ros']
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/obj_det) by extension 'ros'
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/obj_det) by extensions ['cmake', 'python']
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/obj_det) by extension 'cmake'
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/obj_det) by extension 'python'
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/obj_det) by extensions ['python_setup_py']
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/obj_det) by extension 'python_setup_py'
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ignore'
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ignore_ament_install'
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['colcon_pkg']
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'colcon_pkg'
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['colcon_meta']
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'colcon_meta'
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['ros']
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ros'
+[0.861s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4_msgs' with type 'ros.ament_cmake' and name 'px4_msgs'
+[0.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['ignore', 'ignore_ament_install']
+[0.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ignore'
+[0.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ignore_ament_install'
+[0.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['colcon_pkg']
+[0.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'colcon_pkg'
+[0.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['colcon_meta']
+[0.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'colcon_meta'
+[0.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['ros']
+[0.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ros'
+[0.863s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4_ros_com' with type 'ros.ament_cmake' and name 'px4_ros_com'
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extensions ['ignore', 'ignore_ament_install']
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extension 'ignore'
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extension 'ignore_ament_install'
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extensions ['colcon_pkg']
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extension 'colcon_pkg'
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extensions ['colcon_meta']
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extension 'colcon_meta'
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extensions ['ros']
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extension 'ros'
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extensions ['cmake', 'python']
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extension 'cmake'
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extension 'python'
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extensions ['python_setup_py']
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extension 'python_setup_py'
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz) by extensions ['ignore', 'ignore_ament_install']
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz) by extension 'ignore'
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz) by extension 'ignore_ament_install'
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz) by extensions ['colcon_pkg']
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz) by extension 'colcon_pkg'
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz) by extensions ['colcon_meta']
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz) by extension 'colcon_meta'
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz) by extensions ['ros']
+[0.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz) by extension 'ros'
+[0.864s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros_gz/ros_gz' with type 'ros.ament_cmake' and name 'ros_gz'
+[0.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_bridge) by extension 'ignore'
+[0.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_bridge) by extension 'ignore_ament_install'
+[0.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_bridge) by extensions ['colcon_pkg']
+[0.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_bridge) by extension 'colcon_pkg'
+[0.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_bridge) by extensions ['colcon_meta']
+[0.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_bridge) by extension 'colcon_meta'
+[0.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_bridge) by extensions ['ros']
+[0.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_bridge) by extension 'ros'
+[0.876s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros_gz/ros_gz_bridge' with type 'ros.ament_cmake' and name 'ros_gz_bridge'
+[0.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_image) by extensions ['ignore', 'ignore_ament_install']
+[0.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_image) by extension 'ignore'
+[0.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_image) by extension 'ignore_ament_install'
+[0.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_image) by extensions ['colcon_pkg']
+[0.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_image) by extension 'colcon_pkg'
+[0.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_image) by extensions ['colcon_meta']
+[0.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_image) by extension 'colcon_meta'
+[0.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_image) by extensions ['ros']
+[0.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_image) by extension 'ros'
+[0.888s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros_gz/ros_gz_image' with type 'ros.ament_cmake' and name 'ros_gz_image'
+[0.888s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.888s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_interfaces) by extension 'ignore'
+[0.888s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_interfaces) by extension 'ignore_ament_install'
+[0.888s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_interfaces) by extensions ['colcon_pkg']
+[0.888s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_interfaces) by extension 'colcon_pkg'
+[0.888s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_interfaces) by extensions ['colcon_meta']
+[0.888s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_interfaces) by extension 'colcon_meta'
+[0.889s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_interfaces) by extensions ['ros']
+[0.889s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_interfaces) by extension 'ros'
+[0.890s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros_gz/ros_gz_interfaces' with type 'ros.ament_cmake' and name 'ros_gz_interfaces'
+[0.890s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_point_cloud) by extensions ['ignore', 'ignore_ament_install']
+[0.890s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_point_cloud) by extension 'ignore'
+[0.890s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_point_cloud) ignored
+[0.890s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_sim) by extensions ['ignore', 'ignore_ament_install']
+[0.890s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_sim) by extension 'ignore'
+[0.890s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_sim) by extension 'ignore_ament_install'
+[0.890s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_sim) by extensions ['colcon_pkg']
+[0.890s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_sim) by extension 'colcon_pkg'
+[0.890s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_sim) by extensions ['colcon_meta']
+[0.890s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_sim) by extension 'colcon_meta'
+[0.890s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_sim) by extensions ['ros']
+[0.890s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_sim) by extension 'ros'
+[0.911s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros_gz/ros_gz_sim' with type 'ros.ament_cmake' and name 'ros_gz_sim'
+[0.911s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_sim_demos) by extensions ['ignore', 'ignore_ament_install']
+[0.911s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_sim_demos) by extension 'ignore'
+[0.911s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_sim_demos) by extension 'ignore_ament_install'
+[0.911s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_sim_demos) by extensions ['colcon_pkg']
+[0.911s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_sim_demos) by extension 'colcon_pkg'
+[0.911s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_sim_demos) by extensions ['colcon_meta']
+[0.911s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_sim_demos) by extension 'colcon_meta'
+[0.911s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_sim_demos) by extensions ['ros']
+[0.911s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_gz_sim_demos) by extension 'ros'
+[0.913s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros_gz/ros_gz_sim_demos' with type 'ros.ament_cmake' and name 'ros_gz_sim_demos'
+[0.913s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign) by extensions ['ignore', 'ignore_ament_install']
+[0.913s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign) by extension 'ignore'
+[0.913s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign) by extension 'ignore_ament_install'
+[0.913s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign) by extensions ['colcon_pkg']
+[0.913s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign) by extension 'colcon_pkg'
+[0.913s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign) by extensions ['colcon_meta']
+[0.913s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign) by extension 'colcon_meta'
+[0.914s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign) by extensions ['ros']
+[0.914s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign) by extension 'ros'
+[0.914s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros_gz/ros_ign' with type 'ros.ament_cmake' and name 'ros_ign'
+[0.914s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.914s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_bridge) by extension 'ignore'
+[0.914s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_bridge) by extension 'ignore_ament_install'
+[0.914s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_bridge) by extensions ['colcon_pkg']
+[0.914s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_bridge) by extension 'colcon_pkg'
+[0.914s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_bridge) by extensions ['colcon_meta']
+[0.914s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_bridge) by extension 'colcon_meta'
+[0.914s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_bridge) by extensions ['ros']
+[0.915s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_bridge) by extension 'ros'
+[0.915s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros_gz/ros_ign_bridge' with type 'ros.ament_cmake' and name 'ros_ign_bridge'
+[0.915s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.915s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_gazebo) by extension 'ignore'
+[0.915s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_gazebo) by extension 'ignore_ament_install'
+[0.915s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_gazebo) by extensions ['colcon_pkg']
+[0.915s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_gazebo) by extension 'colcon_pkg'
+[0.915s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_gazebo) by extensions ['colcon_meta']
+[0.916s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_gazebo) by extension 'colcon_meta'
+[0.916s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_gazebo) by extensions ['ros']
+[0.916s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_gazebo) by extension 'ros'
+[0.916s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros_gz/ros_ign_gazebo' with type 'ros.ament_cmake' and name 'ros_ign_gazebo'
+[0.916s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_gazebo_demos) by extensions ['ignore', 'ignore_ament_install']
+[0.916s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_gazebo_demos) by extension 'ignore'
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_gazebo_demos) by extension 'ignore_ament_install'
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_gazebo_demos) by extensions ['colcon_pkg']
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_gazebo_demos) by extension 'colcon_pkg'
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_gazebo_demos) by extensions ['colcon_meta']
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_gazebo_demos) by extension 'colcon_meta'
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_gazebo_demos) by extensions ['ros']
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_gazebo_demos) by extension 'ros'
+[0.917s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros_gz/ros_ign_gazebo_demos' with type 'ros.ament_cmake' and name 'ros_ign_gazebo_demos'
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_image) by extensions ['ignore', 'ignore_ament_install']
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_image) by extension 'ignore'
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_image) by extension 'ignore_ament_install'
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_image) by extensions ['colcon_pkg']
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_image) by extension 'colcon_pkg'
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_image) by extensions ['colcon_meta']
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_image) by extension 'colcon_meta'
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_image) by extensions ['ros']
+[0.918s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_image) by extension 'ros'
+[0.918s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros_gz/ros_ign_image' with type 'ros.ament_cmake' and name 'ros_ign_image'
+[0.918s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.918s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_interfaces) by extension 'ignore'
+[0.918s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_interfaces) by extension 'ignore_ament_install'
+[0.918s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_interfaces) by extensions ['colcon_pkg']
+[0.918s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_interfaces) by extension 'colcon_pkg'
+[0.918s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_interfaces) by extensions ['colcon_meta']
+[0.918s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_interfaces) by extension 'colcon_meta'
+[0.918s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_interfaces) by extensions ['ros']
+[0.918s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/ros_ign_interfaces) by extension 'ros'
+[0.919s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros_gz/ros_ign_interfaces' with type 'ros.ament_cmake' and name 'ros_ign_interfaces'
+[0.919s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/test_ros_gz_bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.919s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/test_ros_gz_bridge) by extension 'ignore'
+[0.919s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/test_ros_gz_bridge) by extension 'ignore_ament_install'
+[0.919s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/test_ros_gz_bridge) by extensions ['colcon_pkg']
+[0.919s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/test_ros_gz_bridge) by extension 'colcon_pkg'
+[0.919s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/test_ros_gz_bridge) by extensions ['colcon_meta']
+[0.919s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/test_ros_gz_bridge) by extension 'colcon_meta'
+[0.919s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/test_ros_gz_bridge) by extensions ['ros']
+[0.919s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz/test_ros_gz_bridge) by extension 'ros'
+[0.920s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros_gz/test_ros_gz_bridge' with type 'ros.ament_cmake' and name 'test_ros_gz_bridge'
+[0.920s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.920s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.920s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.920s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.920s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.007s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.008s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.038s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 289 installed packages in /opt/ros/humble
+[1.040s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.117s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_args' from command line to 'None'
+[1.117s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target' from command line to 'None'
+[1.117s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.117s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[1.117s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[1.117s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[1.117s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[1.117s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[1.117s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.117s] DEBUG:colcon.colcon_core.verb:Building package 'px4_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs', 'merge_install': False, 'path': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_msgs', 'symlink_install': False, 'test_result_base': None}
+[1.130s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_interfaces' build argument 'cmake_args' from command line to 'None'
+[1.130s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_interfaces' build argument 'cmake_target' from command line to 'None'
+[1.130s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.130s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[1.130s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[1.130s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[1.130s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[1.130s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[1.130s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.130s] DEBUG:colcon.colcon_core.verb:Building package 'ros_gz_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces', 'merge_install': False, 'path': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_gz_interfaces', 'symlink_install': False, 'test_result_base': None}
+[1.142s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_sim' build argument 'cmake_args' from command line to 'None'
+[1.142s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_sim' build argument 'cmake_target' from command line to 'None'
+[1.142s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_sim' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.142s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_sim' build argument 'cmake_clean_cache' from command line to 'False'
+[1.142s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_sim' build argument 'cmake_clean_first' from command line to 'False'
+[1.142s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_sim' build argument 'cmake_force_configure' from command line to 'False'
+[1.142s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_sim' build argument 'ament_cmake_args' from command line to 'None'
+[1.142s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_sim' build argument 'catkin_cmake_args' from command line to 'None'
+[1.142s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_sim' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.142s] DEBUG:colcon.colcon_core.verb:Building package 'ros_gz_sim' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_sim', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim', 'merge_install': False, 'path': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_gz_sim', 'symlink_install': False, 'test_result_base': None}
+[1.155s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_args' from command line to 'None'
+[1.155s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_target' from command line to 'None'
+[1.155s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.155s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_clean_cache' from command line to 'False'
+[1.155s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_clean_first' from command line to 'False'
+[1.155s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_force_configure' from command line to 'False'
+[1.155s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'ament_cmake_args' from command line to 'None'
+[1.155s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'catkin_cmake_args' from command line to 'None'
+[1.155s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.155s] DEBUG:colcon.colcon_core.verb:Building package 'px4_ros_com' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com', 'merge_install': False, 'path': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com', 'symlink_install': False, 'test_result_base': None}
+[1.169s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_bridge' build argument 'cmake_args' from command line to 'None'
+[1.169s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_bridge' build argument 'cmake_target' from command line to 'None'
+[1.169s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_bridge' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.169s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_bridge' build argument 'cmake_clean_cache' from command line to 'False'
+[1.169s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_bridge' build argument 'cmake_clean_first' from command line to 'False'
+[1.169s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_bridge' build argument 'cmake_force_configure' from command line to 'False'
+[1.169s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_bridge' build argument 'ament_cmake_args' from command line to 'None'
+[1.169s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_bridge' build argument 'catkin_cmake_args' from command line to 'None'
+[1.169s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_bridge' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.169s] DEBUG:colcon.colcon_core.verb:Building package 'ros_gz_bridge' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_bridge', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge', 'merge_install': False, 'path': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_gz_bridge', 'symlink_install': False, 'test_result_base': None}
+[1.181s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_gazebo' build argument 'cmake_args' from command line to 'None'
+[1.181s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_gazebo' build argument 'cmake_target' from command line to 'None'
+[1.181s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.181s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[1.181s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[1.181s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[1.181s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[1.181s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[1.181s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.181s] DEBUG:colcon.colcon_core.verb:Building package 'ros_ign_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_ign_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_gazebo', 'merge_install': False, 'path': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_ign_gazebo', 'symlink_install': False, 'test_result_base': None}
+[1.192s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_interfaces' build argument 'cmake_args' from command line to 'None'
+[1.192s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_interfaces' build argument 'cmake_target' from command line to 'None'
+[1.192s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.192s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[1.193s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[1.193s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[1.193s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[1.193s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[1.193s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.193s] DEBUG:colcon.colcon_core.verb:Building package 'ros_ign_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_ign_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_interfaces', 'merge_install': False, 'path': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_ign_interfaces', 'symlink_install': False, 'test_result_base': None}
+[1.204s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_image' build argument 'cmake_args' from command line to 'None'
+[1.204s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_image' build argument 'cmake_target' from command line to 'None'
+[1.204s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_image' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.204s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_image' build argument 'cmake_clean_cache' from command line to 'False'
+[1.204s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_image' build argument 'cmake_clean_first' from command line to 'False'
+[1.204s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_image' build argument 'cmake_force_configure' from command line to 'False'
+[1.204s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_image' build argument 'ament_cmake_args' from command line to 'None'
+[1.204s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_image' build argument 'catkin_cmake_args' from command line to 'None'
+[1.204s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_image' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.204s] DEBUG:colcon.colcon_core.verb:Building package 'ros_gz_image' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_image', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_image', 'merge_install': False, 'path': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_gz_image', 'symlink_install': False, 'test_result_base': None}
+[1.215s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_bridge' build argument 'cmake_args' from command line to 'None'
+[1.216s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_bridge' build argument 'cmake_target' from command line to 'None'
+[1.216s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_bridge' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.216s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_bridge' build argument 'cmake_clean_cache' from command line to 'False'
+[1.216s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_bridge' build argument 'cmake_clean_first' from command line to 'False'
+[1.216s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_bridge' build argument 'cmake_force_configure' from command line to 'False'
+[1.216s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_bridge' build argument 'ament_cmake_args' from command line to 'None'
+[1.216s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_bridge' build argument 'catkin_cmake_args' from command line to 'None'
+[1.216s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_bridge' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.216s] DEBUG:colcon.colcon_core.verb:Building package 'ros_ign_bridge' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_ign_bridge', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_bridge', 'merge_install': False, 'path': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_ign_bridge', 'symlink_install': False, 'test_result_base': None}
+[1.227s] Level 5:colcon.colcon_core.verb:set package 'test_ros_gz_bridge' build argument 'cmake_args' from command line to 'None'
+[1.227s] Level 5:colcon.colcon_core.verb:set package 'test_ros_gz_bridge' build argument 'cmake_target' from command line to 'None'
+[1.227s] Level 5:colcon.colcon_core.verb:set package 'test_ros_gz_bridge' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.227s] Level 5:colcon.colcon_core.verb:set package 'test_ros_gz_bridge' build argument 'cmake_clean_cache' from command line to 'False'
+[1.227s] Level 5:colcon.colcon_core.verb:set package 'test_ros_gz_bridge' build argument 'cmake_clean_first' from command line to 'False'
+[1.227s] Level 5:colcon.colcon_core.verb:set package 'test_ros_gz_bridge' build argument 'cmake_force_configure' from command line to 'False'
+[1.227s] Level 5:colcon.colcon_core.verb:set package 'test_ros_gz_bridge' build argument 'ament_cmake_args' from command line to 'None'
+[1.227s] Level 5:colcon.colcon_core.verb:set package 'test_ros_gz_bridge' build argument 'catkin_cmake_args' from command line to 'None'
+[1.227s] Level 5:colcon.colcon_core.verb:set package 'test_ros_gz_bridge' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.227s] DEBUG:colcon.colcon_core.verb:Building package 'test_ros_gz_bridge' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/test_ros_gz_bridge', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/test_ros_gz_bridge', 'merge_install': False, 'path': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/test_ros_gz_bridge', 'symlink_install': False, 'test_result_base': None}
+[1.238s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_sim_demos' build argument 'cmake_args' from command line to 'None'
+[1.238s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_sim_demos' build argument 'cmake_target' from command line to 'None'
+[1.238s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_sim_demos' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.238s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_sim_demos' build argument 'cmake_clean_cache' from command line to 'False'
+[1.238s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_sim_demos' build argument 'cmake_clean_first' from command line to 'False'
+[1.238s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_sim_demos' build argument 'cmake_force_configure' from command line to 'False'
+[1.238s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_sim_demos' build argument 'ament_cmake_args' from command line to 'None'
+[1.238s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_sim_demos' build argument 'catkin_cmake_args' from command line to 'None'
+[1.238s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_sim_demos' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.238s] DEBUG:colcon.colcon_core.verb:Building package 'ros_gz_sim_demos' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_sim_demos', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim_demos', 'merge_install': False, 'path': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_gz_sim_demos', 'symlink_install': False, 'test_result_base': None}
+[1.250s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_image' build argument 'cmake_args' from command line to 'None'
+[1.250s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_image' build argument 'cmake_target' from command line to 'None'
+[1.250s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_image' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.250s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_image' build argument 'cmake_clean_cache' from command line to 'False'
+[1.250s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_image' build argument 'cmake_clean_first' from command line to 'False'
+[1.250s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_image' build argument 'cmake_force_configure' from command line to 'False'
+[1.250s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_image' build argument 'ament_cmake_args' from command line to 'None'
+[1.250s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_image' build argument 'catkin_cmake_args' from command line to 'None'
+[1.250s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_image' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.250s] DEBUG:colcon.colcon_core.verb:Building package 'ros_ign_image' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_ign_image', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_image', 'merge_install': False, 'path': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_ign_image', 'symlink_install': False, 'test_result_base': None}
+[1.261s] Level 5:colcon.colcon_core.verb:set package 'ros_gz' build argument 'cmake_args' from command line to 'None'
+[1.261s] Level 5:colcon.colcon_core.verb:set package 'ros_gz' build argument 'cmake_target' from command line to 'None'
+[1.261s] Level 5:colcon.colcon_core.verb:set package 'ros_gz' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.261s] Level 5:colcon.colcon_core.verb:set package 'ros_gz' build argument 'cmake_clean_cache' from command line to 'False'
+[1.261s] Level 5:colcon.colcon_core.verb:set package 'ros_gz' build argument 'cmake_clean_first' from command line to 'False'
+[1.261s] Level 5:colcon.colcon_core.verb:set package 'ros_gz' build argument 'cmake_force_configure' from command line to 'False'
+[1.262s] Level 5:colcon.colcon_core.verb:set package 'ros_gz' build argument 'ament_cmake_args' from command line to 'None'
+[1.262s] Level 5:colcon.colcon_core.verb:set package 'ros_gz' build argument 'catkin_cmake_args' from command line to 'None'
+[1.262s] Level 5:colcon.colcon_core.verb:set package 'ros_gz' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.262s] DEBUG:colcon.colcon_core.verb:Building package 'ros_gz' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz', 'merge_install': False, 'path': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_gz', 'symlink_install': False, 'test_result_base': None}
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_gazebo_demos' build argument 'cmake_args' from command line to 'None'
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_gazebo_demos' build argument 'cmake_target' from command line to 'None'
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_gazebo_demos' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_gazebo_demos' build argument 'cmake_clean_cache' from command line to 'False'
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_gazebo_demos' build argument 'cmake_clean_first' from command line to 'False'
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_gazebo_demos' build argument 'cmake_force_configure' from command line to 'False'
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_gazebo_demos' build argument 'ament_cmake_args' from command line to 'None'
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_gazebo_demos' build argument 'catkin_cmake_args' from command line to 'None'
+[1.273s] Level 5:colcon.colcon_core.verb:set package 'ros_ign_gazebo_demos' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.273s] DEBUG:colcon.colcon_core.verb:Building package 'ros_ign_gazebo_demos' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_ign_gazebo_demos', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign_gazebo_demos', 'merge_install': False, 'path': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_ign_gazebo_demos', 'symlink_install': False, 'test_result_base': None}
+[1.284s] Level 5:colcon.colcon_core.verb:set package 'ros_ign' build argument 'cmake_args' from command line to 'None'
+[1.284s] Level 5:colcon.colcon_core.verb:set package 'ros_ign' build argument 'cmake_target' from command line to 'None'
+[1.284s] Level 5:colcon.colcon_core.verb:set package 'ros_ign' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.284s] Level 5:colcon.colcon_core.verb:set package 'ros_ign' build argument 'cmake_clean_cache' from command line to 'False'
+[1.284s] Level 5:colcon.colcon_core.verb:set package 'ros_ign' build argument 'cmake_clean_first' from command line to 'False'
+[1.284s] Level 5:colcon.colcon_core.verb:set package 'ros_ign' build argument 'cmake_force_configure' from command line to 'False'
+[1.284s] Level 5:colcon.colcon_core.verb:set package 'ros_ign' build argument 'ament_cmake_args' from command line to 'None'
+[1.284s] Level 5:colcon.colcon_core.verb:set package 'ros_ign' build argument 'catkin_cmake_args' from command line to 'None'
+[1.284s] Level 5:colcon.colcon_core.verb:set package 'ros_ign' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.284s] DEBUG:colcon.colcon_core.verb:Building package 'ros_ign' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_ign', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_ign', 'merge_install': False, 'path': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_ign', 'symlink_install': False, 'test_result_base': None}
+[1.295s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.309s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.309s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_gz_interfaces' with build type 'ament_cmake'
+[1.309s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_gz_interfaces'
+[1.323s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.323s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.323s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.353s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_gz_sim' with build type 'ament_cmake'
+[1.353s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_gz_sim'
+[1.367s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.367s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.397s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_msgs' with build type 'ament_cmake'
+[1.397s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_msgs'
+[1.413s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.413s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.456s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_gz_interfaces -DCMAKE_INSTALL_PREFIX=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces
+[1.463s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_sim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_gz_sim -DCMAKE_INSTALL_PREFIX=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim
+[1.470s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_msgs -DCMAKE_INSTALL_PREFIX=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs
+[3.060s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_sim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_gz_sim -DCMAKE_INSTALL_PREFIX=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim
+[3.062s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_sim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_sim -- -j8 -l8
+[3.144s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_gz_interfaces -DCMAKE_INSTALL_PREFIX=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces
+[3.145s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_interfaces -- -j8 -l8
+[3.153s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_sim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_sim -- -j8 -l8
+[3.185s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_sim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_sim
+[3.210s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_interfaces' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_interfaces -- -j8 -l8
+[3.357s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros_gz_sim)
+[3.358s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_sim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_sim
+[3.381s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim' for CMake module files
+[3.382s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim' for CMake config files
+[3.382s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros_gz_sim', 'cmake_prefix_path')
+[3.396s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/hook/cmake_prefix_path.ps1'
+[3.399s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/hook/cmake_prefix_path.dsv'
+[3.401s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/hook/cmake_prefix_path.sh'
+[3.404s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/lib'
+[3.404s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros_gz_sim', 'ld_library_path_lib')
+[3.418s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/hook/ld_library_path_lib.ps1'
+[3.420s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/hook/ld_library_path_lib.dsv'
+[3.423s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/hook/ld_library_path_lib.sh'
+[3.425s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/bin'
+[3.425s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/lib/pkgconfig/ros_gz_sim.pc'
+[3.425s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/lib/python3.10/site-packages'
+[3.426s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/bin'
+[3.439s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/package.ps1'
+[3.442s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/package.dsv'
+[3.442s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/package.sh'
+[3.445s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/package.bash'
+[3.448s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/package.zsh'
+[3.451s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/colcon-core/packages/ros_gz_sim)
+[3.500s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros_gz_sim)
+[3.515s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim' for CMake module files
+[3.515s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim' for CMake config files
+[3.516s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros_gz_sim', 'cmake_prefix_path')
+[3.529s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/hook/cmake_prefix_path.ps1'
+[3.531s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/hook/cmake_prefix_path.dsv'
+[3.534s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/hook/cmake_prefix_path.sh'
+[3.536s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/lib'
+[3.536s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros_gz_sim', 'ld_library_path_lib')
+[3.549s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/hook/ld_library_path_lib.ps1'
+[3.552s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/hook/ld_library_path_lib.dsv'
+[3.554s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/hook/ld_library_path_lib.sh'
+[3.556s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/bin'
+[3.557s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/lib/pkgconfig/ros_gz_sim.pc'
+[3.557s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/lib/python3.10/site-packages'
+[3.557s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/bin'
+[3.570s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/package.ps1'
+[3.572s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/package.dsv'
+[3.575s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/package.sh'
+[3.577s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/package.bash'
+[3.579s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/ros_gz_sim/package.zsh'
+[3.581s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_sim/share/colcon-core/packages/ros_gz_sim)
+[3.584s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_ign_gazebo' with build type 'ament_cmake'
+[3.584s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_ign_gazebo'
+[3.608s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.608s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.651s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros_gz_interfaces)
+[3.665s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces' for CMake module files
+[3.666s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces' for CMake config files
+[3.666s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros_gz_interfaces', 'cmake_prefix_path')
+[3.679s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/hook/cmake_prefix_path.ps1'
+[3.682s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/hook/cmake_prefix_path.dsv'
+[3.684s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/hook/cmake_prefix_path.sh'
+[3.687s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/lib'
+[3.687s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros_gz_interfaces', 'ld_library_path_lib')
+[3.700s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/hook/ld_library_path_lib.ps1'
+[3.702s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/hook/ld_library_path_lib.dsv'
+[3.704s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/hook/ld_library_path_lib.sh'
+[3.706s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/bin'
+[3.707s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/lib/pkgconfig/ros_gz_interfaces.pc'
+[3.707s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/lib/python3.10/site-packages'
+[3.707s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/bin'
+[3.720s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/package.ps1'
+[3.723s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/package.dsv'
+[3.725s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/package.sh'
+[3.727s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/package.bash'
+[3.729s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/package.zsh'
+[3.732s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/colcon-core/packages/ros_gz_interfaces)
+[4.376s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.376s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.376s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[4.377s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.393s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.393s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.393s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.403s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.418s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/local_setup.ps1'
+[4.420s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/_local_setup_util_ps1.py'
+[4.423s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/setup.ps1'
+[4.439s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/local_setup.sh'
+[4.441s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/_local_setup_util_sh.py'
+[4.444s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/setup.sh'
+[4.463s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/local_setup.bash'
+[4.465s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/setup.bash'
+[4.482s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/local_setup.zsh'
+[4.484s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/setup.zsh'

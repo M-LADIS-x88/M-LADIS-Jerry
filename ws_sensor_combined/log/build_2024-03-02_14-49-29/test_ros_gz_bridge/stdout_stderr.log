@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[ 33%] Built target gtest_main
+[ 66%] Built target gtest
+[35m[1mConsolidate compiler generated dependencies of target test_ros_gz_bridge[0m
+[100%] Built target test_ros_gz_bridge
+-- Install configuration: ""
+-- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/test_ros_gz_bridge/share/ament_index/resource_index/package_run_dependencies/test_ros_gz_bridge
+-- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/test_ros_gz_bridge/share/ament_index/resource_index/parent_prefix_path/test_ros_gz_bridge
+-- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/test_ros_gz_bridge/share/test_ros_gz_bridge/environment/ament_prefix_path.sh
+-- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/test_ros_gz_bridge/share/test_ros_gz_bridge/environment/ament_prefix_path.dsv
+-- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/test_ros_gz_bridge/share/test_ros_gz_bridge/environment/path.sh
+-- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/test_ros_gz_bridge/share/test_ros_gz_bridge/environment/path.dsv
+-- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/test_ros_gz_bridge/share/test_ros_gz_bridge/local_setup.bash
+-- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/test_ros_gz_bridge/share/test_ros_gz_bridge/local_setup.sh
+-- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/test_ros_gz_bridge/share/test_ros_gz_bridge/local_setup.zsh
+-- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/test_ros_gz_bridge/share/test_ros_gz_bridge/local_setup.dsv
+-- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/test_ros_gz_bridge/share/test_ros_gz_bridge/package.dsv
+-- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/test_ros_gz_bridge/share/ament_index/resource_index/packages/test_ros_gz_bridge
+-- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/test_ros_gz_bridge/share/test_ros_gz_bridge/cmake/test_ros_gz_bridgeConfig.cmake
+-- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/test_ros_gz_bridge/share/test_ros_gz_bridge/cmake/test_ros_gz_bridgeConfig-version.cmake
+-- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/test_ros_gz_bridge/share/test_ros_gz_bridge/package.xml

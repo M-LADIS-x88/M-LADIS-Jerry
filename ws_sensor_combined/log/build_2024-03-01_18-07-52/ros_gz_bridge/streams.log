@@ -1,0 +1,266 @@
+[0.099s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_bridge': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_gz_bridge -DCMAKE_INSTALL_PREFIX=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge
+[0.165s] -- The C compiler identification is GNU 11.4.0
+[0.232s] -- The CXX compiler identification is GNU 11.4.0
+[0.242s] -- Detecting C compiler ABI info
+[0.323s] -- Detecting C compiler ABI info - done
+[0.331s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.331s] -- Detecting C compile features
+[0.331s] -- Detecting C compile features - done
+[0.335s] -- Detecting CXX compiler ABI info
+[0.422s] -- Detecting CXX compiler ABI info - done
+[0.437s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.437s] -- Detecting CXX compile features
+[0.438s] -- Detecting CXX compile features - done
+[0.441s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.630s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.720s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[0.760s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.765s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.773s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.788s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.808s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.878s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.881s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.989s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.022s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.092s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.103s] -- Looking for pthread.h
+[1.179s] -- Looking for pthread.h - found
+[1.180s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.260s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.262s] -- Found Threads: TRUE  
+[1.463s] -- Found rclcpp_components: 16.0.8 (/opt/ros/humble/share/rclcpp_components/cmake)
+[1.534s] -- Found yaml_cpp_vendor: 8.0.2 (/opt/ros/humble/share/yaml_cpp_vendor/cmake)
+[1.538s] -- Looking for ignition-transport11 -- found version 11.4.1
+[1.544s] -- Searching for dependencies of ignition-transport11
+[1.570s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[1.582s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[1.587s] -- Checking for module 'libzmq >= 4'
+[1.601s] --   Found libzmq , version 4.3.4
+[1.640s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[1.646s] -- Checking for module 'uuid'
+[1.660s] --   Found uuid, version 2.37.2
+[1.693s] -- Found UUID: TRUE  
+[1.695s] -- Looking for ignition-utils1 -- found version 1.5.1
+[1.696s] -- Searching for dependencies of ignition-utils1
+[1.696s] -- Searching for <ignition-utils1> component [cli]
+[1.698s] -- Looking for ignition-utils1-cli -- found version 1.5.1
+[1.699s] -- Searching for dependencies of ignition-utils1-cli
+[1.701s] -- Looking for ignition-msgs8 -- found version 8.7.0
+[1.702s] -- Searching for dependencies of ignition-msgs8
+[1.722s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[1.724s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.725s] -- Searching for dependencies of ignition-math6
+[1.731s] -- Checking for module 'tinyxml2'
+[1.745s] --   Found tinyxml2, version 9.0.0
+[1.787s] -- Looking for ignition-msgs8 -- found version 8.7.0
+[1.787s] -- Compiling against Ignition Fortress
+[1.787s] -- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[1.861s] -- Found actuator_msgs: 0.0.1 (/opt/ros/humble/share/actuator_msgs/cmake)
+[1.906s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.992s] -- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.992s] -- Found rcl_interfaces: 1.2.1 (/opt/ros/humble/share/rcl_interfaces/cmake)
+[2.105s] -- Found ros_gz_interfaces: 0.244.13 (/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake)
+[2.105s] -- Found rosgraph_msgs: 1.2.1 (/opt/ros/humble/share/rosgraph_msgs/cmake)
+[2.192s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.192s] -- Found std_msgs: 4.2.3 (/opt/ros/humble/share/std_msgs/cmake)
+[2.349s] -- Found tf2_msgs: 0.25.6 (/opt/ros/humble/share/tf2_msgs/cmake)
+[2.445s] -- Found trajectory_msgs: 4.2.3 (/opt/ros/humble/share/trajectory_msgs/cmake)
+[2.518s] -- Found vision_msgs: 4.1.1 (/opt/ros/humble/share/vision_msgs/cmake)
+[2.653s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.802s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.837s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.845s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[2.846s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.846s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.846s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.882s] -- Found PythonExtra: .so  
+[2.924s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.975s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.986s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.990s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_gz_bridge/include>;$<BUILD_INTERFACE:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_gz_bridge/src>;/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_gz_bridge/include;/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_gz_bridge/test;/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_gz_bridge/test/subscribers;/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_gz_bridge/src
+[2.991s] -- Configured cppcheck exclude dirs and/or files: 
+[3.002s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[3.003s] -- Configured cpplint exclude dirs and/or files: 
+[3.009s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.014s] -- Added test 'lint_cmake' to check CMake code style
+[3.016s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.024s] -- Added test 'uncrustify' to check C / C++ code style
+[3.024s] -- Configured uncrustify additional arguments: 
+[3.026s] -- Added test 'xmllint' to check XML markup files
+[3.032s] -- Configuring done
+[3.234s] -- Generating done
+[3.248s] -- Build files have been written to: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_bridge
+[3.275s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_bridge' returned '0': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_gz_bridge -DCMAKE_INSTALL_PREFIX=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge
+[3.277s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_bridge': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_bridge -- -j8 -l8
+[3.350s] [  1%] [34m[1mGenerating factories for interface types[0m
+[3.367s] [  2%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[3.375s] [  3%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[3.393s] [  4%] [32mBuilding CXX object CMakeFiles/bridge_node.dir/rclcpp_components/node_main_bridge_node.cpp.o[0m
+[4.132s] [  5%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/src/bridge_config.cpp.o[0m
+[4.158s] [  6%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/src/bridge_handle_gz_to_ros.cpp.o[0m
+[4.176s] [  7%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/src/bridge_handle_ros_to_gz.cpp.o[0m
+[4.180s] [ 10%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/src/bridge_handle.cpp.o[0m
+[4.183s] [ 10%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/src/factory_interface.cpp.o[0m
+[6.177s] [ 11%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[6.348s] [ 11%] Built target gtest_main
+[6.364s] [ 12%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/src/service_factory_interface.cpp.o[0m
+[15.223s] [ 13%] [32m[1mLinking CXX executable bridge_node[0m
+[16.004s] [ 13%] Built target bridge_node
+[16.063s] [ 14%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/src/service_factories/ros_gz_interfaces.cpp.o[0m
+[16.161s] [ 15%] [32m[1mLinking CXX static library libgtest.a[0m
+[16.494s] [ 15%] Built target gtest
+[16.542s] [ 17%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/src/ros_gz_bridge.cpp.o[0m
+[20.748s] [ 18%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/src/convert/utils.cpp.o[0m
+[21.583s] [ 19%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/src/convert/builtin_interfaces.cpp.o[0m
+[38.509s] [ 20%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/src/convert/ros_gz_interfaces.cpp.o[0m
+[46.847s] [ 21%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/src/convert/rosgraph_msgs.cpp.o[0m
+[52.275s] [ 22%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/src/convert/sensor_msgs.cpp.o[0m
+[54.472s] [ 23%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/src/convert/std_msgs.cpp.o[0m
+[55.854s] [ 25%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/src/convert/tf2_msgs.cpp.o[0m
+[57.007s] [ 26%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/src/convert/trajectory_msgs.cpp.o[0m
+[58.233s] [ 27%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/src/convert/vision_msgs.cpp.o[0m
+[59.523s] [ 28%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/generated/get_factory.cpp.o[0m
+[60.534s] [ 29%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/generated/get_mappings.cpp.o[0m
+[61.547s] [ 30%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/src/convert/rcl_interfaces.cpp.o[0m
+[61.697s] [ 31%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/src/convert/nav_msgs.cpp.o[0m
+[62.713s] [ 32%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/generated/factories/builtin_interfaces.cpp.o[0m
+[63.274s] [ 34%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/src/convert/geometry_msgs.cpp.o[0m
+[63.317s] [ 35%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/generated/factories/actuator_msgs.cpp.o[0m
+[63.561s] [ 36%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/src/convert/actuator_msgs.cpp.o[0m
+[64.615s] [ 37%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/generated/factories/geometry_msgs.cpp.o[0m
+[65.807s] [ 38%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/generated/factories/nav_msgs.cpp.o[0m
+[65.902s] [ 39%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/generated/factories/rcl_interfaces.cpp.o[0m
+[72.802s] [ 40%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/generated/factories/ros_gz_interfaces.cpp.o[0m
+[104.676s] [ 42%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/generated/factories/tf2_msgs.cpp.o[0m
+[106.697s] [ 43%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/generated/factories/std_msgs.cpp.o[0m
+[108.750s] [ 44%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/generated/factories/sensor_msgs.cpp.o[0m
+[110.832s] [ 45%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/generated/factories/rosgraph_msgs.cpp.o[0m
+[223.727s] [ 47%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/generated/factories/vision_msgs.cpp.o[0m
+[223.729s] [ 47%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/generated/factories/trajectory_msgs.cpp.o[0m
+[260.479s] [ 48%] [32m[1mLinking CXX shared library libros_gz_bridge.so[0m
+[310.299s] [ 48%] Built target ros_gz_bridge
+[310.371s] [ 50%] [32mBuilding CXX object CMakeFiles/test_utils.dir/test/utils/ros_test_msg.cpp.o[0m
+[310.375s] [ 51%] [32mBuilding CXX object CMakeFiles/test_utils.dir/test/utils/gz_test_msg.cpp.o[0m
+[310.398s] [ 52%] [32mBuilding CXX object CMakeFiles/parameter_bridge.dir/src/parameter_bridge.cpp.o[0m
+[310.423s] [ 53%] [32mBuilding CXX object CMakeFiles/test_rcl_interfaces.dir/src/convert/rcl_interfaces.cpp.o[0m
+[313.797s] [ 54%] [32mBuilding CXX object CMakeFiles/test_rcl_interfaces.dir/src/convert/rcl_interfaces_TEST.cpp.o[0m
+[319.406s] [ 55%] [32m[1mLinking CXX executable test_rcl_interfaces[0m
+[320.278s] [ 55%] Built target test_rcl_interfaces
+[320.444s] [ 56%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge_bridge_config.dir/test/bridge_config.cpp.o[0m
+[324.672s] [ 57%] [32m[1mLinking CXX executable ros_gz_bridge_bridge_config[0m
+[332.390s] [ 59%] [32m[1mLinking CXX executable parameter_bridge[0m
+[342.402s] [ 60%] [32m[1mLinking CXX static library libtest_utils.a[0m
+[343.121s] [ 60%] Built target test_utils
+[348.757s] [ 60%] Built target ros_gz_bridge_bridge_config
+[353.719s] [ 60%] Built target parameter_bridge
+[353.771s] [ 61%] [32mBuilding CXX object CMakeFiles/test_gz_server.dir/test/serverclient/gz_server.cpp.o[0m
+[355.804s] [ 62%] [32mBuilding CXX object CMakeFiles/test_ros_client.dir/test/serverclient/ros_client.cpp.o[0m
+[356.818s] [ 63%] [34m[1mGenerating test helpers[0m
+[357.671s] [ 64%] [32mBuilding CXX object CMakeFiles/test_gz_subscriber.dir/generated/test/gz_subscriber.cpp.o[0m
+[357.747s] [ 65%] [32mBuilding CXX object CMakeFiles/test_ros_publisher.dir/generated/test/ros_publisher.cpp.o[0m
+[358.901s] [ 67%] [32mBuilding CXX object CMakeFiles/test_gz_publisher.dir/generated/test/gz_publisher.cpp.o[0m
+[369.715s] [ 68%] [32m[1mLinking CXX executable test_ros_client[0m
+[370.813s] [ 68%] Built target test_ros_client
+[377.229s] [ 69%] [32m[1mLinking CXX executable test_gz_server[0m
+[378.286s] [ 69%] Built target test_gz_server
+[382.041s] [ 70%] [32m[1mLinking CXX executable test_gz_publisher[0m
+[383.443s] [ 71%] Built target test_gz_publisher
+[405.617s] [ 72%] [32m[1mLinking CXX executable test_gz_subscriber[0m
+[407.396s] [ 72%] Built target test_gz_subscriber
+[428.385s] [ 73%] [32m[1mLinking CXX executable test_ros_publisher[0m
+[432.207s] [ 75%] Built target test_ros_publisher
+[432.341s] [ 76%] [32mBuilding CXX object CMakeFiles/test_ros_gz_interfaces.dir/src/convert/ros_gz_interfaces.cpp.o[0m
+[432.359s] [ 78%] [32mBuilding CXX object CMakeFiles/bridge_types.dir/src/bridge_types.cpp.o[0m
+[432.383s] [ 79%] [32mBuilding CXX object CMakeFiles/test_ros_subscriber.dir/test/subscribers/ros_subscriber.cpp.o[0m
+[432.383s] [ 79%] [32mBuilding CXX object CMakeFiles/test_ros_subscriber.dir/generated/test/actuator_msgs_subscriber.cpp.o[0m
+[432.385s] [ 80%] [32mBuilding CXX object CMakeFiles/test_ros_gz_interfaces.dir/src/convert/ros_gz_interfaces_TEST.cpp.o[0m
+[432.388s] [ 81%] [32mBuilding CXX object CMakeFiles/test_ros_subscriber.dir/generated/test/builtin_interfaces_subscriber.cpp.o[0m
+[432.403s] [ 82%] [32mBuilding CXX object CMakeFiles/static_bridge.dir/src/static_bridge.cpp.o[0m
+[433.478s] [ 84%] [32mBuilding CXX object CMakeFiles/test_ros_subscriber.dir/generated/test/geometry_msgs_subscriber.cpp.o[0m
+[435.937s] [ 85%] [32m[1mLinking CXX executable bridge_types[0m
+[458.374s] [ 86%] [32m[1mLinking CXX executable static_bridge[0m
+[466.084s] [ 87%] [32m[1mLinking CXX executable test_ros_gz_interfaces[0m
+[467.240s] [ 87%] Built target bridge_types
+[483.453s] [ 87%] Built target static_bridge
+[488.308s] [ 87%] Built target test_ros_gz_interfaces
+[525.481s] [ 88%] [32mBuilding CXX object CMakeFiles/test_ros_subscriber.dir/generated/test/std_msgs_subscriber.cpp.o[0m
+[525.485s] [ 89%] [32mBuilding CXX object CMakeFiles/test_ros_subscriber.dir/generated/test/tf2_msgs_subscriber.cpp.o[0m
+[526.506s] [ 90%] [32mBuilding CXX object CMakeFiles/test_ros_subscriber.dir/generated/test/sensor_msgs_subscriber.cpp.o[0m
+[527.535s] [ 92%] [32mBuilding CXX object CMakeFiles/test_ros_subscriber.dir/generated/test/rosgraph_msgs_subscriber.cpp.o[0m
+[528.576s] [ 93%] [32mBuilding CXX object CMakeFiles/test_ros_subscriber.dir/generated/test/ros_gz_interfaces_subscriber.cpp.o[0m
+[529.630s] [ 94%] [32mBuilding CXX object CMakeFiles/test_ros_subscriber.dir/generated/test/rcl_interfaces_subscriber.cpp.o[0m
+[531.726s] [ 95%] [32mBuilding CXX object CMakeFiles/test_ros_subscriber.dir/generated/test/nav_msgs_subscriber.cpp.o[0m
+[626.208s] [ 96%] [32mBuilding CXX object CMakeFiles/test_ros_subscriber.dir/generated/test/vision_msgs_subscriber.cpp.o[0m
+[626.209s] [ 97%] [32mBuilding CXX object CMakeFiles/test_ros_subscriber.dir/generated/test/trajectory_msgs_subscriber.cpp.o[0m
+[651.103s] [ 98%] [32m[1mLinking CXX executable test_ros_subscriber[0m
+[672.950s] [100%] Built target test_ros_subscriber
+[673.060s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_bridge' returned '0': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_bridge -- -j8 -l8
+[673.274s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_bridge': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_bridge
+[673.279s] -- Install configuration: ""
+[673.279s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/lib/ros_gz_bridge/bridge_node
+[673.280s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/lib/ros_gz_bridge/bridge_node" to ""
+[673.281s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/lib/libros_gz_bridge.so
+[673.472s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/lib/libros_gz_bridge.so" to ""
+[673.472s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/include/ros_gz_bridge
+[673.472s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/include/ros_gz_bridge/ros_gz_bridge
+[673.472s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/include/ros_gz_bridge/ros_gz_bridge/bridge_config.hpp
+[673.472s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/include/ros_gz_bridge/ros_gz_bridge/convert.hpp
+[673.477s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/include/ros_gz_bridge/ros_gz_bridge/convert_decl.hpp
+[673.477s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/include/ros_gz_bridge/ros_gz_bridge/convert
+[673.477s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/include/ros_gz_bridge/ros_gz_bridge/convert/builtin_interfaces.hpp
+[673.477s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/include/ros_gz_bridge/ros_gz_bridge/convert/sensor_msgs.hpp
+[673.478s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/include/ros_gz_bridge/ros_gz_bridge/convert/ros_gz_interfaces.hpp
+[673.478s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/include/ros_gz_bridge/ros_gz_bridge/convert/nav_msgs.hpp
+[673.478s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/include/ros_gz_bridge/ros_gz_bridge/convert/std_msgs.hpp
+[673.478s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/include/ros_gz_bridge/ros_gz_bridge/convert/tf2_msgs.hpp
+[673.478s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/include/ros_gz_bridge/ros_gz_bridge/convert/rosgraph_msgs.hpp
+[673.479s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/include/ros_gz_bridge/ros_gz_bridge/convert/trajectory_msgs.hpp
+[673.479s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/include/ros_gz_bridge/ros_gz_bridge/convert/actuator_msgs.hpp
+[673.479s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/include/ros_gz_bridge/ros_gz_bridge/convert/geometry_msgs.hpp
+[673.479s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/include/ros_gz_bridge/ros_gz_bridge/convert/rcl_interfaces.hpp
+[673.480s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/include/ros_gz_bridge/ros_gz_bridge/convert/vision_msgs.hpp
+[673.480s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/include/ros_gz_bridge/ros_gz_bridge/ros_gz_bridge.hpp
+[673.480s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/lib/ros_gz_bridge/parameter_bridge
+[673.481s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/lib/ros_gz_bridge/parameter_bridge" to ""
+[673.481s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/lib/ros_gz_bridge/static_bridge
+[673.482s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/lib/ros_gz_bridge/static_bridge" to ""
+[673.482s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/lib/ros_gz_bridge/bridge_types
+[673.483s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/lib/ros_gz_bridge/bridge_types" to ""
+[673.483s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/lib/ros_gz_bridge/test_ros_publisher
+[673.495s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/lib/ros_gz_bridge/test_ros_publisher" to ""
+[673.496s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/lib/ros_gz_bridge/test_ros_subscriber
+[673.587s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/lib/ros_gz_bridge/test_ros_subscriber" to ""
+[673.588s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/lib/ros_gz_bridge/test_gz_publisher
+[673.590s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/lib/ros_gz_bridge/test_gz_publisher" to ""
+[673.590s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/lib/ros_gz_bridge/test_gz_subscriber
+[673.595s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/lib/ros_gz_bridge/test_gz_subscriber" to ""
+[673.595s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/lib/ros_gz_bridge/test_gz_server
+[673.596s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/lib/ros_gz_bridge/test_gz_server" to ""
+[673.596s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/lib/ros_gz_bridge/test_ros_client
+[673.597s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/lib/ros_gz_bridge/test_ros_client" to ""
+[673.598s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/share/ros_gz_bridge/environment/library_path.sh
+[673.598s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/share/ros_gz_bridge/environment/library_path.dsv
+[673.599s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/share/ament_index/resource_index/package_run_dependencies/ros_gz_bridge
+[673.600s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/share/ament_index/resource_index/parent_prefix_path/ros_gz_bridge
+[673.601s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/share/ros_gz_bridge/environment/ament_prefix_path.sh
+[673.601s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/share/ros_gz_bridge/environment/ament_prefix_path.dsv
+[673.601s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/share/ros_gz_bridge/environment/path.sh
+[673.602s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/share/ros_gz_bridge/environment/path.dsv
+[673.602s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/share/ros_gz_bridge/local_setup.bash
+[673.602s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/share/ros_gz_bridge/local_setup.sh
+[673.602s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/share/ros_gz_bridge/local_setup.zsh
+[673.603s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/share/ros_gz_bridge/local_setup.dsv
+[673.603s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/share/ros_gz_bridge/package.dsv
+[673.603s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/share/ament_index/resource_index/packages/ros_gz_bridge
+[673.604s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/share/ament_index/resource_index/rclcpp_components/ros_gz_bridge
+[673.605s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/share/ros_gz_bridge/cmake/export_ros_gz_bridgeExport.cmake
+[673.605s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/share/ros_gz_bridge/cmake/export_ros_gz_bridgeExport-noconfig.cmake
+[673.605s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/share/ros_gz_bridge/cmake/ament_cmake_export_include_directories-extras.cmake
+[673.606s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/share/ros_gz_bridge/cmake/ament_cmake_export_libraries-extras.cmake
+[673.606s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/share/ros_gz_bridge/cmake/ament_cmake_export_targets-extras.cmake
+[673.618s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/share/ros_gz_bridge/cmake/ament_cmake_export_dependencies-extras.cmake
+[673.620s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/share/ros_gz_bridge/cmake/ros_gz_bridgeConfig.cmake
+[673.621s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/share/ros_gz_bridge/cmake/ros_gz_bridgeConfig-version.cmake
+[673.621s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_bridge/share/ros_gz_bridge/package.xml
+[673.642s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_bridge' returned '0': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_bridge

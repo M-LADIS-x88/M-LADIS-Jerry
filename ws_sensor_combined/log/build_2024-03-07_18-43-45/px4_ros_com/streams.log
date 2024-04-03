@@ -1,0 +1,37 @@
+[0.079s] Invoking command in '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com:/opt/ros/humble LD_LIBRARY_PATH=/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com -- -j16 -l16
+[0.110s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.236s] -- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.257s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.259s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.264s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.273s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.287s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.299s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.300s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.382s] -- Found px4_msgs: 2.0.1 (/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/cmake)
+[0.410s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[0.451s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.452s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.584s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.691s] -- Found rclpy: 3.3.12 (/opt/ros/humble/share/rclpy/cmake)
+[0.692s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.769s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.835s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.837s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.838s] -- Configured cppcheck include dirs: /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/include;$<BUILD_INTERFACE:/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/include/px4_ros_com>
+[0.838s] -- Configured cppcheck exclude dirs and/or files: 
+[0.840s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.840s] -- Configured cpplint exclude dirs and/or files: 
+[0.841s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.841s] -- Added test 'lint_cmake' to check CMake code style
+[0.842s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.844s] -- Added test 'uncrustify' to check C / C++ code style
+[0.844s] -- Configured uncrustify additional arguments: 
+[0.845s] -- Added test 'xmllint' to check XML markup files
+[0.846s] -- Configuring done
+[0.867s] [0mCMake Error: Cannot determine link language for target "PC_ingestion".[0m
+[0.867s] [0mCMake Error: CMake can not determine linker language for target: PC_ingestion[0m
+[0.869s] -- Generating done
+[0.871s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[0.887s] gmake: *** [Makefile:472: cmake_check_build_system] Error 1
+[0.890s] Invoked command in '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com' returned '2': CMAKE_PREFIX_PATH=/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com:/opt/ros/humble LD_LIBRARY_PATH=/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com -- -j16 -l16

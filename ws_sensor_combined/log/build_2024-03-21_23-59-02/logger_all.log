@@ -1,0 +1,652 @@
+[0.051s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.051s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=32, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7187cc151420>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7187cc150340>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7187cc150340>>)
+[0.070s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.070s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.070s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.070s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.070s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.070s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.070s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(ros) by extensions ['ignore', 'ignore_ament_install']
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(ros) by extension 'ignore'
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(ros) by extension 'ignore_ament_install'
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(ros) by extensions ['colcon_pkg']
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(ros) by extension 'colcon_pkg'
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(ros) by extensions ['colcon_meta']
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(ros) by extension 'colcon_meta'
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(ros) by extensions ['ros']
+[0.078s] Level 1:colcon.colcon_core.package_identification:_identify(ros) by extension 'ros'
+[0.080s] DEBUG:colcon.colcon_core.package_identification:Package 'ros' with type 'ros.ament_cmake' and name 'ros'
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ignore'
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ignore_ament_install'
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['colcon_pkg']
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'colcon_pkg'
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['colcon_meta']
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'colcon_meta'
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['ros']
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ros'
+[0.080s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4_msgs' with type 'ros.ament_cmake' and name 'px4_msgs'
+[0.081s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['ignore', 'ignore_ament_install']
+[0.081s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ignore'
+[0.081s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ignore_ament_install'
+[0.081s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['colcon_pkg']
+[0.081s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'colcon_pkg'
+[0.081s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['colcon_meta']
+[0.081s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'colcon_meta'
+[0.081s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['ros']
+[0.081s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ros'
+[0.081s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4_ros_com' with type 'ros.ament_cmake' and name 'px4_ros_com'
+[0.081s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extensions ['ignore', 'ignore_ament_install']
+[0.081s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extension 'ignore'
+[0.081s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extension 'ignore_ament_install'
+[0.081s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extensions ['colcon_pkg']
+[0.081s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extension 'colcon_pkg'
+[0.081s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extensions ['colcon_meta']
+[0.081s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extension 'colcon_meta'
+[0.081s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extensions ['ros']
+[0.081s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extension 'ros'
+[0.081s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extensions ['cmake', 'python']
+[0.081s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extension 'cmake'
+[0.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extension 'python'
+[0.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extensions ['python_setup_py']
+[0.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extension 'python_setup_py'
+[0.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extensions ['ignore', 'ignore_ament_install']
+[0.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'ignore'
+[0.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'ignore_ament_install'
+[0.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extensions ['colcon_pkg']
+[0.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'colcon_pkg'
+[0.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extensions ['colcon_meta']
+[0.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'colcon_meta'
+[0.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extensions ['ros']
+[0.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'ros'
+[0.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extensions ['cmake', 'python']
+[0.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'cmake'
+[0.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'python'
+[0.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extensions ['python_setup_py']
+[0.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'python_setup_py'
+[0.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extensions ['ignore', 'ignore_ament_install']
+[0.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extension 'ignore'
+[0.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extension 'ignore_ament_install'
+[0.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extensions ['colcon_pkg']
+[0.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extension 'colcon_pkg'
+[0.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extensions ['colcon_meta']
+[0.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extension 'colcon_meta'
+[0.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extensions ['ros']
+[0.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extension 'ros'
+[0.082s] DEBUG:colcon.colcon_core.package_identification:Package 'src/velodyne/velodyne' with type 'ros.ament_cmake' and name 'velodyne'
+[0.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extension 'ignore'
+[0.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extension 'ignore_ament_install'
+[0.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extensions ['colcon_pkg']
+[0.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extension 'colcon_pkg'
+[0.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extensions ['colcon_meta']
+[0.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extension 'colcon_meta'
+[0.083s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extensions ['ros']
+[0.083s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extension 'ros'
+[0.083s] DEBUG:colcon.colcon_core.package_identification:Package 'src/velodyne/velodyne_driver' with type 'ros.ament_cmake' and name 'velodyne_driver'
+[0.083s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extensions ['ignore', 'ignore_ament_install']
+[0.083s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extension 'ignore'
+[0.083s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extension 'ignore_ament_install'
+[0.083s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extensions ['colcon_pkg']
+[0.083s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extension 'colcon_pkg'
+[0.083s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extensions ['colcon_meta']
+[0.083s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extension 'colcon_meta'
+[0.083s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extensions ['ros']
+[0.083s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extension 'ros'
+[0.084s] DEBUG:colcon.colcon_core.package_identification:Package 'src/velodyne/velodyne_laserscan' with type 'ros.ament_cmake' and name 'velodyne_laserscan'
+[0.084s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.084s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extension 'ignore'
+[0.084s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extension 'ignore_ament_install'
+[0.084s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extensions ['colcon_pkg']
+[0.084s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extension 'colcon_pkg'
+[0.084s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extensions ['colcon_meta']
+[0.084s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extension 'colcon_meta'
+[0.084s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extensions ['ros']
+[0.084s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extension 'ros'
+[0.084s] DEBUG:colcon.colcon_core.package_identification:Package 'src/velodyne/velodyne_msgs' with type 'ros.ament_cmake' and name 'velodyne_msgs'
+[0.084s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extensions ['ignore', 'ignore_ament_install']
+[0.084s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extension 'ignore'
+[0.084s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extension 'ignore_ament_install'
+[0.084s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extensions ['colcon_pkg']
+[0.084s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extension 'colcon_pkg'
+[0.084s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extensions ['colcon_meta']
+[0.084s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extension 'colcon_meta'
+[0.084s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extensions ['ros']
+[0.084s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extension 'ros'
+[0.085s] DEBUG:colcon.colcon_core.package_identification:Package 'src/velodyne/velodyne_pointcloud' with type 'ros.ament_cmake' and name 'velodyne_pointcloud'
+[0.085s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.085s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.085s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.085s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.085s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.095s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.095s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.097s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 291 installed packages in /opt/ros/humble
+[0.097s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.116s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_args' from command line to 'None'
+[0.116s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target' from command line to 'None'
+[0.116s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.116s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.116s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.116s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.116s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.116s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.116s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.116s] DEBUG:colcon.colcon_core.verb:Building package 'px4_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs', 'merge_install': False, 'path': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.116s] Level 5:colcon.colcon_core.verb:set package 'ros' build argument 'cmake_args' from command line to 'None'
+[0.116s] Level 5:colcon.colcon_core.verb:set package 'ros' build argument 'cmake_target' from command line to 'None'
+[0.116s] Level 5:colcon.colcon_core.verb:set package 'ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.116s] Level 5:colcon.colcon_core.verb:set package 'ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.116s] Level 5:colcon.colcon_core.verb:set package 'ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.116s] Level 5:colcon.colcon_core.verb:set package 'ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.116s] Level 5:colcon.colcon_core.verb:set package 'ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.116s] Level 5:colcon.colcon_core.verb:set package 'ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.116s] Level 5:colcon.colcon_core.verb:set package 'ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.116s] DEBUG:colcon.colcon_core.verb:Building package 'ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros', 'merge_install': False, 'path': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/ros', 'symlink_install': False, 'test_result_base': None}
+[0.116s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'cmake_args' from command line to 'None'
+[0.116s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'cmake_target' from command line to 'None'
+[0.116s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.116s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'cmake_clean_cache' from command line to 'False'
+[0.116s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'cmake_clean_first' from command line to 'False'
+[0.116s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'cmake_force_configure' from command line to 'False'
+[0.116s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'ament_cmake_args' from command line to 'None'
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'catkin_cmake_args' from command line to 'None'
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.117s] DEBUG:colcon.colcon_core.verb:Building package 'velodyne_laserscan' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_laserscan', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan', 'merge_install': False, 'path': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/velodyne/velodyne_laserscan', 'symlink_install': False, 'test_result_base': None}
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'cmake_args' from command line to 'None'
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'cmake_target' from command line to 'None'
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.117s] DEBUG:colcon.colcon_core.verb:Building package 'velodyne_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs', 'merge_install': False, 'path': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/velodyne/velodyne_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_args' from command line to 'None'
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_target' from command line to 'None'
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_clean_cache' from command line to 'False'
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_clean_first' from command line to 'False'
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_force_configure' from command line to 'False'
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'ament_cmake_args' from command line to 'None'
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'catkin_cmake_args' from command line to 'None'
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.117s] DEBUG:colcon.colcon_core.verb:Building package 'px4_ros_com' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com', 'merge_install': False, 'path': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com', 'symlink_install': False, 'test_result_base': None}
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'cmake_args' from command line to 'None'
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'cmake_target' from command line to 'None'
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.117s] DEBUG:colcon.colcon_core.verb:Building package 'velodyne_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver', 'merge_install': False, 'path': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/velodyne/velodyne_driver', 'symlink_install': False, 'test_result_base': None}
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'cmake_args' from command line to 'None'
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'cmake_target' from command line to 'None'
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'cmake_clean_cache' from command line to 'False'
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'cmake_clean_first' from command line to 'False'
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'cmake_force_configure' from command line to 'False'
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'ament_cmake_args' from command line to 'None'
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'catkin_cmake_args' from command line to 'None'
+[0.117s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.117s] DEBUG:colcon.colcon_core.verb:Building package 'velodyne_pointcloud' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_pointcloud', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud', 'merge_install': False, 'path': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/velodyne/velodyne_pointcloud', 'symlink_install': False, 'test_result_base': None}
+[0.118s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'cmake_args' from command line to 'None'
+[0.118s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'cmake_target' from command line to 'None'
+[0.118s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.118s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'cmake_clean_cache' from command line to 'False'
+[0.118s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'cmake_clean_first' from command line to 'False'
+[0.118s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'cmake_force_configure' from command line to 'False'
+[0.118s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'ament_cmake_args' from command line to 'None'
+[0.118s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'catkin_cmake_args' from command line to 'None'
+[0.118s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.118s] DEBUG:colcon.colcon_core.verb:Building package 'velodyne' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne', 'merge_install': False, 'path': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/velodyne/velodyne', 'symlink_install': False, 'test_result_base': None}
+[0.118s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.118s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.119s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/velodyne/velodyne_msgs' with build type 'ament_cmake'
+[0.119s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/velodyne/velodyne_msgs'
+[0.120s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.120s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.120s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.125s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_msgs' with build type 'ament_cmake'
+[0.125s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_msgs'
+[0.125s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.126s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.131s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/velodyne/velodyne_laserscan' with build type 'ament_cmake'
+[0.131s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/velodyne/velodyne_laserscan'
+[0.131s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.131s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.136s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/ros' with build type 'ament_cmake'
+[0.136s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/ros'
+[0.136s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.137s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.152s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_msgs -- -j32 -l32
+[0.161s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs -- -j32 -l32
+[0.170s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_laserscan': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_laserscan -- -j32 -l32
+[0.180s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros -- -j32 -l32
+[0.205s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros -- -j32 -l32
+[0.226s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros
+[0.230s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_laserscan' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_laserscan -- -j32 -l32
+[0.236s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros)
+[0.236s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros
+[0.237s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros' for CMake module files
+[0.237s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros' for CMake config files
+[0.237s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros', 'cmake_prefix_path')
+[0.237s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/hook/cmake_prefix_path.ps1'
+[0.241s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/hook/cmake_prefix_path.dsv'
+[0.245s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/hook/cmake_prefix_path.sh'
+[0.250s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/bin'
+[0.250s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/lib/pkgconfig/ros.pc'
+[0.250s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/lib/python3.10/site-packages'
+[0.250s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/bin'
+[0.250s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/package.ps1'
+[0.254s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/package.dsv'
+[0.258s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/package.sh'
+[0.263s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/package.bash'
+[0.267s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/package.zsh'
+[0.271s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/colcon-core/packages/ros)
+[0.276s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_laserscan': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_laserscan
+[0.286s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_laserscan)
+[0.287s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan' for CMake module files
+[0.287s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_laserscan' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_laserscan
+[0.287s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan' for CMake config files
+[0.287s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_laserscan', 'cmake_prefix_path')
+[0.287s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/hook/cmake_prefix_path.ps1'
+[0.291s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/hook/cmake_prefix_path.dsv'
+[0.295s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/hook/cmake_prefix_path.sh'
+[0.300s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/lib'
+[0.300s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_laserscan', 'ld_library_path_lib')
+[0.300s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/hook/ld_library_path_lib.ps1'
+[0.305s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/hook/ld_library_path_lib.dsv'
+[0.311s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/hook/ld_library_path_lib.sh'
+[0.315s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/bin'
+[0.315s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/lib/pkgconfig/velodyne_laserscan.pc'
+[0.315s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/lib/python3.10/site-packages'
+[0.316s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/bin'
+[0.316s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/package.ps1'
+[0.320s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/package.dsv'
+[0.324s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/package.sh'
+[0.328s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/package.bash'
+[0.331s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/package.zsh'
+[0.336s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/colcon-core/packages/velodyne_laserscan)
+[0.342s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros)
+[0.342s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros' for CMake module files
+[0.342s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros' for CMake config files
+[0.342s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros', 'cmake_prefix_path')
+[0.342s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/hook/cmake_prefix_path.ps1'
+[0.346s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/hook/cmake_prefix_path.dsv'
+[0.350s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/hook/cmake_prefix_path.sh'
+[0.354s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/bin'
+[0.354s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/lib/pkgconfig/ros.pc'
+[0.354s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/lib/python3.10/site-packages'
+[0.354s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/bin'
+[0.354s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/package.ps1'
+[0.358s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/package.dsv'
+[0.362s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/package.sh'
+[0.366s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/package.bash'
+[0.370s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/package.zsh'
+[0.374s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/colcon-core/packages/ros)
+[0.378s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_laserscan)
+[0.379s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan' for CMake module files
+[0.379s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan' for CMake config files
+[0.379s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_laserscan', 'cmake_prefix_path')
+[0.379s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/hook/cmake_prefix_path.ps1'
+[0.383s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/hook/cmake_prefix_path.dsv'
+[0.387s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/hook/cmake_prefix_path.sh'
+[0.391s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/lib'
+[0.391s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_laserscan', 'ld_library_path_lib')
+[0.391s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/hook/ld_library_path_lib.ps1'
+[0.395s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/hook/ld_library_path_lib.dsv'
+[0.399s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/hook/ld_library_path_lib.sh'
+[0.403s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/bin'
+[0.403s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/lib/pkgconfig/velodyne_laserscan.pc'
+[0.403s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/lib/python3.10/site-packages'
+[0.403s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/bin'
+[0.403s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/package.ps1'
+[0.407s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/package.dsv'
+[0.411s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/package.sh'
+[0.415s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/package.bash'
+[0.419s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/package.zsh'
+[0.423s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/colcon-core/packages/velodyne_laserscan)
+[0.431s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_msgs -- -j32 -l32
+[0.480s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_msgs
+[0.510s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_msgs)
+[0.510s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs' for CMake module files
+[0.510s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_msgs
+[0.511s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs' for CMake config files
+[0.511s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_msgs', 'cmake_prefix_path')
+[0.511s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/hook/cmake_prefix_path.ps1'
+[0.512s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/hook/cmake_prefix_path.dsv'
+[0.512s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/hook/cmake_prefix_path.sh'
+[0.512s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib'
+[0.512s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_msgs', 'ld_library_path_lib')
+[0.512s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/hook/ld_library_path_lib.ps1'
+[0.512s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/hook/ld_library_path_lib.dsv'
+[0.512s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/hook/ld_library_path_lib.sh'
+[0.513s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/bin'
+[0.513s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib/pkgconfig/velodyne_msgs.pc'
+[0.513s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib/python3.10/site-packages'
+[0.513s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/bin'
+[0.513s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/package.ps1'
+[0.513s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/package.dsv'
+[0.514s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/package.sh'
+[0.514s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/package.bash'
+[0.515s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/package.zsh'
+[0.515s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/colcon-core/packages/velodyne_msgs)
+[0.564s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_msgs)
+[0.564s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs' for CMake module files
+[0.565s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs' for CMake config files
+[0.565s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_msgs', 'cmake_prefix_path')
+[0.565s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/hook/cmake_prefix_path.ps1'
+[0.565s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/hook/cmake_prefix_path.dsv'
+[0.565s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/hook/cmake_prefix_path.sh'
+[0.566s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib'
+[0.566s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_msgs', 'ld_library_path_lib')
+[0.566s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/hook/ld_library_path_lib.ps1'
+[0.566s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/hook/ld_library_path_lib.dsv'
+[0.566s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/hook/ld_library_path_lib.sh'
+[0.566s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/bin'
+[0.567s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib/pkgconfig/velodyne_msgs.pc'
+[0.567s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib/python3.10/site-packages'
+[0.567s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/bin'
+[0.567s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/package.ps1'
+[0.567s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/package.dsv'
+[0.567s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/package.sh'
+[0.568s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/package.bash'
+[0.568s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/package.zsh'
+[0.568s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/colcon-core/packages/velodyne_msgs)
+[0.568s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/velodyne/velodyne_driver' with build type 'ament_cmake'
+[0.568s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/velodyne/velodyne_driver'
+[0.568s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.569s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.570s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/velodyne/velodyne_pointcloud' with build type 'ament_cmake'
+[0.570s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/velodyne/velodyne_pointcloud'
+[0.570s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.570s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.579s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_driver': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_driver -- -j32 -l32
+[0.580s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_pointcloud': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_pointcloud -- -j32 -l32
+[0.593s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs -- -j32 -l32
+[0.658s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_driver' returned '0': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_driver -- -j32 -l32
+[0.667s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_pointcloud' returned '0': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_pointcloud -- -j32 -l32
+[0.680s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_driver': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_driver
+[0.686s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_driver)
+[0.687s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver' for CMake module files
+[0.687s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_driver' returned '0': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_driver
+[0.687s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver' for CMake config files
+[0.687s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_driver', 'cmake_prefix_path')
+[0.687s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/hook/cmake_prefix_path.ps1'
+[0.687s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/hook/cmake_prefix_path.dsv'
+[0.688s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/hook/cmake_prefix_path.sh'
+[0.688s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/lib'
+[0.688s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_driver', 'ld_library_path_lib')
+[0.688s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/hook/ld_library_path_lib.ps1'
+[0.688s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/hook/ld_library_path_lib.dsv'
+[0.688s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/hook/ld_library_path_lib.sh'
+[0.689s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/bin'
+[0.689s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/lib/pkgconfig/velodyne_driver.pc'
+[0.689s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/lib/python3.10/site-packages'
+[0.689s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/bin'
+[0.689s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/package.ps1'
+[0.689s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/package.dsv'
+[0.689s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/package.sh'
+[0.689s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/package.bash'
+[0.690s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/package.zsh'
+[0.691s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/colcon-core/packages/velodyne_driver)
+[0.692s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_pointcloud': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_pointcloud
+[0.703s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_pointcloud)
+[0.703s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud' for CMake module files
+[0.703s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_pointcloud' returned '0': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_pointcloud
+[0.703s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud' for CMake config files
+[0.703s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_pointcloud', 'cmake_prefix_path')
+[0.703s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/cmake_prefix_path.ps1'
+[0.703s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/cmake_prefix_path.dsv'
+[0.704s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/cmake_prefix_path.sh'
+[0.704s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/lib'
+[0.704s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_pointcloud', 'ld_library_path_lib')
+[0.704s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/ld_library_path_lib.ps1'
+[0.704s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/ld_library_path_lib.dsv'
+[0.704s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/ld_library_path_lib.sh'
+[0.704s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/bin'
+[0.705s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/lib/pkgconfig/velodyne_pointcloud.pc'
+[0.705s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/lib/python3.10/site-packages'
+[0.705s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/bin'
+[0.705s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/share/velodyne_pointcloud/package.ps1'
+[0.705s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/share/velodyne_pointcloud/package.dsv'
+[0.705s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/share/velodyne_pointcloud/package.sh'
+[0.705s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/share/velodyne_pointcloud/package.bash'
+[0.706s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/share/velodyne_pointcloud/package.zsh'
+[0.706s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/share/colcon-core/packages/velodyne_pointcloud)
+[0.711s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_driver)
+[0.711s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver' for CMake module files
+[0.711s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver' for CMake config files
+[0.711s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_driver', 'cmake_prefix_path')
+[0.711s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/hook/cmake_prefix_path.ps1'
+[0.715s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/hook/cmake_prefix_path.dsv'
+[0.719s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/hook/cmake_prefix_path.sh'
+[0.722s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/lib'
+[0.722s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_driver', 'ld_library_path_lib')
+[0.722s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/hook/ld_library_path_lib.ps1'
+[0.726s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/hook/ld_library_path_lib.dsv'
+[0.729s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/hook/ld_library_path_lib.sh'
+[0.733s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/bin'
+[0.733s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/lib/pkgconfig/velodyne_driver.pc'
+[0.733s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/lib/python3.10/site-packages'
+[0.733s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/bin'
+[0.733s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/package.ps1'
+[0.737s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/package.dsv'
+[0.740s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/package.sh'
+[0.744s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/package.bash'
+[0.748s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/velodyne_driver/package.zsh'
+[0.751s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/share/colcon-core/packages/velodyne_driver)
+[0.755s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_pointcloud)
+[0.755s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud' for CMake module files
+[0.755s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud' for CMake config files
+[0.756s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_pointcloud', 'cmake_prefix_path')
+[0.756s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/cmake_prefix_path.ps1'
+[0.759s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/cmake_prefix_path.dsv'
+[0.763s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/cmake_prefix_path.sh'
+[0.766s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/lib'
+[0.766s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_pointcloud', 'ld_library_path_lib')
+[0.766s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/ld_library_path_lib.ps1'
+[0.770s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/ld_library_path_lib.dsv'
+[0.773s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/ld_library_path_lib.sh'
+[0.777s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/bin'
+[0.777s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/lib/pkgconfig/velodyne_pointcloud.pc'
+[0.777s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/lib/python3.10/site-packages'
+[0.777s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/bin'
+[0.777s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/share/velodyne_pointcloud/package.ps1'
+[0.781s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/share/velodyne_pointcloud/package.dsv'
+[0.785s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/share/velodyne_pointcloud/package.sh'
+[0.788s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/share/velodyne_pointcloud/package.bash'
+[0.792s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/share/velodyne_pointcloud/package.zsh'
+[0.795s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/share/colcon-core/packages/velodyne_pointcloud)
+[0.799s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/velodyne/velodyne' with build type 'ament_cmake'
+[0.799s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/velodyne/velodyne'
+[0.799s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.799s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.817s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne -- -j32 -l32
+[0.843s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne' returned '0': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne -- -j32 -l32
+[0.858s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne
+[0.864s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne)
+[0.864s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne' for CMake module files
+[0.864s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne' returned '0': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne
+[0.864s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne' for CMake config files
+[0.864s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne', 'cmake_prefix_path')
+[0.864s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne/share/velodyne/hook/cmake_prefix_path.ps1'
+[0.865s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne/share/velodyne/hook/cmake_prefix_path.dsv'
+[0.865s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne/share/velodyne/hook/cmake_prefix_path.sh'
+[0.865s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne/bin'
+[0.865s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne/lib/pkgconfig/velodyne.pc'
+[0.865s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne/lib/python3.10/site-packages'
+[0.865s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne/bin'
+[0.865s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne/share/velodyne/package.ps1'
+[0.866s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne/share/velodyne/package.dsv'
+[0.866s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne/share/velodyne/package.sh'
+[0.866s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne/share/velodyne/package.bash'
+[0.866s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne/share/velodyne/package.zsh'
+[0.866s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne/share/colcon-core/packages/velodyne)
+[0.880s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne)
+[0.881s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne' for CMake module files
+[0.881s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne' for CMake config files
+[0.881s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne', 'cmake_prefix_path')
+[0.881s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne/share/velodyne/hook/cmake_prefix_path.ps1'
+[0.884s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne/share/velodyne/hook/cmake_prefix_path.dsv'
+[0.888s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne/share/velodyne/hook/cmake_prefix_path.sh'
+[0.892s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne/bin'
+[0.892s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne/lib/pkgconfig/velodyne.pc'
+[0.892s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne/lib/python3.10/site-packages'
+[0.892s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne/bin'
+[0.892s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne/share/velodyne/package.ps1'
+[0.896s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne/share/velodyne/package.dsv'
+[0.899s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne/share/velodyne/package.sh'
+[0.903s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne/share/velodyne/package.bash'
+[0.906s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne/share/velodyne/package.zsh'
+[0.910s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne/share/colcon-core/packages/velodyne)
+[2.883s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs
+[3.072s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_msgs)
+[3.072s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs' for CMake module files
+[3.072s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs
+[3.073s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs' for CMake config files
+[3.075s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[3.075s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[3.078s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[3.082s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[3.085s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib'
+[3.085s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[3.086s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[3.089s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[3.093s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[3.096s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/bin'
+[3.096s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[3.096s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib/python3.10/site-packages'
+[3.096s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/bin'
+[3.097s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.ps1'
+[3.100s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.dsv'
+[3.104s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.sh'
+[3.107s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.bash'
+[3.111s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.zsh'
+[3.114s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[5.396s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_msgs)
+[5.396s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs' for CMake module files
+[5.396s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs' for CMake config files
+[5.398s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[5.398s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[5.402s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[5.405s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[5.409s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib'
+[5.409s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[5.409s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[5.413s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[5.416s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[5.420s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/bin'
+[5.420s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[5.420s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib/python3.10/site-packages'
+[5.420s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/bin'
+[5.420s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.ps1'
+[5.424s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.dsv'
+[5.427s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.sh'
+[5.431s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.bash'
+[5.435s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.zsh'
+[5.438s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[5.442s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com' with build type 'ament_cmake'
+[5.442s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com'
+[5.442s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.442s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.458s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com -- -j32 -l32
+[12.128s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com' returned '0': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com -- -j32 -l32
+[12.152s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com
+[12.170s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_ros_com)
+[12.170s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com' returned '0': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com
+[12.170s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com' for CMake module files
+[12.171s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com' for CMake config files
+[12.171s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'cmake_prefix_path')
+[12.171s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.ps1'
+[12.174s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.dsv'
+[12.178s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.sh'
+[12.182s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/lib'
+[12.182s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/bin'
+[12.182s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/lib/pkgconfig/px4_ros_com.pc'
+[12.182s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/lib/python3.10/site-packages'
+[12.182s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/bin'
+[12.182s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.ps1'
+[12.186s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.dsv'
+[12.189s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.sh'
+[12.193s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.bash'
+[12.196s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.zsh'
+[12.200s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/colcon-core/packages/px4_ros_com)
+[12.226s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_ros_com)
+[12.226s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com' for CMake module files
+[12.226s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com' for CMake config files
+[12.226s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'cmake_prefix_path')
+[12.226s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.ps1'
+[12.230s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.dsv'
+[12.234s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.sh'
+[12.237s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/lib'
+[12.237s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/bin'
+[12.237s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/lib/pkgconfig/px4_ros_com.pc'
+[12.237s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/lib/python3.10/site-packages'
+[12.237s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/bin'
+[12.238s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.ps1'
+[12.241s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.dsv'
+[12.245s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.sh'
+[12.248s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.bash'
+[12.252s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.zsh'
+[12.256s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/share/colcon-core/packages/px4_ros_com)
+[12.259s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[12.259s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[12.259s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[12.259s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[12.266s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[12.266s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[12.266s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[12.272s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[12.272s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/local_setup.ps1'
+[12.277s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/_local_setup_util_ps1.py'
+[12.281s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/setup.ps1'
+[12.285s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/local_setup.sh'
+[12.288s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/_local_setup_util_sh.py'
+[12.292s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/setup.sh'
+[12.296s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/local_setup.bash'
+[12.299s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/setup.bash'
+[12.303s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/local_setup.zsh'
+[12.307s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/setup.zsh'

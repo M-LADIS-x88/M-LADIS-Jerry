@@ -1,0 +1,58 @@
+[35m[1mConsolidate compiler generated dependencies of target PointCloudProcessor[0m
+[ 16%] Built target offboard_control
+[ 33%] Built target sensor_combined_listener
+[ 50%] Built target debug_vect_advertiser
+[ 66%] Built target test_flight_control
+[ 83%] Built target vehicle_gps_position_listener
+[ 91%] [32mBuilding CXX object CMakeFiles/PointCloudProcessor.dir/src/PointCloudProcessor.cpp.o[0m
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:39:27:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+   39 |       RCLCPP_INFO('ur mom'[01;35m[K)[m[K
+      |                           [01;35m[K^[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:48[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:42[m[K,
+                 from [01m[K/opt/ros/humble/include/pcl_ros/transforms.hpp:42[m[K,
+                 from [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:7[m[K:
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:[m[K In member function ‘[01m[Kvoid PointCloudProcessor::pointCloudCallback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:39:7:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: First argument to logging macros must be an rclcpp::Logger
+   39 |       [01;31m[KRCLCPP_INFO[m[K('ur mom')
+      |       [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:48[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:42[m[K,
+                 from [01m[K/opt/ros/humble/include/pcl_ros/transforms.hpp:42[m[K,
+                 from [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:7[m[K:
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:39:7:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kget_name[m[K’ in ‘[01m[K544042861[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+   39 |       [01;31m[KRCLCPP_INFO[m[K('ur mom')
+      |       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:39:7:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kget_name[m[K’ in ‘[01m[K544042861[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+   39 |       [01;31m[KRCLCPP_INFO[m[K('ur mom')
+      |       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:39:7:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+   39 |       [01;31m[KRCLCPP_INFO[m[K('ur mom')
+      |       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:40:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+   40 |     [01;31m[K}[m[K
+      |     [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/PointCloudProcessor.dir/build.make:76: CMakeFiles/PointCloudProcessor.dir/src/PointCloudProcessor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/PointCloudProcessor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

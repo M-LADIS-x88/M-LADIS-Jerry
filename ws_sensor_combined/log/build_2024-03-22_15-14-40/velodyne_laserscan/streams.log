@@ -1,0 +1,32 @@
+[0.159s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_laserscan': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_laserscan -- -j8 -l8
+[0.637s] [ 50%] Built target velodyne_laserscan
+[0.745s] [100%] Built target velodyne_laserscan_node
+[0.912s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_laserscan' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_laserscan -- -j8 -l8
+[1.118s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_laserscan': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_laserscan
+[1.146s] -- Install configuration: ""
+[1.147s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/lib/libvelodyne_laserscan.so
+[1.149s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/lib/velodyne_laserscan/velodyne_laserscan_node
+[1.151s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/include/velodyne_laserscan
+[1.153s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/include/velodyne_laserscan/velodyne_laserscan.hpp
+[1.156s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/config
+[1.156s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/config/default-velodyne_laserscan_node-params.yaml
+[1.157s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/launch
+[1.158s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/launch/velodyne_laserscan_node-composed-launch.py
+[1.158s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/launch/velodyne_laserscan_node-launch.py
+[1.159s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/ament_index/resource_index/package_run_dependencies/velodyne_laserscan
+[1.159s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/ament_index/resource_index/parent_prefix_path/velodyne_laserscan
+[1.160s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/environment/ament_prefix_path.sh
+[1.160s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/environment/ament_prefix_path.dsv
+[1.160s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/environment/path.sh
+[1.160s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/environment/path.dsv
+[1.161s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/local_setup.bash
+[1.161s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/local_setup.sh
+[1.161s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/local_setup.zsh
+[1.161s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/local_setup.dsv
+[1.162s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/package.dsv
+[1.162s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/ament_index/resource_index/packages/velodyne_laserscan
+[1.163s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/ament_index/resource_index/rclcpp_components/velodyne_laserscan
+[1.163s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/cmake/velodyne_laserscanConfig.cmake
+[1.164s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/cmake/velodyne_laserscanConfig-version.cmake
+[1.164s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/share/velodyne_laserscan/package.xml
+[1.181s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_laserscan' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_laserscan

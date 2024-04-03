@@ -1,0 +1,24 @@
+[0.016s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com -- -j8 -l8
+[0.077s] [ 14%] [32mBuilding CXX object CMakeFiles/lidar_clustering.dir/src/computer_viz/lidar_clustering.cpp.o[0m
+[0.077s] [ 14%] [32mBuilding CXX object CMakeFiles/frame_transforms.dir/src/lib/frame_transforms.cpp.o[0m
+[0.083s] [ 28%] Built target offboard_control
+[0.084s] [ 42%] Built target test_flight_control
+[0.085s] [ 57%] Built target sensor_combined_listener
+[0.085s] [ 71%] Built target vehicle_gps_position_listener
+[0.086s] [ 85%] Built target debug_vect_advertiser
+[0.238s] In file included from [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/lib/frame_transforms.cpp:41[m[K:
+[0.238s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/include/px4_ros_com/frame_transforms.h:54:10:[m[K [01;31m[Kfatal error: [m[Ksensor_msgs/msg/imu.hpp: No such file or directory
+[0.239s]    54 | #include [01;31m[K<sensor_msgs/msg/imu.hpp>[m[K
+[0.239s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.239s] compilation terminated.
+[0.247s] gmake[2]: *** [CMakeFiles/frame_transforms.dir/build.make:76: CMakeFiles/frame_transforms.dir/src/lib/frame_transforms.cpp.o] Error 1
+[0.247s] gmake[1]: *** [CMakeFiles/Makefile2:149: CMakeFiles/frame_transforms.dir/all] Error 2
+[0.247s] gmake[1]: *** Waiting for unfinished jobs....
+[0.293s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/computer_viz/lidar_clustering.cpp:10:10:[m[K [01;31m[Kfatal error: [m[Ksensor_msgs/msg/pointfield.h: No such file or directory
+[0.293s]    10 | #include [01;31m[K<sensor_msgs/msg/pointfield.h>[m[K
+[0.293s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.293s] compilation terminated.
+[0.300s] gmake[2]: *** [CMakeFiles/lidar_clustering.dir/build.make:76: CMakeFiles/lidar_clustering.dir/src/computer_viz/lidar_clustering.cpp.o] Error 1
+[0.300s] gmake[1]: *** [CMakeFiles/Makefile2:305: CMakeFiles/lidar_clustering.dir/all] Error 2
+[0.300s] gmake: *** [Makefile:146: all] Error 2
+[0.303s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com' returned '2': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com -- -j8 -l8

@@ -1,0 +1,41 @@
+[0.276s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/imm_ukf_pda_track': /usr/bin/cmake /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/autoware_ai_perception/imm_ukf_pda_track -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/imm_ukf_pda_track
+[0.294s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.300s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[0.300s]   CMake.
+[0.300s] 
+[0.301s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.301s]   CMake that the project does not need compatibility with older versions.
+[0.301s] 
+[0.301s] [0m
+[0.361s] -- The C compiler identification is GNU 11.4.0
+[0.462s] -- The CXX compiler identification is GNU 11.4.0
+[0.473s] -- Detecting C compiler ABI info
+[0.577s] -- Detecting C compiler ABI info - done
+[0.592s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.592s] -- Detecting C compile features
+[0.593s] -- Detecting C compile features - done
+[0.598s] -- Detecting CXX compiler ABI info
+[0.736s] -- Detecting CXX compiler ABI info - done
+[0.749s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.749s] -- Detecting CXX compile features
+[0.749s] -- Detecting CXX compile features - done
+[0.792s] [31mCMake Error at CMakeLists.txt:4 (find_package):
+[0.793s]   By not providing "Findautoware_build_flags.cmake" in CMAKE_MODULE_PATH this
+[0.793s]   project has asked CMake to find a package configuration file provided by
+[0.793s]   "autoware_build_flags", but CMake did not find one.
+[0.793s] 
+[0.793s]   Could not find a package configuration file provided by
+[0.793s]   "autoware_build_flags" with any of the following names:
+[0.793s] 
+[0.793s]     autoware_build_flagsConfig.cmake
+[0.793s]     autoware_build_flags-config.cmake
+[0.793s] 
+[0.793s]   Add the installation prefix of "autoware_build_flags" to CMAKE_PREFIX_PATH
+[0.793s]   or set "autoware_build_flags_DIR" to a directory containing one of the
+[0.793s]   above files.  If "autoware_build_flags" provides a separate development
+[0.794s]   package or SDK, be sure it has been installed.
+[0.794s] 
+[0.794s] [0m
+[0.794s] -- Configuring incomplete, errors occurred!
+[0.794s] See also "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/imm_ukf_pda_track/CMakeFiles/CMakeOutput.log".
+[0.802s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/imm_ukf_pda_track' returned '1': /usr/bin/cmake /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/autoware_ai_perception/imm_ukf_pda_track -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/imm_ukf_pda_track

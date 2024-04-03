@@ -1,0 +1,278 @@
+[0.469s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.470s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7826bdea9960>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7826bdea8880>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7826bdea8880>>)
+[0.623s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.624s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.624s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.624s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.624s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.625s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.625s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined'
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.688s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.689s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.689s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.690s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.691s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.691s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.693s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.694s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.694s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.694s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.695s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.695s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.696s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.696s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.696s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.696s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.697s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.697s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.697s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.697s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.698s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.698s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.698s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry) by extensions ['ignore', 'ignore_ament_install']
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry) by extension 'ignore'
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry) by extension 'ignore_ament_install'
+[0.700s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry) by extensions ['colcon_pkg']
+[0.700s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry) by extension 'colcon_pkg'
+[0.700s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry) by extensions ['colcon_meta']
+[0.700s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry) by extension 'colcon_meta'
+[0.701s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry) by extensions ['ros']
+[0.701s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry) by extension 'ros'
+[0.709s] DEBUG:colcon.colcon_core.package_identification:Package 'src/odometry' with type 'ros.ament_python' and name 'odometry'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ignore'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ignore_ament_install'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['colcon_pkg']
+[0.711s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'colcon_pkg'
+[0.711s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['colcon_meta']
+[0.711s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'colcon_meta'
+[0.711s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['ros']
+[0.711s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ros'
+[0.714s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4_msgs' with type 'ros.ament_cmake' and name 'px4_msgs'
+[0.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['ignore', 'ignore_ament_install']
+[0.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ignore'
+[0.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ignore_ament_install'
+[0.716s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['colcon_pkg']
+[0.716s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'colcon_pkg'
+[0.716s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['colcon_meta']
+[0.716s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'colcon_meta'
+[0.716s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['ros']
+[0.717s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ros'
+[0.722s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4_ros_com' with type 'ros.ament_cmake' and name 'px4_ros_com'
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extensions ['ignore', 'ignore_ament_install']
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extension 'ignore'
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extension 'ignore_ament_install'
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extensions ['colcon_pkg']
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extension 'colcon_pkg'
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extensions ['colcon_meta']
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extension 'colcon_meta'
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extensions ['ros']
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extension 'ros'
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extensions ['cmake', 'python']
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extension 'cmake'
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extension 'python'
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extensions ['python_setup_py']
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz) by extension 'python_setup_py'
+[0.728s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.728s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.728s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.729s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.729s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.811s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.811s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.820s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install
+[0.823s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/robmoemac/.local/share/Trash/files/ws_sensor_combined/install
+[0.827s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 291 installed packages in /opt/ros/humble
+[0.833s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.010s] Level 5:colcon.colcon_core.verb:set package 'odometry' build argument 'cmake_args' from command line to 'None'
+[1.010s] Level 5:colcon.colcon_core.verb:set package 'odometry' build argument 'cmake_target' from command line to 'None'
+[1.011s] Level 5:colcon.colcon_core.verb:set package 'odometry' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.011s] Level 5:colcon.colcon_core.verb:set package 'odometry' build argument 'cmake_clean_cache' from command line to 'False'
+[1.011s] Level 5:colcon.colcon_core.verb:set package 'odometry' build argument 'cmake_clean_first' from command line to 'False'
+[1.011s] Level 5:colcon.colcon_core.verb:set package 'odometry' build argument 'cmake_force_configure' from command line to 'False'
+[1.011s] Level 5:colcon.colcon_core.verb:set package 'odometry' build argument 'ament_cmake_args' from command line to 'None'
+[1.011s] Level 5:colcon.colcon_core.verb:set package 'odometry' build argument 'catkin_cmake_args' from command line to 'None'
+[1.011s] Level 5:colcon.colcon_core.verb:set package 'odometry' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.011s] DEBUG:colcon.colcon_core.verb:Building package 'odometry' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/odometry', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/odometry', 'merge_install': False, 'path': '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/odometry', 'symlink_install': False, 'test_result_base': None}
+[1.013s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_args' from command line to 'None'
+[1.013s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target' from command line to 'None'
+[1.013s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.013s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[1.013s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[1.013s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[1.013s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[1.014s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[1.014s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.014s] DEBUG:colcon.colcon_core.verb:Building package 'px4_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/px4_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs', 'merge_install': False, 'path': '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_msgs', 'symlink_install': False, 'test_result_base': None}
+[1.015s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_args' from command line to 'None'
+[1.015s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_target' from command line to 'None'
+[1.015s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.015s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_clean_cache' from command line to 'False'
+[1.015s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_clean_first' from command line to 'False'
+[1.015s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_force_configure' from command line to 'False'
+[1.015s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'ament_cmake_args' from command line to 'None'
+[1.016s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'catkin_cmake_args' from command line to 'None'
+[1.016s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.016s] DEBUG:colcon.colcon_core.verb:Building package 'px4_ros_com' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/px4_ros_com', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com', 'merge_install': False, 'path': '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com', 'symlink_install': False, 'test_result_base': None}
+[1.016s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.019s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.021s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_msgs' with build type 'ament_cmake'
+[1.022s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_msgs'
+[1.030s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.031s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.031s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.062s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/odometry' with build type 'ament_python'
+[1.063s] Level 1:colcon.colcon_core.shell:create_environment_hook('odometry', 'ament_prefix_path')
+[1.064s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/odometry/share/odometry/hook/ament_prefix_path.ps1'
+[1.074s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/odometry/share/odometry/hook/ament_prefix_path.dsv'
+[1.084s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/odometry/share/odometry/hook/ament_prefix_path.sh'
+[1.096s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.096s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.161s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/odometry:/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/px4_msgs -- -j8 -l8
+[2.189s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/odometry'
+[2.191s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.191s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.834s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/odometry': PYTHONPATH=/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/odometry/prefix_override:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/odometry/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/odometry build --build-base /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/odometry/build install --record /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/odometry/install.log --single-version-externally-managed install_data
+[7.455s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/odometry' returned '0': PYTHONPATH=/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/odometry/prefix_override:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/odometry/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/odometry build --build-base /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/odometry/build install --record /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/odometry/install.log --single-version-externally-managed install_data
+[7.471s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/odometry' for CMake module files
+[7.475s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/odometry' for CMake config files
+[7.478s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/odometry/lib'
+[7.479s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/odometry/bin'
+[7.480s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/odometry/lib/pkgconfig/odometry.pc'
+[7.482s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/odometry/lib/python3.10/site-packages'
+[7.483s] Level 1:colcon.colcon_core.shell:create_environment_hook('odometry', 'pythonpath')
+[7.484s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/odometry/share/odometry/hook/pythonpath.ps1'
+[7.514s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/odometry/share/odometry/hook/pythonpath.dsv'
+[7.543s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/odometry/share/odometry/hook/pythonpath.sh'
+[7.574s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/odometry/bin'
+[7.574s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odometry)
+[7.576s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/odometry/share/odometry/package.ps1'
+[7.608s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/odometry/share/odometry/package.dsv'
+[7.638s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/odometry/share/odometry/package.sh'
+[7.669s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/odometry/share/odometry/package.bash'
+[7.701s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/odometry/share/odometry/package.zsh'
+[7.732s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/odometry/share/colcon-core/packages/odometry)
+[9.726s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/odometry:/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/px4_msgs -- -j8 -l8
+[27.924s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/odometry:/opt/ros/humble /usr/bin/cmake --install /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/px4_msgs
+[28.959s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_msgs)
+[28.960s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs' for CMake module files
+[28.963s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs' for CMake config files
+[29.002s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[29.005s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[29.019s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[29.037s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[29.055s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/lib'
+[29.055s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[29.056s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[29.074s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[29.090s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[29.105s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/bin'
+[29.106s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[29.106s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/lib/python3.10/site-packages'
+[29.107s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/bin'
+[29.109s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.ps1'
+[29.121s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.dsv'
+[29.131s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.sh'
+[29.150s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.bash'
+[29.173s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.zsh'
+[29.186s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[29.611s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/odometry:/opt/ros/humble /usr/bin/cmake --install /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/px4_msgs
+[47.065s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_msgs)
+[47.067s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs' for CMake module files
+[47.069s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs' for CMake config files
+[47.079s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[47.080s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[47.090s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[47.099s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[47.109s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/lib'
+[47.109s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[47.110s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[47.119s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[47.129s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[47.138s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/bin'
+[47.138s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[47.139s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/lib/python3.10/site-packages'
+[47.140s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/bin'
+[47.142s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.ps1'
+[47.151s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.dsv'
+[47.163s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.sh'
+[47.172s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.bash'
+[47.182s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.zsh'
+[47.191s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[47.200s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com' with build type 'ament_cmake'
+[47.201s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com'
+[47.202s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[47.203s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[47.272s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com:/home/robmoemac/.local/share/Trash/files/ws_sensor_combined/install/ros:/home/robmoemac/.local/share/Trash/files/ws_sensor_combined/install/px4_ros_com:/home/robmoemac/.local/share/Trash/files/ws_sensor_combined/install/px4_msgs:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/odometry:/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/px4_ros_com -- -j8 -l8
+[47.635s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/px4_ros_com' returned '0': CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com:/home/robmoemac/.local/share/Trash/files/ws_sensor_combined/install/ros:/home/robmoemac/.local/share/Trash/files/ws_sensor_combined/install/px4_ros_com:/home/robmoemac/.local/share/Trash/files/ws_sensor_combined/install/px4_msgs:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/odometry:/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/px4_ros_com -- -j8 -l8
+[47.785s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com:/home/robmoemac/.local/share/Trash/files/ws_sensor_combined/install/ros:/home/robmoemac/.local/share/Trash/files/ws_sensor_combined/install/px4_ros_com:/home/robmoemac/.local/share/Trash/files/ws_sensor_combined/install/px4_msgs:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/odometry:/opt/ros/humble /usr/bin/cmake --install /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/px4_ros_com
+[47.837s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_ros_com)
+[47.839s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com' for CMake module files
+[47.841s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/px4_ros_com' returned '0': CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com:/home/robmoemac/.local/share/Trash/files/ws_sensor_combined/install/ros:/home/robmoemac/.local/share/Trash/files/ws_sensor_combined/install/px4_ros_com:/home/robmoemac/.local/share/Trash/files/ws_sensor_combined/install/px4_msgs:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/odometry:/opt/ros/humble /usr/bin/cmake --install /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/px4_ros_com
+[47.842s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com' for CMake config files
+[47.843s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'cmake_prefix_path')
+[47.843s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.ps1'
+[47.852s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.dsv'
+[47.860s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.sh'
+[47.868s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/lib'
+[47.869s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/bin'
+[47.869s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/lib/pkgconfig/px4_ros_com.pc'
+[47.870s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/lib/python3.10/site-packages'
+[47.870s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/bin'
+[47.871s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.ps1'
+[47.882s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.dsv'
+[47.891s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.sh'
+[47.901s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.bash'
+[47.910s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.zsh'
+[47.923s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/colcon-core/packages/px4_ros_com)
+[48.071s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_ros_com)
+[48.073s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com' for CMake module files
+[48.074s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com' for CMake config files
+[48.075s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'cmake_prefix_path')
+[48.076s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.ps1'
+[48.086s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.dsv'
+[48.095s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.sh'
+[48.104s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/lib'
+[48.105s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/bin'
+[48.105s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/lib/pkgconfig/px4_ros_com.pc'
+[48.106s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/lib/python3.10/site-packages'
+[48.107s] Level 1:colcon.colcon_core.environment:checking '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/bin'
+[48.108s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.ps1'
+[48.121s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.dsv'
+[48.129s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.sh'
+[48.137s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.bash'
+[48.147s] INFO:colcon.colcon_core.shell:Creating package script '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.zsh'
+[48.155s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/colcon-core/packages/px4_ros_com)
+[48.162s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[48.164s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[48.164s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[48.164s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[48.197s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[48.198s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[48.198s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[48.241s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[48.242s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/local_setup.ps1'
+[48.251s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/_local_setup_util_ps1.py'
+[48.263s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/setup.ps1'
+[48.273s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/local_setup.sh'
+[48.282s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/_local_setup_util_sh.py'
+[48.291s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/setup.sh'
+[48.302s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/local_setup.bash'
+[48.311s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/setup.bash'
+[48.322s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/local_setup.zsh'
+[48.331s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/setup.zsh'

@@ -1,0 +1,15 @@
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:[m[K In member function ‘[01m[Kvoid PointCloudProcessor::pointCloudCallback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:46:40:[m[K [01;31m[Kerror: [m[Kinvalid type argument of unary ‘[01m[K*[m[K’ (have ‘[01m[Kint[m[K’)
+   46 |         if(sqrt(pcl_cloud->points[i].x*[01;31m[K*2[m[K + pcl_cloud->points.y**2) > 0.1){
+      |                                        [01;31m[K^~[m[K
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:46:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >[m[K’ has no member named ‘[01m[Ky[m[K’
+   46 |       if(sqrt(pcl_cloud->points[i].x**2 + pcl_cloud->points.[01;31m[Ky[m[K**2) > 0.1){
+      |                                                             [01;31m[K^[m[K
+
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:46:65:[m[K [01;31m[Kerror: [m[Kinvalid type argument of unary ‘[01m[K*[m[K’ (have ‘[01m[Kint[m[K’)
+   46 |     if(sqrt(pcl_cloud->points[i].x**2 + pcl_cloud->points.y*[01;31m[K*2[m[K) > 0.1){
+      |                                                             [01;31m[K^~[m[K
+
+gmake[2]: *** [CMakeFiles/PointCloudProcessor.dir/build.make:76: CMakeFiles/PointCloudProcessor.dir/src/PointCloudProcessor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/PointCloudProcessor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,161 @@
+[0.019s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_msgs -- -j8 -l8
+[0.086s] [  2%] Built target velodyne_msgs__cpp
+[0.086s] [ 12%] Built target velodyne_msgs__rosidl_generator_c
+[0.099s] [ 12%] Built target ament_cmake_python_copy_velodyne_msgs
+[0.133s] [ 23%] Built target velodyne_msgs__rosidl_typesupport_introspection_cpp
+[0.142s] [ 41%] Built target velodyne_msgs__rosidl_typesupport_fastrtps_cpp
+[0.144s] [ 43%] Built target velodyne_msgs__rosidl_typesupport_cpp
+[0.150s] [ 56%] Built target velodyne_msgs__rosidl_typesupport_introspection_c
+[0.151s] [ 64%] Built target velodyne_msgs__rosidl_typesupport_fastrtps_c
+[0.159s] [ 74%] Built target velodyne_msgs__rosidl_typesupport_c
+[0.202s] [ 74%] Built target velodyne_msgs
+[0.243s] [ 76%] Built target velodyne_msgs__py
+[0.285s] [ 84%] Built target velodyne_msgs__rosidl_generator_py
+[0.331s] [ 89%] Built target velodyne_msgs__rosidl_typesupport_introspection_c__pyext
+[0.332s] [ 94%] Built target velodyne_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.344s] [100%] Built target velodyne_msgs__rosidl_typesupport_c__pyext
+[0.527s] running egg_info
+[0.556s] writing velodyne_msgs.egg-info/PKG-INFO
+[0.557s] writing dependency_links to velodyne_msgs.egg-info/dependency_links.txt
+[0.557s] writing top-level names to velodyne_msgs.egg-info/top_level.txt
+[0.640s] reading manifest file 'velodyne_msgs.egg-info/SOURCES.txt'
+[0.641s] writing manifest file 'velodyne_msgs.egg-info/SOURCES.txt'
+[0.679s] [100%] Built target ament_cmake_python_build_velodyne_msgs_egg
+[0.694s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_msgs -- -j8 -l8
+[0.785s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_msgs
+[0.796s] -- Install configuration: ""
+[0.796s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/ament_index/resource_index/rosidl_interfaces/velodyne_msgs
+[0.796s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs
+[0.796s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg
+[0.796s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/detail
+[0.796s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/detail/velodyne_scan__struct.h
+[0.797s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/detail/velodyne_packet__functions.c
+[0.797s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/detail/velodyne_packet__type_support.h
+[0.797s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/detail/velodyne_scan__functions.c
+[0.797s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/detail/velodyne_scan__type_support.h
+[0.797s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/detail/velodyne_scan__functions.h
+[0.797s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/detail/velodyne_packet__functions.h
+[0.797s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/detail/velodyne_packet__struct.h
+[0.797s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/rosidl_generator_c__visibility_control.h
+[0.797s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/velodyne_scan.h
+[0.797s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/velodyne_packet.h
+[0.797s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/environment/library_path.sh
+[0.798s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/environment/library_path.dsv
+[0.798s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib/libvelodyne_msgs__rosidl_generator_c.so
+[0.798s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs
+[0.798s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg
+[0.798s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/detail
+[0.798s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/detail/velodyne_scan__rosidl_typesupport_fastrtps_c.h
+[0.798s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/detail/velodyne_packet__rosidl_typesupport_fastrtps_c.h
+[0.798s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.799s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib/libvelodyne_msgs__rosidl_typesupport_fastrtps_c.so
+[0.799s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs
+[0.799s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg
+[0.799s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/detail
+[0.799s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/detail/velodyne_scan__builder.hpp
+[0.799s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/detail/velodyne_scan__traits.hpp
+[0.799s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/detail/velodyne_packet__builder.hpp
+[0.799s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/detail/velodyne_scan__struct.hpp
+[0.799s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/detail/velodyne_packet__traits.hpp
+[0.799s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/detail/velodyne_packet__struct.hpp
+[0.800s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/velodyne_scan.hpp
+[0.800s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/velodyne_packet.hpp
+[0.800s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs
+[0.800s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg
+[0.800s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/detail
+[0.800s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/detail/velodyne_packet__rosidl_typesupport_fastrtps_cpp.hpp
+[0.800s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/detail/dds_fastrtps
+[0.800s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/detail/velodyne_scan__rosidl_typesupport_fastrtps_cpp.hpp
+[0.800s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.800s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib/libvelodyne_msgs__rosidl_typesupport_fastrtps_cpp.so
+[0.801s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs
+[0.801s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg
+[0.801s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/detail
+[0.801s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/detail/velodyne_packet__rosidl_typesupport_introspection_c.h
+[0.801s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/detail/velodyne_scan__rosidl_typesupport_introspection_c.h
+[0.801s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/detail/velodyne_packet__type_support.c
+[0.801s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/detail/velodyne_scan__type_support.c
+[0.801s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.801s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib/libvelodyne_msgs__rosidl_typesupport_introspection_c.so
+[0.802s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib/libvelodyne_msgs__rosidl_typesupport_c.so
+[0.802s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs
+[0.802s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg
+[0.802s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/detail
+[0.802s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/detail/velodyne_scan__rosidl_typesupport_introspection_cpp.hpp
+[0.802s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/detail/velodyne_packet__type_support.cpp
+[0.802s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/detail/velodyne_packet__rosidl_typesupport_introspection_cpp.hpp
+[0.802s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/include/velodyne_msgs/velodyne_msgs/msg/detail/velodyne_scan__type_support.cpp
+[0.802s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib/libvelodyne_msgs__rosidl_typesupport_introspection_cpp.so
+[0.802s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib/libvelodyne_msgs__rosidl_typesupport_cpp.so
+[0.802s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/environment/pythonpath.sh
+[0.803s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/environment/pythonpath.dsv
+[0.803s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages/velodyne_msgs-2.4.0-py3.10.egg-info
+[0.803s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages/velodyne_msgs-2.4.0-py3.10.egg-info/dependency_links.txt
+[0.803s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages/velodyne_msgs-2.4.0-py3.10.egg-info/PKG-INFO
+[0.803s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages/velodyne_msgs-2.4.0-py3.10.egg-info/top_level.txt
+[0.803s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages/velodyne_msgs-2.4.0-py3.10.egg-info/SOURCES.txt
+[0.803s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages/velodyne_msgs
+[0.803s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages/velodyne_msgs/_velodyne_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[0.803s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages/velodyne_msgs/velodyne_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.803s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages/velodyne_msgs/__init__.py
+[0.803s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages/velodyne_msgs/libvelodyne_msgs__rosidl_generator_py.so
+[0.803s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages/velodyne_msgs/_velodyne_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.804s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages/velodyne_msgs/_velodyne_msgs_s.ep.rosidl_typesupport_c.c
+[0.804s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages/velodyne_msgs/velodyne_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.804s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages/velodyne_msgs/msg
+[0.804s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages/velodyne_msgs/msg/_velodyne_packet_s.c
+[0.804s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages/velodyne_msgs/msg/__init__.py
+[0.804s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages/velodyne_msgs/msg/_velodyne_packet.py
+[0.804s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages/velodyne_msgs/msg/_velodyne_scan_s.c
+[0.804s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages/velodyne_msgs/msg/_velodyne_scan.py
+[0.804s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages/velodyne_msgs/velodyne_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.845s] Listing '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages/velodyne_msgs'...
+[0.845s] Listing '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages/velodyne_msgs/msg'...
+[0.852s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages/velodyne_msgs/velodyne_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.852s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages/velodyne_msgs/velodyne_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.852s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages/velodyne_msgs/velodyne_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.853s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib/libvelodyne_msgs__rosidl_generator_py.so
+[0.853s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/msg/VelodynePacket.idl
+[0.853s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/msg/VelodyneScan.idl
+[0.854s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/msg/VelodynePacket.msg
+[0.854s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/msg/VelodyneScan.msg
+[0.854s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/ament_index/resource_index/package_run_dependencies/velodyne_msgs
+[0.854s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/ament_index/resource_index/parent_prefix_path/velodyne_msgs
+[0.854s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/environment/ament_prefix_path.sh
+[0.854s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/environment/ament_prefix_path.dsv
+[0.855s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/environment/path.sh
+[0.855s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/environment/path.dsv
+[0.855s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/local_setup.bash
+[0.855s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/local_setup.sh
+[0.856s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/local_setup.zsh
+[0.856s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/local_setup.dsv
+[0.856s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/package.dsv
+[0.856s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/ament_index/resource_index/packages/velodyne_msgs
+[0.856s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/cmake/export_velodyne_msgs__rosidl_generator_cExport.cmake
+[0.857s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/cmake/export_velodyne_msgs__rosidl_generator_cExport-noconfig.cmake
+[0.857s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/cmake/export_velodyne_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[0.857s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/cmake/export_velodyne_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.857s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/cmake/export_velodyne_msgs__rosidl_generator_cppExport.cmake
+[0.857s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/cmake/export_velodyne_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.857s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/cmake/export_velodyne_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.858s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgs__rosidl_typesupport_introspection_cExport.cmake
+[0.858s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.858s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgs__rosidl_typesupport_cExport.cmake
+[0.858s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[0.858s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[0.858s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.858s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgs__rosidl_typesupport_cppExport.cmake
+[0.859s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[0.859s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/cmake/export_velodyne_msgs__rosidl_generator_pyExport.cmake
+[0.859s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/cmake/export_velodyne_msgs__rosidl_generator_pyExport-noconfig.cmake
+[0.859s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/cmake/rosidl_cmake-extras.cmake
+[0.859s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.859s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.859s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[0.859s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[0.860s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.860s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.860s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgsConfig.cmake
+[0.860s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgsConfig-version.cmake
+[0.860s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/share/velodyne_msgs/package.xml
+[0.862s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/velodyne_msgs

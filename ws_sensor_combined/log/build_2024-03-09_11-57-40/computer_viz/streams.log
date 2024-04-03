@@ -1,0 +1,38 @@
+[0.822s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/computer_viz': PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/computer_viz/prefix_override:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/computer_viz/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/computer_viz build --build-base /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/computer_viz/build install --record /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/computer_viz/install.log --single-version-externally-managed
+[1.031s] running egg_info
+[1.046s] writing ../../build/computer_viz/computer_viz.egg-info/PKG-INFO
+[1.049s] writing dependency_links to ../../build/computer_viz/computer_viz.egg-info/dependency_links.txt
+[1.051s] deleting ../../build/computer_viz/computer_viz.egg-info/entry_points.txt
+[1.052s] writing requirements to ../../build/computer_viz/computer_viz.egg-info/requires.txt
+[1.054s] writing top-level names to ../../build/computer_viz/computer_viz.egg-info/top_level.txt
+[1.085s] reading manifest file '../../build/computer_viz/computer_viz.egg-info/SOURCES.txt'
+[1.086s] writing manifest file '../../build/computer_viz/computer_viz.egg-info/SOURCES.txt'
+[1.088s] running build
+[1.088s] running build_py
+[1.088s] copying computer_viz/__init__.py -> /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/computer_viz/build/lib/computer_viz
+[1.088s] running install
+[1.089s] /home/robmoemac/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[1.089s] !!
+[1.089s] 
+[1.089s]         ********************************************************************************
+[1.089s]         Please avoid running ``setup.py`` directly.
+[1.089s]         Instead, use pypa/build, pypa/installer or other
+[1.089s]         standards-based tools.
+[1.089s] 
+[1.089s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[1.089s]         ********************************************************************************
+[1.089s] 
+[1.089s] !!
+[1.089s]   self.initialize_options()
+[1.093s] running install_lib
+[1.107s] copying /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/computer_viz/build/lib/computer_viz/__init__.py -> /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/computer_viz/lib/python3.10/site-packages/computer_viz
+[1.107s] byte-compiling /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/computer_viz/lib/python3.10/site-packages/computer_viz/__init__.py to __init__.cpython-310.pyc
+[1.109s] running install_data
+[1.122s] copying resource/computer_viz -> /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/computer_viz/share/ament_index/resource_index/packages
+[1.122s] copying package.xml -> /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/computer_viz/share/computer_viz
+[1.122s] running install_egg_info
+[1.136s] removing '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/computer_viz/lib/python3.10/site-packages/computer_viz-0.0.0-py3.10.egg-info' (and everything under it)
+[1.136s] Copying ../../build/computer_viz/computer_viz.egg-info to /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/computer_viz/lib/python3.10/site-packages/computer_viz-0.0.0-py3.10.egg-info
+[1.137s] running install_scripts
+[1.260s] writing list of installed files to '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/computer_viz/install.log'
+[1.289s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/computer_viz' returned '0': PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/computer_viz/prefix_override:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/computer_viz/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/computer_viz build --build-base /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/computer_viz/build install --record /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/computer_viz/install.log --single-version-externally-managed

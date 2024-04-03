@@ -1,0 +1,36 @@
+In file included from [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:13[m[K:
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:[m[K In function ‘[01m[Kvoid euclideanClusteringUsingKDTree(const std::vector<Point>&, float, std::vector<bool, std::allocator<bool> >&, flann::Index<flann::L2<float> >&, std::vector<std::vector<Point> >&)[m[K’:
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:297:32:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kflann::Index<flann::L2<float> >::radiusSearch(flann::Matrix<float>&, std::vector<int, std::allocator<int> >&, std::vector<float>&, float, flann::SearchParams)[m[K’
+  297 |             [01;31m[KkdTree.radiusSearch(query_mat, clusterIndices, nn_dists, searchRadius * searchRadius, flann::SearchParams())[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:4[m[K,
+                 from [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:13[m[K:
+[01m[K/usr/include/flann/flann.hpp:307:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kint flann::Index<Distance>::radiusSearch(const flann::Matrix<typename Distance::ElementType>&, flann::Matrix<long unsigned int>&, flann::Matrix<typename Distance::ResultType>&, float, const flann::SearchParams&) const [with Distance = flann::L2<float>; typename Distance::ElementType = float; typename Distance::ResultType = float][m[K’
+  307 |     int [01;36m[KradiusSearch[m[K(const Matrix<ElementType>& queries,
+      |         [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/flann/flann.hpp:308:53:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’ to ‘[01m[Kflann::Matrix<long unsigned int>&[m[K’
+  308 |                                     [01;36m[KMatrix<size_t>& indices[m[K,
+      |                                     [01;36m[K~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/usr/include/flann/flann.hpp:325:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kint flann::Index<Distance>::radiusSearch(const flann::Matrix<typename Distance::ElementType>&, flann::Matrix<int>&, flann::Matrix<typename Distance::ResultType>&, float, const flann::SearchParams&) const [with Distance = flann::L2<float>; typename Distance::ElementType = float; typename Distance::ResultType = float][m[K’
+  325 |     int [01;36m[KradiusSearch[m[K(const Matrix<ElementType>& queries,
+      |         [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/flann/flann.hpp:326:50:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’ to ‘[01m[Kflann::Matrix<int>&[m[K’
+  326 |                                     [01;36m[KMatrix<int>& indices[m[K,
+      |                                     [01;36m[K~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/usr/include/flann/flann.hpp:343:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kint flann::Index<Distance>::radiusSearch(const flann::Matrix<typename Distance::ElementType>&, std::vector<std::vector<long unsigned int> >&, std::vector<std::vector<typename Distance::ResultType> >&, float, const flann::SearchParams&) const [with Distance = flann::L2<float>; typename Distance::ElementType = float; typename Distance::ResultType = float][m[K’
+  343 |     int [01;36m[KradiusSearch[m[K(const Matrix<ElementType>& queries,
+      |         [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/flann/flann.hpp:344:73:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’ to ‘[01m[Kstd::vector<std::vector<long unsigned int> >&[m[K’
+  344 |                            [01;36m[Kstd::vector< std::vector<size_t> >& indices[m[K,
+      |                            [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+
+[01m[K/usr/include/flann/flann.hpp:361:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kint flann::Index<Distance>::radiusSearch(const flann::Matrix<typename Distance::ElementType>&, std::vector<std::vector<int, std::allocator<int> > >&, std::vector<std::vector<typename Distance::ResultType> >&, float, const flann::SearchParams&) const [with Distance = flann::L2<float>; typename Distance::ElementType = float; typename Distance::ResultType = float][m[K’
+  361 |     int [01;36m[KradiusSearch[m[K(const Matrix<ElementType>& queries,
+      |         [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/flann/flann.hpp:362:70:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’ to ‘[01m[Kstd::vector<std::vector<int, std::allocator<int> > >&[m[K’
+  362 |                               [01;36m[Kstd::vector< std::vector<int> >& indices[m[K,
+      |                               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+
+gmake[2]: *** [CMakeFiles/PointCloudProcessor.dir/build.make:76: CMakeFiles/PointCloudProcessor.dir/src/PointCloudProcessor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/PointCloudProcessor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

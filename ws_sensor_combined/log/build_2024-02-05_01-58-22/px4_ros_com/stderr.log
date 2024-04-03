@@ -1,0 +1,106 @@
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:[m[K In constructor ‘[01m[KOffboardControl::OffboardControl()[m[K’:
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:80:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kqos[m[K’ was not declared in this scope; did you mean ‘[01m[Kcos[m[K’?
+   80 |                 "/fmu/in/autonomy_waypoint", [01;31m[Kqos[m[K, 10, [this](const px4_msgs::msg::TrajectorySetpoint::UniquePtr msg) {
+      |                                              [01;31m[K^~~[m[K
+      |                                              [32m[Kcos[m[K
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:[m[K In lambda function:
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:82:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kx[m[K’ is not captured
+   82 |                         [01;31m[Kx[m[K = msg->position[0];
+      |                         [01;31m[K^[m[K
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:80:60:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+   80 |                 "/fmu/in/autonomy_waypoint", qos, 10, [this[01;36m[K][m[K(const px4_msgs::msg::TrajectorySetpoint::UniquePtr msg) {
+      |                                                            [01;36m[K^[m[K
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:73:23:[m[K [01;36m[Knote: [m[K‘[01m[Kfloat x[m[K’ declared here
+   73 |                 float [01;36m[Kx[m[K=0.0;;
+      |                       [01;36m[K^[m[K
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:83:25:[m[K [01;31m[Kerror: [m[K‘[01m[Ky[m[K’ is not captured
+   83 |                         [01;31m[Ky[m[K = msg->position[1];
+      |                         [01;31m[K^[m[K
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:80:60:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+   80 |                 "/fmu/in/autonomy_waypoint", qos, 10, [this[01;36m[K][m[K(const px4_msgs::msg::TrajectorySetpoint::UniquePtr msg) {
+      |                                                            [01;36m[K^[m[K
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:74:23:[m[K [01;36m[Knote: [m[K‘[01m[Kfloat y[m[K’ declared here
+   74 |                 float [01;36m[Ky[m[K=0.0;
+      |                       [01;36m[K^[m[K
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:84:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kz[m[K’ is not captured
+   84 |                         [01;31m[Kz[m[K = msg->position[2];
+      |                         [01;31m[K^[m[K
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:80:60:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+   80 |                 "/fmu/in/autonomy_waypoint", qos, 10, [this[01;36m[K][m[K(const px4_msgs::msg::TrajectorySetpoint::UniquePtr msg) {
+      |                                                            [01;36m[K^[m[K
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:75:23:[m[K [01;36m[Knote: [m[K‘[01m[Kfloat z[m[K’ declared here
+   75 |                 float [01;36m[Kz[m[K=0.0;
+      |                       [01;36m[K^[m[K
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:85:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kyaw[m[K’ is not captured
+   85 |                         [01;31m[Kyaw[m[K = msg->position[3];
+      |                         [01;31m[K^~~[m[K
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:80:60:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+   80 |                 "/fmu/in/autonomy_waypoint", qos, 10, [this[01;36m[K][m[K(const px4_msgs::msg::TrajectorySetpoint::UniquePtr msg) {
+      |                                                            [01;36m[K^[m[K
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:76:23:[m[K [01;36m[Knote: [m[K‘[01m[Kfloat yaw[m[K’ declared here
+   76 |                 float [01;36m[Kyaw[m[K=0.0;
+      |                       [01;36m[K^~~[m[K
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:[m[K In lambda function:
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:99:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ was not declared in this scope
+   99 |                         x = [01;31m[Kmsg[m[K->position[0];
+      |                             [01;31m[K^~~[m[K
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:99:29:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/offboard_control_mode.hpp:7[m[K,
+                 from [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:41[m[K:
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kpx4_msgs::msg[m[K’
+   27 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:7[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:46[m[K:
+[01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+   27 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:7[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos_overriding_options.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:30[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:45[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:46[m[K:
+[01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+   27 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+                 from [01m[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:46[m[K:
+[01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+   27 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/offboard_control.dir/build.make:76: CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/offboard_control.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,104 @@
+[0.145s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs -- -j8 -l8
+[0.870s] [  0%] Built target ament_cmake_python_copy_px4_msgs
+[0.890s] [  0%] Built target px4_msgs__cpp
+[0.982s] [35m[1mConsolidate compiler generated dependencies of target px4_msgs__rosidl_generator_c[0m
+[0.994s] Traceback (most recent call last):
+[0.994s]   File "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs/ament_cmake_python/px4_msgs/setup.py", line 1, in <module>
+[0.995s]     from setuptools import find_packages
+[0.995s] ImportError: cannot import name 'find_packages' from 'setuptools' (/home/robmoemac/.local/lib/python3.10/site-packages/setuptools/__init__.py)
+[1.011s] gmake[2]: *** [CMakeFiles/ament_cmake_python_build_px4_msgs_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_px4_msgs_egg] Error 1
+[1.011s] gmake[1]: *** [CMakeFiles/Makefile2:447: CMakeFiles/ament_cmake_python_build_px4_msgs_egg.dir/all] Error 2
+[1.011s] gmake[1]: *** Waiting for unfinished jobs....
+[1.121s] [ 12%] Built target px4_msgs__rosidl_generator_c
+[1.352s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.549s] [ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.624s] [ 12%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[19.197s] Traceback (most recent call last):
+[19.197s] Traceback (most recent call last):
+[19.197s]   File "/opt/ros/humble/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp", line 28, in <module>
+[19.197s] gmake[2]: *** Deleting file 'rosidl_typesupport_cpp/px4_msgs/msg/action_request__type_support.cpp'
+[19.198s] Traceback (most recent call last):
+[19.198s]   File "/opt/ros/humble/lib/rosidl_typesupport_fastrtps_cpp/rosidl_typesupport_fastrtps_cpp", line 23, in <module>
+[19.198s]   File "/opt/ros/humble/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp", line 31, in <module>
+[19.198s] gmake[2]: *** Deleting file 'rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/action_request__type_support.cpp'
+[19.198s]     sys.exit(main())
+[19.198s]   File "/opt/ros/humble/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp", line 24, in main
+[19.199s] gmake[2]: *** Deleting file 'rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/action_request__rosidl_typesupport_introspection_cpp.hpp'
+[19.199s]     sys.exit(main())
+[19.199s]   File "/opt/ros/humble/lib/rosidl_typesupport_fastrtps_cpp/rosidl_typesupport_fastrtps_cpp", line 19, in main
+[19.199s]     generate_cpp(args.generator_arguments_file, args.typesupports)
+[19.199s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_cpp/__init__.py", line 28, in generate_cpp
+[19.199s]     sys.exit(main())
+[19.200s]     generate_cpp(args.generator_arguments_file)
+[19.200s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_fastrtps_cpp/__init__.py", line 24, in generate_cpp
+[19.200s]   File "/opt/ros/humble/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp", line 27, in main
+[19.200s]     return generate_files(
+[19.200s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 87, in generate_files
+[19.200s]     generate_cpp(args.generator_arguments_file)
+[19.201s]     return generate_files(generator_arguments_file, mapping)
+[19.201s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 87, in generate_files
+[19.201s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_introspection_cpp/__init__.py", line 31, in generate_cpp
+[19.201s]     expand_template(
+[19.201s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 149, in expand_template
+[19.201s]     return generate_files(generator_arguments_file, mapping)
+[19.201s]     expand_template(
+[19.202s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 74, in generate_files
+[19.202s] KeyboardInterrupt
+[19.202s]     interpreter.string(template_content, template_path, locals=data)
+[19.202s]   File "/usr/lib/python3/dist-packages/em.py", line 2391, in string
+[19.202s]     idl_file = parse_idl_file(locator)
+[19.202s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 64, in parse_idl_file
+[19.203s]     content = parse_idl_string(string, png_file=png_file)
+[19.203s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 72, in parse_idl_string
+[19.203s]     tree = get_ast_from_idl_string(idl_string)
+[19.203s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string
+[19.203s]     return _parser.parse(idl_string)
+[19.203s]   File "/usr/lib/python3/dist-packages/lark/lark.py", line 619, in parse
+[19.204s]     return self.parser.parse(text, start=start, on_error=on_error)
+[19.204s]   File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 99, in parse
+[19.204s]     self.safe(scanner, True, locals)
+[19.204s]   File "/usr/lib/python3/dist-packages/em.py", line 2401, in safe
+[19.204s]     return self.parser.parse(stream, chosen_start, **kw)
+[19.204s]   File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 266, in parse
+[19.204s]     to_scan = self._parse(lexer, columns, to_scan, start_symbol)
+[19.205s]   File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 144, in _parse
+[19.205s]     self.parse(scanner, locals)
+[19.205s]   File "/usr/lib/python3/dist-packages/em.py", line 2417, in parse
+[19.205s]     self.predict_and_complete(i, to_scan, columns, transitives)
+[19.205s]   File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 140, in predict_and_complete
+[19.205s]     new_item = Item(rule, 0, i)
+[19.206s]   File "/usr/lib/python3/dist-packages/lark/parsers/earley_common.py", line 22, in __init__
+[19.206s]     self.previous = rule.expansion[ptr - 1] if ptr > 0 and len(rule.expansion) else None
+[19.206s] KeyboardInterrupt
+[19.206s]     token = scanner.one()
+[19.206s]   File "/usr/lib/python3/dist-packages/em.py", line 1984, in one
+[19.206s]     token.scan(self)
+[19.207s]   File "/usr/lib/python3/dist-packages/em.py", line 1468, in scan
+[19.207s]     self.subscan(scanner, self.type)
+[19.208s]   File "/usr/lib/python3/dist-packages/em.py", line 1483, in subscan
+[19.208s]     token = scanner.one()
+[19.209s]   File "/usr/lib/python3/dist-packages/em.py", line 1984, in one
+[19.209s]     token.scan(self)
+[19.209s]   File "/usr/lib/python3/dist-packages/em.py", line 1421, in scan
+[19.209s]     i = scanner.complex('{', '}', 0)
+[19.209s]   File "/usr/lib/python3/dist-packages/em.py", line 1893, in complex
+[19.209s]     newQuote = self.check(i, quote)
+[19.210s]   File "/usr/lib/python3/dist-packages/em.py", line 1774, in check
+[19.210s]     if self[i + 1] == self[i + 2] == quote:
+[19.210s]   File "/usr/lib/python3/dist-packages/em.py", line 1682, in __getitem__
+[19.210s]     def __getitem__(self, index):
+[19.211s] KeyboardInterrupt
+[19.241s] Exception ignored in: <function Interpreter.__del__ at 0x7f9e84fc2050>
+[19.241s] Traceback (most recent call last):
+[19.241s]   File "/usr/lib/python3/dist-packages/em.py", line 2094, in __del__
+[19.241s]   File "/usr/lib/python3/dist-packages/em.py", line 2157, in shutdown
+[19.242s]   File "/usr/lib/python3/dist-packages/em.py", line 2647, in finalize
+[19.242s]   File "/usr/lib/python3/dist-packages/em.py", line 2200, in push
+[19.242s] AttributeError: '_io.TextIOWrapper' object has no attribute 'push'
+[19.245s] gmake[2]: *** [CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make:283: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/action_request__type_support.cpp] Interrupt
+[19.245s] gmake[1]: *** [CMakeFiles/Makefile2:291: CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/all] Interrupt
+[19.255s] gmake[2]: *** [CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make:283: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/action_request__rosidl_typesupport_introspection_cpp.hpp] Interrupt
+[19.256s] gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/all] Interrupt
+[19.257s] gmake[2]: *** [CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make:281: rosidl_typesupport_cpp/px4_msgs/msg/action_request__type_support.cpp] Interrupt
+[19.257s] gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/all] Interrupt
+[19.258s] gmake: *** [Makefile:146: all] Interrupt

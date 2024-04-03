@@ -1,0 +1,136 @@
+[0.008s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com -DCMAKE_INSTALL_PREFIX=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com
+[0.075s] -- The C compiler identification is GNU 11.4.0
+[0.137s] -- The CXX compiler identification is GNU 11.4.0
+[0.149s] -- Detecting C compiler ABI info
+[0.224s] -- Detecting C compiler ABI info - done
+[0.233s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.234s] -- Detecting C compile features
+[0.234s] -- Detecting C compile features - done
+[0.239s] -- Detecting CXX compiler ABI info
+[0.328s] -- Detecting CXX compiler ABI info - done
+[0.337s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.337s] -- Detecting CXX compile features
+[0.338s] -- Detecting CXX compile features - done
+[0.346s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.746s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.881s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.883s] -- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.928s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.935s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.947s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.966s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.993s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.019s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.030s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.032s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.178s] -- Found px4_msgs: 2.0.1 (/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/cmake)
+[1.220s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[1.333s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.338s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.474s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.511s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.574s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.589s] -- Looking for pthread.h
+[1.680s] -- Looking for pthread.h - found
+[1.680s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.771s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.773s] -- Found Threads: TRUE  
+[1.966s] -- Found rclpy: 3.3.12 (/opt/ros/humble/share/rclpy/cmake)
+[1.969s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.104s] -- Found pcl_conversions: 2.4.0 (/opt/ros/humble/share/pcl_conversions/cmake)
+[2.307s] -- Found pcl_ros: 2.4.0 (/opt/ros/humble/share/pcl_ros/cmake)
+[2.466s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.934s] -- Checking for module 'eigen3'
+[2.947s] --   Found eigen3, version 3.4.0
+[2.982s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[2.982s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[3.027s] -- Checking for module 'flann'
+[3.041s] --   Found flann, version 1.9.1
+[3.081s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[3.082s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[4.197s] -- Checking for module 'libusb-1.0'
+[4.213s] --   Found libusb-1.0, version 1.0.25
+[4.252s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[4.253s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[4.327s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[4.503s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[4.511s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[4.518s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[4.683s] -- Found Qhull version 8.0.2
+[4.845s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[5.011s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[5.012s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[5.013s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[5.014s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[5.015s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[5.016s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[5.017s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[5.017s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[5.018s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[5.019s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[5.020s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[5.022s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[5.023s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[5.024s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[5.025s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[5.026s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[5.027s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[5.029s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[5.030s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[5.031s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[5.032s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[5.032s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[5.033s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[5.034s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[5.035s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[5.138s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.244s] -- Added test 'copyright' to check source files copyright and LICENSE
+[5.247s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.247s] -- Configured cppcheck include dirs: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/include
+[5.247s] -- Configured cppcheck exclude dirs and/or files: 
+[5.250s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[5.250s] -- Configured cpplint exclude dirs and/or files: 
+[5.251s] -- Added test 'flake8' to check Python code syntax and style conventions
+[5.252s] -- Added test 'lint_cmake' to check CMake code style
+[5.253s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[5.255s] -- Added test 'uncrustify' to check C / C++ code style
+[5.255s] -- Configured uncrustify additional arguments: 
+[5.256s] -- Added test 'xmllint' to check XML markup files
+[5.258s] -- Configuring done
+[5.352s] -- Generating done
+[5.356s] -- Build files have been written to: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com
+[5.374s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com' returned '0': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com -DCMAKE_INSTALL_PREFIX=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com
+[5.376s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com -- -j8 -l8
+[5.439s] [ 16%] [32mBuilding CXX object CMakeFiles/vehicle_gps_position_listener.dir/src/examples/listeners/vehicle_gps_position_listener.cpp.o[0m
+[5.439s] [ 16%] [32mBuilding CXX object CMakeFiles/test_flight_control.dir/src/examples/offboard/test_flight_control.cpp.o[0m
+[5.440s] [ 25%] [32mBuilding CXX object CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o[0m
+[5.440s] [ 33%] [32mBuilding CXX object CMakeFiles/debug_vect_advertiser.dir/src/examples/advertisers/debug_vect_advertiser.cpp.o[0m
+[5.441s] [ 41%] [32mBuilding CXX object CMakeFiles/sensor_combined_listener.dir/src/examples/listeners/sensor_combined_listener.cpp.o[0m
+[5.446s] [ 50%] [32mBuilding CXX object CMakeFiles/PointCloudProcessor.dir/src/PointCloudProcessor.cpp.o[0m
+[10.550s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:14:10:[m[K [01;31m[Kfatal error: [m[KOpen3D/Open3D.h: No such file or directory
+[10.551s]    14 | #include [01;31m[K<Open3D/Open3D.h>[m[K
+[10.551s]       |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[10.551s] compilation terminated.
+[10.589s] gmake[2]: *** [CMakeFiles/PointCloudProcessor.dir/build.make:76: CMakeFiles/PointCloudProcessor.dir/src/PointCloudProcessor.cpp.o] Error 1
+[10.591s] gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/PointCloudProcessor.dir/all] Error 2
+[10.593s] gmake[1]: *** Waiting for unfinished jobs....
+[14.210s] [ 58%] [32m[1mLinking CXX executable test_flight_control[0m
+[14.645s] /usr/bin/ld: CMakeFiles/test_flight_control.dir/src/examples/offboard/test_flight_control.cpp.o: in function `std::enable_if<rosidl_generator_traits::is_message<px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> > >::value, rosidl_message_type_support_t const&>::type rclcpp::get_message_type_support_handle<px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> > >()':
+[14.645s] test_flight_control.cpp:(.text._ZN6rclcpp31get_message_type_support_handleIN8px4_msgs3msg19TrajectorySetpoint_ISaIvEEEEENSt9enable_ifIXsrN23rosidl_generator_traits10is_messageIT_EE5valueERK29rosidl_message_type_support_tE4typeEv[_ZN6rclcpp31get_message_type_support_handleIN8px4_msgs3msg19TrajectorySetpoint_ISaIvEEEEENSt9enable_ifIXsrN23rosidl_generator_traits10is_messageIT_EE5valueERK29rosidl_message_type_support_tE4typeEv]+0x10): undefined reference to `rosidl_message_type_support_t const* rosidl_typesupport_cpp::get_message_type_support_handle<px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> > >()'
+[14.676s] collect2: error: ld returned 1 exit status
+[14.678s] gmake[2]: *** [CMakeFiles/test_flight_control.dir/build.make:159: test_flight_control] Error 1
+[14.678s] gmake[1]: *** [CMakeFiles/Makefile2:251: CMakeFiles/test_flight_control.dir/all] Error 2
+[15.685s] [ 66%] [32m[1mLinking CXX executable debug_vect_advertiser[0m
+[15.990s] [ 66%] Built target debug_vect_advertiser
+[21.298s] [ 75%] [32m[1mLinking CXX executable sensor_combined_listener[0m
+[21.342s] [ 83%] [32m[1mLinking CXX executable vehicle_gps_position_listener[0m
+[21.896s] [ 83%] Built target sensor_combined_listener
+[21.927s] [ 83%] Built target vehicle_gps_position_listener
+[22.003s] [ 91%] [32m[1mLinking CXX executable offboard_control[0m
+[22.481s] /usr/bin/ld: CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o: in function `std::enable_if<rosidl_generator_traits::is_message<px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> > >::value, rosidl_message_type_support_t const&>::type rclcpp::get_message_type_support_handle<px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> > >()':
+[22.481s] offboard_control.cpp:(.text._ZN6rclcpp31get_message_type_support_handleIN8px4_msgs3msg19TrajectorySetpoint_ISaIvEEEEENSt9enable_ifIXsrN23rosidl_generator_traits10is_messageIT_EE5valueERK29rosidl_message_type_support_tE4typeEv[_ZN6rclcpp31get_message_type_support_handleIN8px4_msgs3msg19TrajectorySetpoint_ISaIvEEEEENSt9enable_ifIXsrN23rosidl_generator_traits10is_messageIT_EE5valueERK29rosidl_message_type_support_tE4typeEv]+0x10): undefined reference to `rosidl_message_type_support_t const* rosidl_typesupport_cpp::get_message_type_support_handle<px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> > >()'
+[22.529s] collect2: error: ld returned 1 exit status
+[22.531s] gmake[2]: *** [CMakeFiles/offboard_control.dir/build.make:159: offboard_control] Error 1
+[22.531s] gmake[1]: *** [CMakeFiles/Makefile2:225: CMakeFiles/offboard_control.dir/all] Error 2
+[22.531s] gmake: *** [Makefile:146: all] Error 2
+[22.534s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com' returned '2': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com -- -j8 -l8

@@ -1,0 +1,70 @@
+[0.000000] (-) TimerEvent: {}
+[0.000522] (px4_msgs) JobQueued: {'identifier': 'px4_msgs', 'dependencies': OrderedDict()}
+[0.000552] (px4_ros_com) JobQueued: {'identifier': 'px4_ros_com', 'dependencies': OrderedDict([('px4_msgs', '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs')])}
+[0.000579] (px4_msgs) JobStarted: {'identifier': 'px4_msgs'}
+[0.060009] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'cmake'}
+[0.060601] (px4_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_msgs', '-DCMAKE_INSTALL_PREFIX=/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs'], 'cwd': '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dserbin'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com/lib:/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/dserbin'), ('OLDPWD', '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2162'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'dserbin'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dserbin'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/dserbin/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/dserbin-ROG-Zephyrus-G15-GA503QR:@/tmp/.ICE-unix/2143,unix/dserbin-ROG-Zephyrus-G15-GA503QR:/tmp/.ICE-unix/2143'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/76725639_df3a_45ce_b692_5d2e83b7ea7e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.130'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com:/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble')]), 'shell': False}
+[0.072009] (px4_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099839] (-) TimerEvent: {}
+[0.178291] (px4_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[0.197289] (px4_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.199053] (px4_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.199915] (-) TimerEvent: {}
+[0.203288] (px4_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.211090] (px4_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.221856] (px4_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.232243] (px4_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.300028] (-) TimerEvent: {}
+[0.400274] (-) TimerEvent: {}
+[0.500493] (-) TimerEvent: {}
+[0.600681] (-) TimerEvent: {}
+[0.651137] (px4_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:59 (message):\n'}
+[0.651324] (px4_msgs) StderrLine: {'line': b'  execute_process(/usr/bin/python3.10 -m rosidl_adapter --package-name\n'}
+[0.651394] (px4_msgs) StderrLine: {'line': b'  px4_msgs --arguments-file /home/dserbin/Documents/M-LADIS-sim/PX4\n'}
+[0.651523] (px4_msgs) StderrLine: {'line': b'  Aux/ws_sensor_combined/build/px4_msgs/rosidl_adapter__arguments__px4_msgs.json\n'}
+[0.651589] (px4_msgs) StderrLine: {'line': b'  --output-dir /home/dserbin/Documents/M-LADIS-sim/PX4\n'}
+[0.651645] (px4_msgs) StderrLine: {'line': b'  Aux/ws_sensor_combined/build/px4_msgs/rosidl_adapter/px4_msgs --output-file\n'}
+[0.651695] (px4_msgs) StderrLine: {'line': b'  /home/dserbin/Documents/M-LADIS-sim/PX4\n'}
+[0.651746] (px4_msgs) StderrLine: {'line': b'  Aux/ws_sensor_combined/build/px4_msgs/rosidl_adapter/px4_msgs.idls)\n'}
+[0.651796] (px4_msgs) StderrLine: {'line': b'  returned error code 1:\n'}
+[0.651847] (px4_msgs) StderrLine: {'line': b'\n'}
+[0.651897] (px4_msgs) StderrLine: {'line': b"  Error processing 'float x' of 'px4_msgs/FlightTrajectoryWaypoint': ''float'\n"}
+[0.651946] (px4_msgs) StderrLine: {'line': b'  is an invalid message name.  It should have the pattern\n'}
+[0.651996] (px4_msgs) StderrLine: {'line': b"  '^[A-Z][A-Za-z0-9]*$''\n"}
+[0.652049] (px4_msgs) StderrLine: {'line': b'\n'}
+[0.652099] (px4_msgs) StderrLine: {'line': b'  Traceback (most recent call last):\n'}
+[0.652149] (px4_msgs) StderrLine: {'line': b'\n'}
+[0.652215] (px4_msgs) StderrLine: {'line': b'    File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main\n'}
+[0.652266] (px4_msgs) StderrLine: {'line': b'      return _run_code(code, main_globals, None,\n'}
+[0.652309] (px4_msgs) StderrLine: {'line': b'    File "/usr/lib/python3.10/runpy.py", line 86, in _run_code\n'}
+[0.652348] (px4_msgs) StderrLine: {'line': b'      exec(code, run_globals)\n'}
+[0.652387] (px4_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__main__.py", line 19, in <module>\n'}
+[0.652426] (px4_msgs) StderrLine: {'line': b'      sys.exit(main())\n'}
+[0.652464] (px4_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/main.py", line 53, in main\n'}
+[0.652503] (px4_msgs) StderrLine: {'line': b'      abs_idl_file = convert_to_idl(\n'}
+[0.652541] (px4_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl\n'}
+[0.652581] (px4_msgs) StderrLine: {'line': b'      return convert_msg_to_idl(\n'}
+[0.652622] (px4_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl\n'}
+[0.652662] (px4_msgs) StderrLine: {'line': b'      msg = parse_message_string(package_name, input_file.stem, content)\n'}
+[0.652701] (px4_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 520, in parse_message_string\n'}
+[0.652740] (px4_msgs) StderrLine: {'line': b'      Type(type_string, context_package_name=pkg_name),\n'}
+[0.652779] (px4_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 277, in __init__\n'}
+[0.652817] (px4_msgs) StderrLine: {'line': b'      super(Type, self).__init__(\n'}
+[0.652856] (px4_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 205, in __init__\n'}
+[0.652895] (px4_msgs) StderrLine: {'line': b'      raise InvalidResourceName(\n'}
+[0.652933] (px4_msgs) StderrLine: {'line': b'\n'}
+[0.652972] (px4_msgs) StderrLine: {'line': b"  rosidl_adapter.parser.InvalidResourceName: 'float' is an invalid message\n"}
+[0.653011] (px4_msgs) StderrLine: {'line': b"  name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'\n"}
+[0.653049] (px4_msgs) StderrLine: {'line': b'\n'}
+[0.653114] (px4_msgs) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.653159] (px4_msgs) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)\n'}
+[0.653210] (px4_msgs) StderrLine: {'line': b'  CMakeLists.txt:28 (rosidl_generate_interfaces)\n'}
+[0.653283] (px4_msgs) StderrLine: {'line': b'\n'}
+[0.653328] (px4_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.653367] (px4_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.653412] (px4_msgs) StdoutLine: {'line': b'See also "/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[0.657444] (px4_msgs) CommandEnded: {'returncode': 1}
+[0.700873] (-) TimerEvent: {}
+[0.728689] (px4_msgs) JobEnded: {'identifier': 'px4_msgs', 'rc': 1}
+[0.739049] (px4_ros_com) JobSkipped: {'identifier': 'px4_ros_com'}
+[0.739107] (-) EventReactorShutdown: {}

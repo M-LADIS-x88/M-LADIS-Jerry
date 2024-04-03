@@ -1,0 +1,19 @@
+[35m[1mConsolidate compiler generated dependencies of target PointCloudProcessor[0m
+[ 16%] Built target vehicle_gps_position_listener
+[ 33%] Built target offboard_control
+[ 50%] Built target debug_vect_advertiser
+[ 66%] Built target sensor_combined_listener
+[ 83%] Built target test_flight_control
+[ 91%] [32mBuilding CXX object CMakeFiles/PointCloudProcessor.dir/src/PointCloudProcessor.cpp.o[0m
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:94:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+   94 | }
+      |  [01;31m[K^[m[K
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:20:49:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   20 | class PointCloudProcessor : public rclcpp::Node [01;36m[K{[m[K
+      |                                                 [01;36m[K^[m[K
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:94:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+   94 | }
+      |  [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/PointCloudProcessor.dir/build.make:76: CMakeFiles/PointCloudProcessor.dir/src/PointCloudProcessor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/PointCloudProcessor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

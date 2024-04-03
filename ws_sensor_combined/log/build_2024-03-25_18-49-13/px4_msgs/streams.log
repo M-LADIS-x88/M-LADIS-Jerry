@@ -1,0 +1,571 @@
+[0.032s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs -- -j8 -l8
+[1.064s] [  0%] Built target ament_cmake_python_copy_px4_msgs
+[1.096s] [  0%] Built target px4_msgs__cpp
+[1.190s] [35m[1mConsolidate compiler generated dependencies of target px4_msgs__rosidl_generator_c[0m
+[1.263s] [35m[1mConsolidate compiler generated dependencies of target px4_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[1.311s] [35m[1mConsolidate compiler generated dependencies of target px4_msgs__rosidl_typesupport_introspection_cpp[0m
+[1.375s] [35m[1mConsolidate compiler generated dependencies of target px4_msgs__rosidl_typesupport_cpp[0m
+[1.492s] [ 12%] Built target px4_msgs__rosidl_generator_c
+[1.628s] [ 12%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/mavlink_log__type_support.cpp.o[0m
+[1.640s] [ 12%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/manual_control_setpoint__type_support.cpp.o[0m
+[1.727s] [35m[1mConsolidate compiler generated dependencies of target px4_msgs__rosidl_typesupport_fastrtps_c[0m
+[1.750s] running egg_info
+[1.770s] [35m[1mConsolidate compiler generated dependencies of target px4_msgs__rosidl_typesupport_c[0m
+[1.802s] [35m[1mConsolidate compiler generated dependencies of target px4_msgs__rosidl_typesupport_introspection_c[0m
+[1.806s] writing px4_msgs.egg-info/PKG-INFO
+[1.807s] writing dependency_links to px4_msgs.egg-info/dependency_links.txt
+[1.807s] writing top-level names to px4_msgs.egg-info/top_level.txt
+[1.917s] [ 12%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/orb_test_large__type_support.cpp.o[0m
+[2.012s] [ 25%] Built target px4_msgs__rosidl_typesupport_c
+[2.012s] [ 25%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/unregister_ext_component__type_support.cpp.o[0m
+[2.040s] [ 25%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/orb_test_medium__type_support.cpp.o[0m
+[2.053s] reading manifest file 'px4_msgs.egg-info/SOURCES.txt'
+[2.056s] [ 25%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/mission__type_support_c.cpp.o[0m
+[2.068s] writing manifest file 'px4_msgs.egg-info/SOURCES.txt'
+[2.214s] [ 25%] Built target ament_cmake_python_build_px4_msgs_egg
+[2.253s] [ 25%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/mission_result__type_support.cpp.o[0m
+[2.266s] [ 38%] Built target px4_msgs__rosidl_typesupport_introspection_c
+[2.325s] [ 38%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/mission_result__type_support_c.cpp.o[0m
+[3.360s] [ 38%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_air_data__type_support.cpp.o[0m
+[3.528s] [ 38%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/orbit_status__type_support.cpp.o[0m
+[3.786s] [ 38%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/parameter_update__type_support.cpp.o[0m
+[3.819s] [ 38%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/mode_completed__type_support.cpp.o[0m
+[3.860s] [ 38%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/mode_completed__type_support_c.cpp.o[0m
+[4.020s] [ 38%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/mount_orientation__type_support_c.cpp.o[0m
+[4.200s] [ 38%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/navigator_mission_item__type_support_c.cpp.o[0m
+[4.343s] [ 38%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/ping__type_support.cpp.o[0m
+[4.407s] [ 38%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_angular_acceleration_setpoint__type_support.cpp.o[0m
+[5.229s] [ 38%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_angular_velocity__type_support.cpp.o[0m
+[5.352s] [ 38%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_attitude__type_support.cpp.o[0m
+[5.445s] [ 38%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_attitude_setpoint__type_support.cpp.o[0m
+[5.618s] [ 38%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/normalized_unsigned_setpoint__type_support_c.cpp.o[0m
+[5.689s] [ 38%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/npfg_status__type_support_c.cpp.o[0m
+[5.862s] [ 38%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/mount_orientation__type_support.cpp.o[0m
+[6.194s] [ 38%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/obstacle_distance__type_support_c.cpp.o[0m
+[6.448s] [ 38%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_command__type_support.cpp.o[0m
+[6.535s] [ 38%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/position_controller_landing_status__type_support.cpp.o[0m
+[6.715s] [ 38%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/offboard_control_mode__type_support_c.cpp.o[0m
+[6.958s] [ 38%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_command_ack__type_support.cpp.o[0m
+[7.078s] [ 38%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/position_controller_status__type_support.cpp.o[0m
+[7.305s] [ 38%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/onboard_computer_status__type_support_c.cpp.o[0m
+[7.454s] [ 38%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/orb_test__type_support_c.cpp.o[0m
+[7.564s] [ 38%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_constraints__type_support.cpp.o[0m
+[7.609s] [ 38%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/navigator_mission_item__type_support.cpp.o[0m
+[8.218s] [ 39%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/normalized_unsigned_setpoint__type_support.cpp.o[0m
+[8.261s] [ 39%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/position_setpoint__type_support.cpp.o[0m
+[8.491s] [ 39%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/position_setpoint_triplet__type_support.cpp.o[0m
+[8.612s] [ 39%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_control_mode__type_support.cpp.o[0m
+[8.651s] [ 39%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/orb_test_large__type_support_c.cpp.o[0m
+[8.831s] [ 39%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/npfg_status__type_support.cpp.o[0m
+[8.994s] [ 39%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/obstacle_distance__type_support.cpp.o[0m
+[9.142s] [ 39%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/offboard_control_mode__type_support.cpp.o[0m
+[9.557s] [ 39%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_global_position__type_support.cpp.o[0m
+[9.563s] [ 39%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/onboard_computer_status__type_support.cpp.o[0m
+[9.804s] [ 39%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/power_button_state__type_support.cpp.o[0m
+[9.993s] [ 40%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/power_monitor__type_support.cpp.o[0m
+[10.019s] [ 40%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/orb_test_medium__type_support_c.cpp.o[0m
+[10.310s] [ 40%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/orb_test__type_support.cpp.o[0m
+[10.912s] [ 40%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/orb_test_large__type_support.cpp.o[0m
+[11.096s] [ 40%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_imu__type_support.cpp.o[0m
+[11.117s] [ 40%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/orbit_status__type_support_c.cpp.o[0m
+[11.541s] [ 40%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/orb_test_medium__type_support.cpp.o[0m
+[11.708s] [ 40%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/orbit_status__type_support.cpp.o[0m
+[12.022s] [ 40%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/parameter_update__type_support.cpp.o[0m
+[12.175s] [ 40%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/pps_capture__type_support.cpp.o[0m
+[12.221s] [ 40%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/pwm_input__type_support.cpp.o[0m
+[12.426s] [ 40%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/parameter_update__type_support_c.cpp.o[0m
+[12.440s] [ 40%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/px4io_status__type_support.cpp.o[0m
+[12.559s] [ 40%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_imu_status__type_support.cpp.o[0m
+[13.239s] [ 40%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/ping__type_support.cpp.o[0m
+[13.695s] [ 40%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/position_controller_landing_status__type_support.cpp.o[0m
+[13.804s] [ 40%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_land_detected__type_support.cpp.o[0m
+[13.816s] [ 40%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/qshell_req__type_support.cpp.o[0m
+[13.999s] [ 41%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/ping__type_support_c.cpp.o[0m
+[14.126s] [ 41%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_local_position__type_support.cpp.o[0m
+[14.574s] [ 41%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_local_position_setpoint__type_support.cpp.o[0m
+[14.792s] [ 41%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/qshell_retval__type_support.cpp.o[0m
+[14.945s] [ 41%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/radio_status__type_support.cpp.o[0m
+[15.111s] [ 42%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_magnetometer__type_support.cpp.o[0m
+[15.238s] [ 42%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/position_controller_status__type_support.cpp.o[0m
+[15.468s] [ 42%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_odometry__type_support.cpp.o[0m
+[15.651s] [ 42%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rate_ctrl_status__type_support.cpp.o[0m
+[15.788s] [ 42%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/position_controller_landing_status__type_support_c.cpp.o[0m
+[15.968s] [ 42%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/position_controller_status__type_support_c.cpp.o[0m
+[16.150s] [ 42%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/position_setpoint__type_support_c.cpp.o[0m
+[16.563s] [ 42%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_optical_flow__type_support.cpp.o[0m
+[16.846s] [ 42%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_optical_flow_vel__type_support.cpp.o[0m
+[16.875s] [ 42%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/position_setpoint__type_support.cpp.o[0m
+[16.940s] [ 42%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_rates_setpoint__type_support.cpp.o[0m
+[17.084s] [ 42%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rc_channels__type_support.cpp.o[0m
+[17.192s] [ 42%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rc_parameter_map__type_support.cpp.o[0m
+[17.677s] [ 42%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/position_setpoint_triplet__type_support_c.cpp.o[0m
+[17.697s] [ 42%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/power_button_state__type_support_c.cpp.o[0m
+[17.965s] [ 42%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_roi__type_support.cpp.o[0m
+[18.220s] [ 42%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_status__type_support.cpp.o[0m
+[18.331s] [ 42%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_thrust_setpoint__type_support.cpp.o[0m
+[18.828s] [ 42%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/position_setpoint_triplet__type_support.cpp.o[0m
+[18.885s] [ 42%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/register_ext_component_reply__type_support.cpp.o[0m
+[19.213s] [ 42%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_torque_setpoint__type_support.cpp.o[0m
+[19.240s] [ 42%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/register_ext_component_request__type_support.cpp.o[0m
+[19.392s] [ 42%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/power_monitor__type_support_c.cpp.o[0m
+[19.602s] [ 42%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_bezier__type_support.cpp.o[0m
+[19.604s] [ 42%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/pps_capture__type_support_c.cpp.o[0m
+[19.815s] [ 42%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/pwm_input__type_support_c.cpp.o[0m
+[20.293s] [ 42%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/power_button_state__type_support.cpp.o[0m
+[20.330s] [ 42%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/power_monitor__type_support.cpp.o[0m
+[20.379s] [ 42%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rpm__type_support.cpp.o[0m
+[20.883s] [ 42%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.cpp.o[0m
+[20.961s] [ 42%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/px4io_status__type_support_c.cpp.o[0m
+[21.040s] [ 43%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/pps_capture__type_support.cpp.o[0m
+[21.078s] [ 43%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/qshell_req__type_support_c.cpp.o[0m
+[21.227s] [ 43%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/qshell_retval__type_support_c.cpp.o[0m
+[21.583s] [ 43%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/pwm_input__type_support.cpp.o[0m
+[21.983s] [ 43%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rtl_time_estimate__type_support.cpp.o[0m
+[22.416s] [ 43%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/px4io_status__type_support.cpp.o[0m
+[22.446s] [ 43%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/satellite_info__type_support.cpp.o[0m
+[22.524s] [ 43%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vtol_vehicle_status__type_support.cpp.o[0m
+[22.812s] [ 43%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/radio_status__type_support_c.cpp.o[0m
+[22.971s] [ 43%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rate_ctrl_status__type_support_c.cpp.o[0m
+[23.214s] [ 43%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rc_channels__type_support_c.cpp.o[0m
+[24.260s] [ 43%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/sensor_accel__type_support.cpp.o[0m
+[24.265s] [ 43%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/wind__type_support.cpp.o[0m
+[24.335s] [ 43%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/qshell_req__type_support.cpp.o[0m
+[24.340s] [ 43%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/sensor_accel_fifo__type_support.cpp.o[0m
+[24.447s] [ 44%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/sensor_baro__type_support.cpp.o[0m
+[24.844s] [ 44%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rc_parameter_map__type_support_c.cpp.o[0m
+[24.932s] [ 45%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/register_ext_component_reply__type_support_c.cpp.o[0m
+[24.954s] [ 45%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/sensor_combined__type_support.cpp.o[0m
+[25.525s] [ 45%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/yaw_estimator_status__type_support.cpp.o[0m
+[25.993s] [ 45%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/srv/vehicle_command__type_support.cpp.o[0m
+[26.028s] [ 45%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/sensor_correction__type_support.cpp.o[0m
+[26.074s] [ 45%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/qshell_retval__type_support.cpp.o[0m
+[26.076s] [ 45%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/register_ext_component_request__type_support_c.cpp.o[0m
+[26.293s] [ 45%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rtl_time_estimate__type_support_c.cpp.o[0m
+[26.298s] [ 45%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rpm__type_support_c.cpp.o[0m
+[26.440s] [ 45%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/satellite_info__type_support_c.cpp.o[0m
+[26.458s] [ 45%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/radio_status__type_support.cpp.o[0m
+[27.047s] [ 45%] [32m[1mLinking CXX shared library libpx4_msgs__rosidl_typesupport_cpp.so[0m
+[27.168s] [ 45%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/sensor_accel__type_support_c.cpp.o[0m
+[27.615s] [ 45%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rate_ctrl_status__type_support.cpp.o[0m
+[27.680s] [ 56%] Built target px4_msgs__rosidl_typesupport_cpp
+[27.986s] [ 56%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/sensor_accel_fifo__type_support_c.cpp.o[0m
+[28.163s] [ 56%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/sensor_baro__type_support_c.cpp.o[0m
+[28.335s] [ 56%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/sensor_combined__type_support_c.cpp.o[0m
+[28.460s] [ 56%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rc_channels__type_support.cpp.o[0m
+[28.542s] [ 56%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/sensor_gnss_relative__type_support.cpp.o[0m
+[28.603s] [ 56%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/sensor_gps__type_support.cpp.o[0m
+[28.634s] [ 56%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/sensor_correction__type_support_c.cpp.o[0m
+[29.272s] [ 56%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/sensor_gnss_relative__type_support_c.cpp.o[0m
+[29.809s] [ 56%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rc_parameter_map__type_support.cpp.o[0m
+[29.810s] [ 56%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/sensor_gps__type_support_c.cpp.o[0m
+[29.828s] [ 56%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/register_ext_component_reply__type_support.cpp.o[0m
+[29.985s] [ 56%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/sensor_gyro__type_support_c.cpp.o[0m
+[30.045s] [ 56%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/sensor_gyro__type_support.cpp.o[0m
+[30.135s] [ 56%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/sensor_gyro_fft__type_support_c.cpp.o[0m
+[30.409s] [ 56%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/sensor_gyro_fft__type_support.cpp.o[0m
+[30.687s] [ 56%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/sensor_gyro_fifo__type_support_c.cpp.o[0m
+[30.948s] [ 56%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/sensor_hygrometer__type_support_c.cpp.o[0m
+[31.417s] [ 57%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/sensor_mag__type_support_c.cpp.o[0m
+[31.805s] [ 57%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/sensor_gyro_fifo__type_support.cpp.o[0m
+[31.878s] [ 57%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/sensor_optical_flow__type_support_c.cpp.o[0m
+[32.001s] [ 57%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/register_ext_component_request__type_support.cpp.o[0m
+[32.198s] [ 57%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/sensor_preflight_mag__type_support_c.cpp.o[0m
+[32.212s] [ 57%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/sensor_selection__type_support_c.cpp.o[0m
+[32.284s] [ 57%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/sensor_hygrometer__type_support.cpp.o[0m
+[33.564s] [ 57%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rpm__type_support.cpp.o[0m
+[33.571s] [ 57%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/system_power__type_support_c.cpp.o[0m
+[33.748s] [ 57%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/sensor_mag__type_support.cpp.o[0m
+[34.129s] [ 57%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/sensors_status_imu__type_support_c.cpp.o[0m
+[34.343s] [ 57%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/sensor_optical_flow__type_support.cpp.o[0m
+[34.437s] [ 57%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/satellite_info__type_support.cpp.o[0m
+[34.650s] [ 57%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/task_stack_info__type_support_c.cpp.o[0m
+[35.044s] [ 57%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/sensor_preflight_mag__type_support.cpp.o[0m
+[35.052s] [ 57%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/sensor_accel__type_support.cpp.o[0m
+[35.242s] [ 57%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/takeoff_status__type_support_c.cpp.o[0m
+[35.830s] [ 57%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/sensor_selection__type_support.cpp.o[0m
+[35.964s] [ 58%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/sensor_baro__type_support.cpp.o[0m
+[36.071s] [ 58%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tecs_status__type_support_c.cpp.o[0m
+[36.613s] [ 58%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/sensor_uwb__type_support.cpp.o[0m
+[36.768s] [ 58%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/sensors_status__type_support_c.cpp.o[0m
+[36.835s] [ 58%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/sensor_correction__type_support.cpp.o[0m
+[37.363s] [ 58%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/sensors_status__type_support.cpp.o[0m
+[37.514s] [ 58%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/telemetry_status__type_support_c.cpp.o[0m
+[37.637s] [ 58%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/sensor_combined__type_support.cpp.o[0m
+[38.132s] [ 58%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/sensors_status_imu__type_support.cpp.o[0m
+[38.366s] [ 58%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tiltrotor_extra_controls__type_support_c.cpp.o[0m
+[38.388s] [ 58%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/sensor_gps__type_support.cpp.o[0m
+[38.940s] [ 59%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/system_power__type_support.cpp.o[0m
+[39.021s] [ 59%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/timesync_status__type_support_c.cpp.o[0m
+[39.248s] [ 59%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/sensor_gnss_relative__type_support.cpp.o[0m
+[39.713s] [ 59%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/takeoff_status__type_support.cpp.o[0m
+[39.735s] [ 59%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_setpoint__type_support_c.cpp.o[0m
+[40.261s] [ 59%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/sensor_accel_fifo__type_support.cpp.o[0m
+[40.484s] [ 59%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_bezier__type_support_c.cpp.o[0m
+[40.520s] [ 59%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/telemetry_status__type_support.cpp.o[0m
+[41.192s] [ 59%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rtl_time_estimate__type_support.cpp.o[0m
+[41.219s] [ 60%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_waypoint__type_support_c.cpp.o[0m
+[41.275s] [ 60%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tiltrotor_extra_controls__type_support.cpp.o[0m
+[41.989s] [ 60%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/sensor_gyro__type_support.cpp.o[0m
+[42.080s] [ 60%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/transponder_report__type_support_c.cpp.o[0m
+[42.209s] [ 60%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/timesync_status__type_support.cpp.o[0m
+[42.625s] [ 60%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/tune_control__type_support_c.cpp.o[0m
+[42.672s] [ 60%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/sensor_gyro_fft__type_support.cpp.o[0m
+[42.731s] [ 60%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_setpoint__type_support.cpp.o[0m
+[42.732s] [ 60%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/sensor_gyro_fifo__type_support.cpp.o[0m
+[43.093s] [ 60%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/sensor_uwb__type_support_c.cpp.o[0m
+[43.221s] [ 60%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/uavcan_parameter_request__type_support_c.cpp.o[0m
+[43.224s] [ 60%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/sensor_hygrometer__type_support.cpp.o[0m
+[43.317s] [ 60%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/sensor_mag__type_support.cpp.o[0m
+[43.321s] [ 60%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tecs_status__type_support.cpp.o[0m
+[43.326s] [ 60%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_bezier__type_support.cpp.o[0m
+[43.642s] [ 60%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/uavcan_parameter_value__type_support_c.cpp.o[0m
+[43.796s] [ 60%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/ulog_stream__type_support_c.cpp.o[0m
+[43.908s] [ 60%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/sensor_optical_flow__type_support.cpp.o[0m
+[43.926s] [ 60%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_waypoint__type_support.cpp.o[0m
+[43.992s] [ 60%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/task_stack_info__type_support.cpp.o[0m
+[43.998s] [ 60%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/sensor_preflight_mag__type_support.cpp.o[0m
+[44.137s] [ 60%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/unregister_ext_component__type_support_c.cpp.o[0m
+[44.328s] [ 60%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/sensor_uwb__type_support.cpp.o[0m
+[44.334s] [ 60%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/ulog_stream_ack__type_support_c.cpp.o[0m
+[44.622s] [ 60%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/sensor_selection__type_support.cpp.o[0m
+[44.635s] [ 60%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/transponder_report__type_support.cpp.o[0m
+[44.643s] [ 60%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/tune_control__type_support.cpp.o[0m
+[44.729s] [ 60%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_acceleration__type_support_c.cpp.o[0m
+[44.898s] [ 60%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/sensors_status__type_support.cpp.o[0m
+[45.032s] [ 60%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_air_data__type_support_c.cpp.o[0m
+[45.175s] [ 60%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/sensors_status_imu__type_support.cpp.o[0m
+[45.400s] [ 61%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/system_power__type_support.cpp.o[0m
+[45.401s] [ 61%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/uavcan_parameter_value__type_support.cpp.o[0m
+[45.467s] [ 61%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/uavcan_parameter_request__type_support.cpp.o[0m
+[45.482s] [ 61%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/ulog_stream__type_support.cpp.o[0m
+[45.643s] [ 61%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/takeoff_status__type_support.cpp.o[0m
+[45.727s] [ 61%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_angular_acceleration_setpoint__type_support_c.cpp.o[0m
+[46.091s] [ 61%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/task_stack_info__type_support.cpp.o[0m
+[46.223s] [ 61%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tecs_status__type_support.cpp.o[0m
+[46.250s] [ 61%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/ulog_stream_ack__type_support.cpp.o[0m
+[46.269s] [ 62%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/unregister_ext_component__type_support.cpp.o[0m
+[46.283s] [ 62%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_acceleration__type_support.cpp.o[0m
+[46.350s] [ 62%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_angular_velocity__type_support_c.cpp.o[0m
+[46.437s] [ 62%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/telemetry_status__type_support.cpp.o[0m
+[46.876s] [ 62%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tiltrotor_extra_controls__type_support.cpp.o[0m
+[46.953s] [ 62%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_air_data__type_support.cpp.o[0m
+[46.992s] [ 62%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_angular_acceleration_setpoint__type_support.cpp.o[0m
+[47.020s] [ 62%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/timesync_status__type_support.cpp.o[0m
+[47.033s] [ 62%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_angular_velocity__type_support.cpp.o[0m
+[47.034s] [ 62%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_attitude__type_support_c.cpp.o[0m
+[47.332s] [ 62%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_attitude_setpoint__type_support_c.cpp.o[0m
+[47.333s] [ 62%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_bezier__type_support.cpp.o[0m
+[47.751s] [ 62%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_attitude_setpoint__type_support.cpp.o[0m
+[47.909s] [ 62%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_command__type_support_c.cpp.o[0m
+[47.972s] [ 62%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/tune_control__type_support.cpp.o[0m
+[48.141s] [ 62%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_command__type_support.cpp.o[0m
+[48.263s] [ 62%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_command_ack__type_support_c.cpp.o[0m
+[48.378s] [ 62%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/transponder_report__type_support.cpp.o[0m
+[48.541s] [ 62%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_constraints__type_support.cpp.o[0m
+[48.639s] [ 62%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_constraints__type_support_c.cpp.o[0m
+[48.815s] [ 62%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_waypoint__type_support.cpp.o[0m
+[48.964s] [ 62%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_control_mode__type_support.cpp.o[0m
+[49.157s] [ 63%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_control_mode__type_support_c.cpp.o[0m
+[49.258s] [ 63%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/uavcan_parameter_request__type_support.cpp.o[0m
+[49.377s] [ 63%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_global_position__type_support.cpp.o[0m
+[49.539s] [ 63%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_global_position__type_support_c.cpp.o[0m
+[49.721s] [ 63%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/ulog_stream__type_support.cpp.o[0m
+[49.800s] [ 63%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_command_ack__type_support.cpp.o[0m
+[49.896s] [ 63%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_imu__type_support_c.cpp.o[0m
+[50.206s] [ 63%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_imu__type_support.cpp.o[0m
+[50.241s] [ 63%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/ulog_stream_ack__type_support.cpp.o[0m
+[50.251s] [ 63%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_imu_status__type_support_c.cpp.o[0m
+[50.604s] [ 63%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_land_detected__type_support_c.cpp.o[0m
+[50.632s] [ 63%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_imu_status__type_support.cpp.o[0m
+[50.644s] [ 64%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/unregister_ext_component__type_support.cpp.o[0m
+[50.944s] [ 64%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_local_position__type_support_c.cpp.o[0m
+[51.110s] [ 64%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_acceleration__type_support.cpp.o[0m
+[51.185s] [ 64%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_local_position__type_support.cpp.o[0m
+[51.296s] [ 64%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_local_position_setpoint__type_support_c.cpp.o[0m
+[51.506s] [ 64%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_air_data__type_support.cpp.o[0m
+[51.633s] [ 64%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_magnetometer__type_support_c.cpp.o[0m
+[51.650s] [ 65%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_local_position_setpoint__type_support.cpp.o[0m
+[51.900s] [ 65%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/uavcan_parameter_value__type_support.cpp.o[0m
+[51.985s] [ 65%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_odometry__type_support_c.cpp.o[0m
+[52.123s] [ 65%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_magnetometer__type_support.cpp.o[0m
+[52.322s] [ 65%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_angular_acceleration_setpoint__type_support.cpp.o[0m
+[52.340s] [ 65%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_optical_flow__type_support_c.cpp.o[0m
+[52.573s] [ 65%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_optical_flow__type_support.cpp.o[0m
+[52.731s] [ 65%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_optical_flow_vel__type_support_c.cpp.o[0m
+[52.780s] [ 65%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_angular_velocity__type_support.cpp.o[0m
+[52.988s] [ 65%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_odometry__type_support.cpp.o[0m
+[53.096s] [ 65%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_rates_setpoint__type_support_c.cpp.o[0m
+[53.259s] [ 65%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_attitude__type_support.cpp.o[0m
+[53.262s] [ 65%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_roi__type_support_c.cpp.o[0m
+[53.262s] [ 65%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_attitude_setpoint__type_support.cpp.o[0m
+[53.449s] [ 65%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_status__type_support_c.cpp.o[0m
+[53.461s] [ 65%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_land_detected__type_support.cpp.o[0m
+[53.461s] [ 65%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_attitude__type_support.cpp.o[0m
+[53.846s] [ 65%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_thrust_setpoint__type_support_c.cpp.o[0m
+[53.901s] [ 65%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_setpoint__type_support.cpp.o[0m
+[53.984s] [ 65%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_command__type_support.cpp.o[0m
+[54.074s] [ 65%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_torque_setpoint__type_support_c.cpp.o[0m
+[54.146s] [ 65%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_optical_flow_vel__type_support.cpp.o[0m
+[54.184s] [ 65%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_rates_setpoint__type_support.cpp.o[0m
+[54.489s] [ 66%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_constraints__type_support.cpp.o[0m
+[54.489s] [ 66%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support_c.cpp.o[0m
+[54.516s] [ 66%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_command_ack__type_support.cpp.o[0m
+[54.671s] [ 66%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support_c.cpp.o[0m
+[54.800s] [ 66%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_control_mode__type_support.cpp.o[0m
+[54.961s] [ 66%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_roi__type_support.cpp.o[0m
+[55.104s] [ 66%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vtol_vehicle_status__type_support_c.cpp.o[0m
+[55.161s] [ 66%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_imu__type_support.cpp.o[0m
+[55.167s] [ 66%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/wind__type_support_c.cpp.o[0m
+[55.255s] [ 66%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/yaw_estimator_status__type_support_c.cpp.o[0m
+[55.259s] [ 66%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_imu_status__type_support.cpp.o[0m
+[55.485s] [ 66%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_global_position__type_support.cpp.o[0m
+[55.700s] [ 66%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/srv/detail/vehicle_command__type_support_c.cpp.o[0m
+[55.753s] [ 66%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_status__type_support.cpp.o[0m
+[55.908s] [ 66%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_thrust_setpoint__type_support.cpp.o[0m
+[55.908s] [ 66%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_local_position_setpoint__type_support.cpp.o[0m
+[56.068s] [ 66%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_local_position__type_support.cpp.o[0m
+[56.145s] [ 66%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_land_detected__type_support.cpp.o[0m
+[56.317s] [ 66%] [32m[1mLinking CXX shared library libpx4_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[56.363s] [ 67%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_magnetometer__type_support.cpp.o[0m
+[56.363s] [ 67%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.cpp.o[0m
+[56.423s] [ 67%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_torque_setpoint__type_support.cpp.o[0m
+[56.619s] [ 74%] Built target px4_msgs__rosidl_typesupport_fastrtps_c
+[56.640s] [ 74%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_odometry__type_support.cpp.o[0m
+[56.707s] [ 74%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_optical_flow__type_support.cpp.o[0m
+[56.850s] [ 74%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_optical_flow_vel__type_support.cpp.o[0m
+[57.068s] [ 74%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_rates_setpoint__type_support.cpp.o[0m
+[57.078s] [ 74%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vtol_vehicle_status__type_support.cpp.o[0m
+[57.087s] [ 74%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.cpp.o[0m
+[57.315s] [ 74%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_status__type_support.cpp.o[0m
+[57.323s] [ 74%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/wind__type_support.cpp.o[0m
+[57.493s] [ 74%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_roi__type_support.cpp.o[0m
+[57.948s] [ 74%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/srv/detail/vehicle_command__type_support.cpp.o[0m
+[58.058s] [ 74%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vtol_vehicle_status__type_support.cpp.o[0m
+[58.354s] [ 74%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/yaw_estimator_status__type_support.cpp.o[0m
+[58.518s] [ 74%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/yaw_estimator_status__type_support.cpp.o[0m
+[58.800s] [ 75%] [32m[1mLinking CXX shared library libpx4_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[59.002s] [ 82%] Built target px4_msgs__rosidl_typesupport_introspection_cpp
+[59.007s] [ 82%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/srv/detail/dds_fastrtps/vehicle_command__type_support.cpp.o[0m
+[59.345s] [ 82%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/wind__type_support.cpp.o[0m
+[59.662s] [ 82%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_waypoint__type_support.cpp.o[0m
+[59.967s] [ 82%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_bezier__type_support.cpp.o[0m
+[60.296s] [ 82%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_torque_setpoint__type_support.cpp.o[0m
+[60.608s] [ 82%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_thrust_setpoint__type_support.cpp.o[0m
+[60.918s] [ 82%] [32m[1mLinking CXX shared library libpx4_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[61.113s] [ 88%] Built target px4_msgs__rosidl_typesupport_fastrtps_cpp
+[61.130s] [ 88%] Built target px4_msgs
+[61.159s] [ 88%] [34m[1mGenerating Python code for ROS interfaces[0m
+[151.265s] [ 88%] Built target px4_msgs__py
+[151.319s] [ 88%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_actuator_controls_status_s.c.o[0m
+[151.322s] [ 88%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_actuator_armed_s.c.o[0m
+[151.323s] [ 88%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_actuator_motors_s.c.o[0m
+[151.325s] [ 88%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_action_request_s.c.o[0m
+[151.326s] [ 88%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_actuator_servos_s.c.o[0m
+[151.326s] [ 88%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_actuator_outputs_s.c.o[0m
+[151.336s] [ 88%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_actuator_test_s.c.o[0m
+[151.338s] [ 89%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_actuator_servos_trim_s.c.o[0m
+[151.653s] [ 89%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_adc_report_s.c.o[0m
+[151.654s] [ 89%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_airspeed_s.c.o[0m
+[151.654s] [ 89%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_airspeed_validated_s.c.o[0m
+[151.663s] [ 89%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_airspeed_wind_s.c.o[0m
+[151.664s] [ 89%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_arming_check_reply_s.c.o[0m
+[151.671s] [ 89%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_arming_check_request_s.c.o[0m
+[151.688s] [ 89%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_battery_status_s.c.o[0m
+[151.691s] [ 89%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_autotune_attitude_control_status_s.c.o[0m
+[152.074s] [ 89%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_button_event_s.c.o[0m
+[152.075s] [ 89%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_camera_capture_s.c.o[0m
+[152.114s] [ 89%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_camera_status_s.c.o[0m
+[152.131s] [ 89%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_camera_trigger_s.c.o[0m
+[152.140s] [ 89%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_cellular_status_s.c.o[0m
+[152.154s] [ 89%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_collision_constraints_s.c.o[0m
+[152.213s] [ 89%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_collision_report_s.c.o[0m
+[152.264s] [ 90%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_config_overrides_s.c.o[0m
+[152.422s] [ 90%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_control_allocator_status_s.c.o[0m
+[152.463s] [ 90%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_cpuload_s.c.o[0m
+[152.482s] [ 90%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_dataman_request_s.c.o[0m
+[152.497s] [ 90%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_dataman_response_s.c.o[0m
+[152.502s] [ 90%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_debug_array_s.c.o[0m
+[152.523s] [ 90%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_debug_key_value_s.c.o[0m
+[152.604s] [ 90%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_debug_value_s.c.o[0m
+[152.754s] [ 90%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_debug_vect_s.c.o[0m
+[152.806s] [ 90%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_differential_pressure_s.c.o[0m
+[152.832s] [ 90%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_ekf2_timestamps_s.c.o[0m
+[152.839s] [ 90%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_distance_sensor_s.c.o[0m
+[152.860s] [ 90%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_esc_report_s.c.o[0m
+[152.877s] [ 90%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_esc_status_s.c.o[0m
+[152.931s] [ 90%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_estimator_aid_source1d_s.c.o[0m
+[153.032s] [ 90%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_estimator_aid_source2d_s.c.o[0m
+[153.165s] [ 91%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_estimator_aid_source3d_s.c.o[0m
+[153.204s] [ 91%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_estimator_bias_s.c.o[0m
+[153.221s] [ 91%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_estimator_bias3d_s.c.o[0m
+[153.231s] [ 91%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_estimator_event_flags_s.c.o[0m
+[153.241s] [ 91%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_estimator_gps_status_s.c.o[0m
+[153.291s] [ 91%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_estimator_innovations_s.c.o[0m
+[153.330s] [ 91%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_estimator_selector_status_s.c.o[0m
+[153.421s] [ 91%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_estimator_sensor_bias_s.c.o[0m
+[153.514s] [ 91%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_estimator_states_s.c.o[0m
+[153.595s] [ 91%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_estimator_status_s.c.o[0m
+[153.624s] [ 91%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_estimator_status_flags_s.c.o[0m
+[153.630s] [ 91%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_event_s.c.o[0m
+[153.667s] [ 91%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_failsafe_flags_s.c.o[0m
+[153.768s] [ 91%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_failure_detector_status_s.c.o[0m
+[153.832s] [ 91%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_figure_eight_status_s.c.o[0m
+[153.883s] [ 92%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_follow_target_estimator_s.c.o[0m
+[153.899s] [ 92%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_follow_target_s.c.o[0m
+[153.961s] [ 92%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_follow_target_status_s.c.o[0m
+[153.996s] [ 92%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_generator_status_s.c.o[0m
+[154.057s] [ 92%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_geofence_result_s.c.o[0m
+[154.124s] [ 92%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_gimbal_device_attitude_status_s.c.o[0m
+[154.126s] [ 92%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_gimbal_controls_s.c.o[0m
+[154.139s] [ 92%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_gimbal_device_information_s.c.o[0m
+[154.218s] [ 92%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_gimbal_device_set_attitude_s.c.o[0m
+[154.315s] [ 92%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_gimbal_manager_information_s.c.o[0m
+[154.367s] [ 92%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_gimbal_manager_set_attitude_s.c.o[0m
+[154.374s] [ 92%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_gimbal_manager_set_manual_control_s.c.o[0m
+[154.454s] [ 92%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_gimbal_manager_status_s.c.o[0m
+[154.475s] [ 92%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_gpio_config_s.c.o[0m
+[154.496s] [ 92%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_gpio_in_s.c.o[0m
+[154.569s] [ 92%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_gpio_out_s.c.o[0m
+[154.625s] [ 92%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_gpio_request_s.c.o[0m
+[154.671s] [ 93%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_gps_dump_s.c.o[0m
+[154.705s] [ 93%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_gps_inject_data_s.c.o[0m
+[154.774s] [ 93%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_gripper_s.c.o[0m
+[154.778s] [ 93%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_health_report_s.c.o[0m
+[154.871s] [ 93%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_heater_status_s.c.o[0m
+[154.882s] [ 93%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_home_position_s.c.o[0m
+[154.908s] [ 93%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_hover_thrust_estimate_s.c.o[0m
+[154.951s] [ 93%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_input_rc_s.c.o[0m
+[155.130s] [ 93%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_internal_combustion_engine_status_s.c.o[0m
+[155.162s] [ 93%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_iridiumsbd_status_s.c.o[0m
+[155.179s] [ 93%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_irlock_report_s.c.o[0m
+[155.217s] [ 93%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_landing_gear_s.c.o[0m
+[155.249s] [ 93%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_landing_gear_wheel_s.c.o[0m
+[155.270s] [ 93%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_landing_target_innovations_s.c.o[0m
+[155.353s] [ 93%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_landing_target_pose_s.c.o[0m
+[155.393s] [ 93%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_launch_detection_status_s.c.o[0m
+[155.605s] [ 93%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_led_control_s.c.o[0m
+[155.671s] [ 93%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_mag_worker_data_s.c.o[0m
+[155.684s] [ 93%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_logger_status_s.c.o[0m
+[155.689s] [ 93%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_magnetometer_bias_estimate_s.c.o[0m
+[155.726s] [ 94%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_log_message_s.c.o[0m
+[155.827s] [ 94%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_manual_control_setpoint_s.c.o[0m
+[155.923s] [ 94%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_manual_control_switches_s.c.o[0m
+[155.955s] [ 94%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_mavlink_log_s.c.o[0m
+[156.112s] [ 94%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_mavlink_tunnel_s.c.o[0m
+[156.152s] [ 94%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_message_format_request_s.c.o[0m
+[156.169s] [ 94%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_message_format_response_s.c.o[0m
+[156.184s] [ 94%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_mission_s.c.o[0m
+[156.214s] [ 94%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_mission_result_s.c.o[0m
+[156.317s] [ 94%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_mode_completed_s.c.o[0m
+[156.384s] [ 94%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_mount_orientation_s.c.o[0m
+[156.582s] [ 94%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_navigator_mission_item_s.c.o[0m
+[156.583s] [ 94%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_normalized_unsigned_setpoint_s.c.o[0m
+[156.598s] [ 95%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_npfg_status_s.c.o[0m
+[156.606s] [ 95%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_obstacle_distance_s.c.o[0m
+[156.630s] [ 95%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_offboard_control_mode_s.c.o[0m
+[156.638s] [ 95%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_onboard_computer_status_s.c.o[0m
+[156.724s] [ 95%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_orb_test_s.c.o[0m
+[156.745s] [ 95%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_orb_test_large_s.c.o[0m
+[156.953s] [ 95%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_orb_test_medium_s.c.o[0m
+[157.018s] [ 95%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_orbit_status_s.c.o[0m
+[157.058s] [ 95%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_parameter_update_s.c.o[0m
+[157.093s] [ 95%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_ping_s.c.o[0m
+[157.117s] [ 95%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_position_controller_landing_status_s.c.o[0m
+[157.125s] [ 95%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_position_setpoint_s.c.o[0m
+[157.145s] [ 95%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_position_controller_status_s.c.o[0m
+[157.283s] [ 95%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_position_setpoint_triplet_s.c.o[0m
+[157.329s] [ 95%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_power_button_state_s.c.o[0m
+[157.368s] [ 95%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_power_monitor_s.c.o[0m
+[157.428s] [ 96%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_pps_capture_s.c.o[0m
+[157.434s] [ 96%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_pwm_input_s.c.o[0m
+[157.460s] [ 96%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_px4io_status_s.c.o[0m
+[157.489s] [ 96%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_qshell_req_s.c.o[0m
+[157.509s] [ 96%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_qshell_retval_s.c.o[0m
+[157.637s] [ 96%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_radio_status_s.c.o[0m
+[157.691s] [ 96%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rate_ctrl_status_s.c.o[0m
+[157.706s] [ 96%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rc_parameter_map_s.c.o[0m
+[157.706s] [ 96%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rc_channels_s.c.o[0m
+[157.744s] [ 96%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_register_ext_component_reply_s.c.o[0m
+[157.804s] [ 96%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_register_ext_component_request_s.c.o[0m
+[157.827s] [ 96%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rpm_s.c.o[0m
+[157.873s] [ 96%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rtl_time_estimate_s.c.o[0m
+[157.964s] [ 96%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_satellite_info_s.c.o[0m
+[158.018s] [ 96%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_sensor_accel_s.c.o[0m
+[158.018s] [ 96%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_sensor_accel_fifo_s.c.o[0m
+[158.062s] [ 97%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_sensor_baro_s.c.o[0m
+[158.090s] [ 97%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_sensor_combined_s.c.o[0m
+[158.137s] [ 97%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_sensor_correction_s.c.o[0m
+[158.151s] [ 97%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_sensor_gnss_relative_s.c.o[0m
+[158.191s] [ 97%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_sensor_gps_s.c.o[0m
+[158.287s] [ 97%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_sensor_gyro_s.c.o[0m
+[158.358s] [ 97%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_sensor_gyro_fft_s.c.o[0m
+[158.366s] [ 97%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_sensor_gyro_fifo_s.c.o[0m
+[158.381s] [ 97%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_sensor_hygrometer_s.c.o[0m
+[158.509s] [ 97%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_sensor_mag_s.c.o[0m
+[158.595s] [ 97%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_sensor_optical_flow_s.c.o[0m
+[158.623s] [ 97%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_sensor_preflight_mag_s.c.o[0m
+[158.670s] [ 97%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_sensor_selection_s.c.o[0m
+[158.699s] [ 97%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_sensor_uwb_s.c.o[0m
+[158.735s] [ 97%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_sensors_status_s.c.o[0m
+[158.812s] [ 97%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_sensors_status_imu_s.c.o[0m
+[158.865s] [ 97%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_system_power_s.c.o[0m
+[158.982s] [ 98%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_takeoff_status_s.c.o[0m
+[158.996s] [ 98%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_task_stack_info_s.c.o[0m
+[158.999s] [ 98%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_tecs_status_s.c.o[0m
+[159.026s] [ 98%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_telemetry_status_s.c.o[0m
+[159.119s] [ 98%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_tiltrotor_extra_controls_s.c.o[0m
+[159.173s] [ 98%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_timesync_status_s.c.o[0m
+[159.331s] [ 98%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_trajectory_bezier_s.c.o[0m
+[159.357s] [ 98%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_trajectory_setpoint_s.c.o[0m
+[159.393s] [ 98%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_trajectory_waypoint_s.c.o[0m
+[159.415s] [ 98%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_transponder_report_s.c.o[0m
+[159.449s] [ 98%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_tune_control_s.c.o[0m
+[159.494s] [ 98%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_uavcan_parameter_request_s.c.o[0m
+[159.683s] [ 98%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_uavcan_parameter_value_s.c.o[0m
+[159.688s] [ 98%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_ulog_stream_s.c.o[0m
+[159.705s] [ 98%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_ulog_stream_ack_s.c.o[0m
+[159.739s] [ 98%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_unregister_ext_component_s.c.o[0m
+[159.797s] [ 99%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_acceleration_s.c.o[0m
+[159.815s] [ 99%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_air_data_s.c.o[0m
+[159.859s] [ 99%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_angular_acceleration_setpoint_s.c.o[0m
+[159.953s] [ 99%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_angular_velocity_s.c.o[0m
+[160.051s] [ 99%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_attitude_s.c.o[0m
+[160.066s] [ 99%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_attitude_setpoint_s.c.o[0m
+[160.084s] [ 99%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_command_s.c.o[0m
+[160.174s] [ 99%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_command_ack_s.c.o[0m
+[160.177s] [ 99%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_constraints_s.c.o[0m
+[160.287s] [ 99%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_control_mode_s.c.o[0m
+[160.306s] [ 99%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_imu_s.c.o[0m
+[160.320s] [ 99%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_global_position_s.c.o[0m
+[160.434s] [ 99%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_imu_status_s.c.o[0m
+[160.530s] [ 99%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_land_detected_s.c.o[0m
+[160.643s] [ 99%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_local_position_s.c.o[0m
+[160.659s] [100%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_magnetometer_s.c.o[0m
+[160.663s] [100%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_local_position_setpoint_s.c.o[0m
+[160.678s] [100%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_odometry_s.c.o[0m
+[160.776s] [100%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_optical_flow_s.c.o[0m
+[160.903s] [100%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_optical_flow_vel_s.c.o[0m
+[160.937s] [100%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_rates_setpoint_s.c.o[0m
+[160.959s] [100%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_roi_s.c.o[0m
+[161.063s] [100%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_status_s.c.o[0m
+[161.080s] [100%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_thrust_setpoint_s.c.o[0m
+[161.095s] [100%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_torque_setpoint_s.c.o[0m
+[161.213s] [100%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_bezier_s.c.o[0m
+[161.352s] [100%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_waypoint_s.c.o[0m
+[161.435s] [100%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vtol_vehicle_status_s.c.o[0m
+[161.451s] [100%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_wind_s.c.o[0m
+[161.475s] [100%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_yaw_estimator_status_s.c.o[0m
+[161.502s] [100%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/srv/_vehicle_command_s.c.o[0m
+[161.809s] [100%] [32m[1mLinking C shared library rosidl_generator_py/px4_msgs/libpx4_msgs__rosidl_generator_py.so[0m
+[161.991s] [100%] Built target px4_msgs__rosidl_generator_py
+[162.031s] [100%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[162.034s] [100%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[162.037s] [100%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[162.414s] gmake[2]: *** [CMakeFiles/px4_msgs__rosidl_typesupport_c__pyext.dir/build.make:76: CMakeFiles/px4_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_c.c.o] Interrupt
+[162.414s] gmake[2]: *** [CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/build.make:76: CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o] Interrupt
+[162.414s] gmake[1]: *** [CMakeFiles/Makefile2:564: CMakeFiles/px4_msgs__rosidl_typesupport_c__pyext.dir/all] Interrupt
+[162.414s] gmake[2]: *** [CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c__pyext.dir/build.make:76: CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_introspection_c.c.o] Interrupt
+[162.414s] gmake[1]: *** [CMakeFiles/Makefile2:535: CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c__pyext.dir/all] Interrupt
+[162.415s] gmake[1]: *** [CMakeFiles/Makefile2:505: CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/all] Interrupt
+[162.415s] gmake: *** [Makefile:146: all] Interrupt
+[162.419s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs' returned '-2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs -- -j8 -l8

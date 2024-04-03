@@ -1,0 +1,48 @@
+[0.010s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com -DCMAKE_INSTALL_PREFIX=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com
+[0.071s] -- The C compiler identification is GNU 11.4.0
+[0.134s] -- The CXX compiler identification is GNU 11.4.0
+[0.142s] -- Detecting C compiler ABI info
+[0.215s] -- Detecting C compiler ABI info - done
+[0.223s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.223s] -- Detecting C compile features
+[0.224s] -- Detecting C compile features - done
+[0.228s] -- Detecting CXX compiler ABI info
+[0.315s] -- Detecting CXX compiler ABI info - done
+[0.325s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.325s] -- Detecting CXX compile features
+[0.326s] -- Detecting CXX compile features - done
+[0.329s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.742s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.843s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.844s] -- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.880s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.886s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.896s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.910s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.931s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.961s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.973s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.977s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.111s] -- Found px4_msgs: 2.0.1 (/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/cmake)
+[1.153s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[1.240s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.244s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.370s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.405s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.457s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.471s] -- Looking for pthread.h
+[1.554s] -- Looking for pthread.h - found
+[1.554s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.639s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.640s] -- Found Threads: TRUE  
+[1.802s] -- Found rclpy: 3.3.12 (/opt/ros/humble/share/rclpy/cmake)
+[1.805s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.912s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:42 (message):
+[1.912s]   ament_target_dependencies() the first argument must be a valid target name
+[1.912s] Call Stack (most recent call first):
+[1.912s]   CMakeLists.txt:73 (ament_target_dependencies)
+[1.913s] 
+[1.913s] [0m
+[1.913s] -- Configuring incomplete, errors occurred!
+[1.913s] See also "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com/CMakeFiles/CMakeOutput.log".
+[1.924s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com' returned '1': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com -DCMAKE_INSTALL_PREFIX=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com

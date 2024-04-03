@@ -1,0 +1,14 @@
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:[m[K In member function ‘[01m[Kvoid PointCloudProcessor::pointCloudCallback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:97:36:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kflann::Index<flann::L2<float> > kdTree[m[K’
+   97 |     flann::Index<flann::L2<float>> [01;31m[KkdTree[m[K(dataset, flann::KDTreeIndexParams(4));
+      |                                    [01;31m[K^~~~~~[m[K
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:74:36:[m[K [01;36m[Knote: [m[K‘[01m[Kflann::Index<flann::L2<float> > kdTree[m[K’ previously declared here
+   74 |     flann::Index<flann::L2<float>> [01;36m[KkdTree[m[K(flann::KDTreeIndexParams(4)); // 4 is the branching factor
+      |                                    [01;36m[K^~~~~~[m[K
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:101:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kpoints[m[K’ was not declared in this scope; did you mean ‘[01m[KPoint[m[K’?
+  101 |     euclideanClusteringUsingKDTree([01;31m[Kpoints[m[K, clusterDistance, processed, kdTree, clusters);
+      |                                    [01;31m[K^~~~~~[m[K
+      |                                    [32m[KPoint[m[K
+gmake[2]: *** [CMakeFiles/PointCloudProcessor.dir/build.make:76: CMakeFiles/PointCloudProcessor.dir/src/PointCloudProcessor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/PointCloudProcessor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

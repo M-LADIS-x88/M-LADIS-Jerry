@@ -1,0 +1,23 @@
+running egg_info
+writing ../../build/odometry/odometry.egg-info/PKG-INFO
+writing dependency_links to ../../build/odometry/odometry.egg-info/dependency_links.txt
+writing entry points to ../../build/odometry/odometry.egg-info/entry_points.txt
+writing requirements to ../../build/odometry/odometry.egg-info/requires.txt
+writing top-level names to ../../build/odometry/odometry.egg-info/top_level.txt
+reading manifest file '../../build/odometry/odometry.egg-info/SOURCES.txt'
+writing manifest file '../../build/odometry/odometry.egg-info/SOURCES.txt'
+running build
+running build_py
+copying odometry/__init__.py -> /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/odometry/build/lib/odometry
+copying odometry/odometry_node.py -> /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/odometry/build/lib/odometry
+running install
+running install_lib
+running install_data
+copying resource/odometry -> /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/odometry/share/ament_index/resource_index/packages
+copying package.xml -> /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/odometry/share/odometry
+running install_egg_info
+removing '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/odometry/lib/python3.10/site-packages/odometry-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/odometry/odometry.egg-info to /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/odometry/lib/python3.10/site-packages/odometry-0.0.0-py3.10.egg-info
+running install_scripts
+Installing run script to /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/odometry/lib/odometry
+writing list of installed files to '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/odometry/install.log'

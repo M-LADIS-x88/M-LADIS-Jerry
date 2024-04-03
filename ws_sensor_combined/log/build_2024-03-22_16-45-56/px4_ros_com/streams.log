@@ -1,0 +1,66 @@
+[0.038s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com -- -j8 -l8
+[0.113s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.531s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.531s] -- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.629s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.637s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.657s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.690s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.739s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.784s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.789s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.109s] -- Found px4_msgs: 2.0.1 (/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/cmake)
+[1.195s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[1.290s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.293s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.517s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.760s] -- Found rclpy: 3.3.12 (/opt/ros/humble/share/rclpy/cmake)
+[1.760s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.914s] -- Found pcl_conversions: 2.4.0 (/opt/ros/humble/share/pcl_conversions/cmake)
+[2.137s] -- Found pcl_ros: 2.4.0 (/opt/ros/humble/share/pcl_ros/cmake)
+[2.323s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.019s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[3.066s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[3.654s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.665s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[3.943s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[3.956s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.966s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[4.273s] -- Found Qhull version 8.0.2
+[4.645s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[5.089s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.280s] -- Added test 'copyright' to check source files copyright and LICENSE
+[5.285s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.287s] -- Configured cppcheck include dirs: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/include
+[5.287s] -- Configured cppcheck exclude dirs and/or files: 
+[5.293s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[5.293s] -- Configured cpplint exclude dirs and/or files: 
+[5.294s] -- Added test 'flake8' to check Python code syntax and style conventions
+[5.297s] -- Added test 'lint_cmake' to check CMake code style
+[5.298s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[5.303s] -- Added test 'uncrustify' to check C / C++ code style
+[5.303s] -- Configured uncrustify additional arguments: 
+[5.305s] -- Added test 'xmllint' to check XML markup files
+[5.309s] -- Configuring done
+[5.491s] -- Generating done
+[5.540s] -- Build files have been written to: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com
+[5.603s] [35m[1mConsolidate compiler generated dependencies of target debug_vect_advertiser[0m
+[5.607s] [35m[1mConsolidate compiler generated dependencies of target offboard_control[0m
+[5.607s] [35m[1mConsolidate compiler generated dependencies of target vehicle_gps_position_listener[0m
+[5.615s] [35m[1mConsolidate compiler generated dependencies of target sensor_combined_listener[0m
+[5.620s] [35m[1mConsolidate compiler generated dependencies of target PointCloudProcessor[0m
+[5.630s] [35m[1mConsolidate compiler generated dependencies of target test_flight_control[0m
+[5.648s] [ 16%] Built target offboard_control
+[5.651s] [ 33%] Built target vehicle_gps_position_listener
+[5.669s] [ 50%] Built target sensor_combined_listener
+[5.678s] [ 66%] Built target debug_vect_advertiser
+[5.683s] [ 83%] Built target test_flight_control
+[5.710s] [ 91%] [32mBuilding CXX object CMakeFiles/PointCloudProcessor.dir/src/PointCloudProcessor.cpp.o[0m
+[9.202s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:13:10:[m[K [01;31m[Kfatal error: [m[Kobject_detection.cpp: No such file or directory
+[9.203s]    13 | #include [01;31m[K<object_detection.cpp>[m[K
+[9.203s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[9.204s] compilation terminated.
+[9.228s] gmake[2]: *** [CMakeFiles/PointCloudProcessor.dir/build.make:76: CMakeFiles/PointCloudProcessor.dir/src/PointCloudProcessor.cpp.o] Error 1
+[9.229s] gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/PointCloudProcessor.dir/all] Error 2
+[9.229s] gmake: *** [Makefile:146: all] Error 2
+[9.233s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com' returned '2': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com -- -j8 -l8

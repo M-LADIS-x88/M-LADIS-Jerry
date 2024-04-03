@@ -1,0 +1,73 @@
+[0.013s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com -- -j8 -l8
+[0.046s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.191s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.191s] -- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.220s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.222s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.229s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.241s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.258s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.274s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.275s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.379s] -- Found px4_msgs: 2.0.1 (/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/share/px4_msgs/cmake)
+[0.414s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[0.467s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.468s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.613s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.749s] -- Found rclpy: 3.3.12 (/opt/ros/humble/share/rclpy/cmake)
+[0.749s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.840s] -- Found pcl_conversions: 2.4.0 (/opt/ros/humble/share/pcl_conversions/cmake)
+[0.981s] -- Found pcl_ros: 2.4.0 (/opt/ros/humble/share/pcl_ros/cmake)
+[1.097s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.502s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.542s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[1.868s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.875s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.044s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.052s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.060s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.217s] -- Found Qhull version 8.0.2
+[2.381s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.641s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.722s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.724s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.725s] -- Configured cppcheck include dirs: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/include
+[2.725s] -- Configured cppcheck exclude dirs and/or files: 
+[2.727s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.727s] -- Configured cpplint exclude dirs and/or files: 
+[2.727s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.728s] -- Added test 'lint_cmake' to check CMake code style
+[2.729s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.731s] -- Added test 'uncrustify' to check C / C++ code style
+[2.731s] -- Configured uncrustify additional arguments: 
+[2.731s] -- Added test 'xmllint' to check XML markup files
+[2.732s] -- Configuring done
+[2.782s] -- Generating done
+[2.786s] -- Build files have been written to: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com
+[2.828s] [35m[1mConsolidate compiler generated dependencies of target test_flight_control[0m
+[2.829s] [35m[1mConsolidate compiler generated dependencies of target debug_vect_advertiser[0m
+[2.830s] [35m[1mConsolidate compiler generated dependencies of target sensor_combined_listener[0m
+[2.830s] [35m[1mConsolidate compiler generated dependencies of target vehicle_gps_position_listener[0m
+[2.831s] [35m[1mConsolidate compiler generated dependencies of target offboard_control[0m
+[2.834s] [35m[1mConsolidate compiler generated dependencies of target PointCloudProcessor[0m
+[2.862s] [ 16%] Built target vehicle_gps_position_listener
+[2.862s] [ 33%] Built target sensor_combined_listener
+[2.863s] [ 50%] Built target debug_vect_advertiser
+[2.863s] [ 58%] [32m[1mLinking CXX executable offboard_control[0m
+[2.864s] [ 66%] [32m[1mLinking CXX executable test_flight_control[0m
+[2.885s] [ 75%] [32mBuilding CXX object CMakeFiles/PointCloudProcessor.dir/src/PointCloudProcessor.cpp.o[0m
+[3.102s] /usr/bin/ld: CMakeFiles/test_flight_control.dir/src/examples/offboard/test_flight_control.cpp.o: in function `std::enable_if<rosidl_generator_traits::is_message<px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> > >::value, rosidl_message_type_support_t const&>::type rclcpp::get_message_type_support_handle<px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> > >()':
+[3.103s] test_flight_control.cpp:(.text._ZN6rclcpp31get_message_type_support_handleIN8px4_msgs3msg19TrajectorySetpoint_ISaIvEEEEENSt9enable_ifIXsrN23rosidl_generator_traits10is_messageIT_EE5valueERK29rosidl_message_type_support_tE4typeEv[_ZN6rclcpp31get_message_type_support_handleIN8px4_msgs3msg19TrajectorySetpoint_ISaIvEEEEENSt9enable_ifIXsrN23rosidl_generator_traits10is_messageIT_EE5valueERK29rosidl_message_type_support_tE4typeEv]+0x10): undefined reference to `rosidl_message_type_support_t const* rosidl_typesupport_cpp::get_message_type_support_handle<px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> > >()'
+[3.123s] collect2: error: ld returned 1 exit status
+[3.124s] gmake[2]: *** [CMakeFiles/test_flight_control.dir/build.make:159: test_flight_control] Error 1
+[3.125s] gmake[1]: *** [CMakeFiles/Makefile2:251: CMakeFiles/test_flight_control.dir/all] Error 2
+[3.125s] gmake[1]: *** Waiting for unfinished jobs....
+[3.512s] /usr/bin/ld: CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o: in function `std::enable_if<rosidl_generator_traits::is_message<px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> > >::value, rosidl_message_type_support_t const&>::type rclcpp::get_message_type_support_handle<px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> > >()':
+[3.512s] offboard_control.cpp:(.text._ZN6rclcpp31get_message_type_support_handleIN8px4_msgs3msg19TrajectorySetpoint_ISaIvEEEEENSt9enable_ifIXsrN23rosidl_generator_traits10is_messageIT_EE5valueERK29rosidl_message_type_support_tE4typeEv[_ZN6rclcpp31get_message_type_support_handleIN8px4_msgs3msg19TrajectorySetpoint_ISaIvEEEEENSt9enable_ifIXsrN23rosidl_generator_traits10is_messageIT_EE5valueERK29rosidl_message_type_support_tE4typeEv]+0x10): undefined reference to `rosidl_message_type_support_t const* rosidl_typesupport_cpp::get_message_type_support_handle<px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> > >()'
+[3.573s] collect2: error: ld returned 1 exit status
+[3.575s] gmake[2]: *** [CMakeFiles/offboard_control.dir/build.make:159: offboard_control] Error 1
+[3.575s] gmake[1]: *** [CMakeFiles/Makefile2:225: CMakeFiles/offboard_control.dir/all] Error 2
+[17.073s] [ 83%] [32m[1mLinking CXX executable PointCloudProcessor[0m
+[17.968s] [ 83%] Built target PointCloudProcessor
+[17.969s] gmake: *** [Makefile:146: all] Error 2
+[17.971s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com' returned '2': CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com -- -j8 -l8

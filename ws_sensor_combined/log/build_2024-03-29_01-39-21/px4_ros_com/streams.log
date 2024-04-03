@@ -1,0 +1,43 @@
+[0.014s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com:/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com -- -j32 -l32
+[0.055s] [35m[1mConsolidate compiler generated dependencies of target PointCloudProcessor[0m
+[0.060s] [ 50%] Built target test_flight_control
+[0.060s] [ 50%] Built target sensor_combined_listener
+[0.060s] [ 50%] Built target offboard_control
+[0.061s] [ 66%] Built target debug_vect_advertiser
+[0.062s] [ 83%] Built target vehicle_gps_position_listener
+[0.084s] [ 91%] [32mBuilding CXX object CMakeFiles/PointCloudProcessor.dir/src/PointCloudProcessor.cpp.o[0m
+[3.585s] In file included from [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:13[m[K:
+[3.585s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:[m[K In function ‘[01m[Kvoid euclideanClusteringUsingKDTree(const std::vector<Point>&, float, std::vector<bool, std::allocator<bool> >&, flann::Index<flann::L2<float> >&, std::vector<std::vector<Point> >&)[m[K’:
+[3.585s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:295:32:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kflann::Index<flann::L2<float> >::radiusSearch(flann::Matrix<float>&, std::vector<int, std::allocator<int> >&, std::vector<float>&, float, flann::SearchParams)[m[K’
+[3.585s]   295 |             [01;31m[KkdTree.radiusSearch(query_mat, nn_indices, nn_dists, searchRadius * searchRadius, flann::SearchParams())[m[K;
+[3.585s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.585s] In file included from [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:4[m[K,
+[3.585s]                  from [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:13[m[K:
+[3.585s] [01m[K/usr/include/flann/flann.hpp:307:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kint flann::Index<Distance>::radiusSearch(const flann::Matrix<typename Distance::ElementType>&, flann::Matrix<long unsigned int>&, flann::Matrix<typename Distance::ResultType>&, float, const flann::SearchParams&) const [with Distance = flann::L2<float>; typename Distance::ElementType = float; typename Distance::ResultType = float][m[K’
+[3.585s]   307 |     int [01;36m[KradiusSearch[m[K(const Matrix<ElementType>& queries,
+[3.585s]       |         [01;36m[K^~~~~~~~~~~~[m[K
+[3.585s] [01m[K/usr/include/flann/flann.hpp:308:53:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’ to ‘[01m[Kflann::Matrix<long unsigned int>&[m[K’
+[3.585s]   308 |                                     [01;36m[KMatrix<size_t>& indices[m[K,
+[3.585s]       |                                     [01;36m[K~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[3.585s] [01m[K/usr/include/flann/flann.hpp:325:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kint flann::Index<Distance>::radiusSearch(const flann::Matrix<typename Distance::ElementType>&, flann::Matrix<int>&, flann::Matrix<typename Distance::ResultType>&, float, const flann::SearchParams&) const [with Distance = flann::L2<float>; typename Distance::ElementType = float; typename Distance::ResultType = float][m[K’
+[3.585s]   325 |     int [01;36m[KradiusSearch[m[K(const Matrix<ElementType>& queries,
+[3.585s]       |         [01;36m[K^~~~~~~~~~~~[m[K
+[3.585s] [01m[K/usr/include/flann/flann.hpp:326:50:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’ to ‘[01m[Kflann::Matrix<int>&[m[K’
+[3.585s]   326 |                                     [01;36m[KMatrix<int>& indices[m[K,
+[3.585s]       |                                     [01;36m[K~~~~~~~~~~~~~^~~~~~~[m[K
+[3.585s] [01m[K/usr/include/flann/flann.hpp:343:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kint flann::Index<Distance>::radiusSearch(const flann::Matrix<typename Distance::ElementType>&, std::vector<std::vector<long unsigned int> >&, std::vector<std::vector<typename Distance::ResultType> >&, float, const flann::SearchParams&) const [with Distance = flann::L2<float>; typename Distance::ElementType = float; typename Distance::ResultType = float][m[K’
+[3.585s]   343 |     int [01;36m[KradiusSearch[m[K(const Matrix<ElementType>& queries,
+[3.585s]       |         [01;36m[K^~~~~~~~~~~~[m[K
+[3.585s] [01m[K/usr/include/flann/flann.hpp:344:73:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’ to ‘[01m[Kstd::vector<std::vector<long unsigned int> >&[m[K’
+[3.585s]   344 |                                     [01;36m[Kstd::vector< std::vector<size_t> >& indices[m[K,
+[3.586s]       |                                     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[3.586s] [01m[K/usr/include/flann/flann.hpp:361:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kint flann::Index<Distance>::radiusSearch(const flann::Matrix<typename Distance::ElementType>&, std::vector<std::vector<int, std::allocator<int> > >&, std::vector<std::vector<typename Distance::ResultType> >&, float, const flann::SearchParams&) const [with Distance = flann::L2<float>; typename Distance::ElementType = float; typename Distance::ResultType = float][m[K’
+[3.586s]   361 |     int [01;36m[KradiusSearch[m[K(const Matrix<ElementType>& queries,
+[3.586s]       |         [01;36m[K^~~~~~~~~~~~[m[K
+[3.586s] [01m[K/usr/include/flann/flann.hpp:362:70:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’ to ‘[01m[Kstd::vector<std::vector<int, std::allocator<int> > >&[m[K’
+[3.586s]   362 |                                     [01;36m[Kstd::vector< std::vector<int> >& indices[m[K,
+[3.586s]       |                                     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[6.485s] gmake[2]: *** [CMakeFiles/PointCloudProcessor.dir/build.make:76: CMakeFiles/PointCloudProcessor.dir/src/PointCloudProcessor.cpp.o] Error 1
+[6.486s] gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/PointCloudProcessor.dir/all] Error 2
+[6.486s] gmake: *** [Makefile:146: all] Error 2
+[6.489s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com' returned '2': CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_ros_com:/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com -- -j32 -l32

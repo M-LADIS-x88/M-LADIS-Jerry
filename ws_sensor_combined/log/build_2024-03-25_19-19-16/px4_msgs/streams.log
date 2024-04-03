@@ -1,0 +1,118 @@
+[0.010s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_msgs -DCMAKE_INSTALL_PREFIX=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs
+[0.055s] -- The C compiler identification is GNU 11.4.0
+[0.098s] -- The CXX compiler identification is GNU 11.4.0
+[0.104s] -- Detecting C compiler ABI info
+[0.159s] -- Detecting C compiler ABI info - done
+[0.165s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.165s] -- Detecting C compile features
+[0.166s] -- Detecting C compile features - done
+[0.168s] -- Detecting CXX compiler ABI info
+[0.232s] -- Detecting CXX compiler ABI info - done
+[0.243s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.243s] -- Detecting CXX compile features
+[0.244s] -- Detecting CXX compile features - done
+[0.246s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.543s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.615s] -- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.649s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.653s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.659s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.672s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.686s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.700s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[2.109s] -- Found ament_cmake_cppcheck: 0.12.10 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)
+[2.111s] -- Found ament_cmake_cpplint: 0.12.10 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)
+[2.112s] -- Found ament_cmake_uncrustify: 0.12.10 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)
+[2.114s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.446s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.572s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.597s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.598s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.619s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[2.619s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.620s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.620s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.638s] -- Found PythonExtra: .so  
+[2.690s] -- Found ament_cmake_flake8: 0.12.10 (/opt/ros/humble/share/ament_cmake_flake8/cmake)
+[2.692s] -- Found ament_cmake_pep257: 0.12.10 (/opt/ros/humble/share/ament_cmake_pep257/cmake)
+[2.702s] -- Configuring done
+[2.993s] -- Generating done
+[2.995s] -- Build files have been written to: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs
+[3.010s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_msgs -DCMAKE_INSTALL_PREFIX=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs
+[3.012s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs -- -j8 -l8
+[3.558s] [  0%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.564s] [  0%] Built target ament_cmake_python_copy_px4_msgs
+[3.573s] [  0%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.733s] running egg_info
+[3.733s] creating px4_msgs.egg-info
+[3.748s] writing px4_msgs.egg-info/PKG-INFO
+[3.748s] writing dependency_links to px4_msgs.egg-info/dependency_links.txt
+[3.749s] writing top-level names to px4_msgs.egg-info/top_level.txt
+[3.749s] writing manifest file 'px4_msgs.egg-info/SOURCES.txt'
+[3.789s] reading manifest file 'px4_msgs.egg-info/SOURCES.txt'
+[3.790s] writing manifest file 'px4_msgs.egg-info/SOURCES.txt'
+[3.812s] [  0%] Built target ament_cmake_python_build_px4_msgs_egg
+[9.326s] Traceback (most recent call last):
+[9.327s] Traceback (most recent call last):
+[9.327s]   File "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c", line 38, in <module>
+[9.327s]   File "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp", line 38, in <module>
+[9.327s] gmake[2]: *** Deleting file 'rosidl_generator_cpp/px4_msgs/msg/action_request.hpp'
+[9.327s] gmake[2]: *** Deleting file 'rosidl_generator_c/px4_msgs/msg/action_request.h'
+[9.327s]     sys.exit(main())
+[9.327s]     sys.exit(main())
+[9.327s]   File "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp", line 34, in main
+[9.327s]   File "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c", line 34, in main
+[9.327s]     generate_cpp(args.generator_arguments_file)
+[9.327s]     generate_c(args.generator_arguments_file)
+[9.327s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py", line 38, in generate_cpp
+[9.327s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_c/__init__.py", line 37, in generate_c
+[9.327s]     return generate_files(
+[9.327s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 74, in generate_files
+[9.327s]     return generate_files(
+[9.327s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 74, in generate_files
+[9.327s]     idl_file = parse_idl_file(locator)
+[9.327s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 64, in parse_idl_file
+[9.327s]     idl_file = parse_idl_file(locator)
+[9.327s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 64, in parse_idl_file
+[9.328s]     content = parse_idl_string(string, png_file=png_file)
+[9.328s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 72, in parse_idl_string
+[9.328s]     content = parse_idl_string(string, png_file=png_file)
+[9.328s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 72, in parse_idl_string
+[9.328s]     tree = get_ast_from_idl_string(idl_string)
+[9.328s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string
+[9.328s]     tree = get_ast_from_idl_string(idl_string)
+[9.328s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string
+[9.328s]     return _parser.parse(idl_string)
+[9.328s]   File "/usr/lib/python3/dist-packages/lark/lark.py", line 619, in parse
+[9.328s]     return _parser.parse(idl_string)
+[9.328s]   File "/usr/lib/python3/dist-packages/lark/lark.py", line 619, in parse
+[9.328s]     return self.parser.parse(text, start=start, on_error=on_error)
+[9.328s]   File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 99, in parse
+[9.328s]     return self.parser.parse(text, start=start, on_error=on_error)
+[9.328s]   File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 99, in parse
+[9.328s]     return self.parser.parse(stream, chosen_start, **kw)
+[9.328s]   File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 266, in parse
+[9.328s]     return self.parser.parse(stream, chosen_start, **kw)
+[9.328s]   File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 266, in parse
+[9.328s]     to_scan = self._parse(lexer, columns, to_scan, start_symbol)
+[9.328s]   File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 144, in _parse
+[9.328s]     to_scan = self._parse(lexer, columns, to_scan, start_symbol)
+[9.328s]   File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 144, in _parse
+[9.329s]     self.predict_and_complete(i, to_scan, columns, transitives)
+[9.329s]   File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 140, in predict_and_complete
+[9.329s]     self.predict_and_complete(i, to_scan, columns, transitives)
+[9.329s]   File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 152, in predict_and_complete
+[9.329s]     new_item = Item(rule, 0, i)
+[9.329s]   File "/usr/lib/python3/dist-packages/lark/parsers/earley_common.py", line 9, in __init__
+[9.329s]     if new_item.expect in self.TERMINALS:
+[9.329s]   File "/usr/lib/python3/dist-packages/lark/grammar.py", line 25, in __hash__
+[9.336s]     def __init__(self, rule, ptr, start):
+[9.336s] KeyboardInterrupt
+[9.336s]     def __hash__(self):
+[9.336s] KeyboardInterrupt
+[9.358s] gmake[2]: *** [CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make:288: rosidl_generator_c/px4_msgs/msg/action_request.h] Interrupt
+[9.358s] gmake[1]: *** [CMakeFiles/Makefile2:212: CMakeFiles/px4_msgs__rosidl_generator_c.dir/all] Interrupt
+[9.361s] gmake[2]: *** [CMakeFiles/px4_msgs__cpp.dir/build.make:1088: rosidl_generator_cpp/px4_msgs/msg/action_request.hpp] Interrupt
+[9.361s] gmake[1]: *** [CMakeFiles/Makefile2:265: CMakeFiles/px4_msgs__cpp.dir/all] Interrupt
+[9.361s] gmake: *** [Makefile:146: all] Interrupt
+[9.362s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs -- -j8 -l8

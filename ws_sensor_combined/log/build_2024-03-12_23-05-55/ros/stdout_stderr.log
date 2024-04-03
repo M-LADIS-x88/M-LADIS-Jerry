@@ -1,0 +1,26 @@
+-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros
+-- Install configuration: ""
+-- Installing: /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/launch
+-- Installing: /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/launch/roslauncher.launch.py
+-- Installing: /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/launch/README.md
+-- Installing: /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/config
+-- Installing: /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/config/ros_gz_bridge.yaml
+-- Installing: /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ament_index/resource_index/package_run_dependencies/ros
+-- Installing: /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ament_index/resource_index/parent_prefix_path/ros
+-- Installing: /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/environment/ament_prefix_path.sh
+-- Installing: /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/environment/ament_prefix_path.dsv
+-- Installing: /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/environment/path.sh
+-- Installing: /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/environment/path.dsv
+-- Installing: /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/local_setup.bash
+-- Installing: /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/local_setup.sh
+-- Installing: /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/local_setup.zsh
+-- Installing: /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/local_setup.dsv
+-- Installing: /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/package.dsv
+-- Installing: /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ament_index/resource_index/packages/ros
+-- Installing: /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/cmake/rosConfig.cmake
+-- Installing: /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/cmake/rosConfig-version.cmake
+-- Installing: /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/package.xml

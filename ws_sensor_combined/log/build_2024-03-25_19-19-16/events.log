@@ -1,0 +1,294 @@
+[0.000000] (-) TimerEvent: {}
+[0.000175] (px4_msgs) JobQueued: {'identifier': 'px4_msgs', 'dependencies': OrderedDict()}
+[0.000202] (ros) JobQueued: {'identifier': 'ros', 'dependencies': OrderedDict()}
+[0.000218] (px4_ros_com) JobQueued: {'identifier': 'px4_ros_com', 'dependencies': OrderedDict([('px4_msgs', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs')])}
+[0.000612] (px4_msgs) JobStarted: {'identifier': 'px4_msgs'}
+[0.004828] (ros) JobStarted: {'identifier': 'ros'}
+[0.008340] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'cmake'}
+[0.009070] (px4_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_msgs', '-DCMAKE_INSTALL_PREFIX=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs'], 'cwd': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robmoemac'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/robmoemac'), ('OLDPWD', '/home/robmoemac/M-LADIS-sim/PX4 Aux'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2058'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robmoemac'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'robmoemac'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/M-LADIS-sim/dev_ws/src/ground_jerry/description'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/robmoemac/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/robmoemac-XPS-13-7390-2-in-1:@/tmp/.ICE-unix/1840,unix/robmoemac-XPS-13-7390-2-in-1:/tmp/.ICE-unix/1840'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/450d7da5_472b_4994_90ba_5d1622b93229'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.EOHML2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble')]), 'shell': False}
+[0.011885] (ros) JobProgress: {'identifier': 'ros', 'progress': 'cmake'}
+[0.012188] (ros) Command: {'cmd': ['/usr/bin/cmake', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/ros', '-DCMAKE_INSTALL_PREFIX=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros'], 'cwd': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robmoemac'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/robmoemac'), ('OLDPWD', '/home/robmoemac/M-LADIS-sim/PX4 Aux'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2058'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robmoemac'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'robmoemac'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/M-LADIS-sim/dev_ws/src/ground_jerry/description'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/robmoemac/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/robmoemac-XPS-13-7390-2-in-1:@/tmp/.ICE-unix/1840,unix/robmoemac-XPS-13-7390-2-in-1:/tmp/.ICE-unix/1840'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/450d7da5_472b_4994_90ba_5d1622b93229'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.EOHML2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble')]), 'shell': False}
+[0.054932] (ros) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.055175] (px4_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.098785] (ros) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.099006] (px4_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.099614] (-) TimerEvent: {}
+[0.104610] (px4_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.105734] (ros) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.159530] (ros) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.159731] (px4_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.165736] (px4_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.165979] (ros) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.166079] (px4_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.166176] (ros) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.166289] (px4_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.166410] (ros) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.168692] (px4_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.168905] (ros) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199747] (-) TimerEvent: {}
+[0.232201] (ros) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.232337] (px4_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.243430] (px4_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.243569] (ros) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.243685] (ros) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.243742] (px4_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.244328] (px4_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.244534] (ros) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.246835] (ros) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.247097] (px4_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.299838] (-) TimerEvent: {}
+[0.400130] (-) TimerEvent: {}
+[0.500407] (-) TimerEvent: {}
+[0.543736] (px4_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.573046] (ros) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.600521] (-) TimerEvent: {}
+[0.616106] (px4_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[0.649466] (px4_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.650975] (ros) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.653633] (px4_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.659770] (px4_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.672143] (px4_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.686814] (px4_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.700669] (-) TimerEvent: {}
+[0.700921] (px4_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.706077] (ros) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.707800] (ros) StdoutLine: {'line': b'-- Generating done\n'}
+[0.708449] (ros) StdoutLine: {'line': b'-- Build files have been written to: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros\n'}
+[0.711999] (ros) CommandEnded: {'returncode': 0}
+[0.712862] (ros) JobProgress: {'identifier': 'ros', 'progress': 'build'}
+[0.713469] (ros) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros', '--', '-j8', '-l8'], 'cwd': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robmoemac'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/robmoemac'), ('OLDPWD', '/home/robmoemac/M-LADIS-sim/PX4 Aux'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2058'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robmoemac'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'robmoemac'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/M-LADIS-sim/dev_ws/src/ground_jerry/description'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/robmoemac/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/robmoemac-XPS-13-7390-2-in-1:@/tmp/.ICE-unix/1840,unix/robmoemac-XPS-13-7390-2-in-1:/tmp/.ICE-unix/1840'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/450d7da5_472b_4994_90ba_5d1622b93229'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.EOHML2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble')]), 'shell': False}
+[0.747564] (ros) CommandEnded: {'returncode': 0}
+[0.766453] (ros) JobProgress: {'identifier': 'ros', 'progress': 'install'}
+[0.773978] (ros) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros'], 'cwd': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robmoemac'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/robmoemac'), ('OLDPWD', '/home/robmoemac/M-LADIS-sim/PX4 Aux'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2058'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robmoemac'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'robmoemac'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/M-LADIS-sim/dev_ws/src/ground_jerry/description'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/robmoemac/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/robmoemac-XPS-13-7390-2-in-1:@/tmp/.ICE-unix/1840,unix/robmoemac-XPS-13-7390-2-in-1:/tmp/.ICE-unix/1840'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/450d7da5_472b_4994_90ba_5d1622b93229'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.EOHML2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble')]), 'shell': False}
+[0.780239] (ros) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.780380] (ros) StdoutLine: {'line': b'-- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/launch\n'}
+[0.780570] (ros) StdoutLine: {'line': b'-- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/launch/roslauncher.launch.py\n'}
+[0.780678] (ros) StdoutLine: {'line': b'-- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/config\n'}
+[0.780756] (ros) StdoutLine: {'line': b'-- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/config/ros_gz_bridge.yaml\n'}
+[0.780881] (ros) StdoutLine: {'line': b'-- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ament_index/resource_index/package_run_dependencies/ros\n'}
+[0.781068] (ros) StdoutLine: {'line': b'-- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ament_index/resource_index/parent_prefix_path/ros\n'}
+[0.781240] (ros) StdoutLine: {'line': b'-- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/environment/ament_prefix_path.sh\n'}
+[0.781368] (ros) StdoutLine: {'line': b'-- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/environment/ament_prefix_path.dsv\n'}
+[0.781495] (ros) StdoutLine: {'line': b'-- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/environment/path.sh\n'}
+[0.781619] (ros) StdoutLine: {'line': b'-- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/environment/path.dsv\n'}
+[0.781789] (ros) StdoutLine: {'line': b'-- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/local_setup.bash\n'}
+[0.781894] (ros) StdoutLine: {'line': b'-- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/local_setup.sh\n'}
+[0.782026] (ros) StdoutLine: {'line': b'-- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/local_setup.zsh\n'}
+[0.782155] (ros) StdoutLine: {'line': b'-- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/local_setup.dsv\n'}
+[0.782282] (ros) StdoutLine: {'line': b'-- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/package.dsv\n'}
+[0.782451] (ros) StdoutLine: {'line': b'-- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ament_index/resource_index/packages/ros\n'}
+[0.782612] (ros) StdoutLine: {'line': b'-- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/cmake/rosConfig.cmake\n'}
+[0.782706] (ros) StdoutLine: {'line': b'-- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/cmake/rosConfig-version.cmake\n'}
+[0.782829] (ros) StdoutLine: {'line': b'-- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros/share/ros/package.xml\n'}
+[0.784499] (ros) CommandEnded: {'returncode': 0}
+[0.800775] (-) TimerEvent: {}
+[0.815243] (ros) JobEnded: {'identifier': 'ros', 'rc': 0}
+[0.900917] (-) TimerEvent: {}
+[1.001206] (-) TimerEvent: {}
+[1.101482] (-) TimerEvent: {}
+[1.201841] (-) TimerEvent: {}
+[1.302178] (-) TimerEvent: {}
+[1.402471] (-) TimerEvent: {}
+[1.502794] (-) TimerEvent: {}
+[1.603111] (-) TimerEvent: {}
+[1.703440] (-) TimerEvent: {}
+[1.803771] (-) TimerEvent: {}
+[1.904088] (-) TimerEvent: {}
+[2.004389] (-) TimerEvent: {}
+[2.104737] (-) TimerEvent: {}
+[2.109821] (px4_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.12.10 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)\n'}
+[2.111406] (px4_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.12.10 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)\n'}
+[2.112948] (px4_msgs) StdoutLine: {'line': b'-- Found ament_cmake_uncrustify: 0.12.10 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)\n'}
+[2.114661] (px4_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[2.204870] (-) TimerEvent: {}
+[2.305201] (-) TimerEvent: {}
+[2.405504] (-) TimerEvent: {}
+[2.446417] (px4_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.505641] (-) TimerEvent: {}
+[2.572882] (px4_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.597979] (px4_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[2.599111] (px4_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.605770] (-) TimerEvent: {}
+[2.619917] (px4_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[2.620121] (px4_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.620196] (px4_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.620262] (px4_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.638099] (px4_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.691054] (px4_msgs) StdoutLine: {'line': b'-- Found ament_cmake_flake8: 0.12.10 (/opt/ros/humble/share/ament_cmake_flake8/cmake)\n'}
+[2.692558] (px4_msgs) StdoutLine: {'line': b'-- Found ament_cmake_pep257: 0.12.10 (/opt/ros/humble/share/ament_cmake_pep257/cmake)\n'}
+[2.702739] (px4_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.705935] (-) TimerEvent: {}
+[2.806265] (-) TimerEvent: {}
+[2.906524] (-) TimerEvent: {}
+[2.993734] (px4_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[2.996125] (px4_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs\n'}
+[3.006654] (-) TimerEvent: {}
+[3.010603] (px4_msgs) CommandEnded: {'returncode': 0}
+[3.011183] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'build'}
+[3.011501] (px4_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs', '--', '-j8', '-l8'], 'cwd': '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robmoemac'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan/lib:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/robmoemac'), ('OLDPWD', '/home/robmoemac/M-LADIS-sim/PX4 Aux'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2058'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robmoemac'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'robmoemac'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/M-LADIS-sim/dev_ws/src/ground_jerry/description'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/robmoemac/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/robmoemac-XPS-13-7390-2-in-1:@/tmp/.ICE-unix/1840,unix/robmoemac-XPS-13-7390-2-in-1:/tmp/.ICE-unix/1840'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/450d7da5_472b_4994_90ba_5d1622b93229'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.EOHML2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs/local/lib/python3.10/dist-packages:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_pointcloud:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_driver:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_msgs:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/velodyne_laserscan:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros:/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble')]), 'shell': False}
+[3.106809] (-) TimerEvent: {}
+[3.207167] (-) TimerEvent: {}
+[3.307567] (-) TimerEvent: {}
+[3.407988] (-) TimerEvent: {}
+[3.508352] (-) TimerEvent: {}
+[3.558893] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[3.564422] (px4_msgs) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_copy_px4_msgs\n'}
+[3.573526] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[3.608445] (-) TimerEvent: {}
+[3.708722] (-) TimerEvent: {}
+[3.733117] (px4_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[3.734055] (px4_msgs) StdoutLine: {'line': b'creating px4_msgs.egg-info\n'}
+[3.748749] (px4_msgs) StdoutLine: {'line': b'writing px4_msgs.egg-info/PKG-INFO\n'}
+[3.749122] (px4_msgs) StdoutLine: {'line': b'writing dependency_links to px4_msgs.egg-info/dependency_links.txt\n'}
+[3.749396] (px4_msgs) StdoutLine: {'line': b'writing top-level names to px4_msgs.egg-info/top_level.txt\n'}
+[3.749542] (px4_msgs) StdoutLine: {'line': b"writing manifest file 'px4_msgs.egg-info/SOURCES.txt'\n"}
+[3.789825] (px4_msgs) StdoutLine: {'line': b"reading manifest file 'px4_msgs.egg-info/SOURCES.txt'\n"}
+[3.790368] (px4_msgs) StdoutLine: {'line': b"writing manifest file 'px4_msgs.egg-info/SOURCES.txt'\n"}
+[3.808821] (-) TimerEvent: {}
+[3.812736] (px4_msgs) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_build_px4_msgs_egg\n'}
+[3.908951] (-) TimerEvent: {}
+[4.009231] (-) TimerEvent: {}
+[4.109552] (-) TimerEvent: {}
+[4.209827] (-) TimerEvent: {}
+[4.310152] (-) TimerEvent: {}
+[4.410419] (-) TimerEvent: {}
+[4.510686] (-) TimerEvent: {}
+[4.610955] (-) TimerEvent: {}
+[4.711275] (-) TimerEvent: {}
+[4.811564] (-) TimerEvent: {}
+[4.911880] (-) TimerEvent: {}
+[5.012147] (-) TimerEvent: {}
+[5.112418] (-) TimerEvent: {}
+[5.212703] (-) TimerEvent: {}
+[5.313006] (-) TimerEvent: {}
+[5.413334] (-) TimerEvent: {}
+[5.513656] (-) TimerEvent: {}
+[5.613948] (-) TimerEvent: {}
+[5.714225] (-) TimerEvent: {}
+[5.814552] (-) TimerEvent: {}
+[5.914829] (-) TimerEvent: {}
+[6.015104] (-) TimerEvent: {}
+[6.115405] (-) TimerEvent: {}
+[6.215712] (-) TimerEvent: {}
+[6.315979] (-) TimerEvent: {}
+[6.416250] (-) TimerEvent: {}
+[6.516520] (-) TimerEvent: {}
+[6.616837] (-) TimerEvent: {}
+[6.717136] (-) TimerEvent: {}
+[6.817386] (-) TimerEvent: {}
+[6.917673] (-) TimerEvent: {}
+[7.017993] (-) TimerEvent: {}
+[7.118317] (-) TimerEvent: {}
+[7.218636] (-) TimerEvent: {}
+[7.318947] (-) TimerEvent: {}
+[7.419267] (-) TimerEvent: {}
+[7.519607] (-) TimerEvent: {}
+[7.619944] (-) TimerEvent: {}
+[7.720271] (-) TimerEvent: {}
+[7.820608] (-) TimerEvent: {}
+[7.920938] (-) TimerEvent: {}
+[8.021343] (-) TimerEvent: {}
+[8.121667] (-) TimerEvent: {}
+[8.221978] (-) TimerEvent: {}
+[8.322318] (-) TimerEvent: {}
+[8.422653] (-) TimerEvent: {}
+[8.522989] (-) TimerEvent: {}
+[8.623322] (-) TimerEvent: {}
+[8.723662] (-) TimerEvent: {}
+[8.823940] (-) TimerEvent: {}
+[8.924218] (-) TimerEvent: {}
+[9.024494] (-) TimerEvent: {}
+[9.124821] (-) TimerEvent: {}
+[9.225098] (-) TimerEvent: {}
+[9.325366] (-) TimerEvent: {}
+[9.326907] (px4_msgs) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[9.327202] (px4_msgs) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[9.327264] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c", line 38, in <module>\n'}
+[9.327315] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp", line 38, in <module>\n'}
+[9.327362] (px4_msgs) StderrLine: {'line': b"gmake[2]: *** Deleting file 'rosidl_generator_cpp/px4_msgs/msg/action_request.hpp'\n"}
+[9.327408] (px4_msgs) StderrLine: {'line': b"gmake[2]: *** Deleting file 'rosidl_generator_c/px4_msgs/msg/action_request.h'\n"}
+[9.327453] (px4_msgs) StderrLine: {'line': b'    sys.exit(main())\n'}
+[9.327498] (px4_msgs) StderrLine: {'line': b'    sys.exit(main())\n'}
+[9.327543] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp", line 34, in main\n'}
+[9.327589] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c", line 34, in main\n'}
+[9.327664] (px4_msgs) StderrLine: {'line': b'    generate_cpp(args.generator_arguments_file)\n'}
+[9.327708] (px4_msgs) StderrLine: {'line': b'    generate_c(args.generator_arguments_file)\n'}
+[9.327753] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py", line 38, in generate_cpp\n'}
+[9.327819] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_c/__init__.py", line 37, in generate_c\n'}
+[9.327863] (px4_msgs) StderrLine: {'line': b'    return generate_files(\n'}
+[9.327905] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 74, in generate_files\n'}
+[9.327948] (px4_msgs) StderrLine: {'line': b'    return generate_files(\n'}
+[9.327989] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 74, in generate_files\n'}
+[9.328031] (px4_msgs) StderrLine: {'line': b'    idl_file = parse_idl_file(locator)\n'}
+[9.328073] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 64, in parse_idl_file\n'}
+[9.328116] (px4_msgs) StderrLine: {'line': b'    idl_file = parse_idl_file(locator)\n'}
+[9.328156] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 64, in parse_idl_file\n'}
+[9.328197] (px4_msgs) StderrLine: {'line': b'    content = parse_idl_string(string, png_file=png_file)\n'}
+[9.328238] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 72, in parse_idl_string\n'}
+[9.328279] (px4_msgs) StderrLine: {'line': b'    content = parse_idl_string(string, png_file=png_file)\n'}
+[9.328320] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 72, in parse_idl_string\n'}
+[9.328362] (px4_msgs) StderrLine: {'line': b'    tree = get_ast_from_idl_string(idl_string)\n'}
+[9.328402] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string\n'}
+[9.328443] (px4_msgs) StderrLine: {'line': b'    tree = get_ast_from_idl_string(idl_string)\n'}
+[9.328483] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string\n'}
+[9.328524] (px4_msgs) StderrLine: {'line': b'    return _parser.parse(idl_string)\n'}
+[9.328566] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/lark.py", line 619, in parse\n'}
+[9.328608] (px4_msgs) StderrLine: {'line': b'    return _parser.parse(idl_string)\n'}
+[9.328656] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/lark.py", line 619, in parse\n'}
+[9.328698] (px4_msgs) StderrLine: {'line': b'    return self.parser.parse(text, start=start, on_error=on_error)\n'}
+[9.328740] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 99, in parse\n'}
+[9.328781] (px4_msgs) StderrLine: {'line': b'    return self.parser.parse(text, start=start, on_error=on_error)\n'}
+[9.328822] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 99, in parse\n'}
+[9.328863] (px4_msgs) StderrLine: {'line': b'    return self.parser.parse(stream, chosen_start, **kw)\n'}
+[9.328904] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 266, in parse\n'}
+[9.328945] (px4_msgs) StderrLine: {'line': b'    return self.parser.parse(stream, chosen_start, **kw)\n'}
+[9.328991] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 266, in parse\n'}
+[9.329034] (px4_msgs) StderrLine: {'line': b'    to_scan = self._parse(lexer, columns, to_scan, start_symbol)\n'}
+[9.329075] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 144, in _parse\n'}
+[9.329116] (px4_msgs) StderrLine: {'line': b'    to_scan = self._parse(lexer, columns, to_scan, start_symbol)\n'}
+[9.329157] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 144, in _parse\n'}
+[9.329198] (px4_msgs) StderrLine: {'line': b'    self.predict_and_complete(i, to_scan, columns, transitives)\n'}
+[9.329240] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 140, in predict_and_complete\n'}
+[9.329283] (px4_msgs) StderrLine: {'line': b'    self.predict_and_complete(i, to_scan, columns, transitives)\n'}
+[9.329324] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 152, in predict_and_complete\n'}
+[9.329365] (px4_msgs) StderrLine: {'line': b'    new_item = Item(rule, 0, i)\n'}
+[9.329407] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley_common.py", line 9, in __init__\n'}
+[9.329449] (px4_msgs) StderrLine: {'line': b'    if new_item.expect in self.TERMINALS:\n'}
+[9.329491] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/grammar.py", line 25, in __hash__\n'}
+[9.336692] (px4_msgs) StderrLine: {'line': b'    def __init__(self, rule, ptr, start):\n'}
+[9.336907] (px4_msgs) StderrLine: {'line': b'KeyboardInterrupt\n'}
+[9.337033] (px4_msgs) StderrLine: {'line': b'    def __hash__(self):\n'}
+[9.337132] (px4_msgs) StderrLine: {'line': b'KeyboardInterrupt\n'}
+[9.358704] (px4_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make:288: rosidl_generator_c/px4_msgs/msg/action_request.h] Interrupt\n'}
+[9.358946] (px4_msgs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:212: CMakeFiles/px4_msgs__rosidl_generator_c.dir/all] Interrupt\n'}
+[9.361058] (px4_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/px4_msgs__cpp.dir/build.make:1088: rosidl_generator_cpp/px4_msgs/msg/action_request.hpp] Interrupt\n'}
+[9.361296] (px4_msgs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:265: CMakeFiles/px4_msgs__cpp.dir/all] Interrupt\n'}
+[9.361443] (px4_msgs) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Interrupt\n'}
+[9.362703] (px4_msgs) CommandEnded: {'returncode': -2}
+[9.425522] (-) TimerEvent: {}
+[9.525889] (-) TimerEvent: {}
+[9.626248] (-) TimerEvent: {}
+[9.726564] (-) TimerEvent: {}
+[9.826930] (-) TimerEvent: {}
+[9.927218] (-) TimerEvent: {}
+[10.027600] (-) TimerEvent: {}
+[10.128032] (-) TimerEvent: {}
+[10.228396] (-) TimerEvent: {}
+[10.328766] (-) TimerEvent: {}
+[10.429157] (-) TimerEvent: {}
+[10.529765] (-) TimerEvent: {}
+[10.630188] (-) TimerEvent: {}
+[10.730601] (-) TimerEvent: {}
+[10.830879] (-) TimerEvent: {}
+[10.931144] (-) TimerEvent: {}
+[11.031418] (-) TimerEvent: {}
+[11.131663] (-) TimerEvent: {}
+[11.231951] (-) TimerEvent: {}
+[11.332295] (-) TimerEvent: {}
+[11.432653] (-) TimerEvent: {}
+[11.533068] (-) TimerEvent: {}
+[11.633521] (-) TimerEvent: {}
+[11.722555] (px4_msgs) JobEnded: {'identifier': 'px4_msgs', 'rc': 'SIGINT'}
+[11.733777] (px4_ros_com) JobSkipped: {'identifier': 'px4_ros_com'}
+[11.733896] (-) TimerEvent: {}
+[11.734069] (-) EventReactorShutdown: {}

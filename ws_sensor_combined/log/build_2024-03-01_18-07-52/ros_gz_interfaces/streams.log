@@ -1,0 +1,846 @@
+[0.134s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_gz_interfaces -DCMAKE_INSTALL_PREFIX=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces
+[0.184s] -- The C compiler identification is GNU 11.4.0
+[0.239s] -- The CXX compiler identification is GNU 11.4.0
+[0.245s] -- Detecting C compiler ABI info
+[0.305s] -- Detecting C compiler ABI info - done
+[0.311s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.311s] -- Detecting C compile features
+[0.312s] -- Detecting C compile features - done
+[0.314s] -- Detecting CXX compiler ABI info
+[0.388s] -- Detecting CXX compiler ABI info - done
+[0.395s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.396s] -- Detecting CXX compile features
+[0.396s] -- Detecting CXX compile features - done
+[0.399s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.533s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.603s] -- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.628s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.632s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.639s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.649s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.663s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.677s] -- Found rcl_interfaces: 1.2.1 (/opt/ros/humble/share/rcl_interfaces/cmake)
+[0.701s] -- Found std_msgs: 4.2.3 (/opt/ros/humble/share/std_msgs/cmake)
+[0.729s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.765s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.154s] -- Found ament_cmake_cppcheck: 0.12.10 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)
+[1.156s] -- Found ament_cmake_cpplint: 0.12.10 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)
+[1.157s] -- Found ament_cmake_uncrustify: 0.12.10 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)
+[1.159s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.589s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.750s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.770s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.771s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.792s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.793s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.793s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.793s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.810s] -- Found PythonExtra: .so  
+[1.876s] -- Found ament_cmake_flake8: 0.12.10 (/opt/ros/humble/share/ament_cmake_flake8/cmake)
+[1.877s] -- Found ament_cmake_pep257: 0.12.10 (/opt/ros/humble/share/ament_cmake_pep257/cmake)
+[1.884s] -- Configuring done
+[1.946s] -- Generating done
+[1.950s] -- Build files have been written to: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_interfaces
+[1.960s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_gz_interfaces -DCMAKE_INSTALL_PREFIX=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces
+[1.962s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_interfaces -- -j8 -l8
+[2.002s] [  0%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.010s] [  0%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.022s] [  0%] Built target ament_cmake_python_copy_ros_gz_interfaces
+[2.296s] running egg_info
+[2.297s] creating ros_gz_interfaces.egg-info
+[2.297s] writing ros_gz_interfaces.egg-info/PKG-INFO
+[2.297s] writing dependency_links to ros_gz_interfaces.egg-info/dependency_links.txt
+[2.297s] writing top-level names to ros_gz_interfaces.egg-info/top_level.txt
+[2.298s] writing manifest file 'ros_gz_interfaces.egg-info/SOURCES.txt'
+[2.301s] reading manifest file 'ros_gz_interfaces.egg-info/SOURCES.txt'
+[2.302s] writing manifest file 'ros_gz_interfaces.egg-info/SOURCES.txt'
+[2.338s] [  0%] Built target ament_cmake_python_build_ros_gz_interfaces_egg
+[6.256s] [  0%] Built target ros_gz_interfaces__cpp
+[6.274s] [  1%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[6.281s] [  2%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[6.284s] [  3%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[7.311s] [  4%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/altimeter__functions.c.o[0m
+[7.311s] [  4%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/contact__functions.c.o[0m
+[7.319s] [  5%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/contacts__functions.c.o[0m
+[7.335s] [  5%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/dataframe__functions.c.o[0m
+[7.359s] [  6%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/entity__functions.c.o[0m
+[7.517s] [  6%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/entity_factory__functions.c.o[0m
+[7.544s] [  7%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/float32_array__functions.c.o[0m
+[7.557s] [  7%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/gui_camera__functions.c.o[0m
+[7.631s] [  8%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/joint_wrench__functions.c.o[0m
+[7.655s] [  8%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/light__functions.c.o[0m
+[7.767s] [  9%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/material_color__functions.c.o[0m
+[7.853s] [  9%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/param_vec__functions.c.o[0m
+[7.881s] [  9%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/string_vec__functions.c.o[0m
+[7.913s] [ 10%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/sensor_noise__functions.c.o[0m
+[7.996s] [ 11%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/track_visual__functions.c.o[0m
+[8.096s] [ 11%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/video_record__functions.c.o[0m
+[8.111s] [ 12%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/world_control__functions.c.o[0m
+[8.205s] [ 12%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/world_reset__functions.c.o[0m
+[8.233s] [ 13%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/srv/detail/control_world__functions.c.o[0m
+[8.267s] [ 13%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/srv/detail/delete_entity__functions.c.o[0m
+[8.338s] [ 14%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/srv/detail/set_entity_pose__functions.c.o[0m
+[8.439s] [ 14%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/srv/detail/spawn_entity__functions.c.o[0m
+[8.713s] [ 15%] [32m[1mLinking C shared library libros_gz_interfaces__rosidl_generator_c.so[0m
+[9.080s] [ 15%] Built target ros_gz_interfaces__rosidl_generator_c
+[9.164s] [ 16%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[9.188s] [ 17%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[9.220s] [ 18%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[12.488s] [ 19%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/contact__type_support.cpp.o[0m
+[12.512s] [ 19%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/altimeter__type_support.cpp.o[0m
+[12.886s] [ 19%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/contacts__type_support.cpp.o[0m
+[12.969s] [ 19%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/altimeter__type_support.cpp.o[0m
+[13.145s] [ 20%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/dataframe__type_support.cpp.o[0m
+[13.322s] [ 20%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/entity__type_support.cpp.o[0m
+[13.631s] [ 21%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/entity_factory__type_support.cpp.o[0m
+[13.676s] [ 21%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/float32_array__type_support.cpp.o[0m
+[13.869s] [ 22%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/gui_camera__type_support.cpp.o[0m
+[13.878s] [ 22%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/altimeter__type_support.cpp.o[0m
+[14.052s] [ 23%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/contact__type_support.cpp.o[0m
+[14.171s] [ 24%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/contact__type_support.cpp.o[0m
+[14.228s] [ 24%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/contacts__type_support.cpp.o[0m
+[14.372s] [ 24%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/joint_wrench__type_support.cpp.o[0m
+[14.389s] [ 25%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/light__type_support.cpp.o[0m
+[14.427s] [ 26%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/dataframe__type_support.cpp.o[0m
+[14.446s] [ 26%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/entity__type_support.cpp.o[0m
+[14.551s] [ 27%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/entity_factory__type_support.cpp.o[0m
+[14.570s] [ 27%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/altimeter__type_support.cpp.o[0m
+[14.582s] [ 27%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/float32_array__type_support.cpp.o[0m
+[14.691s] [ 28%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/contact__type_support.cpp.o[0m
+[14.692s] [ 29%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/gui_camera__type_support.cpp.o[0m
+[14.828s] [ 29%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/joint_wrench__type_support.cpp.o[0m
+[14.944s] [ 30%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/light__type_support.cpp.o[0m
+[15.082s] [ 30%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/material_color__type_support.cpp.o[0m
+[15.109s] [ 31%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/param_vec__type_support.cpp.o[0m
+[15.180s] [ 31%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/material_color__type_support.cpp.o[0m
+[15.272s] [ 32%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/param_vec__type_support.cpp.o[0m
+[15.272s] [ 32%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/sensor_noise__type_support.cpp.o[0m
+[15.315s] [ 32%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/contacts__type_support.cpp.o[0m
+[15.427s] [ 33%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/string_vec__type_support.cpp.o[0m
+[15.537s] [ 33%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/contacts__type_support.cpp.o[0m
+[15.589s] [ 33%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/track_visual__type_support.cpp.o[0m
+[15.748s] [ 34%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/video_record__type_support.cpp.o[0m
+[15.857s] [ 34%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/sensor_noise__type_support.cpp.o[0m
+[15.896s] [ 35%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/string_vec__type_support.cpp.o[0m
+[15.901s] [ 35%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/world_control__type_support.cpp.o[0m
+[15.980s] [ 36%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/world_reset__type_support.cpp.o[0m
+[16.048s] [ 36%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/track_visual__type_support.cpp.o[0m
+[16.124s] [ 36%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/srv/control_world__type_support.cpp.o[0m
+[16.314s] [ 37%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/srv/delete_entity__type_support.cpp.o[0m
+[16.353s] [ 38%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/dataframe__type_support.cpp.o[0m
+[16.427s] [ 38%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/srv/set_entity_pose__type_support.cpp.o[0m
+[16.471s] [ 38%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/altimeter__type_support.c.o[0m
+[16.570s] [ 38%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/altimeter__type_support_c.cpp.o[0m
+[16.589s] [ 39%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/contact__type_support.c.o[0m
+[16.599s] [ 40%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/srv/spawn_entity__type_support.cpp.o[0m
+[16.648s] [ 41%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/contact__type_support_c.cpp.o[0m
+[16.656s] [ 42%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/dataframe__type_support.cpp.o[0m
+[16.751s] [ 42%] [32m[1mLinking CXX shared library libros_gz_interfaces__rosidl_typesupport_c.so[0m
+[16.797s] [ 42%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/contacts__type_support.c.o[0m
+[16.832s] [ 43%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/video_record__type_support.cpp.o[0m
+[16.851s] [ 43%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/world_control__type_support.cpp.o[0m
+[16.923s] [ 44%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/dataframe__type_support.c.o[0m
+[17.037s] [ 44%] Built target ros_gz_interfaces__rosidl_typesupport_c
+[17.081s] [ 44%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/entity__type_support.c.o[0m
+[17.094s] [ 44%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/entity__type_support.cpp.o[0m
+[17.153s] [ 45%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/entity_factory__type_support.c.o[0m
+[17.305s] [ 45%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/float32_array__type_support.c.o[0m
+[17.344s] [ 46%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/gui_camera__type_support.c.o[0m
+[17.349s] [ 47%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/world_reset__type_support.cpp.o[0m
+[17.404s] [ 47%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/entity__type_support.cpp.o[0m
+[17.461s] [ 48%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/entity_factory__type_support.cpp.o[0m
+[17.500s] [ 48%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/joint_wrench__type_support.c.o[0m
+[17.510s] [ 49%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/light__type_support.c.o[0m
+[17.548s] [ 49%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/contacts__type_support_c.cpp.o[0m
+[17.711s] [ 50%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/dataframe__type_support_c.cpp.o[0m
+[17.720s] [ 50%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/material_color__type_support.c.o[0m
+[17.812s] [ 50%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/srv/control_world__type_support.cpp.o[0m
+[17.861s] [ 50%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/entity__type_support_c.cpp.o[0m
+[17.904s] [ 51%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/entity_factory__type_support.cpp.o[0m
+[17.972s] [ 52%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/param_vec__type_support.c.o[0m
+[18.221s] [ 52%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/sensor_noise__type_support.c.o[0m
+[18.297s] [ 52%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/float32_array__type_support.cpp.o[0m
+[18.398s] [ 53%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/string_vec__type_support.c.o[0m
+[18.484s] [ 54%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/srv/delete_entity__type_support.cpp.o[0m
+[18.514s] [ 55%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/gui_camera__type_support.cpp.o[0m
+[18.606s] [ 55%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/track_visual__type_support.c.o[0m
+[18.640s] [ 55%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/joint_wrench__type_support.cpp.o[0m
+[18.705s] [ 56%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/entity_factory__type_support_c.cpp.o[0m
+[18.740s] [ 57%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/video_record__type_support.c.o[0m
+[18.750s] [ 57%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/float32_array__type_support_c.cpp.o[0m
+[18.849s] [ 57%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/float32_array__type_support.cpp.o[0m
+[18.861s] [ 57%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/world_control__type_support.c.o[0m
+[18.989s] [ 58%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/world_reset__type_support.c.o[0m
+[19.013s] [ 58%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/srv/set_entity_pose__type_support.cpp.o[0m
+[19.152s] [ 58%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/srv/detail/control_world__type_support.c.o[0m
+[19.235s] [ 59%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/srv/detail/delete_entity__type_support.c.o[0m
+[19.297s] [ 59%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/srv/detail/set_entity_pose__type_support.c.o[0m
+[19.398s] [ 60%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/srv/detail/spawn_entity__type_support.c.o[0m
+[19.471s] [ 61%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/srv/spawn_entity__type_support.cpp.o[0m
+[19.493s] [ 61%] [32m[1mLinking C shared library libros_gz_interfaces__rosidl_typesupport_introspection_c.so[0m
+[19.579s] [ 62%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/light__type_support.cpp.o[0m
+[19.648s] [ 62%] Built target ros_gz_interfaces__rosidl_typesupport_introspection_c
+[19.665s] [ 62%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/material_color__type_support.cpp.o[0m
+[19.682s] [ 63%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/gui_camera__type_support_c.cpp.o[0m
+[19.744s] [ 63%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/joint_wrench__type_support_c.cpp.o[0m
+[19.800s] [ 64%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/gui_camera__type_support.cpp.o[0m
+[19.884s] [ 64%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/joint_wrench__type_support.cpp.o[0m
+[19.973s] [ 65%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/light__type_support_c.cpp.o[0m
+[20.014s] [ 65%] [32m[1mLinking CXX shared library libros_gz_interfaces__rosidl_typesupport_cpp.so[0m
+[20.270s] [ 65%] Built target ros_gz_interfaces__rosidl_typesupport_cpp
+[20.282s] [ 65%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/material_color__type_support_c.cpp.o[0m
+[20.422s] [ 65%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/sensor_noise__type_support.cpp.o[0m
+[20.441s] [ 66%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/param_vec__type_support.cpp.o[0m
+[20.442s] [ 66%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/sensor_noise__type_support_c.cpp.o[0m
+[20.444s] [ 67%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/param_vec__type_support_c.cpp.o[0m
+[20.777s] [ 68%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/string_vec__type_support.cpp.o[0m
+[20.834s] [ 69%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/light__type_support.cpp.o[0m
+[20.851s] [ 69%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/track_visual__type_support.cpp.o[0m
+[20.940s] [ 70%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/video_record__type_support.cpp.o[0m
+[21.206s] [ 70%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/material_color__type_support.cpp.o[0m
+[21.575s] [ 71%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/string_vec__type_support_c.cpp.o[0m
+[21.648s] [ 71%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/track_visual__type_support_c.cpp.o[0m
+[21.859s] [ 72%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/param_vec__type_support.cpp.o[0m
+[21.952s] [ 72%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/sensor_noise__type_support.cpp.o[0m
+[21.986s] [ 72%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/world_control__type_support.cpp.o[0m
+[22.111s] [ 73%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/string_vec__type_support.cpp.o[0m
+[22.213s] [ 74%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/world_reset__type_support.cpp.o[0m
+[22.247s] [ 74%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/track_visual__type_support.cpp.o[0m
+[22.505s] [ 75%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/video_record__type_support_c.cpp.o[0m
+[22.871s] [ 75%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/srv/detail/dds_fastrtps/control_world__type_support.cpp.o[0m
+[23.000s] [ 76%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/video_record__type_support.cpp.o[0m
+[23.195s] [ 77%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/srv/detail/dds_fastrtps/delete_entity__type_support.cpp.o[0m
+[23.239s] [ 77%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/world_control__type_support.cpp.o[0m
+[23.302s] [ 77%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/srv/detail/dds_fastrtps/set_entity_pose__type_support.cpp.o[0m
+[23.454s] [ 78%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/srv/detail/dds_fastrtps/spawn_entity__type_support.cpp.o[0m
+[23.514s] [ 78%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/world_control__type_support_c.cpp.o[0m
+[23.694s] [ 79%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/world_reset__type_support.cpp.o[0m
+[23.766s] [ 79%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/srv/detail/control_world__type_support.cpp.o[0m
+[24.361s] [ 79%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/srv/detail/set_entity_pose__type_support.cpp.o[0m
+[24.374s] [ 80%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/srv/detail/delete_entity__type_support.cpp.o[0m
+[24.444s] [ 81%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/srv/detail/spawn_entity__type_support.cpp.o[0m
+[24.600s] [ 82%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/world_reset__type_support_c.cpp.o[0m
+[24.628s] [ 82%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/srv/detail/control_world__type_support_c.cpp.o[0m
+[24.641s] [ 82%] [32m[1mLinking CXX shared library libros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[24.674s] [ 83%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/srv/detail/delete_entity__type_support_c.cpp.o[0m
+[24.991s] [ 83%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/srv/detail/set_entity_pose__type_support_c.cpp.o[0m
+[25.167s] [ 83%] Built target ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp
+[25.216s] [ 84%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/srv/detail/spawn_entity__type_support_c.cpp.o[0m
+[25.589s] [ 85%] [32m[1mLinking CXX shared library libros_gz_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[25.829s] [ 85%] Built target ros_gz_interfaces__rosidl_typesupport_introspection_cpp
+[25.883s] [ 85%] [32m[1mLinking CXX shared library libros_gz_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[26.079s] [ 85%] Built target ros_gz_interfaces__rosidl_typesupport_fastrtps_c
+[26.110s] [ 85%] Built target ros_gz_interfaces
+[26.142s] [ 86%] [34m[1mGenerating Python code for ROS interfaces[0m
+[33.818s] [ 86%] Built target ros_gz_interfaces__py
+[33.844s] [ 87%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_contacts_s.c.o[0m
+[33.846s] [ 88%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_entity_factory_s.c.o[0m
+[33.847s] [ 89%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_dataframe_s.c.o[0m
+[33.848s] [ 89%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_contact_s.c.o[0m
+[33.849s] [ 87%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_entity_s.c.o[0m
+[33.850s] [ 87%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_altimeter_s.c.o[0m
+[33.856s] [ 90%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_float32_array_s.c.o[0m
+[33.858s] [ 90%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_gui_camera_s.c.o[0m
+[34.052s] [ 90%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_joint_wrench_s.c.o[0m
+[34.066s] [ 91%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_light_s.c.o[0m
+[34.080s] [ 91%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_material_color_s.c.o[0m
+[34.092s] [ 92%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_param_vec_s.c.o[0m
+[34.098s] [ 92%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_sensor_noise_s.c.o[0m
+[34.124s] [ 93%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_string_vec_s.c.o[0m
+[34.144s] [ 93%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_track_visual_s.c.o[0m
+[34.234s] [ 94%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_video_record_s.c.o[0m
+[34.291s] [ 94%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_world_control_s.c.o[0m
+[34.315s] [ 95%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_world_reset_s.c.o[0m
+[34.321s] [ 95%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/srv/_control_world_s.c.o[0m
+[34.335s] [ 96%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/srv/_delete_entity_s.c.o[0m
+[34.337s] [ 96%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/srv/_set_entity_pose_s.c.o[0m
+[34.362s] [ 97%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/srv/_spawn_entity_s.c.o[0m
+[34.602s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/ros_gz_interfaces/libros_gz_interfaces__rosidl_generator_py.so[0m
+[34.677s] [ 97%] Built target ros_gz_interfaces__rosidl_generator_py
+[34.697s] [ 98%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ros_gz_interfaces/_ros_gz_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[34.697s] [ 99%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ros_gz_interfaces/_ros_gz_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[34.703s] [100%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ros_gz_interfaces/_ros_gz_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[34.878s] [100%] [32m[1mLinking C shared library rosidl_generator_py/ros_gz_interfaces/ros_gz_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[34.889s] [100%] [32m[1mLinking C shared library rosidl_generator_py/ros_gz_interfaces/ros_gz_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[34.927s] [100%] Built target ros_gz_interfaces__rosidl_typesupport_c__pyext
+[34.939s] [100%] Built target ros_gz_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[34.992s] [100%] [32m[1mLinking C shared library rosidl_generator_py/ros_gz_interfaces/ros_gz_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[35.038s] [100%] Built target ros_gz_interfaces__rosidl_typesupport_introspection_c__pyext
+[35.051s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_interfaces -- -j8 -l8
+[35.408s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_interfaces
+[35.416s] -- Install configuration: ""
+[35.416s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ament_index/resource_index/rosidl_interfaces/ros_gz_interfaces
+[35.416s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces
+[35.417s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv
+[35.417s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/control_world.h
+[35.417s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail
+[35.417s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/spawn_entity__struct.h
+[35.417s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/delete_entity__functions.h
+[35.417s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/set_entity_pose__type_support.h
+[35.417s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/set_entity_pose__functions.c
+[35.417s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/delete_entity__type_support.h
+[35.417s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/spawn_entity__functions.h
+[35.418s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/control_world__struct.h
+[35.418s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/spawn_entity__functions.c
+[35.418s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/delete_entity__functions.c
+[35.418s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/delete_entity__struct.h
+[35.418s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/set_entity_pose__functions.h
+[35.418s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/spawn_entity__type_support.h
+[35.418s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/set_entity_pose__struct.h
+[35.418s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/control_world__type_support.h
+[35.418s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/control_world__functions.c
+[35.418s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/control_world__functions.h
+[35.419s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/set_entity_pose.h
+[35.419s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/delete_entity.h
+[35.419s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/spawn_entity.h
+[35.419s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg
+[35.419s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail
+[35.419s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/light__type_support.h
+[35.419s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/float32_array__type_support.h
+[35.419s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/altimeter__type_support.h
+[35.419s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/float32_array__struct.h
+[35.419s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_reset__functions.h
+[35.420s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/param_vec__functions.c
+[35.420s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/altimeter__functions.c
+[35.420s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/light__struct.h
+[35.420s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/joint_wrench__type_support.h
+[35.420s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/video_record__struct.h
+[35.420s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/material_color__struct.h
+[35.420s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contact__functions.h
+[35.420s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/track_visual__type_support.h
+[35.420s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_factory__functions.c
+[35.420s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/video_record__functions.h
+[35.421s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/joint_wrench__struct.h
+[35.421s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/sensor_noise__struct.h
+[35.421s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_control__functions.c
+[35.421s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contact__type_support.h
+[35.421s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contact__struct.h
+[35.421s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_control__struct.h
+[35.421s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/track_visual__functions.c
+[35.421s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/video_record__functions.c
+[35.421s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/material_color__functions.c
+[35.421s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/material_color__type_support.h
+[35.421s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/string_vec__struct.h
+[35.422s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/dataframe__functions.c
+[35.422s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_factory__type_support.h
+[35.422s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_factory__functions.h
+[35.422s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_reset__functions.c
+[35.422s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contacts__type_support.h
+[35.422s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/dataframe__type_support.h
+[35.422s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/altimeter__functions.h
+[35.422s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/string_vec__type_support.h
+[35.423s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/joint_wrench__functions.c
+[35.423s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_reset__type_support.h
+[35.423s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contact__functions.c
+[35.423s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_factory__struct.h
+[35.423s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/float32_array__functions.h
+[35.423s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/gui_camera__type_support.h
+[35.423s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/param_vec__struct.h
+[35.423s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/gui_camera__struct.h
+[35.423s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/param_vec__functions.h
+[35.423s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/track_visual__struct.h
+[35.424s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contacts__functions.c
+[35.424s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/material_color__functions.h
+[35.424s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/gui_camera__functions.c
+[35.424s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contacts__functions.h
+[35.424s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/joint_wrench__functions.h
+[35.424s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_control__type_support.h
+[35.424s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/dataframe__functions.h
+[35.424s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity__functions.h
+[35.424s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contacts__struct.h
+[35.425s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/param_vec__type_support.h
+[35.425s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/string_vec__functions.h
+[35.425s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/float32_array__functions.c
+[35.425s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_reset__struct.h
+[35.425s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/dataframe__struct.h
+[35.425s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/altimeter__struct.h
+[35.425s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/track_visual__functions.h
+[35.426s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/string_vec__functions.c
+[35.426s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity__struct.h
+[35.426s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/video_record__type_support.h
+[35.426s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/light__functions.c
+[35.426s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/sensor_noise__type_support.h
+[35.426s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity__type_support.h
+[35.426s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/sensor_noise__functions.c
+[35.426s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/gui_camera__functions.h
+[35.426s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/light__functions.h
+[35.426s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/sensor_noise__functions.h
+[35.427s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity__functions.c
+[35.427s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_control__functions.h
+[35.427s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/light.h
+[35.427s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/world_control.h
+[35.427s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/rosidl_generator_c__visibility_control.h
+[35.427s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/altimeter.h
+[35.427s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/float32_array.h
+[35.427s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/param_vec.h
+[35.427s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/sensor_noise.h
+[35.427s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/contacts.h
+[35.428s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/joint_wrench.h
+[35.428s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/contact.h
+[35.428s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/material_color.h
+[35.428s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/gui_camera.h
+[35.428s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/track_visual.h
+[35.428s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/entity_factory.h
+[35.428s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/dataframe.h
+[35.428s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/world_reset.h
+[35.428s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/string_vec.h
+[35.429s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/video_record.h
+[35.429s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/entity.h
+[35.429s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/environment/library_path.sh
+[35.429s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/environment/library_path.dsv
+[35.429s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/lib/libros_gz_interfaces__rosidl_generator_c.so
+[35.429s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/lib/libros_gz_interfaces__rosidl_generator_c.so" to ""
+[35.429s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces
+[35.429s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv
+[35.429s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail
+[35.429s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/set_entity_pose__rosidl_typesupport_fastrtps_c.h
+[35.430s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/control_world__rosidl_typesupport_fastrtps_c.h
+[35.430s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/delete_entity__rosidl_typesupport_fastrtps_c.h
+[35.430s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/spawn_entity__rosidl_typesupport_fastrtps_c.h
+[35.430s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg
+[35.430s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail
+[35.430s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/video_record__rosidl_typesupport_fastrtps_c.h
+[35.430s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contacts__rosidl_typesupport_fastrtps_c.h
+[35.430s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/float32_array__rosidl_typesupport_fastrtps_c.h
+[35.430s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contact__rosidl_typesupport_fastrtps_c.h
+[35.430s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_reset__rosidl_typesupport_fastrtps_c.h
+[35.431s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/material_color__rosidl_typesupport_fastrtps_c.h
+[35.431s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/track_visual__rosidl_typesupport_fastrtps_c.h
+[35.431s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/dataframe__rosidl_typesupport_fastrtps_c.h
+[35.431s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/altimeter__rosidl_typesupport_fastrtps_c.h
+[35.431s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/param_vec__rosidl_typesupport_fastrtps_c.h
+[35.431s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/string_vec__rosidl_typesupport_fastrtps_c.h
+[35.431s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/joint_wrench__rosidl_typesupport_fastrtps_c.h
+[35.431s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_control__rosidl_typesupport_fastrtps_c.h
+[35.431s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/light__rosidl_typesupport_fastrtps_c.h
+[35.431s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_factory__rosidl_typesupport_fastrtps_c.h
+[35.432s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity__rosidl_typesupport_fastrtps_c.h
+[35.432s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/sensor_noise__rosidl_typesupport_fastrtps_c.h
+[35.432s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/gui_camera__rosidl_typesupport_fastrtps_c.h
+[35.432s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[35.432s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/lib/libros_gz_interfaces__rosidl_typesupport_fastrtps_c.so
+[35.432s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/lib/libros_gz_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[35.432s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces
+[35.432s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv
+[35.432s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/set_entity_pose.hpp
+[35.433s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail
+[35.433s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/control_world__traits.hpp
+[35.433s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/spawn_entity__struct.hpp
+[35.433s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/control_world__struct.hpp
+[35.433s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/spawn_entity__traits.hpp
+[35.433s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/delete_entity__builder.hpp
+[35.433s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/spawn_entity__builder.hpp
+[35.433s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/delete_entity__struct.hpp
+[35.433s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/set_entity_pose__builder.hpp
+[35.433s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/set_entity_pose__traits.hpp
+[35.434s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/control_world__builder.hpp
+[35.434s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/set_entity_pose__struct.hpp
+[35.434s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/delete_entity__traits.hpp
+[35.434s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/control_world.hpp
+[35.434s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/spawn_entity.hpp
+[35.434s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/delete_entity.hpp
+[35.434s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg
+[35.434s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/string_vec.hpp
+[35.434s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail
+[35.435s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contact__builder.hpp
+[35.435s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/video_record__builder.hpp
+[35.435s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/float32_array__struct.hpp
+[35.435s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/altimeter__struct.hpp
+[35.435s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/param_vec__builder.hpp
+[35.435s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/joint_wrench__traits.hpp
+[35.435s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contacts__builder.hpp
+[35.435s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/gui_camera__traits.hpp
+[35.435s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/track_visual__struct.hpp
+[35.435s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contacts__traits.hpp
+[35.436s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/sensor_noise__struct.hpp
+[35.436s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/altimeter__traits.hpp
+[35.436s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/joint_wrench__builder.hpp
+[35.436s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/param_vec__traits.hpp
+[35.436s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/param_vec__struct.hpp
+[35.436s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_reset__builder.hpp
+[35.436s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/dataframe__struct.hpp
+[35.436s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_factory__builder.hpp
+[35.436s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/track_visual__builder.hpp
+[35.437s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_factory__struct.hpp
+[35.437s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contact__traits.hpp
+[35.437s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity__builder.hpp
+[35.437s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_reset__struct.hpp
+[35.437s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/string_vec__struct.hpp
+[35.437s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/material_color__struct.hpp
+[35.437s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/sensor_noise__traits.hpp
+[35.437s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/string_vec__traits.hpp
+[35.437s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity__struct.hpp
+[35.437s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/sensor_noise__builder.hpp
+[35.438s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/joint_wrench__struct.hpp
+[35.438s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/video_record__traits.hpp
+[35.438s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/material_color__builder.hpp
+[35.438s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/light__traits.hpp
+[35.438s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_control__builder.hpp
+[35.438s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/dataframe__traits.hpp
+[35.438s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_control__struct.hpp
+[35.438s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/altimeter__builder.hpp
+[35.438s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/string_vec__builder.hpp
+[35.438s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity__traits.hpp
+[35.439s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contacts__struct.hpp
+[35.439s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/gui_camera__builder.hpp
+[35.439s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/light__builder.hpp
+[35.439s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/float32_array__traits.hpp
+[35.439s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/track_visual__traits.hpp
+[35.439s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/video_record__struct.hpp
+[35.439s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/dataframe__builder.hpp
+[35.439s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/material_color__traits.hpp
+[35.439s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_factory__traits.hpp
+[35.440s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_reset__traits.hpp
+[35.440s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contact__struct.hpp
+[35.440s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/gui_camera__struct.hpp
+[35.440s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_control__traits.hpp
+[35.440s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/float32_array__builder.hpp
+[35.440s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/light__struct.hpp
+[35.440s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/altimeter.hpp
+[35.440s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/entity_factory.hpp
+[35.440s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/gui_camera.hpp
+[35.440s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/material_color.hpp
+[35.440s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/contacts.hpp
+[35.441s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/dataframe.hpp
+[35.441s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/world_reset.hpp
+[35.441s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/contact.hpp
+[35.441s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/joint_wrench.hpp
+[35.441s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/entity.hpp
+[35.441s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/sensor_noise.hpp
+[35.441s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/light.hpp
+[35.441s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/float32_array.hpp
+[35.441s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/param_vec.hpp
+[35.441s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/world_control.hpp
+[35.442s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/track_visual.hpp
+[35.442s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/video_record.hpp
+[35.442s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces
+[35.442s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv
+[35.442s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail
+[35.442s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/spawn_entity__rosidl_typesupport_fastrtps_cpp.hpp
+[35.442s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/dds_fastrtps
+[35.442s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/set_entity_pose__rosidl_typesupport_fastrtps_cpp.hpp
+[35.442s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/control_world__rosidl_typesupport_fastrtps_cpp.hpp
+[35.442s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/delete_entity__rosidl_typesupport_fastrtps_cpp.hpp
+[35.443s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg
+[35.443s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail
+[35.443s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/track_visual__rosidl_typesupport_fastrtps_cpp.hpp
+[35.443s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_factory__rosidl_typesupport_fastrtps_cpp.hpp
+[35.443s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_control__rosidl_typesupport_fastrtps_cpp.hpp
+[35.443s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/material_color__rosidl_typesupport_fastrtps_cpp.hpp
+[35.443s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/light__rosidl_typesupport_fastrtps_cpp.hpp
+[35.443s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/video_record__rosidl_typesupport_fastrtps_cpp.hpp
+[35.443s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/gui_camera__rosidl_typesupport_fastrtps_cpp.hpp
+[35.444s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/dds_fastrtps
+[35.444s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contacts__rosidl_typesupport_fastrtps_cpp.hpp
+[35.444s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/sensor_noise__rosidl_typesupport_fastrtps_cpp.hpp
+[35.444s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity__rosidl_typesupport_fastrtps_cpp.hpp
+[35.444s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/string_vec__rosidl_typesupport_fastrtps_cpp.hpp
+[35.444s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/float32_array__rosidl_typesupport_fastrtps_cpp.hpp
+[35.444s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/dataframe__rosidl_typesupport_fastrtps_cpp.hpp
+[35.444s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/joint_wrench__rosidl_typesupport_fastrtps_cpp.hpp
+[35.444s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/param_vec__rosidl_typesupport_fastrtps_cpp.hpp
+[35.444s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contact__rosidl_typesupport_fastrtps_cpp.hpp
+[35.445s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/altimeter__rosidl_typesupport_fastrtps_cpp.hpp
+[35.445s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_reset__rosidl_typesupport_fastrtps_cpp.hpp
+[35.445s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[35.445s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/lib/libros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[35.445s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/lib/libros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[35.445s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces
+[35.445s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv
+[35.445s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail
+[35.445s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/set_entity_pose__rosidl_typesupport_introspection_c.h
+[35.445s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/control_world__rosidl_typesupport_introspection_c.h
+[35.446s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/control_world__type_support.c
+[35.446s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/delete_entity__rosidl_typesupport_introspection_c.h
+[35.446s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/set_entity_pose__type_support.c
+[35.446s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/spawn_entity__rosidl_typesupport_introspection_c.h
+[35.446s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/spawn_entity__type_support.c
+[35.446s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/delete_entity__type_support.c
+[35.446s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg
+[35.446s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail
+[35.446s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_factory__type_support.c
+[35.446s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/material_color__type_support.c
+[35.446s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/video_record__type_support.c
+[35.447s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contacts__rosidl_typesupport_introspection_c.h
+[35.447s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_control__rosidl_typesupport_introspection_c.h
+[35.447s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/dataframe__type_support.c
+[35.447s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/float32_array__rosidl_typesupport_introspection_c.h
+[35.447s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/dataframe__rosidl_typesupport_introspection_c.h
+[35.447s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/track_visual__type_support.c
+[35.447s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_factory__rosidl_typesupport_introspection_c.h
+[35.447s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/param_vec__type_support.c
+[35.447s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_reset__type_support.c
+[35.448s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/sensor_noise__rosidl_typesupport_introspection_c.h
+[35.448s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_control__type_support.c
+[35.448s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/video_record__rosidl_typesupport_introspection_c.h
+[35.448s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contact__type_support.c
+[35.448s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/material_color__rosidl_typesupport_introspection_c.h
+[35.448s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/string_vec__type_support.c
+[35.448s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity__type_support.c
+[35.448s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_reset__rosidl_typesupport_introspection_c.h
+[35.448s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/track_visual__rosidl_typesupport_introspection_c.h
+[35.448s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/float32_array__type_support.c
+[35.449s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/sensor_noise__type_support.c
+[35.449s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contact__rosidl_typesupport_introspection_c.h
+[35.449s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity__rosidl_typesupport_introspection_c.h
+[35.449s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contacts__type_support.c
+[35.449s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/joint_wrench__rosidl_typesupport_introspection_c.h
+[35.449s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/gui_camera__rosidl_typesupport_introspection_c.h
+[35.449s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/joint_wrench__type_support.c
+[35.449s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/altimeter__type_support.c
+[35.449s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/param_vec__rosidl_typesupport_introspection_c.h
+[35.449s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/light__type_support.c
+[35.450s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/gui_camera__type_support.c
+[35.450s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/light__rosidl_typesupport_introspection_c.h
+[35.450s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/altimeter__rosidl_typesupport_introspection_c.h
+[35.450s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/string_vec__rosidl_typesupport_introspection_c.h
+[35.450s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[35.450s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/lib/libros_gz_interfaces__rosidl_typesupport_introspection_c.so
+[35.450s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/lib/libros_gz_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[35.450s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/lib/libros_gz_interfaces__rosidl_typesupport_c.so
+[35.450s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/lib/libros_gz_interfaces__rosidl_typesupport_c.so" to ""
+[35.450s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces
+[35.450s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv
+[35.451s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail
+[35.451s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/delete_entity__rosidl_typesupport_introspection_cpp.hpp
+[35.451s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/spawn_entity__type_support.cpp
+[35.451s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/spawn_entity__rosidl_typesupport_introspection_cpp.hpp
+[35.451s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/control_world__rosidl_typesupport_introspection_cpp.hpp
+[35.451s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/set_entity_pose__type_support.cpp
+[35.451s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/set_entity_pose__rosidl_typesupport_introspection_cpp.hpp
+[35.451s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/control_world__type_support.cpp
+[35.452s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/delete_entity__type_support.cpp
+[35.452s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg
+[35.452s] -- Up-to-date: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail
+[35.452s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/string_vec__type_support.cpp
+[35.452s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/joint_wrench__rosidl_typesupport_introspection_cpp.hpp
+[35.452s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/material_color__rosidl_typesupport_introspection_cpp.hpp
+[35.452s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/dataframe__type_support.cpp
+[35.452s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/material_color__type_support.cpp
+[35.452s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contacts__rosidl_typesupport_introspection_cpp.hpp
+[35.453s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_control__type_support.cpp
+[35.453s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/track_visual__rosidl_typesupport_introspection_cpp.hpp
+[35.453s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/param_vec__rosidl_typesupport_introspection_cpp.hpp
+[35.453s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity__type_support.cpp
+[35.453s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/light__rosidl_typesupport_introspection_cpp.hpp
+[35.453s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity__rosidl_typesupport_introspection_cpp.hpp
+[35.453s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/joint_wrench__type_support.cpp
+[35.453s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contacts__type_support.cpp
+[35.453s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/string_vec__rosidl_typesupport_introspection_cpp.hpp
+[35.453s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/video_record__rosidl_typesupport_introspection_cpp.hpp
+[35.454s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contact__type_support.cpp
+[35.454s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/param_vec__type_support.cpp
+[35.454s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_factory__type_support.cpp
+[35.454s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/gui_camera__rosidl_typesupport_introspection_cpp.hpp
+[35.454s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contact__rosidl_typesupport_introspection_cpp.hpp
+[35.454s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/dataframe__rosidl_typesupport_introspection_cpp.hpp
+[35.454s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/light__type_support.cpp
+[35.454s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_control__rosidl_typesupport_introspection_cpp.hpp
+[35.454s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_factory__rosidl_typesupport_introspection_cpp.hpp
+[35.455s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_reset__rosidl_typesupport_introspection_cpp.hpp
+[35.455s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/altimeter__type_support.cpp
+[35.455s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/altimeter__rosidl_typesupport_introspection_cpp.hpp
+[35.455s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/sensor_noise__type_support.cpp
+[35.455s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/gui_camera__type_support.cpp
+[35.455s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/track_visual__type_support.cpp
+[35.455s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/sensor_noise__rosidl_typesupport_introspection_cpp.hpp
+[35.455s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/float32_array__type_support.cpp
+[35.455s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/video_record__type_support.cpp
+[35.456s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_reset__type_support.cpp
+[35.456s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/float32_array__rosidl_typesupport_introspection_cpp.hpp
+[35.456s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/lib/libros_gz_interfaces__rosidl_typesupport_introspection_cpp.so
+[35.456s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/lib/libros_gz_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[35.456s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/lib/libros_gz_interfaces__rosidl_typesupport_cpp.so
+[35.456s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/lib/libros_gz_interfaces__rosidl_typesupport_cpp.so" to ""
+[35.456s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/environment/pythonpath.sh
+[35.456s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/environment/pythonpath.dsv
+[35.456s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces-0.244.13-py3.10.egg-info
+[35.457s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces-0.244.13-py3.10.egg-info/dependency_links.txt
+[35.457s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces-0.244.13-py3.10.egg-info/PKG-INFO
+[35.457s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces-0.244.13-py3.10.egg-info/top_level.txt
+[35.457s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces-0.244.13-py3.10.egg-info/SOURCES.txt
+[35.457s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces
+[35.457s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/srv
+[35.457s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/srv/_control_world.py
+[35.457s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/srv/_delete_entity_s.c
+[35.457s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/srv/_spawn_entity.py
+[35.458s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/srv/__init__.py
+[35.458s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/srv/_set_entity_pose.py
+[35.458s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/srv/_spawn_entity_s.c
+[35.458s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/srv/_control_world_s.c
+[35.458s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/srv/_delete_entity.py
+[35.458s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/srv/_set_entity_pose_s.c
+[35.458s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/_ros_gz_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[35.458s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/__init__.py
+[35.458s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/_ros_gz_interfaces_s.ep.rosidl_typesupport_c.c
+[35.458s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/ros_gz_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[35.458s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/ros_gz_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[35.459s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/libros_gz_interfaces__rosidl_generator_py.so
+[35.459s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/_ros_gz_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[35.459s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/ros_gz_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[35.459s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg
+[35.459s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_dataframe.py
+[35.459s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_joint_wrench.py
+[35.459s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_altimeter_s.c
+[35.459s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_entity_factory.py
+[35.459s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_track_visual_s.c
+[35.459s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_contact_s.c
+[35.459s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_contacts.py
+[35.460s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_video_record_s.c
+[35.460s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_world_reset_s.c
+[35.460s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_sensor_noise_s.c
+[35.460s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_entity_factory_s.c
+[35.460s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_entity_s.c
+[35.460s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_contacts_s.c
+[35.460s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/__init__.py
+[35.460s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_track_visual.py
+[35.460s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_entity.py
+[35.460s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_param_vec_s.c
+[35.460s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_gui_camera.py
+[35.461s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_world_reset.py
+[35.461s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_material_color.py
+[35.461s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_param_vec.py
+[35.461s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_world_control.py
+[35.461s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_material_color_s.c
+[35.461s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_world_control_s.c
+[35.461s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_joint_wrench_s.c
+[35.461s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_contact.py
+[35.461s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_sensor_noise.py
+[35.461s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_gui_camera_s.c
+[35.461s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_float32_array.py
+[35.462s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_light_s.c
+[35.462s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_string_vec.py
+[35.462s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_float32_array_s.c
+[35.462s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_video_record.py
+[35.462s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_dataframe_s.c
+[35.462s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_light.py
+[35.462s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_string_vec_s.c
+[35.462s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_altimeter.py
+[35.531s] Listing '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces'...
+[35.531s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/__init__.py'...
+[35.531s] Listing '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg'...
+[35.531s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/__init__.py'...
+[35.531s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_altimeter.py'...
+[35.531s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_contact.py'...
+[35.531s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_contacts.py'...
+[35.532s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_dataframe.py'...
+[35.532s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_entity.py'...
+[35.532s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_entity_factory.py'...
+[35.532s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_float32_array.py'...
+[35.532s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_gui_camera.py'...
+[35.532s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_joint_wrench.py'...
+[35.532s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_light.py'...
+[35.532s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_material_color.py'...
+[35.532s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_param_vec.py'...
+[35.532s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_sensor_noise.py'...
+[35.533s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_string_vec.py'...
+[35.533s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_track_visual.py'...
+[35.533s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_video_record.py'...
+[35.533s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_world_control.py'...
+[35.533s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/msg/_world_reset.py'...
+[35.533s] Listing '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/srv'...
+[35.533s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/srv/__init__.py'...
+[35.533s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/srv/_control_world.py'...
+[35.533s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/srv/_delete_entity.py'...
+[35.533s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/srv/_set_entity_pose.py'...
+[35.533s] Compiling '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/srv/_spawn_entity.py'...
+[35.536s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/ros_gz_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[35.537s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/ros_gz_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[35.537s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/ros_gz_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[35.538s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/ros_gz_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[35.538s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/ros_gz_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[35.539s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/local/lib/python3.10/dist-packages/ros_gz_interfaces/ros_gz_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[35.539s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/lib/libros_gz_interfaces__rosidl_generator_py.so
+[35.539s] -- Set runtime path of "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/lib/libros_gz_interfaces__rosidl_generator_py.so" to ""
+[35.540s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/Altimeter.idl
+[35.540s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/Contact.idl
+[35.540s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/Contacts.idl
+[35.540s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/Dataframe.idl
+[35.540s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/Entity.idl
+[35.541s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/EntityFactory.idl
+[35.541s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/Float32Array.idl
+[35.541s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/GuiCamera.idl
+[35.541s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/JointWrench.idl
+[35.541s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/Light.idl
+[35.541s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/MaterialColor.idl
+[35.542s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/ParamVec.idl
+[35.542s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/SensorNoise.idl
+[35.542s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/StringVec.idl
+[35.542s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/TrackVisual.idl
+[35.542s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/VideoRecord.idl
+[35.543s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/WorldControl.idl
+[35.543s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/WorldReset.idl
+[35.543s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/srv/ControlWorld.idl
+[35.543s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/srv/DeleteEntity.idl
+[35.544s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/srv/SetEntityPose.idl
+[35.544s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/srv/SpawnEntity.idl
+[35.544s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/Altimeter.msg
+[35.544s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/Contact.msg
+[35.544s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/Contacts.msg
+[35.545s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/Dataframe.msg
+[35.545s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/Entity.msg
+[35.545s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/EntityFactory.msg
+[35.545s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/Float32Array.msg
+[35.545s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/GuiCamera.msg
+[35.546s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/JointWrench.msg
+[35.546s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/Light.msg
+[35.546s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/MaterialColor.msg
+[35.546s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/ParamVec.msg
+[35.546s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/SensorNoise.msg
+[35.547s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/StringVec.msg
+[35.547s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/TrackVisual.msg
+[35.547s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/VideoRecord.msg
+[35.547s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/WorldControl.msg
+[35.548s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/WorldReset.msg
+[35.548s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/srv/ControlWorld.srv
+[35.548s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/srv/ControlWorld_Request.msg
+[35.548s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/srv/ControlWorld_Response.msg
+[35.549s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/srv/DeleteEntity.srv
+[35.549s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/srv/DeleteEntity_Request.msg
+[35.549s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/srv/DeleteEntity_Response.msg
+[35.549s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/srv/SetEntityPose.srv
+[35.550s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/srv/SetEntityPose_Request.msg
+[35.550s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/srv/SetEntityPose_Response.msg
+[35.550s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/srv/SpawnEntity.srv
+[35.550s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/srv/SpawnEntity_Request.msg
+[35.550s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/srv/SpawnEntity_Response.msg
+[35.551s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ament_index/resource_index/package_run_dependencies/ros_gz_interfaces
+[35.551s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ament_index/resource_index/parent_prefix_path/ros_gz_interfaces
+[35.551s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/environment/ament_prefix_path.sh
+[35.551s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/environment/ament_prefix_path.dsv
+[35.551s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/environment/path.sh
+[35.552s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/environment/path.dsv
+[35.552s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/local_setup.bash
+[35.552s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/local_setup.sh
+[35.552s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/local_setup.zsh
+[35.552s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/local_setup.dsv
+[35.553s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/package.dsv
+[35.553s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ament_index/resource_index/packages/ros_gz_interfaces
+[35.553s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/export_ros_gz_interfaces__rosidl_generator_cExport.cmake
+[35.553s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/export_ros_gz_interfaces__rosidl_generator_cExport-noconfig.cmake
+[35.554s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/export_ros_gz_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[35.554s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/export_ros_gz_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[35.554s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/export_ros_gz_interfaces__rosidl_generator_cppExport.cmake
+[35.554s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/export_ros_gz_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[35.555s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/export_ros_gz_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[35.555s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/ros_gz_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[35.555s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/ros_gz_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[35.555s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/ros_gz_interfaces__rosidl_typesupport_cExport.cmake
+[35.556s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/ros_gz_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[35.556s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/ros_gz_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[35.556s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/ros_gz_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[35.556s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/ros_gz_interfaces__rosidl_typesupport_cppExport.cmake
+[35.556s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/ros_gz_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[35.557s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/export_ros_gz_interfaces__rosidl_generator_pyExport.cmake
+[35.557s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/export_ros_gz_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[35.557s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/rosidl_cmake-extras.cmake
+[35.557s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[35.558s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[35.558s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[35.558s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[35.558s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[35.558s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[35.559s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/ros_gz_interfacesConfig.cmake
+[35.559s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/ros_gz_interfacesConfig-version.cmake
+[35.559s] -- Installing: /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces/share/ros_gz_interfaces/package.xml
+[35.563s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_interfaces

@@ -1,0 +1,23 @@
+[0.009s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com -- -j32 -l32
+[0.047s] [35m[1mConsolidate compiler generated dependencies of target PointCloudProcessor[0m
+[0.051s] [ 50%] Built target debug_vect_advertiser
+[0.051s] [ 50%] Built target vehicle_gps_position_listener
+[0.052s] [ 50%] Built target test_flight_control
+[0.053s] [ 83%] Built target offboard_control
+[0.053s] [ 83%] Built target sensor_combined_listener
+[0.074s] [ 91%] [32mBuilding CXX object CMakeFiles/PointCloudProcessor.dir/src/PointCloudProcessor.cpp.o[0m
+[3.133s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:[m[K In member function ‘[01m[Kvoid PointCloudProcessor::pointCloudCallback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.133s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:85:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kpoints[m[K’ was not declared in this scope; did you mean ‘[01m[KPoint[m[K’?
+[3.133s]    85 |     std::vector<bool> processed([01;31m[Kpoints[m[K.size(), false);
+[3.133s]       |                                 [01;31m[K^~~~~~[m[K
+[3.133s]       |                                 [32m[KPoint[m[K
+[3.133s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:97:36:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kflann::Index<flann::L2<float> > kdTree[m[K’
+[3.133s]    97 |     flann::Index<flann::L2<float>> [01;31m[KkdTree[m[K(dataset, flann::KDTreeIndexParams(4));
+[3.133s]       |                                    [01;31m[K^~~~~~[m[K
+[3.133s] [01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:74:36:[m[K [01;36m[Knote: [m[K‘[01m[Kflann::Index<flann::L2<float> > kdTree[m[K’ previously declared here
+[3.133s]    74 |     flann::Index<flann::L2<float>> [01;36m[KkdTree[m[K(flann::KDTreeIndexParams(4)); // 4 is the branching factor
+[3.133s]       |                                    [01;36m[K^~~~~~[m[K
+[5.419s] gmake[2]: *** [CMakeFiles/PointCloudProcessor.dir/build.make:76: CMakeFiles/PointCloudProcessor.dir/src/PointCloudProcessor.cpp.o] Error 1
+[5.419s] gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/PointCloudProcessor.dir/all] Error 2
+[5.420s] gmake: *** [Makefile:146: all] Error 2
+[5.422s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com' returned '2': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com -- -j32 -l32

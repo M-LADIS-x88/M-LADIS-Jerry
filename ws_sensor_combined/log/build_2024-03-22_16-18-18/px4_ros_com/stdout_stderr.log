@@ -1,0 +1,14 @@
+[35m[1mConsolidate compiler generated dependencies of target PointCloudProcessor[0m
+[ 33%] Built target sensor_combined_listener
+[ 33%] Built target test_flight_control
+[ 50%] Built target debug_vect_advertiser
+[ 66%] Built target vehicle_gps_position_listener
+[ 83%] Built target offboard_control
+[ 91%] [32mBuilding CXX object CMakeFiles/PointCloudProcessor.dir/src/PointCloudProcessor.cpp.o[0m
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:[m[K In member function ‘[01m[Kvoid PointCloudProcessor::pointCloudCallback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:43:50:[m[K [01;31m[Kerror: [m[K‘[01m[K__gnu_cxx::__alloc_traits<Eigen::aligned_allocator<pcl::PointXYZ>, pcl::PointXYZ>::value_type[m[K’ {aka ‘[01m[Kstruct pcl::PointXYZ[m[K’} has no member named ‘[01m[Kintensity[m[K’
+   43 |         xyzi_matrix[i][3] = pcl_cloud->points[i].[01;31m[Kintensity[m[K; // Store intensity
+      |                                                  [01;31m[K^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/PointCloudProcessor.dir/build.make:76: CMakeFiles/PointCloudProcessor.dir/src/PointCloudProcessor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/PointCloudProcessor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
