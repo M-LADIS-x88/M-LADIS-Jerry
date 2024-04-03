@@ -15,6 +15,10 @@
 #include <fstream>
 #include <sstream>
 #include <ctime>
+#include <cmath>
+#include "pointcloud_saturation.cpp"
+
+using namespace std;
 
 
 class PointCloudProcessor : public rclcpp::Node {
@@ -22,12 +26,25 @@ public:
   PointCloudProcessor() : Node("PointCloudProcessor") {
     // Subscribe to PointCloud2 topic
     subscriber_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
-        "/scan", 10,
+        "/velodyne_points", 1,
         std::bind(&PointCloudProcessor::pointCloudCallback, this, std::placeholders::_1));
+    locale_ = this->create_subscription<geometry_msgs::msg::Point>(
+        "/position", 1,
+        std::bind(&OdometryProcessor::odometry_callback, this, std::placeholders::_1));
+    yaw_ = this->create_subscription<std_msgs::Float64>(
+        "/yaw", 1,
+        std::bind(&yawIntake::yaw_callback, this, std::placeholders::_1));
   }
 
 private:
   rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr subscriber_;
+
+  //initializing counter for when you need to start overwriting previous pointclouds
+  int mem_count = 0;
+  int stack_size = 5;
+  //preallocating room for 10 pointcloud messages
+  int allocated_points = stack_size*30000;
+  float xyzi_matrix[allocated_points][4] = {0};
   
   void pointCloudCallback(const sensor_msgs::msg::PointCloud2::SharedPtr msg) {
     //RCLCPP_INFO(this->get_logger(), "Receiving Point Cloud...");
@@ -44,12 +61,59 @@ private:
     for (int i = 0; i < n; ++i) {
       const auto& pt = pcl_cloud->points[i];
       if (pt.z < 2 && pt.z > -1) {
-        xyzi_matrix[i][0] = pt.x; // Store x coordinate
-        xyzi_matrix[i][1] = pt.y; // Store y coordinate
-        xyzi_matrix[i][2] = pt.z; // Store z coordinate
-        xyzi_matrix[i][3] = pt.intensity; // Store intensity
+        //double mag_dist = std::sqrt(pt.x*pt.x + pt.y+pt.y);
+        if(pt.x < 32 && pt.y < 32 && pt.x > -32 && pt.y > -32){
+
+        xyzi_temp_matrix[i][0] = pt.x; // Store x coordinate
+        xyzi_temp_matrix[i][1] = pt.y; // Store y coordinate
+        xyzi_temp_matrix[i][2] = pt.z; // Store z coordinate
+        xyzi_temp_matrix[i][3] = pt.intensity; // Store intensity
+        }
       }
     }
+    //making polar pointcloud
+    //[rad,theta,z,intensity]
+    float polar_pcl[allocated_points][4]
+    //shifting pointcloud to global frame
+    for(int j = 0; j< pcl_cloud->size(); ++j){
+      float x = xyzi_temp_matrix[j][0];
+      float y = xyzi_temp_matrix[j][1];
+      
+      float rad = sqrt((x*x)+(y*y));
+      float atan_arg = y/x;
+      float theta = arctan(y/x);
+      
+      polar_pcl[j][0] = rad;
+      polar_pcl[j][1] = theta;
+      polar_pcl[j][2] = xyzi_temp_matrix[j][2];
+      polar_pcl[j][3] = xyzi_temp_matrix[j][3];
+    }
+
+    //adjusting for yaw changes
+    for(int j = 0; j<pcl_cloud->size(); ++j){
+      float yaw = yaw_callback();
+      polar_pcl[j][1] = polar_pcl[j][1] - yaw;
+    }
+    //convert all to back to cartesian
+    for(int j =0; j<pcl_cloud->size(),++j){
+      float rad = polar_pcl[j][0];
+      float theta = polar_pcl[j][1];
+      float z = polar_pcl[j][2];
+      float i = polar_pcl[j][3];
+
+      //get current localization position
+      std::vector<float> pos = odometry_callback();
+
+      xyzi_matrix[j + (mem_count * 30000)][0] = rad*cos(theta) - pos[0];
+      xyzi_matrix[j + (mem_count * 30000)][1] = rad*sin(theta) - pos[1];
+      xyzi_matrix[j + (mem_count * 30000)][2] = z;
+      xyzi_matrix[j + (mem_count * 30000)][3] = i;
+    }
+    mem_count += 1;
+    if(mem_count == stack_size + 1){
+      mem_count = 0;
+    }
+
       // Open a CSV file in write mode
     std::ofstream csv_file;
     csv_file.open("output_xyzi_matrix.csv");
@@ -80,6 +144,7 @@ private:
       p.x = xyzi_matrix[i][0];
       p.y = xyzi_matrix[i][1];
       p.z = xyzi_matrix[i][2];
+      p.intensity = xyzi_matrix[i][3]
       pcloud.push_back(p);
     }
 
@@ -125,7 +190,19 @@ private:
     // Now you have the XYZ matrix in 'xyz_matrix'
     // You can further process or use it as needed
 };
+  float yaw;
+  float yaw_callback(const std_msgs::Float64::SharedPtr msg){
+    yaw = msg.data;
+    return yaw;
+  }
+  std::vector<float> odometry_callback(const geometry_msgs::msg::Point::SharedPtr pos){
+    float x = pos.x;
+    float y = pos.y;
+    float z = pos.z;
 
+    std::vector<float> position = {x,y,z};
+    return position;
+  }
 };
 int main(int argc, char** argv) {
   rclcpp::init(argc, argv);
