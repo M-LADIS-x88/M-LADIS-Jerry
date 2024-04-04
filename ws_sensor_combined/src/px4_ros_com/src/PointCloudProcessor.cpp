@@ -16,15 +16,11 @@
 #include <sstream>
 #include <ctime>
 #include <cmath>
-<<<<<<< HEAD
 #include "geometry_msgs/msg/pose_array.hpp"
 #include "geometry_msgs/msg/vector3.hpp"
 #include "std_msgs/msg/float64.hpp"
 #include "std_msgs/msg/bool.hpp"
 
-=======
-#include "pointcloud_saturation.cpp"
->>>>>>> f377ce7e7d0a10c75fb93aa181d82c68d2834f20
 
 using namespace std;
 
@@ -34,7 +30,6 @@ public:
   PointCloudProcessor() : Node("PointCloudProcessor") {
     // Subscribe to PointCloud2 topic
     subscriber_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
-<<<<<<< HEAD
         "/slam_registered_points", 1,
         std::bind(&PointCloudProcessor::pointCloudCallback, this, std::placeholders::_1));
     locale_ = this->create_subscription<geometry_msgs::msg::Point>(
@@ -43,16 +38,6 @@ public:
     yaw_ = this->create_subscription<std_msgs::msg::Float64>(
         "/yaw", 1,
         std::bind(&PointCloudProcessor::yaw_callback, this, std::placeholders::_1));
-=======
-        "/velodyne_points", 1,
-        std::bind(&PointCloudProcessor::pointCloudCallback, this, std::placeholders::_1));
-    locale_ = this->create_subscription<geometry_msgs::msg::Point>(
-        "/position", 1,
-        std::bind(&OdometryProcessor::odometry_callback, this, std::placeholders::_1));
-    yaw_ = this->create_subscription<std_msgs::Float64>(
-        "/yaw", 1,
-        std::bind(&yawIntake::yaw_callback, this, std::placeholders::_1));
->>>>>>> f377ce7e7d0a10c75fb93aa181d82c68d2834f20
   }
 
 private:
@@ -60,7 +45,6 @@ private:
   std::vector<float> position;
   rclcpp::Subscription<geometry_msgs::msg::Point>::SharedPtr locale_;
   rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr subscriber_;
-<<<<<<< HEAD
   rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr yaw_;
 
   //initializing counter for when you need to start overwriting previous pointclouds
@@ -68,15 +52,6 @@ private:
 
 
   //std::vector<std::vector<float>> xyzi_matrix; // Create nx4 matrix for xyzi
-=======
-
-  //initializing counter for when you need to start overwriting previous pointclouds
-  int mem_count = 0;
-  int stack_size = 5;
-  //preallocating room for 10 pointcloud messages
-  int allocated_points = stack_size*30000;
-  float xyzi_matrix[allocated_points][4] = {0};
->>>>>>> f377ce7e7d0a10c75fb93aa181d82c68d2834f20
   
   void pointCloudCallback(const sensor_msgs::msg::PointCloud2::SharedPtr msg) {
     //RCLCPP_INFO(this->get_logger(), "Receiving Point Cloud...");
@@ -109,7 +84,6 @@ private:
     }
     //making polar pointcloud
     //[rad,theta,z,intensity]
-<<<<<<< HEAD
     //const int allocated_points_polar = 30000;
     std::vector<std::vector<float>> polar_pcl(n, std::vector<float>(4));
     //shifting pointcloud to global frame
@@ -119,17 +93,6 @@ private:
       
       float rad = std::sqrt((x*x)+(y*y));
       float theta = std::atan2(y,x);
-=======
-    float polar_pcl[allocated_points][4]
-    //shifting pointcloud to global frame
-    for(int j = 0; j< pcl_cloud->size(); ++j){
-      float x = xyzi_temp_matrix[j][0];
-      float y = xyzi_temp_matrix[j][1];
-      
-      float rad = sqrt((x*x)+(y*y));
-      float atan_arg = y/x;
-      float theta = arctan(y/x);
->>>>>>> f377ce7e7d0a10c75fb93aa181d82c68d2834f20
       
       polar_pcl[j][0] = rad;
       polar_pcl[j][1] = theta;
@@ -138,27 +101,17 @@ private:
     }
 
     //adjusting for yaw changes
-<<<<<<< HEAD
     for(int j = 0; j < n; ++j){
       polar_pcl[j][1] = polar_pcl[j][1] - yaw_current;
     }
     //convert all to back to cartesian
     //std::vector<std::vector<float>> xyzi_conv_matrix(n, std::vector<float>(4));
     for(int j = 0; j < n; ++j){
-=======
-    for(int j = 0; j<pcl_cloud->size(); ++j){
-      float yaw = yaw_callback();
-      polar_pcl[j][1] = polar_pcl[j][1] - yaw;
-    }
-    //convert all to back to cartesian
-    for(int j =0; j<pcl_cloud->size(),++j){
->>>>>>> f377ce7e7d0a10c75fb93aa181d82c68d2834f20
       float rad = polar_pcl[j][0];
       float theta = polar_pcl[j][1];
       float z = polar_pcl[j][2];
       float i = polar_pcl[j][3];
 
-<<<<<<< HEAD
       // xyzi_conv_matrix[j][0] = rad*cos(theta); //- pos[0];
       // xyzi_conv_matrix[j][1] = rad*sin(theta); //- pos[1];
       // xyzi_conv_matrix[j][2] = z;
@@ -176,22 +129,6 @@ private:
     //xyzi_matrix.insert(xyzi_matrix.end(),xyzi_conv_matrix.begin(),xyzi_conv_matrix.end());
 
       //Open a CSV file in write mode
-=======
-      //get current localization position
-      std::vector<float> pos = odometry_callback();
-
-      xyzi_matrix[j + (mem_count * 30000)][0] = rad*cos(theta) - pos[0];
-      xyzi_matrix[j + (mem_count * 30000)][1] = rad*sin(theta) - pos[1];
-      xyzi_matrix[j + (mem_count * 30000)][2] = z;
-      xyzi_matrix[j + (mem_count * 30000)][3] = i;
-    }
-    mem_count += 1;
-    if(mem_count == stack_size + 1){
-      mem_count = 0;
-    }
-
-      // Open a CSV file in write mode
->>>>>>> f377ce7e7d0a10c75fb93aa181d82c68d2834f20
     std::ofstream csv_file;
     csv_file.open("output_xyzi_matrix.csv");
 
@@ -222,11 +159,7 @@ private:
       p.x = xyzi_matrix[i][0];
       p.y = xyzi_matrix[i][1];
       p.z = xyzi_matrix[i][2];
-<<<<<<< HEAD
       p.intensity = xyzi_matrix[i][3];
-=======
-      p.intensity = xyzi_matrix[i][3]
->>>>>>> f377ce7e7d0a10c75fb93aa181d82c68d2834f20
       pcloud.push_back(p);
     }
 
@@ -272,7 +205,6 @@ private:
     // Now you have the XYZ matrix in 'xyz_matrix'
     // You can further process or use it as needed
 };
-<<<<<<< HEAD
   void yaw_callback(const std_msgs::msg::Float64::SharedPtr msg){
     yaw = msg->data;
   }
@@ -282,20 +214,6 @@ private:
     float z = msg->z;
 
     position = {x,y,z};
-=======
-  float yaw;
-  float yaw_callback(const std_msgs::Float64::SharedPtr msg){
-    yaw = msg.data;
-    return yaw;
-  }
-  std::vector<float> odometry_callback(const geometry_msgs::msg::Point::SharedPtr pos){
-    float x = pos.x;
-    float y = pos.y;
-    float z = pos.z;
-
-    std::vector<float> position = {x,y,z};
-    return position;
->>>>>>> f377ce7e7d0a10c75fb93aa181d82c68d2834f20
   }
 };
 int main(int argc, char** argv) {
