@@ -1,6 +1,0 @@
-[  8%] [32mBuilding CXX object CMakeFiles/PointCloudProcessor.dir/src/computer_viz/PointCloudProcessor.cpp.o[0m
-[ 25%] Built target sensor_combined_listener
-[ 41%] Built target debug_vect_advertiser
-[ 58%] Built target vehicle_gps_position_listener
-[ 83%] Built target offboard_control
-[ 91%] Built target test_flight_control

@@ -1,7 +1,0 @@
-[  0%] Built target ament_cmake_python_copy_px4_msgs
-[  0%] Built target px4_msgs__cpp
-[35m[1mConsolidate compiler generated dependencies of target px4_msgs__rosidl_generator_c[0m
-[ 12%] Built target px4_msgs__rosidl_generator_c
-[ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
-[ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
-[ 12%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m

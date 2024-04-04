@@ -1,7 +1,0 @@
-[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/computer_viz/pc_ingestion.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.h: No such file or directory
-    6 | #include [01;31m[K"rclcpp/rclcpp.h"[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/point_cloud_processor.dir/build.make:76: CMakeFiles/point_cloud_processor.dir/src/computer_viz/pc_ingestion.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/point_cloud_processor.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

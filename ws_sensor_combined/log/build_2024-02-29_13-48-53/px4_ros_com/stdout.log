@@ -1,8 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target lidar_handoff[0m
-[ 85%] Built target debug_vect_advertiser
-[ 85%] Built target frame_transforms
-[ 85%] Built target sensor_combined_listener
-[ 85%] Built target vehicle_gps_position_listener
-[ 85%] Built target offboard_control
-[ 85%] Built target test_flight_control
-[ 92%] [32mBuilding CXX object CMakeFiles/lidar_handoff.dir/src/examples/listeners/lidar_handoff.cpp.o[0m

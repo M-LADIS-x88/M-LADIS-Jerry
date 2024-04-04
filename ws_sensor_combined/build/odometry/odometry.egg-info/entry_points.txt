@@ -1,2 +1,0 @@
-[console_scripts]
-run = odometry.odometry_node:main

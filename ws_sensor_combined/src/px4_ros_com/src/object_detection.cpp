@@ -28,7 +28,7 @@ constexpr size_t minClusterSize = 100;    // Minimum number of points to form a 
 
 struct Point
 {
-    float x, y, z;
+    float x, y, z, intensity;
     bool processed; // Flag to mark if the point has been processed
 
     //default constructor

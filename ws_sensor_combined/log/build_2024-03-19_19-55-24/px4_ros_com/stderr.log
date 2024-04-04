@@ -1,7 +1,0 @@
-[01m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/computer_viz/PointCloudProcessor.cpp:10:10:[m[K [01;31m[Kfatal error: [m[Kpcl/PCLPointCloud2.h: No such file or directory
-   10 | #include [01;31m[K<pcl/PCLPointCloud2.h>[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/PointCloudProcessor.dir/build.make:76: CMakeFiles/PointCloudProcessor.dir/src/computer_viz/PointCloudProcessor.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/PointCloudProcessor.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

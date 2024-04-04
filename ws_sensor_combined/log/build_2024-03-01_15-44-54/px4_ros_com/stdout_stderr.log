@@ -1,7 +1,0 @@
-[ 14%] Built target frame_transforms
-[ 21%] [32mBuilding CXX object CMakeFiles/lidar_handoff.dir/src/examples/listeners/lidar_handoff.cpp.o[0m
-[01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/px4_ros_com/src/examples/listeners/lidar_handoff.cpp: No such file or directory
-compilation terminated.
-gmake[2]: *** [CMakeFiles/lidar_handoff.dir/build.make:76: CMakeFiles/lidar_handoff.dir/src/examples/listeners/lidar_handoff.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:305: CMakeFiles/lidar_handoff.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

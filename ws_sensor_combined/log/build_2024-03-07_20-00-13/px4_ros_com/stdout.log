@@ -1,7 +1,0 @@
-[ 92%] Built target frame_transforms
-[ 92%] Built target debug_vect_advertiser
-[ 92%] Built target offboard_control
-[ 92%] Built target vehicle_gps_position_listener
-[ 92%] Built target test_flight_control
-[ 92%] [32mBuilding CXX object CMakeFiles/pc_conv.dir/src/examples/listeners/pc_conv.cpp.o[0m
-[ 92%] Built target sensor_combined_listener

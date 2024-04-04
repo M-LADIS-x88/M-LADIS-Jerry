@@ -1,9 +1,0 @@
-[0.058s] Invoking command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com -- -j8 -l8
-[0.073s] [31mCMake Error at CMakeLists.txt:81:
-[0.073s]   Parse error.  Expected a command name, got right paren with text ")".
-[0.073s] 
-[0.073s] [0m
-[0.073s] -- Configuring incomplete, errors occurred!
-[0.073s] See also "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com/CMakeFiles/CMakeOutput.log".
-[0.074s] gmake: *** [Makefile:472: cmake_check_build_system] Error 1
-[0.076s] Invoked command in '/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com -- -j8 -l8

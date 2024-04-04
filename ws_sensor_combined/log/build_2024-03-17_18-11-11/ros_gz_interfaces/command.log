@@ -1,1 +1,0 @@
-Invoking command in '/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/ros_gz_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/src/ros_gz/ros_gz_interfaces -DCMAKE_INSTALL_PREFIX=/home/dserbin/Documents/M-LADIS-sim/PX4 Aux/ws_sensor_combined/install/ros_gz_interfaces

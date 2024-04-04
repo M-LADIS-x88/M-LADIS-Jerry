@@ -1,8 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target pcd_pub[0m
-[ 71%] Built target offboard_control
-[ 71%] Built target frame_transforms
-[ 71%] Built target debug_vect_advertiser
-[ 71%] Built target sensor_combined_listener
-[ 71%] Built target vehicle_gps_position_listener
-[ 85%] Built target test_flight_control
-[ 92%] [32mBuilding CXX object CMakeFiles/pcd_pub.dir/src/computer_viz/pcd_pub.cpp.o[0m

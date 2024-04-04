@@ -1,7 +1,0 @@
-[31mCMake Error at CMakeLists.txt:81:
-  Parse error.  Expected a command name, got right paren with text ")".
-
-[0m
--- Configuring incomplete, errors occurred!
-See also "/home/robmoemac/M-LADIS-sim/PX4 Aux/ws_sensor_combined/build/px4_ros_com/CMakeFiles/CMakeOutput.log".
-gmake: *** [Makefile:472: cmake_check_build_system] Error 1
