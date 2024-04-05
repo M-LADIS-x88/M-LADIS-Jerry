@@ -1,0 +1,182 @@
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:19[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:47:41:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+   47 |     printCentroidsToCSV(pred_candidates,[01;35m[K'predator_centroids.csv'[m[K);
+      |                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:150:46:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+  150 |      writeCentroidsToCSV(centroids_saturated,[01;35m[K'centroids.csv'[m[K);
+      |                                              [01;35m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:9[m[K,
+                 from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:19[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:25:18:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kconstexpr const double clusterDistance[m[K’
+   25 | constexpr double [01;31m[KclusterDistance[m[K = 0.5; // Maximum distance between points in a cluster
+      |                  [01;31m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:13[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:25:18:[m[K [01;36m[Knote: [m[K‘[01m[Kconstexpr const double clusterDistance[m[K’ previously defined here
+   25 | constexpr double [01;36m[KclusterDistance[m[K = 0.5; // Maximum distance between points in a cluster
+      |                  [01;36m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:9[m[K,
+                 from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:19[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:26:18:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kconstexpr const size_t minClusterSize[m[K’
+   26 | constexpr size_t [01;31m[KminClusterSize[m[K = 3;    // Minimum number of points to form a cluster
+      |                  [01;31m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:13[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:26:18:[m[K [01;36m[Knote: [m[K‘[01m[Kconstexpr const size_t minClusterSize[m[K’ previously defined here
+   26 | constexpr size_t [01;36m[KminClusterSize[m[K = 3;    // Minimum number of points to form a cluster
+      |                  [01;36m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:9[m[K,
+                 from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:19[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:29:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Point[m[K’
+   29 | struct [01;31m[KPoint[m[K
+      |        [01;31m[K^~~~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:13[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:29:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Point[m[K’
+   29 | struct [01;36m[KPoint[m[K
+      |        [01;36m[K^~~~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:9[m[K,
+                 from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:19[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:41:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct BoundingBox[m[K’
+   41 | struct [01;31m[KBoundingBox[m[K {
+      |        [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:13[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:41:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct BoundingBox[m[K’
+   41 | struct [01;36m[KBoundingBox[m[K {
+      |        [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:9[m[K,
+                 from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:19[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:47:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct obj[m[K’
+   47 | struct [01;31m[Kobj[m[K
+      |        [01;31m[K^~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:13[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:47:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct obj[m[K’
+   47 | struct [01;36m[Kobj[m[K
+      |        [01;36m[K^~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:9[m[K,
+                 from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:19[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:53:13:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[KBoundingBox computeBoundingBox(const std::vector<Point>&)[m[K’
+   53 | BoundingBox [01;31m[KcomputeBoundingBox[m[K(const std::vector<Point>& cluster) {
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:13[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:53:13:[m[K [01;36m[Knote: [m[K‘[01m[KBoundingBox computeBoundingBox(const std::vector<Point>&)[m[K’ previously defined here
+   53 | BoundingBox [01;36m[KcomputeBoundingBox[m[K(const std::vector<Point>& cluster) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:9[m[K,
+                 from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:19[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:74:26:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstd::vector<BoundingBox> computeBoxes(const std::vector<std::vector<Point> >&)[m[K’
+   74 | std::vector<BoundingBox> [01;31m[KcomputeBoxes[m[K(const std::vector<std::vector<Point>>& clusters){
+      |                          [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:13[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:74:26:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::vector<BoundingBox> computeBoxes(const std::vector<std::vector<Point> >&)[m[K’ previously defined here
+   74 | std::vector<BoundingBox> [01;36m[KcomputeBoxes[m[K(const std::vector<std::vector<Point>>& clusters){
+      |                          [01;36m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:9[m[K,
+                 from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:19[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:86:7:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kfloat euclideanDistance(const Point&, const Point&)[m[K’
+   86 | float [01;31m[KeuclideanDistance[m[K(const Point& p1, const Point& p2) {
+      |       [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:13[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:86:7:[m[K [01;36m[Knote: [m[K‘[01m[Kfloat euclideanDistance(const Point&, const Point&)[m[K’ previously defined here
+   86 | float [01;36m[KeuclideanDistance[m[K(const Point& p1, const Point& p2) {
+      |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:9[m[K,
+                 from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:19[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:94:33:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstd::vector<std::vector<Point> > euclideanClustering(const std::vector<Point>&)[m[K’
+   94 | std::vector<std::vector<Point>> [01;31m[KeuclideanClustering[m[K(const std::vector<Point>& points) {
+      |                                 [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:13[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:94:33:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::vector<std::vector<Point> > euclideanClustering(const std::vector<Point>&)[m[K’ previously defined here
+   94 | std::vector<std::vector<Point>> [01;36m[KeuclideanClustering[m[K(const std::vector<Point>& points) {
+      |                                 [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:9[m[K,
+                 from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:19[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:123:7:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[KPoint calculateCentroid(const std::vector<Point>&)[m[K’
+  123 | Point [01;31m[KcalculateCentroid[m[K(const std::vector<Point>& cluster) {
+      |       [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:13[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:123:7:[m[K [01;36m[Knote: [m[K‘[01m[KPoint calculateCentroid(const std::vector<Point>&)[m[K’ previously defined here
+  123 | Point [01;36m[KcalculateCentroid[m[K(const std::vector<Point>& cluster) {
+      |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:9[m[K,
+                 from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:19[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:136:20:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstd::vector<Point> calculateCentroids(const std::vector<std::vector<Point> >&)[m[K’
+  136 | std::vector<Point> [01;31m[KcalculateCentroids[m[K(const std::vector<std::vector<Point>>& clusters) {
+      |                    [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:13[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:136:20:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::vector<Point> calculateCentroids(const std::vector<std::vector<Point> >&)[m[K’ previously defined here
+  136 | std::vector<Point> [01;36m[KcalculateCentroids[m[K(const std::vector<std::vector<Point>>& clusters) {
+      |                    [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:9[m[K,
+                 from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:19[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:146:6:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kvoid printCentroids(const std::vector<Point>&)[m[K’
+  146 | void [01;31m[KprintCentroids[m[K(const std::vector<Point>& centroids) {
+      |      [01;31m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:13[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:146:6:[m[K [01;36m[Knote: [m[K‘[01m[Kvoid printCentroids(const std::vector<Point>&)[m[K’ previously defined here
+  146 | void [01;36m[KprintCentroids[m[K(const std::vector<Point>& centroids) {
+      |      [01;36m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:9[m[K,
+                 from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:19[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:153:20:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstd::vector<Point> generatePointsWithClusters(int, int)[m[K’
+  153 | std::vector<Point> [01;31m[KgeneratePointsWithClusters[m[K(int num_points, int num_clusters) {
+      |                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:13[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:153:20:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::vector<Point> generatePointsWithClusters(int, int)[m[K’ previously defined here
+  153 | std::vector<Point> [01;36m[KgeneratePointsWithClusters[m[K(int num_points, int num_clusters) {
+      |                    [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:9[m[K,
+                 from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:19[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:180:18:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstd::vector<obj> outputObjects(std::vector<Point>, std::vector<BoundingBox>)[m[K’
+  180 | std::vector<obj> [01;31m[KoutputObjects[m[K(vector<Point> centroids, vector<BoundingBox> boxes){
+      |                  [01;31m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:13[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:180:18:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::vector<obj> outputObjects(std::vector<Point>, std::vector<BoundingBox>)[m[K’ previously defined here
+  180 | std::vector<obj> [01;36m[KoutputObjects[m[K(vector<Point> centroids, vector<BoundingBox> boxes){
+      |                  [01;36m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:9[m[K,
+                 from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:19[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:191:6:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kvoid writeCentroidsToCSV(const std::vector<Point>&, std::string)[m[K’
+  191 | void [01;31m[KwriteCentroidsToCSV[m[K(const std::vector<Point>& centroids,string filename) {
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:13[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:191:6:[m[K [01;36m[Knote: [m[K‘[01m[Kvoid writeCentroidsToCSV(const std::vector<Point>&, std::string)[m[K’ previously defined here
+  191 | void [01;36m[KwriteCentroidsToCSV[m[K(const std::vector<Point>& centroids,string filename) {
+      |      [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:9[m[K,
+                 from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:19[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:219:6:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kvoid euclideanClusteringUsingKDTree(const std::vector<Point>&, float, std::vector<bool, std::allocator<bool> >&, flann::Index<flann::L2<float> >&, std::vector<std::vector<Point> >&)[m[K’
+  219 | void [01;31m[KeuclideanClusteringUsingKDTree[m[K(
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:13[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:219:6:[m[K [01;36m[Knote: [m[K‘[01m[Kvoid euclideanClusteringUsingKDTree(const std::vector<Point>&, float, std::vector<bool, std::allocator<bool> >&, flann::Index<flann::L2<float> >&, std::vector<std::vector<Point> >&)[m[K’ previously defined here
+  219 | void [01;36m[KeuclideanClusteringUsingKDTree[m[K(
+      |      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:9[m[K,
+                 from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:19[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:272:6:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kvoid writeAllClusterPointsToSingleCSV(const std::vector<std::vector<Point> >&)[m[K’
+  272 | void [01;31m[KwriteAllClusterPointsToSingleCSV[m[K(const std::vector<std::vector<Point>>& clusters) {
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:13[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/object_detection.cpp:272:6:[m[K [01;36m[Knote: [m[K‘[01m[Kvoid writeAllClusterPointsToSingleCSV(const std::vector<std::vector<Point> >&)[m[K’ previously defined here
+  272 | void [01;36m[KwriteAllClusterPointsToSingleCSV[m[K(const std::vector<std::vector<Point>>& clusters) {
+      |      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:19[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:[m[K In function ‘[01m[Kstd::vector<Point> filterArena(std::vector<Point>, std::vector<Point>)[m[K’:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:35:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Point>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   35 |     for(int i = 0; [01;35m[Ki < centroids.size()[m[K; ++i){
+      |                    [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:[m[K In function ‘[01m[KPoint findPredator(std::vector<Point>, std::vector<Point>)[m[K’:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:47:5:[m[K [01;31m[Kerror: [m[K‘[01m[KprintCentroidsToCSV[m[K’ was not declared in this scope; did you mean ‘[01m[KwriteCentroidsToCSV[m[K’?
+   47 |     [01;31m[KprintCentroidsToCSV[m[K(pred_candidates,'predator_centroids.csv');
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+      |     [32m[KwriteCentroidsToCSV[m[K
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:49:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+   49 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:[m[K In member function ‘[01m[Kvoid PointCloudProcessor::pointCloudCallback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:150:46:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[K778269558[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’}
+  150 |      writeCentroidsToCSV(centroids_saturated,[01;31m[K'centroids.csv'[m[K);
+      |                                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                                              [01;31m[K|[m[K
+      |                                              [01;31m[Kint[m[K
+gmake[2]: *** [CMakeFiles/PointCloudProcessor.dir/build.make:76: CMakeFiles/PointCloudProcessor.dir/src/PointCloudProcessor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/PointCloudProcessor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -188,9 +188,9 @@ std::vector<obj> outputObjects(vector<Point> centroids, vector<BoundingBox> boxe
     return objects;
 }
 // Function to print centroids to console and write them to a CSV file
-void writeCentroidsToCSV(const std::vector<Point>& centroids) {
+void writeCentroidsToCSV(const std::vector<Point>& centroids,string filename) {
     // Open an output file stream for writing to a CSV file
-    std::ofstream out_file("centroids.csv");
+    std::ofstream out_file(filename);
 
     // Check if the file was successfully opened
     if (!out_file) {
@@ -269,30 +269,30 @@ void euclideanClusteringUsingKDTree(
 }
 
 
-void writeAllClusterPointsToSingleCSV(const std::vector<std::vector<Point>>& clusters) {
-    // Open an output file stream for writing to the CSV file
-    std::ofstream out_file("all_clusters.csv");
+// void writeAllClusterPointsToSingleCSV(const std::vector<std::vector<Point>>& clusters) {
+//     // Open an output file stream for writing to the CSV file
+//     std::ofstream out_file("all_clusters.csv");
 
-    // Check if the file was opened successfully
-    if (!out_file.is_open()) {
-        std::cerr << "Cannot open all_clusters.csv for writing." << std::endl;
-        return;
-    }
+//     // Check if the file was opened successfully
+//     if (!out_file.is_open()) {
+//         std::cerr << "Cannot open all_clusters.csv for writing." << std::endl;
+//         return;
+//     }
 
-    // Optionally, write a header to the CSV
-    out_file << "cluster_id,x,y,z\n";
+//     // Optionally, write a header to the CSV
+//     out_file << "cluster_id,x,y,z\n";
 
-    // Write points of each cluster into the file
-    for (size_t i = 0; i < clusters.size(); ++i) {
-        for (const auto& point : clusters[i]) {
-            // Include the cluster index as the first column
-            out_file << i << ',' << point.x << ',' << point.y << ',' << point.z << '\n';
-        }
-    }
+//     // Write points of each cluster into the file
+//     for (size_t i = 0; i < clusters.size(); ++i) {
+//         for (const auto& point : clusters[i]) {
+//             // Include the cluster index as the first column
+//             out_file << i << ',' << point.x << ',' << point.y << ',' << point.z << '\n';
+//         }
+//     }
 
-    // Close the file
-    out_file.close();
-}
+//     // Close the file
+//     out_file.close();
+// }
 
 
 // int main() {

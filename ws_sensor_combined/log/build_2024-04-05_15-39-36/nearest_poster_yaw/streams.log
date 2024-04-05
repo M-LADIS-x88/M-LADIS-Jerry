@@ -1,0 +1,27 @@
+[0.039s] Invoking command in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/nearest_poster_yaw': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/nearest_poster_yaw -- -j8 -l8
+[0.082s] [100%] Built target nearest_poster_node
+[0.092s] Invoked command in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/nearest_poster_yaw' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/nearest_poster_yaw -- -j8 -l8
+[0.118s] Invoking command in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/nearest_poster_yaw': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/nearest_poster_yaw
+[0.127s] -- Install configuration: ""
+[0.127s] -- Up-to-date: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw/lib/nearest_poster_yaw/nearest_poster_node
+[0.127s] -- Up-to-date: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw/share/nearest_poster_yaw/launch
+[0.127s] -- Up-to-date: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw/share/nearest_poster_yaw/launch/launch.py
+[0.128s] -- Up-to-date: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw/share/nearest_poster_yaw/launch/.vscode
+[0.128s] -- Up-to-date: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw/share/nearest_poster_yaw/launch/.vscode/c_cpp_properties.json
+[0.128s] -- Up-to-date: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw/share/nearest_poster_yaw/launch/.vscode/settings.json
+[0.128s] -- Up-to-date: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw/share/ament_index/resource_index/package_run_dependencies/nearest_poster_yaw
+[0.128s] -- Up-to-date: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw/share/ament_index/resource_index/parent_prefix_path/nearest_poster_yaw
+[0.128s] -- Up-to-date: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw/share/nearest_poster_yaw/environment/ament_prefix_path.sh
+[0.128s] -- Up-to-date: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw/share/nearest_poster_yaw/environment/ament_prefix_path.dsv
+[0.128s] -- Up-to-date: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw/share/nearest_poster_yaw/environment/path.sh
+[0.128s] -- Up-to-date: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw/share/nearest_poster_yaw/environment/path.dsv
+[0.128s] -- Up-to-date: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw/share/nearest_poster_yaw/local_setup.bash
+[0.128s] -- Up-to-date: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw/share/nearest_poster_yaw/local_setup.sh
+[0.128s] -- Up-to-date: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw/share/nearest_poster_yaw/local_setup.zsh
+[0.128s] -- Up-to-date: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw/share/nearest_poster_yaw/local_setup.dsv
+[0.128s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw/share/nearest_poster_yaw/package.dsv
+[0.128s] -- Up-to-date: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw/share/ament_index/resource_index/packages/nearest_poster_yaw
+[0.129s] -- Up-to-date: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw/share/nearest_poster_yaw/cmake/nearest_poster_yawConfig.cmake
+[0.129s] -- Up-to-date: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw/share/nearest_poster_yaw/cmake/nearest_poster_yawConfig-version.cmake
+[0.129s] -- Up-to-date: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw/share/nearest_poster_yaw/package.xml
+[0.160s] Invoked command in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/nearest_poster_yaw' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/nearest_poster_yaw

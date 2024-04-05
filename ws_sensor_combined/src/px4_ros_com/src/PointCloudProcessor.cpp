@@ -16,6 +16,7 @@
 #include <sstream>
 #include <ctime>
 #include "bound_detection.cpp"
+#include "predator_detection.cpp"
 
 
 class PointCloudProcessor : public rclcpp::Node {
@@ -74,10 +75,10 @@ private:
 
     for (int i = 0; i < n; ++i) {
       const auto& pt = pcl_cloud->points[i];
+      //flip z values for flight cause lidar is upside down
       if (pt.z < 2 && pt.z > -0.1) {
         double mag_dist = std::sqrt(pt.x*pt.x + pt.y+pt.y);
         if(pt.x < 32 && pt.y < 40 && pt.x > -32 && pt.y > -40 && mag_dist > 0.5){
-
         xyzi_matrix[i][0] = pt.x; // Store x coordinate
         xyzi_matrix[i][1] = pt.y; // Store y coordinate
         xyzi_matrix[i][3] = pt.z; // Store z coordinate
@@ -141,16 +142,18 @@ private:
      euclideanClusteringUsingKDTree(pcloud, clusterDistance, processed, kdTree, clusters);
     // //euclideanClustering(pcloud);
 
-     writeAllClusterPointsToSingleCSV(clusters);
+     //writeAllClusterPointsToSingleCSV(clusters);
      std::vector<Point> centroids = calculateCentroids(clusters);
 
      centroids_saturated.insert(centroids_saturated.end(),centroids.begin(),centroids.end());
 
-     writeCentroidsToCSV(centroids_saturated);
+     writeCentroidsToCSV(centroids_saturated,"centroids.csv");
 
      std::vector<Point> bounds = calculateBounds(centroids_saturated);
 
      writeBoundsToCSV(bounds,"bounds.csv");
+
+     findPredator(centroids_saturated,bounds);
 
 
 

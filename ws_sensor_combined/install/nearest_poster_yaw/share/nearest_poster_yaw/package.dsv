@@ -1,0 +1,8 @@
+source;share/nearest_poster_yaw/hook/cmake_prefix_path.ps1
+source;share/nearest_poster_yaw/hook/cmake_prefix_path.dsv
+source;share/nearest_poster_yaw/hook/cmake_prefix_path.sh
+source;share/nearest_poster_yaw/local_setup.bash
+source;share/nearest_poster_yaw/local_setup.dsv
+source;share/nearest_poster_yaw/local_setup.ps1
+source;share/nearest_poster_yaw/local_setup.sh
+source;share/nearest_poster_yaw/local_setup.zsh

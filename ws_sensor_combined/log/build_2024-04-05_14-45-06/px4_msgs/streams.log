@@ -1,0 +1,22 @@
+[0.024s] Invoking command in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/px4_msgs -- -j8 -l8
+[1.160s] [  0%] Built target px4_msgs__cpp
+[1.190s] [  0%] Built target ament_cmake_python_copy_px4_msgs
+[1.233s] [ 12%] Built target px4_msgs__rosidl_generator_c
+[1.360s] [ 29%] Built target px4_msgs__rosidl_typesupport_c
+[1.360s] [ 37%] Built target px4_msgs__rosidl_typesupport_cpp
+[1.381s] [ 50%] Built target px4_msgs__rosidl_typesupport_introspection_cpp
+[1.382s] [ 63%] Built target px4_msgs__rosidl_typesupport_introspection_c
+[1.395s] [ 75%] Built target px4_msgs__rosidl_typesupport_fastrtps_cpp
+[1.474s] [ 88%] Built target px4_msgs__rosidl_typesupport_fastrtps_c
+[1.503s] [ 88%] Built target px4_msgs
+[1.547s] [ 88%] Built target px4_msgs__py
+[1.573s] running egg_info
+[1.616s] writing px4_msgs.egg-info/PKG-INFO
+[1.624s] writing dependency_links to px4_msgs.egg-info/dependency_links.txt
+[1.628s] writing top-level names to px4_msgs.egg-info/top_level.txt
+[1.638s] interrupted
+[1.638s] gmake[1]: *** [CMakeFiles/Makefile2:475: CMakeFiles/px4_msgs__rosidl_generator_py.dir/all] Interrupt
+[1.663s] gmake[2]: *** [CMakeFiles/ament_cmake_python_build_px4_msgs_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_px4_msgs_egg] Interrupt
+[1.664s] gmake[1]: *** [CMakeFiles/Makefile2:447: CMakeFiles/ament_cmake_python_build_px4_msgs_egg.dir/all] Interrupt
+[1.664s] gmake: *** [Makefile:146: all] Interrupt
+[1.666s] Invoked command in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/px4_msgs' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/px4_msgs -- -j8 -l8

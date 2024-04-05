@@ -1,0 +1,55 @@
+[35m[1mConsolidate compiler generated dependencies of target debug_vect_advertiser[0m
+[35m[1mConsolidate compiler generated dependencies of target vehicle_gps_position_listener[0m
+[35m[1mConsolidate compiler generated dependencies of target test_flight_control[0m
+[35m[1mConsolidate compiler generated dependencies of target sensor_combined_listener[0m
+[35m[1mConsolidate compiler generated dependencies of target offboard_control[0m
+[ 16%] Built target vehicle_gps_position_listener
+[ 33%] Built target debug_vect_advertiser
+[ 58%] Built target test_flight_control
+[ 66%] Built target offboard_control
+[ 83%] Built target sensor_combined_listener
+[ 91%] [32mBuilding CXX object CMakeFiles/PointCloudProcessor.dir/src/PointCloudProcessor.cpp.o[0m
+In file included from [01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:19[m[K:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:[m[K In function ‘[01m[Kstd::vector<Point> filter_arena(std::vector<Point>, std::vector<Point>)[m[K’:
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:12:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kfloat[m[K’
+   12 |     [01;31m[Kfloat[m[K neg_x = bounds[1].x;
+      |     [01;31m[K^~~~~[m[K
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:18:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kneg_x[m[K’ was not declared in this scope; did you mean ‘[01m[Kneg_y[m[K’?
+   18 |     if(norm(pos_x) > norm([01;31m[Kneg_x[m[K)){
+      |                           [01;31m[K^~~~~[m[K
+      |                           [32m[Kneg_y[m[K
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:19:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx_bound[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   19 |         float [01;35m[Kx_bound[m[K = neg_x;
+      |               [01;35m[K^~~~~~~[m[K
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:22:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx_bound[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   22 |         float [01;35m[Kx_bound[m[K = pos_x;
+      |               [01;35m[K^~~~~~~[m[K
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:26:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ky_bound[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   26 |         float [01;35m[Ky_bound[m[K = neg_y;
+      |               [01;35m[K^~~~~~~[m[K
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:29:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ky_bound[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   29 |         float [01;35m[Ky_bound[m[K = pos_y;
+      |               [01;35m[K^~~~~~~[m[K
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:32:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Point>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   32 |     for(int i = 0; [01;35m[Ki < centroids.size()[m[K, ++i){
+      |                    [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:32:22:[m[K [01;35m[Kwarning: [m[Kvalue computed is not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:32:45:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K)[m[K’ token
+   32 |     for(int i = 0; i < centroids.size(), ++i[01;31m[K)[m[K{
+      |                                             [01;31m[K^[m[K
+      |                                             [32m[K;[m[K
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:33:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kx_bound[m[K’ was not declared in this scope
+   33 |         if(norm(centroids[i].x) < norm([01;31m[Kx_bound[m[K) && norm(centroids[i].y < norm(y_bound))){
+      |                                        [01;31m[K^~~~~~~[m[K
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:33:79:[m[K [01;31m[Kerror: [m[K‘[01m[Ky_bound[m[K’ was not declared in this scope
+   33 |         if(norm(centroids[i].x) < norm(x_bound) && norm(centroids[i].y < norm([01;31m[Ky_bound[m[K))){
+      |                                                                               [01;31m[K^~~~~~~[m[K
+[01m[K/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/predator_detection.cpp:34:48:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+   34 |             arena_pings.push_back(centroids[i])
+      |                                                [01;31m[K^[m[K
+      |                                                [32m[K;[m[K
+   35 |         [32m[K}[m[K
+      |         [32m[K~[m[K                                       
+gmake[2]: *** [CMakeFiles/PointCloudProcessor.dir/build.make:76: CMakeFiles/PointCloudProcessor.dir/src/PointCloudProcessor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/PointCloudProcessor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
