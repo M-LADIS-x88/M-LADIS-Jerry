@@ -22,12 +22,12 @@ bool isNegativeY(const Point& p) {
 
 // Named function to check for positive x
 bool isPositiveX(const Point& p) {
-    return p.x > 0;
+    return p.x > 0 && norm(p.y)<1;
 }
 
 // Named function to check for negative x
 bool isNegativeX(const Point& p) {
-    return p.x < 0;
+    return p.x < 0 && norm(p.y)<1;
 }
 Point calculateWeightedAverage(const std::vector<Point>& points,
                                std::function<bool(const Point&)> condition) {

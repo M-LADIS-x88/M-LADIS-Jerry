@@ -25,12 +25,11 @@ public:
   PointCloudProcessor() : Node("PointCloudProcessor") {
     // Subscribe to PointCloud2 topic
     subscriber_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
-        "maps/edges", 10,
+        "maps/edges", 1,
         std::bind(&PointCloudProcessor::pointCloudCallback, this, std::placeholders::_1));
   }
 
 private:
-
   std::vector<Point> centroids_saturated;
   rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr subscriber_;
   void writeBoundsToCSV(const std::vector<Point>& bounds, const std::string& file_name) {
@@ -76,8 +75,8 @@ private:
     for (int i = 0; i < n; ++i) {
       const auto& pt = pcl_cloud->points[i];
       if (pt.z < 2 && pt.z > -0.1) {
-        //double mag_dist = std::sqrt(pt.x*pt.x + pt.y+pt.y);
-        if(pt.x < 32 && pt.y < 32 && pt.x > -32 && pt.y > -32){
+        double mag_dist = std::sqrt(pt.x*pt.x + pt.y+pt.y);
+        if(pt.x < 32 && pt.y < 40 && pt.x > -32 && pt.y > -40 && mag_dist > 0.5){
 
         xyzi_matrix[i][0] = pt.x; // Store x coordinate
         xyzi_matrix[i][1] = pt.y; // Store y coordinate
@@ -138,7 +137,7 @@ private:
     kdTree.buildIndex();
 
     // Perform clustering using the k-d tree
-     float clusterDistance = 0.3;
+     float clusterDistance = 0.5;
      euclideanClusteringUsingKDTree(pcloud, clusterDistance, processed, kdTree, clusters);
     // //euclideanClustering(pcloud);
 
@@ -156,8 +155,9 @@ private:
 
 
 };
-
 };
+
+
 int main(int argc, char** argv) {
   rclcpp::init(argc, argv);
   auto node = std::make_shared<PointCloudProcessor>();
