@@ -1,4 +1,0 @@
-Invoking command in '/home/blake/M-LADIS-Jerry/ws_sensor_combined/build/nearest_poster_yaw': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/blake/M-LADIS-Jerry/ws_sensor_combined/build/nearest_poster_yaw -- -j12 -l12
-Invoked command in '/home/blake/M-LADIS-Jerry/ws_sensor_combined/build/nearest_poster_yaw' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/blake/M-LADIS-Jerry/ws_sensor_combined/build/nearest_poster_yaw -- -j12 -l12
-Invoking command in '/home/blake/M-LADIS-Jerry/ws_sensor_combined/build/nearest_poster_yaw': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/blake/M-LADIS-Jerry/ws_sensor_combined/build/nearest_poster_yaw
-Invoked command in '/home/blake/M-LADIS-Jerry/ws_sensor_combined/build/nearest_poster_yaw' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/blake/M-LADIS-Jerry/ws_sensor_combined/build/nearest_poster_yaw

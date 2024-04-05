@@ -295,6 +295,57 @@ void euclideanClusteringUsingKDTree(
         }
     }
 }
+void euclideanClusteringUsingKDTreePred(
+    const std::vector<Point>& points,
+    float searchRadius,
+    std::vector<bool>& processed,
+    flann::Index<flann::L2<float>>& kdTree,
+    std::vector<std::vector<Point>>& clusters) {
+
+
+
+    for (size_t i = 0; i < points.size(); ++i) {
+        if (processed[i]) continue;
+
+        //inside for loop to resize or reallocate on each iteration, fight memory leaks
+        std::vector<std::vector<int>> indices;
+        std::vector<std::vector<float>> dists;
+        std::vector<int> clusterIndices;
+        clusterIndices.push_back(i); // Include this point
+        processed[i] = true; // Mark it as processed
+        
+        // Build a list of points belonging to this cluster
+        for (size_t j = 0; j < clusterIndices.size(); j++) {
+            int idx = clusterIndices[j];
+            std::vector<float> query_point = { points[idx].x, points[idx].y, points[idx].z };
+            flann::Matrix<float> query_mat(&query_point[0], 1, 3);
+            
+            // Perform a radius search to find all neighbors
+            indices.clear();
+            dists.clear();
+            kdTree.radiusSearch(query_mat, indices, dists, searchRadius * searchRadius, flann::SearchParams());
+            
+            for (size_t k = 0; k < indices[0].size(); k++) {
+                size_t nIndex = indices[0][k];
+                if (!processed[nIndex]) {
+                    processed[nIndex] = true;
+                    clusterIndices.push_back(nIndex); // Add to current cluster
+                }
+            }
+        }
+        
+        // Convert indices to actual points for this cluster
+        std::vector<Point> cluster;
+        cluster.reserve(clusterIndices.size());
+        for (int idx : clusterIndices) {
+            cluster.push_back(points[idx]);
+        }
+        
+        if (cluster.size() >= 2) {
+            clusters.push_back(cluster);
+        }
+    }
+}
 
 
 // void writeAllClusterPointsToSingleCSV(const std::vector<std::vector<Point>>& clusters) {

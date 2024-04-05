@@ -16,7 +16,7 @@
 #include <sstream>
 #include <ctime>
 #include "bound_detection.cpp"
-#include "predator_detection.cpp"
+//#include "predator_detection.cpp"
 
 
 class PointCloudProcessor : public rclcpp::Node {
@@ -28,19 +28,47 @@ public:
     subscriber_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
         "maps/edges", 1,
         std::bind(&PointCloudProcessor::pointCloudCallback, this, std::placeholders::_1));
-    poster_subscriber_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
-        "maps/intensity_edges", 1,
-        std::bind(&PointCloudProcessor::posterCallback, this, std::placeholders::_1));
-    predator_subscriber_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
+    predator_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
         "slam_registered_points", 1,
-        std::bind(&PointCloudProcessor::pointCloudCallback, this, std::placeholders::_1));*/
+        std::bind(&PointCloudProcessor::predatorCallback, this, std::placeholders::_1));    
   }
 
 private:
   std::vector<Point> centroids_saturated;
+  std::vector<Point> centroids_pred;
+  std::vector<Point> bounds;
+
   rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr subscriber_;
-  rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr poster_subscriber_;
-  rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr predator_subscriber_;
+  rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr predator_;
+
+  void writeCentroidsToCSVPred(const std::vector<Point>& centroids,string filename) {
+    // Open an output file stream for writing to a CSV file
+    std::ofstream out_file("predator_centroids.csv");
+
+    // Check if the file was successfully opened
+    if (!out_file) {
+        std::cerr << "Error: Could not open centroids.csv for writing." << std::endl;
+        return;
+    }
+
+    // Write the header to the CSV file
+    out_file << "x,y,z\n";
+
+    // Loop through each centroid to print and write to CSV
+    for (const auto& centroid : centroids) {
+        // Print to console
+        // std::cout << "Centroid - x: " << centroid.x 
+        //           << ", y: " << centroid.y 
+        //           << ", z: " << centroid.z << std::endl;
+        
+        // Write to CSV file
+        out_file << centroid.x << ','
+                 << centroid.y << ','
+                 << centroid.z << '\n';
+    }
+
+    // File is closed automatically when out_file goes out of scope
+}
 
   void writeBoundsToCSV(const std::vector<Point>& bounds, const std::string& file_name) {
     if (bounds.size() != 4) {
@@ -69,7 +97,40 @@ private:
     out_file.close();
 }
   
-  
+  std::vector<Point> filterArena(std::vector<Point> centroids, std::vector<Point> bounds){
+    float pos_x = bounds[0].x;
+    float neg_x = bounds[1].x;
+    float pos_y = bounds[2].y;
+    float neg_y = bounds[3].y;
+
+    std::vector<Point> arena_pings;
+    float x_bound;
+    float y_bound;
+
+    if(norm(pos_x) > norm(neg_x)){
+        x_bound = neg_x;
+    }
+    else{
+        x_bound = pos_x;
+    }
+
+    if(norm(pos_y) > norm(neg_y)){
+        y_bound = neg_y;
+    }
+    else{
+        y_bound = pos_y;
+    }
+
+    for(std::size_t i = 0; i < centroids.size(); ++i){
+        if(norm(centroids[i].x) < norm(x_bound) && norm(centroids[i].y) < norm(y_bound)){
+            arena_pings.push_back(centroids[i]);
+        }
+    }
+    writeCentroidsToCSVPred(arena_pings,"predator_centroids.csv");
+
+    return arena_pings;
+
+}
   void pointCloudCallback(const sensor_msgs::msg::PointCloud2::SharedPtr msg) {
     //RCLCPP_INFO(this->get_logger(), "Receiving Point Cloud...");
     // Convert PointCloud2 message to PCL PointCloud
@@ -95,7 +156,6 @@ private:
         }
       }
     }
-    
       // Open a CSV file in write mode
     std::ofstream csv_file;
     csv_file.open("output_xyzi_matrix.csv");
@@ -148,70 +208,135 @@ private:
     kdTree.buildIndex();
 
     // Perform clustering using the k-d tree
-    float clusterDistance = 0.5;
-    euclideanClusteringUsingKDTree(pcloud, clusterDistance, processed, kdTree, clusters);
+     float clusterDistance = 0.5;
+     euclideanClusteringUsingKDTree(pcloud, clusterDistance, processed, kdTree, clusters);
     // //euclideanClustering(pcloud);
 
-<<<<<<< HEAD
      //writeAllClusterPointsToSingleCSV(clusters);
      std::vector<Point> centroids = calculateCentroids(clusters);
-=======
-     writeAllClusterPointsToSingleCSV(clusters);
-    std::vector<Point> centroids = calculateCentroids(clusters);
->>>>>>> 65b9e45adce5768221191a6983200bd122e78686
 
-    centroids_saturated.insert(centroids_saturated.end(),centroids.begin(),centroids.end());
+     centroids_saturated.insert(centroids_saturated.end(),centroids.begin(),centroids.end());
 
-<<<<<<< HEAD
      writeCentroidsToCSV(centroids_saturated,"centroids.csv");
-=======
-    writeCentroidsToCSV(centroids_saturated);
->>>>>>> 65b9e45adce5768221191a6983200bd122e78686
 
-    std::vector<Point> bounds = calculateBounds(centroids_saturated);
+     bounds = calculateBounds(centroids_saturated);
 
-    writeBoundsToCSV(bounds,"bounds.csv");
-    std::vector<std::vector<float>> wall_matrix;
-    std::vector<Point> walls;
-    float tolerance = 2;
-    float xmin = bounds[1].x;
-    float xmax = bounds[0].x;
-    //float ymin = bounds[3].y;
-    float ymax = bounds[2].y;
+     writeBoundsToCSV(bounds,"bounds.csv");
 
-    for (const auto& point : xyzi_matrix) {
-      float x = point[0];
-      float y = point[1];
-      float z = point[3];
-      float intensity_threshold = 0;
+     //findPredator(centroids_saturated,bounds);
 
-      // Only include points within the expanded bounds
-      if (x >= xmin - tolerance && x <= xmax + tolerance &&
-          y >= -ymax - tolerance && y <= ymax + tolerance && 
-          z >= intensity_threshold) {
-          wall_matrix.push_back(point);
+};
+  void predatorCallback(const sensor_msgs::msg::PointCloud2::SharedPtr msg){
+    pcl::PointCloud<pcl::PointXYZI>::Ptr pcl_cloud(new pcl::PointCloud<pcl::PointXYZI>);
+    pcl::fromROSMsg(*msg, *pcl_cloud);
+
+    // Extract XYZ matrix
+    int n = pcl_cloud->size();
+    //rclcpp::Subscription<sensor_msgs::msg::Point>
+    std::vector<std::vector<float>> xyzi_matrix(n, std::vector<float>(4)); // Create nx4 matrix for xyzi
+
+    bounds = calculateBounds(centroids_saturated);
+    float pos_x = bounds[0].x;
+    float neg_x = bounds[1].x;
+    float pos_y = bounds[2].y;
+    float neg_y = bounds[3].y;
+
+    // std::cerr << pos_x;
+    // std::cerr << neg_x;
+    // std::cerr << pos_y;
+    // std::cerr << neg_y;
+
+    std::vector<Point> arena_pings;
+    float x_bound;
+    float y_bound;
+
+    // std::cerr << "y bound";
+    // std::cerr << y_bound;
+    // std::cerr << "x bound";
+    // std::cerr << x_bound;
+
+    for (int i = 0; i < n; ++i) {
+      const auto& pt = pcl_cloud->points[i];
+      //flip z values for flight cause lidar is upside down
+      if (pt.z < 10 && pt.z > -1) {
+        //double mag_dist = std::sqrt(pt.x*pt.x + pt.y+pt.y);
+        if(neg_y == 0){
+          neg_y = -pos_y;
+        }
+        if(pt.x < pos_x - 1.2 && pt.x > neg_x + 1.2 && pt.y < pos_y - 1.2 && pt.y > neg_y + 1.2){
+        xyzi_matrix[i][0] = pt.x; // Store x coordinate
+        xyzi_matrix[i][1] = pt.y; // Store y coordinate
+        xyzi_matrix[i][3] = pt.z; // Store z coordinate
+        xyzi_matrix[i][2] = pt.intensity; // Store intensity
+        }
       }
     }
-    for (size_t i = 0 ; i<wall_matrix.size(); i++)
+    //structuring xyz array into format of point structs
+    std::vector<Point> pcloud;
+  
+    //iterate through xyz matrix and put into point structs
+    for (int i = 0 ; i<n; i++)
     {
       Point p;
-      p.x = wall_matrix[i][0];
-      p.y = wall_matrix[i][1];
-      p.z = wall_matrix[i][2];
-      walls.push_back(p);
+      p.x = xyzi_matrix[i][0];
+      p.y = xyzi_matrix[i][1];
+      p.z = xyzi_matrix[i][2];
+      pcloud.push_back(p);
     }
-    writeWallsToCSV(walls);
+    //pcloud = filterArena(pcloud,bounds);
+      // Open a CSV file in write mode
+    std::ofstream csv_file;
+    csv_file.open("predator_xyzi_matrix.csv");
 
-     findPredator(centroids_saturated,bounds);
+    if (csv_file.is_open()) {
+        // Writing the headers to the CSV file
+        csv_file << "X,Y,Z,I,\n";
+    
+        // Write matrix data to the CSV file
+        for (int i = 0; i < n; ++i) {
+            csv_file << xyzi_matrix[i][0] << ", " << xyzi_matrix[i][1] << ", " 
+            << xyzi_matrix[i][2] << ", "<< xyzi_matrix[i][3] <<  "\n";
+        }
+    
+        // Close the file
+        csv_file.close();
+    } else {
+        // Handle the error in case the file is not opened
+        std::cerr << "Error opening file for writing.\n";
+    }
 
+    std::vector<bool> processed(pcloud.size(), false);
+    std::vector<std::vector<Point>> clusters;
 
+    
+    std::vector<float> dataset_flatten(pcloud.size() * 3);
+    for (size_t i = 0; i < pcloud.size(); ++i) {
+        dataset_flatten[3 * i] = pcloud[i].x;
+        dataset_flatten[3 * i + 1] = pcloud[i].y;
+        dataset_flatten[3 * i + 2] = pcloud[i].z;
+    }
+    flann::Matrix<float> dataset(dataset_flatten.data(), pcloud.size(), 3);
+    //flann::Matrix<float> dataset(flann_points[0].data(), flann_points.size(), 3);
 
+    //Build kd tree index for point cloud
+    flann::Index<flann::L2<float>> kdTree(dataset, flann::KDTreeIndexParams(4));
+    kdTree.buildIndex();
+
+    // Perform clustering using the k-d tree
+     float clusterDistance = 0.5;
+     euclideanClusteringUsingKDTreePred(pcloud, clusterDistance, processed, kdTree, clusters);
+    // //euclideanClustering(pcloud);
+
+     //writeAllClusterPointsToSingleCSV(clusters);
+     std::vector<Point> centroids = calculateCentroids(clusters);
+
+     //centroids_pred.insert(centroids_pred.end(),centroids.begin(),centroids.end());
+   
+    writeCentroidsToCSVPred(centroids,"predator_centroids.csv");
+
+    
+  };
 };
-};
-  void posterCallback(const sensor_msgs::msg::PointCloud2::SharedPtr msg){
-
-  }
-
 
 int main(int argc, char** argv) {
   rclcpp::init(argc, argv);
