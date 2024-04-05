@@ -1,0 +1,17 @@
+[31mCMake Error at CMakeLists.txt:12 (find_package):
+  By not providing "Findlidar_slam.cmake" in CMAKE_MODULE_PATH this project
+  has asked CMake to find a package configuration file provided by
+  "lidar_slam", but CMake did not find one.
+
+  Could not find a package configuration file provided by "lidar_slam" with
+  any of the following names:
+
+    lidar_slamConfig.cmake
+    lidar_slam-config.cmake
+
+  Add the installation prefix of "lidar_slam" to CMAKE_PREFIX_PATH or set
+  "lidar_slam_DIR" to a directory containing one of the above files.  If
+  "lidar_slam" provides a separate development package or SDK, be sure it has
+  been installed.
+
+[0m

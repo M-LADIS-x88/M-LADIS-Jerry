@@ -1,0 +1,52 @@
+[0.007s] Invoking command in '/home/blake/M-LADIS-Jerry/ws_sensor_combined/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/localization:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/classifier:/opt/ros/humble /usr/bin/cmake --build /home/blake/M-LADIS-Jerry/ws_sensor_combined/build/px4_ros_com -- -j12 -l12
+[0.044s] [35m[1mConsolidate compiler generated dependencies of target PointCloudProcessor[0m
+[0.049s] [ 66%] Built target vehicle_gps_position_listener
+[0.049s] [ 66%] Built target sensor_combined_listener
+[0.049s] [ 66%] Built target offboard_control
+[0.049s] [ 66%] Built target test_flight_control
+[0.050s] [ 83%] Built target debug_vect_advertiser
+[0.067s] [ 91%] [32mBuilding CXX object CMakeFiles/PointCloudProcessor.dir/src/PointCloudProcessor.cpp.o[0m
+[4.570s] [01m[K/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:[m[K In member function ‘[01m[Kvoid PointCloudProcessor::pointCloudCallback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[4.570s] [01m[K/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com/src/PointCloudProcessor.cpp:181:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[4.570s]   181 |     for (int i = 0 ; [01;35m[Ki<wall_matrix.size()[m[K; i++)
+[4.570s]       |                      [01;35m[K~^~~~~~~~~~~~~~~~~~~[m[K
+[11.307s] [100%] [32m[1mLinking CXX executable PointCloudProcessor[0m
+[16.461s] [100%] Built target PointCloudProcessor
+[16.469s] Invoked command in '/home/blake/M-LADIS-Jerry/ws_sensor_combined/build/px4_ros_com' returned '0': CMAKE_PREFIX_PATH=/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/localization:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/classifier:/opt/ros/humble /usr/bin/cmake --build /home/blake/M-LADIS-Jerry/ws_sensor_combined/build/px4_ros_com -- -j12 -l12
+[16.493s] Invoking command in '/home/blake/M-LADIS-Jerry/ws_sensor_combined/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/localization:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/classifier:/opt/ros/humble /usr/bin/cmake --install /home/blake/M-LADIS-Jerry/ws_sensor_combined/build/px4_ros_com
+[16.498s] -- Install configuration: ""
+[16.567s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/sensor_combined_listener
+[16.590s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/vehicle_gps_position_listener
+[16.613s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/debug_vect_advertiser
+[16.639s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/offboard_control
+[16.651s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/test_flight_control
+[16.652s] -- Installing: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/PointCloudProcessor
+[16.667s] -- Set runtime path of "/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/PointCloudProcessor" to ""
+[16.667s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/include/px4_ros_com
+[16.668s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/include/px4_ros_com/frame_transforms.h
+[16.669s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//launch
+[16.669s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//launch/offboard_control_launch.yaml
+[16.669s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//launch/sensor_combined_listener.launch.py
+[16.669s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//test
+[16.669s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//test/pipeline_io_test.py
+[16.669s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//test/__init__.py
+[16.670s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//test/test_input.py
+[16.670s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//test/test_output.py
+[16.670s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/ament_index/resource_index/package_run_dependencies/px4_ros_com
+[16.670s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/ament_index/resource_index/parent_prefix_path/px4_ros_com
+[16.670s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/ament_prefix_path.sh
+[16.670s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/ament_prefix_path.dsv
+[16.670s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/path.sh
+[16.670s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/path.dsv
+[16.670s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/local_setup.bash
+[16.670s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/local_setup.sh
+[16.670s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/local_setup.zsh
+[16.670s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/local_setup.dsv
+[16.670s] -- Installing: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.dsv
+[16.670s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/ament_index/resource_index/packages/px4_ros_com
+[16.670s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_dependencies-extras.cmake
+[16.670s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_include_directories-extras.cmake
+[16.670s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/px4_ros_comConfig.cmake
+[16.670s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/px4_ros_comConfig-version.cmake
+[16.670s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.xml
+[16.672s] Invoked command in '/home/blake/M-LADIS-Jerry/ws_sensor_combined/build/px4_ros_com' returned '0': CMAKE_PREFIX_PATH=/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/localization:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/classifier:/opt/ros/humble /usr/bin/cmake --install /home/blake/M-LADIS-Jerry/ws_sensor_combined/build/px4_ros_com

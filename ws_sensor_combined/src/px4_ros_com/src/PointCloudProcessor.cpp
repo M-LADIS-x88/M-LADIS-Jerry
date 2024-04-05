@@ -27,11 +27,20 @@ public:
     subscriber_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
         "maps/edges", 1,
         std::bind(&PointCloudProcessor::pointCloudCallback, this, std::placeholders::_1));
+    poster_subscriber_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
+        "maps/intensity_edges", 1,
+        std::bind(&PointCloudProcessor::posterCallback, this, std::placeholders::_1));
+    predator_subscriber_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
+        "slam_registered_points", 1,
+        std::bind(&PointCloudProcessor::pointCloudCallback, this, std::placeholders::_1));*/
   }
 
 private:
   std::vector<Point> centroids_saturated;
   rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr subscriber_;
+  rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr poster_subscriber_;
+  rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr predator_subscriber_;
+
   void writeBoundsToCSV(const std::vector<Point>& bounds, const std::string& file_name) {
     if (bounds.size() != 4) {
         // Handle the error: bounds vector must contain exactly four elements
@@ -85,6 +94,7 @@ private:
         }
       }
     }
+    
       // Open a CSV file in write mode
     std::ofstream csv_file;
     csv_file.open("output_xyzi_matrix.csv");
@@ -137,25 +147,58 @@ private:
     kdTree.buildIndex();
 
     // Perform clustering using the k-d tree
-     float clusterDistance = 0.5;
-     euclideanClusteringUsingKDTree(pcloud, clusterDistance, processed, kdTree, clusters);
+    float clusterDistance = 0.5;
+    euclideanClusteringUsingKDTree(pcloud, clusterDistance, processed, kdTree, clusters);
     // //euclideanClustering(pcloud);
 
      writeAllClusterPointsToSingleCSV(clusters);
-     std::vector<Point> centroids = calculateCentroids(clusters);
+    std::vector<Point> centroids = calculateCentroids(clusters);
 
-     centroids_saturated.insert(centroids_saturated.end(),centroids.begin(),centroids.end());
+    centroids_saturated.insert(centroids_saturated.end(),centroids.begin(),centroids.end());
 
-     writeCentroidsToCSV(centroids_saturated);
+    writeCentroidsToCSV(centroids_saturated);
 
-     std::vector<Point> bounds = calculateBounds(centroids_saturated);
+    std::vector<Point> bounds = calculateBounds(centroids_saturated);
 
-     writeBoundsToCSV(bounds,"bounds.csv");
+    writeBoundsToCSV(bounds,"bounds.csv");
+    std::vector<std::vector<float>> wall_matrix;
+    std::vector<Point> walls;
+    float tolerance = 2;
+    float xmin = bounds[1].x;
+    float xmax = bounds[0].x;
+    //float ymin = bounds[3].y;
+    float ymax = bounds[2].y;
+
+    for (const auto& point : xyzi_matrix) {
+      float x = point[0];
+      float y = point[1];
+      float z = point[3];
+      float intensity_threshold = 0;
+
+      // Only include points within the expanded bounds
+      if (x >= xmin - tolerance && x <= xmax + tolerance &&
+          y >= -ymax - tolerance && y <= ymax + tolerance && 
+          z >= intensity_threshold) {
+          wall_matrix.push_back(point);
+      }
+    }
+    for (size_t i = 0 ; i<wall_matrix.size(); i++)
+    {
+      Point p;
+      p.x = wall_matrix[i][0];
+      p.y = wall_matrix[i][1];
+      p.z = wall_matrix[i][2];
+      walls.push_back(p);
+    }
+    writeWallsToCSV(walls);
 
 
 
 };
 };
+  void posterCallback(const sensor_msgs::msg::PointCloud2::SharedPtr msg){
+
+  }
 
 
 int main(int argc, char** argv) {

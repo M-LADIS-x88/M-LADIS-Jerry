@@ -1,0 +1,23 @@
+[0.062s] Invoking command in '/home/blake/M-LADIS-Jerry/ws_sensor_combined/build/localization': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/blake/M-LADIS-Jerry/ws_sensor_combined/build/localization -- -j12 -l12
+[0.125s] [35m[1mConsolidate compiler generated dependencies of target localization_node[0m
+[0.156s] [100%] Built target localization_node
+[0.164s] Invoked command in '/home/blake/M-LADIS-Jerry/ws_sensor_combined/build/localization' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/blake/M-LADIS-Jerry/ws_sensor_combined/build/localization -- -j12 -l12
+[0.189s] Invoking command in '/home/blake/M-LADIS-Jerry/ws_sensor_combined/build/localization': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/blake/M-LADIS-Jerry/ws_sensor_combined/build/localization
+[0.194s] -- Install configuration: ""
+[0.195s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/localization/lib/localization/localization_node
+[0.195s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/localization/share/ament_index/resource_index/package_run_dependencies/localization
+[0.195s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/localization/share/ament_index/resource_index/parent_prefix_path/localization
+[0.195s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/localization/share/localization/environment/ament_prefix_path.sh
+[0.195s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/localization/share/localization/environment/ament_prefix_path.dsv
+[0.195s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/localization/share/localization/environment/path.sh
+[0.195s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/localization/share/localization/environment/path.dsv
+[0.196s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/localization/share/localization/local_setup.bash
+[0.196s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/localization/share/localization/local_setup.sh
+[0.196s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/localization/share/localization/local_setup.zsh
+[0.196s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/localization/share/localization/local_setup.dsv
+[0.196s] -- Installing: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/localization/share/localization/package.dsv
+[0.196s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/localization/share/ament_index/resource_index/packages/localization
+[0.196s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/localization/share/localization/cmake/localizationConfig.cmake
+[0.197s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/localization/share/localization/cmake/localizationConfig-version.cmake
+[0.197s] -- Up-to-date: /home/blake/M-LADIS-Jerry/ws_sensor_combined/install/localization/share/localization/package.xml
+[0.201s] Invoked command in '/home/blake/M-LADIS-Jerry/ws_sensor_combined/build/localization' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/blake/M-LADIS-Jerry/ws_sensor_combined/build/localization

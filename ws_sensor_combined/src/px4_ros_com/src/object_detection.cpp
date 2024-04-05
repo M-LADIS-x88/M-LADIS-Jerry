@@ -216,6 +216,34 @@ void writeCentroidsToCSV(const std::vector<Point>& centroids) {
 
     // File is closed automatically when out_file goes out of scope
 }
+void writeWallsToCSV(const std::vector<Point>& centroids) {
+    // Open an output file stream for writing to a CSV file
+    std::ofstream out_file("walls.csv");
+
+    // Check if the file was successfully opened
+    if (!out_file) {
+        std::cerr << "Error: Could not open centroids.csv for writing." << std::endl;
+        return;
+    }
+
+    // Write the header to the CSV file
+    out_file << "X,Y,Z\n";
+
+    // Loop through each centroid to print and write to CSV
+    for (const auto& centroid : centroids) {
+        // Print to console
+        // std::cout << "Centroid - x: " << centroid.x 
+        //           << ", y: " << centroid.y 
+        //           << ", z: " << centroid.z << std::endl;
+        
+        // Write to CSV file
+        out_file << centroid.x << ','
+                 << centroid.y << ','
+                 << centroid.z << '\n';
+    }
+
+    // File is closed automatically when out_file goes out of scope
+}
 void euclideanClusteringUsingKDTree(
     const std::vector<Point>& points,
     float searchRadius,
