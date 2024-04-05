@@ -1,51 +1,63 @@
-#include "rclcpp/rclcpp.hpp"
-#include "std_msgs/msg/bool.hpp"
-#include "lidar_slam/msg/slam_command.hpp"
+#include <rclcpp/rclcpp.hpp>
+#include <std_msgs/msg/bool.hpp>
+
 #include <cstdlib>
+#include <memory>
 #include <string>
+#include <signal.h>
+#include <sys/wait.h>
+#include <iostream>
+#include <unistd.h>
 
-class EndFlightSubscriber : public rclcpp::Node
-{
+class MapsEdgesRecorder : public rclcpp::Node {
 public:
-    EndFlightSubscriber() : Node("end_flight_subscriber")
-    {
+    MapsEdgesRecorder() 
+        : Node("maps_edges_recorder"), rosbag_process_id(-1) {
+        // Initialize subscriber
         subscriber_ = this->create_subscription<std_msgs::msg::Bool>(
-            "/end_flight",
-            10,
-            std::bind(&EndFlightSubscriber::end_flight_callback, this, std::placeholders::_1));
+            "/end_flight", 10, std::bind(&MapsEdgesRecorder::endFlightCallback, this, std::placeholders::_1));
 
-        publisher_ = this->create_publisher<lidar_slam::msg::SlamCommand>("/slam_command", 10);
-    }
-
-private:
-    void end_flight_callback(const std_msgs::msg::Bool::SharedPtr msg)
-    {
-        if (msg->data)
-        {
-            RCLCPP_INFO(this->get_logger(), "End flight command received, saving map now...");
-            save_map();
+        // Start rosbag recording in a new process
+        rosbag_process_id = fork();
+        if (rosbag_process_id == 0) { // Child process
+            // Execute rosbag record command
+            //execl("/bin/bash", "/bin/bash", "-c", "ros2 bag record -o maps_edges /maps_edges", (char *)NULL);
+            execl("/bin/bash", "/bin/bash", "-c", "ros2 bag record /velodyne_points", (char *)NULL);
+            // If execl returns, it must have failed
+            RCLCPP_ERROR(this->get_logger(), "Failed to start rosbag recording!");
+            exit(EXIT_FAILURE);
+        } else if (rosbag_process_id < 0) {
+            // Fork failed
+            RCLCPP_ERROR(this->get_logger(), "Failed to fork process!");
+            exit(EXIT_FAILURE);
         }
     }
 
-    void save_map()
-    {
-        std::string map_path = "/PATH/Map"; // Replace with actual path.
+    ~MapsEdgesRecorder() {
+        // Send SIGINT (Ctrl+C) to the rosbag process to stop recording
+        if (rosbag_process_id != -1) {
+            kill(rosbag_process_id, SIGINT);
+            waitpid(rosbag_process_id, nullptr, 0); // Wait for the child process to terminate
+        }
+    }
 
-        lidar_slam::msg::SlamCommand slam_command_msg;
-        slam_command_msg.command = 17;
-        slam_command_msg.string_arg = map_path;
-
-        publisher_->publish(slam_command_msg);
+private:
+    void endFlightCallback(const std_msgs::msg::Bool::SharedPtr msg) {
+        if (msg->data == true && rosbag_process_id != -1) {
+            // Send SIGINT (Ctrl+C) to the rosbag process to stop recording
+            kill(rosbag_process_id, SIGINT);
+            rosbag_process_id = -1;
+            rclcpp::shutdown();
+        }
     }
 
     rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr subscriber_;
-    rclcpp::Publisher<lidar_slam::msg::SlamCommand>::SharedPtr publisher_;
+    pid_t rosbag_process_id;
 };
 
-int main(int argc, char * argv[])
-{
+int main(int argc, char *argv[]) {
     rclcpp::init(argc, argv);
-    auto node = std::make_shared<EndFlightSubscriber>();
+    auto node = std::make_shared<MapsEdgesRecorder>();
     rclcpp::spin(node);
     rclcpp::shutdown();
     return 0;

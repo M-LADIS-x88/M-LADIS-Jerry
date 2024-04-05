@@ -3,19 +3,25 @@
 <package format="3">
   <name>mapping</name>
   <version>0.0.0</version>
-  <description>Mapping package that includes a node for handling end flight operations.</description>
+  <description>Mapping package that includes nodes for handling mapping and end flight operations.</description>
   <maintainer email="btmarlow@umich.edu">Blake</maintainer>
   <license>TODO: License declaration</license>
 
+  <!-- Build tool dependency -->
   <buildtool_depend>ament_cmake</buildtool_depend>
 
+  <!-- Other package dependencies -->
   <depend>rclcpp</depend>
   <depend>std_msgs</depend>
-  <depend>lidar_slam</depend>
 
+  <!-- Declare compatibility with the ROS environment -->
+  <depend>ros_environment</depend>
+
+  <!-- Linter test dependencies -->
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
 
+  <!-- Export information -->
   <export>
     <build_type>ament_cmake</build_type>
   </export>

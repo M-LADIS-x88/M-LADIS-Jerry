@@ -15,7 +15,6 @@ add_executable(map_node src/map_node.cpp)
 ament_target_dependencies(map_node
   rclcpp
   std_msgs
-  lidar_slam
 )
 
 target_include_directories(map_node PUBLIC
@@ -23,7 +22,8 @@ target_include_directories(map_node PUBLIC
   $<INSTALL_INTERFACE:include>)
 target_compile_features(map_node PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
 
-install(TARGETS map_node
+install(TARGETS 
+  map_node 
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
