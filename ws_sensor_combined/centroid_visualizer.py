@@ -25,7 +25,7 @@ fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 
 # Create a scatter plot for the centroids
-scatter = ax.scatter(x, y, z, marker='o', s=20, c='r', alpha=0.6, label='Centroids')
+scatter = ax.scatter(x, y, z, marker='o', s=1, c='r', alpha=0.6, label='Centroids')
 
 # Add a large blue dot at the origin
 origin = ax.scatter([0], [0], [0], marker='o', s=100, c='b', alpha=1.0, label='Origin')

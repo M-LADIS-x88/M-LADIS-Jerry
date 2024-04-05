@@ -23,7 +23,7 @@ using namespace std;
 
 // Define your 3D point type
 constexpr double clusterDistance = 0.5; // Maximum distance between points in a cluster
-constexpr size_t minClusterSize = 100;    // Minimum number of points to form a cluster
+constexpr size_t minClusterSize = 6;    // Minimum number of points to form a cluster
 
 
 struct Point

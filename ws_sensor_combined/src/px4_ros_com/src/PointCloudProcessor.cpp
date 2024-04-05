@@ -15,120 +15,78 @@
 #include <fstream>
 #include <sstream>
 #include <ctime>
-#include <cmath>
-#include "geometry_msgs/msg/pose_array.hpp"
-#include "geometry_msgs/msg/vector3.hpp"
-#include "std_msgs/msg/float64.hpp"
-#include "std_msgs/msg/bool.hpp"
-
-
-using namespace std;
+#include "bound_detection.cpp"
 
 
 class PointCloudProcessor : public rclcpp::Node {
 public:
+//or try "maps/edges"
+//og is "slam_registered_points"
   PointCloudProcessor() : Node("PointCloudProcessor") {
     // Subscribe to PointCloud2 topic
     subscriber_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
-        "/slam_registered_points", 1,
+        "maps/edges", 10,
         std::bind(&PointCloudProcessor::pointCloudCallback, this, std::placeholders::_1));
-    locale_ = this->create_subscription<geometry_msgs::msg::Point>(
-        "/position", 1,
-        std::bind(&PointCloudProcessor::odometry_callback, this, std::placeholders::_1));
-    yaw_ = this->create_subscription<std_msgs::msg::Float64>(
-        "/yaw", 1,
-        std::bind(&PointCloudProcessor::yaw_callback, this, std::placeholders::_1));
   }
 
 private:
-  float yaw;
-  std::vector<float> position;
-  rclcpp::Subscription<geometry_msgs::msg::Point>::SharedPtr locale_;
+
+  std::vector<Point> centroids_saturated;
   rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr subscriber_;
-  rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr yaw_;
+  void writeBoundsToCSV(const std::vector<Point>& bounds, const std::string& file_name) {
+    if (bounds.size() != 4) {
+        // Handle the error: bounds vector must contain exactly four elements
+        std::cerr << "Error: Bounds vector must contain exactly four elements.\n";
+        return;
+    }
 
-  //initializing counter for when you need to start overwriting previous pointclouds
+    // Open the CSV file for writing
+    std::ofstream out_file(file_name);
+    if (!out_file) {
+        std::cerr << "Error: Could not open " << file_name << " for writing.\n";
+        return;
+    }
 
+    // Write the header
+    out_file << "Boundary, X, Y\n";
 
+    // Write the bounds components to the file
+    out_file << "pos_x_avg, " << bounds[0].x << ", " << bounds[0].y << "\n";
+    out_file << "neg_x_avg, " << bounds[1].x << ", " << bounds[1].y << "\n";
+    out_file << "pos_y_avg, " << bounds[2].x << ", " << bounds[2].y << "\n";
+    out_file << "neg_y_avg, " << bounds[3].x << ", " << bounds[3].y << "\n";
 
-  //std::vector<std::vector<float>> xyzi_matrix; // Create nx4 matrix for xyzi
+    // Close the file
+    out_file.close();
+}
+  
   
   void pointCloudCallback(const sensor_msgs::msg::PointCloud2::SharedPtr msg) {
     //RCLCPP_INFO(this->get_logger(), "Receiving Point Cloud...");
     // Convert PointCloud2 message to PCL PointCloud
     pcl::PointCloud<pcl::PointXYZI>::Ptr pcl_cloud(new pcl::PointCloud<pcl::PointXYZI>);
     pcl::fromROSMsg(*msg, *pcl_cloud);
-    
-
-    std::vector<float> pos = position;
-    float yaw_current = yaw;
 
     // Extract XYZ matrix
     int n = pcl_cloud->size();
+    //rclcpp::Subscription<sensor_msgs::msg::Point>
     std::vector<std::vector<float>> xyzi_matrix(n, std::vector<float>(4)); // Create nx4 matrix for xyzi
 
-    // Assuming pcl_cloud is a pointer to a data structure containing 3D points
-    std::vector<std::vector<float>> xyzi_temp_matrix(n, std::vector<float>(4));
+
     for (int i = 0; i < n; ++i) {
       const auto& pt = pcl_cloud->points[i];
-      if (pt.z < 2 && pt.z > -1) {
+      if (pt.z < 2 && pt.z > -0.1) {
         //double mag_dist = std::sqrt(pt.x*pt.x + pt.y+pt.y);
         if(pt.x < 32 && pt.y < 32 && pt.x > -32 && pt.y > -32){
 
-        xyzi_temp_matrix[i][0] = pt.x; // Store x coordinate
-        xyzi_temp_matrix[i][1] = pt.y; // Store y coordinate
-        xyzi_temp_matrix[i][2] = pt.z; // Store z coordinate
-        xyzi_temp_matrix[i][3] = pt.intensity; // Store intensity
+        xyzi_matrix[i][0] = pt.x; // Store x coordinate
+        xyzi_matrix[i][1] = pt.y; // Store y coordinate
+        xyzi_matrix[i][3] = pt.z; // Store z coordinate
+        xyzi_matrix[i][2] = pt.intensity; // Store intensity
         }
       }
     }
-    //making polar pointcloud
-    //[rad,theta,z,intensity]
-    //const int allocated_points_polar = 30000;
-    std::vector<std::vector<float>> polar_pcl(n, std::vector<float>(4));
-    //shifting pointcloud to global frame
-    for(int j = 0; j < n; ++j){
-      float x = xyzi_temp_matrix[j][0];
-      float y = xyzi_temp_matrix[j][1];
-      
-      float rad = std::sqrt((x*x)+(y*y));
-      float theta = std::atan2(y,x);
-      
-      polar_pcl[j][0] = rad;
-      polar_pcl[j][1] = theta;
-      polar_pcl[j][2] = xyzi_temp_matrix[j][2];
-      polar_pcl[j][3] = xyzi_temp_matrix[j][3];
-    }
-
-    //adjusting for yaw changes
-    for(int j = 0; j < n; ++j){
-      polar_pcl[j][1] = polar_pcl[j][1] - yaw_current;
-    }
-    //convert all to back to cartesian
-    //std::vector<std::vector<float>> xyzi_conv_matrix(n, std::vector<float>(4));
-    for(int j = 0; j < n; ++j){
-      float rad = polar_pcl[j][0];
-      float theta = polar_pcl[j][1];
-      float z = polar_pcl[j][2];
-      float i = polar_pcl[j][3];
-
-      // xyzi_conv_matrix[j][0] = rad*cos(theta); //- pos[0];
-      // xyzi_conv_matrix[j][1] = rad*sin(theta); //- pos[1];
-      // xyzi_conv_matrix[j][2] = z;
-      // xyzi_conv_matrix[j][3] = i;
-
-      xyzi_matrix[j][0] = rad*cos(theta);// - pos[0];
-      xyzi_matrix[j][1] = rad*sin(theta);// -  pos[1];
-      xyzi_matrix[j][2] = z;
-      xyzi_matrix[j][3] = i;
-
-    }
-    
-    //xyzi_matrix.insert(xyzi_matrix.end(), xyzi_conv_matrix.begin(), xyzi_conv_matrix.end());
-
-    //xyzi_matrix.insert(xyzi_matrix.end(),xyzi_conv_matrix.begin(),xyzi_conv_matrix.end());
-
-      //Open a CSV file in write mode
+      // Open a CSV file in write mode
     std::ofstream csv_file;
     csv_file.open("output_xyzi_matrix.csv");
 
@@ -152,14 +110,12 @@ private:
     std::vector<Point> pcloud;
   
     //iterate through xyz matrix and put into point structs
-    //used to have a * stack size next to the n
-    for (int i = 0 ; i< n; i++)
+    for (int i = 0 ; i<n; i++)
     {
       Point p;
       p.x = xyzi_matrix[i][0];
       p.y = xyzi_matrix[i][1];
       p.z = xyzi_matrix[i][2];
-      p.intensity = xyzi_matrix[i][3];
       pcloud.push_back(p);
     }
 
@@ -182,39 +138,25 @@ private:
     kdTree.buildIndex();
 
     // Perform clustering using the k-d tree
-     float clusterDistance = 5.0;
+     float clusterDistance = 0.3;
      euclideanClusteringUsingKDTree(pcloud, clusterDistance, processed, kdTree, clusters);
     // //euclideanClustering(pcloud);
 
      writeAllClusterPointsToSingleCSV(clusters);
      std::vector<Point> centroids = calculateCentroids(clusters);
 
-     writeCentroidsToCSV(centroids);
-   
+     centroids_saturated.insert(centroids_saturated.end(),centroids.begin(),centroids.end());
 
-    // Print the stored matrix (optional)
-    //std::cout << "Stored Matrix:\n";
-    //for (int i = 0; i < n; ++i)
-    //{
-    //    std::cout << xyz_matrix[i][0] << " " << xyz_matrix[i][1] << " " << xyz_matrix[i][2] << "\n";
-    //}
+     writeCentroidsToCSV(centroids_saturated);
 
-      // Create Open3D point cloud
+     std::vector<Point> bounds = calculateBounds(centroids_saturated);
+
+     writeBoundsToCSV(bounds,"bounds.csv");
 
 
-    // Now you have the XYZ matrix in 'xyz_matrix'
-    // You can further process or use it as needed
+
 };
-  void yaw_callback(const std_msgs::msg::Float64::SharedPtr msg){
-    yaw = msg->data;
-  }
-  void odometry_callback(const geometry_msgs::msg::Point::SharedPtr msg){
-    float x = msg->x;
-    float y = msg->y;
-    float z = msg->z;
 
-    position = {x,y,z};
-  }
 };
 int main(int argc, char** argv) {
   rclcpp::init(argc, argv);
