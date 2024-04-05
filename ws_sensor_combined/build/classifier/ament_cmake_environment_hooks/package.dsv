@@ -1,4 +1,0 @@
-source;share/classifier/local_setup.bash
-source;share/classifier/local_setup.dsv
-source;share/classifier/local_setup.sh
-source;share/classifier/local_setup.zsh

@@ -1,5 +1,11 @@
 Boundary, X, Y
+<<<<<<< HEAD
 pos_x_avg, 12.1302, 0.414693
 neg_x_avg, -12.3422, -0.151207
 pos_y_avg, -0.370443, 18.5794
+=======
+pos_x_avg, 0, 0
+neg_x_avg, 0, 0
+pos_y_avg, 0, 0
+>>>>>>> 65b9e45adce5768221191a6983200bd122e78686
 neg_y_avg, 0, 0
