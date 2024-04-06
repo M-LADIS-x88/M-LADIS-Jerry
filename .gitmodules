@@ -1,0 +1,3 @@
+[submodule "wpgen/wpgen/M-LADIS-ml"]
+	path = wpgen/wpgen/M-LADIS-ml
+	url = git@github.com:M-LADIS-x88/M-LADIS-ml.git
