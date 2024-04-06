@@ -1,0 +1,173 @@
+[0.008s] Invoking command in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/lidar_conversions': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/localization:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/classifier:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/slam/ros2_wrapping/lidar_conversions -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/lidar_conversions
+[0.058s] -- The C compiler identification is GNU 11.4.0
+[0.109s] -- The CXX compiler identification is GNU 11.4.0
+[0.118s] -- Detecting C compiler ABI info
+[0.182s] -- Detecting C compiler ABI info - done
+[0.193s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.194s] -- Detecting C compile features
+[0.194s] -- Detecting C compile features - done
+[0.198s] -- Detecting CXX compiler ABI info
+[0.269s] -- Detecting CXX compiler ABI info - done
+[0.276s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.277s] -- Detecting CXX compile features
+[0.277s] -- Detecting CXX compile features - done
+[0.279s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.560s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.628s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.631s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.635s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.668s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.695s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[0.759s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.760s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.843s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.872s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.914s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.922s] -- Looking for pthread.h
+[0.979s] -- Looking for pthread.h - found
+[0.979s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.042s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.043s] -- Found Threads: TRUE  
+[1.174s] -- Found pcl_ros: 2.4.0 (/opt/ros/humble/share/pcl_ros/cmake)
+[1.535s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.536s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.536s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.849s] -- Checking for module 'eigen3'
+[1.861s] --   Found eigen3, version 3.4.0
+[1.889s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[1.889s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.918s] -- Checking for module 'flann'
+[1.929s] --   Found flann, version 1.9.1
+[1.962s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[1.962s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[2.754s] -- Checking for module 'libusb-1.0'
+[2.767s] --   Found libusb-1.0, version 1.0.25
+[2.797s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[2.798s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.845s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.968s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.974s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.979s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[3.105s] -- Found Qhull version 8.0.2
+[3.231s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.346s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[3.347s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[3.347s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[3.348s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[3.349s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[3.350s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[3.350s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[3.351s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[3.351s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[3.352s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[3.353s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[3.354s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[3.355s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[3.356s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[3.356s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[3.357s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[3.358s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[3.359s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[3.360s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[3.361s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[3.361s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[3.362s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[3.362s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[3.363s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[3.364s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[3.376s] -- Found livox_ros_driver: 2.1.0 (/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/cmake)
+[3.416s] -- Found std_srvs: 4.2.3 (/opt/ros/humble/share/std_srvs/cmake)
+[3.663s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[3.843s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.094s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.114s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[4.115s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[4.140s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[4.140s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.140s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[4.140s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[4.162s] -- Found PythonExtra: .so  
+[4.557s] -- Configuring done
+[4.711s] -- Generating done
+[4.723s] -- Build files have been written to: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/lidar_conversions
+[4.744s] Invoked command in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/lidar_conversions' returned '0': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/localization:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/classifier:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/slam/ros2_wrapping/lidar_conversions -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/lidar_conversions
+[4.745s] Invoking command in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/lidar_conversions': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/localization:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/classifier:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/lidar_conversions -- -j8 -l8
+[4.781s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[4.789s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[4.790s] [  5%] [32mBuilding CXX object CMakeFiles/livox_conversion_node.dir/src/LivoxToLidarNode.cxx.o[0m
+[4.796s] [  5%] Built target ament_cmake_python_copy_lidar_conversions
+[5.026s] running egg_info
+[5.027s] creating lidar_conversions.egg-info
+[5.048s] writing lidar_conversions.egg-info/PKG-INFO
+[5.049s] writing dependency_links to lidar_conversions.egg-info/dependency_links.txt
+[5.049s] writing top-level names to lidar_conversions.egg-info/top_level.txt
+[5.049s] writing manifest file 'lidar_conversions.egg-info/SOURCES.txt'
+[5.099s] reading manifest file 'lidar_conversions.egg-info/SOURCES.txt'
+[5.100s] writing manifest file 'lidar_conversions.egg-info/SOURCES.txt'
+[5.125s] [  7%] [32mBuilding C object CMakeFiles/lidar_conversions__rosidl_generator_c.dir/rosidl_generator_c/lidar_conversions/srv/detail/estim_params__functions.c.o[0m
+[5.126s] [  9%] [32mBuilding C object CMakeFiles/lidar_conversions__rosidl_generator_c.dir/rosidl_generator_c/lidar_conversions/srv/detail/estim_sense__functions.c.o[0m
+[5.130s] [  9%] Built target lidar_conversions__cpp
+[5.140s] [  9%] Built target ament_cmake_python_build_lidar_conversions_egg
+[5.142s] [ 11%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[5.142s] [ 13%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[5.143s] [ 15%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[5.300s] [ 17%] [32m[1mLinking C shared library liblidar_conversions__rosidl_generator_c.so[0m
+[5.353s] [ 17%] Built target lidar_conversions__rosidl_generator_c
+[5.363s] [ 19%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[5.365s] [ 23%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[5.366s] [ 23%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[5.502s] [ 27%] [32mBuilding CXX object CMakeFiles/lidar_conversions__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lidar_conversions/srv/estim_params__type_support.cpp.o[0m
+[5.503s] [ 27%] [32mBuilding CXX object CMakeFiles/lidar_conversions__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lidar_conversions/srv/estim_sense__type_support.cpp.o[0m
+[5.574s] [ 29%] [32mBuilding CXX object CMakeFiles/lidar_conversions__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lidar_conversions/srv/detail/dds_fastrtps/estim_params__type_support.cpp.o[0m
+[5.659s] [ 31%] [32mBuilding CXX object CMakeFiles/lidar_conversions__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lidar_conversions/srv/detail/estim_params__type_support.cpp.o[0m
+[5.789s] [ 33%] [32mBuilding CXX object CMakeFiles/lidar_conversions__rosidl_typesupport_c.dir/rosidl_typesupport_c/lidar_conversions/srv/estim_params__type_support.cpp.o[0m
+[5.861s] [ 35%] [32mBuilding CXX object CMakeFiles/lidar_conversions__rosidl_typesupport_c.dir/rosidl_typesupport_c/lidar_conversions/srv/estim_sense__type_support.cpp.o[0m
+[5.916s] [ 37%] [32mBuilding CXX object CMakeFiles/lidar_conversions__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lidar_conversions/srv/detail/estim_params__type_support_c.cpp.o[0m
+[5.926s] [ 39%] [32mBuilding CXX object CMakeFiles/lidar_conversions__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lidar_conversions/srv/detail/estim_sense__type_support_c.cpp.o[0m
+[5.927s] [ 41%] [32m[1mLinking CXX shared library liblidar_conversions__rosidl_typesupport_cpp.so[0m
+[5.943s] [ 43%] [32m[1mLinking CXX shared library liblidar_conversions__rosidl_typesupport_c.so[0m
+[6.024s] [ 43%] Built target lidar_conversions__rosidl_typesupport_cpp
+[6.031s] [ 43%] Built target lidar_conversions__rosidl_typesupport_c
+[6.034s] [ 45%] [32mBuilding C object CMakeFiles/lidar_conversions__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lidar_conversions/srv/detail/estim_params__type_support.c.o[0m
+[6.042s] [ 47%] [32mBuilding C object CMakeFiles/lidar_conversions__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lidar_conversions/srv/detail/estim_sense__type_support.c.o[0m
+[6.102s] [ 49%] [32mBuilding CXX object CMakeFiles/velodyne_conversion_node.dir/src/VelodyneToLidarNode.cxx.o[0m
+[6.130s] [ 50%] [32m[1mLinking C shared library liblidar_conversions__rosidl_typesupport_introspection_c.so[0m
+[6.144s] [ 52%] [32mBuilding CXX object CMakeFiles/ouster_conversion_node.dir/src/OusterToLidarNode.cxx.o[0m
+[6.239s] [ 54%] [32mBuilding CXX object CMakeFiles/lidar_conversions__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lidar_conversions/srv/detail/dds_fastrtps/estim_sense__type_support.cpp.o[0m
+[6.257s] [ 56%] [32mBuilding CXX object CMakeFiles/lidar_conversions__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lidar_conversions/srv/detail/estim_sense__type_support.cpp.o[0m
+[6.264s] [ 56%] Built target lidar_conversions__rosidl_typesupport_introspection_c
+[6.362s] [ 58%] [32mBuilding CXX object CMakeFiles/robosense_conversion_node.dir/src/RobosenseToLidarNode.cxx.o[0m
+[6.514s] [ 60%] [32mBuilding CXX object CMakeFiles/hesai_conversion_node.dir/src/HesaiToLidarNode.cxx.o[0m
+[6.582s] [ 62%] [32m[1mLinking CXX shared library liblidar_conversions__rosidl_typesupport_fastrtps_c.so[0m
+[6.829s] [ 62%] Built target lidar_conversions__rosidl_typesupport_fastrtps_c
+[6.860s] [ 64%] [32m[1mLinking CXX shared library liblidar_conversions__rosidl_typesupport_fastrtps_cpp.so[0m
+[6.869s] [ 66%] [32mBuilding CXX object CMakeFiles/generic_conversion_node.dir/src/GenericConversionNode.cxx.o[0m
+[6.876s] [ 68%] [32m[1mLinking CXX shared library liblidar_conversions__rosidl_typesupport_introspection_cpp.so[0m
+[7.005s] [ 68%] Built target lidar_conversions__rosidl_typesupport_fastrtps_cpp
+[7.035s] [ 68%] Built target lidar_conversions__rosidl_typesupport_introspection_cpp
+[7.040s] gmake[2]: *** [CMakeFiles/livox_conversion_node.dir/build.make:76: CMakeFiles/livox_conversion_node.dir/src/LivoxToLidarNode.cxx.o] Interrupt
+[7.041s] gmake[2]: *** wait: No child processes.  Stop.
+[7.041s] gmake[2]: *** Waiting for unfinished jobs....
+[7.041s] gmake[2]: *** wait: No child processes.  Stop.
+[7.041s] gmake[2]: *** [CMakeFiles/hesai_conversion_node.dir/build.make:76: CMakeFiles/hesai_conversion_node.dir/src/HesaiToLidarNode.cxx.o] Interrupt
+[7.041s] gmake[1]: *** [CMakeFiles/Makefile2:683: CMakeFiles/livox_conversion_node.dir/all] Interrupt
+[7.041s] gmake[1]: *** [CMakeFiles/Makefile2:630: CMakeFiles/ouster_conversion_node.dir/all] Error 2
+[7.041s] gmake[2]: *** wait: No child processes.  Stop.
+[7.041s] gmake[2]: *** wait: No child processes.  Stop.
+[7.041s] gmake[2]: *** wait: No child processes.  Stop.
+[7.042s] gmake[2]: *** wait: No child processes.  Stop.
+[7.043s] gmake[2]: *** Waiting for unfinished jobs....
+[7.043s] gmake[2]: *** wait: No child processes.  Stop.
+[7.043s] gmake[2]: *** Waiting for unfinished jobs....
+[7.043s] gmake[2]: *** wait: No child processes.  Stop.
+[7.043s] gmake[2]: *** Waiting for unfinished jobs....
+[7.044s] gmake[2]: *** wait: No child processes.  Stop.
+[7.044s] gmake[2]: *** Waiting for unfinished jobs....
+[7.044s] gmake[2]: *** wait: No child processes.  Stop.
+[7.044s] gmake[1]: *** [CMakeFiles/Makefile2:657: CMakeFiles/robosense_conversion_node.dir/all] Error 2
+[7.044s] gmake[1]: *** [CMakeFiles/Makefile2:710: CMakeFiles/hesai_conversion_node.dir/all] Interrupt
+[7.044s] gmake[1]: *** [CMakeFiles/Makefile2:737: CMakeFiles/generic_conversion_node.dir/all] Error 2
+[7.044s] gmake[1]: *** [CMakeFiles/Makefile2:198: CMakeFiles/lidar_conversions.dir/all] Error 2
+[7.044s] gmake[1]: *** [CMakeFiles/Makefile2:603: CMakeFiles/velodyne_conversion_node.dir/all] Error 2
+[7.044s] gmake: *** [Makefile:146: all] Interrupt
+[7.058s] Invoked command in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/lidar_conversions' returned '-2': AMENT_PREFIX_PATH=/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/localization:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/classifier:/opt/ros/humble LD_LIBRARY_PATH=/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/lidar_conversions -- -j8 -l8

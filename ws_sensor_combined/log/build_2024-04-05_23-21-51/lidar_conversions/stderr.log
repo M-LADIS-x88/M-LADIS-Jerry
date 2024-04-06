@@ -1,0 +1,25 @@
+gmake[2]: *** [CMakeFiles/livox_conversion_node.dir/build.make:76: CMakeFiles/livox_conversion_node.dir/src/LivoxToLidarNode.cxx.o] Interrupt
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** [CMakeFiles/hesai_conversion_node.dir/build.make:76: CMakeFiles/hesai_conversion_node.dir/src/HesaiToLidarNode.cxx.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:683: CMakeFiles/livox_conversion_node.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:630: CMakeFiles/ouster_conversion_node.dir/all] Error 2
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:657: CMakeFiles/robosense_conversion_node.dir/all] Error 2
+gmake[1]: *** [CMakeFiles/Makefile2:710: CMakeFiles/hesai_conversion_node.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:737: CMakeFiles/generic_conversion_node.dir/all] Error 2
+gmake[1]: *** [CMakeFiles/Makefile2:198: CMakeFiles/lidar_conversions.dir/all] Error 2
+gmake[1]: *** [CMakeFiles/Makefile2:603: CMakeFiles/velodyne_conversion_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Interrupt

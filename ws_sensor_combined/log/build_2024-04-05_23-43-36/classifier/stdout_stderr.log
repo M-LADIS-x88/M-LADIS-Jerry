@@ -1,0 +1,6 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/pose_array_to_file_node.dir/src/classifier_node.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/pose_array_publisher_node.dir/src/fake_posters.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable pose_array_publisher_node[0m
+[ 75%] Built target pose_array_publisher_node
+[100%] [32m[1mLinking CXX executable pose_array_to_file_node[0m
+[100%] Built target pose_array_to_file_node

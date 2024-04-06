@@ -1,0 +1,9 @@
+setup.py
+apriltag_ros/__init__.py
+apriltag_ros.egg-info/PKG-INFO
+apriltag_ros.egg-info/SOURCES.txt
+apriltag_ros.egg-info/dependency_links.txt
+apriltag_ros.egg-info/top_level.txt
+apriltag_ros/msg/__init__.py
+apriltag_ros/msg/_april_tag_detection.py
+apriltag_ros/msg/_april_tag_detection_array.py

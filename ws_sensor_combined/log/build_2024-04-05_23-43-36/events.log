@@ -1,0 +1,1403 @@
+[0.000000] (-) TimerEvent: {}
+[0.000165] (-) JobUnselected: {'identifier': 'LidarSlam'}
+[0.000274] (classifier) JobQueued: {'identifier': 'classifier', 'dependencies': OrderedDict()}
+[0.000293] (localization) JobQueued: {'identifier': 'localization', 'dependencies': OrderedDict()}
+[0.000306] (mapping) JobQueued: {'identifier': 'mapping', 'dependencies': OrderedDict()}
+[0.000318] (nearest_poster_yaw) JobQueued: {'identifier': 'nearest_poster_yaw', 'dependencies': OrderedDict()}
+[0.000330] (px4_msgs) JobQueued: {'identifier': 'px4_msgs', 'dependencies': OrderedDict()}
+[0.000342] (velodyne_laserscan) JobQueued: {'identifier': 'velodyne_laserscan', 'dependencies': OrderedDict()}
+[0.000353] (velodyne_msgs) JobQueued: {'identifier': 'velodyne_msgs', 'dependencies': OrderedDict()}
+[0.000364] (velodyne_pcl) JobQueued: {'identifier': 'velodyne_pcl', 'dependencies': OrderedDict()}
+[0.000376] (px4_ros_com) JobQueued: {'identifier': 'px4_ros_com', 'dependencies': OrderedDict([('px4_msgs', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs')])}
+[0.000391] (velodyne_driver) JobQueued: {'identifier': 'velodyne_driver', 'dependencies': OrderedDict([('velodyne_msgs', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/velodyne_msgs')])}
+[0.000404] (velodyne_pointcloud) JobQueued: {'identifier': 'velodyne_pointcloud', 'dependencies': OrderedDict([('velodyne_laserscan', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/velodyne_laserscan'), ('velodyne_msgs', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/velodyne_msgs'), ('velodyne_driver', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/velodyne_driver')])}
+[0.000420] (velodyne) JobQueued: {'identifier': 'velodyne', 'dependencies': OrderedDict([('velodyne_laserscan', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/velodyne_laserscan'), ('velodyne_msgs', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/velodyne_msgs'), ('velodyne_driver', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/velodyne_driver'), ('velodyne_pointcloud', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/velodyne_pointcloud')])}
+[0.000729] (velodyne_msgs) JobStarted: {'identifier': 'velodyne_msgs'}
+[0.007744] (velodyne_laserscan) JobStarted: {'identifier': 'velodyne_laserscan'}
+[0.012897] (px4_msgs) JobStarted: {'identifier': 'px4_msgs'}
+[0.021891] (classifier) JobStarted: {'identifier': 'classifier'}
+[0.028767] (localization) JobStarted: {'identifier': 'localization'}
+[0.034197] (mapping) JobStarted: {'identifier': 'mapping'}
+[0.039712] (nearest_poster_yaw) JobStarted: {'identifier': 'nearest_poster_yaw'}
+[0.044823] (velodyne_pcl) JobStarted: {'identifier': 'velodyne_pcl'}
+[0.054867] (velodyne_msgs) JobProgress: {'identifier': 'velodyne_msgs', 'progress': 'cmake'}
+[0.058324] (velodyne_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/velodyne/velodyne_msgs', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCMAKE_INSTALL_PREFIX=/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/velodyne_msgs'], 'cwd': '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/velodyne_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robmoemac'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/robmoemac'), ('OLDPWD', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '4220'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robmoemac'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'robmoemac'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/M-LADIS-sim/dev_ws/src/ground_jerry/description'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/robmoemac/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/robmoemac-XPS-13-7390-2-in-1:@/tmp/.ICE-unix/1656,unix/robmoemac-XPS-13-7390-2-in-1:/tmp/.ICE-unix/1656'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/64d25450_4af1_4c58_803f_7803179cfe30'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OS38L2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.137'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/localization:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/classifier:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/velodyne_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/localization:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/classifier')]), 'shell': False}
+[0.063099] (velodyne_laserscan) JobProgress: {'identifier': 'velodyne_laserscan', 'progress': 'cmake'}
+[0.066151] (velodyne_laserscan) Command: {'cmd': ['/usr/bin/cmake', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/velodyne/velodyne_laserscan', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCMAKE_INSTALL_PREFIX=/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/velodyne_laserscan'], 'cwd': '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/velodyne_laserscan', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robmoemac'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/robmoemac'), ('OLDPWD', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '4220'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robmoemac'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'robmoemac'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/M-LADIS-sim/dev_ws/src/ground_jerry/description'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/robmoemac/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/robmoemac-XPS-13-7390-2-in-1:@/tmp/.ICE-unix/1656,unix/robmoemac-XPS-13-7390-2-in-1:/tmp/.ICE-unix/1656'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/64d25450_4af1_4c58_803f_7803179cfe30'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OS38L2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.137'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/localization:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/classifier:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/velodyne_laserscan'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/localization:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/classifier')]), 'shell': False}
+[0.069898] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'cmake'}
+[0.072770] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'build'}
+[0.073455] (px4_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/px4_msgs', '--', '-j8', '-l8'], 'cwd': '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/px4_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robmoemac'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/robmoemac'), ('OLDPWD', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '4220'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robmoemac'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'robmoemac'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/M-LADIS-sim/dev_ws/src/ground_jerry/description'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/robmoemac/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/robmoemac-XPS-13-7390-2-in-1:@/tmp/.ICE-unix/1656,unix/robmoemac-XPS-13-7390-2-in-1:/tmp/.ICE-unix/1656'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/64d25450_4af1_4c58_803f_7803179cfe30'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OS38L2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.137'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/localization:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/classifier:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/px4_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/localization:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/classifier:/opt/ros/humble')]), 'shell': False}
+[0.076964] (classifier) JobProgress: {'identifier': 'classifier', 'progress': 'cmake'}
+[0.079890] (classifier) JobProgress: {'identifier': 'classifier', 'progress': 'build'}
+[0.080253] (classifier) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/classifier', '--', '-j8', '-l8'], 'cwd': '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/classifier', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robmoemac'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/robmoemac'), ('OLDPWD', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '4220'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robmoemac'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'robmoemac'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/M-LADIS-sim/dev_ws/src/ground_jerry/description'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/robmoemac/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/robmoemac-XPS-13-7390-2-in-1:@/tmp/.ICE-unix/1656,unix/robmoemac-XPS-13-7390-2-in-1:/tmp/.ICE-unix/1656'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/64d25450_4af1_4c58_803f_7803179cfe30'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OS38L2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.137'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/localization:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/classifier:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/classifier'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/localization:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/classifier:/opt/ros/humble')]), 'shell': False}
+[0.086642] (localization) JobProgress: {'identifier': 'localization', 'progress': 'cmake'}
+[0.092229] (localization) JobProgress: {'identifier': 'localization', 'progress': 'build'}
+[0.093102] (localization) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/localization', '--', '-j8', '-l8'], 'cwd': '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/localization', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robmoemac'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/robmoemac'), ('OLDPWD', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '4220'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robmoemac'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'robmoemac'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/M-LADIS-sim/dev_ws/src/ground_jerry/description'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/robmoemac/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/robmoemac-XPS-13-7390-2-in-1:@/tmp/.ICE-unix/1656,unix/robmoemac-XPS-13-7390-2-in-1:/tmp/.ICE-unix/1656'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/64d25450_4af1_4c58_803f_7803179cfe30'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OS38L2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.137'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/localization:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/classifier:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/localization'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/localization:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/classifier:/opt/ros/humble')]), 'shell': False}
+[0.097174] (mapping) JobProgress: {'identifier': 'mapping', 'progress': 'cmake'}
+[0.099784] (-) TimerEvent: {}
+[0.100366] (mapping) Command: {'cmd': ['/usr/bin/cmake', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/mapping', '-DCMAKE_INSTALL_PREFIX=/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/mapping'], 'cwd': '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/mapping', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robmoemac'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/robmoemac'), ('OLDPWD', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '4220'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robmoemac'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'robmoemac'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/M-LADIS-sim/dev_ws/src/ground_jerry/description'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/robmoemac/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/robmoemac-XPS-13-7390-2-in-1:@/tmp/.ICE-unix/1656,unix/robmoemac-XPS-13-7390-2-in-1:/tmp/.ICE-unix/1656'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/64d25450_4af1_4c58_803f_7803179cfe30'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OS38L2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.137'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/localization:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/classifier:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/mapping'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/localization:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/classifier:/opt/ros/humble')]), 'shell': False}
+[0.105531] (nearest_poster_yaw) JobProgress: {'identifier': 'nearest_poster_yaw', 'progress': 'cmake'}
+[0.109490] (nearest_poster_yaw) JobProgress: {'identifier': 'nearest_poster_yaw', 'progress': 'build'}
+[0.109880] (nearest_poster_yaw) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/nearest_poster_yaw', '--', '-j8', '-l8'], 'cwd': '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/nearest_poster_yaw', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robmoemac'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/robmoemac'), ('OLDPWD', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '4220'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robmoemac'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'robmoemac'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/M-LADIS-sim/dev_ws/src/ground_jerry/description'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/robmoemac/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/robmoemac-XPS-13-7390-2-in-1:@/tmp/.ICE-unix/1656,unix/robmoemac-XPS-13-7390-2-in-1:/tmp/.ICE-unix/1656'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/64d25450_4af1_4c58_803f_7803179cfe30'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OS38L2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.137'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/localization:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/classifier:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/nearest_poster_yaw'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/localization:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/classifier:/opt/ros/humble')]), 'shell': False}
+[0.114088] (velodyne_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.114884] (velodyne_msgs) StdoutLine: {'line': b'See also "/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/velodyne_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[0.114996] (velodyne_msgs) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[0.115098] (velodyne_msgs) StderrLine: {'line': b'  Compatibility with CMake < 2.8.12 will be removed from a future version of\n'}
+[0.115179] (velodyne_msgs) StderrLine: {'line': b'  CMake.\n'}
+[0.115257] (velodyne_msgs) StderrLine: {'line': b'\n'}
+[0.115333] (velodyne_msgs) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[0.115412] (velodyne_msgs) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[0.115492] (velodyne_msgs) StderrLine: {'line': b'\n'}
+[0.115569] (velodyne_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.115645] (velodyne_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:4 (find_package):\n'}
+[0.115725] (velodyne_msgs) StderrLine: {'line': b'  By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[0.115802] (velodyne_msgs) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "catkin", but\n'}
+[0.115877] (velodyne_msgs) StderrLine: {'line': b'  CMake did not find one.\n'}
+[0.115952] (velodyne_msgs) StderrLine: {'line': b'\n'}
+[0.116019] (velodyne_msgs) StderrLine: {'line': b'  Could not find a package configuration file provided by "catkin" with any\n'}
+[0.116100] (velodyne_msgs) StderrLine: {'line': b'  of the following names:\n'}
+[0.116176] (velodyne_msgs) StderrLine: {'line': b'\n'}
+[0.116250] (velodyne_msgs) StderrLine: {'line': b'    catkinConfig.cmake\n'}
+[0.116326] (velodyne_msgs) StderrLine: {'line': b'    catkin-config.cmake\n'}
+[0.116407] (velodyne_msgs) StderrLine: {'line': b'\n'}
+[0.116484] (velodyne_msgs) StderrLine: {'line': b'  Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set\n'}
+[0.116559] (velodyne_msgs) StderrLine: {'line': b'  "catkin_DIR" to a directory containing one of the above files.  If "catkin"\n'}
+[0.116634] (velodyne_msgs) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[0.116709] (velodyne_msgs) StderrLine: {'line': b'  installed.\n'}
+[0.116784] (velodyne_msgs) StderrLine: {'line': b'\n'}
+[0.116861] (velodyne_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.117363] (velodyne_laserscan) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.117548] (velodyne_laserscan) StdoutLine: {'line': b'See also "/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/velodyne_laserscan/CMakeFiles/CMakeOutput.log".\n'}
+[0.118191] (velodyne_laserscan) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[0.118463] (velodyne_laserscan) StderrLine: {'line': b'  Compatibility with CMake < 2.8.12 will be removed from a future version of\n'}
+[0.118550] (velodyne_laserscan) StderrLine: {'line': b'  CMake.\n'}
+[0.118625] (velodyne_laserscan) StderrLine: {'line': b'\n'}
+[0.118700] (velodyne_laserscan) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[0.118775] (velodyne_laserscan) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[0.118849] (velodyne_laserscan) StderrLine: {'line': b'\n'}
+[0.118922] (velodyne_laserscan) StderrLine: {'line': b'\x1b[0m\n'}
+[0.118994] (velodyne_laserscan) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:13 (find_package):\n'}
+[0.119065] (velodyne_laserscan) StderrLine: {'line': b'  By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[0.119134] (velodyne_laserscan) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "catkin", but\n'}
+[0.119204] (velodyne_laserscan) StderrLine: {'line': b'  CMake did not find one.\n'}
+[0.119276] (velodyne_laserscan) StderrLine: {'line': b'\n'}
+[0.119364] (velodyne_laserscan) StderrLine: {'line': b'  Could not find a package configuration file provided by "catkin" with any\n'}
+[0.119541] (velodyne_laserscan) StderrLine: {'line': b'  of the following names:\n'}
+[0.119649] (velodyne_laserscan) StderrLine: {'line': b'\n'}
+[0.119730] (velodyne_laserscan) StderrLine: {'line': b'    catkinConfig.cmake\n'}
+[0.119999] (velodyne_laserscan) StderrLine: {'line': b'    catkin-config.cmake\n'}
+[0.120159] (velodyne_laserscan) StderrLine: {'line': b'\n'}
+[0.120240] (velodyne_laserscan) StderrLine: {'line': b'  Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set\n'}
+[0.120316] (velodyne_laserscan) StderrLine: {'line': b'  "catkin_DIR" to a directory containing one of the above files.  If "catkin"\n'}
+[0.120391] (velodyne_laserscan) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[0.120463] (velodyne_laserscan) StderrLine: {'line': b'  installed.\n'}
+[0.120539] (velodyne_laserscan) StderrLine: {'line': b'\n'}
+[0.120625] (velodyne_laserscan) StderrLine: {'line': b'\x1b[0m\n'}
+[0.128691] (classifier) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/pose_array_to_file_node.dir/src/classifier_node.cpp.o\x1b[0m\n'}
+[0.129319] (mapping) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.133508] (velodyne_pcl) JobProgress: {'identifier': 'velodyne_pcl', 'progress': 'cmake'}
+[0.133586] (velodyne_pcl) Command: {'cmd': ['/usr/bin/cmake', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/velodyne/velodyne_pcl', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCMAKE_INSTALL_PREFIX=/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/velodyne_pcl'], 'cwd': '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/velodyne_pcl', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robmoemac'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/robmoemac'), ('OLDPWD', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '4220'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robmoemac'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'robmoemac'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/M-LADIS-sim/dev_ws/src/ground_jerry/description'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/robmoemac/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/robmoemac-XPS-13-7390-2-in-1:@/tmp/.ICE-unix/1656,unix/robmoemac-XPS-13-7390-2-in-1:/tmp/.ICE-unix/1656'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/64d25450_4af1_4c58_803f_7803179cfe30'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OS38L2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.137'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/localization:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/classifier:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/velodyne_pcl'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/localization:/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/classifier')]), 'shell': False}
+[0.134463] (classifier) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pose_array_publisher_node.dir/src/fake_posters.cpp.o\x1b[0m\n'}
+[0.135775] (velodyne_laserscan) CommandEnded: {'returncode': 1}
+[0.138013] (velodyne_msgs) CommandEnded: {'returncode': 1}
+[0.147561] (localization) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/localization_node.dir/src/localization_node.cpp.o\x1b[0m\n'}
+[0.162662] (velodyne_laserscan) JobEnded: {'identifier': 'velodyne_laserscan', 'rc': 1}
+[0.163875] (velodyne_msgs) JobEnded: {'identifier': 'velodyne_msgs', 'rc': 'SIGINT'}
+[0.165052] (velodyne_pcl) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:4 (find_package):\n'}
+[0.165275] (velodyne_pcl) StderrLine: {'line': b'  By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[0.165385] (velodyne_pcl) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "catkin", but\n'}
+[0.165489] (velodyne_pcl) StderrLine: {'line': b'  CMake did not find one.\n'}
+[0.165589] (velodyne_pcl) StderrLine: {'line': b'\n'}
+[0.165685] (velodyne_pcl) StderrLine: {'line': b'  Could not find a package configuration file provided by "catkin" with any\n'}
+[0.165788] (velodyne_pcl) StderrLine: {'line': b'  of the following names:\n'}
+[0.165897] (velodyne_pcl) StderrLine: {'line': b'\n'}
+[0.165995] (velodyne_pcl) StderrLine: {'line': b'    catkinConfig.cmake\n'}
+[0.166091] (velodyne_pcl) StderrLine: {'line': b'    catkin-config.cmake\n'}
+[0.166191] (velodyne_pcl) StderrLine: {'line': b'\n'}
+[0.166289] (velodyne_pcl) StderrLine: {'line': b'  Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set\n'}
+[0.166386] (velodyne_pcl) StderrLine: {'line': b'  "catkin_DIR" to a directory containing one of the above files.  If "catkin"\n'}
+[0.166486] (velodyne_pcl) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[0.166585] (velodyne_pcl) StderrLine: {'line': b'  installed.\n'}
+[0.166682] (velodyne_pcl) StderrLine: {'line': b'\n'}
+[0.166779] (velodyne_pcl) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.166898] (velodyne_pcl) StdoutLine: {'line': b'See also "/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/velodyne_pcl/CMakeFiles/CMakeOutput.log".\n'}
+[0.167002] (velodyne_pcl) StderrLine: {'line': b'\x1b[0m\n'}
+[0.172333] (velodyne_pcl) JobEnded: {'identifier': 'velodyne_pcl', 'rc': 'SIGINT'}
+[0.199273] (nearest_poster_yaw) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/nearest_poster_node.dir/src/nearest_poster_node.cpp.o\x1b[0m\n'}
+[0.199854] (-) TimerEvent: {}
+[0.265569] (mapping) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.299998] (-) TimerEvent: {}
+[0.304053] (mapping) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.307707] (mapping) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.315994] (mapping) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.332173] (mapping) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.355140] (mapping) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.400164] (-) TimerEvent: {}
+[0.441305] (mapping) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.443271] (mapping) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.500294] (-) TimerEvent: {}
+[0.600944] (-) TimerEvent: {}
+[0.640197] (mapping) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.701096] (-) TimerEvent: {}
+[0.801659] (-) TimerEvent: {}
+[0.827363] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[0.829537] (px4_msgs) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_copy_px4_msgs\n'}
+[0.846789] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[0.901761] (-) TimerEvent: {}
+[0.916938] (mapping) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:12 (find_package):\n'}
+[0.917330] (mapping) StderrLine: {'line': b'  By not providing "Findlidar_slam.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.917452] (mapping) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.917540] (mapping) StderrLine: {'line': b'  "lidar_slam", but CMake did not find one.\n'}
+[0.917622] (mapping) StderrLine: {'line': b'\n'}
+[0.917706] (mapping) StderrLine: {'line': b'  Could not find a package configuration file provided by "lidar_slam" with\n'}
+[0.917792] (mapping) StderrLine: {'line': b'  any of the following names:\n'}
+[0.917876] (mapping) StderrLine: {'line': b'\n'}
+[0.917964] (mapping) StderrLine: {'line': b'    lidar_slamConfig.cmake\n'}
+[0.918053] (mapping) StderrLine: {'line': b'    lidar_slam-config.cmake\n'}
+[0.918144] (mapping) StderrLine: {'line': b'\n'}
+[0.918226] (mapping) StderrLine: {'line': b'  Add the installation prefix of "lidar_slam" to CMAKE_PREFIX_PATH or set\n'}
+[0.918387] (mapping) StderrLine: {'line': b'  "lidar_slam_DIR" to a directory containing one of the above files.  If\n'}
+[0.918479] (mapping) StderrLine: {'line': b'  "lidar_slam" provides a separate development package or SDK, be sure it has\n'}
+[0.918569] (mapping) StderrLine: {'line': b'  been installed.\n'}
+[0.918661] (mapping) StderrLine: {'line': b'\n'}
+[0.918742] (mapping) StderrLine: {'line': b'\x1b[0m\n'}
+[0.918826] (mapping) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.918927] (mapping) StdoutLine: {'line': b'See also "/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/mapping/CMakeFiles/CMakeOutput.log".\n'}
+[0.940188] (mapping) JobEnded: {'identifier': 'mapping', 'rc': 'SIGINT'}
+[1.001873] (-) TimerEvent: {}
+[1.102452] (-) TimerEvent: {}
+[1.162117] (px4_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[1.164696] (px4_msgs) StdoutLine: {'line': b'creating px4_msgs.egg-info\n'}
+[1.192534] (px4_msgs) StdoutLine: {'line': b'writing px4_msgs.egg-info/PKG-INFO\n'}
+[1.193773] (px4_msgs) StdoutLine: {'line': b'writing dependency_links to px4_msgs.egg-info/dependency_links.txt\n'}
+[1.194553] (px4_msgs) StdoutLine: {'line': b'writing top-level names to px4_msgs.egg-info/top_level.txt\n'}
+[1.195221] (px4_msgs) StdoutLine: {'line': b"writing manifest file 'px4_msgs.egg-info/SOURCES.txt'\n"}
+[1.202563] (-) TimerEvent: {}
+[1.274475] (px4_msgs) StdoutLine: {'line': b"reading manifest file 'px4_msgs.egg-info/SOURCES.txt'\n"}
+[1.275346] (px4_msgs) StdoutLine: {'line': b"writing manifest file 'px4_msgs.egg-info/SOURCES.txt'\n"}
+[1.302676] (-) TimerEvent: {}
+[1.313386] (px4_msgs) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_build_px4_msgs_egg\n'}
+[1.402792] (-) TimerEvent: {}
+[1.503402] (-) TimerEvent: {}
+[1.603964] (-) TimerEvent: {}
+[1.705237] (-) TimerEvent: {}
+[1.805868] (-) TimerEvent: {}
+[1.906503] (-) TimerEvent: {}
+[2.007104] (-) TimerEvent: {}
+[2.107729] (-) TimerEvent: {}
+[2.208085] (-) TimerEvent: {}
+[2.308428] (-) TimerEvent: {}
+[2.408776] (-) TimerEvent: {}
+[2.509089] (-) TimerEvent: {}
+[2.609431] (-) TimerEvent: {}
+[2.709778] (-) TimerEvent: {}
+[2.810139] (-) TimerEvent: {}
+[2.910663] (-) TimerEvent: {}
+[3.011187] (-) TimerEvent: {}
+[3.111696] (-) TimerEvent: {}
+[3.212211] (-) TimerEvent: {}
+[3.312766] (-) TimerEvent: {}
+[3.413318] (-) TimerEvent: {}
+[3.513887] (-) TimerEvent: {}
+[3.614441] (-) TimerEvent: {}
+[3.715011] (-) TimerEvent: {}
+[3.815523] (-) TimerEvent: {}
+[3.916026] (-) TimerEvent: {}
+[4.017163] (-) TimerEvent: {}
+[4.117776] (-) TimerEvent: {}
+[4.218430] (-) TimerEvent: {}
+[4.318950] (-) TimerEvent: {}
+[4.419445] (-) TimerEvent: {}
+[4.519931] (-) TimerEvent: {}
+[4.620433] (-) TimerEvent: {}
+[4.720943] (-) TimerEvent: {}
+[4.760335] (classifier) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable pose_array_publisher_node\x1b[0m\n'}
+[4.821071] (-) TimerEvent: {}
+[4.921429] (-) TimerEvent: {}
+[4.960942] (classifier) StdoutLine: {'line': b'[ 75%] Built target pose_array_publisher_node\n'}
+[5.021535] (-) TimerEvent: {}
+[5.121919] (-) TimerEvent: {}
+[5.222249] (-) TimerEvent: {}
+[5.322559] (-) TimerEvent: {}
+[5.422871] (-) TimerEvent: {}
+[5.523189] (-) TimerEvent: {}
+[5.623519] (-) TimerEvent: {}
+[5.723826] (-) TimerEvent: {}
+[5.824124] (-) TimerEvent: {}
+[5.924449] (-) TimerEvent: {}
+[6.024760] (-) TimerEvent: {}
+[6.125079] (-) TimerEvent: {}
+[6.225400] (-) TimerEvent: {}
+[6.325706] (-) TimerEvent: {}
+[6.426033] (-) TimerEvent: {}
+[6.526349] (-) TimerEvent: {}
+[6.626675] (-) TimerEvent: {}
+[6.726987] (-) TimerEvent: {}
+[6.827298] (-) TimerEvent: {}
+[6.927642] (-) TimerEvent: {}
+[7.027995] (-) TimerEvent: {}
+[7.128332] (-) TimerEvent: {}
+[7.228675] (-) TimerEvent: {}
+[7.329006] (-) TimerEvent: {}
+[7.429344] (-) TimerEvent: {}
+[7.529699] (-) TimerEvent: {}
+[7.630037] (-) TimerEvent: {}
+[7.730364] (-) TimerEvent: {}
+[7.830673] (-) TimerEvent: {}
+[7.930979] (-) TimerEvent: {}
+[8.031307] (-) TimerEvent: {}
+[8.131606] (-) TimerEvent: {}
+[8.232020] (-) TimerEvent: {}
+[8.332334] (-) TimerEvent: {}
+[8.432661] (-) TimerEvent: {}
+[8.532976] (-) TimerEvent: {}
+[8.633326] (-) TimerEvent: {}
+[8.733647] (-) TimerEvent: {}
+[8.833966] (-) TimerEvent: {}
+[8.934285] (-) TimerEvent: {}
+[9.034609] (-) TimerEvent: {}
+[9.135023] (-) TimerEvent: {}
+[9.235468] (-) TimerEvent: {}
+[9.336082] (-) TimerEvent: {}
+[9.436395] (-) TimerEvent: {}
+[9.536712] (-) TimerEvent: {}
+[9.637058] (-) TimerEvent: {}
+[9.737383] (-) TimerEvent: {}
+[9.837748] (-) TimerEvent: {}
+[9.938124] (-) TimerEvent: {}
+[10.038485] (-) TimerEvent: {}
+[10.138819] (-) TimerEvent: {}
+[10.239178] (-) TimerEvent: {}
+[10.339526] (-) TimerEvent: {}
+[10.439871] (-) TimerEvent: {}
+[10.540325] (-) TimerEvent: {}
+[10.640647] (-) TimerEvent: {}
+[10.740989] (-) TimerEvent: {}
+[10.841392] (-) TimerEvent: {}
+[10.941749] (-) TimerEvent: {}
+[11.042092] (-) TimerEvent: {}
+[11.142446] (-) TimerEvent: {}
+[11.242886] (-) TimerEvent: {}
+[11.343220] (-) TimerEvent: {}
+[11.443559] (-) TimerEvent: {}
+[11.493574] (classifier) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable pose_array_to_file_node\x1b[0m\n'}
+[11.543670] (-) TimerEvent: {}
+[11.597299] (localization) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable localization_node\x1b[0m\n'}
+[11.643786] (-) TimerEvent: {}
+[11.744166] (-) TimerEvent: {}
+[11.844686] (-) TimerEvent: {}
+[11.945100] (-) TimerEvent: {}
+[12.045513] (-) TimerEvent: {}
+[12.072350] (localization) StdoutLine: {'line': b'[100%] Built target localization_node\n'}
+[12.081104] (localization) JobEnded: {'identifier': 'localization', 'rc': 'SIGINT'}
+[12.145643] (-) TimerEvent: {}
+[12.226147] (classifier) StdoutLine: {'line': b'[100%] Built target pose_array_to_file_node\n'}
+[12.235915] (classifier) JobEnded: {'identifier': 'classifier', 'rc': 'SIGINT'}
+[12.245754] (-) TimerEvent: {}
+[12.346070] (-) TimerEvent: {}
+[12.446395] (-) TimerEvent: {}
+[12.546702] (-) TimerEvent: {}
+[12.647021] (-) TimerEvent: {}
+[12.747351] (-) TimerEvent: {}
+[12.847679] (-) TimerEvent: {}
+[12.948052] (-) TimerEvent: {}
+[13.048361] (-) TimerEvent: {}
+[13.148664] (-) TimerEvent: {}
+[13.248981] (-) TimerEvent: {}
+[13.349254] (-) TimerEvent: {}
+[13.449543] (-) TimerEvent: {}
+[13.549833] (-) TimerEvent: {}
+[13.650153] (-) TimerEvent: {}
+[13.750483] (-) TimerEvent: {}
+[13.850797] (-) TimerEvent: {}
+[13.951095] (-) TimerEvent: {}
+[14.051415] (-) TimerEvent: {}
+[14.151715] (-) TimerEvent: {}
+[14.252013] (-) TimerEvent: {}
+[14.352311] (-) TimerEvent: {}
+[14.428762] (nearest_poster_yaw) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable nearest_poster_node\x1b[0m\n'}
+[14.452402] (-) TimerEvent: {}
+[14.552692] (-) TimerEvent: {}
+[14.653012] (-) TimerEvent: {}
+[14.753334] (-) TimerEvent: {}
+[14.853637] (-) TimerEvent: {}
+[14.953927] (-) TimerEvent: {}
+[14.985576] (nearest_poster_yaw) StdoutLine: {'line': b'[100%] Built target nearest_poster_node\n'}
+[14.996044] (nearest_poster_yaw) JobEnded: {'identifier': 'nearest_poster_yaw', 'rc': 'SIGINT'}
+[15.054049] (-) TimerEvent: {}
+[15.154333] (-) TimerEvent: {}
+[15.254660] (-) TimerEvent: {}
+[15.354985] (-) TimerEvent: {}
+[15.455264] (-) TimerEvent: {}
+[15.555588] (-) TimerEvent: {}
+[15.655924] (-) TimerEvent: {}
+[15.756223] (-) TimerEvent: {}
+[15.856491] (-) TimerEvent: {}
+[15.956826] (-) TimerEvent: {}
+[16.057118] (-) TimerEvent: {}
+[16.157426] (-) TimerEvent: {}
+[16.257685] (-) TimerEvent: {}
+[16.357997] (-) TimerEvent: {}
+[16.458281] (-) TimerEvent: {}
+[16.558561] (-) TimerEvent: {}
+[16.658878] (-) TimerEvent: {}
+[16.759178] (-) TimerEvent: {}
+[16.859453] (-) TimerEvent: {}
+[16.959783] (-) TimerEvent: {}
+[17.060100] (-) TimerEvent: {}
+[17.160415] (-) TimerEvent: {}
+[17.260701] (-) TimerEvent: {}
+[17.360999] (-) TimerEvent: {}
+[17.461329] (-) TimerEvent: {}
+[17.561652] (-) TimerEvent: {}
+[17.661928] (-) TimerEvent: {}
+[17.762256] (-) TimerEvent: {}
+[17.862518] (-) TimerEvent: {}
+[17.962831] (-) TimerEvent: {}
+[18.063126] (-) TimerEvent: {}
+[18.163418] (-) TimerEvent: {}
+[18.263691] (-) TimerEvent: {}
+[18.364015] (-) TimerEvent: {}
+[18.464303] (-) TimerEvent: {}
+[18.564547] (-) TimerEvent: {}
+[18.664865] (-) TimerEvent: {}
+[18.765141] (-) TimerEvent: {}
+[18.865466] (-) TimerEvent: {}
+[18.965783] (-) TimerEvent: {}
+[19.066096] (-) TimerEvent: {}
+[19.166416] (-) TimerEvent: {}
+[19.266707] (-) TimerEvent: {}
+[19.366992] (-) TimerEvent: {}
+[19.467306] (-) TimerEvent: {}
+[19.567588] (-) TimerEvent: {}
+[19.667917] (-) TimerEvent: {}
+[19.768247] (-) TimerEvent: {}
+[19.868494] (-) TimerEvent: {}
+[19.968834] (-) TimerEvent: {}
+[20.069134] (-) TimerEvent: {}
+[20.169432] (-) TimerEvent: {}
+[20.269768] (-) TimerEvent: {}
+[20.370043] (-) TimerEvent: {}
+[20.470304] (-) TimerEvent: {}
+[20.570562] (-) TimerEvent: {}
+[20.670859] (-) TimerEvent: {}
+[20.771168] (-) TimerEvent: {}
+[20.871516] (-) TimerEvent: {}
+[20.971838] (-) TimerEvent: {}
+[21.072167] (-) TimerEvent: {}
+[21.172491] (-) TimerEvent: {}
+[21.272847] (-) TimerEvent: {}
+[21.373166] (-) TimerEvent: {}
+[21.473470] (-) TimerEvent: {}
+[21.573746] (-) TimerEvent: {}
+[21.674051] (-) TimerEvent: {}
+[21.774365] (-) TimerEvent: {}
+[21.874684] (-) TimerEvent: {}
+[21.975000] (-) TimerEvent: {}
+[22.075274] (-) TimerEvent: {}
+[22.175523] (-) TimerEvent: {}
+[22.275857] (-) TimerEvent: {}
+[22.376170] (-) TimerEvent: {}
+[22.476428] (-) TimerEvent: {}
+[22.576762] (-) TimerEvent: {}
+[22.677055] (-) TimerEvent: {}
+[22.777400] (-) TimerEvent: {}
+[22.877685] (-) TimerEvent: {}
+[22.978026] (-) TimerEvent: {}
+[23.078325] (-) TimerEvent: {}
+[23.178605] (-) TimerEvent: {}
+[23.278885] (-) TimerEvent: {}
+[23.379196] (-) TimerEvent: {}
+[23.479515] (-) TimerEvent: {}
+[23.579825] (-) TimerEvent: {}
+[23.680173] (-) TimerEvent: {}
+[23.780432] (-) TimerEvent: {}
+[23.880746] (-) TimerEvent: {}
+[23.981067] (-) TimerEvent: {}
+[24.081321] (-) TimerEvent: {}
+[24.181610] (-) TimerEvent: {}
+[24.281900] (-) TimerEvent: {}
+[24.382234] (-) TimerEvent: {}
+[24.482532] (-) TimerEvent: {}
+[24.582823] (-) TimerEvent: {}
+[24.683070] (-) TimerEvent: {}
+[24.783388] (-) TimerEvent: {}
+[24.883719] (-) TimerEvent: {}
+[24.984030] (-) TimerEvent: {}
+[25.084332] (-) TimerEvent: {}
+[25.184577] (-) TimerEvent: {}
+[25.284905] (-) TimerEvent: {}
+[25.385145] (-) TimerEvent: {}
+[25.485416] (-) TimerEvent: {}
+[25.585696] (-) TimerEvent: {}
+[25.685986] (-) TimerEvent: {}
+[25.786250] (-) TimerEvent: {}
+[25.886572] (-) TimerEvent: {}
+[25.986875] (-) TimerEvent: {}
+[26.087207] (-) TimerEvent: {}
+[26.187559] (-) TimerEvent: {}
+[26.287874] (-) TimerEvent: {}
+[26.388215] (-) TimerEvent: {}
+[26.488535] (-) TimerEvent: {}
+[26.588850] (-) TimerEvent: {}
+[26.689179] (-) TimerEvent: {}
+[26.789454] (-) TimerEvent: {}
+[26.889737] (-) TimerEvent: {}
+[26.990060] (-) TimerEvent: {}
+[27.090339] (-) TimerEvent: {}
+[27.190605] (-) TimerEvent: {}
+[27.290977] (-) TimerEvent: {}
+[27.391325] (-) TimerEvent: {}
+[27.491757] (-) TimerEvent: {}
+[27.592080] (-) TimerEvent: {}
+[27.692402] (-) TimerEvent: {}
+[27.792734] (-) TimerEvent: {}
+[27.893023] (-) TimerEvent: {}
+[27.993289] (-) TimerEvent: {}
+[28.093599] (-) TimerEvent: {}
+[28.193887] (-) TimerEvent: {}
+[28.294192] (-) TimerEvent: {}
+[28.394492] (-) TimerEvent: {}
+[28.494827] (-) TimerEvent: {}
+[28.595064] (-) TimerEvent: {}
+[28.695367] (-) TimerEvent: {}
+[28.795702] (-) TimerEvent: {}
+[28.896008] (-) TimerEvent: {}
+[28.996368] (-) TimerEvent: {}
+[29.096689] (-) TimerEvent: {}
+[29.196987] (-) TimerEvent: {}
+[29.297268] (-) TimerEvent: {}
+[29.397531] (-) TimerEvent: {}
+[29.497807] (-) TimerEvent: {}
+[29.598109] (-) TimerEvent: {}
+[29.698377] (-) TimerEvent: {}
+[29.798723] (-) TimerEvent: {}
+[29.898995] (-) TimerEvent: {}
+[29.999315] (-) TimerEvent: {}
+[30.099635] (-) TimerEvent: {}
+[30.199957] (-) TimerEvent: {}
+[30.300266] (-) TimerEvent: {}
+[30.400594] (-) TimerEvent: {}
+[30.500940] (-) TimerEvent: {}
+[30.601200] (-) TimerEvent: {}
+[30.701490] (-) TimerEvent: {}
+[30.801762] (-) TimerEvent: {}
+[30.902082] (-) TimerEvent: {}
+[31.002382] (-) TimerEvent: {}
+[31.102665] (-) TimerEvent: {}
+[31.202971] (-) TimerEvent: {}
+[31.303304] (-) TimerEvent: {}
+[31.403564] (-) TimerEvent: {}
+[31.503865] (-) TimerEvent: {}
+[31.604179] (-) TimerEvent: {}
+[31.704541] (-) TimerEvent: {}
+[31.804886] (-) TimerEvent: {}
+[31.905243] (-) TimerEvent: {}
+[32.005566] (-) TimerEvent: {}
+[32.105891] (-) TimerEvent: {}
+[32.206480] (-) TimerEvent: {}
+[32.306983] (-) TimerEvent: {}
+[32.407511] (-) TimerEvent: {}
+[32.508169] (-) TimerEvent: {}
+[32.608753] (-) TimerEvent: {}
+[32.709268] (-) TimerEvent: {}
+[32.809805] (-) TimerEvent: {}
+[32.837360] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/action_request__functions.c.o\x1b[0m\n'}
+[32.838148] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/actuator_motors__functions.c.o\x1b[0m\n'}
+[32.838642] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/actuator_outputs__functions.c.o\x1b[0m\n'}
+[32.838755] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/actuator_servos_trim__functions.c.o\x1b[0m\n'}
+[32.838843] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/actuator_servos__functions.c.o\x1b[0m\n'}
+[32.838925] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/actuator_armed__functions.c.o\x1b[0m\n'}
+[32.839068] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/actuator_controls_status__functions.c.o\x1b[0m\n'}
+[32.902356] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/adc_report__functions.c.o\x1b[0m\n'}
+[32.903211] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/actuator_test__functions.c.o\x1b[0m\n'}
+[32.904034] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/airspeed_validated__functions.c.o\x1b[0m\n'}
+[32.904701] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/airspeed__functions.c.o\x1b[0m\n'}
+[32.904916] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/arming_check_reply__functions.c.o\x1b[0m\n'}
+[32.905032] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/airspeed_wind__functions.c.o\x1b[0m\n'}
+[32.907444] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/arming_check_request__functions.c.o\x1b[0m\n'}
+[32.909925] (-) TimerEvent: {}
+[32.968675] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/autotune_attitude_control_status__functions.c.o\x1b[0m\n'}
+[32.971509] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/button_event__functions.c.o\x1b[0m\n'}
+[32.972294] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/battery_status__functions.c.o\x1b[0m\n'}
+[32.972922] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_capture__functions.c.o\x1b[0m\n'}
+[32.973677] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_status__functions.c.o\x1b[0m\n'}
+[32.975190] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_trigger__functions.c.o\x1b[0m\n'}
+[32.979649] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/cellular_status__functions.c.o\x1b[0m\n'}
+[33.010038] (-) TimerEvent: {}
+[33.043148] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/collision_constraints__functions.c.o\x1b[0m\n'}
+[33.044016] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/collision_report__functions.c.o\x1b[0m\n'}
+[33.046829] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/config_overrides__functions.c.o\x1b[0m\n'}
+[33.047642] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/control_allocator_status__functions.c.o\x1b[0m\n'}
+[33.056547] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/cpuload__functions.c.o\x1b[0m\n'}
+[33.063513] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/dataman_request__functions.c.o\x1b[0m\n'}
+[33.068171] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/dataman_response__functions.c.o\x1b[0m\n'}
+[33.105394] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_array__functions.c.o\x1b[0m\n'}
+[33.110145] (-) TimerEvent: {}
+[33.113715] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_value__functions.c.o\x1b[0m\n'}
+[33.115214] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_key_value__functions.c.o\x1b[0m\n'}
+[33.122368] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_vect__functions.c.o\x1b[0m\n'}
+[33.123982] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/differential_pressure__functions.c.o\x1b[0m\n'}
+[33.137535] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/distance_sensor__functions.c.o\x1b[0m\n'}
+[33.142492] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ekf2_timestamps__functions.c.o\x1b[0m\n'}
+[33.168892] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/esc_report__functions.c.o\x1b[0m\n'}
+[33.179616] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/esc_status__functions.c.o\x1b[0m\n'}
+[33.189856] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source1d__functions.c.o\x1b[0m\n'}
+[33.193420] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source2d__functions.c.o\x1b[0m\n'}
+[33.196050] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source3d__functions.c.o\x1b[0m\n'}
+[33.206090] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_bias__functions.c.o\x1b[0m\n'}
+[33.210246] (-) TimerEvent: {}
+[33.211009] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_bias3d__functions.c.o\x1b[0m\n'}
+[33.261169] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_event_flags__functions.c.o\x1b[0m\n'}
+[33.262507] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_gps_status__functions.c.o\x1b[0m\n'}
+[33.264355] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_selector_status__functions.c.o\x1b[0m\n'}
+[33.265762] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_sensor_bias__functions.c.o\x1b[0m\n'}
+[33.268340] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_innovations__functions.c.o\x1b[0m\n'}
+[33.276374] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_states__functions.c.o\x1b[0m\n'}
+[33.283322] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_status__functions.c.o\x1b[0m\n'}
+[33.310354] (-) TimerEvent: {}
+[33.329354] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_status_flags__functions.c.o\x1b[0m\n'}
+[33.332896] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/event__functions.c.o\x1b[0m\n'}
+[33.334585] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/failsafe_flags__functions.c.o\x1b[0m\n'}
+[33.335601] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/failure_detector_status__functions.c.o\x1b[0m\n'}
+[33.345286] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/figure_eight_status__functions.c.o\x1b[0m\n'}
+[33.351616] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target__functions.c.o\x1b[0m\n'}
+[33.365874] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target_estimator__functions.c.o\x1b[0m\n'}
+[33.401678] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target_status__functions.c.o\x1b[0m\n'}
+[33.406290] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/geofence_result__functions.c.o\x1b[0m\n'}
+[33.407166] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/generator_status__functions.c.o\x1b[0m\n'}
+[33.410459] (-) TimerEvent: {}
+[33.413248] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_controls__functions.c.o\x1b[0m\n'}
+[33.424044] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_attitude_status__functions.c.o\x1b[0m\n'}
+[33.430035] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_information__functions.c.o\x1b[0m\n'}
+[33.439822] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_set_attitude__functions.c.o\x1b[0m\n'}
+[33.470200] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_information__functions.c.o\x1b[0m\n'}
+[33.477966] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_set_attitude__functions.c.o\x1b[0m\n'}
+[33.481619] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_set_manual_control__functions.c.o\x1b[0m\n'}
+[33.482976] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_status__functions.c.o\x1b[0m\n'}
+[33.488799] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_config__functions.c.o\x1b[0m\n'}
+[33.498354] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_in__functions.c.o\x1b[0m\n'}
+[33.510562] (-) TimerEvent: {}
+[33.514601] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_out__functions.c.o\x1b[0m\n'}
+[33.536277] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_request__functions.c.o\x1b[0m\n'}
+[33.548791] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gps_dump__functions.c.o\x1b[0m\n'}
+[33.553158] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gps_inject_data__functions.c.o\x1b[0m\n'}
+[33.554572] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gripper__functions.c.o\x1b[0m\n'}
+[33.555587] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/health_report__functions.c.o\x1b[0m\n'}
+[33.565663] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/heater_status__functions.c.o\x1b[0m\n'}
+[33.584324] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/home_position__functions.c.o\x1b[0m\n'}
+[33.602888] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/hover_thrust_estimate__functions.c.o\x1b[0m\n'}
+[33.610669] (-) TimerEvent: {}
+[33.615045] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/input_rc__functions.c.o\x1b[0m\n'}
+[33.621479] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/iridiumsbd_status__functions.c.o\x1b[0m\n'}
+[33.621709] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_status__functions.c.o\x1b[0m\n'}
+[33.623898] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/irlock_report__functions.c.o\x1b[0m\n'}
+[33.636057] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/landing_gear__functions.c.o\x1b[0m\n'}
+[33.657897] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/landing_gear_wheel__functions.c.o\x1b[0m\n'}
+[33.672161] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/landing_target_innovations__functions.c.o\x1b[0m\n'}
+[33.683427] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/landing_target_pose__functions.c.o\x1b[0m\n'}
+[33.691309] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/launch_detection_status__functions.c.o\x1b[0m\n'}
+[33.692393] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/led_control__functions.c.o\x1b[0m\n'}
+[33.699703] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/log_message__functions.c.o\x1b[0m\n'}
+[33.705365] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/logger_status__functions.c.o\x1b[0m\n'}
+[33.710769] (-) TimerEvent: {}
+[33.726000] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/mag_worker_data__functions.c.o\x1b[0m\n'}
+[33.738235] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/magnetometer_bias_estimate__functions.c.o\x1b[0m\n'}
+[33.751912] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/manual_control_setpoint__functions.c.o\x1b[0m\n'}
+[33.759456] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/manual_control_switches__functions.c.o\x1b[0m\n'}
+[33.763198] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/mavlink_tunnel__functions.c.o\x1b[0m\n'}
+[33.763417] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/mavlink_log__functions.c.o\x1b[0m\n'}
+[33.797750] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/message_format_request__functions.c.o\x1b[0m\n'}
+[33.798008] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/message_format_response__functions.c.o\x1b[0m\n'}
+[33.805578] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/mission__functions.c.o\x1b[0m\n'}
+[33.810872] (-) TimerEvent: {}
+[33.818881] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/mission_result__functions.c.o\x1b[0m\n'}
+[33.823073] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/mode_completed__functions.c.o\x1b[0m\n'}
+[33.824069] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/mount_orientation__functions.c.o\x1b[0m\n'}
+[33.831728] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/navigator_mission_item__functions.c.o\x1b[0m\n'}
+[33.867054] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/normalized_unsigned_setpoint__functions.c.o\x1b[0m\n'}
+[33.872080] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/npfg_status__functions.c.o\x1b[0m\n'}
+[33.881304] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/obstacle_distance__functions.c.o\x1b[0m\n'}
+[33.893812] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/offboard_control_mode__functions.c.o\x1b[0m\n'}
+[33.896261] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/onboard_computer_status__functions.c.o\x1b[0m\n'}
+[33.902351] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/orb_test__functions.c.o\x1b[0m\n'}
+[33.910448] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/orb_test_large__functions.c.o\x1b[0m\n'}
+[33.911260] (-) TimerEvent: {}
+[33.948237] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/orbit_status__functions.c.o\x1b[0m\n'}
+[33.948912] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/orb_test_medium__functions.c.o\x1b[0m\n'}
+[33.955758] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/parameter_update__functions.c.o\x1b[0m\n'}
+[33.972023] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ping__functions.c.o\x1b[0m\n'}
+[33.977359] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/position_controller_landing_status__functions.c.o\x1b[0m\n'}
+[33.978366] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/position_controller_status__functions.c.o\x1b[0m\n'}
+[33.988570] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/position_setpoint__functions.c.o\x1b[0m\n'}
+[34.011384] (-) TimerEvent: {}
+[34.018496] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/power_button_state__functions.c.o\x1b[0m\n'}
+[34.023785] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/position_setpoint_triplet__functions.c.o\x1b[0m\n'}
+[34.024697] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/power_monitor__functions.c.o\x1b[0m\n'}
+[34.040810] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/pwm_input__functions.c.o\x1b[0m\n'}
+[34.042052] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/pps_capture__functions.c.o\x1b[0m\n'}
+[34.058417] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/px4io_status__functions.c.o\x1b[0m\n'}
+[34.064261] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/qshell_req__functions.c.o\x1b[0m\n'}
+[34.094148] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/qshell_retval__functions.c.o\x1b[0m\n'}
+[34.107226] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/radio_status__functions.c.o\x1b[0m\n'}
+[34.108938] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rate_ctrl_status__functions.c.o\x1b[0m\n'}
+[34.110367] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rc_channels__functions.c.o\x1b[0m\n'}
+[34.111469] (-) TimerEvent: {}
+[34.114203] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rc_parameter_map__functions.c.o\x1b[0m\n'}
+[34.131252] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_reply__functions.c.o\x1b[0m\n'}
+[34.136296] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_request__functions.c.o\x1b[0m\n'}
+[34.166717] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rpm__functions.c.o\x1b[0m\n'}
+[34.171945] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rtl_time_estimate__functions.c.o\x1b[0m\n'}
+[34.176503] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/satellite_info__functions.c.o\x1b[0m\n'}
+[34.176733] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_accel__functions.c.o\x1b[0m\n'}
+[34.190546] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_accel_fifo__functions.c.o\x1b[0m\n'}
+[34.207469] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_baro__functions.c.o\x1b[0m\n'}
+[34.207691] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_combined__functions.c.o\x1b[0m\n'}
+[34.211577] (-) TimerEvent: {}
+[34.227968] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_correction__functions.c.o\x1b[0m\n'}
+[34.239354] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gnss_relative__functions.c.o\x1b[0m\n'}
+[34.240250] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gps__functions.c.o\x1b[0m\n'}
+[34.246610] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro__functions.c.o\x1b[0m\n'}
+[34.267095] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro_fft__functions.c.o\x1b[0m\n'}
+[34.276182] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro_fifo__functions.c.o\x1b[0m\n'}
+[34.280735] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_hygrometer__functions.c.o\x1b[0m\n'}
+[34.310378] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_optical_flow__functions.c.o\x1b[0m\n'}
+[34.310681] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_preflight_mag__functions.c.o\x1b[0m\n'}
+[34.311531] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_mag__functions.c.o\x1b[0m\n'}
+[34.312266] (-) TimerEvent: {}
+[34.312641] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_selection__functions.c.o\x1b[0m\n'}
+[34.349485] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_uwb__functions.c.o\x1b[0m\n'}
+[34.349764] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensors_status__functions.c.o\x1b[0m\n'}
+[34.388620] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensors_status_imu__functions.c.o\x1b[0m\n'}
+[34.392586] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/system_power__functions.c.o\x1b[0m\n'}
+[34.393479] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/task_stack_info__functions.c.o\x1b[0m\n'}
+[34.412380] (-) TimerEvent: {}
+[34.414500] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/takeoff_status__functions.c.o\x1b[0m\n'}
+[34.420152] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tecs_status__functions.c.o\x1b[0m\n'}
+[34.431325] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/telemetry_status__functions.c.o\x1b[0m\n'}
+[34.437148] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tiltrotor_extra_controls__functions.c.o\x1b[0m\n'}
+[34.463209] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/timesync_status__functions.c.o\x1b[0m\n'}
+[34.465299] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c.o\x1b[0m\n'}
+[34.469140] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.c.o\x1b[0m\n'}
+[34.491454] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c.o\x1b[0m\n'}
+[34.498716] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/transponder_report__functions.c.o\x1b[0m\n'}
+[34.506206] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tune_control__functions.c.o\x1b[0m\n'}
+[34.512495] (-) TimerEvent: {}
+[34.527465] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/uavcan_parameter_value__functions.c.o\x1b[0m\n'}
+[34.528249] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/uavcan_parameter_request__functions.c.o\x1b[0m\n'}
+[34.537595] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ulog_stream_ack__functions.c.o\x1b[0m\n'}
+[34.539750] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ulog_stream__functions.c.o\x1b[0m\n'}
+[34.558540] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/unregister_ext_component__functions.c.o\x1b[0m\n'}
+[34.569495] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_acceleration__functions.c.o\x1b[0m\n'}
+[34.587799] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_air_data__functions.c.o\x1b[0m\n'}
+[34.593034] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_angular_acceleration_setpoint__functions.c.o\x1b[0m\n'}
+[34.604389] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_angular_velocity__functions.c.o\x1b[0m\n'}
+[34.612635] (-) TimerEvent: {}
+[34.618716] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_attitude__functions.c.o\x1b[0m\n'}
+[34.625718] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_attitude_setpoint__functions.c.o\x1b[0m\n'}
+[34.637379] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_command__functions.c.o\x1b[0m\n'}
+[34.645597] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_command_ack__functions.c.o\x1b[0m\n'}
+[34.660530] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_constraints__functions.c.o\x1b[0m\n'}
+[34.660810] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_control_mode__functions.c.o\x1b[0m\n'}
+[34.677739] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_global_position__functions.c.o\x1b[0m\n'}
+[34.686037] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_imu__functions.c.o\x1b[0m\n'}
+[34.692773] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_imu_status__functions.c.o\x1b[0m\n'}
+[34.712747] (-) TimerEvent: {}
+[34.716079] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_land_detected__functions.c.o\x1b[0m\n'}
+[34.729168] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_local_position__functions.c.o\x1b[0m\n'}
+[34.745341] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_local_position_setpoint__functions.c.o\x1b[0m\n'}
+[34.749606] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_magnetometer__functions.c.o\x1b[0m\n'}
+[34.760996] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_odometry__functions.c.o\x1b[0m\n'}
+[34.767086] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_optical_flow__functions.c.o\x1b[0m\n'}
+[34.787429] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_optical_flow_vel__functions.c.o\x1b[0m\n'}
+[34.805605] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_rates_setpoint__functions.c.o\x1b[0m\n'}
+[34.811348] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_roi__functions.c.o\x1b[0m\n'}
+[34.812852] (-) TimerEvent: {}
+[34.814083] (px4_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_status__functions.c.o\x1b[0m\n'}
+[34.826876] (px4_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_thrust_setpoint__functions.c.o\x1b[0m\n'}
+[34.836084] (px4_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__functions.c.o\x1b[0m\n'}
+[34.866215] (px4_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c.o\x1b[0m\n'}
+[34.882275] (px4_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vtol_vehicle_status__functions.c.o\x1b[0m\n'}
+[34.884679] (px4_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c.o\x1b[0m\n'}
+[34.887887] (px4_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/wind__functions.c.o\x1b[0m\n'}
+[34.890139] (px4_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/yaw_estimator_status__functions.c.o\x1b[0m\n'}
+[34.903728] (px4_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/srv/detail/vehicle_command__functions.c.o\x1b[0m\n'}
+[34.912966] (-) TimerEvent: {}
+[34.994366] (px4_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32m\x1b[1mLinking C shared library libpx4_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[35.013090] (-) TimerEvent: {}
+[35.116471] (-) TimerEvent: {}
+[35.118455] (px4_msgs) StdoutLine: {'line': b'[ 12%] Built target px4_msgs__rosidl_generator_c\n'}
+[35.144442] (px4_msgs) StdoutLine: {'line': b'[ 13%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[35.153047] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[35.160640] (px4_msgs) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[35.216576] (-) TimerEvent: {}
+[35.319297] (-) TimerEvent: {}
+[35.419726] (-) TimerEvent: {}
+[35.520298] (-) TimerEvent: {}
+[35.620877] (-) TimerEvent: {}
+[35.721822] (-) TimerEvent: {}
+[35.822397] (-) TimerEvent: {}
+[35.922994] (-) TimerEvent: {}
+[36.023531] (-) TimerEvent: {}
+[36.124064] (-) TimerEvent: {}
+[36.224638] (-) TimerEvent: {}
+[36.325602] (-) TimerEvent: {}
+[36.426226] (-) TimerEvent: {}
+[36.486801] (px4_msgs) StdoutLine: {'line': b'[ 15%] Built target px4_msgs__cpp\n'}
+[36.507273] (px4_msgs) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[36.512151] (px4_msgs) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[36.516288] (px4_msgs) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[36.526324] (-) TimerEvent: {}
+[36.626828] (-) TimerEvent: {}
+[36.727388] (-) TimerEvent: {}
+[36.828050] (-) TimerEvent: {}
+[36.928727] (-) TimerEvent: {}
+[37.029080] (-) TimerEvent: {}
+[37.130152] (-) TimerEvent: {}
+[37.230704] (-) TimerEvent: {}
+[37.331260] (-) TimerEvent: {}
+[37.431803] (-) TimerEvent: {}
+[37.532349] (-) TimerEvent: {}
+[37.632904] (-) TimerEvent: {}
+[37.733476] (-) TimerEvent: {}
+[37.834019] (-) TimerEvent: {}
+[37.934581] (-) TimerEvent: {}
+[38.035130] (-) TimerEvent: {}
+[38.135850] (-) TimerEvent: {}
+[38.242043] (-) TimerEvent: {}
+[38.342608] (-) TimerEvent: {}
+[38.443178] (-) TimerEvent: {}
+[38.543712] (-) TimerEvent: {}
+[38.644275] (-) TimerEvent: {}
+[38.744842] (-) TimerEvent: {}
+[38.845410] (-) TimerEvent: {}
+[38.946011] (-) TimerEvent: {}
+[39.046589] (-) TimerEvent: {}
+[39.147358] (-) TimerEvent: {}
+[39.253854] (-) TimerEvent: {}
+[39.354424] (-) TimerEvent: {}
+[39.454977] (-) TimerEvent: {}
+[39.555550] (-) TimerEvent: {}
+[39.656149] (-) TimerEvent: {}
+[39.756686] (-) TimerEvent: {}
+[39.857166] (-) TimerEvent: {}
+[39.957616] (-) TimerEvent: {}
+[40.058321] (-) TimerEvent: {}
+[40.158914] (-) TimerEvent: {}
+[40.259600] (-) TimerEvent: {}
+[40.360164] (-) TimerEvent: {}
+[40.460750] (-) TimerEvent: {}
+[40.561324] (-) TimerEvent: {}
+[40.661883] (-) TimerEvent: {}
+[40.762472] (-) TimerEvent: {}
+[40.863075] (-) TimerEvent: {}
+[40.963663] (-) TimerEvent: {}
+[41.064228] (-) TimerEvent: {}
+[41.164929] (-) TimerEvent: {}
+[41.265532] (-) TimerEvent: {}
+[41.366214] (-) TimerEvent: {}
+[41.466901] (-) TimerEvent: {}
+[41.567620] (-) TimerEvent: {}
+[41.668388] (-) TimerEvent: {}
+[41.769095] (-) TimerEvent: {}
+[41.869816] (-) TimerEvent: {}
+[41.970515] (-) TimerEvent: {}
+[42.070875] (-) TimerEvent: {}
+[42.171244] (-) TimerEvent: {}
+[42.271625] (-) TimerEvent: {}
+[42.372010] (-) TimerEvent: {}
+[42.472345] (-) TimerEvent: {}
+[42.572724] (-) TimerEvent: {}
+[42.673327] (-) TimerEvent: {}
+[42.773907] (-) TimerEvent: {}
+[42.874497] (-) TimerEvent: {}
+[42.975048] (-) TimerEvent: {}
+[43.081092] (-) TimerEvent: {}
+[43.181653] (-) TimerEvent: {}
+[43.282225] (-) TimerEvent: {}
+[43.382769] (-) TimerEvent: {}
+[43.483347] (-) TimerEvent: {}
+[43.583974] (-) TimerEvent: {}
+[43.684533] (-) TimerEvent: {}
+[43.785098] (-) TimerEvent: {}
+[43.885668] (-) TimerEvent: {}
+[43.986386] (-) TimerEvent: {}
+[44.086981] (-) TimerEvent: {}
+[44.187319] (-) TimerEvent: {}
+[44.287692] (-) TimerEvent: {}
+[44.388072] (-) TimerEvent: {}
+[44.488433] (-) TimerEvent: {}
+[44.588808] (-) TimerEvent: {}
+[44.689169] (-) TimerEvent: {}
+[44.789535] (-) TimerEvent: {}
+[44.889885] (-) TimerEvent: {}
+[44.990333] (-) TimerEvent: {}
+[45.090703] (-) TimerEvent: {}
+[45.191073] (-) TimerEvent: {}
+[45.291475] (-) TimerEvent: {}
+[45.391854] (-) TimerEvent: {}
+[45.492216] (-) TimerEvent: {}
+[45.592584] (-) TimerEvent: {}
+[45.692958] (-) TimerEvent: {}
+[45.793339] (-) TimerEvent: {}
+[45.893701] (-) TimerEvent: {}
+[45.994065] (-) TimerEvent: {}
+[46.094437] (-) TimerEvent: {}
+[46.194812] (-) TimerEvent: {}
+[46.295199] (-) TimerEvent: {}
+[46.395577] (-) TimerEvent: {}
+[46.495947] (-) TimerEvent: {}
+[46.596310] (-) TimerEvent: {}
+[46.696671] (-) TimerEvent: {}
+[46.797074] (-) TimerEvent: {}
+[46.897440] (-) TimerEvent: {}
+[46.998139] (-) TimerEvent: {}
+[47.098841] (-) TimerEvent: {}
+[47.199418] (-) TimerEvent: {}
+[47.299776] (-) TimerEvent: {}
+[47.400141] (-) TimerEvent: {}
+[47.500508] (-) TimerEvent: {}
+[47.601035] (-) TimerEvent: {}
+[47.701751] (-) TimerEvent: {}
+[47.802442] (-) TimerEvent: {}
+[47.903123] (-) TimerEvent: {}
+[48.003773] (-) TimerEvent: {}
+[48.104486] (-) TimerEvent: {}
+[48.205160] (-) TimerEvent: {}
+[48.305886] (-) TimerEvent: {}
+[48.406597] (-) TimerEvent: {}
+[48.507281] (-) TimerEvent: {}
+[48.607966] (-) TimerEvent: {}
+[48.708563] (-) TimerEvent: {}
+[48.809166] (-) TimerEvent: {}
+[48.909785] (-) TimerEvent: {}
+[49.010376] (-) TimerEvent: {}
+[49.110943] (-) TimerEvent: {}
+[49.211321] (-) TimerEvent: {}
+[49.311677] (-) TimerEvent: {}
+[49.412055] (-) TimerEvent: {}
+[49.512434] (-) TimerEvent: {}
+[49.613007] (-) TimerEvent: {}
+[49.713739] (-) TimerEvent: {}
+[49.814277] (-) TimerEvent: {}
+[49.914825] (-) TimerEvent: {}
+[50.029107] (-) TimerEvent: {}
+[50.129705] (-) TimerEvent: {}
+[50.233120] (-) TimerEvent: {}
+[50.333869] (-) TimerEvent: {}
+[50.434251] (-) TimerEvent: {}
+[50.534965] (-) TimerEvent: {}
+[50.635435] (-) TimerEvent: {}
+[50.736291] (-) TimerEvent: {}
+[50.836853] (-) TimerEvent: {}
+[50.937419] (-) TimerEvent: {}
+[51.037991] (-) TimerEvent: {}
+[51.138550] (-) TimerEvent: {}
+[51.239153] (-) TimerEvent: {}
+[51.339708] (-) TimerEvent: {}
+[51.440224] (-) TimerEvent: {}
+[51.540739] (-) TimerEvent: {}
+[51.641227] (-) TimerEvent: {}
+[51.741729] (-) TimerEvent: {}
+[51.842230] (-) TimerEvent: {}
+[51.942727] (-) TimerEvent: {}
+[52.043216] (-) TimerEvent: {}
+[52.143724] (-) TimerEvent: {}
+[52.244252] (-) TimerEvent: {}
+[52.344771] (-) TimerEvent: {}
+[52.445308] (-) TimerEvent: {}
+[52.545827] (-) TimerEvent: {}
+[52.646331] (-) TimerEvent: {}
+[52.747004] (-) TimerEvent: {}
+[52.847526] (-) TimerEvent: {}
+[52.948057] (-) TimerEvent: {}
+[53.048400] (-) TimerEvent: {}
+[53.148957] (-) TimerEvent: {}
+[53.249543] (-) TimerEvent: {}
+[53.350077] (-) TimerEvent: {}
+[53.450622] (-) TimerEvent: {}
+[53.551203] (-) TimerEvent: {}
+[53.651774] (-) TimerEvent: {}
+[53.752328] (-) TimerEvent: {}
+[53.852916] (-) TimerEvent: {}
+[53.953486] (-) TimerEvent: {}
+[54.054072] (-) TimerEvent: {}
+[54.154474] (-) TimerEvent: {}
+[54.254847] (-) TimerEvent: {}
+[54.355214] (-) TimerEvent: {}
+[54.455611] (-) TimerEvent: {}
+[54.555973] (-) TimerEvent: {}
+[54.656349] (-) TimerEvent: {}
+[54.756699] (-) TimerEvent: {}
+[54.857087] (-) TimerEvent: {}
+[54.957493] (-) TimerEvent: {}
+[55.057884] (-) TimerEvent: {}
+[55.158506] (-) TimerEvent: {}
+[55.259247] (-) TimerEvent: {}
+[55.359827] (-) TimerEvent: {}
+[55.460396] (-) TimerEvent: {}
+[55.561006] (-) TimerEvent: {}
+[55.661580] (-) TimerEvent: {}
+[55.762168] (-) TimerEvent: {}
+[55.862897] (-) TimerEvent: {}
+[55.963454] (-) TimerEvent: {}
+[56.064043] (-) TimerEvent: {}
+[56.164659] (-) TimerEvent: {}
+[56.265242] (-) TimerEvent: {}
+[56.365802] (-) TimerEvent: {}
+[56.466369] (-) TimerEvent: {}
+[56.566919] (-) TimerEvent: {}
+[56.667508] (-) TimerEvent: {}
+[56.768247] (-) TimerEvent: {}
+[56.868845] (-) TimerEvent: {}
+[56.969415] (-) TimerEvent: {}
+[57.070018] (-) TimerEvent: {}
+[57.170589] (-) TimerEvent: {}
+[57.271271] (-) TimerEvent: {}
+[57.371870] (-) TimerEvent: {}
+[57.472455] (-) TimerEvent: {}
+[57.573066] (-) TimerEvent: {}
+[57.673718] (-) TimerEvent: {}
+[57.774139] (-) TimerEvent: {}
+[57.874567] (-) TimerEvent: {}
+[57.974997] (-) TimerEvent: {}
+[58.075435] (-) TimerEvent: {}
+[58.176126] (-) TimerEvent: {}
+[58.276830] (-) TimerEvent: {}
+[58.377560] (-) TimerEvent: {}
+[58.478253] (-) TimerEvent: {}
+[58.578962] (-) TimerEvent: {}
+[58.679893] (-) TimerEvent: {}
+[58.780590] (-) TimerEvent: {}
+[58.881301] (-) TimerEvent: {}
+[58.981966] (-) TimerEvent: {}
+[59.082664] (-) TimerEvent: {}
+[59.183351] (-) TimerEvent: {}
+[59.284030] (-) TimerEvent: {}
+[59.384747] (-) TimerEvent: {}
+[59.485470] (-) TimerEvent: {}
+[59.586165] (-) TimerEvent: {}
+[59.686888] (-) TimerEvent: {}
+[59.787573] (-) TimerEvent: {}
+[59.888266] (-) TimerEvent: {}
+[59.988950] (-) TimerEvent: {}
+[60.089677] (-) TimerEvent: {}
+[60.190117] (-) TimerEvent: {}
+[60.290579] (-) TimerEvent: {}
+[60.391009] (-) TimerEvent: {}
+[60.491743] (-) TimerEvent: {}
+[60.592211] (-) TimerEvent: {}
+[60.692677] (-) TimerEvent: {}
+[60.793093] (-) TimerEvent: {}
+[60.893526] (-) TimerEvent: {}
+[60.993976] (-) TimerEvent: {}
+[61.094434] (-) TimerEvent: {}
+[61.194901] (-) TimerEvent: {}
+[61.295337] (-) TimerEvent: {}
+[61.398250] (-) TimerEvent: {}
+[61.498668] (-) TimerEvent: {}
+[61.599099] (-) TimerEvent: {}
+[61.699556] (-) TimerEvent: {}
+[61.799987] (-) TimerEvent: {}
+[61.900454] (-) TimerEvent: {}
+[62.000888] (-) TimerEvent: {}
+[62.101346] (-) TimerEvent: {}
+[62.201827] (-) TimerEvent: {}
+[62.302256] (-) TimerEvent: {}
+[62.402701] (-) TimerEvent: {}
+[62.503156] (-) TimerEvent: {}
+[62.603595] (-) TimerEvent: {}
+[62.704041] (-) TimerEvent: {}
+[62.804476] (-) TimerEvent: {}
+[62.904934] (-) TimerEvent: {}
+[63.005393] (-) TimerEvent: {}
+[63.105868] (-) TimerEvent: {}
+[63.206328] (-) TimerEvent: {}
+[63.306766] (-) TimerEvent: {}
+[63.407207] (-) TimerEvent: {}
+[63.507647] (-) TimerEvent: {}
+[63.608084] (-) TimerEvent: {}
+[63.708544] (-) TimerEvent: {}
+[63.808960] (-) TimerEvent: {}
+[63.909425] (-) TimerEvent: {}
+[64.009829] (-) TimerEvent: {}
+[64.110286] (-) TimerEvent: {}
+[64.210781] (-) TimerEvent: {}
+[64.311190] (-) TimerEvent: {}
+[64.411606] (-) TimerEvent: {}
+[64.512319] (-) TimerEvent: {}
+[64.612757] (-) TimerEvent: {}
+[64.713218] (-) TimerEvent: {}
+[64.813656] (-) TimerEvent: {}
+[64.914081] (-) TimerEvent: {}
+[65.026061] (-) TimerEvent: {}
+[65.126537] (-) TimerEvent: {}
+[65.226982] (-) TimerEvent: {}
+[65.327677] (-) TimerEvent: {}
+[65.428330] (-) TimerEvent: {}
+[65.529049] (-) TimerEvent: {}
+[65.629719] (-) TimerEvent: {}
+[65.730402] (-) TimerEvent: {}
+[65.831126] (-) TimerEvent: {}
+[65.931787] (-) TimerEvent: {}
+[66.032476] (-) TimerEvent: {}
+[66.132905] (-) TimerEvent: {}
+[66.233353] (-) TimerEvent: {}
+[66.333780] (-) TimerEvent: {}
+[66.434174] (-) TimerEvent: {}
+[66.534599] (-) TimerEvent: {}
+[66.635014] (-) TimerEvent: {}
+[66.735422] (-) TimerEvent: {}
+[66.835852] (-) TimerEvent: {}
+[66.936271] (-) TimerEvent: {}
+[67.037621] (-) TimerEvent: {}
+[67.138051] (-) TimerEvent: {}
+[67.238452] (-) TimerEvent: {}
+[67.338868] (-) TimerEvent: {}
+[67.439317] (-) TimerEvent: {}
+[67.539743] (-) TimerEvent: {}
+[67.640158] (-) TimerEvent: {}
+[67.740579] (-) TimerEvent: {}
+[67.840996] (-) TimerEvent: {}
+[67.941443] (-) TimerEvent: {}
+[68.042718] (-) TimerEvent: {}
+[68.143141] (-) TimerEvent: {}
+[68.243564] (-) TimerEvent: {}
+[68.344002] (-) TimerEvent: {}
+[68.457101] (-) TimerEvent: {}
+[68.557541] (-) TimerEvent: {}
+[68.658001] (-) TimerEvent: {}
+[68.758783] (-) TimerEvent: {}
+[68.859605] (-) TimerEvent: {}
+[68.965113] (-) TimerEvent: {}
+[69.065523] (-) TimerEvent: {}
+[69.166333] (-) TimerEvent: {}
+[69.267160] (-) TimerEvent: {}
+[69.367572] (-) TimerEvent: {}
+[69.468004] (-) TimerEvent: {}
+[69.568433] (-) TimerEvent: {}
+[69.668822] (-) TimerEvent: {}
+[69.769253] (-) TimerEvent: {}
+[69.869671] (-) TimerEvent: {}
+[69.970082] (-) TimerEvent: {}
+[70.070517] (-) TimerEvent: {}
+[70.170941] (-) TimerEvent: {}
+[70.271521] (-) TimerEvent: {}
+[70.371949] (-) TimerEvent: {}
+[70.472366] (-) TimerEvent: {}
+[70.572887] (-) TimerEvent: {}
+[70.673340] (-) TimerEvent: {}
+[70.773921] (-) TimerEvent: {}
+[70.874583] (-) TimerEvent: {}
+[70.974981] (-) TimerEvent: {}
+[71.075406] (-) TimerEvent: {}
+[71.175843] (-) TimerEvent: {}
+[71.276410] (-) TimerEvent: {}
+[71.376984] (-) TimerEvent: {}
+[71.477549] (-) TimerEvent: {}
+[71.578131] (-) TimerEvent: {}
+[71.678718] (-) TimerEvent: {}
+[71.779390] (-) TimerEvent: {}
+[71.879946] (-) TimerEvent: {}
+[71.980346] (-) TimerEvent: {}
+[72.080859] (-) TimerEvent: {}
+[72.181454] (-) TimerEvent: {}
+[72.282034] (-) TimerEvent: {}
+[72.382587] (-) TimerEvent: {}
+[72.483154] (-) TimerEvent: {}
+[72.583725] (-) TimerEvent: {}
+[72.684135] (-) TimerEvent: {}
+[72.784584] (-) TimerEvent: {}
+[72.884988] (-) TimerEvent: {}
+[72.985373] (-) TimerEvent: {}
+[73.085771] (-) TimerEvent: {}
+[73.186177] (-) TimerEvent: {}
+[73.286575] (-) TimerEvent: {}
+[73.386969] (-) TimerEvent: {}
+[73.487378] (-) TimerEvent: {}
+[73.587776] (-) TimerEvent: {}
+[73.688161] (-) TimerEvent: {}
+[73.788550] (-) TimerEvent: {}
+[73.888959] (-) TimerEvent: {}
+[73.989362] (-) TimerEvent: {}
+[74.089761] (-) TimerEvent: {}
+[74.190192] (-) TimerEvent: {}
+[74.290611] (-) TimerEvent: {}
+[74.391026] (-) TimerEvent: {}
+[74.491445] (-) TimerEvent: {}
+[74.591853] (-) TimerEvent: {}
+[74.692253] (-) TimerEvent: {}
+[74.792666] (-) TimerEvent: {}
+[74.893081] (-) TimerEvent: {}
+[74.993476] (-) TimerEvent: {}
+[75.093874] (-) TimerEvent: {}
+[75.194579] (-) TimerEvent: {}
+[75.295440] (-) TimerEvent: {}
+[75.396269] (-) TimerEvent: {}
+[75.497076] (-) TimerEvent: {}
+[75.597933] (-) TimerEvent: {}
+[75.698763] (-) TimerEvent: {}
+[75.799612] (-) TimerEvent: {}
+[75.900425] (-) TimerEvent: {}
+[76.001251] (-) TimerEvent: {}
+[76.102084] (-) TimerEvent: {}
+[76.202502] (-) TimerEvent: {}
+[76.302911] (-) TimerEvent: {}
+[76.403339] (-) TimerEvent: {}
+[76.503769] (-) TimerEvent: {}
+[76.604176] (-) TimerEvent: {}
+[76.704602] (-) TimerEvent: {}
+[76.805107] (-) TimerEvent: {}
+[76.905511] (-) TimerEvent: {}
+[77.005960] (-) TimerEvent: {}
+[77.106786] (-) TimerEvent: {}
+[77.207502] (-) TimerEvent: {}
+[77.308172] (-) TimerEvent: {}
+[77.408808] (-) TimerEvent: {}
+[77.509523] (-) TimerEvent: {}
+[77.610212] (-) TimerEvent: {}
+[77.710917] (-) TimerEvent: {}
+[77.811597] (-) TimerEvent: {}
+[77.912280] (-) TimerEvent: {}
+[78.013113] (-) TimerEvent: {}
+[78.113826] (-) TimerEvent: {}
+[78.214540] (-) TimerEvent: {}
+[78.315223] (-) TimerEvent: {}
+[78.415918] (-) TimerEvent: {}
+[78.516598] (-) TimerEvent: {}
+[78.617317] (-) TimerEvent: {}
+[78.718016] (-) TimerEvent: {}
+[78.818862] (-) TimerEvent: {}
+[78.919706] (-) TimerEvent: {}
+[79.020508] (-) TimerEvent: {}
+[79.121430] (-) TimerEvent: {}
+[79.222035] (-) TimerEvent: {}
+[79.322449] (-) TimerEvent: {}
+[79.423259] (-) TimerEvent: {}
+[79.524106] (-) TimerEvent: {}
+[79.624973] (-) TimerEvent: {}
+[79.725806] (-) TimerEvent: {}
+[79.826626] (-) TimerEvent: {}
+[79.927443] (-) TimerEvent: {}
+[80.033756] (-) TimerEvent: {}
+[80.134418] (-) TimerEvent: {}
+[80.235201] (-) TimerEvent: {}
+[80.336056] (-) TimerEvent: {}
+[80.436868] (-) TimerEvent: {}
+[80.537680] (-) TimerEvent: {}
+[80.638541] (-) TimerEvent: {}
+[80.739327] (-) TimerEvent: {}
+[80.840003] (-) TimerEvent: {}
+[80.940727] (-) TimerEvent: {}
+[81.041424] (-) TimerEvent: {}
+[81.141847] (-) TimerEvent: {}
+[81.242264] (-) TimerEvent: {}
+[81.342917] (-) TimerEvent: {}
+[81.443599] (-) TimerEvent: {}
+[81.544278] (-) TimerEvent: {}
+[81.645104] (-) TimerEvent: {}
+[81.745885] (-) TimerEvent: {}
+[81.846747] (-) TimerEvent: {}
+[81.927968] (px4_msgs) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[81.928558] (px4_msgs) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[81.928668] (px4_msgs) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[81.928758] (px4_msgs) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[81.928843] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/lib/rosidl_typesupport_fastrtps_cpp/rosidl_typesupport_fastrtps_cpp", line 23, in <module>\n'}
+[81.928931] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp", line 28, in <module>\n'}
+[81.929037] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/lib/rosidl_typesupport_c/rosidl_typesupport_c", line 28, in <module>\n'}
+[81.929143] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp", line 31, in <module>\n'}
+[81.929228] (px4_msgs) StderrLine: {'line': b"gmake[2]: *** Deleting file 'rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/action_request__type_support.cpp'\n"}
+[81.929311] (px4_msgs) StderrLine: {'line': b"gmake[2]: *** Deleting file 'rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/action_request__rosidl_typesupport_introspection_cpp.hpp'\n"}
+[81.929394] (px4_msgs) StderrLine: {'line': b'    sys.exit(main())\n'}
+[81.929482] (px4_msgs) StderrLine: {'line': b'    sys.exit(main())\n'}
+[81.929563] (px4_msgs) StderrLine: {'line': b'    sys.exit(main())\n'}
+[81.929643] (px4_msgs) StderrLine: {'line': b'    sys.exit(main())\n'}
+[81.929722] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/lib/rosidl_typesupport_fastrtps_cpp/rosidl_typesupport_fastrtps_cpp", line 19, in main\n'}
+[81.929805] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp", line 24, in main\n'}
+[81.929884] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp", line 27, in main\n'}
+[81.929965] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/lib/rosidl_typesupport_c/rosidl_typesupport_c", line 24, in main\n'}
+[81.930045] (px4_msgs) StderrLine: {'line': b'    generate_cpp(args.generator_arguments_file)\n'}
+[81.930125] (px4_msgs) StderrLine: {'line': b'    generate_cpp(args.generator_arguments_file)\n'}
+[81.930204] (px4_msgs) StderrLine: {'line': b'    generate_c(args.generator_arguments_file, args.typesupports)\n'}
+[81.930284] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_fastrtps_cpp/__init__.py", line 24, in generate_cpp\n'}
+[81.930378] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_introspection_cpp/__init__.py", line 31, in generate_cpp\n'}
+[81.930460] (px4_msgs) StderrLine: {'line': b'    generate_cpp(args.generator_arguments_file, args.typesupports)\n'}
+[81.930540] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_c/__init__.py", line 28, in generate_c\n'}
+[81.930621] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_cpp/__init__.py", line 28, in generate_cpp\n'}
+[81.930701] (px4_msgs) StderrLine: {'line': b"gmake[2]: *** Deleting file 'rosidl_typesupport_introspection_c/px4_msgs/msg/detail/action_request__rosidl_typesupport_introspection_c.h'\n"}
+[81.930781] (px4_msgs) StderrLine: {'line': b"gmake[2]: *** Deleting file 'rosidl_typesupport_cpp/px4_msgs/msg/action_request__type_support.cpp'\n"}
+[81.930861] (px4_msgs) StderrLine: {'line': b'    return generate_files(generator_arguments_file, mapping)\n'}
+[81.930950] (px4_msgs) StderrLine: {'line': b'    return generate_files(generator_arguments_file, mapping)\n'}
+[81.931031] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 74, in generate_files\n'}
+[81.931112] (px4_msgs) StderrLine: {'line': b'    return generate_files(\n'}
+[81.931191] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 74, in generate_files\n'}
+[81.931270] (px4_msgs) StderrLine: {'line': b'    return generate_files(\n'}
+[81.931348] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 74, in generate_files\n'}
+[81.931429] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 74, in generate_files\n'}
+[81.931516] (px4_msgs) StderrLine: {'line': b'    idl_file = parse_idl_file(locator)\n'}
+[81.931598] (px4_msgs) StderrLine: {'line': b'    idl_file = parse_idl_file(locator)\n'}
+[81.931676] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 64, in parse_idl_file\n'}
+[81.931755] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 64, in parse_idl_file\n'}
+[81.931833] (px4_msgs) StderrLine: {'line': b'    idl_file = parse_idl_file(locator)\n'}
+[81.931911] (px4_msgs) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[81.931989] (px4_msgs) StderrLine: {'line': b'    idl_file = parse_idl_file(locator)\n'}
+[81.932068] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 64, in parse_idl_file\n'}
+[81.932148] (px4_msgs) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[81.932230] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 64, in parse_idl_file\n'}
+[81.932310] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c", line 33, in <module>\n'}
+[81.932389] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c", line 31, in <module>\n'}
+[81.932468] (px4_msgs) StderrLine: {'line': b'    content = parse_idl_string(string, png_file=png_file)\n'}
+[81.932545] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 72, in parse_idl_string\n'}
+[81.932623] (px4_msgs) StderrLine: {'line': b'    content = parse_idl_string(string, png_file=png_file)\n'}
+[81.932701] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 72, in parse_idl_string\n'}
+[81.932793] (px4_msgs) StderrLine: {'line': b'    tree = get_ast_from_idl_string(idl_string)\n'}
+[81.932872] (px4_msgs) StderrLine: {'line': b'    content = parse_idl_string(string, png_file=png_file)\n'}
+[81.932951] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string\n'}
+[81.933050] (px4_msgs) StderrLine: {'line': b'    content = parse_idl_string(string, png_file=png_file)\n'}
+[81.933143] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 72, in parse_idl_string\n'}
+[81.933226] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 72, in parse_idl_string\n'}
+[81.933325] (px4_msgs) StderrLine: {'line': b'    sys.exit(main())\n'}
+[81.933508] (px4_msgs) StderrLine: {'line': b'    sys.exit(main())\n'}
+[81.933690] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c", line 29, in main\n'}
+[81.933829] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c", line 27, in main\n'}
+[81.933911] (px4_msgs) StderrLine: {'line': b'    return _parser.parse(idl_string)\n'}
+[81.933992] (px4_msgs) StderrLine: {'line': b'    tree = get_ast_from_idl_string(idl_string)\n'}
+[81.934074] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/lark.py", line 619, in parse\n'}
+[81.934156] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string\n'}
+[81.934234] (px4_msgs) StderrLine: {'line': b'    tree = get_ast_from_idl_string(idl_string)\n'}
+[81.934313] (px4_msgs) StderrLine: {'line': b'    tree = get_ast_from_idl_string(idl_string)\n'}
+[81.934391] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string\n'}
+[81.934471] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string\n'}
+[81.934553] (px4_msgs) StderrLine: {'line': b'    generate_typesupport_fastrtps_c(args.generator_arguments_file)\n'}
+[81.934631] (px4_msgs) StderrLine: {'line': b'    generate_c(args.generator_arguments_file)\n'}
+[81.934718] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_fastrtps_c/__init__.py", line 24, in generate_typesupport_fastrtps_c\n'}
+[81.934800] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_introspection_c/__init__.py", line 31, in generate_c\n'}
+[81.934881] (px4_msgs) StderrLine: {'line': b'    return _parser.parse(idl_string)\n'}
+[81.934959] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/lark.py", line 619, in parse\n'}
+[81.935039] (px4_msgs) StderrLine: {'line': b'    return _parser.parse(idl_string)\n'}
+[81.935142] (px4_msgs) StderrLine: {'line': b'    return generate_files(generator_arguments_file, mapping)\n'}
+[81.935217] (px4_msgs) StderrLine: {'line': b'    return _parser.parse(idl_string)\n'}
+[81.935291] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/lark.py", line 619, in parse\n'}
+[81.935366] (px4_msgs) StderrLine: {'line': b'    return generate_files(generator_arguments_file, mapping)\n'}
+[81.935441] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 74, in generate_files\n'}
+[81.935516] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/lark.py", line 619, in parse\n'}
+[81.935606] (px4_msgs) StderrLine: {'line': b"gmake[2]: *** Deleting file 'rosidl_typesupport_c/px4_msgs/msg/action_request__type_support.cpp'\n"}
+[81.935683] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 74, in generate_files\n'}
+[81.935758] (px4_msgs) StderrLine: {'line': b'    idl_file = parse_idl_file(locator)\n'}
+[81.935833] (px4_msgs) StderrLine: {'line': b'    idl_file = parse_idl_file(locator)\n'}
+[81.935907] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 64, in parse_idl_file\n'}
+[81.935981] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 64, in parse_idl_file\n'}
+[81.936055] (px4_msgs) StderrLine: {'line': b"gmake[2]: *** Deleting file 'rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/action_request__rosidl_typesupport_fastrtps_c.h'\n"}
+[81.936129] (px4_msgs) StderrLine: {'line': b'    content = parse_idl_string(string, png_file=png_file)\n'}
+[81.936204] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 72, in parse_idl_string\n'}
+[81.936285] (px4_msgs) StderrLine: {'line': b'    content = parse_idl_string(string, png_file=png_file)\n'}
+[81.936361] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 72, in parse_idl_string\n'}
+[81.936435] (px4_msgs) StderrLine: {'line': b'    tree = get_ast_from_idl_string(idl_string)\n'}
+[81.936508] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string\n'}
+[81.936583] (px4_msgs) StderrLine: {'line': b'    return _parser.parse(idl_string)\n'}
+[81.936658] (px4_msgs) StderrLine: {'line': b'    tree = get_ast_from_idl_string(idl_string)\n'}
+[81.936732] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/lark.py", line 619, in parse\n'}
+[81.936825] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string\n'}
+[81.936969] (px4_msgs) StderrLine: {'line': b'    return _parser.parse(idl_string)\n'}
+[81.937123] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/lark.py", line 619, in parse\n'}
+[81.937407] (px4_msgs) StderrLine: {'line': b'    return self.parser.parse(text, start=start, on_error=on_error)\n'}
+[81.937661] (px4_msgs) StderrLine: {'line': b'    return self.parser.parse(text, start=start, on_error=on_error)\n'}
+[81.938026] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 99, in parse\n'}
+[81.938388] (px4_msgs) StderrLine: {'line': b'    return self.parser.parse(text, start=start, on_error=on_error)\n'}
+[81.938974] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 99, in parse\n'}
+[81.939191] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 99, in parse\n'}
+[81.939413] (px4_msgs) StderrLine: {'line': b'    return self.parser.parse(text, start=start, on_error=on_error)\n'}
+[81.939725] (px4_msgs) StderrLine: {'line': b'    return self.parser.parse(text, start=start, on_error=on_error)\n'}
+[81.939980] (px4_msgs) StderrLine: {'line': b'    return self.parser.parse(text, start=start, on_error=on_error)\n'}
+[81.940162] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 99, in parse\n'}
+[81.940354] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 99, in parse\n'}
+[81.940528] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 99, in parse\n'}
+[81.940702] (px4_msgs) StderrLine: {'line': b'    return self.parser.parse(stream, chosen_start, **kw)\n'}
+[81.940877] (px4_msgs) StderrLine: {'line': b'    return self.parser.parse(stream, chosen_start, **kw)\n'}
+[81.941078] (px4_msgs) StderrLine: {'line': b'    return self.parser.parse(stream, chosen_start, **kw)\n'}
+[81.941262] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 266, in parse\n'}
+[81.941437] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 266, in parse\n'}
+[81.941610] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 292, in parse\n'}
+[81.941781] (px4_msgs) StderrLine: {'line': b'    return self.parser.parse(stream, chosen_start, **kw)\n'}
+[81.941954] (px4_msgs) StderrLine: {'line': b'    return self.parser.parse(stream, chosen_start, **kw)\n'}
+[81.942129] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 266, in parse\n'}
+[81.942306] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 266, in parse\n'}
+[81.942491] (px4_msgs) StderrLine: {'line': b'    return self.parser.parse(stream, chosen_start, **kw)\n'}
+[81.942676] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 292, in parse\n'}
+[81.942912] (px4_msgs) StderrLine: {'line': b'    to_scan = self._parse(lexer, columns, to_scan, start_symbol)\n'}
+[81.943095] (px4_msgs) StderrLine: {'line': b'    to_scan = self._parse(lexer, columns, to_scan, start_symbol)\n'}
+[81.943272] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 144, in _parse\n'}
+[81.943432] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 144, in _parse\n'}
+[81.943609] (px4_msgs) StderrLine: {'line': b'    return transformer.transform(solutions[0])\n'}
+[81.943767] (px4_msgs) StderrLine: {'line': b'    to_scan = self._parse(lexer, columns, to_scan, start_symbol)\n'}
+[81.943920] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 144, in _parse\n'}
+[81.944071] (px4_msgs) StderrLine: {'line': b'    to_scan = self._parse(lexer, columns, to_scan, start_symbol)\n'}
+[81.944226] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 395, in transform\n'}
+[81.944378] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 146, in _parse\n'}
+[81.944548] (px4_msgs) StderrLine: {'line': b'    return transformer.transform(solutions[0])\n'}
+[81.944702] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 395, in transform\n'}
+[81.944843] (px4_msgs) StderrLine: {'line': b'    self.predict_and_complete(i, to_scan, columns, transitives)\n'}
+[81.944983] (px4_msgs) StderrLine: {'line': b'    self.predict_and_complete(i, to_scan, columns, transitives)\n'}
+[81.945177] (px4_msgs) StderrLine: {'line': b'    self.predict_and_complete(i, to_scan, columns, transitives)\n'}
+[81.945326] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 152, in predict_and_complete\n'}
+[81.945463] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 141, in predict_and_complete\n'}
+[81.945595] (px4_msgs) StderrLine: {'line': b'    to_scan = scan(i, to_scan)\n'}
+[81.945729] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 102, in scan\n'}
+[81.945864] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 152, in predict_and_complete\n'}
+[81.946002] (px4_msgs) StderrLine: {'line': b'    new_items.append(new_item)\n'}
+[81.946156] (px4_msgs) StderrLine: {'line': b'KeyboardInterrupt\n'}
+[81.946298] (px4_msgs) StderrLine: {'line': b'    if new_item.expect in self.TERMINALS:\n'}
+[81.946440] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/grammar.py", line 26, in __hash__\n'}
+[81.946578] (px4_msgs) StderrLine: {'line': b'    token_node = TokenNode(token, terminals[token.type])\n'}
+[81.946715] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 187, in __init__\n'}
+[81.946845] (-) TimerEvent: {}
+[81.947044] (px4_msgs) StderrLine: {'line': b'    if new_item.expect in self.TERMINALS:\n'}
+[81.947203] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/grammar.py", line 25, in __hash__\n'}
+[81.947337] (px4_msgs) StderrLine: {'line': b'    def __hash__(self):\n'}
+[81.947473] (px4_msgs) StderrLine: {'line': b'    return hash(self.name)\n'}
+[81.947605] (px4_msgs) StderrLine: {'line': b'KeyboardInterrupt\n'}
+[81.947742] (px4_msgs) StderrLine: {'line': b'KeyboardInterrupt\n'}
+[81.947880] (px4_msgs) StderrLine: {'line': b'    self.visit(root)\n'}
+[81.948013] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 531, in visit\n'}
+[81.948156] (px4_msgs) StderrLine: {'line': b'    self.prioritizer.visit(root)\n'}
+[81.948299] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 359, in visit\n'}
+[81.948471] (px4_msgs) StderrLine: {'line': b'    if not isinstance(next_node, ForestNode):\n'}
+[81.948605] (px4_msgs) StderrLine: {'line': b'KeyboardInterrupt\n'}
+[81.948736] (px4_msgs) StderrLine: {'line': b'    def __init__(self, token, term, priority=None):\n'}
+[81.948864] (px4_msgs) StderrLine: {'line': b'KeyboardInterrupt\n'}
+[81.955817] (px4_msgs) StderrLine: {'line': b'    self.visit(root)\n'}
+[81.956133] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 532, in visit\n'}
+[81.956370] (px4_msgs) StderrLine: {'line': b'    super(ForestToParseTree, self).visit(root)\n'}
+[81.956552] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 340, in visit\n'}
+[81.956749] (px4_msgs) StderrLine: {'line': b'    vsno(current)\n'}
+[81.956936] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 439, in visit_symbol_node_out\n'}
+[81.957184] (px4_msgs) StderrLine: {'line': b'    self._visit_node_out_helper(node, self.transform_symbol_node)\n'}
+[81.957385] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 433, in _visit_node_out_helper\n'}
+[81.957584] (px4_msgs) StderrLine: {'line': b'    transformed = method(node, self.data[id(node)])\n'}
+[81.957781] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 582, in transform_symbol_node\n'}
+[81.957983] (px4_msgs) StderrLine: {'line': b'    data = self._collapse_ambig(data)\n'}
+[81.958183] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 553, in _collapse_ambig\n'}
+[81.958380] (px4_msgs) StderrLine: {'line': b"    if hasattr(child, 'data') and child.data == '_ambig':\n"}
+[81.958580] (px4_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/lexer.py", line 195, in __eq__\n'}
+[81.958781] (px4_msgs) StderrLine: {'line': b'    return str.__eq__(self, other)\n'}
+[81.958984] (px4_msgs) StderrLine: {'line': b'KeyboardInterrupt\n'}
+[81.998963] (px4_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make:283: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/action_request__rosidl_typesupport_introspection_cpp.hpp] Interrupt\n'}
+[81.999496] (px4_msgs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:368: CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/all] Interrupt\n'}
+[82.001928] (px4_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make:283: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/action_request__rosidl_typesupport_introspection_c.h] Interrupt\n'}
+[82.002267] (px4_msgs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:316: CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/all] Interrupt\n'}
+[82.026403] (px4_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make:283: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/action_request__type_support.cpp] Interrupt\n'}
+[82.026791] (px4_msgs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:290: CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/all] Interrupt\n'}
+[82.034584] (px4_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make:281: rosidl_typesupport_cpp/px4_msgs/msg/action_request__type_support.cpp] Interrupt\n'}
+[82.035018] (px4_msgs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:394: CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/all] Interrupt\n'}
+[82.046982] (-) TimerEvent: {}
+[82.047281] (px4_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make:281: rosidl_typesupport_c/px4_msgs/msg/action_request__type_support.cpp] Interrupt\n'}
+[82.047519] (px4_msgs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:342: CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/all] Interrupt\n'}
+[82.059255] (px4_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make:283: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/action_request__rosidl_typesupport_fastrtps_c.h] Interrupt\n'}
+[82.059605] (px4_msgs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:238: CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/all] Interrupt\n'}
+[82.059900] (px4_msgs) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Interrupt\n'}
+[82.062085] (px4_msgs) JobEnded: {'identifier': 'px4_msgs', 'rc': 'SIGINT'}
+[82.073112] (px4_ros_com) JobSkipped: {'identifier': 'px4_ros_com'}
+[82.073371] (velodyne_driver) JobSkipped: {'identifier': 'velodyne_driver'}
+[82.073463] (velodyne_pointcloud) JobSkipped: {'identifier': 'velodyne_pointcloud'}
+[82.073609] (velodyne) JobSkipped: {'identifier': 'velodyne'}
+[82.073704] (-) EventReactorShutdown: {}

@@ -1,0 +1,4 @@
+/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/lidar_slam/rosidl_adapter/lidar_slam:msg/Confidence.idl
+/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/lidar_slam/rosidl_adapter/lidar_slam:msg/SlamCommand.idl
+/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/lidar_slam/rosidl_adapter/lidar_slam:srv/SavePc.idl
+/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/lidar_slam/rosidl_adapter/lidar_slam:srv/Reset.idl

@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from lidar_slam/srv/SavePc.srv
+// generated code does not contain a copyright notice
+
+
+module lidar_slam {
+  module srv {
+    struct SavePc_Request {
+      string output_prefix_path;
+
+      int32 format;
+    };
+    struct SavePc_Response {
+      boolean success;
+    };
+  };
+};

@@ -1,0 +1,253 @@
+[0.010s] Invoking command in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/livox_ros_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/slam/ros2_wrapping/external_sensors_msg/livox_ros_driver -DCMAKE_BUILD_TYPE=release -DCMAKE_INSTALL_PREFIX=/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver
+[0.056s] -- The C compiler identification is GNU 11.4.0
+[0.104s] -- The CXX compiler identification is GNU 11.4.0
+[0.110s] -- Detecting C compiler ABI info
+[0.175s] -- Detecting C compiler ABI info - done
+[0.181s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.181s] -- Detecting C compile features
+[0.181s] -- Detecting C compile features - done
+[0.184s] -- Detecting CXX compiler ABI info
+[0.252s] -- Detecting CXX compiler ABI info - done
+[0.258s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.258s] -- Detecting CXX compile features
+[0.259s] -- Detecting CXX compile features - done
+[0.260s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.567s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.639s] -- Found std_msgs: 4.2.3 (/opt/ros/humble/share/std_msgs/cmake)
+[0.665s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.668s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.674s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.684s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.698s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.741s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.972s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.285s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.405s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.425s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.426s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.449s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.449s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.450s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.450s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.467s] -- Found PythonExtra: .so  
+[1.513s] -- Configuring done
+[1.540s] -- Generating done
+[1.545s] -- Build files have been written to: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/livox_ros_driver
+[1.550s] Invoked command in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/livox_ros_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/slam/ros2_wrapping/external_sensors_msg/livox_ros_driver -DCMAKE_BUILD_TYPE=release -DCMAKE_INSTALL_PREFIX=/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver
+[1.552s] Invoking command in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/livox_ros_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/livox_ros_driver -- -j8 -l8
+[1.584s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.592s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.599s] [  5%] Built target ament_cmake_python_copy_livox_ros_driver
+[1.831s] running egg_info
+[1.833s] creating livox_ros_driver.egg-info
+[1.848s] writing livox_ros_driver.egg-info/PKG-INFO
+[1.849s] writing dependency_links to livox_ros_driver.egg-info/dependency_links.txt
+[1.849s] writing top-level names to livox_ros_driver.egg-info/top_level.txt
+[1.849s] writing manifest file 'livox_ros_driver.egg-info/SOURCES.txt'
+[1.897s] reading manifest file 'livox_ros_driver.egg-info/SOURCES.txt'
+[1.898s] writing manifest file 'livox_ros_driver.egg-info/SOURCES.txt'
+[1.933s] [  5%] Built target ament_cmake_python_build_livox_ros_driver_egg
+[2.042s] [  5%] Built target livox_ros_driver__cpp
+[2.051s] [  7%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.053s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.054s] [ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.278s] [ 15%] [32mBuilding C object CMakeFiles/livox_ros_driver__rosidl_generator_c.dir/rosidl_generator_c/livox_ros_driver/msg/detail/custom_msg__functions.c.o[0m
+[2.279s] [ 17%] [32mBuilding C object CMakeFiles/livox_ros_driver__rosidl_generator_c.dir/rosidl_generator_c/livox_ros_driver/msg/detail/custom_point__functions.c.o[0m
+[2.424s] [ 20%] [32m[1mLinking C shared library liblivox_ros_driver__rosidl_generator_c.so[0m
+[2.544s] [ 20%] Built target livox_ros_driver__rosidl_generator_c
+[2.566s] [ 23%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[2.588s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.633s] [ 28%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[2.775s] [ 30%] [32mBuilding CXX object CMakeFiles/livox_ros_driver__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/livox_ros_driver/msg/custom_msg__type_support.cpp.o[0m
+[2.820s] [ 33%] [32mBuilding CXX object CMakeFiles/livox_ros_driver__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/livox_ros_driver/msg/custom_point__type_support.cpp.o[0m
+[2.922s] [ 35%] [32mBuilding CXX object CMakeFiles/livox_ros_driver__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/livox_ros_driver/msg/detail/dds_fastrtps/custom_msg__type_support.cpp.o[0m
+[2.947s] [ 38%] [32mBuilding CXX object CMakeFiles/livox_ros_driver__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/livox_ros_driver/msg/detail/dds_fastrtps/custom_point__type_support.cpp.o[0m
+[3.010s] [ 41%] [32mBuilding CXX object CMakeFiles/livox_ros_driver__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/livox_ros_driver/msg/detail/custom_msg__type_support.cpp.o[0m
+[3.583s] [ 43%] [32mBuilding CXX object CMakeFiles/livox_ros_driver__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/livox_ros_driver/msg/detail/custom_point__type_support.cpp.o[0m
+[3.625s] [ 46%] [32m[1mLinking CXX shared library liblivox_ros_driver__rosidl_typesupport_cpp.so[0m
+[3.730s] [ 46%] Built target livox_ros_driver__rosidl_typesupport_cpp
+[3.786s] [ 48%] [32mBuilding CXX object CMakeFiles/livox_ros_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/livox_ros_driver/msg/detail/custom_msg__type_support_c.cpp.o[0m
+[3.826s] [ 51%] [32mBuilding C object CMakeFiles/livox_ros_driver__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/livox_ros_driver/msg/detail/custom_msg__type_support.c.o[0m
+[3.844s] [ 53%] [32mBuilding CXX object CMakeFiles/livox_ros_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/livox_ros_driver/msg/detail/custom_point__type_support_c.cpp.o[0m
+[4.035s] [ 56%] [32mBuilding C object CMakeFiles/livox_ros_driver__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/livox_ros_driver/msg/detail/custom_point__type_support.c.o[0m
+[4.213s] [ 58%] [32mBuilding CXX object CMakeFiles/livox_ros_driver__rosidl_typesupport_c.dir/rosidl_typesupport_c/livox_ros_driver/msg/custom_msg__type_support.cpp.o[0m
+[4.218s] [ 61%] [32m[1mLinking C shared library liblivox_ros_driver__rosidl_typesupport_introspection_c.so[0m
+[4.301s] [ 61%] Built target livox_ros_driver__rosidl_typesupport_introspection_c
+[4.310s] [ 64%] [32mBuilding CXX object CMakeFiles/livox_ros_driver__rosidl_typesupport_c.dir/rosidl_typesupport_c/livox_ros_driver/msg/custom_point__type_support.cpp.o[0m
+[4.377s] [ 66%] [32m[1mLinking CXX shared library liblivox_ros_driver__rosidl_typesupport_fastrtps_cpp.so[0m
+[4.386s] [ 69%] [32m[1mLinking CXX shared library liblivox_ros_driver__rosidl_typesupport_c.so[0m
+[4.466s] [ 69%] Built target livox_ros_driver__rosidl_typesupport_c
+[4.508s] [ 69%] Built target livox_ros_driver__rosidl_typesupport_fastrtps_cpp
+[4.637s] [ 71%] [32m[1mLinking CXX shared library liblivox_ros_driver__rosidl_typesupport_introspection_cpp.so[0m
+[4.775s] [ 71%] Built target livox_ros_driver__rosidl_typesupport_introspection_cpp
+[4.782s] [ 74%] [32m[1mLinking CXX shared library liblivox_ros_driver__rosidl_typesupport_fastrtps_c.so[0m
+[4.851s] [ 74%] Built target livox_ros_driver__rosidl_typesupport_fastrtps_c
+[4.868s] [ 74%] Built target livox_ros_driver
+[4.887s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[5.487s] [ 76%] Built target livox_ros_driver__py
+[5.503s] [ 79%] [32mBuilding C object CMakeFiles/livox_ros_driver__rosidl_generator_py.dir/rosidl_generator_py/livox_ros_driver/msg/_custom_point_s.c.o[0m
+[5.504s] [ 82%] [32mBuilding C object CMakeFiles/livox_ros_driver__rosidl_generator_py.dir/rosidl_generator_py/livox_ros_driver/msg/_custom_msg_s.c.o[0m
+[5.692s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/livox_ros_driver/liblivox_ros_driver__rosidl_generator_py.so[0m
+[5.725s] [ 84%] Built target livox_ros_driver__rosidl_generator_py
+[5.747s] [ 87%] [32mBuilding C object CMakeFiles/livox_ros_driver__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/livox_ros_driver/_livox_ros_driver_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[5.747s] [ 92%] [32mBuilding C object CMakeFiles/livox_ros_driver__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/livox_ros_driver/_livox_ros_driver_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[5.748s] [ 92%] [32mBuilding C object CMakeFiles/livox_ros_driver__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/livox_ros_driver/_livox_ros_driver_s.ep.rosidl_typesupport_c.c.o[0m
+[5.864s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/livox_ros_driver/livox_ros_driver_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.906s] [ 94%] Built target livox_ros_driver__rosidl_typesupport_introspection_c__pyext
+[5.926s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/livox_ros_driver/livox_ros_driver_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.927s] [100%] [32m[1mLinking C shared library rosidl_generator_py/livox_ros_driver/livox_ros_driver_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.970s] [100%] Built target livox_ros_driver__rosidl_typesupport_fastrtps_c__pyext
+[5.975s] [100%] Built target livox_ros_driver__rosidl_typesupport_c__pyext
+[5.985s] Invoked command in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/livox_ros_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/livox_ros_driver -- -j8 -l8
+[6.046s] Invoking command in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/livox_ros_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/livox_ros_driver
+[6.053s] -- Install configuration: "release"
+[6.054s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/ament_index/resource_index/rosidl_interfaces/livox_ros_driver
+[6.055s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver
+[6.055s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg
+[6.055s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/detail
+[6.055s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/detail/custom_msg__functions.c
+[6.056s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/detail/custom_msg__struct.h
+[6.056s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/detail/custom_point__functions.c
+[6.056s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/detail/custom_point__type_support.h
+[6.056s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/detail/custom_point__struct.h
+[6.057s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/detail/custom_point__functions.h
+[6.057s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/detail/custom_msg__type_support.h
+[6.057s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/detail/custom_msg__functions.h
+[6.057s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/rosidl_generator_c__visibility_control.h
+[6.057s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/custom_point.h
+[6.057s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/custom_msg.h
+[6.058s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/environment/library_path.sh
+[6.058s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/environment/library_path.dsv
+[6.058s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/lib/liblivox_ros_driver__rosidl_generator_c.so
+[6.058s] -- Set runtime path of "/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/lib/liblivox_ros_driver__rosidl_generator_c.so" to ""
+[6.059s] -- Up-to-date: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver
+[6.059s] -- Up-to-date: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg
+[6.059s] -- Up-to-date: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/detail
+[6.059s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/detail/custom_msg__rosidl_typesupport_fastrtps_c.h
+[6.059s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/detail/custom_point__rosidl_typesupport_fastrtps_c.h
+[6.059s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[6.060s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/lib/liblivox_ros_driver__rosidl_typesupport_fastrtps_c.so
+[6.060s] -- Set runtime path of "/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/lib/liblivox_ros_driver__rosidl_typesupport_fastrtps_c.so" to ""
+[6.060s] -- Up-to-date: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver
+[6.060s] -- Up-to-date: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg
+[6.060s] -- Up-to-date: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/detail
+[6.060s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/detail/custom_point__builder.hpp
+[6.060s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/detail/custom_msg__struct.hpp
+[6.061s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/detail/custom_point__traits.hpp
+[6.061s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/detail/custom_msg__builder.hpp
+[6.061s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/detail/custom_point__struct.hpp
+[6.061s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/detail/custom_msg__traits.hpp
+[6.062s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/custom_msg.hpp
+[6.062s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/custom_point.hpp
+[6.062s] -- Up-to-date: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver
+[6.062s] -- Up-to-date: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg
+[6.063s] -- Up-to-date: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/detail
+[6.063s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/detail/custom_point__rosidl_typesupport_fastrtps_cpp.hpp
+[6.063s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/detail/custom_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[6.063s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/detail/dds_fastrtps
+[6.063s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[6.063s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/lib/liblivox_ros_driver__rosidl_typesupport_fastrtps_cpp.so
+[6.064s] -- Set runtime path of "/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/lib/liblivox_ros_driver__rosidl_typesupport_fastrtps_cpp.so" to ""
+[6.064s] -- Up-to-date: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver
+[6.064s] -- Up-to-date: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg
+[6.064s] -- Up-to-date: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/detail
+[6.064s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/detail/custom_msg__type_support.c
+[6.064s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/detail/custom_msg__rosidl_typesupport_introspection_c.h
+[6.064s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/detail/custom_point__type_support.c
+[6.064s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/detail/custom_point__rosidl_typesupport_introspection_c.h
+[6.065s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[6.065s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/lib/liblivox_ros_driver__rosidl_typesupport_introspection_c.so
+[6.065s] -- Set runtime path of "/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/lib/liblivox_ros_driver__rosidl_typesupport_introspection_c.so" to ""
+[6.065s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/lib/liblivox_ros_driver__rosidl_typesupport_c.so
+[6.065s] -- Set runtime path of "/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/lib/liblivox_ros_driver__rosidl_typesupport_c.so" to ""
+[6.065s] -- Up-to-date: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver
+[6.065s] -- Up-to-date: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg
+[6.065s] -- Up-to-date: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/detail
+[6.065s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/detail/custom_msg__rosidl_typesupport_introspection_cpp.hpp
+[6.065s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/detail/custom_point__type_support.cpp
+[6.065s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/detail/custom_msg__type_support.cpp
+[6.065s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/include/livox_ros_driver/livox_ros_driver/msg/detail/custom_point__rosidl_typesupport_introspection_cpp.hpp
+[6.065s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/lib/liblivox_ros_driver__rosidl_typesupport_introspection_cpp.so
+[6.065s] -- Set runtime path of "/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/lib/liblivox_ros_driver__rosidl_typesupport_introspection_cpp.so" to ""
+[6.065s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/lib/liblivox_ros_driver__rosidl_typesupport_cpp.so
+[6.066s] -- Set runtime path of "/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/lib/liblivox_ros_driver__rosidl_typesupport_cpp.so" to ""
+[6.066s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/environment/pythonpath.sh
+[6.066s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/environment/pythonpath.dsv
+[6.066s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages/livox_ros_driver-2.1.0-py3.10.egg-info
+[6.066s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages/livox_ros_driver-2.1.0-py3.10.egg-info/dependency_links.txt
+[6.066s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages/livox_ros_driver-2.1.0-py3.10.egg-info/PKG-INFO
+[6.066s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages/livox_ros_driver-2.1.0-py3.10.egg-info/top_level.txt
+[6.066s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages/livox_ros_driver-2.1.0-py3.10.egg-info/SOURCES.txt
+[6.066s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages/livox_ros_driver
+[6.066s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages/livox_ros_driver/livox_ros_driver_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[6.066s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages/livox_ros_driver/liblivox_ros_driver__rosidl_generator_py.so
+[6.066s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages/livox_ros_driver/__init__.py
+[6.066s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages/livox_ros_driver/livox_ros_driver_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[6.066s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages/livox_ros_driver/_livox_ros_driver_s.ep.rosidl_typesupport_c.c
+[6.066s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages/livox_ros_driver/_livox_ros_driver_s.ep.rosidl_typesupport_introspection_c.c
+[6.066s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages/livox_ros_driver/_livox_ros_driver_s.ep.rosidl_typesupport_fastrtps_c.c
+[6.066s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages/livox_ros_driver/msg
+[6.066s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages/livox_ros_driver/msg/_custom_point_s.c
+[6.066s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages/livox_ros_driver/msg/__init__.py
+[6.066s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages/livox_ros_driver/msg/_custom_point.py
+[6.066s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages/livox_ros_driver/msg/_custom_msg.py
+[6.066s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages/livox_ros_driver/msg/_custom_msg_s.c
+[6.067s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages/livox_ros_driver/livox_ros_driver_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[6.107s] Listing '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages/livox_ros_driver'...
+[6.107s] Compiling '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages/livox_ros_driver/__init__.py'...
+[6.107s] Listing '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages/livox_ros_driver/msg'...
+[6.107s] Compiling '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages/livox_ros_driver/msg/__init__.py'...
+[6.107s] Compiling '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages/livox_ros_driver/msg/_custom_msg.py'...
+[6.107s] Compiling '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages/livox_ros_driver/msg/_custom_point.py'...
+[6.113s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages/livox_ros_driver/livox_ros_driver_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[6.114s] -- Set runtime path of "/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages/livox_ros_driver/livox_ros_driver_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[6.114s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages/livox_ros_driver/livox_ros_driver_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[6.114s] -- Set runtime path of "/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages/livox_ros_driver/livox_ros_driver_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[6.114s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages/livox_ros_driver/livox_ros_driver_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[6.115s] -- Set runtime path of "/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/local/lib/python3.10/dist-packages/livox_ros_driver/livox_ros_driver_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[6.115s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/lib/liblivox_ros_driver__rosidl_generator_py.so
+[6.115s] -- Set runtime path of "/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/lib/liblivox_ros_driver__rosidl_generator_py.so" to ""
+[6.115s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/msg/CustomMsg.idl
+[6.115s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/msg/CustomPoint.idl
+[6.115s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/msg/CustomMsg.msg
+[6.115s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/msg/CustomPoint.msg
+[6.116s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/ament_index/resource_index/package_run_dependencies/livox_ros_driver
+[6.116s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/ament_index/resource_index/parent_prefix_path/livox_ros_driver
+[6.116s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/environment/ament_prefix_path.sh
+[6.116s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/environment/ament_prefix_path.dsv
+[6.116s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/environment/path.sh
+[6.116s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/environment/path.dsv
+[6.116s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/local_setup.bash
+[6.117s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/local_setup.sh
+[6.117s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/local_setup.zsh
+[6.117s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/local_setup.dsv
+[6.117s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/package.dsv
+[6.117s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/ament_index/resource_index/packages/livox_ros_driver
+[6.117s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/cmake/export_livox_ros_driver__rosidl_generator_cExport.cmake
+[6.117s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/cmake/export_livox_ros_driver__rosidl_generator_cExport-release.cmake
+[6.118s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/cmake/export_livox_ros_driver__rosidl_typesupport_fastrtps_cExport.cmake
+[6.118s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/cmake/export_livox_ros_driver__rosidl_typesupport_fastrtps_cExport-release.cmake
+[6.118s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/cmake/export_livox_ros_driver__rosidl_generator_cppExport.cmake
+[6.118s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/cmake/export_livox_ros_driver__rosidl_typesupport_fastrtps_cppExport.cmake
+[6.118s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/cmake/export_livox_ros_driver__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[6.118s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/cmake/livox_ros_driver__rosidl_typesupport_introspection_cExport.cmake
+[6.118s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/cmake/livox_ros_driver__rosidl_typesupport_introspection_cExport-release.cmake
+[6.119s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/cmake/livox_ros_driver__rosidl_typesupport_cExport.cmake
+[6.119s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/cmake/livox_ros_driver__rosidl_typesupport_cExport-release.cmake
+[6.119s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/cmake/livox_ros_driver__rosidl_typesupport_introspection_cppExport.cmake
+[6.119s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/cmake/livox_ros_driver__rosidl_typesupport_introspection_cppExport-release.cmake
+[6.119s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/cmake/livox_ros_driver__rosidl_typesupport_cppExport.cmake
+[6.119s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/cmake/livox_ros_driver__rosidl_typesupport_cppExport-release.cmake
+[6.120s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/cmake/export_livox_ros_driver__rosidl_generator_pyExport.cmake
+[6.120s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/cmake/export_livox_ros_driver__rosidl_generator_pyExport-release.cmake
+[6.120s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+[6.120s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/cmake/rosidl_cmake-extras.cmake
+[6.120s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+[6.120s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/cmake/ament_cmake_export_libraries-extras.cmake
+[6.120s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/cmake/ament_cmake_export_targets-extras.cmake
+[6.121s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[6.121s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[6.121s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/cmake/livox_ros_driverConfig.cmake
+[6.121s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/cmake/livox_ros_driverConfig-version.cmake
+[6.121s] -- Installing: /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver/share/livox_ros_driver/package.xml
+[6.123s] Invoked command in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/livox_ros_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/livox_ros_driver

@@ -33,19 +33,34 @@ def generate_launch_description():
     executable='pose_array_to_file_node',
     name='pose_array_to_file_node'
     ))
+    ld.add_action(Node(
+    package='px4_ros_com',
+    executable='PointCloudProcessor',
+    name='PointCloudProcessor'
+    ))
+    ld.add_action(Node(
+    package='px4_ros_com',
+    executable='pose_array_to_file_node',
+    name='pose_array_to_file_node'
+    ))
+    ld.add_action(Node(
+    package='px4_ros_com',
+    executable='offboard_control',
+    name='offboard_control'
+    ))
 
     # Add the nearest_poster_node
     ld.add_action(Node(
-        package='nearest_poster_yaw',
-        executable='nearest_poster_node',
-        name='nearest_poster_node'
+    package='nearest_poster_yaw',
+    executable='nearest_poster_node',
+    name='nearest_poster_node'
     ))
 
     # Add the odometry_node
     ld.add_action(Node(
-        package='odometry',
-        executable='run',
-        name='odometry_node'
+        package='localization',
+        executable='localization_node',
+        name='localization_node'
     ))
 
     # Include the 'slam_velodyne.py' launch file with arguments

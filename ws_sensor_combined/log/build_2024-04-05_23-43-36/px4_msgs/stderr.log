@@ -1,0 +1,195 @@
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/opt/ros/humble/lib/rosidl_typesupport_fastrtps_cpp/rosidl_typesupport_fastrtps_cpp", line 23, in <module>
+  File "/opt/ros/humble/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp", line 28, in <module>
+  File "/opt/ros/humble/lib/rosidl_typesupport_c/rosidl_typesupport_c", line 28, in <module>
+  File "/opt/ros/humble/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp", line 31, in <module>
+gmake[2]: *** Deleting file 'rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/action_request__type_support.cpp'
+gmake[2]: *** Deleting file 'rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/action_request__rosidl_typesupport_introspection_cpp.hpp'
+    sys.exit(main())
+    sys.exit(main())
+    sys.exit(main())
+    sys.exit(main())
+  File "/opt/ros/humble/lib/rosidl_typesupport_fastrtps_cpp/rosidl_typesupport_fastrtps_cpp", line 19, in main
+  File "/opt/ros/humble/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp", line 24, in main
+  File "/opt/ros/humble/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp", line 27, in main
+  File "/opt/ros/humble/lib/rosidl_typesupport_c/rosidl_typesupport_c", line 24, in main
+    generate_cpp(args.generator_arguments_file)
+    generate_cpp(args.generator_arguments_file)
+    generate_c(args.generator_arguments_file, args.typesupports)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_fastrtps_cpp/__init__.py", line 24, in generate_cpp
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_introspection_cpp/__init__.py", line 31, in generate_cpp
+    generate_cpp(args.generator_arguments_file, args.typesupports)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_c/__init__.py", line 28, in generate_c
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_cpp/__init__.py", line 28, in generate_cpp
+gmake[2]: *** Deleting file 'rosidl_typesupport_introspection_c/px4_msgs/msg/detail/action_request__rosidl_typesupport_introspection_c.h'
+gmake[2]: *** Deleting file 'rosidl_typesupport_cpp/px4_msgs/msg/action_request__type_support.cpp'
+    return generate_files(generator_arguments_file, mapping)
+    return generate_files(generator_arguments_file, mapping)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 74, in generate_files
+    return generate_files(
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 74, in generate_files
+    return generate_files(
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 74, in generate_files
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 74, in generate_files
+    idl_file = parse_idl_file(locator)
+    idl_file = parse_idl_file(locator)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 64, in parse_idl_file
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 64, in parse_idl_file
+    idl_file = parse_idl_file(locator)
+Traceback (most recent call last):
+    idl_file = parse_idl_file(locator)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 64, in parse_idl_file
+Traceback (most recent call last):
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 64, in parse_idl_file
+  File "/opt/ros/humble/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c", line 33, in <module>
+  File "/opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c", line 31, in <module>
+    content = parse_idl_string(string, png_file=png_file)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 72, in parse_idl_string
+    content = parse_idl_string(string, png_file=png_file)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 72, in parse_idl_string
+    tree = get_ast_from_idl_string(idl_string)
+    content = parse_idl_string(string, png_file=png_file)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string
+    content = parse_idl_string(string, png_file=png_file)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 72, in parse_idl_string
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 72, in parse_idl_string
+    sys.exit(main())
+    sys.exit(main())
+  File "/opt/ros/humble/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c", line 29, in main
+  File "/opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c", line 27, in main
+    return _parser.parse(idl_string)
+    tree = get_ast_from_idl_string(idl_string)
+  File "/usr/lib/python3/dist-packages/lark/lark.py", line 619, in parse
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string
+    tree = get_ast_from_idl_string(idl_string)
+    tree = get_ast_from_idl_string(idl_string)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string
+    generate_typesupport_fastrtps_c(args.generator_arguments_file)
+    generate_c(args.generator_arguments_file)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_fastrtps_c/__init__.py", line 24, in generate_typesupport_fastrtps_c
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_introspection_c/__init__.py", line 31, in generate_c
+    return _parser.parse(idl_string)
+  File "/usr/lib/python3/dist-packages/lark/lark.py", line 619, in parse
+    return _parser.parse(idl_string)
+    return generate_files(generator_arguments_file, mapping)
+    return _parser.parse(idl_string)
+  File "/usr/lib/python3/dist-packages/lark/lark.py", line 619, in parse
+    return generate_files(generator_arguments_file, mapping)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 74, in generate_files
+  File "/usr/lib/python3/dist-packages/lark/lark.py", line 619, in parse
+gmake[2]: *** Deleting file 'rosidl_typesupport_c/px4_msgs/msg/action_request__type_support.cpp'
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 74, in generate_files
+    idl_file = parse_idl_file(locator)
+    idl_file = parse_idl_file(locator)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 64, in parse_idl_file
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 64, in parse_idl_file
+gmake[2]: *** Deleting file 'rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/action_request__rosidl_typesupport_fastrtps_c.h'
+    content = parse_idl_string(string, png_file=png_file)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 72, in parse_idl_string
+    content = parse_idl_string(string, png_file=png_file)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 72, in parse_idl_string
+    tree = get_ast_from_idl_string(idl_string)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string
+    return _parser.parse(idl_string)
+    tree = get_ast_from_idl_string(idl_string)
+  File "/usr/lib/python3/dist-packages/lark/lark.py", line 619, in parse
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string
+    return _parser.parse(idl_string)
+  File "/usr/lib/python3/dist-packages/lark/lark.py", line 619, in parse
+    return self.parser.parse(text, start=start, on_error=on_error)
+    return self.parser.parse(text, start=start, on_error=on_error)
+  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 99, in parse
+    return self.parser.parse(text, start=start, on_error=on_error)
+  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 99, in parse
+  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 99, in parse
+    return self.parser.parse(text, start=start, on_error=on_error)
+    return self.parser.parse(text, start=start, on_error=on_error)
+    return self.parser.parse(text, start=start, on_error=on_error)
+  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 99, in parse
+  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 99, in parse
+  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 99, in parse
+    return self.parser.parse(stream, chosen_start, **kw)
+    return self.parser.parse(stream, chosen_start, **kw)
+    return self.parser.parse(stream, chosen_start, **kw)
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 266, in parse
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 266, in parse
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 292, in parse
+    return self.parser.parse(stream, chosen_start, **kw)
+    return self.parser.parse(stream, chosen_start, **kw)
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 266, in parse
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 266, in parse
+    return self.parser.parse(stream, chosen_start, **kw)
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 292, in parse
+    to_scan = self._parse(lexer, columns, to_scan, start_symbol)
+    to_scan = self._parse(lexer, columns, to_scan, start_symbol)
+  File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 144, in _parse
+  File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 144, in _parse
+    return transformer.transform(solutions[0])
+    to_scan = self._parse(lexer, columns, to_scan, start_symbol)
+  File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 144, in _parse
+    to_scan = self._parse(lexer, columns, to_scan, start_symbol)
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 395, in transform
+  File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 146, in _parse
+    return transformer.transform(solutions[0])
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 395, in transform
+    self.predict_and_complete(i, to_scan, columns, transitives)
+    self.predict_and_complete(i, to_scan, columns, transitives)
+    self.predict_and_complete(i, to_scan, columns, transitives)
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 152, in predict_and_complete
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 141, in predict_and_complete
+    to_scan = scan(i, to_scan)
+  File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 102, in scan
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 152, in predict_and_complete
+    new_items.append(new_item)
+KeyboardInterrupt
+    if new_item.expect in self.TERMINALS:
+  File "/usr/lib/python3/dist-packages/lark/grammar.py", line 26, in __hash__
+    token_node = TokenNode(token, terminals[token.type])
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 187, in __init__
+    if new_item.expect in self.TERMINALS:
+  File "/usr/lib/python3/dist-packages/lark/grammar.py", line 25, in __hash__
+    def __hash__(self):
+    return hash(self.name)
+KeyboardInterrupt
+KeyboardInterrupt
+    self.visit(root)
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 531, in visit
+    self.prioritizer.visit(root)
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 359, in visit
+    if not isinstance(next_node, ForestNode):
+KeyboardInterrupt
+    def __init__(self, token, term, priority=None):
+KeyboardInterrupt
+    self.visit(root)
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 532, in visit
+    super(ForestToParseTree, self).visit(root)
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 340, in visit
+    vsno(current)
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 439, in visit_symbol_node_out
+    self._visit_node_out_helper(node, self.transform_symbol_node)
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 433, in _visit_node_out_helper
+    transformed = method(node, self.data[id(node)])
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 582, in transform_symbol_node
+    data = self._collapse_ambig(data)
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 553, in _collapse_ambig
+    if hasattr(child, 'data') and child.data == '_ambig':
+  File "/usr/lib/python3/dist-packages/lark/lexer.py", line 195, in __eq__
+    return str.__eq__(self, other)
+KeyboardInterrupt
+gmake[2]: *** [CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make:283: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/action_request__rosidl_typesupport_introspection_cpp.hpp] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:368: CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/all] Interrupt
+gmake[2]: *** [CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make:283: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/action_request__rosidl_typesupport_introspection_c.h] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:316: CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/all] Interrupt
+gmake[2]: *** [CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make:283: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/action_request__type_support.cpp] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:290: CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/all] Interrupt
+gmake[2]: *** [CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make:281: rosidl_typesupport_cpp/px4_msgs/msg/action_request__type_support.cpp] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:394: CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/all] Interrupt
+gmake[2]: *** [CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make:281: rosidl_typesupport_c/px4_msgs/msg/action_request__type_support.cpp] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:342: CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/all] Interrupt
+gmake[2]: *** [CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make:283: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/action_request__rosidl_typesupport_fastrtps_c.h] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:238: CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

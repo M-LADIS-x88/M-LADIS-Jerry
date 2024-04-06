@@ -1,0 +1,7 @@
+{
+  "package_name": "apriltag_ros",
+  "non_idl_tuples": [
+    "/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/slam/ros2_wrapping/external_sensors_msg/apriltag_ros:msg/AprilTagDetection.msg",
+    "/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/slam/ros2_wrapping/external_sensors_msg/apriltag_ros:msg/AprilTagDetectionArray.msg"
+  ]
+}
