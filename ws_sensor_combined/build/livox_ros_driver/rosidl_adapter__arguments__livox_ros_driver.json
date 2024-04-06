@@ -1,7 +1,0 @@
-{
-  "package_name": "livox_ros_driver",
-  "non_idl_tuples": [
-    "/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/slam/ros2_wrapping/external_sensors_msg/livox_ros_driver:msg/CustomMsg.msg",
-    "/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/slam/ros2_wrapping/external_sensors_msg/livox_ros_driver:msg/CustomPoint.msg"
-  ]
-}

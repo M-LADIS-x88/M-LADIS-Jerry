@@ -1,4 +1,0 @@
-[0.072s] Invoking command in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/nearest_poster_yaw': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/nearest_poster_yaw -- -j8 -l8
-[0.159s] [ 50%] [32mBuilding CXX object CMakeFiles/nearest_poster_node.dir/src/nearest_poster_node.cpp.o[0m
-[14.389s] [100%] [32m[1mLinking CXX executable nearest_poster_node[0m
-[14.946s] [100%] Built target nearest_poster_node

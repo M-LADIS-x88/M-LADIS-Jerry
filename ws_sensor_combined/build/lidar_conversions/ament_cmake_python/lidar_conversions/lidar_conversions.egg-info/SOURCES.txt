@@ -1,9 +1,0 @@
-setup.py
-lidar_conversions/__init__.py
-lidar_conversions.egg-info/PKG-INFO
-lidar_conversions.egg-info/SOURCES.txt
-lidar_conversions.egg-info/dependency_links.txt
-lidar_conversions.egg-info/top_level.txt
-lidar_conversions/srv/__init__.py
-lidar_conversions/srv/_estim_params.py
-lidar_conversions/srv/_estim_sense.py

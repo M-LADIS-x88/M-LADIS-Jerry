@@ -1,9 +1,0 @@
-{
-  "package_name": "lidar_slam",
-  "non_idl_tuples": [
-    "/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/slam/ros2_wrapping/lidar_slam:msg/Confidence.msg",
-    "/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/slam/ros2_wrapping/lidar_slam:msg/SlamCommand.msg",
-    "/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/slam/ros2_wrapping/lidar_slam:srv/SavePc.srv",
-    "/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/src/slam/ros2_wrapping/lidar_slam:srv/Reset.srv"
-  ]
-}

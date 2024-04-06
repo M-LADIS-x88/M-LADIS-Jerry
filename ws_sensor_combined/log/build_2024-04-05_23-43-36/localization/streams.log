@@ -1,4 +1,0 @@
-[0.065s] Invoking command in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/localization -- -j8 -l8
-[0.119s] [ 50%] [32mBuilding CXX object CMakeFiles/localization_node.dir/src/localization_node.cpp.o[0m
-[11.569s] [100%] [32m[1mLinking CXX executable localization_node[0m
-[12.044s] [100%] Built target localization_node

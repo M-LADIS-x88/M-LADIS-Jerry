@@ -13,6 +13,7 @@
   <!-- Other package dependencies -->
   <depend>rclcpp</depend>
   <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
 
   <!-- Declare compatibility with the ROS environment -->
   <depend>ros_environment</depend>

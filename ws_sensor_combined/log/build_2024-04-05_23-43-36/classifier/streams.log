@@ -1,7 +1,0 @@
-[0.060s] Invoking command in '/home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/classifier': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robmoemac/M-LADIS-Jerry/ws_sensor_combined/build/classifier -- -j8 -l8
-[0.107s] [ 25%] [32mBuilding CXX object CMakeFiles/pose_array_to_file_node.dir/src/classifier_node.cpp.o[0m
-[0.112s] [ 50%] [32mBuilding CXX object CMakeFiles/pose_array_publisher_node.dir/src/fake_posters.cpp.o[0m
-[4.738s] [ 75%] [32m[1mLinking CXX executable pose_array_publisher_node[0m
-[4.939s] [ 75%] Built target pose_array_publisher_node
-[11.472s] [100%] [32m[1mLinking CXX executable pose_array_to_file_node[0m
-[12.204s] [100%] Built target pose_array_to_file_node

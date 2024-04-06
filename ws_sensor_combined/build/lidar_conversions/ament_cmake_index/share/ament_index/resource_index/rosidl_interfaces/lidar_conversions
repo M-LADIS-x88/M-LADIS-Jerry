@@ -1,8 +1,0 @@
-srv/EstimParams.idl
-srv/EstimParams.srv
-srv/EstimParams_Request.msg
-srv/EstimParams_Response.msg
-srv/EstimSense.idl
-srv/EstimSense.srv
-srv/EstimSense_Request.msg
-srv/EstimSense_Response.msg

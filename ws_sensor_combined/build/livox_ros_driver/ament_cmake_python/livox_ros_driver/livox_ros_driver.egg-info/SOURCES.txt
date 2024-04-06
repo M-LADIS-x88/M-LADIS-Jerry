@@ -1,9 +1,0 @@
-setup.py
-livox_ros_driver/__init__.py
-livox_ros_driver.egg-info/PKG-INFO
-livox_ros_driver.egg-info/SOURCES.txt
-livox_ros_driver.egg-info/dependency_links.txt
-livox_ros_driver.egg-info/top_level.txt
-livox_ros_driver/msg/__init__.py
-livox_ros_driver/msg/_custom_msg.py
-livox_ros_driver/msg/_custom_point.py

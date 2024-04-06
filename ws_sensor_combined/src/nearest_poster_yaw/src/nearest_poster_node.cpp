@@ -6,38 +6,33 @@
 #include "geometry_msgs/msg/pose_array.hpp"
 #include "geometry_msgs/msg/vector3.hpp"
 #include "std_msgs/msg/float64.hpp"
-#include "std_msgs/msg/bool.hpp"
+#include "geometry_msgs/msg/point.hpp"
 
 class PosterDetector : public rclcpp::Node {
 public:
     PosterDetector()
     : Node("poster_detector") {
         // Set up subscriber for the object_detection topic
-        object_detection_subscriber_ = this->create_subscription<geometry_msgs::msg::PoseArray>(
-            "/object_detection",
-            10,
+        posters_subscriber_ = this->create_subscription<geometry_msgs::msg::PoseArray>(
+            "/posters",
+            1,
             std::bind(&PosterDetector::objectDetectionCallback, this, std::placeholders::_1));
 
         // Set up subscriber for the position topic
         position_subscriber_ = this->create_subscription<geometry_msgs::msg::Vector3>(
             "/position",
-            10,
+            1,
             std::bind(&PosterDetector::positionCallback, this, std::placeholders::_1));
 
         // Set up publisher for the poster_yaw topic
         poster_yaw_publisher_ = this->create_publisher<std_msgs::msg::Float64>(
             "/poster_yaw",
-            10);
+            1);
 
-        // Set up publisher for the take_picture topic
-        take_picture_publisher_ = this->create_publisher<std_msgs::msg::Bool>(
-            "/take_picture",
-            10);
-
-        // Set up publisher for the updated_posters topic
-        updated_posters_publisher_ = this->create_publisher<geometry_msgs::msg::PoseArray>(
-            "/updated_posters",
-            10);
+        // Set up publisher for the poster_point topic
+        poster_point_publisher_ = this->create_publisher<geometry_msgs::msg::Point>(
+            "/poster_point",
+            1);
 
         // Default our position to origin
         current_position_.x = 0.0;
@@ -50,7 +45,9 @@ private:
         double closest_distance = std::numeric_limits<double>::max();
         double target_angle = 0.0;
         bool target_found = false;
-        int closest_index = -1;
+        float range = 2.5;
+        geometry_msgs::msg::Point nearest_poster_point; // Point to store the nearest poster info
+        nearest_poster_point.z = 0; // Set default to out of range
 
         for (size_t i = 0; i < updated_msg.poses.size(); ++i) {
             const auto& pose = updated_msg.poses[i];
@@ -64,7 +61,10 @@ private:
                     closest_distance = distance;
                     target_angle = std::atan2(dy, dx); // Compute angle
                     target_found = true;
-                    closest_index = i;
+
+                    nearest_poster_point.x = pose.position.x;
+                    nearest_poster_point.y = pose.position.y;
+                    nearest_poster_point.z = closest_distance <= range ? 1.0 : 0.0; // Set z field based on range check
                 }
             }
         }
@@ -74,21 +74,11 @@ private:
             angle_msg.data = target_angle;
             poster_yaw_publisher_->publish(angle_msg); // Publish angle
 
-            // Check if we should take a picture and publish on '/take_picture'
-            std_msgs::msg::Bool take_picture_msg;
-            take_picture_msg.data = (closest_distance <= 2.0);
-            
-            take_picture_publisher_->publish(take_picture_msg);
-
-            if (take_picture_msg.data) {
-                updated_msg.poses[closest_index].position.z = 1.0; // Mark the poster as 'classified'
-            }
-        } else {
+            poster_point_publisher_->publish(nearest_poster_point); // Publish the point
+        } 
+        else {
             RCLCPP_INFO(this->get_logger(), "No unclassified poster found.");
         }
-        
-        // Publish the updated poses array whether or not a picture was taken
-        updated_posters_publisher_->publish(updated_msg);
     }
 
     void positionCallback(const geometry_msgs::msg::Vector3::SharedPtr msg) {
@@ -98,11 +88,10 @@ private:
     }
 
     geometry_msgs::msg::Vector3 current_position_;
-    rclcpp::Subscription<geometry_msgs::msg::PoseArray>::SharedPtr object_detection_subscriber_;
+    rclcpp::Subscription<geometry_msgs::msg::PoseArray>::SharedPtr posters_subscriber_;
     rclcpp::Subscription<geometry_msgs::msg::Vector3>::SharedPtr position_subscriber_;
     rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr poster_yaw_publisher_;
-    rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr take_picture_publisher_;
-    rclcpp::Publisher<geometry_msgs::msg::PoseArray>::SharedPtr updated_posters_publisher_;
+    rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr poster_point_publisher_; // Publisher for Point message
 };
 
 int main(int argc, char **argv) {
