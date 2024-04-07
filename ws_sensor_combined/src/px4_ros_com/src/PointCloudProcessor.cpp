@@ -17,6 +17,8 @@
 #include <ctime>
 #include "bound_detection.cpp"
 #include "geometry_msgs/msg/pose_array.hpp"
+#include "geometry_msgs/msg/point.hpp"
+
 //#include "predator_detection.cpp"
 
 
@@ -27,6 +29,9 @@ public:
     subscriber_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
         "maps/edges", 1,
         std::bind(&PointCloudProcessor::pointCloudCallback, this, std::placeholders::_1));
+    position_ = this->create_subscription<geometry_msgs::msg::Point>(
+        "position", 1,
+        std::bind(&PointCloudProcessor::positionCallback, this, std::placeholders::_1));
     predator_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
         "slam_registered_points", 1,
         std::bind(&PointCloudProcessor::predatorCallback, this, std::placeholders::_1));
@@ -39,11 +44,14 @@ private:
   std::vector<Point> centroids_saturated;
   std::vector<Point> centroids_pred;
   std::vector<Point> bounds;
+  float current_z_position_;
   rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr subscriber_;
   rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr predator_;
   rclcpp::Publisher<geometry_msgs::msg::Pose>::SharedPtr walls_;
   rclcpp::Publisher<geometry_msgs::msg::PoseArray>::SharedPtr posters_;
   rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr tom_;
+  rclcpp::Subscription<geometry_msgs::msg::Point>::SharedPtr position_;
+
 
   float euclideanDistanceXY(const Point& a, const Point& b) {
     return std::sqrt((a.x - b.x) * (a.x - b.x) + (a.y - b.y) * (a.y - b.y));
@@ -167,11 +175,15 @@ private:
 
 }
   
+  void positionCallback(const geometry_msgs::msg::Point::SharedPtr position_msg) {
+    current_z_position_ = position_msg->z;
+  }
   void pointCloudCallback(const sensor_msgs::msg::PointCloud2::SharedPtr msg) {
     // Convert PointCloud2 message to PCL PointCloud
     pcl::PointCloud<pcl::PointXYZI>::Ptr pcl_cloud(new pcl::PointCloud<pcl::PointXYZI>);
     pcl::fromROSMsg(*msg, *pcl_cloud);
-
+    float high_z_threshold = current_z_position_ + 0.1;
+    float low_z_threshold = current_z_position_ - 2;
     // Extract XYZ matrix
     int n = pcl_cloud->size();
     std::vector<std::vector<float>> xyzi_matrix(n, std::vector<float>(4)); // Create nx4 matrix for xyzi
@@ -179,12 +191,12 @@ private:
     for (int i = 0; i < n; ++i) {
       const auto& pt = pcl_cloud->points[i];
       //flip z values for flight cause lidar is upside down
-      if (pt.z < 2 && pt.z > -0.1) {
+      if (pt.z < high_z_threshold && pt.z > low_z_threshold) {
         double mag_dist = std::sqrt(pt.x*pt.x + pt.y+pt.y);
         if(pt.x < 32 && pt.y < 40 && pt.x > -32 && pt.y > -40 && mag_dist > 0.5){
           xyzi_matrix[i][0] = pt.x; // Store x coordinate
           xyzi_matrix[i][1] = pt.y; // Store y coordinate
-          xyzi_matrix[i][2] = pt.z; // Store z coordinate
+          xyzi_matrix[i][2] = -pt.z; // Store z coordinate
           xyzi_matrix[i][3] = pt.intensity; // Store intensity
         }
       }
@@ -366,7 +378,8 @@ private:
   void predatorCallback(const sensor_msgs::msg::PointCloud2::SharedPtr msg){
     pcl::PointCloud<pcl::PointXYZI>::Ptr pcl_cloud(new pcl::PointCloud<pcl::PointXYZI>);
     pcl::fromROSMsg(*msg, *pcl_cloud);
-
+    float predator_low_z_threshold = current_z_position_ + 1;
+    float predator_high_z_threshold = current_z_position_ - 10;
     // Extract XYZ matrix
     int n = pcl_cloud->size();
     //rclcpp::Subscription<sensor_msgs::msg::Point>
@@ -383,7 +396,7 @@ private:
     for (int i = 0; i < n; ++i) {
       const auto& pt = pcl_cloud->points[i];
       //flip z values for flight cause lidar is upside down
-      if (pt.z < 10 && pt.z > -1) {
+      if (pt.z < predator_low_z_threshold && pt.z > predator_high_z_threshold) {
         //double mag_dist = std::sqrt(pt.x*pt.x + pt.y+pt.y);
         if(neg_y == 0){
           neg_y = -pos_y;
@@ -391,7 +404,7 @@ private:
         if(pt.x < pos_x - 1.2 && pt.x > neg_x + 1.2 && pt.y < pos_y - 1.2 && pt.y > neg_y + 1.2){
         xyzi_matrix[i][0] = pt.x; // Store x coordinate
         xyzi_matrix[i][1] = pt.y; // Store y coordinate
-        xyzi_matrix[i][3] = pt.z; // Store z coordinate
+        xyzi_matrix[i][3] = -pt.z; // Store z coordinate
         xyzi_matrix[i][2] = pt.intensity; // Store intensity
         }
       }
