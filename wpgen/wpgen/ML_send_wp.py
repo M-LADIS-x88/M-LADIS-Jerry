@@ -53,11 +53,11 @@ class MLAgent(Node):
         self.range_bool = False
         self.position = [0,0]
         self.enemy_position = [0,0]
-        self.x_range = 0
-        self.y_range = 0
+        self.x_range = 0.1
+        self.y_range = 0.1
         self.posters = []
-        self.yaw = 0
-        self.current_yaw = 0
+        self.yaw = 0.0
+        self.current_yaw = 0.0
         
         self.has_received_range = False
         self.has_received_position = False
@@ -163,10 +163,7 @@ class MLAgent(Node):
             obs['position'] = np.array(self.resolve_pos(self.position, x_half, y_half), dtype=np.float32)
         else:
             obs['position'] = np.array([0, 0], dtype=np.float32)
-        if self.poster_centroid:
-            obs['poster_centroid'] = np.array(self.get_poster_centroid(x_half, y_half), dtype=np.float32)
-        else:
-            obs['poster_centroid'] = np.array([0, 0], dtype=np.float32)
+        obs['poster_centroid'] = np.array(self.get_poster_centroid(x_half, y_half), dtype=np.float32)
         # if self.waypoint:
         #     obs['current_waypoint'] = np.array(self.waypoint, dtype=np.float32)
         # else:
@@ -174,18 +171,18 @@ class MLAgent(Node):
         
         action, _states = model.predict(obs, deterministic=False)            
         
-        self.waypoint = action
+        self.waypoint = [float(action[0]), float(action[1])]
         msg = TrajectoryWaypoint()
         
         if self.range_bool:
-            msg.position = [self.position[0] * x_half, self.position[1] * y_half, 3]
+            msg.position = [self.position[0] * x_half, self.position[1] * y_half, 3.0]
             msg.yaw = self.current_yaw
             # SEND TAKE PHOTO COMMAND
         else: 
-            msg.position = [self.waypoint[0] * x_half, self.waypoint[1] * y_half, 3]
+            msg.position = [self.waypoint[0] * x_half, self.waypoint[1] * y_half, 3.0]
             msg.yaw = self.yaw
         self.publisher_.publish(msg)
-        self.get_logger().info('Published recommended waypoint x:{}, y:{}, yaw:{}'.format[msg.position[0], msg.position[1], msg.yaw])
+        self.get_logger().info('Published recommended waypoint x:{}, y:{}, yaw:{}'.format(msg.position[0], msg.position[1], msg.yaw))
         
 def main(args=None):
     rclpy.init(args=args)
