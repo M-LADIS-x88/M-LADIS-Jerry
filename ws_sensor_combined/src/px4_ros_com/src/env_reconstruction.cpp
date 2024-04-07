@@ -40,13 +40,11 @@ class EnvironmentReconstructor : public rclcpp::Node {
 public:
   EnvironmentReconstructor() : Node("environment_reconstructor") {
 
-    
-    
     // Poster pose array publisher
-    poster_pub_ = this->create_publisher<geometry_msgs::msg::PoseArray>("/posters", 10);
+    poster_pub_ = this->create_publisher<geometry_msgs::msg::PoseArray>("/posters", 1);
 
     // End flight publisher
-    end_flight_pub_ = this->create_publisher<std_msgs::msg::Bool>("/end_flight", 10);
+    end_flight_pub_ = this->create_publisher<std_msgs::msg::Bool>("/end_flight", 1);
 
     // Subscription to objects
     //object_sub = this->create_subscription<geometry_msgs::msg::PoseArray>(
@@ -67,6 +65,8 @@ public:
       geometry_msgs::msg::PoseArray pose_array_msg;
       pose_array_msg.header.frame_id = "global frame"; // Replace with your actual frame_id
       pose_array_msg.header.stamp = this->get_clock()->now();
+
+      std::cout << persistentPosters.size() << std::endl;
 
       for (const auto& poster : persistentPosters) {
           geometry_msgs::msg::Pose pose;

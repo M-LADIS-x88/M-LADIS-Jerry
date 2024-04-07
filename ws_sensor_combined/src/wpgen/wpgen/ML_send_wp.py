@@ -23,23 +23,20 @@ from stable_baselines3 import PPO
 import os
 from ament_index_python.packages import get_package_share_directory
 
-model = PPO.load("/home/kfuher/ros2_ws/src/wpgen/EXAMPLE/drone_test")
+model = PPO.load("/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/EXAMPLE/drone_test")
 
 class MLAgent(Node):
     def __init__(self):
         super().__init__('ml_agent')
-        self.publisher_ = self.create_publisher(TrajectoryWaypoint, '/waypoint', 10)
-        self.cam_publisher = self.create_publisher(Point, '/captured_poster', 10)
-        self.in_range_subscription = self.create_subscription(Point, '/in_range', self.range_callback, 10)
-        self.position_subscription = self.create_subscription(Point, '/position', self.position_callback, 10)
-        self.predator_subscription = self.create_subscription(Point, '/predator', self.enemy_position_callback, 10)
-        self.walls_subscription = self.create_subscription(Pose, '/walls', self.walls_callback, 10)
-        self.posters_subscription = self.create_subscription(PoseArray, 'posters', self.poster_data_callback, 10)
-        self.poster_yaw_subscription = self.create_subscription(Float64, '/poster_yaw', self.yaw_callback, 10)
-        self.yaw_subscription_ = self.create_subscription(Float64, '/yaw', self.current_yaw_callback, 10)
-        
-        self.capture_picture_subscription = self.create_subscription(Point, '/poster_point', self.capture_picture_callback, 10)
-        self.end_flight_subscription = self.create_subscription(Bool, '/end_flight', self.end_flight_callback, 10)
+        self.publisher_ = self.create_publisher(TrajectoryWaypoint, '/waypoint', 1)
+        self.cam_publisher = self.create_publisher(Point, '/captured_poster', 1)
+        self.position_subscription = self.create_subscription(Point, '/position', self.position_callback, 1)
+        self.predator_subscription = self.create_subscription(Point, '/Tom', self.enemy_position_callback, 1)
+        self.walls_subscription = self.create_subscription(Pose, '/walls', self.walls_callback, 1)
+        self.posters_subscription = self.create_subscription(PoseArray, 'posters', self.poster_data_callback, 1)
+        self.poster_yaw_subscription = self.create_subscription(Float64, '/poster_yaw', self.yaw_callback, 1)
+        self.capture_picture_subscription = self.create_subscription(Point, '/poster_point', self.capture_picture_callback, 1)
+        self.end_flight_subscription = self.create_subscription(Bool, '/end_flight', self.end_flight_callback, 1)
         self.image_data = []
 
         
@@ -67,7 +64,6 @@ class MLAgent(Node):
         self.y_range = 36
         self.posters = []
         self.yaw = 0.0
-        self.current_yaw = 0.0
         self.waypoint = [0, 0]
         
         self.has_received_range = False
@@ -109,10 +105,10 @@ class MLAgent(Node):
         self.get_logger().info('Yaw to nearest poster: {}'.format(self.yaw))
         self.has_received_yaw = True
         
-    def current_yaw_callback(self, msg):
-        self.current_yaw = msg.data
-        self.get_logger().info('Current yaw: {}'.format(self.yaw))
-        self.has_received_cyaw = True
+    #def current_yaw_callback(self, msg):
+     #   self.current_yaw = msg.data
+      #  self.get_logger().info('Current yaw: {}'.format(self.yaw))
+       # self.has_received_cyaw = True
         
     def capture_picture_callback(self, msg):
         if msg.data and self.position is not None:
@@ -237,7 +233,7 @@ class MLAgent(Node):
         
         if self.range_bool:
             msg.position = [self.position[0] * x_half, self.position[1] * y_half, 3.0]
-            msg.yaw = self.current_yaw
+            msg.yaw = self.yaw
             # SEND TAKE PHOTO COMMAND
         else: 
             msg.position = [self.waypoint[0] * x_half, self.waypoint[1] * y_half, 3.0]

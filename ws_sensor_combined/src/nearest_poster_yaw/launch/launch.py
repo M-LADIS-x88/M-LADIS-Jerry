@@ -63,6 +63,11 @@ def generate_launch_description():
             executable='env_reconstruction',
             name='env_reconstruction'
         ),
+        Node(
+            package='wpgen',
+            executable='ML_send_wp',
+            name='ML_send_wp'
+        ),
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(slam_launch_file),
             launch_arguments={'use_sim_time': LaunchConfiguration('use_sim_time')}.items()
