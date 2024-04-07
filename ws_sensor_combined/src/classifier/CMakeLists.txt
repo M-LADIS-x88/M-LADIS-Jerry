@@ -12,9 +12,9 @@ find_package(geometry_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 
 # Add the 'pose_array_to_file_node' executable
-add_executable(pose_array_to_file_node src/classifier_node.cpp)
-ament_target_dependencies(pose_array_to_file_node rclcpp std_msgs geometry_msgs)
-target_compile_features(pose_array_to_file_node PUBLIC cxx_std_17)
+add_executable(classifier src/classifier_node.cpp)
+ament_target_dependencies(classifier rclcpp std_msgs geometry_msgs)
+target_compile_features(classifier PUBLIC cxx_std_17)
 
 # Add the 'pose_array_publisher_node' executable
 add_executable(pose_array_publisher_node src/fake_posters.cpp)
@@ -23,7 +23,7 @@ target_compile_features(pose_array_publisher_node PUBLIC cxx_std_17)
 
 # Install the node targets
 install(TARGETS
-  pose_array_to_file_node
+  classifier
   pose_array_publisher_node
   DESTINATION lib/${PROJECT_NAME})
 
