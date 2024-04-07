@@ -4,7 +4,7 @@
 #include <limits>
 #include "rclcpp/rclcpp.hpp"
 #include "geometry_msgs/msg/pose_array.hpp"
-#include "geometry_msgs/msg/vector3.hpp"
+//#include "geometry_msgs/msg/vector3.hpp"
 #include "std_msgs/msg/float64.hpp"
 #include "geometry_msgs/msg/point.hpp"
 
@@ -19,7 +19,7 @@ public:
             std::bind(&PosterDetector::objectDetectionCallback, this, std::placeholders::_1));
 
         // Set up subscriber for the position topic
-        position_subscriber_ = this->create_subscription<geometry_msgs::msg::Vector3>(
+        position_subscriber_ = this->create_subscription<geometry_msgs::msg::Point>(
             "/position",
             1,
             std::bind(&PosterDetector::positionCallback, this, std::placeholders::_1));
@@ -81,15 +81,15 @@ private:
         }
     }
 
-    void positionCallback(const geometry_msgs::msg::Vector3::SharedPtr msg) {
+    void positionCallback(const geometry_msgs::msg::Point::SharedPtr msg) {
         // Update current position (z not used)
         current_position_.x = msg->x;
         current_position_.y = msg->y;
     }
 
-    geometry_msgs::msg::Vector3 current_position_;
+    geometry_msgs::msg::Point current_position_;
     rclcpp::Subscription<geometry_msgs::msg::PoseArray>::SharedPtr posters_subscriber_;
-    rclcpp::Subscription<geometry_msgs::msg::Vector3>::SharedPtr position_subscriber_;
+    rclcpp::Subscription<geometry_msgs::msg::Point>::SharedPtr position_subscriber_;
     rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr poster_yaw_publisher_;
     rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr poster_point_publisher_; // Publisher for Point message
 };

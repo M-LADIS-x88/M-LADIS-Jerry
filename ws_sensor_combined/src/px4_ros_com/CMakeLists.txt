@@ -77,6 +77,11 @@ add_executable(PointCloudProcessor src/PointCloudProcessor.cpp)
 ament_target_dependencies(PointCloudProcessor rclcpp sensor_msgs pcl_conversions pcl_ros)
 install(TARGETS PointCloudProcessor DESTINATION lib/${PROJECT_NAME})
 
+#GPS localization replacement
+add_executable(vis_loc_GPS_spoof src/vis_loc_GPS_spoof.cpp)
+ament_target_dependencies(vis_loc_GPS_spoof rclcpp geometry_msgs px4_msgs)
+install(TARGETS vis_loc_GPS_spoof DESTINATION lib/${PROJECT_NAME})
+
 # New thing!
 #add_executable(lidar_clustering src/computer_viz/lidar_clustering.cpp)
 #ament_target_dependencies(lidar_clustering rclcpp px4_msgs)

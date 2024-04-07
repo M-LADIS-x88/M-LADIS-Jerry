@@ -46,6 +46,12 @@ def generate_launch_description():
     ))
     
     ld.add_action(Node(
+    package='px4_ros_com',
+    executable='vis_loc_GPS_spoof',
+    name='vis_loc_GPS_spoof'
+    ))
+    
+    ld.add_action(Node(
     package='nearest_poster_yaw',
     executable='nearest_poster_node',
     name='nearest_poster_node'
