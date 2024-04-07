@@ -1,5 +1,5 @@
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument
+from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument, TimerAction, OpaqueFunction
 from launch.substitutions import LaunchConfiguration
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.actions import Node
@@ -21,62 +21,69 @@ def generate_launch_description():
         default_value='false',
         description='Use simulation (Gazebo) clock if true')
 
+    # Define node actions for the delayed launch
+    nodes_to_launch = [
+        Node(
+            package='classifier',
+            executable='classifier',
+            name='classifier'
+        ),
+        Node(
+            package='px4_ros_com',
+            executable='PointCloudProcessor',
+            name='PointCloudProcessor'
+        ),
+        Node(
+            package='px4_ros_com',
+            executable='offboard_control',
+            name='offboard_control'
+        ),
+        Node(
+            package='px4_ros_com',
+            executable='vis_loc_GPS_spoof',
+            name='vis_loc_GPS_spoof'
+        ),
+        Node(
+            package='nearest_poster_yaw',
+            executable='nearest_poster_node',
+            name='nearest_poster_node'
+        ),
+        Node(
+            package='localization',
+            executable='localization_node',
+            name='localization_node'
+        ),
+        Node(
+            package='mapping',
+            executable='map_node',
+            name='map_node'
+        ),
+        Node(
+            package='px4_ros_com',
+            executable='env_reconstruction',
+            name='env_reconstruction'
+        ),
+        IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(slam_launch_file),
+            launch_arguments={'use_sim_time': LaunchConfiguration('use_sim_time')}.items()
+        ),
+        IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(velodyne_launch_file)
+        )
+    ]
+
+    # TimerAction to delay launching everything for 4 minutes (240 seconds)
+    timer_action = TimerAction(
+        period=5.0,  # 4 minutes represented in seconds
+        actions=nodes_to_launch
+    )
+
     # Create the LaunchDescription object
     ld = LaunchDescription()
 
-    # Add the launch arguments to the LaunchDescription
+    # Add the launch arguments and delay timer to the LaunchDescription
     ld.add_action(use_sim_time_arg)
+    ld.add_action(timer_action)
 
-    # Add the classifier_node
-    ld.add_action(Node(
-    package='classifier',
-    executable='classifier',
-    name='classifier'
-    ))
-    ld.add_action(Node(
-    package='px4_ros_com',
-    executable='PointCloudProcessor',
-    name='PointCloudProcessor'
-    ))
-
-    ld.add_action(Node(
-    package='px4_ros_com',
-    executable='offboard_control',
-    name='offboard_control'
-    ))
-    
-    ld.add_action(Node(
-    package='px4_ros_com',
-    executable='vis_loc_GPS_spoof',
-    name='vis_loc_GPS_spoof'
-    ))
-    
-    ld.add_action(Node(
-    package='nearest_poster_yaw',
-    executable='nearest_poster_node',
-    name='nearest_poster_node'
-    ))
-
-    ld.add_action(Node(
-        package='localization',
-        executable='localization_node',
-        name='localization_node'
-    ))
-    ld.add_action(Node(
-        package='mapping',
-        executable='map_node',
-        name='map_node'
-    ))
-
-    # Include the 'slam_velodyne.py' launch file with arguments
-    ld.add_action(IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(slam_launch_file),
-        launch_arguments={'use_sim_time': LaunchConfiguration('use_sim_time')}.items()
-    ))
-
-    # Include the 'velodyne-all-nodes-VLP16-launch.py' launch file without arguments
-    ld.add_action(IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(velodyne_launch_file)
-    ))
-
+    # Return the LaunchDescription with all actions
     return ld

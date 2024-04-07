@@ -176,7 +176,8 @@ private:
 }
   
   void positionCallback(const geometry_msgs::msg::Point::SharedPtr position_msg) {
-    current_z_position_ = position_msg->z;
+    current_z_position_ = 0;
+    //current_z_position_ = position_msg->z;
   }
   void pointCloudCallback(const sensor_msgs::msg::PointCloud2::SharedPtr msg) {
     // Convert PointCloud2 message to PCL PointCloud
@@ -191,12 +192,13 @@ private:
     for (int i = 0; i < n; ++i) {
       const auto& pt = pcl_cloud->points[i];
       //flip z values for flight cause lidar is upside down
-      if (pt.z < high_z_threshold && pt.z > low_z_threshold) {
+      //if (pt.z < high_z_threshold && pt.z > low_z_threshold) {
+        if(pt.z < 2 && pt.z > -0.1){
         double mag_dist = std::sqrt(pt.x*pt.x + pt.y+pt.y);
         if(pt.x < 32 && pt.y < 40 && pt.x > -32 && pt.y > -40 && mag_dist > 0.5){
           xyzi_matrix[i][0] = pt.x; // Store x coordinate
           xyzi_matrix[i][1] = pt.y; // Store y coordinate
-          xyzi_matrix[i][2] = -pt.z; // Store z coordinate
+          xyzi_matrix[i][2] = pt.z; // Store z coordinate
           xyzi_matrix[i][3] = pt.intensity; // Store intensity
         }
       }
@@ -343,8 +345,8 @@ private:
       
       std::vector<Point> posters = findHighestZPointsNearCentroids(wall_centroids, wall_matrix, 1.0f);
 
-      posters.erase(std::remove_if(posters.begin(), posters.end(),
-       [](const Point& pt) {return pt.z > 1; }), posters.end());
+      //posters.erase(std::remove_if(posters.begin(), posters.end(),
+      //[](const Point& pt) {return pt.z > 1; }), posters.end());
       writeCentroidsToCSV(posters,"z.csv");
 
 
@@ -396,7 +398,7 @@ private:
     for (int i = 0; i < n; ++i) {
       const auto& pt = pcl_cloud->points[i];
       //flip z values for flight cause lidar is upside down
-      if (pt.z < predator_low_z_threshold && pt.z > predator_high_z_threshold) {
+      if (pt.z > -predator_low_z_threshold && pt.z < -predator_high_z_threshold) {
         //double mag_dist = std::sqrt(pt.x*pt.x + pt.y+pt.y);
         if(neg_y == 0){
           neg_y = -pos_y;

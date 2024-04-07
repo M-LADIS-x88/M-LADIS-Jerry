@@ -20,12 +20,12 @@ public:
 
         // Start rosbag recording for each topic in a new process
         startRecording("/velodyne_points", "velodyne_bag");
-        startRecording("/walls", "walls_bag");
-        startRecording("/current_posters", "current_posters_bag");
-        startRecording("/posters", "posters_bag");
-        startRecording("/Tom", "Tom_bag");
-        startRecording("/position", "position_bag");
-        startRecording("/yaw", "yaw_bag");
+        //startRecording("/walls", "walls_bag");
+        //startRecording("/current_posters", "current_posters_bag");
+        //startRecording("/posters", "posters_bag");
+        //startRecording("/Tom", "Tom_bag");
+        //startRecording("/position", "position_bag");
+        //startRecording("/yaw", "yaw_bag");
     }
 
     ~MapsEdgesRecorder() {
