@@ -77,6 +77,10 @@ add_executable(PointCloudProcessor src/PointCloudProcessor.cpp)
 ament_target_dependencies(PointCloudProcessor rclcpp sensor_msgs pcl_conversions pcl_ros)
 install(TARGETS PointCloudProcessor DESTINATION lib/${PROJECT_NAME})
 
+add_executable(env_reconstruction src/env_reconstruction.cpp)
+ament_target_dependencies(env_reconstruction rclcpp px4_msgs geometry_msgs)
+install(TARGETS env_reconstruction DESTINATION lib/${PROJECT_NAME})
+
 # New thing!
 #add_executable(lidar_clustering src/computer_viz/lidar_clustering.cpp)
 #ament_target_dependencies(lidar_clustering rclcpp px4_msgs)
