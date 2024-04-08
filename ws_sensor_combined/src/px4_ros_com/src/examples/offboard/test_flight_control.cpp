@@ -22,7 +22,7 @@ public:
         // Set up a timer to publish messages periodically
         
         //while(counter < 4){
-        timer_ = this->create_wall_timer(3s,
+        timer_ = this->create_wall_timer(0.4s,
                                          std::bind(&TrajectorySetpointPublisher::publishTrajectorySetpoint, this));
         //}
         
@@ -34,14 +34,16 @@ private:
     void publishTrajectorySetpoint() {
         auto message = px4_msgs::msg::TrajectorySetpoint();
         // Set other desired values for position, velocity, acceleration, jerk, yaw, and yawspeed
-        if(counter == 0){
-        	message.position = {0, 0, 4.0};
-	}else if(counter == 1){
-		message.position = {5.0, 0, 4.0};
-	}else if(counter == 2){
-		message.position = {5.0, 5.0, 4.0};
+        if(counter <= 10){
+        	message.position = {0, 0, 3.0*counter/10};
+	}else if(counter <= 20){
+		message.position = {5.0*(counter-10)/10, 0, 3.0};
+	}else if(counter <= 30){
+		message.position = {5.0, 5.0*(counter-20)/10, 3.0};
+	}else if(counter <= 40){
+		message.position = {5.0, 5.0, 3-3*(counter-30)/10};
 	}else{
-		message.position = {5.0, 5.0, -0.5};
+		message.position = {5.0, 5.0, 0};
 	}
         message.yaw = 0.0;
         message.timestamp = this->get_clock()->now().nanoseconds() / 1000;
