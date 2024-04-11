@@ -45,14 +45,14 @@ private:
         double closest_distance = std::numeric_limits<double>::max();
         double target_angle = 0.0;
         bool target_found = false;
-        float range = 2.5;
+        float range = 2;
         geometry_msgs::msg::Point nearest_poster_point; // Point to store the nearest poster info
         nearest_poster_point.z = 0; // Set default to out of range
 
         for (size_t i = 0; i < updated_msg.poses.size(); ++i) {
             const auto& pose = updated_msg.poses[i];
             
-            if (pose.position.z == 0.0) { // If poster is not classified
+            if (pose.orientation.w == 0.0) { // If poster is not classified
                 double dx = pose.position.x - current_position_.x;
                 double dy = pose.position.y - current_position_.y;
                 double distance = std::hypot(dx, dy);

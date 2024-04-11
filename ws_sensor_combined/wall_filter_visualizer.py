@@ -1,30 +1,54 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
+from matplotlib.patches import Patch
 
-# Load data from CSV file
-csv_filename = 'walls.csv'
-data = pd.read_csv(csv_filename)
+# Replace 'z.csv' with the actual path to your CSV file if necessary
+csv_filename = 'z.csv'
 
-# Extract X, Y, Z columns
-x = data['X'].values
-y = data['Y'].values
-z = data['Z'].values
+# Load the CSV file data into a pandas DataFrame
+try:
+    df = pd.read_csv(csv_filename)
+except FileNotFoundError:
+    print(f"File '{csv_filename}' not found.")
+    exit()
 
-# Create a new figure and add a 3D subplot
-fig = plt.figure()
-ax = fig.add_subplot(111, projection='3d')
+# Extract X, Y, and Z data for plotting
+x = df['x']
+y = df['y']
+z = df['z']
 
-# Scatter plot
-ax.scatter(x, y, z, c='r', marker='o', s = 1)
+# Define colors based on Z values
+colors = ['blue' if value > 1 else 'red' for value in z]
 
-# Label the axes
-ax.set_xlabel('X Label')
-ax.set_ylabel('Y Label')
-ax.set_zlabel('Z Label')
+# Plotting in the XY plane using the specified colors
+plt.scatter(x, y, color=colors, alpha=0.6, s=100)
 
-# Set title
-ax.set_title('3D Point Cloud Visualization')
+# Create legend patches
+pillar_patch = Patch(color='blue', label='Pillar')
+poster_patch = Patch(color='red', label='Poster')
+
+# Add the custom legend outside the plot area in the middle
+#plt.legend(handles=[pillar_patch, poster_patch], loc='center', bbox_to_anchor=(0.5, 0.5))
+
+font_size = 12  # Adjust as necessary
+
+# Add the custom legend with a larger font size
+plt.legend(handles=[pillar_patch, poster_patch], loc='upper center', bbox_to_anchor=(0.5, 0.5), fontsize=font_size)
+
+# Set limits for the x-axis and y-axis
+plt.xlim(-20, 20)
+plt.ylim(-20, 20)
+
+# Label the axes with a larger font size
+plt.xlabel('X Label', fontsize=font_size)
+plt.ylabel('Y Label', fontsize=font_size)
+plt.title('2Pillars and Posters', fontsize=font_size + 2)
+
+# Add the grid to the plot
+plt.grid(True)
+
+# Increase the tick label font size
+plt.tick_params(axis='both', which='major', labelsize=font_size)
 
 # Show the plot
 plt.show()

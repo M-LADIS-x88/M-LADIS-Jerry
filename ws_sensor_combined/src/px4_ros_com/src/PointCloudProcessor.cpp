@@ -183,8 +183,8 @@ private:
     // Convert PointCloud2 message to PCL PointCloud
     pcl::PointCloud<pcl::PointXYZI>::Ptr pcl_cloud(new pcl::PointCloud<pcl::PointXYZI>);
     pcl::fromROSMsg(*msg, *pcl_cloud);
-    float high_z_threshold = current_z_position_ + 0.1;
-    float low_z_threshold = current_z_position_ - 2;
+    //float high_z_threshold = current_z_position_ + 0.1;
+    //float low_z_threshold = current_z_position_ - 2;
     // Extract XYZ matrix
     int n = pcl_cloud->size();
     std::vector<std::vector<float>> xyzi_matrix(n, std::vector<float>(4)); // Create nx4 matrix for xyzi
@@ -291,20 +291,22 @@ private:
     // Posters
     std::vector<std::vector<float>> wall_matrix;
     std::vector<Point> walls;
-    float tolerance = 1;
-    float xmin = bounds[1].x;
-    float xmax = bounds[0].x;
-    //float ymin = bounds[3].y;
-    float ymax = bounds[2].y;
+    float tolerance = 0.75;
+    float xmin = bounds[1].x - tolerance;
+    float xmax = bounds[0].x + tolerance;
+    float ymin = -bounds[2].y - tolerance;
+    float ymax = bounds[2].y + tolerance;
+    float xmin2 = bounds[1].x + tolerance;
+    float xmax2 = bounds[0].x - tolerance;
+    float ymin2 = -bounds[2].y + tolerance;
+    float ymax2 = bounds[2].y - tolerance;
     for (const auto& point : xyzi_matrix) {
       float x = point[0];
       float y = point[1];
       float i = point[3];
       float threshold = 25;
       // Only include points within the expanded bounds
-      if (x >= xmin - tolerance && x <= xmax + tolerance &&
-          y >= -ymax - tolerance && y <= ymax + tolerance &&
-          i >= threshold) {
+      if (x >= xmin && x <= xmax && y >= ymin && y <= ymax && i >= threshold) {
           wall_matrix.push_back(point);
       }
     }
@@ -345,9 +347,13 @@ private:
       
       std::vector<Point> posters = findHighestZPointsNearCentroids(wall_centroids, wall_matrix, 1.0f);
 
-      //posters.erase(std::remove_if(posters.begin(), posters.end(),
-      //[](const Point& pt) {return pt.z > 1; }), posters.end());
       writeCentroidsToCSV(posters,"z.csv");
+      posters.erase(std::remove_if(posters.begin(), posters.end(),
+        [](const Point& pt) {return pt.z > 1; }), posters.end());
+      posters.erase(std::remove_if(posters.begin(), posters.end(),
+        [xmin2, xmax2, ymin2, ymax2](const Point& point) {
+        return point.x >= xmin2 && point.x <= xmax2 && point.y >= ymin2 && point.y <= ymax2;
+        }), posters.end());
 
 
       geometry_msgs::msg::PoseArray posters_pose_array;
@@ -380,8 +386,8 @@ private:
   void predatorCallback(const sensor_msgs::msg::PointCloud2::SharedPtr msg){
     pcl::PointCloud<pcl::PointXYZI>::Ptr pcl_cloud(new pcl::PointCloud<pcl::PointXYZI>);
     pcl::fromROSMsg(*msg, *pcl_cloud);
-    float predator_low_z_threshold = current_z_position_ + 1;
-    float predator_high_z_threshold = current_z_position_ - 10;
+    //float predator_low_z_threshold = current_z_position_ + 1;
+    //float predator_high_z_threshold = current_z_position_ - 10;
     // Extract XYZ matrix
     int n = pcl_cloud->size();
     //rclcpp::Subscription<sensor_msgs::msg::Point>
@@ -398,7 +404,8 @@ private:
     for (int i = 0; i < n; ++i) {
       const auto& pt = pcl_cloud->points[i];
       //flip z values for flight cause lidar is upside down
-      if (pt.z > -predator_low_z_threshold && pt.z < -predator_high_z_threshold) {
+      //if (pt.z > -predator_low_z_threshold && pt.z < -predator_high_z_threshold) {
+      if (pt.z > 1 && pt.z < 5) {  
         //double mag_dist = std::sqrt(pt.x*pt.x + pt.y+pt.y);
         if(neg_y == 0){
           neg_y = -pos_y;
@@ -406,7 +413,7 @@ private:
         if(pt.x < pos_x - 1.2 && pt.x > neg_x + 1.2 && pt.y < pos_y - 1.2 && pt.y > neg_y + 1.2){
         xyzi_matrix[i][0] = pt.x; // Store x coordinate
         xyzi_matrix[i][1] = pt.y; // Store y coordinate
-        xyzi_matrix[i][3] = -pt.z; // Store z coordinate
+        xyzi_matrix[i][3] = pt.z; // Store z coordinate
         xyzi_matrix[i][2] = pt.intensity; // Store intensity
         }
       }
@@ -474,39 +481,38 @@ private:
     if (centroids.size() <= 1){
     // Do not publish anything if (0,0,0) is the only point or the vector is empty
     return;
-  }
+    }
 
-  // Variables to hold the sum of x, y and z coordinates, and the count of valid points
-  float sum_x = 0.0, sum_y = 0.0, sum_z = 0.0;
-  int count = 0;
+    // Variables to hold the sum of x, y and z coordinates, and the count of valid points
+    float sum_x = 0.0, sum_y = 0.0, sum_z = 0.0;
+    int count = 0;
 
-  for (const auto& point : centroids) {
-    // Exclude the (0,0,0) point
-    if (!(point.x == 0 && point.y == 0 && point.z == 0)) {
-      sum_x += point.x;
-      sum_y += point.y;
-      sum_z += point.z;
-      count++;
+    for (const auto& point : centroids) {
+      // Exclude the (0,0,0) point
+      if (!(point.x == 0 && point.y == 0 && point.z == 0)) {
+        sum_x += point.x;
+        sum_y += point.y;
+        sum_z += point.z;
+        count++;
+      }
+    }
+
+    if (count > 0) { // Check to prevent division by zero
+      float avg_x = sum_x / count;
+      float avg_y = sum_y / count;
+      float avg_z = sum_z / count;
+
+      // Create a Point message for the average
+      geometry_msgs::msg::Point avg_point;
+      avg_point.x = avg_x;
+      avg_point.y = avg_y;
+      avg_point.z = avg_z;
+
+      // Publish the average point
+      tom_->publish(avg_point);
     }
   }
-
-  if (count > 0) { // Check to prevent division by zero
-    float avg_x = sum_x / count;
-    float avg_y = sum_y / count;
-    float avg_z = sum_z / count;
-
-    // Create a Point message for the average
-    geometry_msgs::msg::Point avg_point;
-    avg_point.x = avg_x;
-    avg_point.y = avg_y;
-    avg_point.z = avg_z;
-
-    // Publish the average point
-    tom_->publish(avg_point);
-  }
-
     
-  };
 };
 
 int main(int argc, char** argv) {

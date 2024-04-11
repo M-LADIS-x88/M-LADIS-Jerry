@@ -111,11 +111,11 @@ class MLAgent(Node):
        # self.has_received_cyaw = True
         
     def capture_picture_callback(self, msg):
-        if msg.data and self.position is not None:
+        if self.position is not None:
             image_name = f"image_{len(self.image_data)}.jpg"
             if msg.z == 1:
                 self.capture_image(image_name)
-                entry = (msg.x, msg.y, image_name)
+                entry = (msg.position.x, msg.position.y, image_name)
                 self.image_data.append(entry)                
                 pub_msg = Point()
                 pub_msg.x = msg.x

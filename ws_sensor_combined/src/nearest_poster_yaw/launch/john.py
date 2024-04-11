@@ -60,8 +60,8 @@ def generate_launch_description():
         ),
         Node(
             package='px4_ros_com',
-            executable='env_reconstruction',
-            name='env_reconstruction'
+            executable='poster_recon',
+            name='poster_reconstruction'
         ),
         Node(
             package='wpgen',
@@ -79,7 +79,7 @@ def generate_launch_description():
 
     # TimerAction to delay launching everything for 4 minutes (240 seconds)
     timer_action = TimerAction(
-        period=5.0,  # 4 minutes represented in seconds
+        period=1.0,  # 4 minutes represented in seconds
         actions=nodes_to_launch
     )
 
