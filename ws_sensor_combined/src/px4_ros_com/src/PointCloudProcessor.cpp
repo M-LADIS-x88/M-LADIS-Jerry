@@ -193,21 +193,22 @@ private:
       const auto& pt = pcl_cloud->points[i];
       //flip z values for flight cause lidar is upside down
       //if (pt.z < high_z_threshold && pt.z > low_z_threshold) {
-        if(pt.z < 2 && pt.z > -0.1){
-        double mag_dist = std::sqrt(pt.x*pt.x + pt.y+pt.y);
-        if(pt.x < 32 && pt.y < 40 && pt.x > -32 && pt.y > -40 && mag_dist > 0.5){
-          xyzi_matrix[i][0] = pt.x; // Store x coordinate
-          xyzi_matrix[i][1] = pt.y; // Store y coordinate
-          xyzi_matrix[i][2] = pt.z; // Store z coordinate
-          xyzi_matrix[i][3] = pt.intensity; // Store intensity
-        }
+        //if(pt.z < 2 && pt.z > -0.1){ 
+        if(pt.z > -5 && pt.z < -2){
+          double mag_dist = std::sqrt(pt.x*pt.x + pt.y+pt.y);
+          if(pt.x < 32 && pt.y < 40 && pt.x > -32 && pt.y > -40 && mag_dist > 0.5){
+            xyzi_matrix[i][0] = pt.x; // Store x coordinate
+            xyzi_matrix[i][1] = -pt.y; // Store y coordinate
+            xyzi_matrix[i][2] = -pt.z; // Store z coordinate
+            xyzi_matrix[i][3] = pt.intensity; // Store intensity
+          }
       }
     }
 
     //Delete all CSV Functionality once ready for flight testing
       // Open a CSV file in write mode
     std::ofstream csv_file;
-    csv_file.open("output_xyzi_matrix.csv");
+    csv_file.open("xyzi_matrix.csv");
 
     if (csv_file.is_open()) {
         // Writing the headers to the CSV file
@@ -273,8 +274,8 @@ private:
 
     // Set the position of the Pose
     walls_pose.position.x = bounds[1].x;
-    //walls_pose.position.y = bounds[3].y;
-    walls_pose.position.y = -bounds[2].y;
+    walls_pose.position.y = bounds[3].y;
+    //walls_pose.position.y = -bounds[2].y;
     walls_pose.position.z = 0.0;
 
     // Set the orientation in the Pose
@@ -354,7 +355,7 @@ private:
         [xmin2, xmax2, ymin2, ymax2](const Point& point) {
         return point.x >= xmin2 && point.x <= xmax2 && point.y >= ymin2 && point.y <= ymax2;
         }), posters.end());
-
+      std::cout << 'Yo man we got this many posters: ' << posters.size() << std::endl;
 
       geometry_msgs::msg::PoseArray posters_pose_array;
       posters_pose_array.header.stamp = this->get_clock()->now();  // Set the timestamp
@@ -373,7 +374,7 @@ private:
         pose.orientation.x = 0.0;
         pose.orientation.y = 0.0;
         pose.orientation.z = 0.0;
-        pose.orientation.w = 1.0; 
+        pose.orientation.w = 0.0; 
 
         // Add this pose to the PoseArray
         posters_pose_array.poses.push_back(pose);
@@ -405,16 +406,17 @@ private:
       const auto& pt = pcl_cloud->points[i];
       //flip z values for flight cause lidar is upside down
       //if (pt.z > -predator_low_z_threshold && pt.z < -predator_high_z_threshold) {
-      if (pt.z > 1 && pt.z < 5) {  
+      //if (pt.z > 1 && pt.z < 5) {  
+      if(pt.z < -1.5 && pt.z > -5){
         //double mag_dist = std::sqrt(pt.x*pt.x + pt.y+pt.y);
         if(neg_y == 0){
           neg_y = -pos_y;
         }
-        if(pt.x < pos_x - 1.2 && pt.x > neg_x + 1.2 && pt.y < pos_y - 1.2 && pt.y > neg_y + 1.2){
-        xyzi_matrix[i][0] = pt.x; // Store x coordinate
-        xyzi_matrix[i][1] = pt.y; // Store y coordinate
-        xyzi_matrix[i][3] = pt.z; // Store z coordinate
-        xyzi_matrix[i][2] = pt.intensity; // Store intensity
+        if(pt.x < pos_x - 1.2 && pt.x > neg_x + 1.2 && -pt.y < pos_y - 1.2 && -pt.y > neg_y + 1.2){
+          xyzi_matrix[i][0] = pt.x; // Store x coordinate
+          xyzi_matrix[i][1] = -pt.y; // Store y coordinate
+          xyzi_matrix[i][3] = -pt.z; // Store z coordinate
+          xyzi_matrix[i][2] = pt.intensity; // Store intensity
         }
       }
     }

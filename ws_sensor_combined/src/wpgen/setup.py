@@ -7,7 +7,9 @@ setup(
     version='0.0.0',
     packages=[package_name],
     data_files=[
-        # ... keep the previously defined data_files ...
+        ('share/ament_index/resource_index/packages',
+            ['resource/' + package_name]),
+        ('share/' + package_name, ['package.xml'])
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -20,6 +22,9 @@ setup(
         'console_scripts': [
             'ML_send_wp = wpgen.ML_send_wp:main',
         ],
+        'colcon_core.package_identification': [
+            'ros_package = colcon_ros.package_identification.ros:RosPackageIdentification'
+        ]
     },
 )
 
