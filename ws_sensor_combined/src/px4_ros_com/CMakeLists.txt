@@ -28,6 +28,7 @@ find_package(rclpy REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(pcl_conversions REQUIRED)
 find_package(pcl_ros REQUIRED)
+find_package(nav_msgs REQUIRED)
 
 
 #################
@@ -79,7 +80,7 @@ install(TARGETS PointCloudProcessor DESTINATION lib/${PROJECT_NAME})
 
 #GPS localization replacement
 add_executable(vis_loc_GPS_spoof src/vis_loc_GPS_spoof.cpp)
-ament_target_dependencies(vis_loc_GPS_spoof rclcpp geometry_msgs px4_msgs)
+ament_target_dependencies(vis_loc_GPS_spoof rclcpp geometry_msgs px4_msgs nav_msgs)
 install(TARGETS vis_loc_GPS_spoof DESTINATION lib/${PROJECT_NAME})
 #add_executable(env_reconstruction src/env_reconstruction.cpp)
 #ament_target_dependencies(env_reconstruction rclcpp px4_msgs geometry_msgs)
