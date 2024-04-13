@@ -9,6 +9,7 @@ from rclpy.node import Node
 from geometry_msgs.msg import Point, Pose
 from std_msgs.msg import Float64
 from px4_msgs.msg import TrajectorySetpoint
+from px4_msgs.msg import VehicleOdometry
 from stable_baselines3 import PPO
 from ament_index_python.packages import get_package_share_directory
 from collections import OrderedDict  # Import OrderedDict here
@@ -24,10 +25,12 @@ class MLAgent(Node):
         self.yaw = 0.0  # Default yaw
         self.x_range = default_bounds[1] - default_bounds[0]
         self.y_range = default_bounds[1] - default_bounds[0]
-        #self.prev_waypoint = [0.0, 0.0, 1.0]
-        self.prev_waypoint = [0.0, 0.0]
+        self.velocity = [0.0, 0.0]
+        self.enemy_velocity = [0.0, 0.0]
+        self.prev_waypoint = [0.0, 0.0, 1.0]
+        # self.prev_waypoint = [0.0, 0.0]
 
-        model_path = "/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/EXAMPLE/drone_test"
+        model_path = "/home/kfuher/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/EXAMPLE/drone_test_sample_final_1"
         self.model = PPO.load(model_path)
 
         self.publisher_ = self.create_publisher(TrajectorySetpoint, '/fmu/in/autonomy_waypoint', 1)
@@ -39,7 +42,8 @@ class MLAgent(Node):
         self.walls_subscription = self.create_subscription(Pose, '/walls', self.walls_callback, 1)
         self.poster_yaw_subscription = self.create_subscription(Float64, '/poster_yaw', self.poster_yaw_callback, 1)
         self.poster_point_subscription = self.create_subscription(Point, '/poster_point', self.poster_point_callback, 1)
-        
+        self.imu_subscription = self.create_subscription(VehicleOdometry, '/fmu/out/vehicle_odometry', self.imu_callback, 1)
+
         self.timer = self.create_timer(8.0, self.generate_waypoint)
 
     def position_callback(self, msg):
@@ -47,6 +51,7 @@ class MLAgent(Node):
         #self.get_logger().info('jerry_x={}, jerry_y={}, jerry_z={}'.format(self.position[0],self.position[1],self.position[2]))
 
     def predator_callback(self, msg):
+        self.enemy_velocity = [msg.x - self.predator_position[0], msg.y - self.predator_position[1]]
         self.predator_position = [msg.x, msg.y, msg.z]
         self.get_logger().info('tom_x={}, tom_y={}, tom_z={}'.format(self.predator_position[0],self.predator_position[1],self.predator_position[2]))
 
@@ -66,6 +71,11 @@ class MLAgent(Node):
             self.take_photo_and_publish_poster(msg.x, msg.y)
         else:
             self.get_logger().info('Out of Range')
+            
+    def imu_callback(self, msg):
+        self.velocity = [msg.velocity[0], msg.velocity[1]]
+        #self.get_logger().info('jerry_vx={}, jerry_vy={}'.format(self.velocity[0],self.velocity[1]))
+
 
     def take_photo_and_publish_poster(self, x, y):
         image_name = f"image_{len(self.image_data)}.jpg"
@@ -105,34 +115,39 @@ class MLAgent(Node):
         normalized_position = self.normalize_position(self.position, self.x_range, self.y_range)
         normalized_predator = self.normalize_position(self.predator_position, self.x_range, self.y_range)
         normalized_poster = self.normalize_position(self.poster_point[:2], self.x_range, self.y_range)
+        normalized_velocity = self.normalize_position(self.velocity, self.x_range, self.y_range)
+        normalized_enemy_velocity = self.normalize_position(self.enemy_veloicty, self.x_range, self.y_range)
         
         observation = OrderedDict()
         observation['current_waypoint'] = np.array(self.prev_waypoint, dtype=np.float32)
         observation['enemy_position'] = np.array(normalized_predator, dtype=np.float32)
+        observation['enemy_velocity'] = np.array(normalized_enemy_velocity, dtype=np.float32)
         observation['nearest_poster'] = np.array(normalized_poster, dtype=np.float32)
         observation['position'] = np.array(normalized_position, dtype=np.float32)
+        observation['velocity'] = np.array(normalized_velocity, dtype=np.float32)
         
         
         action, _states = self.model.predict(observation, deterministic=False)
-        new_waypoint = [float(action[0]), float(action[1])]
-        # new_waypoint = [float(action[0]), float(action[1]), float(action[2])]
+        # new_waypoint = [float(action[0]), float(action[1])]
+        new_waypoint = [float(action[0]), float(action[1]), float(action[2])]
 
         setpoint_msg = TrajectorySetpoint()
         
         x_half = abs(self.x_range) / 2.0
         y_half = abs(self.y_range) / 2.0
 
-        setpoint_msg.position = [self.prev_waypoint[0] * x_half, self.prev_waypoint[1] * y_half, 2.5]
+        # setpoint_msg.position = [self.prev_waypoint[0] * x_half, self.prev_waypoint[1] * y_half, 2.5]
         #setpoint_msg.position = [0.0,0.0,2.5]
 
-        # if new_waypoint[2] < 0:
-        #     setpoint_msg.position = [self.prev_waypoint[0] * x_half, self.prev_waypoint[1] * y_half, 3.0]
-        # else:
-        #     setpoint_msg.position = [new_waypoint[0] * x_half, new_waypoint[1] * y_half, 3.0]
+        if new_waypoint[2] < 0:
+            setpoint_msg.position = [self.prev_waypoint[0] * x_half, self.prev_waypoint[1] * y_half, 2.5]
+        else:
+            setpoint_msg.position = [new_waypoint[0] * x_half, new_waypoint[1] * y_half, 2.5]
+            self.prev_waypoint = new_waypoint
         # Create TrajectorySetpoint message and publish
         
         self.prev_waypoint = new_waypoint
-        #setpoint_msg.yaw = self.yaw
+        setpoint_msg.yaw = self.yaw
         self.publisher_.publish(setpoint_msg)
         self.get_logger().info(f'Published recommended waypoint x:{setpoint_msg.position[0]}, y:{setpoint_msg.position[1]}, z:2.5, yaw:{self.yaw}')
 
