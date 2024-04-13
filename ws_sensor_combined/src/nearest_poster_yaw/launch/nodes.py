@@ -18,16 +18,16 @@ def generate_launch_description():
             executable='PointCloudProcessor',
             name='PointCloudProcessor'
         ),
-        Node(
-            package='px4_ros_com',
-            executable='offboard_control',
-            name='offboard_control'
-        ),
-        Node(
-            package='px4_ros_com',
-            executable='vis_loc_GPS_spoof',
-            name='vis_loc_GPS_spoof'
-        ),
+        #Node(
+       #     package='px4_ros_com',
+        #    executable='offboard_control',
+        #    name='offboard_control'
+        #),
+        #Node(
+         #   package='px4_ros_com',
+         #   executable='vis_loc_GPS_spoof',
+        #    name='vis_loc_GPS_spoof'
+        #),
         Node(
             package='nearest_poster_yaw',
             executable='nearest_poster_node',
