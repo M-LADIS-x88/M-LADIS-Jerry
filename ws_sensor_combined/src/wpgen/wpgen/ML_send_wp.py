@@ -30,7 +30,7 @@ class MLAgent(Node):
         self.prev_waypoint = [0.0, 0.0, 1.0]
         # self.prev_waypoint = [0.0, 0.0]
 
-        model_path = "/home/kfuher/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/EXAMPLE/drone_test_sample_final_1"
+        model_path = "/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/EXAMPLE/drone_test_sample_final_1"
         self.model = PPO.load(model_path)
 
         self.publisher_ = self.create_publisher(TrajectorySetpoint, '/fmu/in/autonomy_waypoint', 1)
