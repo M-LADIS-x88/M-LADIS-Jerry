@@ -1,7 +1,12 @@
 #include <rclcpp/rclcpp.hpp>
-#include <geometry_msgs/msg/point.hpp>
-#include "nav_msgs/msg/odometry.hpp"
+#include <geometry_msgs/msg/quaternion.hpp>
+#include <geometry_msgs/msg/pose.hpp>
+#include <geometry_msgs/msg/twist.hpp>
+#include <nav_msgs/msg/odometry.hpp>
 #include <px4_msgs/msg/vehicle_odometry.hpp>
+#include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
+
+
 
 class VisLocGPSSpoofNode : public rclcpp::Node {
 public:
@@ -34,8 +39,29 @@ private:
 	odom_msg.q[3] = -msg->pose.pose.orientation.z; // z
  */     
         odom_msg.position[0] = msg->pose.pose.position.y;
-        odom_msg.position[1] = msg->pose.pose.position.x;
+        odom_msg.position[1] = -msg->pose.pose.position.x;
         odom_msg.position[2] = -msg->pose.pose.position.z;
+
+        // If the LiDAR is flipped (over the Y-axis)
+        tf2::Quaternion q_orig, q_rot, q_new;
+        // rotation quaternion
+        q_rot.setRPY(0, M_PI, 0);
+        // original orientation
+        tf2::convert(msg->pose.pose.orientation, q_orig);
+        // new orientation
+        q_new = q_rot * q_orig;
+        q_new.normalize();
+
+        // Convert back to geometry_msgs::msg::Quaternion and assign to your message
+        geometry_msgs::msg::Quaternion q_msg;
+        tf2::convert(q_new, q_msg);
+        
+        odom_msg.q[0] = q_msg.w;
+        odom_msg.q[1] = -q_msg.x;  // Flip sign because of LiDAR rotation
+        odom_msg.q[2] = q_msg.y;
+        odom_msg.q[3] = -q_msg.z;  // Flip sign because of LiDAR rotation
+
+
         
 /*        odom_msg.velocity[0] = msg->twist.twist.linear.x;
 	odom_msg.velocity[1] = msg->twist.twist.linear.y;

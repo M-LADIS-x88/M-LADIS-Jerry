@@ -29,6 +29,10 @@ find_package(sensor_msgs REQUIRED)
 find_package(pcl_conversions REQUIRED)
 find_package(pcl_ros REQUIRED)
 find_package(nav_msgs REQUIRED)
+find_package(tf2 REQUIRED)
+find_package(tf2_ros REQUIRED)
+find_package(tf2_geometry_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
 
 #################
@@ -80,7 +84,7 @@ install(TARGETS PointCloudProcessor DESTINATION lib/${PROJECT_NAME})
 
 #GPS localization replacement
 add_executable(vis_loc_GPS_spoof src/vis_loc_GPS_spoof.cpp)
-ament_target_dependencies(vis_loc_GPS_spoof rclcpp geometry_msgs px4_msgs nav_msgs)
+ament_target_dependencies(vis_loc_GPS_spoof rclcpp geometry_msgs px4_msgs nav_msgs tf2 tf2_ros tf2_geometry_msgs)
 install(TARGETS vis_loc_GPS_spoof DESTINATION lib/${PROJECT_NAME})
 #add_executable(env_reconstruction src/env_reconstruction.cpp)
 #ament_target_dependencies(env_reconstruction rclcpp px4_msgs geometry_msgs)
