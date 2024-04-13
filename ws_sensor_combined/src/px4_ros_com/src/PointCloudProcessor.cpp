@@ -29,9 +29,6 @@ public:
     subscriber_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
         "maps/edges", 1,
         std::bind(&PointCloudProcessor::pointCloudCallback, this, std::placeholders::_1));
-    position_ = this->create_subscription<geometry_msgs::msg::Point>(
-        "position", 1,
-        std::bind(&PointCloudProcessor::positionCallback, this, std::placeholders::_1));
     predator_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
         "slam_registered_points", 1,
         std::bind(&PointCloudProcessor::predatorCallback, this, std::placeholders::_1));
@@ -50,8 +47,6 @@ private:
   rclcpp::Publisher<geometry_msgs::msg::Pose>::SharedPtr walls_;
   rclcpp::Publisher<geometry_msgs::msg::PoseArray>::SharedPtr posters_;
   rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr tom_;
-  rclcpp::Subscription<geometry_msgs::msg::Point>::SharedPtr position_;
-
 
   float euclideanDistanceXY(const Point& a, const Point& b) {
     return std::sqrt((a.x - b.x) * (a.x - b.x) + (a.y - b.y) * (a.y - b.y));
@@ -175,36 +170,38 @@ private:
 
 }
   
-  void positionCallback(const geometry_msgs::msg::Point::SharedPtr position_msg) {
-    current_z_position_ = 0;
-    //current_z_position_ = position_msg->z;
-  }
   void pointCloudCallback(const sensor_msgs::msg::PointCloud2::SharedPtr msg) {
     // Convert PointCloud2 message to PCL PointCloud
     pcl::PointCloud<pcl::PointXYZI>::Ptr pcl_cloud(new pcl::PointCloud<pcl::PointXYZI>);
     pcl::fromROSMsg(*msg, *pcl_cloud);
-    //float high_z_threshold = current_z_position_ + 0.1;
-    //float low_z_threshold = current_z_position_ - 2;
+    
     // Extract XYZ matrix
-    int n = pcl_cloud->size();
-    std::vector<std::vector<float>> xyzi_matrix(n, std::vector<float>(4)); // Create nx4 matrix for xyzi
+    if(pcl_cloud->empty()){
+      return;
+    }
 
-    for (int i = 0; i < n; ++i) {
+    // std::vector<std::vector<float>> xyzi_matrix(n, std::vector<float>(4));
+    std::vector<std::vector<float>> xyzi_matrix;
+    xyzi_matrix.clear();
+    for (size_t i = 0; i < pcl_cloud->size(); ++i) {
       const auto& pt = pcl_cloud->points[i];
-      //flip z values for flight cause lidar is upside down
-      //if (pt.z < high_z_threshold && pt.z > low_z_threshold) {
-        //if(pt.z < 2 && pt.z > -0.1){ 
-        if(pt.z > -5.5 && pt.z < -1){
-          double mag_dist = std::sqrt(pt.x*pt.x + pt.y*pt.y);
-          if(pt.x < 32 && pt.y < 40 && pt.x > -32 && pt.y > -40 && mag_dist > 0.5){
-            if(pt.x != 0, pt.y != 0){
-              xyzi_matrix[i][0] = pt.x; // Store x coordinate
-              xyzi_matrix[i][1] = -pt.y; // Store y coordinate
-              xyzi_matrix[i][2] = -pt.z; // Store z coordinate
-              xyzi_matrix[i][3] = pt.intensity; // Store intensity
-            }
-          }
-      }
+      double mag_dist = std::sqrt(pt.x*pt.x + pt.y*pt.y);
+      if(pt.z > -6 && pt.z < -1 && mag_dist > 0.5 &&
+           pt.x < 32 && pt.y < 40 && pt.x > -32 && pt.y > -40 &&
+           pt.x != 0 && pt.y != 0) {
+            xyzi_matrix.push_back({pt.x, -pt.y, -pt.z, pt.intensity});
+        }
+      //   if(pt.z > -6 && pt.z < -1){
+      //     double mag_dist = std::sqrt(pt.x*pt.x + pt.y*pt.y);
+      //     if(pt.x < 32 && pt.y < 40 && pt.x > -32 && pt.y > -40 && mag_dist > 0.5){
+      //       if(pt.x != 0 && pt.y != 0){
+      //         xyzi_matrix[i][0] = pt.x; // Store x coordinate
+      //         xyzi_matrix[i][1] = -pt.y; // Store y coordinate
+      //         xyzi_matrix[i][2] = -pt.z; // Store z coordinate
+      //         xyzi_matrix[i][3] = pt.intensity; // Store intensity
+      //       }
+      //     }
+      // }
     }
 
     //Delete all CSV Functionality once ready for flight testing
@@ -217,7 +214,7 @@ private:
         csv_file << "X,Y,Z,I,\n";
     
         // Write matrix data to the CSV file
-        for (int i = 0; i < n; ++i) {
+        for (size_t i = 0; i < xyzi_matrix.size(); ++i) {
             csv_file << xyzi_matrix[i][0] << ", " << xyzi_matrix[i][1] << ", " 
             << xyzi_matrix[i][2] << ", "<< xyzi_matrix[i][3] <<  "\n";
         }
@@ -232,7 +229,7 @@ private:
     std::vector<Point> pcloud;
   
     //iterate through xyz matrix and put into point structs
-    for (int i = 0 ; i<n; i++)
+    for (size_t i = 0 ; i<xyzi_matrix.size(); i++)
     {
       Point p;
       p.x = xyzi_matrix[i][0];
@@ -252,7 +249,6 @@ private:
     }
 
     flann::Matrix<float> dataset(dataset_flatten.data(), pcloud.size(), 3);
-    //flann::Matrix<float> dataset(flann_points[0].data(), flann_points.size(), 3);
 
     //Build kd tree index for point cloud
     flann::Index<flann::L2<float>> kdTree(dataset, flann::KDTreeIndexParams(4));
@@ -261,7 +257,6 @@ private:
     // Perform clustering using the k-d tree
      float clusterDistance = 0.5;
      euclideanClusteringUsingKDTree(pcloud, clusterDistance, processed, kdTree, clusters);
-    // //euclideanClustering(pcloud);
 
      //writeAllClusterPointsToSingleCSV(clusters);
      std::vector<Point> centroids = calculateCentroids(clusters);
@@ -317,7 +312,7 @@ private:
       Point p;
       p.x = wall_matrix[i][0];
       p.y = wall_matrix[i][1];
-      p.z = 1;
+      p.z = wall_matrix[i][3];
       walls.push_back(p);
     }
     std::cout << walls.size() << std::endl;
@@ -338,7 +333,6 @@ private:
       // Perform clustering using the k-d tree
       clusterDistance = 0.8;
       euclideanClusteringUsingKDTree(walls, clusterDistance, wall_processed, wall_kdTree, wall_clusters);
-      // //euclideanClustering(pcloud);
 
       //writeAllClusterPointsToSingleCSV(clusters);
       std::vector<Point> wall_centroids = calculateCentroids(wall_clusters);
@@ -349,14 +343,15 @@ private:
       
       std::vector<Point> posters = findHighestZPointsNearCentroids(wall_centroids, wall_matrix, 1.0f);
 
-      writeCentroidsToCSV(posters,"z.csv");
-
-      posters.erase(std::remove_if(posters.begin(), posters.end(),
-        [](const Point& pt) {return pt.z > 2.75; }), posters.end());
       posters.erase(std::remove_if(posters.begin(), posters.end(),
         [xmin2, xmax2, ymin2, ymax2](const Point& point) {
         return point.x >= xmin2 && point.x <= xmax2 && point.y >= ymin2 && point.y <= ymax2;
         }), posters.end());
+        
+      writeCentroidsToCSV(posters,"z.csv");
+
+      posters.erase(std::remove_if(posters.begin(), posters.end(),
+        [](const Point& pt) {return pt.z > 2.75; }), posters.end());
             
       geometry_msgs::msg::PoseArray posters_pose_array;
       posters_pose_array.header.stamp = this->get_clock()->now();  // Set the timestamp

@@ -116,10 +116,10 @@ class MLAgent(Node):
         normalized_predator = self.normalize_position(self.predator_position, self.x_range, self.y_range)
         normalized_poster = self.normalize_position(self.poster_point[:2], self.x_range, self.y_range)
         normalized_velocity = self.normalize_position(self.velocity, self.x_range, self.y_range)
-        normalized_enemy_velocity = self.normalize_position(self.enemy_veloicty, self.x_range, self.y_range)
+        normalized_enemy_velocity = self.normalize_position(self.enemy_velocity, self.x_range, self.y_range)
         
         observation = OrderedDict()
-        observation['current_waypoint'] = np.array(self.prev_waypoint, dtype=np.float32)
+        observation['current_waypoint'] = np.array(self.prev_waypoint[:2], dtype=np.float32)
         observation['enemy_position'] = np.array(normalized_predator, dtype=np.float32)
         observation['enemy_velocity'] = np.array(normalized_enemy_velocity, dtype=np.float32)
         observation['nearest_poster'] = np.array(normalized_poster, dtype=np.float32)

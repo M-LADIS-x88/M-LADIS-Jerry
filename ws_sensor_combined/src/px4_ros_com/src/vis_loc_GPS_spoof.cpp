@@ -28,17 +28,29 @@ private:
         odom_msg.timestamp = this->get_clock()->now().nanoseconds();
         // Populate odometry message using incoming point data.
         
-        odom_msg.q[1] = msg->pose.pose.orientation.x;
-        odom_msg.q[2] = msg->pose.pose.orientation.y;
-        odom_msg.q[3] = msg->pose.pose.orientation.z;
-        odom_msg.q[4] = msg->pose.pose.orientation.w;
+ /*       odom_msg.q[0] = msg->pose.pose.orientation.w; // w
+	odom_msg.q[1] = msg->pose.pose.orientation.x; // x
+	odom_msg.q[2] = -msg->pose.pose.orientation.y; // y
+	odom_msg.q[3] = -msg->pose.pose.orientation.z; // z
+ */     
+        odom_msg.position[0] = msg->pose.pose.position.y;
+        odom_msg.position[1] = msg->pose.pose.position.x;
+        odom_msg.position[2] = -msg->pose.pose.position.z;
+        
+/*        odom_msg.velocity[0] = msg->twist.twist.linear.x;
+	odom_msg.velocity[1] = msg->twist.twist.linear.y;
+	odom_msg.velocity[2] = msg->twist.twist.linear.z;
 
+	odom_msg.angular_velocity[0] = msg->twist.twist.angular.x; // Possibly in different order or sign
+	odom_msg.angular_velocity[1] = msg->twist.twist.angular.y; // Possibly in different order or sign
+	odom_msg.angular_velocity[2] = msg->twist.twist.angular.z; // Possibly in different order or sign
+*/
         // Set additional required fields to zero or defaults. You may need to adjust these
         // depending on PX4's expectations and your application logic.
         // Note: This is a simplified example; the actual conversion must be appropriate
         // for the position information to be usable as odometry data in your application.
         odom_msg.pose_frame = odom_msg.POSE_FRAME_NED;
-        odom_msg.velocity_frame = odom_msg.VELOCITY_FRAME_NED;
+        //odom_msg.velocity_frame = odom_msg.VELOCITY_FRAME_NED;
 
         // Publish the converted message.
         odometry_publisher_->publish(odom_msg);
