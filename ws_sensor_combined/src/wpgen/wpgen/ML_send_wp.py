@@ -6,7 +6,7 @@ import cv2
 import math
 import rclpy
 from rclpy.node import Node
-from geometry_msgs.msg import Point, PoseStamped
+from geometry_msgs.msg import Point, Pose
 from std_msgs.msg import Float64
 from px4_msgs.msg import TrajectorySetpoint
 from stable_baselines3 import PPO
@@ -36,11 +36,11 @@ class MLAgent(Node):
         # Subscriptions
         self.position_subscription = self.create_subscription(Point, '/position', self.position_callback, 1)
         self.predator_subscription = self.create_subscription(Point, '/Tom', self.predator_callback, 1)
-        self.walls_subscription = self.create_subscription(PoseStamped, '/walls', self.walls_callback, 1)
+        self.walls_subscription = self.create_subscription(Pose, '/walls', self.walls_callback, 1)
         self.poster_yaw_subscription = self.create_subscription(Float64, '/poster_yaw', self.poster_yaw_callback, 1)
         self.poster_point_subscription = self.create_subscription(Point, '/poster_point', self.poster_point_callback, 1)
         
-        self.timer = self.create_timer(1.0, self.generate_waypoint)
+        self.timer = self.create_timer(8.0, self.generate_waypoint)
 
     def position_callback(self, msg):
         self.position = [msg.x, msg.y, msg.z]
@@ -51,8 +51,8 @@ class MLAgent(Node):
         self.get_logger().info('tom_x={}, tom_y={}, tom_z={}'.format(self.predator_position[0],self.predator_position[1],self.predator_position[2]))
 
     def walls_callback(self, msg):
-        self.x_range = msg.pose.orientation.x - msg.pose.position.x
-        self.y_range = msg.pose.orientation.y - msg.pose.position.y
+        self.x_range = msg.orientation.x - msg.position.x
+        self.y_range = msg.orientation.y - msg.position.y
         self.get_logger().info('x_width={}, y_length={}'.format(self.x_range, self.y_range))
 
     def poster_yaw_callback(self, msg):
@@ -122,7 +122,8 @@ class MLAgent(Node):
         x_half = abs(self.x_range) / 2.0
         y_half = abs(self.y_range) / 2.0
 
-        setpoint_msg.position = [self.prev_waypoint[0] * x_half, self.prev_waypoint[1] * y_half, 3.0]
+        setpoint_msg.position = [self.prev_waypoint[0] * x_half, self.prev_waypoint[1] * y_half, 2.5]
+        #setpoint_msg.position = [0.0,0.0,2.5]
 
         # if new_waypoint[2] < 0:
         #     setpoint_msg.position = [self.prev_waypoint[0] * x_half, self.prev_waypoint[1] * y_half, 3.0]
@@ -131,9 +132,9 @@ class MLAgent(Node):
         # Create TrajectorySetpoint message and publish
         
         self.prev_waypoint = new_waypoint
-        setpoint_msg.yaw = self.yaw
+        #setpoint_msg.yaw = self.yaw
         self.publisher_.publish(setpoint_msg)
-        self.get_logger().info(f'Published recommended waypoint x:{setpoint_msg.position[0]}, y:{setpoint_msg.position[1]}, z:3.0, yaw:{self.yaw}')
+        self.get_logger().info(f'Published recommended waypoint x:{setpoint_msg.position[0]}, y:{setpoint_msg.position[1]}, z:2.5, yaw:{self.yaw}')
 
 def main(args=None):
     rclpy.init(args=args)

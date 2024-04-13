@@ -194,13 +194,15 @@ private:
       //flip z values for flight cause lidar is upside down
       //if (pt.z < high_z_threshold && pt.z > low_z_threshold) {
         //if(pt.z < 2 && pt.z > -0.1){ 
-        if(pt.z > -5 && pt.z < -2){
-          double mag_dist = std::sqrt(pt.x*pt.x + pt.y+pt.y);
+        if(pt.z > -5.5 && pt.z < -1){
+          double mag_dist = std::sqrt(pt.x*pt.x + pt.y*pt.y);
           if(pt.x < 32 && pt.y < 40 && pt.x > -32 && pt.y > -40 && mag_dist > 0.5){
-            xyzi_matrix[i][0] = pt.x; // Store x coordinate
-            xyzi_matrix[i][1] = -pt.y; // Store y coordinate
-            xyzi_matrix[i][2] = -pt.z; // Store z coordinate
-            xyzi_matrix[i][3] = pt.intensity; // Store intensity
+            if(pt.x != 0, pt.y != 0){
+              xyzi_matrix[i][0] = pt.x; // Store x coordinate
+              xyzi_matrix[i][1] = -pt.y; // Store y coordinate
+              xyzi_matrix[i][2] = -pt.z; // Store z coordinate
+              xyzi_matrix[i][3] = pt.intensity; // Store intensity
+            }
           }
       }
     }
@@ -275,12 +277,11 @@ private:
     // Set the position of the Pose
     walls_pose.position.x = bounds[1].x;
     walls_pose.position.y = bounds[3].y;
-    //walls_pose.position.y = -bounds[2].y;
     walls_pose.position.z = 0.0;
 
     // Set the orientation in the Pose
     walls_pose.orientation.x = bounds[0].x;
-    walls_pose.orientation.y = bounds[2].y;
+    walls_pose.orientation.y = -bounds[3].y;
     walls_pose.orientation.z = 0.0;
     walls_pose.orientation.w = 0.0;
 
@@ -305,7 +306,7 @@ private:
       float x = point[0];
       float y = point[1];
       float i = point[3];
-      float threshold = 25;
+      float threshold = 30;
       // Only include points within the expanded bounds
       if (x >= xmin && x <= xmax && y >= ymin && y <= ymax && i >= threshold) {
           wall_matrix.push_back(point);
@@ -349,14 +350,14 @@ private:
       std::vector<Point> posters = findHighestZPointsNearCentroids(wall_centroids, wall_matrix, 1.0f);
 
       writeCentroidsToCSV(posters,"z.csv");
+
       posters.erase(std::remove_if(posters.begin(), posters.end(),
-        [](const Point& pt) {return pt.z > 1; }), posters.end());
+        [](const Point& pt) {return pt.z > 2.75; }), posters.end());
       posters.erase(std::remove_if(posters.begin(), posters.end(),
         [xmin2, xmax2, ymin2, ymax2](const Point& point) {
         return point.x >= xmin2 && point.x <= xmax2 && point.y >= ymin2 && point.y <= ymax2;
         }), posters.end());
-      std::cout << 'Yo man we got this many posters: ' << posters.size() << std::endl;
-
+            
       geometry_msgs::msg::PoseArray posters_pose_array;
       posters_pose_array.header.stamp = this->get_clock()->now();  // Set the timestamp
       posters_pose_array.header.frame_id = "yolo";  // Set the appropriate frame

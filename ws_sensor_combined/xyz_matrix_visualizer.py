@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
 # Load data from CSV file
-csv_filename = 'predator_xyzi_matrix.csv'
+csv_filename = 'xyzi_matrix.csv'
 data = pd.read_csv(csv_filename)
 
 # Extract X, Y, Z columns
