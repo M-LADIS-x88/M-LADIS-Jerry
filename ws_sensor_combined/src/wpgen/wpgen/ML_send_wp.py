@@ -30,7 +30,7 @@ class MLAgent(Node):
         self.prev_waypoint = [0.0, 0.0, 1.0]
         # self.prev_waypoint = [0.0, 0.0]
 
-        model_path = "/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/EXAMPLE/drone_test_sample_final_1"
+        model_path = "/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/EXAMPLE/drone_test_sample_final_2"
         self.model = PPO.load(model_path)
 
         self.publisher_ = self.create_publisher(TrajectorySetpoint, '/fmu/in/autonomy_waypoint', 1)
@@ -112,6 +112,9 @@ class MLAgent(Node):
         ]
 
     def generate_waypoint(self):
+        x_half = abs(self.x_range) / 2.0
+        y_half = abs(self.y_range) / 2.0
+        
         normalized_position = self.normalize_position(self.position, self.x_range, self.y_range)
         normalized_predator = self.normalize_position(self.predator_position, self.x_range, self.y_range)
         normalized_poster = self.normalize_position(self.poster_point[:2], self.x_range, self.y_range)
@@ -130,11 +133,11 @@ class MLAgent(Node):
         action, _states = self.model.predict(observation, deterministic=False)
         # new_waypoint = [float(action[0]), float(action[1])]
         new_waypoint = [float(action[0]), float(action[1]), float(action[2])]
-
+        new_waypoint[0] = np.clip(new_waypoint[0], -(x_half - 2), (x_half - 2)) # waypoint clipping by 2m
+        new_waypoint[1] = np.clip(new_waypoint[1], -(y_half - 2), (y_half - 2)) # waypoint clipping by 2m
         setpoint_msg = TrajectorySetpoint()
         
-        x_half = abs(self.x_range) / 2.0
-        y_half = abs(self.y_range) / 2.0
+        
 
         # setpoint_msg.position = [self.prev_waypoint[0] * x_half, self.prev_waypoint[1] * y_half, 2.5]
         #setpoint_msg.position = [0.0,0.0,2.5]
