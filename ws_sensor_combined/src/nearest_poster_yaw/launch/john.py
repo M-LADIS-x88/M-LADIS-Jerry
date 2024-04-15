@@ -113,7 +113,7 @@ def generate_launch_description():
 
     # TimerAction to delay launching wpgen for 15 seconds
     timer_action_wpgen = TimerAction(
-        period=15.0,
+        period=1.0,
         actions=[
             OpaqueFunction(function=launch_wpgen)
         ]

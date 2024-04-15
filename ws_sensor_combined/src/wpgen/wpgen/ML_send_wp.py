@@ -30,6 +30,7 @@ class MLAgent(Node):
         self.new_waypoint = [0.0, 0.0, 1.0]
         self.prev_waypoint = [0.0, 0.0, 1.0]
         self.first_waypoint_generated = False
+        self.count = 0
         # self.prev_waypoint = [0.0, 0.0]
 
         model_path = "/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/EXAMPLE/drone_test_sample_final_2"
@@ -120,9 +121,11 @@ class MLAgent(Node):
             setpoint_msg = TrajectorySetpoint()
             setpoint_msg.position = [0.0, 0.0, 2.5]  # x, y, z position
             self.prev_waypoint = [0.0, 0.0, 1.0]  # Replace with the correct z value if necessary
-            self.publisher_.publish(setpoint_msg)
-            self.first_waypoint_generated = True
-            self.get_logger().info('Published initial waypoint x:0.0, y:0.0, z:2.5')
+            if self.position[2] < 2:
+                setpoint_msg.position = [0.0, 0.0, 3.5]
+            else:
+                self.first_waypoint_generated = True
+                self.get_logger().info('Published initial waypoint x:0.0, y:0.0, z:2.5')
         else:
             x_half = abs(self.x_range) / 2.0
             y_half = abs(self.y_range) / 2.0
