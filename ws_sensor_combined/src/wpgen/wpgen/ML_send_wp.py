@@ -124,7 +124,7 @@ class MLAgent(Node):
                 setpoint_msg.position = [0.0, 0.0, 3.5]
             else:
                 self.first_waypoint_generated = True
-                self.get_logger().info('Published initial waypoint x:0.0, y:0.0, z:2.5')
+                self.get_logger().info('Published starter waypoint x:0.0, y:0.0, z:3.5')
         else:
             x_half = abs(self.x_range) / 2.0
             y_half = abs(self.y_range) / 2.0
@@ -163,7 +163,7 @@ class MLAgent(Node):
         self.prev_waypoint = self.new_waypoint
         setpoint_msg.yaw = self.yaw
         self.publisher_.publish(setpoint_msg)
-        self.get_logger().info(f'Published recommended waypoint x:{setpoint_msg.position[0]}, y:{setpoint_msg.position[1]}, z:2.5, yaw:{self.yaw}')
+        self.get_logger().info(f'Published ML waypoint x:{setpoint_msg.position[0]}, y:{setpoint_msg.position[1]}, z:2.5, yaw:{self.yaw}')
 
 
 def main(args=None):
