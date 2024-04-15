@@ -28,6 +28,7 @@ class MLAgent(Node):
         self.velocity = [0.0, 0.0]
         self.enemy_velocity = [0.0, 0.0]
         self.prev_waypoint = [0.0, 0.0, 1.0]
+        self.first_waypoint_generated = False
         # self.prev_waypoint = [0.0, 0.0]
 
         model_path = "/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/EXAMPLE/drone_test_sample_final_2"
@@ -112,47 +113,50 @@ class MLAgent(Node):
         ]
 
     def generate_waypoint(self):
-        x_half = abs(self.x_range) / 2.0
-        y_half = abs(self.y_range) / 2.0
-        
-        normalized_position = self.normalize_position(self.position, self.x_range, self.y_range)
-        normalized_predator = self.normalize_position(self.predator_position, self.x_range, self.y_range)
-        normalized_poster = self.normalize_position(self.poster_point[:2], self.x_range, self.y_range)
-        normalized_velocity = self.normalize_position(self.velocity, self.x_range, self.y_range)
-        normalized_enemy_velocity = self.normalize_position(self.enemy_velocity, self.x_range, self.y_range)
-        
-        observation = OrderedDict()
-        observation['current_waypoint'] = np.array(self.prev_waypoint[:2], dtype=np.float32)
-        observation['enemy_position'] = np.array(normalized_predator, dtype=np.float32)
-        observation['enemy_velocity'] = np.array(normalized_enemy_velocity, dtype=np.float32)
-        observation['nearest_poster'] = np.array(normalized_poster, dtype=np.float32)
-        observation['position'] = np.array(normalized_position, dtype=np.float32)
-        observation['velocity'] = np.array(normalized_velocity, dtype=np.float32)
-        
-        
-        action, _states = self.model.predict(observation, deterministic=False)
-        # new_waypoint = [float(action[0]), float(action[1])]
-        new_waypoint = [float(action[0]), float(action[1]), float(action[2])]
-        new_waypoint[0] = np.clip(new_waypoint[0], -(x_half - 2), (x_half - 2)) # waypoint clipping by 2m
-        new_waypoint[1] = np.clip(new_waypoint[1], -(y_half - 2), (y_half - 2)) # waypoint clipping by 2m
-        setpoint_msg = TrajectorySetpoint()
-        
-        
-
-        # setpoint_msg.position = [self.prev_waypoint[0] * x_half, self.prev_waypoint[1] * y_half, 2.5]
-        #setpoint_msg.position = [0.0,0.0,2.5]
-
-        if new_waypoint[2] < 0:
-            setpoint_msg.position = [self.prev_waypoint[0] * x_half, self.prev_waypoint[1] * y_half, 2.5]
+        if not self.first_waypoint_generated:
+            # For the very first time, publish a waypoint at (0, 0, 2.5)
+            setpoint_msg = TrajectorySetpoint()
+            setpoint_msg.position = [0.0, 0.0, 2.5]  # x, y, z position
+            self.prev_waypoint = [0.0, 0.0, 1.0]  # Replace with the correct z value if necessary
+            self.publisher_.publish(setpoint_msg)
+            self.first_waypoint_generated = True
+            self.get_logger().info('Published initial waypoint x:0.0, y:0.0, z:2.5')
         else:
-            setpoint_msg.position = [new_waypoint[0] * x_half, new_waypoint[1] * y_half, 2.5]
+            x_half = abs(self.x_range) / 2.0
+            y_half = abs(self.y_range) / 2.0
+            
+            normalized_position = self.normalize_position(self.position, self.x_range, self.y_range)
+            normalized_predator = self.normalize_position(self.predator_position, self.x_range, self.y_range)
+            normalized_poster = self.normalize_position(self.poster_point[:2], self.x_range, self.y_range)
+            normalized_velocity = self.normalize_position(self.velocity, self.x_range, self.y_range)
+            normalized_enemy_velocity = self.normalize_position(self.enemy_velocity, self.x_range, self.y_range)
+            
+            observation = OrderedDict()
+            observation['current_waypoint'] = np.array(self.prev_waypoint[:2], dtype=np.float32)
+            observation['enemy_position'] = np.array(normalized_predator, dtype=np.float32)
+            observation['enemy_velocity'] = np.array(normalized_enemy_velocity, dtype=np.float32)
+            observation['nearest_poster'] = np.array(normalized_poster, dtype=np.float32)
+            observation['position'] = np.array(normalized_position, dtype=np.float32)
+            observation['velocity'] = np.array(normalized_velocity, dtype=np.float32)
+            
+            
+            action, _states = self.model.predict(observation, deterministic=False)
+            new_waypoint = [float(action[0]), float(action[1]), float(action[2])]
+            new_waypoint[0] = np.clip(new_waypoint[0], -(x_half - 2), (x_half - 2)) # waypoint clipping by 2m
+            new_waypoint[1] = np.clip(new_waypoint[1], -(y_half - 2), (y_half - 2)) # waypoint clipping by 2m
+            setpoint_msg = TrajectorySetpoint()
+            
+            if new_waypoint[2] < 0:
+                setpoint_msg.position = [self.prev_waypoint[0] * x_half, self.prev_waypoint[1] * y_half, 2.5]
+            else:
+                setpoint_msg.position = [new_waypoint[0] * x_half, new_waypoint[1] * y_half, 2.5]
+                self.prev_waypoint = new_waypoint
+            # Create TrajectorySetpoint message and publish
+            
             self.prev_waypoint = new_waypoint
-        # Create TrajectorySetpoint message and publish
-        
-        self.prev_waypoint = new_waypoint
-        setpoint_msg.yaw = self.yaw
-        self.publisher_.publish(setpoint_msg)
-        self.get_logger().info(f'Published recommended waypoint x:{setpoint_msg.position[0]}, y:{setpoint_msg.position[1]}, z:2.5, yaw:{self.yaw}')
+            setpoint_msg.yaw = self.yaw
+            self.publisher_.publish(setpoint_msg)
+            self.get_logger().info(f'Published recommended waypoint x:{setpoint_msg.position[0]}, y:{setpoint_msg.position[1]}, z:2.5, yaw:{self.yaw}')
 
 def main(args=None):
     rclpy.init(args=args)
