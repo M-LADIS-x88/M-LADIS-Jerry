@@ -45,7 +45,7 @@ private:
         double closest_distance = std::numeric_limits<double>::max();
         double target_angle = 0.0;
         bool target_found = false;
-        float range = 2.5;
+        float range = 3.5;
         geometry_msgs::msg::Point nearest_poster_point; // Point to store the nearest poster info
         nearest_poster_point.z = 0; // Set default to out of range
 
