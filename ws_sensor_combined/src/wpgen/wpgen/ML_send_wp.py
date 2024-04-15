@@ -27,6 +27,7 @@ class MLAgent(Node):
         self.y_range = default_bounds[1] - default_bounds[0]
         self.velocity = [0.0, 0.0]
         self.enemy_velocity = [0.0, 0.0]
+        self.new_waypoint = [0.0, 0.0, 1.0]
         self.prev_waypoint = [0.0, 0.0, 1.0]
         self.first_waypoint_generated = False
         # self.prev_waypoint = [0.0, 0.0]
@@ -45,7 +46,8 @@ class MLAgent(Node):
         self.poster_point_subscription = self.create_subscription(Point, '/poster_point', self.poster_point_callback, 1)
         self.imu_subscription = self.create_subscription(VehicleOdometry, '/fmu/out/vehicle_odometry', self.imu_callback, 1)
 
-        self.timer = self.create_timer(8.0, self.generate_waypoint)
+        self.timer = self.create_timer(1.0, self.generate_waypoint)
+        self.timer = self.create_timer(0.25, self.push_waypoint)
 
     def position_callback(self, msg):
         self.position = [msg.x, msg.y, msg.z]
@@ -139,24 +141,28 @@ class MLAgent(Node):
             observation['position'] = np.array(normalized_position, dtype=np.float32)
             observation['velocity'] = np.array(normalized_velocity, dtype=np.float32)
             
-            
             action, _states = self.model.predict(observation, deterministic=False)
-            new_waypoint = [float(action[0]), float(action[1]), float(action[2])]
-            new_waypoint[0] = np.clip(new_waypoint[0], -(x_half - 2), (x_half - 2)) # waypoint clipping by 2m
-            new_waypoint[1] = np.clip(new_waypoint[1], -(y_half - 2), (y_half - 2)) # waypoint clipping by 2m
-            setpoint_msg = TrajectorySetpoint()
+            self.new_waypoint = [float(action[0]), float(action[1]), float(action[2])]
+            self.new_waypoint[0] = np.clip(self.new_waypoint[0], -(x_half - 2), (x_half - 2)) # waypoint clipping by 2m
+            self.new_waypoint[1] = np.clip(self.new_waypoint[1], -(y_half - 2), (y_half - 2)) # waypoint clipping by 2m
             
-            if new_waypoint[2] < 0:
-                setpoint_msg.position = [self.prev_waypoint[0] * x_half, self.prev_waypoint[1] * y_half, 2.5]
-            else:
-                setpoint_msg.position = [new_waypoint[0] * x_half, new_waypoint[1] * y_half, 2.5]
-                self.prev_waypoint = new_waypoint
-            # Create TrajectorySetpoint message and publish
-            
-            self.prev_waypoint = new_waypoint
-            setpoint_msg.yaw = self.yaw
-            self.publisher_.publish(setpoint_msg)
-            self.get_logger().info(f'Published recommended waypoint x:{setpoint_msg.position[0]}, y:{setpoint_msg.position[1]}, z:2.5, yaw:{self.yaw}')
+
+    def push_waypoint(self):
+        x_half = abs(self.x_range) / 2.0
+        y_half = abs(self.y_range) / 2.0
+        setpoint_msg = TrajectorySetpoint()
+        if self.new_waypoint[2] < 0:
+            setpoint_msg.position = [self.prev_waypoint[0] * x_half, self.prev_waypoint[1] * y_half, 2.5]
+        else:
+            setpoint_msg.position = [self.new_waypoint[0] * x_half, self.new_waypoint[1] * y_half, 2.5]
+            self.prev_waypoint = self.new_waypoint
+        # Create TrajectorySetpoint message and publish
+        
+        self.prev_waypoint = self.new_waypoint
+        setpoint_msg.yaw = self.yaw
+        self.publisher_.publish(setpoint_msg)
+        self.get_logger().info(f'Published recommended waypoint x:{setpoint_msg.position[0]}, y:{setpoint_msg.position[1]}, z:2.5, yaw:{self.yaw}')
+
 
 def main(args=None):
     rclpy.init(args=args)
