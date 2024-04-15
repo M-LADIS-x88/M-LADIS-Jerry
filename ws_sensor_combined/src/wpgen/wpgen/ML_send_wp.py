@@ -119,9 +119,8 @@ class MLAgent(Node):
         if not self.first_waypoint_generated:
             # For the very first time, publish a waypoint at (0, 0, 2.5)
             setpoint_msg = TrajectorySetpoint()
-            setpoint_msg.position = [0.0, 0.0, 2.5]  # x, y, z position
             self.prev_waypoint = [0.0, 0.0, 1.0]  # Replace with the correct z value if necessary
-            if self.position[2] < 2:
+            if (self.position[2] < 1.5) and (self.first_waypoint_generated == False):
                 setpoint_msg.position = [0.0, 0.0, 3.5]
             else:
                 self.first_waypoint_generated = True

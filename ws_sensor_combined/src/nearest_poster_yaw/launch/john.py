@@ -105,7 +105,7 @@ def generate_launch_description():
 
     # TimerAction to delay launching offboard control for 10 seconds
     timer_action_offboard_control = TimerAction(
-        period=10.0,
+        period=15.0,
         actions=[
             OpaqueFunction(function=launch_offboard_control)
         ]

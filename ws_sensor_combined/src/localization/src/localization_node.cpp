@@ -22,8 +22,8 @@ private:
     {
         geometry_msgs::msg::Point position_msg;
         position_msg.x = msg->pose.pose.position.x;
-        position_msg.y = msg->pose.pose.position.y;
-        position_msg.z = msg->pose.pose.position.z;
+        position_msg.y = -msg->pose.pose.position.y;
+        position_msg.z = -msg->pose.pose.position.z;
         position_publisher_->publish(position_msg);
 
         std_msgs::msg::Float64 yaw_msg;
