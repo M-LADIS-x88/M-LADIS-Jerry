@@ -34,7 +34,8 @@ class MLAgent(Node):
         self.end_flight = False
         # self.prev_waypoint = [0.0, 0.0]
 
-        model_path = "/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/EXAMPLE/drone_test_sample_final_2"
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        model_path = os.path.join(current_dir, "../EXAMPLE/drone_test_sample_final_2")
         self.model = PPO.load(model_path)
 
         self.publisher_ = self.create_publisher(TrajectorySetpoint, '/fmu/in/autonomy_waypoint', 1)

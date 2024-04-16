@@ -7,6 +7,7 @@ find_package(rclpy REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(px4_msgs REQUIRED)
+find_package(ament_index_python REQUIRED)
 
 # Install Python package directory
 install(DIRECTORY
