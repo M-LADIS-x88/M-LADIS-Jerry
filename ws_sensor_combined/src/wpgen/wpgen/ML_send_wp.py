@@ -7,7 +7,7 @@ import math
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Point, Pose
-from std_msgs.msg import Float64
+from std_msgs.msg import Float64, Bool
 from px4_msgs.msg import TrajectorySetpoint
 from px4_msgs.msg import VehicleOdometry
 from stable_baselines3 import PPO
@@ -31,6 +31,7 @@ class MLAgent(Node):
         self.prev_waypoint = [0.0, 0.0, 1.0]
         self.first_waypoint_generated = False
         self.count = 0
+        self.end_flight = False
         # self.prev_waypoint = [0.0, 0.0]
 
         model_path = "/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/EXAMPLE/drone_test_sample_final_2"
@@ -46,10 +47,16 @@ class MLAgent(Node):
         self.poster_yaw_subscription = self.create_subscription(Float64, '/poster_yaw', self.poster_yaw_callback, 1)
         self.poster_point_subscription = self.create_subscription(Point, '/poster_point', self.poster_point_callback, 1)
         self.imu_subscription = self.create_subscription(VehicleOdometry, '/fmu/out/vehicle_odometry', self.imu_callback, 1)
+        self.end_flight_subscription = self.create_subscription(Bool, '/end_flight', self.end_flight_callback, 1)
+
 
         self.timer = self.create_timer(1.0, self.generate_waypoint)
         self.timer = self.create_timer(0.25, self.push_waypoint)
 
+    def end_flight_callback(self, msg: Bool):
+        self.end_flight = msg.data
+        if self.end_flight:
+            self.get_logger().info('End flight received. Preparing to land.')
     def position_callback(self, msg):
         self.position = [msg.x, msg.y, msg.z]
         #self.get_logger().info('jerry_x={}, jerry_y={}, jerry_z={}'.format(self.position[0],self.position[1],self.position[2]))
@@ -116,6 +123,8 @@ class MLAgent(Node):
         ]
 
     def generate_waypoint(self):
+        if self.end_flight:  # Do nothing more if end_flight flag is set
+            return
         if not self.first_waypoint_generated:
             # For the very first time, publish a waypoint at (0, 0, 2.5)
             setpoint_msg = TrajectorySetpoint()
@@ -150,20 +159,26 @@ class MLAgent(Node):
             
 
     def push_waypoint(self):
-        x_half = abs(self.x_range) / 2.0
-        y_half = abs(self.y_range) / 2.0
-        setpoint_msg = TrajectorySetpoint()
-        if self.new_waypoint[2] < 0:
-            setpoint_msg.position = [self.prev_waypoint[0] * x_half, self.prev_waypoint[1] * y_half, 2.5]
+        if self.end_flight:
+            # Set the current position with z=0 to land
+            self.new_waypoint = [self.position[0], self.position[1], 0.0]
+            self.get_logger().info(f'Published Landing waypoint x:{setpoint_msg.position[0]}, y:{setpoint_msg.position[1]}, z:0, yaw:{self.yaw}')
+
         else:
-            setpoint_msg.position = [self.new_waypoint[0] * x_half, self.new_waypoint[1] * y_half, 2.5]
+            x_half = abs(self.x_range) / 2.0
+            y_half = abs(self.y_range) / 2.0
+            setpoint_msg = TrajectorySetpoint()
+            if self.new_waypoint[2] < 0:
+                setpoint_msg.position = [self.prev_waypoint[0] * x_half, self.prev_waypoint[1] * y_half, 2.5]
+            else:
+                setpoint_msg.position = [self.new_waypoint[0] * x_half, self.new_waypoint[1] * y_half, 2.5]
+                self.prev_waypoint = self.new_waypoint
+            # Create TrajectorySetpoint message and publish
+            
             self.prev_waypoint = self.new_waypoint
-        # Create TrajectorySetpoint message and publish
-        
-        self.prev_waypoint = self.new_waypoint
-        setpoint_msg.yaw = self.yaw
-        self.publisher_.publish(setpoint_msg)
-        self.get_logger().info(f'Published ML waypoint x:{setpoint_msg.position[0]}, y:{setpoint_msg.position[1]}, z:2.5, yaw:{self.yaw}')
+            setpoint_msg.yaw = self.yaw
+            self.publisher_.publish(setpoint_msg)
+            self.get_logger().info(f'Published ML waypoint x:{setpoint_msg.position[0]}, y:{setpoint_msg.position[1]}, z:2.5, yaw:{self.yaw}')
 
 
 def main(args=None):

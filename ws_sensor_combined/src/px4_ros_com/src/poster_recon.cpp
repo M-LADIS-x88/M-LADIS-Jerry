@@ -8,6 +8,8 @@
 #include <vector>
 #include <algorithm>
 using namespace std::placeholders;
+using namespace std::chrono_literals;
+
 
 class EnvironmentReconstructor : public rclcpp::Node {
 public:
@@ -25,8 +27,18 @@ public:
     // Subscription to last poster checked
     last_poster_sub_ = this->create_subscription<geometry_msgs::msg::Point>(
       "/captured_poster", 10, std::bind(&EnvironmentReconstructor::last_poster_checked_callback, this, _1));
+    
+    timer_ = this->create_wall_timer(
+      420s, // 7 minutes expressed in seconds
+      std::bind(&EnvironmentReconstructor::endFlightTimerCallback, this));
   }
 
+  void endFlightTimerCallback() {
+    std_msgs::msg::Bool end_flight_msg;
+    end_flight_msg.data = true;
+    end_flight_pub_->publish(end_flight_msg);
+  }
+  
   void poster_callback(const geometry_msgs::msg::PoseArray::SharedPtr posters) {
     std::vector<Poster> current_posters;
     for (const auto& poster_msg : posters->poses) {
@@ -67,6 +79,7 @@ private:
     rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr end_flight_pub_;
     rclcpp::Subscription<geometry_msgs::msg::Point>::SharedPtr last_poster_sub_;
     rclcpp::Subscription<geometry_msgs::msg::PoseArray>::SharedPtr poster_sub_;
+    rclcpp::TimerBase::SharedPtr timer_;
 
     std::vector<Poster> persistent_posters_;
     const float DISTANCE_THRESHOLD = 1.5f; // Threshold distance to consider posters the same
