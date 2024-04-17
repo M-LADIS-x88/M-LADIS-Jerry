@@ -173,8 +173,8 @@ class MLAgent(Node):
             self.prev_action = self.new_action
             
             self.waypoint = [self.new_action[0] * x_half, self.new_action[1] * y_half, 2.5]
-            self.waypoint[0] = np.clip(self.waypoint[0], -(x_half - 2), (x_half - 2)) # waypoint clipping by 2m
-            self.waypoint[1] = np.clip(self.waypoint[1], -(y_half - 2), (y_half - 2)) # waypoint clipping by 2m
+            self.waypoint[0] = np.clip(self.waypoint[0], -(x_half - 5), (x_half - 5)) # waypoint clipping in x
+            self.waypoint[1] = np.clip(self.waypoint[1], -(y_half - 5), (y_half - 5)) # waypoint clipping in y
             self.waypoint_type = "ML"
 
         setpoint_msg = TrajectorySetpoint()
