@@ -27,12 +27,14 @@ class MLAgent(Node):
         self.y_range = default_bounds[1] - default_bounds[0]
         self.velocity = [0.0, 0.0]
         self.enemy_velocity = [0.0, 0.0]
-        self.new_waypoint = [0.0, 0.0, 1.0]
-        self.prev_waypoint = [0.0, 0.0, 1.0]
+        self.new_action = [0.0, 0.0, 1.0]
+        self.prev_action = [0.0, 0.0, 1.0]
         self.first_waypoint_generated = False
         self.count = 0
         self.end_flight = False
-        # self.prev_waypoint = [0.0, 0.0]
+        self.waypoint = [0.0, 0.0, 0.0]
+        self.waypoint_type = "null"
+        # self.prev_action = [0.0, 0.0]
 
         current_dir = os.path.dirname(os.path.abspath(__file__))
         model_path = os.path.join(current_dir, "../EXAMPLE/drone_test_sample_final_2")
@@ -51,13 +53,14 @@ class MLAgent(Node):
         self.end_flight_subscription = self.create_subscription(Bool, '/end_flight', self.end_flight_callback, 1)
 
 
-        self.timer = self.create_timer(1.0, self.generate_waypoint)
-        self.timer = self.create_timer(0.25, self.push_waypoint)
+        self.timer_generate_action = self.create_timer(1.0, self.generate_action)
+        self.timer_push_waypoint = self.create_timer(0.25, self.push_waypoint)
 
     def end_flight_callback(self, msg: Bool):
         self.end_flight = msg.data
         if self.end_flight:
             self.get_logger().info('End flight received. Preparing to land.')
+            
     def position_callback(self, msg):
         self.position = [msg.x, msg.y, msg.z]
         #self.get_logger().info('jerry_x={}, jerry_y={}, jerry_z={}'.format(self.position[0],self.position[1],self.position[2]))
@@ -65,16 +68,16 @@ class MLAgent(Node):
     def predator_callback(self, msg):
         self.enemy_velocity = [msg.x - self.predator_position[0], msg.y - self.predator_position[1]]
         self.predator_position = [msg.x, msg.y, msg.z]
-        self.get_logger().info('tom_x={}, tom_y={}, tom_z={}'.format(self.predator_position[0],self.predator_position[1],self.predator_position[2]))
+        self.get_logger().info(f'tom_x={self.predator_position[0]}, tom_y={self.predator_position[1]}, tom_z={self.predator_position[2]}')
 
     def walls_callback(self, msg):
         self.x_range = msg.orientation.x - msg.position.x
         self.y_range = msg.orientation.y - msg.position.y
-        self.get_logger().info('x_width={}, y_length={}'.format(self.x_range, self.y_range))
+        self.get_logger().info(f'x_width={self.x_range}, y_length={self.y_range}')
 
     def poster_yaw_callback(self, msg):
         self.yaw = msg.data
-        self.get_logger().info('Yaw to nearest poster: {}'.format(self.yaw))
+        self.get_logger().info(f'Yaw to nearest poster: {self.yaw}')
 
     def poster_point_callback(self, msg):
         self.poster_point = [msg.x, msg.y, msg.z]
@@ -123,22 +126,11 @@ class MLAgent(Node):
             ((pos[1] - y_half) / y_half) if y_half else 0.0
         ]
 
-    def generate_waypoint(self):
+    def generate_action(self):
         if self.end_flight:  # Do nothing more if end_flight flag is set
             return
-        if not self.first_waypoint_generated:
-            # For the very first time, publish a waypoint at (0, 0, 2.5)
-            setpoint_msg = TrajectorySetpoint()
-            self.prev_waypoint = [0.0, 0.0, 1.0]  # Replace with the correct z value if necessary
-            if (self.position[2] < 1.5) and (self.first_waypoint_generated == False):
-                setpoint_msg.position = [0.0, 0.0, 3.5]
-            else:
-                self.first_waypoint_generated = True
-                self.get_logger().info('Published starter waypoint x:0.0, y:0.0, z:3.5')
-        else:
-            x_half = abs(self.x_range) / 2.0
-            y_half = abs(self.y_range) / 2.0
-            
+        
+        else: # Else, generate ML action            
             normalized_position = self.normalize_position(self.position, self.x_range, self.y_range)
             normalized_predator = self.normalize_position(self.predator_position, self.x_range, self.y_range)
             normalized_poster = self.normalize_position(self.poster_point[:2], self.x_range, self.y_range)
@@ -146,7 +138,7 @@ class MLAgent(Node):
             normalized_enemy_velocity = self.normalize_position(self.enemy_velocity, self.x_range, self.y_range)
             
             observation = OrderedDict()
-            observation['current_waypoint'] = np.array(self.prev_waypoint[:2], dtype=np.float32)
+            observation['current_waypoint'] = np.array(self.prev_action[:2], dtype=np.float32)
             observation['enemy_position'] = np.array(normalized_predator, dtype=np.float32)
             observation['enemy_velocity'] = np.array(normalized_enemy_velocity, dtype=np.float32)
             observation['nearest_poster'] = np.array(normalized_poster, dtype=np.float32)
@@ -154,32 +146,42 @@ class MLAgent(Node):
             observation['velocity'] = np.array(normalized_velocity, dtype=np.float32)
             
             action, _states = self.model.predict(observation, deterministic=False)
-            self.new_waypoint = [float(action[0]), float(action[1]), float(action[2])]
-            self.new_waypoint[0] = np.clip(self.new_waypoint[0], -(x_half - 2), (x_half - 2)) # waypoint clipping by 2m
-            self.new_waypoint[1] = np.clip(self.new_waypoint[1], -(y_half - 2), (y_half - 2)) # waypoint clipping by 2m
+            self.new_action = [float(action[0]), float(action[1]), float(action[2])]
+            
             
 
     def push_waypoint(self):
         if self.end_flight:
             # Set the current position with z=0 to land
-            self.new_waypoint = [self.position[0], self.position[1], 0.0]
-            self.get_logger().info(f'Published Landing waypoint x:{setpoint_msg.position[0]}, y:{setpoint_msg.position[1]}, z:0, yaw:{self.yaw}')
+            self.waypoint = [self.position[0], self.position[1], 0.0]
+            self.waypoint_type = "landing"
 
+        elif not self.first_waypoint_generated: # For the very first time, publish a liftoff waypoint
+            self.prev_action = [0.0, 0.0, 1.0]  # Replace with the correct z value if necessary
+            if (self.position[2] < 1.5):
+                self.waypoint = [0.0, 0.0, 3.5]
+                self.waypoint_type = "starter"
+            else:
+                self.first_waypoint_generated = True
+                
         else:
             x_half = abs(self.x_range) / 2.0
             y_half = abs(self.y_range) / 2.0
-            setpoint_msg = TrajectorySetpoint()
-            if self.new_waypoint[2] < 0:
-                setpoint_msg.position = [self.prev_waypoint[0] * x_half, self.prev_waypoint[1] * y_half, 2.5]
-            else:
-                setpoint_msg.position = [self.new_waypoint[0] * x_half, self.new_waypoint[1] * y_half, 2.5]
-                self.prev_waypoint = self.new_waypoint
-            # Create TrajectorySetpoint message and publish
             
-            self.prev_waypoint = self.new_waypoint
-            setpoint_msg.yaw = self.yaw
-            self.publisher_.publish(setpoint_msg)
-            self.get_logger().info(f'Published ML waypoint x:{setpoint_msg.position[0]}, y:{setpoint_msg.position[1]}, z:2.5, yaw:{self.yaw}')
+            if self.new_action[2] < 0: # Use the old action if ML doesn't like the new action
+                self.new_action = self.prev_action
+            self.prev_action = self.new_action
+            
+            self.waypoint = [self.new_action[0] * x_half, self.new_action[1] * y_half, 2.5]
+            self.waypoint[0] = np.clip(self.waypoint[0], -(x_half - 2), (x_half - 2)) # waypoint clipping by 2m
+            self.waypoint[1] = np.clip(self.waypoint[1], -(y_half - 2), (y_half - 2)) # waypoint clipping by 2m
+            self.waypoint_type = "ML"
+
+        setpoint_msg = TrajectorySetpoint()
+        setpoint_msg.position = self.waypoint
+        setpoint_msg.yaw = self.yaw
+        self.publisher_.publish(setpoint_msg)
+        self.get_logger().info(f'Published {self.waypoint_type} waypoint x:{setpoint_msg.position[0]}, y:{setpoint_msg.position[1]}, z:{setpoint_msg.position[2]}, yaw:{self.yaw}')
 
 
 def main(args=None):
