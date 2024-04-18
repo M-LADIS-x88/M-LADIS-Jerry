@@ -165,7 +165,7 @@ private:
 	void publish_trajectory_setpoint_forward()
 {
 	TrajectorySetpoint msg{};
-	msg.position = {x, y, -z};
+	msg.position = {-y, -x, -z};
 	msg.yaw = yaw; // [-PI:PI]
 	msg.timestamp = this->get_clock()->now().nanoseconds() / 1000;
 	trajectory_setpoint_publisher_->publish(msg);

@@ -135,6 +135,7 @@ private:
     geometry_msgs::msg::PoseArray pose_array_msg;
     pose_array_msg.header.frame_id = "map";
     pose_array_msg.header.stamp = this->get_clock()->now();
+    int num_checked = 0;
 
     for (const auto& poster : persistent_posters_) {
         geometry_msgs::msg::Pose pose;
@@ -146,11 +147,15 @@ private:
         pose.orientation.y = 0.0;
         pose.orientation.z = 0.0;
         pose.orientation.w = poster.isChecked ? 1.0 : 0.0; // Set w to 1 if checked, to 0 otherwise
-
+        if (poster.isChecked) {
+          num_checked++;
+        }
         pose_array_msg.poses.push_back(pose);
     }
 
     poster_pub_->publish(pose_array_msg);
+    RCLCPP_INFO(this->get_logger(), "%d of %d Tracked Posters Photographed",
+              num_checked, static_cast<int>(persistent_posters_.size()));
 }
 
     static constexpr int MAX_NOT_SEEN_CYCLES = 3; // Number of cycles a poster can be unseen before being removed

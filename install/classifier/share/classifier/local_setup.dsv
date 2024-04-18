@@ -1,0 +1,2 @@
+source;share/classifier/environment/ament_prefix_path.sh
+source;share/classifier/environment/path.sh

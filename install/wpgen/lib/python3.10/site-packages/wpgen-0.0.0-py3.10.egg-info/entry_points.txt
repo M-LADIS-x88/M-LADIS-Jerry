@@ -1,0 +1,5 @@
+[colcon_core.package_identification]
+ros_package = colcon_ros.package_identification.ros:RosPackageIdentification
+
+[console_scripts]
+ML_send_wp = wpgen.ML_send_wp:main

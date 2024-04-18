@@ -186,7 +186,7 @@ private:
     for (size_t i = 0; i < pcl_cloud->size(); ++i) {
       const auto& pt = pcl_cloud->points[i];
       double mag_dist = std::sqrt(pt.x*pt.x + pt.y*pt.y);
-      if(pt.z > -6 && pt.z < -1 && mag_dist > 0.5 &&
+      if(pt.z > -6 && pt.z < -2 && mag_dist > 0.5 &&
            pt.x < 32 && pt.y < 40 && pt.x > -32 && pt.y > -40 &&
            pt.x != 0 && pt.y != 0) {
             xyzi_matrix.push_back({pt.x, -pt.y, -pt.z, pt.intensity});

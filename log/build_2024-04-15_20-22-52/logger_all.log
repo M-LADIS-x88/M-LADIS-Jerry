@@ -1,0 +1,629 @@
+[0.077s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--base-paths', 'src/slam/ros2_wrapping', '--cmake-args', '-DCMAKE_BUILD_TYPE=Release']
+[0.078s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['src/slam/ros2_wrapping'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=['-DCMAKE_BUILD_TYPE=Release'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7d9a18c3e4d0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7d9a18c3df00>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7d9a18c3df00>>)
+[0.104s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.104s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.104s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.104s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.104s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.104s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/blake/M-LADIS-Jerry/src/slam/ros2_wrapping'
+[0.104s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.118s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.118s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.119s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 13 installed packages in /home/blake/M-LADIS-Jerry/ws_sensor_combined/install
+[0.120s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 285 installed packages in /opt/ros/humble
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.147s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.148s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.148s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[0.148s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[0.148s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[0.148s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[0.151s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.151s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.151s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[0.164s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[0.165s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.165s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/blake/M-LADIS-Jerry/install/local_setup.ps1'
+[0.166s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/blake/M-LADIS-Jerry/install/_local_setup_util_ps1.py'
+[0.167s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/blake/M-LADIS-Jerry/install/setup.ps1'
+[0.168s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/blake/M-LADIS-Jerry/install/local_setup.sh'
+[0.168s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/blake/M-LADIS-Jerry/install/_local_setup_util_sh.py'
+[0.168s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/blake/M-LADIS-Jerry/install/setup.sh'
+[0.169s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/blake/M-LADIS-Jerry/install/local_setup.bash'
+[0.170s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/blake/M-LADIS-Jerry/install/setup.bash'
+[0.171s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/blake/M-LADIS-Jerry/install/local_setup.zsh'
+[0.171s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/blake/M-LADIS-Jerry/install/setup.zsh'
+[0.081s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-skip', 'LidarSlam']
+[0.081s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=['LidarSlam'], packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7011db3424d0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7011db341f00>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7011db341f00>>)
+[0.109s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.109s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.109s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.109s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.109s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.109s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.109s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/blake/M-LADIS-Jerry'
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros', 'ros_package']
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros_package'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined) by extensions ['ignore', 'ignore_ament_install']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined) by extension 'ignore'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined) by extension 'ignore_ament_install'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined) by extensions ['colcon_pkg']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined) by extension 'colcon_pkg'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined) by extensions ['colcon_meta']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined) by extension 'colcon_meta'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined) by extensions ['ros', 'ros_package']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined) by extension 'ros'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined) by extension 'ros_package'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined) by extensions ['cmake', 'python']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined) by extension 'cmake'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined) by extension 'python'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined) by extensions ['python_setup_py']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined) by extension 'python_setup_py'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/build) by extensions ['ignore', 'ignore_ament_install']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/build) by extension 'ignore'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/build) ignored
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/install) by extensions ['ignore', 'ignore_ament_install']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/install) by extension 'ignore'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/install) ignored
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/log) by extensions ['ignore', 'ignore_ament_install']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/log) by extension 'ignore'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/log) ignored
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src) by extensions ['ignore', 'ignore_ament_install']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src) by extension 'ignore'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src) by extension 'ignore_ament_install'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src) by extensions ['colcon_pkg']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src) by extension 'colcon_pkg'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src) by extensions ['colcon_meta']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src) by extension 'colcon_meta'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src) by extensions ['ros', 'ros_package']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src) by extension 'ros'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src) by extension 'ros_package'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src) by extensions ['cmake', 'python']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src) by extension 'cmake'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src) by extension 'python'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src) by extensions ['python_setup_py']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src) by extension 'python_setup_py'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/classifier) by extensions ['ignore', 'ignore_ament_install']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/classifier) by extension 'ignore'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/classifier) by extension 'ignore_ament_install'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/classifier) by extensions ['colcon_pkg']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/classifier) by extension 'colcon_pkg'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/classifier) by extensions ['colcon_meta']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/classifier) by extension 'colcon_meta'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/classifier) by extensions ['ros', 'ros_package']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/classifier) by extension 'ros'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/classifier) by extension 'ros_package'
+[0.125s] DEBUG:colcon.colcon_core.package_identification:Package 'ws_sensor_combined/src/classifier' with type 'ros.ament_cmake' and name 'classifier'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/localization) by extensions ['ignore', 'ignore_ament_install']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/localization) by extension 'ignore'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/localization) by extension 'ignore_ament_install'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/localization) by extensions ['colcon_pkg']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/localization) by extension 'colcon_pkg'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/localization) by extensions ['colcon_meta']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/localization) by extension 'colcon_meta'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/localization) by extensions ['ros', 'ros_package']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/localization) by extension 'ros'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/localization) by extension 'ros_package'
+[0.126s] DEBUG:colcon.colcon_core.package_identification:Package 'ws_sensor_combined/src/localization' with type 'ros.ament_cmake' and name 'localization'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/mapping) by extensions ['ignore', 'ignore_ament_install']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/mapping) by extension 'ignore'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/mapping) by extension 'ignore_ament_install'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/mapping) by extensions ['colcon_pkg']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/mapping) by extension 'colcon_pkg'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/mapping) by extensions ['colcon_meta']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/mapping) by extension 'colcon_meta'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/mapping) by extensions ['ros', 'ros_package']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/mapping) by extension 'ros'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/mapping) by extension 'ros_package'
+[0.127s] DEBUG:colcon.colcon_core.package_identification:Package 'ws_sensor_combined/src/mapping' with type 'ros.ament_cmake' and name 'mapping'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/nearest_poster_yaw) by extensions ['ignore', 'ignore_ament_install']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/nearest_poster_yaw) by extension 'ignore'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/nearest_poster_yaw) by extension 'ignore_ament_install'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/nearest_poster_yaw) by extensions ['colcon_pkg']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/nearest_poster_yaw) by extension 'colcon_pkg'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/nearest_poster_yaw) by extensions ['colcon_meta']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/nearest_poster_yaw) by extension 'colcon_meta'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/nearest_poster_yaw) by extensions ['ros', 'ros_package']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/nearest_poster_yaw) by extension 'ros'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/nearest_poster_yaw) by extension 'ros_package'
+[0.127s] DEBUG:colcon.colcon_core.package_identification:Package 'ws_sensor_combined/src/nearest_poster_yaw' with type 'ros.ament_cmake' and name 'nearest_poster_yaw'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/px4_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/px4_msgs) by extension 'ignore'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/px4_msgs) by extension 'ignore_ament_install'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/px4_msgs) by extensions ['colcon_pkg']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/px4_msgs) by extension 'colcon_pkg'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/px4_msgs) by extensions ['colcon_meta']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/px4_msgs) by extension 'colcon_meta'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/px4_msgs) by extensions ['ros', 'ros_package']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/px4_msgs) by extension 'ros'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/px4_msgs) by extension 'ros_package'
+[0.128s] DEBUG:colcon.colcon_core.package_identification:Package 'ws_sensor_combined/src/px4_msgs' with type 'ros.ament_cmake' and name 'px4_msgs'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/px4_ros_com) by extensions ['ignore', 'ignore_ament_install']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/px4_ros_com) by extension 'ignore'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/px4_ros_com) by extension 'ignore_ament_install'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/px4_ros_com) by extensions ['colcon_pkg']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/px4_ros_com) by extension 'colcon_pkg'
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/px4_ros_com) by extensions ['colcon_meta']
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/px4_ros_com) by extension 'colcon_meta'
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/px4_ros_com) by extensions ['ros', 'ros_package']
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/px4_ros_com) by extension 'ros'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/px4_ros_com) by extension 'ros_package'
+[0.130s] DEBUG:colcon.colcon_core.package_identification:Package 'ws_sensor_combined/src/px4_ros_com' with type 'ros.ament_cmake' and name 'px4_ros_com'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/slam) by extensions ['ignore', 'ignore_ament_install']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/slam) by extension 'ignore'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/slam) by extension 'ignore_ament_install'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/slam) by extensions ['colcon_pkg']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/slam) by extension 'colcon_pkg'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/slam) by extensions ['colcon_meta']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/slam) by extension 'colcon_meta'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/slam) by extensions ['ros', 'ros_package']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/slam) by extension 'ros'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/slam) by extension 'ros_package'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/slam) by extensions ['cmake', 'python']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/slam) by extension 'cmake'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/slam) by extension 'python'
+[0.135s] DEBUG:colcon.colcon_core.package_identification:Package 'ws_sensor_combined/src/slam' with type 'cmake' and name 'LidarSlam'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/wpgen) by extensions ['ignore', 'ignore_ament_install']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/wpgen) by extension 'ignore'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/wpgen) by extension 'ignore_ament_install'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/wpgen) by extensions ['colcon_pkg']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/wpgen) by extension 'colcon_pkg'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/wpgen) by extensions ['colcon_meta']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/wpgen) by extension 'colcon_meta'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/wpgen) by extensions ['ros', 'ros_package']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/wpgen) by extension 'ros'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/src/wpgen) by extension 'ros_package'
+[0.136s] DEBUG:colcon.colcon_core.package_identification:Package 'ws_sensor_combined/src/wpgen' with type 'ros.ament_python' and name 'wpgen'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/test_images) by extensions ['ignore', 'ignore_ament_install']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/test_images) by extension 'ignore'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/test_images) by extension 'ignore_ament_install'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/test_images) by extensions ['colcon_pkg']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/test_images) by extension 'colcon_pkg'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/test_images) by extensions ['colcon_meta']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/test_images) by extension 'colcon_meta'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/test_images) by extensions ['ros', 'ros_package']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/test_images) by extension 'ros'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/test_images) by extension 'ros_package'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/test_images) by extensions ['cmake', 'python']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/test_images) by extension 'cmake'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/test_images) by extension 'python'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/test_images) by extensions ['python_setup_py']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(ws_sensor_combined/test_images) by extension 'python_setup_py'
+[0.136s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.136s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.136s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.136s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.136s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.151s] INFO:colcon.colcon_core.package_selection:Skipping package 'LidarSlam' in 'ws_sensor_combined/src/slam'
+[0.152s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.152s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.153s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 13 installed packages in /home/blake/M-LADIS-Jerry/ws_sensor_combined/install
+[0.154s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 285 installed packages in /opt/ros/humble
+[0.155s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'classifier' build argument 'cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'classifier' build argument 'cmake_target' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'classifier' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'classifier' build argument 'cmake_clean_cache' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'classifier' build argument 'cmake_clean_first' from command line to 'False'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'classifier' build argument 'cmake_force_configure' from command line to 'False'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'classifier' build argument 'ament_cmake_args' from command line to 'None'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'classifier' build argument 'catkin_cmake_args' from command line to 'None'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'classifier' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.183s] DEBUG:colcon.colcon_core.verb:Building package 'classifier' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/blake/M-LADIS-Jerry/build/classifier', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/blake/M-LADIS-Jerry/install/classifier', 'merge_install': False, 'path': '/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/classifier', 'symlink_install': False, 'test_result_base': None}
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'localization' build argument 'cmake_args' from command line to 'None'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'localization' build argument 'cmake_target' from command line to 'None'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'localization' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'localization' build argument 'cmake_clean_cache' from command line to 'False'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'localization' build argument 'cmake_clean_first' from command line to 'False'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'localization' build argument 'cmake_force_configure' from command line to 'False'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'localization' build argument 'ament_cmake_args' from command line to 'None'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'localization' build argument 'catkin_cmake_args' from command line to 'None'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'localization' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.183s] DEBUG:colcon.colcon_core.verb:Building package 'localization' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/blake/M-LADIS-Jerry/build/localization', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/blake/M-LADIS-Jerry/install/localization', 'merge_install': False, 'path': '/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/localization', 'symlink_install': False, 'test_result_base': None}
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'mapping' build argument 'cmake_args' from command line to 'None'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'mapping' build argument 'cmake_target' from command line to 'None'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'mapping' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'mapping' build argument 'cmake_clean_cache' from command line to 'False'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'mapping' build argument 'cmake_clean_first' from command line to 'False'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'mapping' build argument 'cmake_force_configure' from command line to 'False'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'mapping' build argument 'ament_cmake_args' from command line to 'None'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'mapping' build argument 'catkin_cmake_args' from command line to 'None'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'mapping' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.183s] DEBUG:colcon.colcon_core.verb:Building package 'mapping' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/blake/M-LADIS-Jerry/build/mapping', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/blake/M-LADIS-Jerry/install/mapping', 'merge_install': False, 'path': '/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/mapping', 'symlink_install': False, 'test_result_base': None}
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'nearest_poster_yaw' build argument 'cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'nearest_poster_yaw' build argument 'cmake_target' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'nearest_poster_yaw' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'nearest_poster_yaw' build argument 'cmake_clean_cache' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'nearest_poster_yaw' build argument 'cmake_clean_first' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'nearest_poster_yaw' build argument 'cmake_force_configure' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'nearest_poster_yaw' build argument 'ament_cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'nearest_poster_yaw' build argument 'catkin_cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'nearest_poster_yaw' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.184s] DEBUG:colcon.colcon_core.verb:Building package 'nearest_poster_yaw' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/blake/M-LADIS-Jerry/build/nearest_poster_yaw', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/blake/M-LADIS-Jerry/install/nearest_poster_yaw', 'merge_install': False, 'path': '/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/nearest_poster_yaw', 'symlink_install': False, 'test_result_base': None}
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.184s] DEBUG:colcon.colcon_core.verb:Building package 'px4_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/blake/M-LADIS-Jerry/build/px4_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/blake/M-LADIS-Jerry/install/px4_msgs', 'merge_install': False, 'path': '/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/px4_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_target' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_clean_cache' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_clean_first' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_force_configure' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'ament_cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'catkin_cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.185s] DEBUG:colcon.colcon_core.verb:Building package 'px4_ros_com' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/blake/M-LADIS-Jerry/build/px4_ros_com', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/blake/M-LADIS-Jerry/install/px4_ros_com', 'merge_install': False, 'path': '/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com', 'symlink_install': False, 'test_result_base': None}
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'wpgen' build argument 'cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'wpgen' build argument 'cmake_target' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'wpgen' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'wpgen' build argument 'cmake_clean_cache' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'wpgen' build argument 'cmake_clean_first' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'wpgen' build argument 'cmake_force_configure' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'wpgen' build argument 'ament_cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'wpgen' build argument 'catkin_cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'wpgen' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.185s] DEBUG:colcon.colcon_core.verb:Building package 'wpgen' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/blake/M-LADIS-Jerry/build/wpgen', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/blake/M-LADIS-Jerry/install/wpgen', 'merge_install': False, 'path': '/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/wpgen', 'symlink_install': False, 'test_result_base': None}
+[0.185s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.186s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.186s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/px4_msgs' with build type 'ament_cmake'
+[0.186s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/px4_msgs'
+[0.188s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.188s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.188s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.191s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/classifier' with build type 'ament_cmake'
+[0.191s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/classifier'
+[0.191s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.191s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.193s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/localization' with build type 'ament_cmake'
+[0.193s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/localization'
+[0.193s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.193s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.196s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/mapping' with build type 'ament_cmake'
+[0.196s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/mapping'
+[0.196s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.196s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.199s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/nearest_poster_yaw' with build type 'ament_cmake'
+[0.199s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/nearest_poster_yaw'
+[0.199s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.199s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.205s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/blake/M-LADIS-Jerry/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble /usr/bin/cmake /home/blake/M-LADIS-Jerry/ws_sensor_combined/src/px4_msgs -DCMAKE_INSTALL_PREFIX=/home/blake/M-LADIS-Jerry/install/px4_msgs
+[0.207s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/blake/M-LADIS-Jerry/build/classifier': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble /usr/bin/cmake /home/blake/M-LADIS-Jerry/ws_sensor_combined/src/classifier -DCMAKE_INSTALL_PREFIX=/home/blake/M-LADIS-Jerry/install/classifier
+[0.209s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/blake/M-LADIS-Jerry/build/localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble /usr/bin/cmake /home/blake/M-LADIS-Jerry/ws_sensor_combined/src/localization -DCMAKE_INSTALL_PREFIX=/home/blake/M-LADIS-Jerry/install/localization
+[0.211s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/blake/M-LADIS-Jerry/build/mapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble /usr/bin/cmake /home/blake/M-LADIS-Jerry/ws_sensor_combined/src/mapping -DCMAKE_INSTALL_PREFIX=/home/blake/M-LADIS-Jerry/install/mapping
+[0.213s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/blake/M-LADIS-Jerry/build/nearest_poster_yaw': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble /usr/bin/cmake /home/blake/M-LADIS-Jerry/ws_sensor_combined/src/nearest_poster_yaw -DCMAKE_INSTALL_PREFIX=/home/blake/M-LADIS-Jerry/install/nearest_poster_yaw
+[7.394s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/blake/M-LADIS-Jerry/build/mapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble /usr/bin/cmake /home/blake/M-LADIS-Jerry/ws_sensor_combined/src/mapping -DCMAKE_INSTALL_PREFIX=/home/blake/M-LADIS-Jerry/install/mapping
+[7.395s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/blake/M-LADIS-Jerry/build/mapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble /usr/bin/cmake --build /home/blake/M-LADIS-Jerry/build/mapping -- -j12 -l12
+[7.395s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/blake/M-LADIS-Jerry/build/nearest_poster_yaw' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble /usr/bin/cmake /home/blake/M-LADIS-Jerry/ws_sensor_combined/src/nearest_poster_yaw -DCMAKE_INSTALL_PREFIX=/home/blake/M-LADIS-Jerry/install/nearest_poster_yaw
+[7.396s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/blake/M-LADIS-Jerry/build/nearest_poster_yaw': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble /usr/bin/cmake --build /home/blake/M-LADIS-Jerry/build/nearest_poster_yaw -- -j12 -l12
+[7.397s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/blake/M-LADIS-Jerry/build/classifier' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble /usr/bin/cmake /home/blake/M-LADIS-Jerry/ws_sensor_combined/src/classifier -DCMAKE_INSTALL_PREFIX=/home/blake/M-LADIS-Jerry/install/classifier
+[7.398s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/blake/M-LADIS-Jerry/build/classifier': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble /usr/bin/cmake --build /home/blake/M-LADIS-Jerry/build/classifier -- -j12 -l12
+[8.489s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/blake/M-LADIS-Jerry/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble /usr/bin/cmake /home/blake/M-LADIS-Jerry/ws_sensor_combined/src/px4_msgs -DCMAKE_INSTALL_PREFIX=/home/blake/M-LADIS-Jerry/install/px4_msgs
+[8.490s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/blake/M-LADIS-Jerry/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble /usr/bin/cmake --build /home/blake/M-LADIS-Jerry/build/px4_msgs -- -j12 -l12
+[8.608s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/blake/M-LADIS-Jerry/build/localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble /usr/bin/cmake /home/blake/M-LADIS-Jerry/ws_sensor_combined/src/localization -DCMAKE_INSTALL_PREFIX=/home/blake/M-LADIS-Jerry/install/localization
+[8.610s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/blake/M-LADIS-Jerry/build/localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble /usr/bin/cmake --build /home/blake/M-LADIS-Jerry/build/localization -- -j12 -l12
+[16.513s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/blake/M-LADIS-Jerry/build/mapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble /usr/bin/cmake --build /home/blake/M-LADIS-Jerry/build/mapping -- -j12 -l12
+[16.544s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/blake/M-LADIS-Jerry/build/mapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble /usr/bin/cmake --install /home/blake/M-LADIS-Jerry/build/mapping
+[16.556s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mapping)
+[16.557s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/blake/M-LADIS-Jerry/build/mapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble /usr/bin/cmake --install /home/blake/M-LADIS-Jerry/build/mapping
+[16.560s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/mapping' for CMake module files
+[16.561s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/mapping' for CMake config files
+[16.561s] Level 1:colcon.colcon_core.shell:create_environment_hook('mapping', 'cmake_prefix_path')
+[16.561s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blake/M-LADIS-Jerry/install/mapping/share/mapping/hook/cmake_prefix_path.ps1'
+[16.562s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/blake/M-LADIS-Jerry/install/mapping/share/mapping/hook/cmake_prefix_path.dsv'
+[16.563s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blake/M-LADIS-Jerry/install/mapping/share/mapping/hook/cmake_prefix_path.sh'
+[16.564s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/mapping/lib'
+[16.564s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/mapping/bin'
+[16.564s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/mapping/lib/pkgconfig/mapping.pc'
+[16.564s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/mapping/lib/python3.10/site-packages'
+[16.565s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/mapping/bin'
+[16.565s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/mapping/share/mapping/package.ps1'
+[16.566s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/blake/M-LADIS-Jerry/install/mapping/share/mapping/package.dsv'
+[16.567s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/mapping/share/mapping/package.sh'
+[16.568s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/mapping/share/mapping/package.bash'
+[16.569s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/mapping/share/mapping/package.zsh'
+[16.570s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/blake/M-LADIS-Jerry/install/mapping/share/colcon-core/packages/mapping)
+[16.591s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mapping)
+[16.592s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/mapping' for CMake module files
+[16.592s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/mapping' for CMake config files
+[16.593s] Level 1:colcon.colcon_core.shell:create_environment_hook('mapping', 'cmake_prefix_path')
+[16.593s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blake/M-LADIS-Jerry/install/mapping/share/mapping/hook/cmake_prefix_path.ps1'
+[16.594s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/blake/M-LADIS-Jerry/install/mapping/share/mapping/hook/cmake_prefix_path.dsv'
+[16.594s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blake/M-LADIS-Jerry/install/mapping/share/mapping/hook/cmake_prefix_path.sh'
+[16.594s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/mapping/lib'
+[16.595s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/mapping/bin'
+[16.595s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/mapping/lib/pkgconfig/mapping.pc'
+[16.595s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/mapping/lib/python3.10/site-packages'
+[16.595s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/mapping/bin'
+[16.596s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/mapping/share/mapping/package.ps1'
+[16.596s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/blake/M-LADIS-Jerry/install/mapping/share/mapping/package.dsv'
+[16.597s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/mapping/share/mapping/package.sh'
+[16.597s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/mapping/share/mapping/package.bash'
+[16.598s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/mapping/share/mapping/package.zsh'
+[16.598s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/blake/M-LADIS-Jerry/install/mapping/share/colcon-core/packages/mapping)
+[17.744s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/blake/M-LADIS-Jerry/build/localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble /usr/bin/cmake --build /home/blake/M-LADIS-Jerry/build/localization -- -j12 -l12
+[17.766s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/blake/M-LADIS-Jerry/build/localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble /usr/bin/cmake --install /home/blake/M-LADIS-Jerry/build/localization
+[17.778s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(localization)
+[17.779s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/localization' for CMake module files
+[17.779s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/blake/M-LADIS-Jerry/build/localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble /usr/bin/cmake --install /home/blake/M-LADIS-Jerry/build/localization
+[17.780s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/localization' for CMake config files
+[17.780s] Level 1:colcon.colcon_core.shell:create_environment_hook('localization', 'cmake_prefix_path')
+[17.780s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blake/M-LADIS-Jerry/install/localization/share/localization/hook/cmake_prefix_path.ps1'
+[17.781s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/blake/M-LADIS-Jerry/install/localization/share/localization/hook/cmake_prefix_path.dsv'
+[17.781s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blake/M-LADIS-Jerry/install/localization/share/localization/hook/cmake_prefix_path.sh'
+[17.782s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/localization/lib'
+[17.782s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/localization/bin'
+[17.782s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/localization/lib/pkgconfig/localization.pc'
+[17.782s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/localization/lib/python3.10/site-packages'
+[17.782s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/localization/bin'
+[17.783s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/localization/share/localization/package.ps1'
+[17.783s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/blake/M-LADIS-Jerry/install/localization/share/localization/package.dsv'
+[17.784s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/localization/share/localization/package.sh'
+[17.784s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/localization/share/localization/package.bash'
+[17.784s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/localization/share/localization/package.zsh'
+[17.785s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/blake/M-LADIS-Jerry/install/localization/share/colcon-core/packages/localization)
+[17.805s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(localization)
+[17.805s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/localization' for CMake module files
+[17.806s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/localization' for CMake config files
+[17.806s] Level 1:colcon.colcon_core.shell:create_environment_hook('localization', 'cmake_prefix_path')
+[17.806s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blake/M-LADIS-Jerry/install/localization/share/localization/hook/cmake_prefix_path.ps1'
+[17.807s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/blake/M-LADIS-Jerry/install/localization/share/localization/hook/cmake_prefix_path.dsv'
+[17.807s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blake/M-LADIS-Jerry/install/localization/share/localization/hook/cmake_prefix_path.sh'
+[17.808s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/localization/lib'
+[17.808s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/localization/bin'
+[17.808s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/localization/lib/pkgconfig/localization.pc'
+[17.808s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/localization/lib/python3.10/site-packages'
+[17.808s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/localization/bin'
+[17.809s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/localization/share/localization/package.ps1'
+[17.809s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/blake/M-LADIS-Jerry/install/localization/share/localization/package.dsv'
+[17.810s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/localization/share/localization/package.sh'
+[17.810s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/localization/share/localization/package.bash'
+[17.811s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/localization/share/localization/package.zsh'
+[17.811s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/blake/M-LADIS-Jerry/install/localization/share/colcon-core/packages/localization)
+[18.393s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/blake/M-LADIS-Jerry/build/classifier' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble /usr/bin/cmake --build /home/blake/M-LADIS-Jerry/build/classifier -- -j12 -l12
+[18.414s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/blake/M-LADIS-Jerry/build/classifier': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble /usr/bin/cmake --install /home/blake/M-LADIS-Jerry/build/classifier
+[18.428s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(classifier)
+[18.428s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/blake/M-LADIS-Jerry/build/classifier' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble /usr/bin/cmake --install /home/blake/M-LADIS-Jerry/build/classifier
+[18.428s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/classifier' for CMake module files
+[18.429s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/classifier' for CMake config files
+[18.429s] Level 1:colcon.colcon_core.shell:create_environment_hook('classifier', 'cmake_prefix_path')
+[18.429s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blake/M-LADIS-Jerry/install/classifier/share/classifier/hook/cmake_prefix_path.ps1'
+[18.430s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/blake/M-LADIS-Jerry/install/classifier/share/classifier/hook/cmake_prefix_path.dsv'
+[18.430s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blake/M-LADIS-Jerry/install/classifier/share/classifier/hook/cmake_prefix_path.sh'
+[18.431s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/classifier/lib'
+[18.431s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/classifier/bin'
+[18.431s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/classifier/lib/pkgconfig/classifier.pc'
+[18.431s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/classifier/lib/python3.10/site-packages'
+[18.432s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/classifier/bin'
+[18.432s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/classifier/share/classifier/package.ps1'
+[18.432s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/blake/M-LADIS-Jerry/install/classifier/share/classifier/package.dsv'
+[18.433s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/classifier/share/classifier/package.sh'
+[18.433s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/classifier/share/classifier/package.bash'
+[18.433s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/classifier/share/classifier/package.zsh'
+[18.434s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/blake/M-LADIS-Jerry/install/classifier/share/colcon-core/packages/classifier)
+[18.455s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(classifier)
+[18.455s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/classifier' for CMake module files
+[18.456s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/classifier' for CMake config files
+[18.456s] Level 1:colcon.colcon_core.shell:create_environment_hook('classifier', 'cmake_prefix_path')
+[18.456s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blake/M-LADIS-Jerry/install/classifier/share/classifier/hook/cmake_prefix_path.ps1'
+[18.456s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/blake/M-LADIS-Jerry/install/classifier/share/classifier/hook/cmake_prefix_path.dsv'
+[18.456s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blake/M-LADIS-Jerry/install/classifier/share/classifier/hook/cmake_prefix_path.sh'
+[18.457s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/classifier/lib'
+[18.457s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/classifier/bin'
+[18.457s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/classifier/lib/pkgconfig/classifier.pc'
+[18.457s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/classifier/lib/python3.10/site-packages'
+[18.457s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/classifier/bin'
+[18.458s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/classifier/share/classifier/package.ps1'
+[18.458s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/blake/M-LADIS-Jerry/install/classifier/share/classifier/package.dsv'
+[18.458s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/classifier/share/classifier/package.sh'
+[18.459s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/classifier/share/classifier/package.bash'
+[18.459s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/classifier/share/classifier/package.zsh'
+[18.459s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/blake/M-LADIS-Jerry/install/classifier/share/colcon-core/packages/classifier)
+[19.379s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/blake/M-LADIS-Jerry/build/nearest_poster_yaw' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble /usr/bin/cmake --build /home/blake/M-LADIS-Jerry/build/nearest_poster_yaw -- -j12 -l12
+[19.398s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/blake/M-LADIS-Jerry/build/nearest_poster_yaw': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble /usr/bin/cmake --install /home/blake/M-LADIS-Jerry/build/nearest_poster_yaw
+[19.439s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(nearest_poster_yaw)
+[19.440s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/nearest_poster_yaw' for CMake module files
+[19.440s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/blake/M-LADIS-Jerry/build/nearest_poster_yaw' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble /usr/bin/cmake --install /home/blake/M-LADIS-Jerry/build/nearest_poster_yaw
+[19.441s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/nearest_poster_yaw' for CMake config files
+[19.441s] Level 1:colcon.colcon_core.shell:create_environment_hook('nearest_poster_yaw', 'cmake_prefix_path')
+[19.441s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blake/M-LADIS-Jerry/install/nearest_poster_yaw/share/nearest_poster_yaw/hook/cmake_prefix_path.ps1'
+[19.442s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/blake/M-LADIS-Jerry/install/nearest_poster_yaw/share/nearest_poster_yaw/hook/cmake_prefix_path.dsv'
+[19.442s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blake/M-LADIS-Jerry/install/nearest_poster_yaw/share/nearest_poster_yaw/hook/cmake_prefix_path.sh'
+[19.443s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/nearest_poster_yaw/lib'
+[19.443s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/nearest_poster_yaw/bin'
+[19.443s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/nearest_poster_yaw/lib/pkgconfig/nearest_poster_yaw.pc'
+[19.443s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/nearest_poster_yaw/lib/python3.10/site-packages'
+[19.443s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/nearest_poster_yaw/bin'
+[19.444s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/nearest_poster_yaw/share/nearest_poster_yaw/package.ps1'
+[19.444s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/blake/M-LADIS-Jerry/install/nearest_poster_yaw/share/nearest_poster_yaw/package.dsv'
+[19.444s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/nearest_poster_yaw/share/nearest_poster_yaw/package.sh'
+[19.445s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/nearest_poster_yaw/share/nearest_poster_yaw/package.bash'
+[19.445s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/nearest_poster_yaw/share/nearest_poster_yaw/package.zsh'
+[19.445s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/blake/M-LADIS-Jerry/install/nearest_poster_yaw/share/colcon-core/packages/nearest_poster_yaw)
+[19.462s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(nearest_poster_yaw)
+[19.463s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/nearest_poster_yaw' for CMake module files
+[19.463s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/nearest_poster_yaw' for CMake config files
+[19.464s] Level 1:colcon.colcon_core.shell:create_environment_hook('nearest_poster_yaw', 'cmake_prefix_path')
+[19.464s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blake/M-LADIS-Jerry/install/nearest_poster_yaw/share/nearest_poster_yaw/hook/cmake_prefix_path.ps1'
+[19.464s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/blake/M-LADIS-Jerry/install/nearest_poster_yaw/share/nearest_poster_yaw/hook/cmake_prefix_path.dsv'
+[19.465s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blake/M-LADIS-Jerry/install/nearest_poster_yaw/share/nearest_poster_yaw/hook/cmake_prefix_path.sh'
+[19.465s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/nearest_poster_yaw/lib'
+[19.465s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/nearest_poster_yaw/bin'
+[19.465s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/nearest_poster_yaw/lib/pkgconfig/nearest_poster_yaw.pc'
+[19.465s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/nearest_poster_yaw/lib/python3.10/site-packages'
+[19.466s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/nearest_poster_yaw/bin'
+[19.466s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/nearest_poster_yaw/share/nearest_poster_yaw/package.ps1'
+[19.467s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/blake/M-LADIS-Jerry/install/nearest_poster_yaw/share/nearest_poster_yaw/package.dsv'
+[19.467s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/nearest_poster_yaw/share/nearest_poster_yaw/package.sh'
+[19.467s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/nearest_poster_yaw/share/nearest_poster_yaw/package.bash'
+[19.468s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/nearest_poster_yaw/share/nearest_poster_yaw/package.zsh'
+[19.468s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/blake/M-LADIS-Jerry/install/nearest_poster_yaw/share/colcon-core/packages/nearest_poster_yaw)
+[188.946s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/blake/M-LADIS-Jerry/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble /usr/bin/cmake --build /home/blake/M-LADIS-Jerry/build/px4_msgs -- -j12 -l12
+[191.666s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/blake/M-LADIS-Jerry/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble /usr/bin/cmake --install /home/blake/M-LADIS-Jerry/build/px4_msgs
+[192.345s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_msgs)
+[192.346s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/px4_msgs' for CMake module files
+[192.346s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/blake/M-LADIS-Jerry/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble /usr/bin/cmake --install /home/blake/M-LADIS-Jerry/build/px4_msgs
+[192.346s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/px4_msgs' for CMake config files
+[192.349s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[192.349s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blake/M-LADIS-Jerry/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[192.349s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/blake/M-LADIS-Jerry/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[192.350s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blake/M-LADIS-Jerry/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[192.350s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/px4_msgs/lib'
+[192.350s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[192.350s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blake/M-LADIS-Jerry/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[192.350s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/blake/M-LADIS-Jerry/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[192.350s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blake/M-LADIS-Jerry/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[192.351s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/px4_msgs/bin'
+[192.351s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[192.351s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/px4_msgs/lib/python3.10/site-packages'
+[192.351s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/px4_msgs/bin'
+[192.351s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/px4_msgs/share/px4_msgs/package.ps1'
+[192.352s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/blake/M-LADIS-Jerry/install/px4_msgs/share/px4_msgs/package.dsv'
+[192.352s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/px4_msgs/share/px4_msgs/package.sh'
+[192.352s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/px4_msgs/share/px4_msgs/package.bash'
+[192.352s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/px4_msgs/share/px4_msgs/package.zsh'
+[192.352s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/blake/M-LADIS-Jerry/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[195.072s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_msgs)
+[195.072s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/px4_msgs' for CMake module files
+[195.072s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/px4_msgs' for CMake config files
+[195.076s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[195.076s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blake/M-LADIS-Jerry/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[195.076s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/blake/M-LADIS-Jerry/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[195.077s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blake/M-LADIS-Jerry/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[195.077s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/px4_msgs/lib'
+[195.077s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[195.077s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blake/M-LADIS-Jerry/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[195.077s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/blake/M-LADIS-Jerry/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[195.078s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blake/M-LADIS-Jerry/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[195.078s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/px4_msgs/bin'
+[195.078s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[195.078s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/px4_msgs/lib/python3.10/site-packages'
+[195.078s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/px4_msgs/bin'
+[195.078s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/px4_msgs/share/px4_msgs/package.ps1'
+[195.079s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/blake/M-LADIS-Jerry/install/px4_msgs/share/px4_msgs/package.dsv'
+[195.079s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/px4_msgs/share/px4_msgs/package.sh'
+[195.079s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/px4_msgs/share/px4_msgs/package.bash'
+[195.080s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/px4_msgs/share/px4_msgs/package.zsh'
+[195.080s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/blake/M-LADIS-Jerry/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[195.080s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com' with build type 'ament_cmake'
+[195.080s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com'
+[195.080s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[195.080s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[195.083s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/wpgen' with build type 'ament_python'
+[195.083s] Level 1:colcon.colcon_core.shell:create_environment_hook('wpgen', 'ament_prefix_path')
+[195.083s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blake/M-LADIS-Jerry/install/wpgen/share/wpgen/hook/ament_prefix_path.ps1'
+[195.084s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/blake/M-LADIS-Jerry/install/wpgen/share/wpgen/hook/ament_prefix_path.dsv'
+[195.084s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blake/M-LADIS-Jerry/install/wpgen/share/wpgen/hook/ament_prefix_path.sh'
+[195.084s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[195.084s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[195.088s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/blake/M-LADIS-Jerry/build/px4_ros_com': AMENT_PREFIX_PATH=/home/blake/M-LADIS-Jerry/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/blake/M-LADIS-Jerry/install/px4_msgs:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/slam_visualization:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/mapping:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/localization:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/lidar_slam_test:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/lidar_slam:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/lidar_conversions:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/classifier:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/apriltag_ros:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble LD_LIBRARY_PATH=/home/blake/M-LADIS-Jerry/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/blake/M-LADIS-Jerry/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/blake/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com -DCMAKE_INSTALL_PREFIX=/home/blake/M-LADIS-Jerry/install/px4_ros_com
+[195.248s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/wpgen'
+[195.248s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[195.248s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[195.690s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/wpgen': AMENT_PREFIX_PATH=/home/blake/M-LADIS-Jerry/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/blake/M-LADIS-Jerry/install/px4_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/blake/M-LADIS-Jerry/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/blake/M-LADIS-Jerry/build/wpgen/prefix_override:/home/blake/M-LADIS-Jerry/install/wpgen/lib/python3.10/site-packages:/home/blake/M-LADIS-Jerry/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/wpgen build --build-base /home/blake/M-LADIS-Jerry/build/wpgen/build install --record /home/blake/M-LADIS-Jerry/build/wpgen/install.log --single-version-externally-managed install_data
+[196.107s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/wpgen' for CMake module files
+[196.107s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/wpgen' returned '0': AMENT_PREFIX_PATH=/home/blake/M-LADIS-Jerry/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/blake/M-LADIS-Jerry/install/px4_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/blake/M-LADIS-Jerry/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/blake/M-LADIS-Jerry/build/wpgen/prefix_override:/home/blake/M-LADIS-Jerry/install/wpgen/lib/python3.10/site-packages:/home/blake/M-LADIS-Jerry/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/wpgen build --build-base /home/blake/M-LADIS-Jerry/build/wpgen/build install --record /home/blake/M-LADIS-Jerry/build/wpgen/install.log --single-version-externally-managed install_data
+[196.107s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/wpgen' for CMake config files
+[196.108s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/wpgen/lib'
+[196.108s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/wpgen/bin'
+[196.108s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/wpgen/lib/pkgconfig/wpgen.pc'
+[196.108s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/wpgen/lib/python3.10/site-packages'
+[196.108s] Level 1:colcon.colcon_core.shell:create_environment_hook('wpgen', 'pythonpath')
+[196.108s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blake/M-LADIS-Jerry/install/wpgen/share/wpgen/hook/pythonpath.ps1'
+[196.108s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/blake/M-LADIS-Jerry/install/wpgen/share/wpgen/hook/pythonpath.dsv'
+[196.109s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blake/M-LADIS-Jerry/install/wpgen/share/wpgen/hook/pythonpath.sh'
+[196.109s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/wpgen/bin'
+[196.109s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wpgen)
+[196.109s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/wpgen/share/wpgen/package.ps1'
+[196.109s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/blake/M-LADIS-Jerry/install/wpgen/share/wpgen/package.dsv'
+[196.110s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/wpgen/share/wpgen/package.sh'
+[196.110s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/wpgen/share/wpgen/package.bash'
+[196.110s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/wpgen/share/wpgen/package.zsh'
+[196.110s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/blake/M-LADIS-Jerry/install/wpgen/share/colcon-core/packages/wpgen)
+[203.309s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/blake/M-LADIS-Jerry/build/px4_ros_com' returned '0': AMENT_PREFIX_PATH=/home/blake/M-LADIS-Jerry/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/blake/M-LADIS-Jerry/install/px4_msgs:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/slam_visualization:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/mapping:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/localization:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/lidar_slam_test:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/lidar_slam:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/lidar_conversions:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/classifier:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/apriltag_ros:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble LD_LIBRARY_PATH=/home/blake/M-LADIS-Jerry/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/blake/M-LADIS-Jerry/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/blake/M-LADIS-Jerry/ws_sensor_combined/src/px4_ros_com -DCMAKE_INSTALL_PREFIX=/home/blake/M-LADIS-Jerry/install/px4_ros_com
+[203.311s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/blake/M-LADIS-Jerry/build/px4_ros_com': AMENT_PREFIX_PATH=/home/blake/M-LADIS-Jerry/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/blake/M-LADIS-Jerry/install/px4_msgs:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/slam_visualization:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/mapping:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/localization:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/lidar_slam_test:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/lidar_slam:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/lidar_conversions:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/classifier:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/apriltag_ros:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble LD_LIBRARY_PATH=/home/blake/M-LADIS-Jerry/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/blake/M-LADIS-Jerry/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/blake/M-LADIS-Jerry/build/px4_ros_com -- -j12 -l12
+[223.824s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/blake/M-LADIS-Jerry/build/px4_ros_com' returned '0': AMENT_PREFIX_PATH=/home/blake/M-LADIS-Jerry/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/blake/M-LADIS-Jerry/install/px4_msgs:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/slam_visualization:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/mapping:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/localization:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/lidar_slam_test:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/lidar_slam:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/lidar_conversions:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/classifier:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/apriltag_ros:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble LD_LIBRARY_PATH=/home/blake/M-LADIS-Jerry/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/blake/M-LADIS-Jerry/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/blake/M-LADIS-Jerry/build/px4_ros_com -- -j12 -l12
+[223.856s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/blake/M-LADIS-Jerry/build/px4_ros_com': AMENT_PREFIX_PATH=/home/blake/M-LADIS-Jerry/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/blake/M-LADIS-Jerry/install/px4_msgs:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/slam_visualization:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/mapping:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/localization:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/lidar_slam_test:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/lidar_slam:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/lidar_conversions:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/classifier:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/apriltag_ros:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble LD_LIBRARY_PATH=/home/blake/M-LADIS-Jerry/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/blake/M-LADIS-Jerry/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/blake/M-LADIS-Jerry/build/px4_ros_com
+[224.059s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_ros_com)
+[224.059s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/px4_ros_com' for CMake module files
+[224.060s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/blake/M-LADIS-Jerry/build/px4_ros_com' returned '0': AMENT_PREFIX_PATH=/home/blake/M-LADIS-Jerry/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/blake/M-LADIS-Jerry/install/px4_msgs:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/slam_visualization:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_ros_com:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/px4_msgs:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/nearest_poster_yaw:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/mapping:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/localization:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/lidar_slam_test:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/lidar_slam:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/lidar_conversions:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/livox_ros_driver:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/classifier:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/apriltag_ros:/home/blake/M-LADIS-Jerry/ws_sensor_combined/install/wpgen:/opt/ros/humble LD_LIBRARY_PATH=/home/blake/M-LADIS-Jerry/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/blake/M-LADIS-Jerry/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/blake/M-LADIS-Jerry/build/px4_ros_com
+[224.060s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/px4_ros_com' for CMake config files
+[224.060s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'cmake_prefix_path')
+[224.060s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blake/M-LADIS-Jerry/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.ps1'
+[224.060s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/blake/M-LADIS-Jerry/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.dsv'
+[224.061s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blake/M-LADIS-Jerry/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.sh'
+[224.061s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/px4_ros_com/lib'
+[224.061s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/px4_ros_com/bin'
+[224.061s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/px4_ros_com/lib/pkgconfig/px4_ros_com.pc'
+[224.061s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/px4_ros_com/lib/python3.10/site-packages'
+[224.061s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/px4_ros_com/bin'
+[224.062s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/px4_ros_com/share/px4_ros_com/package.ps1'
+[224.062s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/blake/M-LADIS-Jerry/install/px4_ros_com/share/px4_ros_com/package.dsv'
+[224.062s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/px4_ros_com/share/px4_ros_com/package.sh'
+[224.062s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/px4_ros_com/share/px4_ros_com/package.bash'
+[224.063s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/px4_ros_com/share/px4_ros_com/package.zsh'
+[224.063s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/blake/M-LADIS-Jerry/install/px4_ros_com/share/colcon-core/packages/px4_ros_com)
+[224.093s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_ros_com)
+[224.093s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/px4_ros_com' for CMake module files
+[224.093s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/px4_ros_com' for CMake config files
+[224.093s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'cmake_prefix_path')
+[224.094s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blake/M-LADIS-Jerry/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.ps1'
+[224.094s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/blake/M-LADIS-Jerry/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.dsv'
+[224.094s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blake/M-LADIS-Jerry/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.sh'
+[224.095s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/px4_ros_com/lib'
+[224.095s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/px4_ros_com/bin'
+[224.095s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/px4_ros_com/lib/pkgconfig/px4_ros_com.pc'
+[224.095s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/px4_ros_com/lib/python3.10/site-packages'
+[224.095s] Level 1:colcon.colcon_core.environment:checking '/home/blake/M-LADIS-Jerry/install/px4_ros_com/bin'
+[224.095s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/px4_ros_com/share/px4_ros_com/package.ps1'
+[224.096s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/blake/M-LADIS-Jerry/install/px4_ros_com/share/px4_ros_com/package.dsv'
+[224.096s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/px4_ros_com/share/px4_ros_com/package.sh'
+[224.096s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/px4_ros_com/share/px4_ros_com/package.bash'
+[224.096s] INFO:colcon.colcon_core.shell:Creating package script '/home/blake/M-LADIS-Jerry/install/px4_ros_com/share/px4_ros_com/package.zsh'
+[224.097s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/blake/M-LADIS-Jerry/install/px4_ros_com/share/colcon-core/packages/px4_ros_com)
+[224.097s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[224.097s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[224.097s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[224.097s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[224.101s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[224.101s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[224.101s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[224.110s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[224.110s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/blake/M-LADIS-Jerry/install/local_setup.ps1'
+[224.111s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/blake/M-LADIS-Jerry/install/_local_setup_util_ps1.py'
+[224.112s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/blake/M-LADIS-Jerry/install/setup.ps1'
+[224.113s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/blake/M-LADIS-Jerry/install/local_setup.sh'
+[224.113s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/blake/M-LADIS-Jerry/install/_local_setup_util_sh.py'
+[224.113s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/blake/M-LADIS-Jerry/install/setup.sh'
+[224.114s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/blake/M-LADIS-Jerry/install/local_setup.bash'
+[224.115s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/blake/M-LADIS-Jerry/install/setup.bash'
+[224.116s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/blake/M-LADIS-Jerry/install/local_setup.zsh'
+[224.116s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/blake/M-LADIS-Jerry/install/setup.zsh'

@@ -34,10 +34,12 @@ class MLAgent(Node):
         self.end_flight = False
         self.waypoint = [0.0, 0.0, 0.0]
         self.waypoint_type = "null"
+        self.reject = False
         # self.prev_action = [0.0, 0.0]
 
-        current_dir = os.path.dirname(os.path.abspath(__file__))
-        model_path = os.path.join(current_dir, "../EXAMPLE/drone_test_sample_final_2")
+        #current_dir = os.path.dirname(os.path.abspath(__file__))
+        #model_path = os.path.join("../EXAMPLE/drone_test_sample_final_2")
+        model_path = "~/ros2-docker-example/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/EXAMPLE/drone_test_sample_final_2"
         self.model = PPO.load(model_path)
 
         self.publisher_ = self.create_publisher(TrajectorySetpoint, '/fmu/in/autonomy_waypoint', 1)
@@ -68,11 +70,11 @@ class MLAgent(Node):
     def predator_callback(self, msg):
         self.enemy_velocity = [msg.x - self.predator_position[0], msg.y - self.predator_position[1]]
         self.predator_position = [msg.x, msg.y, msg.z]
-        self.get_logger().info(f'tom_x={self.predator_position[0]}, tom_y={self.predator_position[1]}, tom_z={self.predator_position[2]}')
+        #self.get_logger().info(f'tom_x={self.predator_position[0]}, tom_y={self.predator_position[1]}, tom_z={self.predator_position[2]}')
 
     def walls_callback(self, msg):
-        self.x_range = msg.orientation.x - msg.position.x
-        self.y_range = msg.orientation.y - msg.position.y
+        self.x_range = abs(msg.orientation.x - msg.position.x)
+        self.y_range = abs(msg.orientation.y - msg.position.y)
         self.get_logger().info(f'x_width={self.x_range}, y_length={self.y_range}')
 
     def poster_yaw_callback(self, msg):
@@ -122,8 +124,8 @@ class MLAgent(Node):
     def normalize_position(self, pos, x_range, y_range):
         x_half, y_half = abs(x_range) / 2.0, abs(y_range) / 2.0
         return [
-            ((pos[0] - x_half) / x_half) if x_half else 0.0,
-            ((pos[1] - y_half) / y_half) if y_half else 0.0
+            (pos[0] / x_half) if x_half else 0.0,
+            (pos[1] / y_half) if y_half else 0.0
         ]
 
     def generate_action(self):
@@ -137,6 +139,8 @@ class MLAgent(Node):
             normalized_velocity = self.normalize_position(self.velocity, self.x_range, self.y_range)
             normalized_enemy_velocity = self.normalize_position(self.enemy_velocity, self.x_range, self.y_range)
             
+            # THIS IS WHERE I THINK WE SHOULD DO THE CLIPPING
+
             observation = OrderedDict()
             observation['current_waypoint'] = np.array(self.prev_action[:2], dtype=np.float32)
             observation['enemy_position'] = np.array(normalized_predator, dtype=np.float32)
@@ -154,13 +158,13 @@ class MLAgent(Node):
         if self.end_flight:
             # Set the current position with z=0 to land
             self.waypoint = [self.position[0], self.position[1], 0.0]
-            self.waypoint_type = "landing"
+            self.waypoint_type = "LANDING"
 
         elif not self.first_waypoint_generated: # For the very first time, publish a liftoff waypoint
             self.prev_action = [0.0, 0.0, 1.0]  # Replace with the correct z value if necessary
-            if (self.position[2] < 1.5):
+            if (self.position[2] < 2.5):
                 self.waypoint = [0.0, 0.0, 3.5]
-                self.waypoint_type = "starter"
+                self.waypoint_type = "TAKEOFF"
             else:
                 self.first_waypoint_generated = True
                 
@@ -170,18 +174,23 @@ class MLAgent(Node):
             
             if self.new_action[2] < 0: # Use the old action if ML doesn't like the new action
                 self.new_action = self.prev_action
+                self.reject = True
+            else:
+                self.reject = False
             self.prev_action = self.new_action
             
-            self.waypoint = [self.new_action[0] * x_half, self.new_action[1] * y_half, 2.5]
-            self.waypoint[0] = np.clip(self.waypoint[0], -(x_half - 5), (x_half - 5)) # waypoint clipping in x
-            self.waypoint[1] = np.clip(self.waypoint[1], -(y_half - 5), (y_half - 5)) # waypoint clipping in y
+            self.waypoint = [self.new_action[0] * x_half, self.new_action[1] * y_half, 3.5]
+            self.waypoint[0] = np.clip(self.waypoint[0], -(x_half - 3), (x_half - 3)) # waypoint clipping in x
+            self.waypoint[1] = np.clip(self.waypoint[1], -(y_half - 3), (y_half - 3)) # waypoint clipping in y
             self.waypoint_type = "ML"
 
         setpoint_msg = TrajectorySetpoint()
         setpoint_msg.position = self.waypoint
-        setpoint_msg.yaw = self.yaw
+        #setpoint_msg.yaw = self.yaw
+        setpoint_msg.yaw = 0.0
         self.publisher_.publish(setpoint_msg)
         self.get_logger().info(f'Published {self.waypoint_type} waypoint x:{setpoint_msg.position[0]}, y:{setpoint_msg.position[1]}, z:{setpoint_msg.position[2]}, yaw:{self.yaw}')
+        #self.get_logger().info(f'Rejected : {self.reject}')
 
 
 def main(args=None):
