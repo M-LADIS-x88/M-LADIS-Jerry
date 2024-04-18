@@ -351,7 +351,7 @@ private:
       writeCentroidsToCSV(posters,"z.csv");
 
       posters.erase(std::remove_if(posters.begin(), posters.end(),
-        [](const Point& pt) {return pt.z > 2.75; }), posters.end());
+        [](const Point& pt) {return pt.z > 4; }), posters.end());
             
       geometry_msgs::msg::PoseArray posters_pose_array;
       posters_pose_array.header.stamp = this->get_clock()->now();  // Set the timestamp

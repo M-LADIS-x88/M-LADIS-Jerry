@@ -18,7 +18,7 @@ y = df['y']
 z = df['z']
 
 # Define colors based on Z values
-colors = ['blue' if value > 2.75 else 'red' for value in z]
+colors = ['blue' if value > 4 else 'red' for value in z]
 
 # Plotting in the XY plane using the specified colors
 plt.scatter(x, y, color=colors, alpha=0.6, s=100)
