@@ -39,7 +39,7 @@ class MLAgent(Node):
 
         #current_dir = os.path.dirname(os.path.abspath(__file__))
         #model_path = os.path.join("../EXAMPLE/drone_test_sample_final_2")
-        model_path = "~/ros2-docker-example/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/EXAMPLE/drone_test_sample_final_2"
+        model_path = "/root/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/EXAMPLE/drone_test_sample_final_2"
         self.model = PPO.load(model_path)
 
         self.publisher_ = self.create_publisher(TrajectorySetpoint, '/fmu/in/autonomy_waypoint', 1)
@@ -162,9 +162,9 @@ class MLAgent(Node):
 
         elif not self.first_waypoint_generated: # For the very first time, publish a liftoff waypoint
             self.prev_action = [0.0, 0.0, 1.0]  # Replace with the correct z value if necessary
-            if (self.position[2] < 2.5):
+            if (self.position[2] < 3.0):
                 self.waypoint = [0.0, 0.0, 3.5]
-                self.waypoint_type = "TAKEOFF"
+                self.waypoint_type = "TAKEOFF4"
             else:
                 self.first_waypoint_generated = True
                 
@@ -179,9 +179,10 @@ class MLAgent(Node):
                 self.reject = False
             self.prev_action = self.new_action
             
-            self.waypoint = [self.new_action[0] * x_half, self.new_action[1] * y_half, 3.5]
-            self.waypoint[0] = np.clip(self.waypoint[0], -(x_half - 3), (x_half - 3)) # waypoint clipping in x
-            self.waypoint[1] = np.clip(self.waypoint[1], -(y_half - 3), (y_half - 3)) # waypoint clipping in y
+            self.waypoint = [3, -6, 3.5]
+            #self.waypoint = [self.new_action[0] * x_half, self.new_action[1] * y_half, 3.5]
+            #elf.waypoint[0] = np.clip(self.waypoint[0], -(x_half - 3), (x_half - 3)) # waypoint clipping in x
+            #self.waypoint[1] = np.clip(self.waypoint[1], -(y_half - 3), (y_half - 3)) # waypoint clipping in y
             self.waypoint_type = "ML"
 
         setpoint_msg = TrajectorySetpoint()
