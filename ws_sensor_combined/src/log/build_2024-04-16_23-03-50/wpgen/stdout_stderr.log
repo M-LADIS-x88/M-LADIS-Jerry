@@ -1,0 +1,36 @@
+running egg_info
+creating ../build/wpgen/wpgen.egg-info
+writing ../build/wpgen/wpgen.egg-info/PKG-INFO
+writing dependency_links to ../build/wpgen/wpgen.egg-info/dependency_links.txt
+writing entry points to ../build/wpgen/wpgen.egg-info/entry_points.txt
+writing requirements to ../build/wpgen/wpgen.egg-info/requires.txt
+writing top-level names to ../build/wpgen/wpgen.egg-info/top_level.txt
+writing manifest file '../build/wpgen/wpgen.egg-info/SOURCES.txt'
+reading manifest file '../build/wpgen/wpgen.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../build/wpgen/wpgen.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /root/M-LADIS-Jerry/ws_sensor_combined/src/build/wpgen/build
+creating /root/M-LADIS-Jerry/ws_sensor_combined/src/build/wpgen/build/lib
+creating /root/M-LADIS-Jerry/ws_sensor_combined/src/build/wpgen/build/lib/wpgen
+copying wpgen/ML_send_wp.py -> /root/M-LADIS-Jerry/ws_sensor_combined/src/build/wpgen/build/lib/wpgen
+copying wpgen/__init__.py -> /root/M-LADIS-Jerry/ws_sensor_combined/src/build/wpgen/build/lib/wpgen
+running install
+running install_lib
+creating /root/M-LADIS-Jerry/ws_sensor_combined/src/install/wpgen/lib/python3.10/site-packages/wpgen
+copying /root/M-LADIS-Jerry/ws_sensor_combined/src/build/wpgen/build/lib/wpgen/ML_send_wp.py -> /root/M-LADIS-Jerry/ws_sensor_combined/src/install/wpgen/lib/python3.10/site-packages/wpgen
+copying /root/M-LADIS-Jerry/ws_sensor_combined/src/build/wpgen/build/lib/wpgen/__init__.py -> /root/M-LADIS-Jerry/ws_sensor_combined/src/install/wpgen/lib/python3.10/site-packages/wpgen
+byte-compiling /root/M-LADIS-Jerry/ws_sensor_combined/src/install/wpgen/lib/python3.10/site-packages/wpgen/ML_send_wp.py to ML_send_wp.cpython-310.pyc
+byte-compiling /root/M-LADIS-Jerry/ws_sensor_combined/src/install/wpgen/lib/python3.10/site-packages/wpgen/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /root/M-LADIS-Jerry/ws_sensor_combined/src/install/wpgen/share/ament_index
+creating /root/M-LADIS-Jerry/ws_sensor_combined/src/install/wpgen/share/ament_index/resource_index
+creating /root/M-LADIS-Jerry/ws_sensor_combined/src/install/wpgen/share/ament_index/resource_index/packages
+copying resource/wpgen -> /root/M-LADIS-Jerry/ws_sensor_combined/src/install/wpgen/share/ament_index/resource_index/packages
+copying package.xml -> /root/M-LADIS-Jerry/ws_sensor_combined/src/install/wpgen/share/wpgen
+running install_egg_info
+Copying ../build/wpgen/wpgen.egg-info to /root/M-LADIS-Jerry/ws_sensor_combined/src/install/wpgen/lib/python3.10/site-packages/wpgen-0.0.0-py3.10.egg-info
+running install_scripts
+Installing ML_send_wp script to /root/M-LADIS-Jerry/ws_sensor_combined/src/install/wpgen/lib/wpgen
+writing list of installed files to '/root/M-LADIS-Jerry/ws_sensor_combined/src/build/wpgen/install.log'

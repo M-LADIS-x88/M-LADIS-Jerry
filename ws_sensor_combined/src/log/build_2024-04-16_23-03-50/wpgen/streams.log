@@ -1,0 +1,38 @@
+[1.335s] Invoking command in '/root/M-LADIS-Jerry/ws_sensor_combined/src/wpgen': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/root/M-LADIS-Jerry/ws_sensor_combined/src/build/wpgen/prefix_override:/root/M-LADIS-Jerry/ws_sensor_combined/src/install/wpgen/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/wpgen build --build-base /root/M-LADIS-Jerry/ws_sensor_combined/src/build/wpgen/build install --record /root/M-LADIS-Jerry/ws_sensor_combined/src/build/wpgen/install.log --single-version-externally-managed install_data
+[1.844s] running egg_info
+[1.845s] creating ../build/wpgen/wpgen.egg-info
+[1.846s] writing ../build/wpgen/wpgen.egg-info/PKG-INFO
+[1.846s] writing dependency_links to ../build/wpgen/wpgen.egg-info/dependency_links.txt
+[1.847s] writing entry points to ../build/wpgen/wpgen.egg-info/entry_points.txt
+[1.847s] writing requirements to ../build/wpgen/wpgen.egg-info/requires.txt
+[1.847s] writing top-level names to ../build/wpgen/wpgen.egg-info/top_level.txt
+[1.847s] writing manifest file '../build/wpgen/wpgen.egg-info/SOURCES.txt'
+[1.850s] reading manifest file '../build/wpgen/wpgen.egg-info/SOURCES.txt'
+[1.851s] adding license file 'LICENSE'
+[1.852s] writing manifest file '../build/wpgen/wpgen.egg-info/SOURCES.txt'
+[1.853s] running build
+[1.853s] running build_py
+[1.853s] creating /root/M-LADIS-Jerry/ws_sensor_combined/src/build/wpgen/build
+[1.854s] creating /root/M-LADIS-Jerry/ws_sensor_combined/src/build/wpgen/build/lib
+[1.854s] creating /root/M-LADIS-Jerry/ws_sensor_combined/src/build/wpgen/build/lib/wpgen
+[1.854s] copying wpgen/ML_send_wp.py -> /root/M-LADIS-Jerry/ws_sensor_combined/src/build/wpgen/build/lib/wpgen
+[1.854s] copying wpgen/__init__.py -> /root/M-LADIS-Jerry/ws_sensor_combined/src/build/wpgen/build/lib/wpgen
+[1.855s] running install
+[1.855s] running install_lib
+[1.856s] creating /root/M-LADIS-Jerry/ws_sensor_combined/src/install/wpgen/lib/python3.10/site-packages/wpgen
+[1.856s] copying /root/M-LADIS-Jerry/ws_sensor_combined/src/build/wpgen/build/lib/wpgen/ML_send_wp.py -> /root/M-LADIS-Jerry/ws_sensor_combined/src/install/wpgen/lib/python3.10/site-packages/wpgen
+[1.856s] copying /root/M-LADIS-Jerry/ws_sensor_combined/src/build/wpgen/build/lib/wpgen/__init__.py -> /root/M-LADIS-Jerry/ws_sensor_combined/src/install/wpgen/lib/python3.10/site-packages/wpgen
+[1.857s] byte-compiling /root/M-LADIS-Jerry/ws_sensor_combined/src/install/wpgen/lib/python3.10/site-packages/wpgen/ML_send_wp.py to ML_send_wp.cpython-310.pyc
+[1.861s] byte-compiling /root/M-LADIS-Jerry/ws_sensor_combined/src/install/wpgen/lib/python3.10/site-packages/wpgen/__init__.py to __init__.cpython-310.pyc
+[1.861s] running install_data
+[1.862s] creating /root/M-LADIS-Jerry/ws_sensor_combined/src/install/wpgen/share/ament_index
+[1.862s] creating /root/M-LADIS-Jerry/ws_sensor_combined/src/install/wpgen/share/ament_index/resource_index
+[1.862s] creating /root/M-LADIS-Jerry/ws_sensor_combined/src/install/wpgen/share/ament_index/resource_index/packages
+[1.863s] copying resource/wpgen -> /root/M-LADIS-Jerry/ws_sensor_combined/src/install/wpgen/share/ament_index/resource_index/packages
+[1.863s] copying package.xml -> /root/M-LADIS-Jerry/ws_sensor_combined/src/install/wpgen/share/wpgen
+[1.863s] running install_egg_info
+[1.866s] Copying ../build/wpgen/wpgen.egg-info to /root/M-LADIS-Jerry/ws_sensor_combined/src/install/wpgen/lib/python3.10/site-packages/wpgen-0.0.0-py3.10.egg-info
+[1.868s] running install_scripts
+[1.910s] Installing ML_send_wp script to /root/M-LADIS-Jerry/ws_sensor_combined/src/install/wpgen/lib/wpgen
+[1.911s] writing list of installed files to '/root/M-LADIS-Jerry/ws_sensor_combined/src/build/wpgen/install.log'
+[1.978s] Invoked command in '/root/M-LADIS-Jerry/ws_sensor_combined/src/wpgen' returned '0': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/root/M-LADIS-Jerry/ws_sensor_combined/src/build/wpgen/prefix_override:/root/M-LADIS-Jerry/ws_sensor_combined/src/install/wpgen/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/wpgen build --build-base /root/M-LADIS-Jerry/ws_sensor_combined/src/build/wpgen/build install --record /root/M-LADIS-Jerry/ws_sensor_combined/src/build/wpgen/install.log --single-version-externally-managed install_data
