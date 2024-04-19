@@ -6,11 +6,6 @@ from ament_index_python.packages import get_package_share_directory
 def launch_nodes(context, *args, **kwargs):
     return [
         Node(
-            package='classifier',
-            executable='classifier',
-            name='classifier'
-        ),
-        Node(
             package='px4_ros_com',
             executable='PointCloudProcessor',
             name='PointCloudProcessor'
@@ -74,7 +69,7 @@ def generate_launch_description():
 
     # TimerAction to delay launching GPS spoof for 5 seconds
     timer_action_gps_spoof = TimerAction(
-        period=5.0,
+        period=7.5,
         actions=[
             OpaqueFunction(function=launch_gps_spoof)
         ]
@@ -82,7 +77,7 @@ def generate_launch_description():
 
     # TimerAction to delay launching offboard control for 10 seconds
     timer_action_offboard_control = TimerAction(
-        period=15.0,
+        period=17.5,
         actions=[
             OpaqueFunction(function=launch_offboard_control)
         ]

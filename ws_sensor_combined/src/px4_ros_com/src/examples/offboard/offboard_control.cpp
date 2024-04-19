@@ -103,7 +103,7 @@ public:
 			
 			// offboard_control_mode needs to be paired with trajectory_setpoint
 			publish_offboard_control_mode();
-			//publish_trajectory_setpoint();
+			publish_trajectory_setpoint();
 			
 			
 			publish_trajectory_setpoint_forward(); // my own thing
@@ -139,7 +139,7 @@ private:
 	uint64_t offboard_setpoint_counter_;   //!< counter for the number of setpoints sent
 
 	void publish_offboard_control_mode();
-	//void publish_trajectory_setpoint();
+	void publish_trajectory_setpoint();
 	
 	//void publish_trajectory_setpoint_forward();//my own thing
 	
@@ -165,7 +165,7 @@ private:
 	void publish_trajectory_setpoint_forward()
 {
 	TrajectorySetpoint msg{};
-	msg.position = {-y, -x, -z};
+	msg.position = {x, y, -z};
 	msg.yaw = yaw; // [-PI:PI]
 	msg.timestamp = this->get_clock()->now().nanoseconds() / 1000;
 	trajectory_setpoint_publisher_->publish(msg);
@@ -215,13 +215,13 @@ void OffboardControl::publish_offboard_control_mode()
  *        vehicle hover at 5 meters with a yaw angle of 180 degrees.
  */
 //void OffboardControl::publish_trajectory_setpoint()
-//{
-//	TrajectorySetpoint msg{};
-//	msg.position = {0.0, 0.0, -5.0};
-//	msg.yaw = -3.14; // [-PI:PI]
-//	msg.timestamp = this->get_clock()->now().nanoseconds() / 1000;
-//	trajectory_setpoint_publisher_->publish(msg);
-//}
+// {
+// 	TrajectorySetpoint msg{};
+// 	msg.position = {0.0, 0.0, -5.0};
+// 	msg.yaw = -3.14; // [-PI:PI]
+// 	msg.timestamp = this->get_clock()->now().nanoseconds() / 1000;
+// 	trajectory_setpoint_publisher_->publish(msg);
+// }
 
 /**
  * @brief Publish vehicle commands
