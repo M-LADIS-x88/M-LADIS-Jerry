@@ -4,3 +4,6 @@ ws_sensor_combined/install
 ws_sensor_combined/install/*
 ws_sensor_combined/log
 ws_sensor_combined/log/*
+install/*
+log/*
+velodyne_bag_*
