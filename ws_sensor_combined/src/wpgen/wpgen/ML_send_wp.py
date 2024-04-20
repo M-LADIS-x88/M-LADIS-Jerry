@@ -120,7 +120,7 @@ class MLAgent(Node):
         self.cam_publisher.publish(point_msg)
         self.get_logger().info(f'Published captured poster at x: {x}, y: {y}')
         new_row = {'x': round(x, 2), 'y': round(y, 2), 'poster': image_name}
-        self.df = self.df.append(new_row, ignore_index=True)
+        self.df.loc[len(self.df)] = new_row
         
 
     def capture_image(self, image_name):
@@ -211,6 +211,9 @@ class MLAgent(Node):
             if self.current_intermediate_index < len(self.intermediate_waypoints):
                 self.waypoint = self.intermediate_waypoints[self.current_intermediate_index]
                 self.current_intermediate_index += 1
+                self.waypoint[0] = np.clip(self.waypoint[0], -(x_half - 3), (x_half - 3)) # waypoint clipping in x
+                self.waypoint[1] = np.clip(self.waypoint[1], -(y_half - 3), (y_half - 3)) # waypoint clipping in y
+                self.waypoint_type = "ML"
             else:
                 # All intermediate waypoints have been used, clear the list
                 self.intermediate_waypoints = []
