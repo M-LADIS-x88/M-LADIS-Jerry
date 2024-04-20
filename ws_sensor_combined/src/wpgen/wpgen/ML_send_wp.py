@@ -48,6 +48,11 @@ class MLAgent(Node):
         #model_path = os.path.join("../EXAMPLE/drone_test_sample_final_2")
         model_path = "~/root/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/EXAMPLE/drone_test_sample_final_2"
         self.model = PPO.load(model_path)
+        
+        if not os.path.exists('~/root/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/post_comp_scoring/image_class_data.csv'):
+            os.makedirs('~/root/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/post_comp_scoring/image_class_data.csv')
+        if not os.path.exists('~/root/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/post_comp_scoring/tom_scare.txt'):
+            os.makedirs('~/root/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/post_comp_scoring/tom_scare.txt')
 
         self.csv_filepath = "~/root/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/post_comp_scoring/image_class_data.csv"
         self.text_filepath = "~/root/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/post_comp_scoring/tom_scare.txt"
@@ -122,7 +127,7 @@ class MLAgent(Node):
         
 
     def capture_image(self, image_name):
-        if not os.path.exists('test_images'):
+        if not os.path.exists('~/root/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/post_comp_scoring/Test_Images/'):
             os.makedirs('test_images')
 
         # Assuming the webcam device number is 0
@@ -130,7 +135,8 @@ class MLAgent(Node):
         if cap.isOpened():
             ret, frame = cap.read()
             if ret:
-                image_path = os.path.join('test_images', image_name)
+                frame = cv2.rotate(frame, cv2.ROTATE_180)
+                image_path = os.path.join('~/root/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/post_comp_scoring/Test_Images/', image_name)
                 cv2.imwrite(image_path, frame)
                 self.get_logger().info(f"Image saved to {image_path}")
                 cap.release()
@@ -196,10 +202,10 @@ class MLAgent(Node):
                 self.reject = False
             self.prev_action = self.new_action
             
-            self.waypoint = [3.0, -6.0, 3.5]
-            # self.waypoint = [self.new_action[0] * x_half, self.new_action[1] * y_half, 3.5]
-            # self.waypoint[0] = np.clip(self.waypoint[0], -(x_half - 3), (x_half - 3)) # waypoint clipping in x
-            # self.waypoint[1] = np.clip(self.waypoint[1], -(y_half - 3), (y_half - 3)) # waypoint clipping in y
+            # self.waypoint = [3.0, -6.0, 3.5]
+            self.waypoint = [self.new_action[0] * x_half, self.new_action[1] * y_half, 3.5]
+            self.waypoint[0] = np.clip(self.waypoint[0], -(x_half - 3), (x_half - 3)) # waypoint clipping in x
+            self.waypoint[1] = np.clip(self.waypoint[1], -(y_half - 3), (y_half - 3)) # waypoint clipping in y
             self.waypoint_type = "ML"
 
         setpoint_msg = TrajectorySetpoint()
