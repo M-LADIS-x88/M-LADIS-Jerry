@@ -191,7 +191,7 @@ class MLAgent(Node):
             self.waypoint_type = "LANDING"
 
         elif not self.first_waypoint_generated: # For the very first time, publish a liftoff waypoint
-            self.prev_action = [0.0, 0.0, 1.0]  # Replace with the correct z value if necessary
+            self.prev_action = [0.0, 0.0, 3.5]  # Replace with the correct z value if necessary
             if (self.position[2] < 3.0):
                 self.waypoint = [0.0, 0.0, 3.5]
                 self.waypoint_type = "TAKEOFF5"
