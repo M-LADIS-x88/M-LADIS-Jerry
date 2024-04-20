@@ -2,6 +2,7 @@
 
 import os
 import numpy as np
+import pandas as pd
 import cv2
 import math
 import rclpy
@@ -35,13 +36,22 @@ class MLAgent(Node):
         self.waypoint = [0.0, 0.0, 0.0]
         self.waypoint_type = "null"
         self.reject = False
+        self.new_tom_scare = True
+        self.new_wall_collision = True
+        self.tom_scare_penalty = 0
+        self.df = pd.DataFrame
+        self.df.columns = ['x', 'y', 'poster']
+
         # self.prev_action = [0.0, 0.0]
 
         #current_dir = os.path.dirname(os.path.abspath(__file__))
         #model_path = os.path.join("../EXAMPLE/drone_test_sample_final_2")
-        model_path = "/root/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/EXAMPLE/drone_test_sample_final_2"
+        model_path = "~/root/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/EXAMPLE/drone_test_sample_final_2"
         self.model = PPO.load(model_path)
 
+        self.csv_filepath = "~/root/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/post_comp_scoring/image_class_data.csv"
+        self.text_filepath = "~/root/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/post_comp_scoring/tom_scare.txt"
+        
         self.publisher_ = self.create_publisher(TrajectorySetpoint, '/fmu/in/autonomy_waypoint', 1)
         self.cam_publisher = self.create_publisher(Point, '/captured_poster', 1)
         
@@ -61,6 +71,10 @@ class MLAgent(Node):
     def end_flight_callback(self, msg: Bool):
         self.end_flight = msg.data
         if self.end_flight:
+            self.df.to_csv(self.csv_filepath, index=False)
+            with open(self.text_file_path, 'w') as file:
+            # Write the string to the file
+                file.write(f'Tom scare penalty (subtract this value from 100): {self.tom_scare_penalty}')
             self.get_logger().info('End flight received. Preparing to land.')
             
     def position_callback(self, msg):
@@ -103,6 +117,9 @@ class MLAgent(Node):
         point_msg = Point(x=x, y=y)
         self.cam_publisher.publish(point_msg)
         self.get_logger().info(f'Published captured poster at x: {x}, y: {y}')
+        new_row = {'x': round(x, 2), 'y': round(y, 2), 'poster': image_name}
+        self.df = self.df.append(new_row)
+        
 
     def capture_image(self, image_name):
         if not os.path.exists('test_images'):
@@ -164,7 +181,7 @@ class MLAgent(Node):
             self.prev_action = [0.0, 0.0, 1.0]  # Replace with the correct z value if necessary
             if (self.position[2] < 3.0):
                 self.waypoint = [0.0, 0.0, 3.5]
-                self.waypoint_type = "TAKEOFF4"
+                self.waypoint_type = "TAKEOFF5"
             else:
                 self.first_waypoint_generated = True
                 
@@ -180,19 +197,30 @@ class MLAgent(Node):
             self.prev_action = self.new_action
             
             self.waypoint = [3.0, -6.0, 3.5]
-            #self.waypoint = [self.new_action[0] * x_half, self.new_action[1] * y_half, 3.5]
-            #elf.waypoint[0] = np.clip(self.waypoint[0], -(x_half - 3), (x_half - 3)) # waypoint clipping in x
-            #self.waypoint[1] = np.clip(self.waypoint[1], -(y_half - 3), (y_half - 3)) # waypoint clipping in y
+            # self.waypoint = [self.new_action[0] * x_half, self.new_action[1] * y_half, 3.5]
+            # self.waypoint[0] = np.clip(self.waypoint[0], -(x_half - 3), (x_half - 3)) # waypoint clipping in x
+            # self.waypoint[1] = np.clip(self.waypoint[1], -(y_half - 3), (y_half - 3)) # waypoint clipping in y
             self.waypoint_type = "ML"
 
         setpoint_msg = TrajectorySetpoint()
         setpoint_msg.position = self.waypoint
         setpoint_msg.yaw = self.yaw
-        setpoint_msg.yaw = 0.0
+        #setpoint_msg.yaw = 0.0
         self.publisher_.publish(setpoint_msg)
         self.get_logger().info(f'Published {self.waypoint_type} waypoint x:{setpoint_msg.position[0]}, y:{setpoint_msg.position[1]}, z:{setpoint_msg.position[2]}, yaw:{self.yaw}')
         #self.get_logger().info(f'Rejected : {self.reject}')
-
+    
+    def position_scoring(self):
+        point1 = np.array(self.position[:2])
+        point2 = np.array(self.predator_position[:2])
+        distance = np.linalg.norm(point2 - point1)
+        if distance < 5 and self.position[:2] != [0.0, 0.0] and self.predator_position[:2] != [0.0, 0.0] and self.new_tom_scare == True:
+            self.new_tom_scare = False
+            self.tom_scare_penalty += 10
+        elif distance > 5:
+            self.new_tom_scare = True
+        
+        
 
 def main(args=None):
     rclpy.init(args=args)

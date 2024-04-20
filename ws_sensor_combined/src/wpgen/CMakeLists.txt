@@ -8,6 +8,7 @@ find_package(geometry_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(px4_msgs REQUIRED)
 find_package(ament_index_python REQUIRED)
+find_package(pandas REQUIRED)
 
 # Install Python package directory
 install(DIRECTORY
