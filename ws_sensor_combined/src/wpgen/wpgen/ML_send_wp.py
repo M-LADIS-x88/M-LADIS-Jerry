@@ -41,21 +41,19 @@ class MLAgent(Node):
         self.tom_scare_penalty = 0
         self.df = pd.DataFrame
         self.df.columns = ['x', 'y', 'poster']
+        self.intermediate_waypoints = []  # store intermediate waypoints here.
+        self.num_intermediate_waypoints = 20  # number of intermediate waypoints desired.
+        self.current_intermediate_index = 0 
 
         # self.prev_action = [0.0, 0.0]
 
         #current_dir = os.path.dirname(os.path.abspath(__file__))
         #model_path = os.path.join("../EXAMPLE/drone_test_sample_final_2")
-        model_path = "~/root/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/EXAMPLE/drone_test_sample_final_2"
+        model_path = "/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/EXAMPLE/drone_test_sample_final_2"
         self.model = PPO.load(model_path)
-        
-        if not os.path.exists('~/root/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/post_comp_scoring/image_class_data.csv'):
-            os.makedirs('~/root/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/post_comp_scoring/image_class_data.csv')
-        if not os.path.exists('~/root/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/post_comp_scoring/tom_scare.txt'):
-            os.makedirs('~/root/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/post_comp_scoring/tom_scare.txt')
 
-        self.csv_filepath = "~/root/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/post_comp_scoring/image_class_data.csv"
-        self.text_filepath = "~/root/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/post_comp_scoring/tom_scare.txt"
+        self.csv_filepath = "/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/post_comp_scoring/image_class_data.csv"
+        self.text_filepath = "/home/blake/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/post_comp_scoring/tom_scare.txt"
         
         self.publisher_ = self.create_publisher(TrajectorySetpoint, '/fmu/in/autonomy_waypoint', 1)
         self.cam_publisher = self.create_publisher(Point, '/captured_poster', 1)
@@ -127,7 +125,7 @@ class MLAgent(Node):
         
 
     def capture_image(self, image_name):
-        if not os.path.exists('~/root/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/post_comp_scoring/Test_Images/'):
+        if not os.path.exists('test_images'):
             os.makedirs('test_images')
 
         # Assuming the webcam device number is 0
@@ -135,8 +133,7 @@ class MLAgent(Node):
         if cap.isOpened():
             ret, frame = cap.read()
             if ret:
-                frame = cv2.rotate(frame, cv2.ROTATE_180)
-                image_path = os.path.join('~/root/M-LADIS-Jerry/ws_sensor_combined/src/wpgen/post_comp_scoring/Test_Images/', image_name)
+                image_path = os.path.join('test_images', image_name)
                 cv2.imwrite(image_path, frame)
                 self.get_logger().info(f"Image saved to {image_path}")
                 cap.release()
@@ -150,6 +147,15 @@ class MLAgent(Node):
             (pos[0] / x_half) if x_half else 0.0,
             (pos[1] / y_half) if y_half else 0.0
         ]
+    def calculate_intermediate_waypoints(self, start, end, steps):
+        waypoints = []
+        for i in range(1, steps + 1):
+            ratio = i / float(steps)
+            waypoint = [start[0] + ratio * (end[0] - start[0]),
+                        start[1] + ratio * (end[1] - start[1]),
+                        start[2] + ratio * (end[2] - start[2])]  # Assuming a fixed z altitude
+            waypoints.append(waypoint)
+        return waypoints
 
     def generate_action(self):
         if self.end_flight:  # Do nothing more if end_flight flag is set
@@ -178,6 +184,8 @@ class MLAgent(Node):
             
 
     def push_waypoint(self):
+        x_half = abs(self.x_range) / 2.0
+        y_half = abs(self.y_range) / 2.0
         if self.end_flight:
             # Set the current position with z=0 to land
             self.waypoint = [self.position[0], self.position[1], 0.0]
@@ -192,26 +200,40 @@ class MLAgent(Node):
                 self.first_waypoint_generated = True
                 
         else:
-            x_half = abs(self.x_range) / 2.0
-            y_half = abs(self.y_range) / 2.0
-            
-            if self.new_action[2] < 0: # Use the old action if ML doesn't like the new action
-                self.new_action = self.prev_action
-                self.reject = True
-            else:
-                self.reject = False
-            self.prev_action = self.new_action
-            
-            # self.waypoint = [3.0, -6.0, 3.5]
-            self.waypoint = [self.new_action[0] * x_half, self.new_action[1] * y_half, 3.5]
-            self.waypoint[0] = np.clip(self.waypoint[0], -(x_half - 3), (x_half - 3)) # waypoint clipping in x
-            self.waypoint[1] = np.clip(self.waypoint[1], -(y_half - 3), (y_half - 3)) # waypoint clipping in y
+            if self.intermediate_waypoints == []:
+                target_waypoint = [self.new_action[0] * x_half, self.new_action[1] * y_half, 3.5]  # Assuming 3.5 is the desired altitude
+                # Calculate the evenly spaced intermediate waypoints
+                self.intermediate_waypoints = self.calculate_intermediate_waypoints(self.position, target_waypoint, self.num_intermediate_waypoints)
+                self.current_intermediate_index = 0
+
+            # Use an intermediate waypoint
             self.waypoint_type = "ML"
+        
+            if self.current_intermediate_index < len(self.intermediate_waypoints):
+                self.waypoint = self.intermediate_waypoints[self.current_intermediate_index]
+                self.current_intermediate_index += 1
+            else:
+                # All intermediate waypoints have been used, clear the list
+                self.intermediate_waypoints = []
+                
+                
+                if self.new_action[2] < 0: # Use the old action if ML doesn't like the new action
+                    self.new_action = self.prev_action
+                    self.reject = True
+                else:
+                    self.reject = False
+                self.prev_action = self.new_action
+                
+                #self.waypoint = [3.0, -6.0, 3.5]
+                self.waypoint = [self.new_action[0] * x_half, self.new_action[1] * y_half, 3.5]
+                self.waypoint[0] = np.clip(self.waypoint[0], -(x_half - 6), (x_half - 6)) # waypoint clipping in x
+                self.waypoint[1] = np.clip(self.waypoint[1], -(y_half - 6), (y_half - 6)) # waypoint clipping in y
+                self.waypoint_type = "ML"
 
         setpoint_msg = TrajectorySetpoint()
         setpoint_msg.position = self.waypoint
         setpoint_msg.yaw = self.yaw
-        #setpoint_msg.yaw = 0.0
+        setpoint_msg.yaw = 0.0
         self.publisher_.publish(setpoint_msg)
         self.get_logger().info(f'Published {self.waypoint_type} waypoint x:{setpoint_msg.position[0]}, y:{setpoint_msg.position[1]}, z:{setpoint_msg.position[2]}, yaw:{self.yaw}')
         #self.get_logger().info(f'Rejected : {self.reject}')
