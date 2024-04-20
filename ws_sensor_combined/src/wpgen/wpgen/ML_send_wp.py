@@ -39,8 +39,7 @@ class MLAgent(Node):
         self.new_tom_scare = True
         self.new_wall_collision = True
         self.tom_scare_penalty = 0
-        self.df = pd.DataFrame
-        self.df.columns = ['x', 'y', 'poster']
+        self.df = pd.DataFrame(columns=['x', 'y', 'poster'])
         self.intermediate_waypoints = []  # store intermediate waypoints here.
         self.num_intermediate_waypoints = 20  # number of intermediate waypoints desired.
         self.current_intermediate_index = 0 
@@ -121,7 +120,7 @@ class MLAgent(Node):
         self.cam_publisher.publish(point_msg)
         self.get_logger().info(f'Published captured poster at x: {x}, y: {y}')
         new_row = {'x': round(x, 2), 'y': round(y, 2), 'poster': image_name}
-        self.df = self.df.append(new_row)
+        self.df = self.df.append(new_row, ignore_index=True)
         
 
     def capture_image(self, image_name):
