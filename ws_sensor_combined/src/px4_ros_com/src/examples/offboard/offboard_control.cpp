@@ -103,7 +103,7 @@ public:
 			
 			// offboard_control_mode needs to be paired with trajectory_setpoint
 			publish_offboard_control_mode();
-			publish_trajectory_setpoint();
+			// publish_trajectory_setpoint();
 			
 			
 			publish_trajectory_setpoint_forward(); // my own thing
@@ -139,7 +139,7 @@ private:
 	uint64_t offboard_setpoint_counter_;   //!< counter for the number of setpoints sent
 
 	void publish_offboard_control_mode();
-	void publish_trajectory_setpoint();
+	// void publish_trajectory_setpoint();
 	
 	//void publish_trajectory_setpoint_forward();//my own thing
 	

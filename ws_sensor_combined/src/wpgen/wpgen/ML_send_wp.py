@@ -179,7 +179,7 @@ class MLAgent(Node):
                 self.reject = False
             self.prev_action = self.new_action
             
-            self.waypoint = [3, -6, 3.5]
+            self.waypoint = [3.0, -6.0, 3.5]
             #self.waypoint = [self.new_action[0] * x_half, self.new_action[1] * y_half, 3.5]
             #elf.waypoint[0] = np.clip(self.waypoint[0], -(x_half - 3), (x_half - 3)) # waypoint clipping in x
             #self.waypoint[1] = np.clip(self.waypoint[1], -(y_half - 3), (y_half - 3)) # waypoint clipping in y
@@ -187,7 +187,7 @@ class MLAgent(Node):
 
         setpoint_msg = TrajectorySetpoint()
         setpoint_msg.position = self.waypoint
-        #setpoint_msg.yaw = self.yaw
+        setpoint_msg.yaw = self.yaw
         setpoint_msg.yaw = 0.0
         self.publisher_.publish(setpoint_msg)
         self.get_logger().info(f'Published {self.waypoint_type} waypoint x:{setpoint_msg.position[0]}, y:{setpoint_msg.position[1]}, z:{setpoint_msg.position[2]}, yaw:{self.yaw}')
